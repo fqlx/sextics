@@ -201,6 +201,11 @@ if ! lake exe cache get 2>&1 | tee "$scratch/cache-get.log"; then
     proxy_help
     exit 1
 fi
+# The pinned cache client reports 404 cache misses as warnings with exit 0.
+# Do not let a partial cache silently turn the next build into a source rebuild.
+if grep -Fq 'Warning: some files were not found in the cache.' "$scratch/cache-get.log"; then
+    fail 'The pinned cache is incomplete. Inspect the cache-miss warning before building; no source rebuild was started.'
+fi
 [[ -s "$SEXTICS_CLOUD_PACKAGES/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean" ]] ||
     fail 'The cache command did not provide Mathlib/Tactic.olean. Inspect cache misses and network access before building.'
 check_package_sources require-all
