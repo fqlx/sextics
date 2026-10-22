@@ -9,7 +9,8 @@ bash scripts/cloud/check-github.sh
 bash scripts/cloud/verify.sh
 ```
 
-Setup needs Bash, Git, curl, tar, xz, and Python 3.11 or `uv` to install it.
+Setup needs Bash and Python 3.11 or `uv` to install it. Missing system tools,
+including `gh`, are installed with apt (root or passwordless sudo is required).
 It installs the pinned content requirements in a virtual environment, Node and
 the locked server dependencies, elan, the pinned Lean toolchain, and compiled
 mathlib dependencies. No service needs to run. Source `env.sh` in **each new

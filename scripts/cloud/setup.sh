@@ -20,11 +20,11 @@ system_install() {
 
 [[ $(uname -s) == Linux ]] || fail 'Run this setup in a Linux cloud worker.'
 missing=0
-for program in curl git tar xz zstd gcc make sha256sum flock; do
+for program in curl git gh tar xz zstd gcc make sha256sum flock; do
     command -v "$program" >/dev/null || missing=1
 done
 if [[ $missing == 1 ]]; then
-    system_install ca-certificates curl git build-essential unzip zstd xz-utils util-linux
+    system_install ca-certificates curl git gh build-essential unzip zstd xz-utils util-linux
 fi
 mkdir -p "$SEXTICS_CLOUD_HOME"
 # Serialize setup against the same persistent cache; do not share it with an
@@ -96,6 +96,7 @@ elan toolchain install "$toolchain"
 # Re-running venv also repairs an interrupted creation without deleting packages.
 "$python" -m venv "$SEXTICS_CLOUD_VENV"
 "$SEXTICS_CLOUD_VENV/bin/python" -m pip install -r "$repo/scripts/requirements-content.txt"
+"$SEXTICS_CLOUD_VENV/bin/python" -m pip check
 npm ci --prefix "$repo/server" --ignore-scripts --no-audit --no-fund
 
 mkdir -p "$repo/formal/lean/.lake" "$SEXTICS_CLOUD_PACKAGES"
