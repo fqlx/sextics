@@ -98,6 +98,9 @@ The atlas and leaderboard read generated files and need no GitHub service at run
 
 ### Local checks
 
+For repeatable Linux cloud setup, persistent compiled dependencies, proxy
+diagnostics, and GitHub identity checks, see [Cloud development setup](infra/cloud/README.md).
+
 ```sh
 python3 scripts/proposals/test_check.py
 python3 scripts/proposals/test_lean.py
