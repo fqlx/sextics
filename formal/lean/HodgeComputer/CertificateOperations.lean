@@ -75,6 +75,31 @@ theorem HasCertificate.add {F A B : Poly} {q : ℕ} (hq : 0 < q)
   exact ⟨d+e, D*E, (fun i => E*N i+D*M i), E^2*Q+D^2*R,
     Verify.add hq h k⟩
 
+/-- Negating a correction also negates its quotient; its denominator is unchanged. -/
+theorem Verify.neg {F A D Q : Poly} {q d : ℕ} {N : Fin 6 → Poly}
+    (h : Verify F A q d D N Q) :
+    Verify F (-A) q d D (fun i => -N i) (-Q) where
+  denominator_ne_zero := h.denominator_ne_zero
+  denominator_homogeneous := h.denominator_homogeneous
+  numerator_homogeneous := fun i => (h.numerator_homogeneous i).neg
+  denominator_legal := h.denominator_legal
+  identity := by
+    have hn : defect F (-A) D q (fun i => -N i) = -defect F A D q N := by
+      simp only [defect, directional, divergenceNumerator, divergence, mul_neg,
+        map_neg, Finset.sum_neg_distrib]
+      ring
+    rw [hn, h.identity, mul_neg]
+
+theorem HasCertificate.neg {F A : Poly} {q : ℕ}
+    (h : HasCertificate F A q) : HasCertificate F (-A) q := by
+  obtain ⟨d, D, N, Q, h⟩ := h
+  exact ⟨d, D, (fun i => -N i), -Q, h.neg⟩
+
+theorem HasCertificate.sub {F A B : Poly} {q : ℕ} (hq : 0 < q)
+    (h : HasCertificate F A q) (k : HasCertificate F B q) :
+    HasCertificate F (A-B) q := by
+  simpa only [sub_eq_add_neg] using HasCertificate.add hq h k.neg
+
 
 /-- The zero source has a certificate with constant denominator. -/
 theorem HasCertificate.zero (F : Poly) (q : ℕ) : HasCertificate F 0 q := by
@@ -86,5 +111,27 @@ theorem HasCertificate.zero (F : Poly) (q : ℕ) : HasCertificate F 0 q := by
     denominator_legal := isRelPrime_one_right
     identity := by simp [defect, directional, divergenceNumerator, divergence]
   }
+
+/-- Each step certifies exactly the source removed from the previous remainder.
+The same `F` and pole order are retained throughout; denominators and quotients may vary. -/
+theorem HasCertificate.telescope {F : Poly} {q n : ℕ} (hq : 0 < q)
+    (R : ℕ → Poly)
+    (h : ∀ k < n, HasCertificate F (R k - R (k+1)) q) :
+    HasCertificate F (R 0 - R n) q := by
+  induction n with
+  | zero => simpa using HasCertificate.zero F q
+  | succ n ih =>
+    have hprev := ih (fun k hk => h k (by omega))
+    have hlast := h n (by omega)
+    have hsum := HasCertificate.add hq hprev hlast
+    have hsource : (R 0 - R n) + (R n - R (n+1)) = R 0 - R (n+1) := by ring
+    simpa only [hsource] using hsum
+
+/-- A finite chain with zero final remainder proves the original certificate statement. -/
+theorem HasCertificate.of_remainder_zero {F S : Poly} {q n : ℕ} (hq : 0 < q)
+    (R : ℕ → Poly) (hstart : R 0 = S) (hfinal : R n = 0)
+    (h : ∀ k < n, HasCertificate F (R k - R (k+1)) q) :
+    HasCertificate F S q := by
+  simpa only [hstart, hfinal, sub_zero] using HasCertificate.telescope hq R h
 
 end HodgeComputer

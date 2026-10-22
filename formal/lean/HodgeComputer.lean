@@ -1,2 +1,3 @@
 import HodgeComputer.Verify
 import HodgeComputer.CertificateOperations
+import HodgeComputer.RationalCertificate
