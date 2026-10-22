@@ -119,6 +119,7 @@ These are development checks. Protected proposal verification still compiles
 candidate proofs in an OS sandbox and audits the exact theorem and axioms.
 [CONTRIBUTING.md](../../CONTRIBUTING.md) and
 [MAINTAINING.md](../../MAINTAINING.md) remain authoritative. Infrastructure goes
-in a separate maintenance PR against `hodge-computer/sextics:main`. Authorization
-remains bound to the exact reviewed head; owner approval and merge stay manual.
-Setup and local replay do not grant merge authorization or solve acceptance.
+in a separate maintenance PR. This cloud environment is maintained in
+`fqlx/sextics`, so fork setup changes target that fork's `main`. Contributions
+to `hodge-computer/sextics` separately follow its exact-head owner authorization
+and manual merge rules. Setup and local replay do not establish solve acceptance.
