@@ -1,0 +1,25 @@
+{
+  "status": "GENERAL_EXACT_CURRENT_TO_AMBIENT_CERTIFICATE_LIFT; TARGET_CURRENT_STILL_OPEN",
+  "checks": {
+    "actual_ambient_normal_is_A": true,
+    "literal_ambient_divergence_vs_complete_current": true
+  },
+  "source": "A=y^3 on X0=1, H=1+x^6+y^6+z^6+xyz/2, C=x^3*z/2+xy/3",
+  "current": "J=q2(x,y,z,p) wedge dp/Z + s(x,y,z,p)*dxdy dz/Z; q_vector=(q_yz,-q_xz,q_xy)",
+  "complete_obstruction": "E=f*(div(q_vector)-partial_p(s))-L*(q_vector(H)+p*q_vector(C))+s*(C*L-12p^5)+A*L/6",
+  "notation": "p=e*b, R=e^6+b^6, Z=e^6-b^6, L=H+Cp, F=R+L, f=L^2-4p^6",
+  "vector": {
+    "base": "v_base=6*q_vector",
+    "M": "A-6*q_vector(H)-6*p*q_vector(C)",
+    "K": "M+6*s*(3R+Cp)/p",
+    "v_e": "-3*s*e/p+K*e/(6Z)",
+    "v_b": "-3*s*b/p-K*b/(6Z)"
+  },
+  "exact_ambient_identities": [
+    "dF(v)=A exactly, before restriction to F=0",
+    "div(v)=6E/Z^2+F*[6*(R-L)*(div(q_vector)-partial_p(s))-M-6sC]/Z^2",
+    "A-dF(v)+F*div(v)=6F*E/Z^2+F^2*Qstar"
+  ],
+  "closure_requirement": "Only E=0 yields a certificate. No current in the present work has yet passed this test.",
+  "homogeneous_export": "Set v_X0=0 and homogenize affine v_i to degree1 using X0. Clear a common denominator D and homogenize D,N_i to degrees d,d+1. Verify complex coprimality and the cleared identity before Lean submission."
+}

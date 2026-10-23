@@ -1,0 +1,103 @@
+{
+  "status": "INDEPENDENT_WHOLE_ORIGINAL_FIELD_Y_PLUS_CMdesc_PACKET_PASS_WITH_NONZERO_ALL4_REMAINDER_NOT_CLOSURE",
+  "authoritative_input": "source-incidence-correspondence/actual_full_CM_repair_descent.py/json; root_Y_CMdesc_full_point.py/json",
+  "checks": {
+    "FULL_original_source_ratio_Y_invariant": true,
+    "actual_Y_C_weight": true,
+    "actual_Y_H_defect": true,
+    "actual_Yseed_WHOLE_scalar_remainder": true,
+    "actual_mu_Y_divergence": true,
+    "original_rational_eta_psi_tU": true,
+    "original_rational_eta_psi_tz": true,
+    "original_rational_rho_psi_t": true,
+    "original_rational_rho_psi_U": true,
+    "original_rational_rho_psi_z": true,
+    "literal_Yseed_base3_fiber_cochain_ALL_normals": true,
+    "actual_FULL_source_Yseed_RY": true,
+    "WHOLE_CMdesc_amplitude_AND_rational_forms_E0": true,
+    "WHOLE_CMdesc_actual_H_normal": true,
+    "WHOLE_CMdesc_actual_C_normal": true,
+    "WHOLE_scalarized_thetaH_and_omega0_match": true,
+    "WHOLE_native_ALL4_AND_entire_fiber_primitive": true,
+    "WHOLE_actual_remaining_secondkind_rows_NONZERO": true,
+    "WHOLE_actual_current_is_NOT_primitive": true
+  },
+  "check_count": 19,
+  "ORIGINAL_field": "t,U,z,W; W\u00b2=U\u00b2\u22124t\u00b3z\u2076;H=1+U\u00b2\u2212(2t\u00b3\u22121)z\u2076+t z\u00b3/2;C=t z\u00b2/3+z(U+W)/4;Z\u00b2=(H+Cp)\u00b2\u22124p\u2076. No auxiliary CM radical remains.",
+  "physical_derivations": "Dt=partial_t\u22126t\u00b2z\u2076 partial_W/W;DU=partial_U+U partial_W/W;Dz=partial_z\u221212t\u00b3z\u2075 partial_W/W, acting on the actual field",
+  "actual_full_source": "beta_original=\u2212B*z\u00b2*dt*dU*dz*thetaH/36; B=U/W\u22121; entire twochannel factor retained",
+  "ONE_original_field_current": {
+    "mu": "3z\u00b2*dt*dU*dz",
+    "Y": "partial_t+(3U/(4t))*partial_U\u2212z*partial_z/(4t), with every W normal included",
+    "A": "3(U\u00b2\u22121)\u22123(2t\u00b3+3)z\u2076\u2212t z\u00b3",
+    "Ppoly": "\u221212U\u00b2\u22126+(24t\u00b3\u221272)z\u2076\u2212t z\u00b3",
+    "fY": "\u2212tB/(27A)",
+    "JY": "fY*iY(mu)*omega0\u2212mu*fY*p/(4tZ)",
+    "RY": "\u2212B*Ppoly/(108A\u00b2), dJY=beta_original+mu*RY*omega0",
+    "JCMdesc_PLUS": "QCM*omega0;QCM=N*[tH(H\u22121)*(eta wedge psi)\u2212(t\u00b2/3)*dH wedge (rho*psi)]",
+    "N": "B*Ppoly/[72tA\u00b2(H\u22122t\u00b3)]",
+    "rational_forms": "g=2t\u00b3\u22121,S=gz\u00b3\u2212t/4,Q=S\u00b2\u2212gU\u00b2;eta*psi=2dt*(S dU\u22123Ug z\u00b2dz)/Q;rho*psi=2[gS dU\u2212U(3t\u00b2g z\u00b3+(t\u00b3+1)/4)dt\u22123Ug\u00b2z\u00b2dz]/Q"
+  },
+  "EXACT_WHOLE_literal_identity": {
+    "definition": "QCM=iVCM(dt*dU*dz),E0=3z\u00b2RY+div(VCM),EH=VCM(H),EC=VCM(C)",
+    "identity": "beta_original=d(JY+JCMdesc)\u2212dt*dU*dz*(E0*omega0+EH*thetaH+EC*thetaC)",
+    "sign": "The exported point E coefficients are d(current)\u2212beta_original. The actual residual beta_original\u2212d(current) is their NEGATIVE.",
+    "all_normals": "divVCM differentiates the entire rational N, every H,t factor and every component of eta*psi,rho*psi, including the dt leg of rho*psi. No separate/unweighted trace or frozen normal enters."
+  },
+  "EXACT_ALL4_AND_FIBER": {
+    "excess_vector": "E0*e0+EH*MH[:,0]+EC*MC[:,0],basis j0,1,3,4",
+    "excess_fiber_primitive": "(EH*polyH+EC*polyC)/Z",
+    "polyH": "(-12*C**6*p - 8*C**5*H + 48*C**4*p**5 - 72*C**3*H*p**4 + 108*C**2*H**2*p**3 - 162*C*H**3*p**2 + 243*H**4*p)/(H*(4*C**6 - 729*H**4))",
+    "polyC": "(16*C**5*p + 12*C**4*H - 72*C**3*p**5 + 108*C**2*H*p**4 - 162*C*H**2*p**3 + 243*H**3*p**2)/(4*C**6 - 729*H**4)",
+    "literal_receipt": "E0*omega0+EH*thetaH+EC*thetaC=excess_vector*omega_basis+d_p(excess_fiber_primitive)",
+    "source_fiber_sign": "For beta=dJ\u2212vol*(excess+dpS), adding +vol*S to J serves the entire negative dpS source residual and leaves precisely \u2212vol*excess_vector. No cochain is dropped."
+  },
+  "actual_exact_sample": {
+    "point": "t=z=1,U=5/2,W=\u22123/2,H=27/4,C=7/12,A=\u22121/4",
+    "density_convention": "E0,EH,EC below multiply dt*dU*dz; root point exports coefficients multiplying mu=eta*dU*dR=3z\u00b2*dt*dU*dz. At this point the former are exactly3 times the latter.",
+    "RY": "-4160/81",
+    "N": "8320/513",
+    "divV": "-7448907872/60021",
+    "E0": "-7458155552/60021",
+    "EH": "-143520/19",
+    "EC": "-2382320/32319",
+    "VCM_t_U_z": [
+      "-33280/513",
+      "-5974400/3591",
+      "-976960/10773"
+    ],
+    "scalarized_thetaH_excess": "-5841320/931",
+    "scalarized_omega0_excess": "-365077980128/2941029",
+    "root_mu_normalized_E0_EH_EC": [
+      "-7458155552/180063",
+      "-47840/19",
+      "-2382320/96957"
+    ],
+    "root_mu_normalized_scalarH_scalar0": [
+      "-5841320/2793",
+      "-365077980128/8823087"
+    ],
+    "excess_native_rows_j0_j1_j3_j4": [
+      "-88158168372583753568/713755850264145",
+      "-536425967598336/30050499552115",
+      "254363784192/4292928507445",
+      "-29309407232/4292928507445"
+    ],
+    "actual_source_residual_native_rows": [
+      "88158168372583753568/713755850264145",
+      "536425967598336/30050499552115",
+      "-254363784192/4292928507445",
+      "29309407232/4292928507445"
+    ]
+  },
+  "retained_counterdivisors": [
+    "A=0",
+    "H\u22122t\u00b3=0",
+    "Q=0 source K support",
+    "t=0",
+    "W=0",
+    "Z=0 and endpoint infinity",
+    "all chart boundaries and collisions"
+  ],
+  "conclusion": "This is a fully rational original-field source-bound two-piece current with all normals/cochains included. Its exact j3,j4 and full compact remainder are nonzero at the actual source point. The candidate is partial; no global nonexistence claim follows."
+}

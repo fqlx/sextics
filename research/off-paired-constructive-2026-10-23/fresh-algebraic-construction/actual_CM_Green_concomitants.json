@@ -1,0 +1,89 @@
+{
+  "status": "PASS_TWO_EXPLICIT_FINITE_PHYSICAL_GREEN_CONCOMITANTS_AND_SOURCE_PAIRINGS; NOT_TWO_ROW_CLOSURE",
+  "physical_field": "rho^2=2t^3-1,kappa=4t^3/rho^2,z^3=R/rho,W^2=U^2-kappa R^2,r=R-t/(4rho),C=tz^2/3+z(U+W)/4. Every derivative in U,R is on this field at fixed t.",
+  "PDEs": "[(E0-2/3)(E0-4/3)]C=0; [W^2 DU^2-(U/2)DU-(3R/2)DR+1]C=0,E0=U DU+R DR.",
+  "common_adjoints": "phi1=1/(R^3 z),phi2=1/(R z^2 W). Both solve Lstar phi=0 and (E0+8/3)(E0+10/3)phi=0. Lstar=W^2 DU^2+(9U/2)DU+(3R/2)DR+5.",
+  "omega1": "3C dU/(2R^2z)+(W^2 CU-5UC/2)dR/(R^3z)",
+  "omega2": "3C dU/(2z^2W)+(W CU-3UC/(2W))dR/(Rz^2)",
+  "FULL_finite_potentials": "omega_i=dP_i+ls_i*dlog(U+W)+lr_i*dlogR+T_i*dt, with all coefficients and the rational T_i listed below. No logarithm is used as a rational scalar potential.",
+  "records": [
+    {
+      "P": "U*t*z/(2*R**2) + 3*U*(U + W)/(16*R**2)",
+      "dlogS_coefficient": "-3*kappa/16",
+      "dlogR_coefficient": "-kappa/16",
+      "full_dt_correction": "-9*kappa/(32*rho**2*t) - U*z*(t**3 - 1)/(2*R**2*rho**2)"
+    },
+    {
+      "P": "(3*U + 3*W)/(8*z)",
+      "dlogS_coefficient": "t/2",
+      "dlogR_coefficient": "-t/2",
+      "full_dt_correction": "-3*(3*R**2*U*kappa + 3*R**2*W*kappa + 4*R**2*kappa*t*z + 2*U**2*W*t**3 + 4*U*W**2*t**3 + 2*W**3*t**3)/(16*W*rho**2*t*z*(U + W))"
+    }
+  ],
+  "DERIVATIVE_C1_pure_weight": "C1=DU(C) has E0 C1=C1/3 and [W^2 DU^2+(3U/2)DU-(3R/2)DR+1/2]C1=0. The common algebraic adjoints are phi_U=U/(R^3 z),phi_W=W/(R^3 z), each E0-weight -7/3.",
+  "DERIVATIVE_C1_records": [
+    {
+      "label": "U",
+      "phi": "U/(R**3*z)",
+      "omega_U": "3*U*(U*z/(4*W) + z/4)/(2*R**2*z)",
+      "omega_R": "W**2*(U*(-U**2*z/(4*W**3) + z/(4*W))/(R**3*z) - (U*z/(4*W) + z/4)/(R**3*z)) - U**2*(U*z/(4*W) + z/4)/(2*R**3*z)",
+      "P_high": "3*U*(U + W)/(16*R**2)",
+      "dlogS_coefficient": "3*kappa/16",
+      "dlogR_coefficient": "kappa/16",
+      "full_dt_correction": "-9*kappa*(2*U - W)/(32*W*rho**2*t)"
+    },
+    {
+      "label": "W",
+      "phi": "W/(R**3*z)",
+      "omega_U": "3*W*(U*z/(4*W) + z/4)/(2*R**2*z)",
+      "omega_R": "W**2*(-U*(U*z/(4*W) + z/4)/(R**3*W*z) + W*(-U**2*z/(4*W**3) + z/(4*W))/(R**3*z)) - U*W*(U*z/(4*W) + z/4)/(2*R**3*z)",
+      "P_high": "3*U*(U + W)/(16*R**2)",
+      "dlogS_coefficient": "-3*kappa/16",
+      "dlogR_coefficient": "-kappa/16",
+      "full_dt_correction": "-9*kappa/(32*rho**2*t)"
+    }
+  ],
+  "DERIVATIVE_C1_full_potentials": "For each label, omega=omega_U*dU+omega_R*dR=dP_high+ls*dlog(U+W)+lr*dlogR+T*dt. Their sum is 2dP_high modulo dt; their difference is (3kappa/8)dlog(U+W)+(kappa/8)dlogR modulo dt. All full t corrections are listed.",
+  "full_t_derivation": "At fixed U,R: rho_t=3t^2/rho,z_t=-t^2z/rho^2,kappa_t=-3kappa/(t rho^2),W_t=3kappa R^2/(2t rho^2W). Thus the displayed T_i retain the complete physical t-normal. eta=dt/rho kills exactly T_i dt.",
+  "source_pair": "psi=dlogPsi=2(r dU-U dR)/K,K=r^2-U^2; gamma=dlog[(U+W)/R]=(dU-U dR/R)/W. EXACT: psi wedge gamma=2d*U*dU wedge dR/(K R W),psi wedge dlogR=2r*dU wedge dR/(K R).",
+  "finite_source_currents": "eta wedge psi wedge omega2=d[eta wedge psi*P2]+(t/2)eta wedge psi wedge gamma. eta wedge psi wedge omega1=d[eta wedge psi*P1]-(3kappa/16)eta wedge psi wedge gamma-(kappa/4)eta wedge psi wedge dlogR. These retain actual Psi, both W branches and all original C terms.",
+  "remaining": "To serve the prescribed two-row target, the actual rational residual must equal a weighted combination of these full Green packets with all derivatives of the weights retained. No such source equality or rational A serving both rows is asserted.",
+  "checks": {
+    "PHYSICAL_C_PDE1": true,
+    "PHYSICAL_C_PDE2": true,
+    "COMMON_algebraic_adjoint_1": true,
+    "COMMON_Euler_adjoint_1": true,
+    "COMMON_algebraic_adjoint_2": true,
+    "COMMON_Euler_adjoint_2": true,
+    "FULL_Green_closed_fixed_t_1": true,
+    "FINITE_actual_potential_U_1": true,
+    "FINITE_actual_potential_R_1": true,
+    "FULL_t_normal_coefficient_1": true,
+    "FIRST_Green_dt_unit_simplifies_physically": true,
+    "FULL_Green_closed_fixed_t_2": true,
+    "FINITE_actual_potential_U_2": true,
+    "FINITE_actual_potential_R_2": true,
+    "FULL_t_normal_coefficient_2": true,
+    "DERIVATIVE_C1_pure_Euler_weight": true,
+    "DERIVATIVE_C1_physical_heat": true,
+    "DERIVATIVE_C1_common_adjoint_U": true,
+    "DERIVATIVE_C1_adjoint_Euler_U": true,
+    "DERIVATIVE_C1_closed_U": true,
+    "DERIVATIVE_C1_finite_U_U": true,
+    "DERIVATIVE_C1_finite_R_U": true,
+    "DERIVATIVE_C1_full_t_normal_U": true,
+    "DERIVATIVE_C1_common_adjoint_W": true,
+    "DERIVATIVE_C1_adjoint_Euler_W": true,
+    "DERIVATIVE_C1_closed_W": true,
+    "DERIVATIVE_C1_finite_U_W": true,
+    "DERIVATIVE_C1_finite_R_W": true,
+    "DERIVATIVE_C1_full_t_normal_W": true,
+    "DERIVATIVE_C1_sum_is_two_dP_U": true,
+    "DERIVATIVE_C1_sum_is_two_dP_R": true,
+    "SOURCE_gamma_U": true,
+    "SOURCE_gamma_R": true,
+    "SOURCE_actual_Psi_Green_pair": true,
+    "SOURCE_actual_Psi_dlogR_pair": true
+  },
+  "check_count": 35
+}

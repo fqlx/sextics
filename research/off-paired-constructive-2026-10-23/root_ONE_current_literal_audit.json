@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FULL_LITERAL_EXTERIOR_DERIVATIVE_ONE_THREE_PIECE_CURRENT_NOT_CERTIFICATE",
+  "checks": {
+    "absolute_log_Xi_is_closed": true,
+    "literal_complete_current_source_remainder": true,
+    "entire_prefix_is_literal_elementary_IBP_plus_exact_current": true
+  },
+  "check_count": 3,
+  "identity": "beta_U=d(Jcontact+Jlambda+Jtau)\u2212eta*dH*dC*vHC*theta0/432",
+  "verification": "Complete rational exterior derivative in H,C,p,Z with Z\u00b2=(H+Cp)\u00b2\u22124p6; vH,vC,vHH,vHC,vCC treated as compatible arbitrary jets. Every absolute endpoint base leg retained. No compact/fiber-exact reduction used.",
+  "remaining": "vHC generically nonzero. This verifies a partial current, not a certificate."
+}

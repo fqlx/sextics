@@ -1,0 +1,23 @@
+{
+  "status": "ACTUAL_CM_PROJECTORS_AND_WHOLE_SOURCE_DENSITY_NOT_CERTIFICATE",
+  "checks": {
+    "literal_CM_kernel_curvature": true,
+    "automorphism_CM_P_projection": true,
+    "automorphism_CM_Q_projection": true,
+    "literal_U_q_z_physical_density": true,
+    "source_y3_pair_unit": true,
+    "full_CM_kappa_derivative": true
+  },
+  "check_count": 6,
+  "CM_primitives": {
+    "Omega": "(yQ+yP)/(2(xQ-xP))*(omegaQ-omegaP)",
+    "Omega_zeta": "Pullback under Q\u21a6(zeta*xQ,yQ), omegaQ\u21a6zeta*omegaQ, zeta\u00b2+zeta+1=0",
+    "JP": "4*(Omega_zeta-zeta\u00b2*Omega)/(zeta\u00b2-zeta), dJP=xP*omegaP*omegaQ",
+    "JQ": "4*(Omega_zeta-zeta*Omega)/(zeta\u00b2-zeta), dJQ=xQ*omegaP*omegaQ"
+  },
+  "actual_points": "P=(2^(1/3)t,rho),rho\u00b2=2t\u00b3\u22121; Q=(H^(1/3),sqrt(H\u22121)), both on y\u00b2=x\u00b3\u22121",
+  "full_original_source": "y\u00b3dx dy dz=\u2212(U/W\u22121)*eta*dU*dR/18, eta=dt/rho,t=xy/z\u00b2,R=rho*z\u00b3; beta_original=\u2212(U/W\u22121)*eta*dU*dR*thetaH/108",
+  "eta_R_binding": "eta*dU*dR=3z\u00b2*dt*dU*dz=\u22123*dU*dq*dz, all t-normal terms vanish in this equality by wedge dt, not by freezing physical variables.",
+  "actual_dual_Green_source": "omegaU\u2212omegaW\u2212kappa*dlog[(U+W)^3 R]/8=(3/16)(U/W\u22121)*dkappa; dkappa=\u221212t\u00b2dt/rho\u2074",
+  "remaining": "A literal endpoint source-current equality must bind these actual CM projector densities and the full original Green source weight, retaining every H,C,b normal, diagonal/counterdiagonal pole, and infinity term."
+}

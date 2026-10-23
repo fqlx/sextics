@@ -1,0 +1,80 @@
+{
+  "status": "INDEPENDENT_FULL_LITERAL_T_SEED_PLUS_ACTUAL_CM_PROJECTOR_CURRENT_PASS_WITH_NONZERO_ALL4_REMAINDER_NOT_CLOSURE",
+  "authoritative_candidate": "source-incidence-correspondence/actual_CM_projector_source_seed.py/json",
+  "checks": {
+    "literal_FULL_t_seed_and_indispensable_fiber_cochain": true,
+    "WHOLE_actual_CM_projector_curvature_P_AND_Q": true,
+    "WHOLE_literal_projector_derivative_and_signed_remainder": true,
+    "literal_thetaH_ALL4_and_fiber_primitive": true,
+    "literal_thetaC_ALL4_and_fiber_primitive": true,
+    "WHOLE_rank4_plus_ALL_fiber_cochains": true,
+    "actual_sample_hsrc_WHOLE_twochannel": true,
+    "actual_sample_full_C_t_and_H_t": true,
+    "actual_sample_full_source_seed_coefficient": true,
+    "actual_spinor_FULL_volume_unit": true,
+    "WHOLE_CM_repair_actual_secondkind_remainder_NONZERO": true,
+    "WHOLE_CM_repair_actual_remainder_NOT_ZERO": true,
+    "actual_seed_and_projector_denominators_nonzero": true
+  },
+  "check_count": 13,
+  "FULL_original_source": "beta_original=hsrc*dt*dU*dR*thetaH,hsrc=\u2212(U/W\u22121)/(108rho). The entire physical two-channel source factor is retained.",
+  "ONE_literal_current": {
+    "seed": "Jt=f*dU*dR*omega0\u2212f*Ct*p*dt*dU*dR/(2C Z),f=hsrc/[Ht\u22123H Ct/(2C)]",
+    "Rseed": "partial_t|U,R(f)\u2212f*Ct/C, every physical rho,z,kappa,W normal included",
+    "CM": "JCM=m*KP*dlogb*omega0,m=\u22123rho*h\u00b2*y*Rseed/(2t)",
+    "KP": "kP*eta+kQ*omegaQ,kP=2zeta*t*(y+rho)/[(h\u2212alpha*t)(zeta*h\u2212alpha*t)],kQ=2(y+rho)(alpha*t+zeta\u00b2h)/[alpha\u00b2(h\u2212alpha*t)(zeta*h\u2212alpha*t)]",
+    "normalization": "alpha\u00b3=2,zeta\u00b2+zeta+1=0,h\u00b3=H,y\u00b2=H\u22121;eta=dt/rho,omegaQ=dh/y;dKP=t*eta*omegaQ"
+  },
+  "EXACT_WHOLE_LITERAL_REMAINDER": {
+    "identity": "beta_original=d(Jt+JCM)+eta*omegaQ*dlogb*(A0*omega0+AH*thetaH+AC*thetaC)",
+    "A0": "mQ*kP\u2212mP*kQ",
+    "AH": "m*kP*HQ",
+    "AC": "m*(kP*CQ\u2212kQ*CP)",
+    "normals": "DP t=rho,DP rho=3t\u00b2,DP holds Q,b; DQ h=y,DQ y=3h\u00b2/2,DQ holds P,b. HP=0,HQ=3h\u00b2y. CP,CQ and mP,mQ retain every actual spinor and rho,z,W motion.",
+    "source_volume": "dt*dU*dR=(3rho*h\u00b2*y/2)*eta*omegaQ*dlogb; the source-cancelling mt term is exactly \u2212Rseed*dt*dU*dR."
+  },
+  "EXACT_ALL4_AND_FIBER_RECEIPT": {
+    "compact_vector": "A0*e0+AH*MH[:,0]+AC*MC[:,0] in basis j=0,1,3,4",
+    "fiber_primitive": "S=(AH*polyH+AC*polyC)/Z",
+    "polyH": "(-12*C**6*p - 8*C**5*H + 48*C**4*p**5 - 72*C**3*H*p**4 + 108*C**2*H**2*p**3 - 162*C*H**3*p**2 + 243*H**4*p)/(H*(4*C**6 - 729*H**4))",
+    "polyC": "(16*C**5*p + 12*C**4*H - 72*C**3*p**5 + 108*C**2*H*p**4 - 162*C*H**2*p**3 + 243*H**3*p**2)/(4*C**6 - 729*H**4)",
+    "identity": "A0*omega0+AH*thetaH+AC*thetaC=compact_vector*omega_basis+d_p S",
+    "optional_literal_fiber_current": "Adding \u2212eta*omegaQ*dlogb*S to Jt+JCM serves the entire d_pS term and leaves precisely the four compact rows, with no discarded cochain.",
+    "SK_weight": "AH\u22123H*AC/(2C); SK vector=SK_weight*(72C\u00b3,\u221296C\u2074/H)/Delta,Delta=4C\u2076\u2212729H\u2074"
+  },
+  "actual_sample": {
+    "physical_point": "t=rho=R=z=1,U=5/2,W=\u22123/2,H=27/4,C=7/12; CM h=3alpha/2,y\u00b2=23/4,b=13/(4y\u22121)",
+    "hsrc": "2/81",
+    "Ht": "-1",
+    "Ct": "-19/12",
+    "f": "112/120123",
+    "Rseed": "3628240/534427227",
+    "Rseed_t": "-6985548944/792555577641",
+    "Rseed_U": "-13529103488/2377666732923",
+    "Rseed_R": "3913989632/2377666732923",
+    "sample_KP_coefficients": "kP=4alpha*(y+1)*(3\u22122zeta)/19,kQ=2*(y+1)*(9zeta\u22124)/19",
+    "A0": "alpha_s**2*(3728401069736*ys*zeta_s - 3753662734182*ys + 12135114515279*zeta_s - 7440993898654)/152258732637921",
+    "AH": "823515*alpha_s**2*(ys + 1)*(2*zeta_s - 3)/2199289",
+    "AC": "1705*alpha_s**2*(41832*ys*zeta_s - 174430*ys - 943299*zeta_s + 83628)/9263405268",
+    "SK_weight": "97185*alpha_s**2*(10136*ys*zeta_s - 9326*ys + 61985*zeta_s - 22908)/1601082392",
+    "remaining_j0_j1_j3_j4": [
+      "-2*alpha_s**2*(851057595660999093779216*ys*zeta_s - 1484334569849212966817216*ys - 98663421333441369269725*zeta_s - 1067770266432921661257733)/34401887044672500323043255",
+      "1115598821436*alpha_s**2*(10136*ys*zeta_s - 9326*ys + 61985*zeta_s - 22908)/6459898724985930835",
+      "-3702981744*alpha_s**2*(10136*ys*zeta_s - 9326*ys + 61985*zeta_s - 22908)/6459898724985930835",
+      "426681024*alpha_s**2*(10136*ys*zeta_s - 9326*ys + 61985*zeta_s - 22908)/6459898724985930835"
+    ],
+    "nonzero_proof": "Each displayed sample coefficient is reduced in the exact basis alpha^i*zeta^j*y^k, i<3,j<2,k<2. The nonzero SK weight and both SK rows are exact algebraic nonzero values, not numerical guesses."
+  },
+  "retained_counterdivisors": [
+    "Ht\u22123H Ct/(2C)=0",
+    "h\u2212alpha*t=0",
+    "zeta*h\u2212alpha*t=0",
+    "rho=0,y=0",
+    "b=0,infinity",
+    "y\u2212d=0 and y+d=0",
+    "C=0,Z=0",
+    "R=0,W=0",
+    "CM infinity and all intersections"
+  ],
+  "limitations": "The whole source cancellation of the seed scalar Rseed is genuine, and all actual P,Q normals and endpoint cochains were included. The full resulting compact remainder is nonzero at an actual point; this concrete candidate is a partial current, not a primitive or certificate. No exclusion of other t-moving currents is inferred."
+}

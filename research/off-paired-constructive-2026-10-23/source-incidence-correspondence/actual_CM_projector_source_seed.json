@@ -1,0 +1,52 @@
+{
+  "status": "SOURCE_FORCED_NONETA_CM_PROJECTOR_CURRENT_WITH_FULL_CORRECTION_NOT_CERTIFICATE",
+  "checks": {
+    "FULL_CM_Cauchy_curvature": true,
+    "FULL_CM_translated_character_curvature": true,
+    "CM_P_projector_exact": true,
+    "CM_Q_projector_exact": true,
+    "actual_P_source_normalization": true,
+    "literal_endpoint_Euler_fiber_cochain": true,
+    "actual_t_seed_SERVES_whole_thetaH": true
+  },
+  "check_count": 7,
+  "actual_CM_geometry": "alpha\u00b3=2,zeta\u00b3=1,zeta\u22601. P=(alpha*t,rho),Q=(h,y),h\u00b3=H,y\u00b2=H\u22121; omegaP=alpha*eta,eta=dt/rho,omegaQ=dh/y.",
+  "literal_projectors": {
+    "Omega": "(y+rho)/(2(h\u2212alpha*t))*(omegaQ\u2212alpha*eta)",
+    "Omega_zeta": "(y+rho)/(2(zeta*h\u2212alpha*t))*(zeta*omegaQ\u2212alpha*eta)",
+    "K_P": "4*(Omega_zeta\u2212zeta\u00b2*Omega)/(alpha\u00b2*(zeta\u00b2\u2212zeta))",
+    "K_Q": "4*(Omega_zeta\u2212zeta*Omega)/(alpha*(zeta\u00b2\u2212zeta))",
+    "curvatures": "dK_P=t*eta wedge omegaQ; dK_Q=h*eta wedge omegaQ. They contain non-eta components; all actual P and Q normal derivatives are retained."
+  },
+  "source_bound_first_current": {
+    "physical_field": "rho\u00b2=2t\u00b3\u22121,R=r+t/(4rho),z\u00b3=R/rho,W\u00b2=U\u00b2\u2212kappa R\u00b2,kappa=4t\u00b3/rho\u00b2,H=1+U\u00b2\u2212R\u00b2+tR/(2rho),C=tz\u00b2/3+z(U+W)/4.",
+    "source": "beta_original=hsrc*dt wedge dU wedge dR wedge thetaH,hsrc=\u2212(U/W\u22121)/(108rho),thetaH=\u2212(H+Cp)dp/Z\u00b3.",
+    "physical_H_t": "\u2212R*(t\u00b3+1)/(2rho\u00b3), at fixed U,R",
+    "physical_C_t": "\u2212t\u00b2*B/rho\u00b2\u2212A/(t*rho\u00b2)+3kappa*R\u00b2*z/(8t*rho\u00b2*W), A=tz\u00b2/3,B=z(U+W)/4, at fixed U,R",
+    "f": "hsrc/[H_t\u22123H*C_t/(2C)]",
+    "J_t_full": "f*dU wedge dR wedge theta0\u2212[f*C_t*p/(2C Z)]*dt wedge dU wedge dR",
+    "LITERAL_derivative": "dJ_t_full=beta_original+Rseed*dt wedge dU wedge dR wedge theta0,Rseed=f_t\u2212f*C_t/C. The displayed fiber cochain is indispensable."
+  },
+  "actual_source_forced_projector_repair": {
+    "spinor_b": "U=[b(y\u2212d)+(y+d)/b]/2,r=[b(y\u2212d)\u2212(y+d)/b]/2,d=t/(4rho); Psi*Psi_aux=b\u00b2,Psi_aux=(d+y)/(d\u2212y). Only dlogb is used as a rational form.",
+    "physical_volume_unit": "dt wedge dU wedge dR=(3rho*h\u00b2*y/2)*eta wedge omegaQ wedge dlogb",
+    "w": "\u22123rho*h\u00b2*y*Rseed/2",
+    "m": "w/t",
+    "J_CM": "m*K_P wedge dlogb wedge theta0",
+    "WHOLE_identity": "beta_original=d(J_t_full+J_CM)\u2212dm wedge K_P wedge dlogb wedge theta0\u2212m*K_P wedge dlogb wedge (dH wedge thetaH+dC wedge thetaC)",
+    "literal_endpoint_normal": "theta0=dp/Z; dtheta0=dH wedge thetaH+dC wedge thetaC,thetaC=\u2212p(H+Cp)dp/Z\u00b3. Thus every j=0,1,3,4 compact component and exact fiber term remains available; no row truncation is used.",
+    "no_cancellation_assertion": "The two displayed correction terms are generally nonzero. The candidate is submitted for an independent whole-source rational derivative audit, not declared a solve."
+  },
+  "counterdivisors": [
+    "h=alpha*t",
+    "zeta*h=alpha*t",
+    "P or Q infinity",
+    "rho=0,y=0",
+    "b=0,infinity",
+    "T=y\u2212d and y+d",
+    "H_t\u22123H C_t/(2C)=0",
+    "C=0,Z=0",
+    "R=0,W=0"
+  ],
+  "remaining": "Serve the actual full correction by a finite source-bound current or reject this single candidate. No amplitude fit, denominator sweep, or unrestricted nonexistence claim is implied."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "DIRECT_WHOLE_ORIGINAL_FIELD_HYPERELLIPTIC_CURRENT_AUDITOR_READY; THREE_CURRENT_PREFIX_OPEN",
+  "method": "Native FLINT fractions in Q(x,y,z,p), Z\u00b2=f=(H+Cp)\u00b2\u22124p\u2076. Differentiates the complete actual rational current before compact reduction. All Z poles, endpoint rows and fiber cochains are retained.",
+  "general_current": "J=sum_ij q2_ij(x,y,z,p) dx_i wedge dx_j wedge dp/Z+q3(x,y,z,p)dx wedge dy wedge dz/Z. Any higher odd Z pole is included by absorbing powers of f into the rational q coefficients.",
+  "WHOLE_exact_zero_test": "E=f*(d_base q2\u2212partial_p q3)\u2212(H+Cp)*[q2 wedge(dH+p dC)] +q3*[C(H+Cp)\u221212p\u2075]+y\u00b3(H+Cp)/6. Then dJ\u2212beta_original=E*dxdy dz dp/Z\u00b3. A genuine candidate passes exactly when the numerator of E is the zero polynomial.",
+  "checks": {
+    "WHOLE_literal_endpoint_derivative_matches_all_raw_rows": true
+  },
+  "prefix_E": {
+    "numerator_terms": 6927,
+    "denominator_terms": 632,
+    "numerator_degree": 71,
+    "denominator_degree": 62
+  },
+  "prefix_is_closed": false,
+  "API": "build() gives all actual original-field components; audit_form(data,q2,q3) returns the exact rational obstruction. Add the fourth source-bound current to q2,q3 and require not bool(E).",
+  "elapsed_seconds": 0.881
+}

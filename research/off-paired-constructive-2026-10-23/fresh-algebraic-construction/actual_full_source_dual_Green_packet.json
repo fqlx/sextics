@@ -1,0 +1,25 @@
+{
+  "status": "PASS_WHOLE_ORIGINAL_SOURCE_BOUND_FULL_T_DUAL_GREEN_PACKET; ENDPOINT_CLOSURE_OPEN",
+  "physical_field": "t=xy/z\u00b2,rho\u00b2=2t\u00b3\u22121,R=rho*z\u00b3,U=x\u00b3+y\u00b3,W=x\u00b3\u2212y\u00b3,kappa=4t\u00b3/rho\u00b2,P=3U(U+W)/(16R\u00b2),Lmono=(U+W)^3 R",
+  "source_convention": "Original affine \u03a9=dx de dy dz df=dx dy dz de df. Choose dF first in the double-pole residue. Then beta_original=(y\u00b3 dxdy dz) wedge theta_H/6, theta_H=\u2212(H+Cp)dp/Z\u00b3.",
+  "WHOLE_original_source": "beta_original=\u2212(U/W\u22121)*etaCM wedge dU wedge dR wedge theta_H/108, etaCM=dt/rho.",
+  "FULL_derivative_Green_U": "omega_U=d[P\u22123kappa/32]+kappa*dlogLmono/16+(3U/(16W))*dkappa",
+  "FULL_derivative_Green_W": "omega_W=d[P+3kappa/32]\u2212kappa*dlogLmono/16",
+  "FULL_difference": "omega_U\u2212omega_W=kappa*dlogLmono/8+(3/16)(U/W\u22121)*dkappa",
+  "FULL_sum": "omega_U+omega_W=2dP+(3U/(16W))*dkappa",
+  "WHOLE_source_binding": "beta_original=rho\u00b3/(243t\u00b2)*(omega_U\u2212omega_W\u2212kappa*dlogLmono/8) wedge dU wedge dR wedge theta_H",
+  "equivalent_source_log_packet": "beta_original=\u2212t*rho*dlogLmono wedge dU wedge dR wedge theta_H/486. The omega_U/W wedge dU wedge dR terms vanish since those Green forms are defined with only U,R legs; this is source transport, not a primitive.",
+  "normalizations": "dkappa=\u221212t\u00b2dt/rho\u2074; all physical t normals of z,W,rho,kappa are retained. Original source is entire signed U/W channel combination, not one channel alone.",
+  "remaining": "Construct an actual endpoint-coupled current using the full Green/CM-projector packet. No scalar logarithm or primitive of etaCM is silently allowed.",
+  "checks": {
+    "TW_dt_is_three_over_32_dkappa": true,
+    "TU_dt_split": true,
+    "FULL_difference_has_no_dt_component": true,
+    "FULL_sum_dt_cancellation": true,
+    "WHOLE_original_jacobian": true,
+    "WHOLE_original_A_unit": true,
+    "WHOLE_Green_difference_source_unit": true,
+    "WHOLE_logL_source_unit": true
+  },
+  "check_count": 8
+}

@@ -1,0 +1,18 @@
+{
+  "status": "FULL_SOURCE_Y_CM_REPAIR_TRACE_NOT_FULL_CERTIFICATE",
+  "checks": {
+    "WHOLE_ytrace_including_spinor_and_PQ_legs": true,
+    "WHOLE_original_rho_trace_including_form_parity": true
+  },
+  "check_count": 2,
+  "scope": "The h-trace formula is independently supplied by parent/algebraic audit; this script checks the WHOLE subsequent y and rho traces including moving dlogb. It never multiplies independent traces.",
+  "h_trace": "Tr_h(h\u00b2*y*KP)=2(y+rho)/(H\u22122t\u00b3)*[t*y*H*eta\u2212t\u00b2*dH/3]",
+  "physical_spinor": "dlogb=(dlogPsi+dlogPsi_aux)/2; dlogPsi_aux=d*dH/(yK)\u22122y*Deta(d)*eta/K, d=t/(4rho),Deta(d)=\u2212(t\u00b3+1)/(4rho\u00b2),K=H0\u2212H.",
+  "FULL_h_y_trace": "[tH(H\u22121)eta\u2212t\u00b2rho*dH/3]/(H\u22122t\u00b3) wedge dlogPsi + E*eta wedge dH",
+  "E": "t**2*(H*(8*t**3 - 1) - 2*t**3 - 2)/(rho**2*(12*H - 24*t**3)*(-H + 1 + t**2/(16*rho**2)))",
+  "actual_rho_deck": "rho\u2192\u2212rho at fixed original x,y,z gives R,r,d\u2192their negatives, eta\u2192\u2212eta, Psi\u2192Psi^-1, H,U,W,t unchanged. Hence the E*eta*dH term is odd; the entire first two-form is even.",
+  "Y_seed_amplitude": "B*Ppoly/(72t*A\u00b2),B=U/W\u22121,A=3(U\u00b2\u22121)\u22123(2t\u00b3+3)z6\u2212tz3,Ppoly=\u221212U\u00b2\u22126+(24t\u00b3\u221272)z6\u2212tz3. This factor is rho-even in actual original variables.",
+  "FULL_descended_CM_current": "J_CMdesc=B*Ppoly/[72t*A\u00b2*(H\u22122t\u00b3)] * [tH(H\u22121)eta\u2212t\u00b2rho*dH/3] wedge dlogPsi wedge theta0",
+  "rationality": "No alpha,zeta,h,y auxiliary CM radical remains. eta wedge dlogPsi and rho*dlogPsi are rational in the original coefficient field because r=rho*z\u00b3\u2212t/(4rho),R=rho*z\u00b3,rho\u00b2=2t\u00b3\u22121.",
+  "mandatory_remaining": "Differentiate the ENTIRE descended current, including amplitude, H,t,actual Psi,endpoint C/H,p,Z and every pole. This is the same source-bound candidate by normalized trace; no residual cancellation is asserted."
+}

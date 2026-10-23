@@ -1,0 +1,46 @@
+{
+  "status": "INDEPENDENT_ACTUAL_DIFFERENTIATED_VECTOR_AUDIT_PASS; ORIGINAL_TARGET_CURRENT_OPEN",
+  "method": "Native exact fractions in Q(x,y,z,e,b). Set p=e*b BEFORE constructing and literally differentiating all five ambient vector components. No q(H),q(C),div(q) placeholders or imported producer implementation enter the derivative.",
+  "actual_F": "1+x6+y6+z6+e6+b6+xyz/2+x3*z*e*b/2+xy*e*b/3",
+  "actual_A": "y3",
+  "current_q": [
+    "x*p/(1+p)",
+    "y+z*p",
+    "z*p\u00b2/(1+x)"
+  ],
+  "current_s": "(x+y*z)*p\u00b2/(1+p)",
+  "general_scope": "Arbitrary rational base/p dependence in q and s, including higher odd Z poles absorbed by Z\u00b2=f on the endpoint. This q-vector is not the certificate pole parameter; the immutable problem here has pole parameter one.",
+  "independent_general_reason": "For T=e*d_e+b*d_b,D=e*d_e-b*d_b, D(p)=0,D(R)=6Z,D(Z)=6R,T(p)=2p. D annihilates all rational base/p coefficient dependence. Vertical divergence is -6s_p+18s/p-KR/Z\u00b2; Z\u00b2-f=F(R-L) yields the complete extraction identity.",
+  "actual_test_point": {
+    "x": "1",
+    "y": "2",
+    "z": "1",
+    "e": "2",
+    "b": "1"
+  },
+  "point_values": {
+    "normal": "8",
+    "divergence": "968354/11907",
+    "E": "-1415453/27",
+    "Qstar": "14128/11907"
+  },
+  "E0_conditional_test": "Aaux=C_y*H_x-C_x*H_y !=0, q=(C_y,-C_x,0)/6,s=0. Its extracted vertical components vanish, and V=(C_y,-C_x,0,0,0) is directly divergence-free with dF(V)=Aaux. Aaux is NOT the immutable source y^3.",
+  "limitations": "Extraction infrastructure only. The globally differentiated Y+CM+Green target prefix has E!=0. Homogenization, degrees and complex-coprimality remain required for any future closed target current.",
+  "checks": {
+    "actual_immutable_affine_F": true,
+    "q_has_every_base_and_endpoint_dependence": true,
+    "s_has_every_base_and_endpoint_dependence": true,
+    "DIRECT_endpoint_partial_s_p": true,
+    "DIRECT_five_coordinate_normal": true,
+    "DIRECT_five_coordinate_divergence": true,
+    "DIRECT_complete_localization_identity": true,
+    "arbitrary_current_has_NONZERO_target_obstruction": true,
+    "actual_vector_test_denominators_nonzero": true,
+    "NONTRIVIAL_E0_auxiliary_source": true,
+    "E0_extracted_vertical_components_zero": true,
+    "DIRECT_E0_auxiliary_normal": true,
+    "DIRECT_E0_auxiliary_divergence": true
+  },
+  "check_count": 13,
+  "elapsed_seconds": 0.017
+}

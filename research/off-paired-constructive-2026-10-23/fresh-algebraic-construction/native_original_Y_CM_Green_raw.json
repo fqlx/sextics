@@ -1,0 +1,44 @@
+{
+  "status": "DIRECT_GLOBAL_ORIGINAL_FIELD_WHOLE_THREE_CURRENT_DERIVATIVE; OPEN_BEFORE_CLOW_FOURTH",
+  "method": "Native FLINT fractions in Q(x,y,z); all radicals removed before differentiation. JY includes its literal base3*p/Z cochain. No main-term identities are substituted during the whole derivative.",
+  "checks": {
+    "WHOLE_Y_thetaH_source": true,
+    "WHOLE_Y_thetaC_zero": true,
+    "independent_global_vs_root_fulljet_theta0": true,
+    "independent_global_vs_root_fulljet_thetaH": true,
+    "independent_global_vs_root_fulljet_thetaC": true
+  },
+  "whole_raw_dJ_minus_beta": {
+    "theta0": {
+      "numerator_terms": 722,
+      "denominator_terms": 632,
+      "numerator_degree": 59,
+      "denominator_degree": 62
+    },
+    "thetaH": {
+      "numerator_terms": 351,
+      "denominator_terms": 192,
+      "numerator_degree": 47,
+      "denominator_degree": 44
+    },
+    "thetaC": {
+      "numerator_terms": 424,
+      "denominator_terms": 192,
+      "numerator_degree": 45,
+      "denominator_degree": 44
+    }
+  },
+  "exact_original_point_x1_y2_z1": {
+    "theta0": "11555244534637/386644350177696",
+    "thetaH": "-257373169865/13693311736",
+    "thetaC": "-1444547375/10269983802"
+  },
+  "independent_original_aq_seed_in_mu": {
+    "theta0": "-10792687196/295659",
+    "thetaH": "-89018740/32319",
+    "thetaC": "-15205235/290871"
+  },
+  "all_three_currents_closed": false,
+  "generator": "Import build() and whole_raw() from this file for an actual Clow fourth-current global check. The raw functions themselves are retained exactly; they are not replaced by numerical probes.",
+  "elapsed_seconds": 0.313
+}

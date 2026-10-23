@@ -1,0 +1,183 @@
+{
+  "status": "UNSOLVED_PARTIAL_IDENTITIES_ONLY",
+  "snapshot_utc": "2026-10-23T12:07:48.342534+00:00",
+  "research_base_commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+  "target_record_sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d",
+  "variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "q": 1,
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "python-flint": "0.9.0"
+  },
+  "certificate_supplied": false,
+  "whole_prefix_obstruction_zero": false,
+  "prepared_without_external_writes": true,
+  "replay": {
+    "script_count": 15,
+    "all_exit_codes_zero": true,
+    "scripts": [
+      "bind_target.py",
+      "root_CM_projector_and_original_source.py",
+      "fresh-algebraic-construction/actual_CM_Green_concomitants.py",
+      "fresh-algebraic-construction/actual_full_source_dual_Green_packet.py",
+      "source-incidence-correspondence/actual_CM_projector_source_seed.py",
+      "source-incidence-correspondence/actual_full_CM_repair_descent.py",
+      "endpoint-adjoint-new/ward/actual_full_t_seed_CM_projector_literal_audit.py",
+      "endpoint-adjoint-new/ward/actual_original_field_Y_CMdesc_literal_audit.py",
+      "fresh-algebraic-construction/actual_Y_CM_Green_weight_repair.py",
+      "fresh-algebraic-construction/native_original_Y_CM_Green_raw.py",
+      "fresh-algebraic-construction/native_original_endpoint_current_audit.py",
+      "root_current_to_certificate_lift.py",
+      "independent_current_to_certificate_lift_audit.py",
+      "fresh-global-construction/ONE_actual_Psi_assembled_current.py",
+      "root_ONE_current_literal_audit.py"
+    ]
+  },
+  "frozen_history": [
+    "https://gist.github.com/fqlx/2023ba9f5ddc2117c72a03fb9a4c7c55",
+    "https://github.com/fqlx/sextics/blob/f7a73cf3346e1da8fded079f16b9e827f218902b/research/off-paired-2026-10-23/HANDOFF-2026-10-23.md",
+    "https://github.com/fqlx/sextics/blob/79bd381f50fbcbdf385835982afbac440c99b145/research-handoff/README.md"
+  ],
+  "files": {
+    "README.md": {
+      "sha256": "3e01f66a093ed4b1efc3c5fa18c2c3ef33102139191d1cba9fd5149b2af25bfb",
+      "bytes": 6892
+    },
+    "bind_target.py": {
+      "sha256": "6662989fa9ad895acdab8de65b2c4f88eed45f0d9e977504afb549578b9fda06",
+      "bytes": 957
+    },
+    "endpoint-adjoint-new/native_q_connection.json": {
+      "sha256": "efeebcfd54ef576bebdc266d1b1194ac83b4d9e468d4c3d9f716410fa43261a0",
+      "bytes": 2030
+    },
+    "endpoint-adjoint-new/ward/actual_full_t_seed_CM_projector_literal_audit.json": {
+      "sha256": "e2163e2242709579f0df893e3f5912898e0c2b0b1b7197e2ee1afda77c05a8b4",
+      "bytes": 5287
+    },
+    "endpoint-adjoint-new/ward/actual_full_t_seed_CM_projector_literal_audit.py": {
+      "sha256": "477714c9ee4d739015ee2cff6af908fbeb8a281c77ee4e86cf5524d34a99ca22",
+      "bytes": 10175
+    },
+    "endpoint-adjoint-new/ward/actual_original_field_Y_CMdesc_literal_audit.json": {
+      "sha256": "bef76b3c39dcb634f0473e098299e5f2bb8f676d3d4c8af865a094ccda10c962",
+      "bytes": 5576
+    },
+    "endpoint-adjoint-new/ward/actual_original_field_Y_CMdesc_literal_audit.py": {
+      "sha256": "2ae8c463d9a43adc84461fc541b5ea6cf39244279a6bbe25311596632498f59c",
+      "bytes": 9610
+    },
+    "fresh-algebraic-construction/actual_CM_Green_concomitants.json": {
+      "sha256": "3c60ec42e9914fc954ce0511167993accd3121dd6b4b474ecd1a5f5189b2d421",
+      "bytes": 5042
+    },
+    "fresh-algebraic-construction/actual_CM_Green_concomitants.py": {
+      "sha256": "6f57d9e303600267f7090fbca8936001ff85f2301c725d7725fc8d9813e858be",
+      "bytes": 6549
+    },
+    "fresh-algebraic-construction/actual_Y_CM_Green_weight_repair.json": {
+      "sha256": "3357e62a1997e3356ffd256c6e50f847a015985889dfbc4008cb9bb8f8aa112d",
+      "bytes": 3863
+    },
+    "fresh-algebraic-construction/actual_Y_CM_Green_weight_repair.py": {
+      "sha256": "ec422760b3e33561be4ca4d8ce5d519e5832270748a23e2a1b3bec3c07e46d4b",
+      "bytes": 5742
+    },
+    "fresh-algebraic-construction/actual_full_source_dual_Green_packet.json": {
+      "sha256": "3e8448a16674db4501fb65b5a847f62ffdc3c8079b2e3c0601dc024edbacad42",
+      "bytes": 2038
+    },
+    "fresh-algebraic-construction/actual_full_source_dual_Green_packet.py": {
+      "sha256": "0ec5d9b44392cf9037cc272234f5be4a070aa335c541135d4bda4d9379dbd4d1",
+      "bytes": 3674
+    },
+    "fresh-algebraic-construction/native_original_Y_CM_Green_raw.json": {
+      "sha256": "4cdcd368eabe9f9772fd8a7ebd59461110933baa3d39d48eeafb5bc878d569ed",
+      "bytes": 1630
+    },
+    "fresh-algebraic-construction/native_original_Y_CM_Green_raw.py": {
+      "sha256": "342447dc40a232b3c2c8c59d07ca59c88d893379f9c814b914ca288306c45f67",
+      "bytes": 5287
+    },
+    "fresh-algebraic-construction/native_original_endpoint_current_audit.json": {
+      "sha256": "74e2898732c326e5cc8d52d48d1841c35febf0a7afc4043e01d5b16dc0ede488",
+      "bytes": 1292
+    },
+    "fresh-algebraic-construction/native_original_endpoint_current_audit.py": {
+      "sha256": "dda351ca35f7202df01833734c62b1e3ffd8032e5c57b40d722e38737daa69bd",
+      "bytes": 5495
+    },
+    "fresh-global-construction/ONE_actual_Psi_assembled_current.json": {
+      "sha256": "9daf0488ce2a536d8e8d7cac87526baad4a5182c4f588f3acf25e14a6170e2f9",
+      "bytes": 4283
+    },
+    "fresh-global-construction/ONE_actual_Psi_assembled_current.py": {
+      "sha256": "8b5d14fc003d1de91abea3280c86fffc580a094dfd602ffc1760dadc6e510d3a",
+      "bytes": 6486
+    },
+    "independent_current_to_certificate_lift_audit.json": {
+      "sha256": "f3970f8eb655a10b3e7f105ad21611192213cc6a84921093e89292cc66a74567",
+      "bytes": 2401
+    },
+    "independent_current_to_certificate_lift_audit.py": {
+      "sha256": "1a757ccbe6521eb443c53db629cca8413211b1e51086a59909d24ce82b7bde94",
+      "bytes": 5579
+    },
+    "live-instance.rec": {
+      "sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d",
+      "bytes": 3316
+    },
+    "requirements.txt": {
+      "sha256": "7f2e6608da77418fa1d201a307a604aedf1082d0b146119a9f43ce57d37dc166",
+      "bytes": 34
+    },
+    "root_CM_projector_and_original_source.json": {
+      "sha256": "240133962cab0b8ae82132b7b40cbdf4575fe4d90c5808a68fee30e248aa0780",
+      "bytes": 1529
+    },
+    "root_CM_projector_and_original_source.py": {
+      "sha256": "4980c05c5cd57246943b3c5cbf8db914aefe425ae36184acad3c523e7f100c32",
+      "bytes": 2383
+    },
+    "root_ONE_current_literal_audit.json": {
+      "sha256": "cc67043cc5736b87cb6a7b316395e54b598a2f9c10aa65a8952705749740d182",
+      "bytes": 718
+    },
+    "root_ONE_current_literal_audit.py": {
+      "sha256": "bed49ac279f76e80a8d35579fd120333fc684af7f801d3532ae3e7de4576ed70",
+      "bytes": 2515
+    },
+    "root_current_to_certificate_lift.json": {
+      "sha256": "4b22f649d2b50cf3c7b6f3e864367c19ccb8f22dd700192c3d1be4d575c4f5fa",
+      "bytes": 1290
+    },
+    "root_current_to_certificate_lift.py": {
+      "sha256": "3f358f260be746fedb0d6840229fdfb65565f76590596c1ef190d3721cc16668",
+      "bytes": 2494
+    },
+    "source-incidence-correspondence/actual_CM_projector_source_seed.json": {
+      "sha256": "588e13731d4ff6a69773f12c57b6667fda4b2fc41470f8005db01926a6567754",
+      "bytes": 3394
+    },
+    "source-incidence-correspondence/actual_CM_projector_source_seed.py": {
+      "sha256": "32dcfad606c2468887182015ba376a5eb5547e59206f441df02a8496f554d900",
+      "bytes": 4474
+    },
+    "source-incidence-correspondence/actual_full_CM_repair_descent.json": {
+      "sha256": "981ecd4c0e6d6807f6a1c0ac11af85ecdfd6a0e3a98e569c5bb4fa83a21ed332",
+      "bytes": 1961
+    },
+    "source-incidence-correspondence/actual_full_CM_repair_descent.py": {
+      "sha256": "55fca013814eeca77fd1724668891be8b964c15ab663c87718f873abd488eebe",
+      "bytes": 3107
+    }
+  }
+}

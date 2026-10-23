@@ -1,0 +1,49 @@
+{
+  "status": "PASS_ONE_WHOLE_ACTUAL_SOURCE_CURRENT; EXACT_REMAINDER_NONZERO",
+  "source": "beta_U=etaCM wedge dH wedge dv wedge thetaH/432, v=logPsi, Psi=kboost\u00b2/(H0\u2212H). dv is the rational dlog of the actual source unit, not a scalar logarithm in any coefficient. Whole original source is the signed U-channel sum.",
+  "endpoint": "Z\u00b2=(H+Cp)\u00b2\u22124p6, Xi=(H+Cp+Z)/(2p\u00b3), lXi=dlogXi=[dH+p*dC\u2212(3H+2Cp)*dp/p]/Z; theta0=dp/Z, thetaH=\u2212(H+Cp)dp/Z\u00b3.",
+  "actual_physical_normals": "H=H0+U\u00b2\u2212r\u00b2,H0=1+d\u00b2,r=R\u2212d,R=rho*z\u00b3,d=t/(4rho),rho\u00b2=2t\u00b3\u22121,W\u00b2=U\u00b2\u22124t\u00b3z6,C=tz\u00b2/3+z(U+W)/4. kboost=U+r. All z,W motions are retained.",
+  "rational_coefficients": {
+    "vH": "partial_H logPsi at fixed C = (U*C_U+r*C_r)/[J*(H0\u2212H)]",
+    "vC": "partial_C logPsi at fixed H =2/J, J=U*C_r+r*C_U",
+    "Ev": "3H*vH+2C*vC",
+    "m": "vC/(216Ev), so m*dv=g*ds for the actual source marker s=Psi+Psi^-1",
+    "a": "vH/(432Ev)",
+    "phi": "C\u00b2*vH\u00b2/(432Ev)\u2212C\u00b2*vH/(1296H)"
+  },
+  "ONE_FULL_LITERAL_CURRENT": {
+    "Jcontact": "etaCM wedge m*dv wedge (p*dC\u22122C*dp)/(2Z)",
+    "Jlambda": "etaCM wedge [a*dv\u2212vH*dH/(1296H)] wedge lambda1_abs",
+    "Jtau": "etaCM wedge dphi wedge tau_abs",
+    "absolute_SW_forms": "lambda1_abs=p*lXi,tau_abs=p\u00b2*lXi/C. Their base legs ALREADY INCLUDE every exact fiber cochain. Do not add the separate relative-cochain correction a second time.",
+    "prefix_scope": "This is exactly the source-Psi full cubic Schiffer/fiber/Tate fold, the theta0-serving lambda current, the algebraic+doublepole tau potential, the actual three-root Newton pole current, and the last R1-serving lambda current, after algebraic consolidation. No conserved-Phi piece was added without a source equality."
+  },
+  "EXACT_WHOLE_IDENTITY": "beta_U=d(Jcontact+Jlambda+Jtau)\u2212etaCM wedge dH wedge dC*vHC*theta0/432, where vHC=partial_Hpartial_C logPsi. All secondkind rows are zero, fifth output is exactly zero; the displayed holomorphic theta0 coefficient remains.",
+  "WHOLE_exact_current_collapse": "Jcontact+Jlambda+Jtau=\u2212etaCM*vC*dC wedge dp/(432Z)\u2212d[etaCM*phi*p\u00b2*dlogXi/C]. This equality is literal in all HC,Hp,Cp current coefficients; the entire assembled current is elementary H-integration-by-parts plus an exact current. No closure beyond that cycle is claimed.",
+  "equivalent_physical_REMAINDER": "muUr*[1/U\u00b2+Boost(C_U/(U J))]*theta0/216 =\u2212muUr*Boost(vH)*theta0/216, muUr=etaCM dU dr,Boost=r*partial_U+U*partial_r. This is the compact IBP representative of the original source; it is not a cancellation.",
+  "prefix_before_last_lambda": "Jcontact +etaCM wedge[a*dv+n*dH/(1296H*K)] wedge lambda1_abs +etaCM wedge dphi wedge tau_abs, n=\u2212r/U,K=H0\u2212H. This prefix produces the following two-row target; the displayed THREE-piece current above additionally contains the last lambda correction.",
+  "pre_last_lambda_rank2_packet": "muUr{theta0/(216U\u00b2)\u2212[C_U/U+2C*Boost(C_U/(U J))]*theta1/(648H)}; adding eta*[C_U/(U J)]*dH*lambda1_abs/(1296H) serves theta1 and yields the displayed single theta0 remainder.",
+  "actual_C_annihilator_test": {
+    "actual_point": "t=1,rho=1,d=1/4,U=5/2,R=1,z=1,W=\u22123/2",
+    "C": "7/12",
+    "H": "27/4",
+    "J": "83/36",
+    "vHC": "-60/571787",
+    "physical_remaining_theta0": "5/4464072",
+    "conclusion": "Both actual C annihilators vanish at this legitimate source point while the remaining coefficient is nonzero. Therefore these annihilators do not make THIS assembled remainder zero. A further source-serving current is still required; no broader nonexistence claim is made."
+  },
+  "checks": {
+    "WHOLE_assembled_theta0": true,
+    "WHOLE_assembled_theta1": true,
+    "fifth_row_identically_zero": "B=etaCM wedge dphi is closed; no fifth-output forcing is discarded",
+    "WHOLE_literal_IBP_collapse_HC": true,
+    "WHOLE_literal_IBP_collapse_Hp": true,
+    "WHOLE_literal_IBP_collapse_Cp": true,
+    "actual_endpoint_normal_identity_at_point": true,
+    "actual_remaining_source_NONZERO": true,
+    "actual_C_Euler_annihilator_at_point": true,
+    "actual_C_heat_annihilator_at_point": true,
+    "actual_source_incidence_nonzero": true
+  },
+  "check_count": 11
+}
