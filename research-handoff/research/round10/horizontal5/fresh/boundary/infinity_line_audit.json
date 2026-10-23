@@ -1,0 +1,105 @@
+{
+  "original_D_sha256": "d228daf9d802fae899472ff6acd6be6c5a1923a1c4db0cd1f9a125689f0b016f",
+  "coordinates": "Y2=1, X1=tau!=0, X0=u*tau, delta=Y0^6+1=b*r",
+  "finite_normalization_reason": "q|u=b=delta=0=-533655864*zeta*tau^19 is a unit for tau!=0",
+  "etale_X2_elimination": "X2^6+tau^6=0, X2!=0, so F_X2!=0",
+  "faces": [
+    {
+      "name": "first",
+      "weights_u_b_r": [
+        3,
+        2,
+        6
+      ],
+      "degree": 12,
+      "initial_surface": "1929375*b**3*r*zeta**5 - 918750*b**3*tau**2*u**2 - 533655864*r**2*tau**2*zeta",
+      "square_completion_branch_initial": "-3722487890625*b**6*zeta**4 - 1961185300200000*b**3*tau**4*u**2*zeta",
+      "branch_support": [
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "adjoint_cutoff": 2
+    },
+    {
+      "name": "middle",
+      "weights_u_b_r": [
+        1,
+        2,
+        4
+      ],
+      "degree": 8,
+      "initial_surface": "-918750*b**3*tau**2*u**2 - 15435000*b**2*tau**2*u**4*zeta**5 + 57624000*b*tau**2*u**6*zeta**4 - 533655864*r**2*tau**2*zeta",
+      "square_completion_branch_initial": "-1961185300200000*b**3*tau**4*u**2*zeta + 32947913043360000*b**2*tau**4*u**4 + 123005542028544000*b*tau**4*u**6*zeta**5",
+      "branch_support": [
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "adjoint_cutoff": 2
+    },
+    {
+      "name": "last",
+      "weights_u_b_r": [
+        1,
+        8,
+        7
+      ],
+      "degree": 14,
+      "initial_surface": "57624000*b*tau**2*u**6*zeta**4 - 533655864*r**2*tau**2*zeta - 181515600*r*tau**2*u**7*zeta**2",
+      "square_completion_branch_initial": "123005542028544000*b*tau**4*u**6*zeta**5 + 32947913043360000*tau**4*u**14*zeta**4",
+      "branch_support": [
+        [
+          14,
+          0
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "adjoint_cutoff": -1
+    }
+  ],
+  "branch_Newton_vertices": [
+    [
+      0,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      14,
+      0
+    ]
+  ],
+  "middle_edge_discriminant": "-26471025000000*zeta**4",
+  "all_edges_nondegenerate_over_both_cyclotomic_components": true,
+  "adjoint_ideal_in_normalized_surface": "(u^2,b,r)",
+  "adjoint_quotient_basis": [
+    "1",
+    "u"
+  ],
+  "transverse_geometric_genus": 2,
+  "scope": "Generic tau!=0,infinity collision along X0=Y1=0, Y0=zeta*Y2, X2=eta*X1. The vertex tau=0 and Y2=0 endpoints, global coherent extension, and source Gysin map are separate."
+}

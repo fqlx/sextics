@@ -1,0 +1,15 @@
+{
+  "degree": 32,
+  "terms": 558,
+  "removed_coordinate_factor": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    2
+  ],
+  "max_coefficient_digits": 10,
+  "literal_definition": "Primitive homogeneous numerator of Y2\u00b2 - [t_old/h\u00b2](Y0/Y2,Y1/Y2,X1/X0)*X0\u00b2.",
+  "scope": "Exact support from source-specific relative Schiffer graph; not a certificate."
+}

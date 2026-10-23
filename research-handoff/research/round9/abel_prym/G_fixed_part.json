@@ -1,0 +1,276 @@
+{
+  "prime": 1009,
+  "records": [
+    {
+      "a_b_v": [
+        580,
+        1,
+        2
+      ],
+      "parameters": [
+        621,
+        717,
+        61
+      ],
+      "d_b_parameters": [
+        809,
+        710,
+        951
+      ],
+      "d_bb_parameters": [
+        639,
+        481,
+        622
+      ],
+      "N_b": [
+        [
+          703,
+          311,
+          40
+        ],
+        [
+          211,
+          778,
+          265
+        ],
+        [
+          189,
+          986,
+          882
+        ]
+      ],
+      "d_b_N_b": [
+        [
+          889,
+          158,
+          760
+        ],
+        [
+          98,
+          742,
+          643
+        ],
+        [
+          898,
+          309,
+          853
+        ]
+      ],
+      "hol_Higgs_kernel_line": [
+        265,
+        969,
+        0
+      ],
+      "hol_covariant_derivative": [
+        914,
+        85,
+        0
+      ],
+      "kernel_flatness_wedge": 563
+    },
+    {
+      "a_b_v": [
+        580,
+        2,
+        2
+      ],
+      "parameters": [
+        807,
+        579,
+        283
+      ],
+      "d_b_parameters": [
+        194,
+        984,
+        514
+      ],
+      "d_bb_parameters": [
+        263,
+        127,
+        172
+      ],
+      "N_b": [
+        [
+          280,
+          747,
+          824
+        ],
+        [
+          144,
+          424,
+          817
+        ],
+        [
+          365,
+          878,
+          214
+        ]
+      ],
+      "d_b_N_b": [
+        [
+          123,
+          305,
+          773
+        ],
+        [
+          418,
+          78,
+          22
+        ],
+        [
+          385,
+          223,
+          897
+        ]
+      ],
+      "hol_Higgs_kernel_line": [
+        817,
+        185,
+        0
+      ],
+      "hol_covariant_derivative": [
+        145,
+        837,
+        0
+      ],
+      "kernel_flatness_wedge": 145
+    },
+    {
+      "a_b_v": [
+        580,
+        4,
+        2
+      ],
+      "parameters": [
+        919,
+        440,
+        913
+      ],
+      "d_b_parameters": [
+        894,
+        40,
+        451
+      ],
+      "d_bb_parameters": [
+        995,
+        582,
+        978
+      ],
+      "N_b": [
+        [
+          128,
+          743,
+          858
+        ],
+        [
+          711,
+          818,
+          617
+        ],
+        [
+          289,
+          460,
+          40
+        ]
+      ],
+      "d_b_N_b": [
+        [
+          290,
+          525,
+          80
+        ],
+        [
+          156,
+          674,
+          916
+        ],
+        [
+          385,
+          742,
+          306
+        ]
+      ],
+      "hol_Higgs_kernel_line": [
+        617,
+        151,
+        0
+      ],
+      "hol_covariant_derivative": [
+        588,
+        685,
+        0
+      ],
+      "kernel_flatness_wedge": 887
+    },
+    {
+      "a_b_v": [
+        580,
+        7,
+        2
+      ],
+      "parameters": [
+        699,
+        797,
+        31
+      ],
+      "d_b_parameters": [
+        965,
+        538,
+        7
+      ],
+      "d_bb_parameters": [
+        678,
+        651,
+        718
+      ],
+      "N_b": [
+        [
+          756,
+          23,
+          26
+        ],
+        [
+          152,
+          129,
+          583
+        ],
+        [
+          887,
+          418,
+          983
+        ]
+      ],
+      "d_b_N_b": [
+        [
+          716,
+          544,
+          161
+        ],
+        [
+          728,
+          184,
+          799
+        ],
+        [
+          452,
+          649,
+          316
+        ]
+      ],
+      "hol_Higgs_kernel_line": [
+        583,
+        983,
+        0
+      ],
+      "hol_covariant_derivative": [
+        698,
+        813,
+        0
+      ],
+      "kernel_flatness_wedge": 744
+    }
+  ],
+  "conclusion": "The unique actual holomorphic kernel of the b-Higgs map is not invariant under the b-Gauss-Manin connection. Together with the nonzero conjugate hol-to-eta map, this excludes a flat holomorphic line in either eigencharacter along generic b on G, hence excludes a constant CM E0 summand of the restricted Prym family. It does not determine all H20, or exclude other source/correspondence routes.",
+  "convention": "nabla(coefficient column)=d+N^T; h=(N_b[1,2],-N_b[0,2],0)",
+  "seconds": 1.762
+}

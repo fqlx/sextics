@@ -1,0 +1,147 @@
+{
+  "variables": [
+    "L",
+    "r",
+    "x",
+    "s"
+  ],
+  "proper_basis_pole_orders": [
+    1,
+    1,
+    2
+  ],
+  "boundary_basis": [
+    "Res(h^4 Omega/((t-s h^2) C))",
+    "Res(W^3 h Omega/((t-s h^2) C))"
+  ],
+  "convention": "rowbasis: partial_j beta=N_j beta +exact; coefficientcolumns partial_j+N_j^T",
+  "independent_residue_connection_exact": true,
+  "proper_source_embedding": "Sproper in first3; last2zero",
+  "theta_projection": "theta_chi=(1-zeta3^2)*w^2*((-q-u)*sigma0-sigma1), u=w^3, q=c*(1+s)",
+  "theta_residue_coefficient_horizontal_exact": {
+    "L": true,
+    "r": true,
+    "x": true,
+    "s": true
+  },
+  "theta_proper_derivative": "(1-zeta3^2)*w^2*((-q-u)*N_j[3,0:3]-N_j[4,0:3])",
+  "input_sha256": {
+    "/workspace/research/round9/cyclic_full/global_eta_frame.pickle": "93d482c1838939c2946e85bb6d75329b05aada8a719e4ad38d1816ceda332bc4",
+    "/workspace/research/round9/open_curve/boundary_native.pickle": "088cd3d9c4b7f80dde46fdc418424470e19bc709f2df4c0a1233d31bddab3cc4"
+  },
+  "exact_curvature": {
+    "L,r": [],
+    "L,x": [],
+    "L,s": [],
+    "r,x": [],
+    "r,s": [],
+    "x,s": []
+  },
+  "seconds": 1.2321555614471436,
+  "denominators": {
+    "L": {
+      "degrees": [
+        6,
+        8,
+        5,
+        6
+      ],
+      "terms": 258,
+      "factorization": [
+        {
+          "factor": "L*x + r*x*s + s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "196*L*x + 196*r*x*s - 25*x*s^2 - 50*x*s - 25*x + 196*s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "27*L^2 + 4*r^3*x",
+          "exponent": 1
+        },
+        {
+          "factor": "50824368*L^2 + 4321800*L*r*x - 15625*L*x^2 - 1102500*L*x - 12965400*L + 7529536*r^3*x - 30625*r^2*x^2 - 5762400*r^2*x + 15625*r*x^2 + 918750*r*x + 15625*x + 826875",
+          "exponent": 1
+        }
+      ]
+    },
+    "r": {
+      "degrees": [
+        6,
+        8,
+        5,
+        6
+      ],
+      "terms": 258,
+      "factorization": [
+        {
+          "factor": "L*x + r*x*s + s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "196*L*x + 196*r*x*s - 25*x*s^2 - 50*x*s - 25*x + 196*s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "27*L^2 + 4*r^3*x",
+          "exponent": 1
+        },
+        {
+          "factor": "50824368*L^2 + 4321800*L*r*x - 15625*L*x^2 - 1102500*L*x - 12965400*L + 7529536*r^3*x - 30625*r^2*x^2 - 5762400*r^2*x + 15625*r*x^2 + 918750*r*x + 15625*x + 826875",
+          "exponent": 1
+        }
+      ]
+    },
+    "x": {
+      "degrees": [
+        6,
+        8,
+        6,
+        6
+      ],
+      "terms": 258,
+      "factorization": [
+        {
+          "factor": "x",
+          "exponent": 1
+        },
+        {
+          "factor": "L*x + r*x*s + s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "196*L*x + 196*r*x*s - 25*x*s^2 - 50*x*s - 25*x + 196*s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "27*L^2 + 4*r^3*x",
+          "exponent": 1
+        },
+        {
+          "factor": "50824368*L^2 + 4321800*L*r*x - 15625*L*x^2 - 1102500*L*x - 12965400*L + 7529536*r^3*x - 30625*r^2*x^2 - 5762400*r^2*x + 15625*r*x^2 + 918750*r*x + 15625*x + 826875",
+          "exponent": 1
+        }
+      ]
+    },
+    "s": {
+      "degrees": [
+        2,
+        2,
+        2,
+        6
+      ],
+      "terms": 15,
+      "factorization": [
+        {
+          "factor": "L*x + r*x*s + s^3",
+          "exponent": 1
+        },
+        {
+          "factor": "196*L*x + 196*r*x*s - 25*x*s^2 - 50*x*s - 25*x + 196*s^3",
+          "exponent": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "independent_Taylor_jets": true,
+  "records": [
+    {
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "all_values_gradients": true,
+      "dual_first_jet_identity": true,
+      "dual_fields_commute": true,
+      "radial_divergence_identity": true
+    },
+    {
+      "point": [
+        2,
+        1,
+        3
+      ],
+      "all_values_gradients": true,
+      "dual_first_jet_identity": true,
+      "dual_fields_commute": true,
+      "radial_divergence_identity": true
+    },
+    {
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "all_values_gradients": true,
+      "dual_first_jet_identity": true,
+      "dual_fields_commute": true,
+      "radial_divergence_identity": true
+    },
+    {
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "all_values_gradients": true,
+      "dual_first_jet_identity": true,
+      "dual_fields_commute": true,
+      "radial_divergence_identity": true
+    }
+  ],
+  "cone_Jab": 48,
+  "cone_normalization": "Uses exactly canceled canonical Teff numerator/denominator from the saved source packet.",
+  "radial_identity": "div(E/N0\u00b2)=\u2212(E/N0\u00b2)(log Jab)",
+  "physical_density_identity": "div(radial)+radial(log(rho*fT))=radial(log(rho*fT/Jab))",
+  "passed": true,
+  "scope": "Frame and derivative audit only, no source primitive or cone extension claim."
+}

@@ -1,0 +1,19 @@
+{
+  "prime": 107,
+  "points_used": 46,
+  "features": [
+    "v",
+    "v-1",
+    "v+1",
+    "2v\u00b2-1",
+    "v\u00b2+1",
+    "v\u00b2+3",
+    "t",
+    "h-2",
+    "h+2",
+    "h"
+  ],
+  "rank": 18,
+  "consistent": false,
+  "scope": "Finite-field candidate screen; not a complex squareclass theorem"
+}

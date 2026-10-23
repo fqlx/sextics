@@ -1,0 +1,40 @@
+{
+  "flow": [
+    "-10*L*r*x + 25/49*L*x + 4*r^2*x",
+    "-18*L - 5*r^2*x + 25/49*r*x + 9*r",
+    "-5*r*x^2 - 25/49*x^2 - 27*x"
+  ],
+  "E_eta_flow": [
+    {
+      "numerator": "5/98*L*x^2 - 25/196*r*x^2*s^2 - 5/28*r*x^2*s - 5/49*r*x^2 - 5/49*x*s^3 - 75/196*x*s^2 - 45/196*x*s",
+      "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6",
+      "numerator_terms": 7,
+      "denominator_factors": [
+        [
+          "L*x + r*x*s + s^3",
+          1
+        ],
+        [
+          "196*L*x + 196*r*x*s - 25*x*s^2 - 50*x*s - 25*x + 196*s^3",
+          1
+        ]
+      ]
+    },
+    {
+      "numerator": "5/14*r*x*s + 2/7*r*x - 25/1372*x*s - 25/1372*x + 3/7*s^2 + 9/14*s",
+      "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3",
+      "numerator_terms": 6,
+      "denominator_factors": [
+        [
+          "196*L*x + 196*r*x*s - 25*x*s^2 - 50*x*s - 25*x + 196*s^3",
+          1
+        ]
+      ]
+    }
+  ],
+  "compact_identities_exact": true,
+  "sheetwise_theta_contraction_exact": true,
+  "compact_rule": "For moving s, f.E=[delta(s)/x+K+c*u]/[7*w*(2u+A)], f=w\u00b2*(-A-u,-1), u=w\u00b3.",
+  "scope": "Exact contraction along the universal Prym-isoperiodic flow at fixed marked s. Add E_s*delta(s) for a moving graph.",
+  "seconds": 0.2973366099977284
+}

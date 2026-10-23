@@ -1,0 +1,22 @@
+{
+  "args": {
+    "connection": "/workspace/research/round10/horizontal5/rank5_connection.pickle",
+    "degree": 0,
+    "zmax": 0,
+    "smax": 0,
+    "components": "all",
+    "densities": "rho,rhofT",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 1049,
+    "output": "log_constant",
+    "correction": false
+  },
+  "columns": 60,
+  "rows": 210,
+  "rank": 60,
+  "augmented_rank": 61,
+  "validation20": null,
+  "seconds": 1.4589169025421143,
+  "scope": "finite-prime markedlogtangent currentmodule withallnormaldefectderivatives; no unrestrictedclaim"
+}

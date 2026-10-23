@@ -1,0 +1,20 @@
+{
+  "args": {
+    "degree": 1,
+    "eta": 0,
+    "zmax": 2,
+    "frames": "canonical",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 921,
+    "output": "canonical_d1_eta0",
+    "correction": false
+  },
+  "columns": 81,
+  "rows": 171,
+  "rank": 81,
+  "augmented_rank": 82,
+  "validation20": null,
+  "seconds": 0.5082755088806152,
+  "scope": "finite-prime sampled current module only; positive requires exact reconstruction"
+}

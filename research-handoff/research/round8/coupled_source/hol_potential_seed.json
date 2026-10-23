@@ -1,0 +1,33 @@
+{
+  "formula": "partial_r^2 H-2partial_Lpartial_r(zH)+partial_L^2(z^2H)",
+  "records": [
+    {
+      "point": [
+        "1",
+        "2",
+        "3"
+      ],
+      "compatibility_zero": false,
+      "compatibility_divided_by_H": "119578198846807482633104584069396924321626116624/130227877538997097131552870013455918904126725"
+    },
+    {
+      "point": [
+        "2",
+        "1",
+        "3"
+      ],
+      "compatibility_zero": false,
+      "compatibility_divided_by_H": "-3527706085681950820812592455058434358693413561851/2706344549373276823369310234386724439650160"
+    },
+    {
+      "point": [
+        "2",
+        "3",
+        "1"
+      ],
+      "compatibility_zero": false,
+      "compatibility_divided_by_H": "462115967866267999190596370861048786087137627/91438023589056075975363063997714470248400"
+    }
+  ],
+  "scope": "Tests only the connection-free mixed current F(omega0 alongr-omega1 alongL); no general coupled-current exclusion."
+}

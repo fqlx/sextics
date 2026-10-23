@@ -1,0 +1,32 @@
+{
+  "variables": [
+    "L",
+    "r",
+    "x"
+  ],
+  "D_terms": 12,
+  "fields": [
+    [
+      "-(57624*L + 2450*r*x - 625*x - 7350)/2450",
+      "(-57624*r + 625*x + 14700)/2450",
+      "588*x/25"
+    ],
+    [
+      "(196*L - 25)/98",
+      "(98*r - 25)/98",
+      "x"
+    ],
+    [
+      "(196*L - 25)*(98*r - 25)/1225",
+      "(14700*L + 76832*r**2 - 39200*r + 3125)/4900",
+      "x*(-76832*r + 625*x + 19600)/4900"
+    ]
+  ],
+  "log_derivatives": [
+    "-1176/25",
+    "4",
+    "(76832*r + 625*x - 19600)/2450"
+  ],
+  "determinant_ratio": "-196*x/25",
+  "scope": "Exact logarithmic module for the elliptic-quotient discriminant, localized at x. No current or certificate."
+}

@@ -1,0 +1,16 @@
+LIB "elim.lib";
+ring R=109,(s,t,v,f,J,h,q),dp;
+ideal EE=1*s^3*v^2+76*s^3+3*s^2*t*v+56*s*v*J*h+75*v*J^2*h^2+41*v*h*q^3,72*s^3*v^2+68*s^3+3*s*t^2*v^2+54*s*v^2*f^2*h*q+106*s*v^2+56*t*v^2*J*h+100*v^2*f*h*q^2+52*v^2*J*h,71*s^3*v^4+37*s^3*v^2+75*s^3+1*t^3*v^3+54*t*v^3*f^2*h*q+106*t*v^3+108*v^3*f^3*J*h^2+54*v^3*f^2*h*q+107*v^3;
+poly rr=h*h-4;
+ideal rels=4*f*rr-q*q,J-1-q^6;
+matrix MM[3][5];
+int i;
+for(i=1;i<=3;i++){MM[i,1]=diff(EE[i],s);MM[i,2]=diff(EE[i],t);MM[i,3]=diff(EE[i],v);MM[i,4]=2*rr*diff(EE[i],q)+q*diff(EE[i],f)+12*rr*q^5*diff(EE[i],J);MM[i,5]=rr*diff(EE[i],h)-2*h*f*diff(EE[i],f);}
+ideal jac=minor(MM,3);
+print("UNSCALED_OPEN_JAC_START");
+ideal SS=sat(EE+rels+jac,ideal(h*rr*s*v*(v*v-1)*(v*v-46)));
+print("UNSCALED_OPEN_JAC_DONE");
+print(dim(std(SS)));
+print(size(SS));
+write("/workspace/research/round7/boundary_extension/projective_model/unscaled_open_singular_ideal_mod109.sing",SS);
+quit;

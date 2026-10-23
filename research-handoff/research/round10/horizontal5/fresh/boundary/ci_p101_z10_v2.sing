@@ -1,0 +1,10 @@
+ring R=101,(eps,W,b,r),dp;
+poly F=W^6+b*(r+36*eps^2);
+poly D=57*r^2+57*b*r+59*b^2+eps^2*(55*r+3*b);
+ideal I=F,D;
+matrix M=jacob(I);
+ideal J=I+minor(M,2);
+ideal G=std(J);
+"JACOBIAN_DIM"; dim(G);
+"JACOBIAN_VDIM"; vdim(G);
+exit;

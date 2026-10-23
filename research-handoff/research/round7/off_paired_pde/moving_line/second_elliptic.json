@@ -1,0 +1,8 @@
+{
+  "map_R": "(k^3-4*tau)/(k^2-4)",
+  "map_Y": "(k^3-12*k+8*tau)*Z/(k^2-4)^2",
+  "target": "Y^2=slope^3*(R^3-27*R+27*tau)",
+  "differential": "dR/Y=k*dk/Z",
+  "j": "6912/(4-tau^2)",
+  "status": "exact polynomial and differential identities checked; no global Hol2/Gysin assertion"
+}

@@ -1,0 +1,11 @@
+{
+  "all_operator_columns_rebuilt_by_direct_product_rule": true,
+  "source_character_projection_complete": true,
+  "rows": 2760,
+  "columns": 1248,
+  "rank": 1236,
+  "augmented_rank": 1237,
+  "independent_exact_kernels": 12,
+  "status": "exact characteristic-zero fixed-support exclusion",
+  "packet_sha256": "28f64ebe706458de621968164e4075d8d15f0df031d0325b316cca2b191c25a9"
+}

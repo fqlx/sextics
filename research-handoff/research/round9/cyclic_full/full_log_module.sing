@@ -1,0 +1,8 @@
+ring R=0,(L,r,x),dp;short=0;
+poly D1=27*L^2 + 4*r^3*x;
+poly D2=50824368*L^2 + 4321800*L*r*x - 15625*L*x^2 - 1102500*L*x - 12965400*L + 7529536*r^3*x - 30625*r^2*x^2 - 5762400*r^2*x + 15625*r*x^2 + 918750*r*x + 15625*x + 826875;
+module M=[diff(D1,L),diff(D2,L),0],[diff(D1,r),diff(D2,r),0],[diff(D1,x),diff(D2,x),1],[-D1,0,0],[0,-D2,0],[0,0,-x];
+module S=syz(M);
+print("SIZE");print(size(S));
+for(int j=1;j<=size(S);j++){for(int i=1;i<=6;i++){print("COEFF "+string(j)+" "+string(i));print(S[j][i]);}}
+quit;

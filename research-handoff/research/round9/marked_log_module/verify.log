@@ -1,0 +1,51 @@
+{
+  "variables": [
+    "L",
+    "r",
+    "x",
+    "s"
+  ],
+  "field_divergences": [
+    {
+      "numerator": "1960*r*x*s + 1813*r*x + 588*s^2 + 2352*s + 1323",
+      "denominator": "1"
+    },
+    {
+      "numerator": "-345744*L*x + 19600*r*x^2 + 619458*r*x + 7350*x*s + 22050*x - 86436*s^2 + 172872*s + 388962",
+      "denominator": "1"
+    },
+    {
+      "numerator": "-1470000*L*x - 17287200*L*s + 2160900*L + 15366400*r^2*x - 722750*r*x + 10084200*r*s + 8643600*r - 294000*s^2 - 257250*s - 661500",
+      "denominator": "1"
+    },
+    {
+      "numerator": "259308000*L*r*x - 4018000*L*x - 155584800*L*s^2 + 172872000*L*s + 155584800*L + 259308000*r^2*x*s - 18228000*r*x*s - 7511700*r*x + 149822400*r*s^2 + 155584800*r*s - 3136000*s^3 - 6703200*s^2 - 13876800*s - 3836700",
+      "denominator": "1"
+    }
+  ],
+  "log_quotient_order": [
+    "x",
+    "D1",
+    "D2",
+    "P",
+    "Q"
+  ],
+  "all_contractions_polynomial": true,
+  "determinant_constant": 21176820000,
+  "divisor": "x*D1*D2*P*Q",
+  "complete_free_basis": "Exact tangencies and Saito determinant criterion for the reduced divisor.",
+  "graph_restriction": "After s=s_eff retain combinations sum c_i*psi_i=0, psi_i=W_i(s)-sum_{j=L,r,x}W_i(j)*V_j(s_eff). Six pairwise Koszul combinations span over the physical rational function field, three on each nonzero pivot chart.",
+  "rank5_connection_path": "/workspace/research/round10/horizontal5/rank5_connection.pickle",
+  "seconds": 0.23169342999972287,
+  "scope": "Complete universal marked log module and polynomial rank5 operators. No current solution or original certificate.",
+  "P": "L*x + r*s*x + s**3",
+  "Q": "-196*L*x - 196*r*s*x - 196*s**3 + 25*x*(s + 1)**2",
+  "B": "(L*x + r*s*x + s**3)/x",
+  "Delta": "(-196*L*x - 196*r*s*x - 196*s**3 + 25*x*(s + 1)**2)/(49*x)",
+  "contraction_common_denominators": [
+    "1",
+    "1",
+    "1",
+    "1"
+  ]
+}

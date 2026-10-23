@@ -1,0 +1,10 @@
+{
+  "x": "x",
+  "a": "a",
+  "b": "b",
+  "Da": "da",
+  "Db": "db",
+  "matrix": "Matrix([[-(2*a**2*da + 9*b*db)/(2*(4*a**3 + 27*b**2)), -a*(2*a*db - 3*b*da)/(2*(4*a**3 + 27*b**2))], [-3*(2*a*db - 3*b*da)/(2*(4*a**3 + 27*b**2)), (2*a**2*da + 9*b*db)/(2*(4*a**3 + 27*b**2))]])",
+  "exactCorrections": "[(-2*a**2*da*x + 4*a**2*db - 6*a*b*da + 6*a*db*x**2 - 9*b*da*x**2 - 9*b*db*x)/(4*a**3 + 27*b**2), -(2*a**2*da*x**2 + 2*a**2*db*x - 3*a*b*da*x + 6*a*b*db - 9*b**2*da + 9*b*db*x**2)/(4*a**3 + 27*b**2)]",
+  "convention": "D(omega_n)=sum_i G[i,n]*omega_i+d_x(r_n/y)"
+}

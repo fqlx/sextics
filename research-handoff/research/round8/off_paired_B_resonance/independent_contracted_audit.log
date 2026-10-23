@@ -1,0 +1,10 @@
+BOUNDARY_LOADED 2.606513439997798
+{
+  "field": "QQ(V)",
+  "cleared_operator_nu3_formal_jet_coefficients_match_T4_squared": true,
+  "cleared_rhs_nu3_matches_R0": true,
+  "all_lower_nu_coefficients_zero": true,
+  "method": "Direct contracted Bred/Cred and rhsred replay; no compact charge or A0/C0 used.",
+  "seconds": 9.232181933999527,
+  "scope": "Audit of the generic scalar-route obstruction. Not an unrestricted sextic-certificate obstruction."
+}

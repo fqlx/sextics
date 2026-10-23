@@ -1,0 +1,35 @@
+{
+  "args": {
+    "degree": 2,
+    "zmax": 1,
+    "components": 3,
+    "densities": "rho,rhofT",
+    "basis": "global",
+    "primitive_frame": "global",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 975,
+    "output": "marked_global_d2_z1",
+    "correction": false
+  },
+  "columns": 984,
+  "rows": 1089,
+  "rank": 972,
+  "augmented_rank": 973,
+  "nonzero11": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "validation20": null,
+  "seconds": 13.460835695266724,
+  "scope": "finite-prime full coupled currentmodule tracedfrommarkedpoint; no directmarkeddivisorGysin or source-serving claim"
+}

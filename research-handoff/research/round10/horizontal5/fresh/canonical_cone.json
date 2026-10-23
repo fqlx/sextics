@@ -1,0 +1,38 @@
+{
+  "all_algebraic_identities_exact": true,
+  "canonical_model": "ZU=R\u00b2; Z\u00b3+cR\u00b3+cZRV+LU\u00b3+rU\u00b2V+V\u00b3/x=0",
+  "finite_degree": 6,
+  "genus": 4,
+  "canonical": "K_C=O_C(1) as ordinary line bundles",
+  "resolution": "Blow up the vertex; exceptional C, conormal O_C(1)=K_C",
+  "transverse_geometric_genus": 5,
+  "formal_functions_reason": "h1(O_C)=4, h1(O_C(1))=1, h1(O_C(n))=0 for n>=2. The connecting map from constants at the first thickening is zero because 1 lifts.",
+  "equivariant_canonical": "K_C=O_C(1) tensor chi under w -> zeta*w",
+  "H0K_characters": [
+    1,
+    2,
+    1
+  ],
+  "H1O_characters": [
+    1,
+    1,
+    2
+  ],
+  "H1O1_characters": [
+    0,
+    0,
+    1
+  ],
+  "R1O_characters": [
+    1,
+    1,
+    3
+  ],
+  "necessary_local_hypotheses": [
+    "N0,N1 transverse along a common-zero curve",
+    "x and all parameter/frame denominators are units",
+    "the genus4 projective curve is smooth (D1*D2 nonzero)"
+  ],
+  "global_obligation": "Determine the resulting coherent R1 sheaf along the physical base curve, its transitions/linearizations, and the global connecting map H1(R1) -> H3(O_normalization). Nonzero exceptional surface pg does not imply a global H20 class.",
+  "scope": "Exact local integral model and conditional transverse singularity/Hodge-character calculation; no global serving statement or certificate."
+}

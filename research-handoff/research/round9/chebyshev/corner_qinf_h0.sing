@@ -1,0 +1,7 @@
+LIB "normal.lib";
+ring R=0,(H,S),dp;
+poly f=9*S^6-(1/81)*S^4-(40/9)*H*S^3+10368*H^3*S+186624*H^4;
+print("FACTOR");factorize(f);
+print("GENUS");genus(ideal(f));
+print("SINGULAR");ideal I=f,diff(f,H),diff(f,S);std(I);
+quit;

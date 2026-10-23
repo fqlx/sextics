@@ -1,0 +1,96 @@
+{
+  "D": {
+    "clearA": 6,
+    "clearB": 3,
+    "terms": 3667,
+    "constant": "225/823543",
+    "factors": [
+      {
+        "exponent": 1,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "polynomial": "a^6 + b^6 + 1"
+      },
+      {
+        "exponent": 1,
+        "terms": 2531,
+        "degrees": [
+          33,
+          30,
+          21
+        ],
+        "polynomial": null
+      },
+      {
+        "exponent": 3,
+        "terms": 1,
+        "degrees": [
+          0,
+          1,
+          0
+        ],
+        "polynomial": "b"
+      }
+    ]
+  },
+  "D1": {
+    "clearA": 4,
+    "clearB": 0,
+    "terms": 161,
+    "constant": "81/2401",
+    "factors": [
+      {
+        "exponent": 1,
+        "terms": 44,
+        "degrees": [
+          12,
+          12,
+          12
+        ],
+        "polynomial": null
+      },
+      {
+        "exponent": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "polynomial": "a^6 + b^6 + 1"
+      }
+    ]
+  },
+  "D2": {
+    "clearA": 4,
+    "clearB": 0,
+    "terms": 481,
+    "constant": "-81/7",
+    "factors": [
+      {
+        "exponent": 1,
+        "terms": 112,
+        "degrees": [
+          12,
+          12,
+          12
+        ],
+        "polynomial": null
+      },
+      {
+        "exponent": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "polynomial": "a^6 + b^6 + 1"
+      }
+    ]
+  }
+}

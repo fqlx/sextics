@@ -1,0 +1,21 @@
+{
+  "args": {
+    "degree": 5,
+    "eta": 3,
+    "zmax": 2,
+    "frames": "physical",
+    "basis": "theta",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 921,
+    "output": "theta_physical_d5_eta3",
+    "correction": false
+  },
+  "columns": 1188,
+  "rows": 1278,
+  "rank": 1188,
+  "augmented_rank": 1189,
+  "validation20": null,
+  "seconds": 3.5512900352478027,
+  "scope": "finite-prime sampled current module only; positive requires exact reconstruction"
+}

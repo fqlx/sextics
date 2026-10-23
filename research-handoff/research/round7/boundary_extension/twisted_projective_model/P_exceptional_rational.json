@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "hP": 2,
+      "Cq_unit": true,
+      "Cq": "-q**5*(864*q**12 + 1296*q**6 - 5*q**3 + 432)/(1152*(q**2 + 1)*(q**4 - q**2 + 1))"
+    },
+    {
+      "hP": -2,
+      "Cq_unit": true,
+      "Cq": "-q**5*(864*q**12 + 1296*q**6 + 5*q**3 + 432)/(1152*(q**2 + 1)*(q**4 - q**2 + 1))"
+    }
+  ],
+  "parametrization": "m=n/H^2; H=64ell*Sq/(-16Sq*D+24J*hP*Cq*m+3tP*Cq*m^2), n=H^2m, T=4ell*m/(3(4J*hP+tP*m)), Q=(-Ch*H-4ell)/Cq",
+  "conclusion": "The exceptional component through the boundary in the U10 chart has rational normalization."
+}

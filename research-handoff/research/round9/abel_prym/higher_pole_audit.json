@@ -1,0 +1,79 @@
+{
+  "prime": 1000003,
+  "records": [
+    {
+      "W": 485089,
+      "T": 190387,
+      "L": 90401,
+      "r": 974394,
+      "x": 815371,
+      "Ct": 564195
+    },
+    {
+      "W": 209596,
+      "T": 281942,
+      "L": 656834,
+      "r": 383696,
+      "x": 436952,
+      "Ct": 337330
+    },
+    {
+      "W": 935208,
+      "T": 539157,
+      "L": 728949,
+      "r": 729616,
+      "x": 112556,
+      "Ct": 670914
+    },
+    {
+      "W": 777080,
+      "T": 673484,
+      "L": 895085,
+      "r": 865956,
+      "x": 228821,
+      "Ct": 332328
+    },
+    {
+      "W": 616052,
+      "T": 595608,
+      "L": 636062,
+      "r": 479884,
+      "x": 28300,
+      "Ct": 423652
+    },
+    {
+      "W": 208625,
+      "T": 443020,
+      "L": 166215,
+      "r": 429148,
+      "x": 908611,
+      "Ct": 295063
+    },
+    {
+      "W": 360236,
+      "T": 492293,
+      "L": 800783,
+      "r": 373212,
+      "x": 896939,
+      "Ct": 764882
+    },
+    {
+      "W": 722544,
+      "T": 344509,
+      "L": 764921,
+      "r": 905116,
+      "x": 487586,
+      "Ct": 220982
+    }
+  ],
+  "checks": {
+    "holomorphic_rows": 72,
+    "meromorphic_rows": 72
+  },
+  "higher_pole_primitive": "F=u8/Ct+(u14_t*Ct-u14*Ctt)/Ct^3; all stored denominators included; no factor 2.",
+  "relative_pole2_representative": "(P_t*Ct-P*Ctt)/Ct^3*dW",
+  "all_moving_curve_identities_pass": true,
+  "method": "Independent dual-number derivatives of ordinary rational one-forms. Tested d_z beta_i=sum_j N_ij beta_j+d_f F_i on C=0 using t_z=-Cz/Ct and t_W=-CW/Ct.",
+  "scope": "This establishes the evaluator convention for extending marked trace currents to all six de Rham basis forms. It does not solve the current PDE or serve the target.",
+  "seconds": 0.7622913749983127
+}

@@ -1,0 +1,26 @@
+{
+  "prime": 1000003,
+  "results": [
+    {
+      "pivot": [
+        2,
+        3
+      ],
+      "pivot_constant": -294000,
+      "columns": 22,
+      "rank": 22,
+      "augmented_rank": 23
+    },
+    {
+      "pivot": [
+        1,
+        0
+      ],
+      "pivot_constant": -36750,
+      "columns": 22,
+      "rank": 22,
+      "augmented_rank": 23
+    }
+  ],
+  "scope": "Two canonical constant-Higgs-pivot modules, no degree expansion or unrestricted inference."
+}

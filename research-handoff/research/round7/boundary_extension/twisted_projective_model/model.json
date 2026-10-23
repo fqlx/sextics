@@ -1,0 +1,96 @@
+{
+  "Cox_variable_degrees": {
+    "q0": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "q1": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "h0": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "h1": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "v0": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "v1": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "U": [
+      2,
+      2,
+      0,
+      1
+    ],
+    "t": [
+      4,
+      4,
+      2,
+      2
+    ],
+    "z": [
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "equation_multidegrees": [
+    [
+      12,
+      12,
+      4,
+      6
+    ],
+    [
+      12,
+      12,
+      5,
+      6
+    ],
+    [
+      12,
+      12,
+      6,
+      6
+    ]
+  ],
+  "E3_monic_t_cubed": true,
+  "E1_t_coefficient": "3*U**4*v1**2",
+  "v_infinity_equations": [
+    "U**4*(U**2 + 3*t)",
+    "3*U**2*t**2",
+    "t**3"
+  ],
+  "saturation": "U*h0*h1*q0*v0*v1*z*(-4*h0**2 + h1**2)*(-v0**2 + v1**2)*(-ell*v0**2 + v1**2)",
+  "conditional_CI_canonical_shift": [
+    28,
+    28,
+    11,
+    14
+  ],
+  "height_strategy": "Outside U*v1=0, eliminate t from E1; height>=3 follows if gcd(R12,R13) is supported on U*v1. On U=0 or v1=0, E1=B2*z6 and E3 monic t3 are coprime, giving height>=3 directly.",
+  "height_verified_by_separate_gcd_receipt": true,
+  "all_homogeneity_and_affine_replay_checks": true,
+  "canonical_main_component": "((J:I)/J)(28,28,11,14), with I=J:f^infinity, then Cox sheafification; colon generators still pending"
+}

@@ -1,0 +1,42 @@
+MODRANK 17
+AUGRANK L 0 17
+AUGRANK L 1 17
+AUGRANK r 0 17
+AUGRANK r 1 17
+AUGRANK x 0 17
+AUGRANK x 1 17
+AUGRANK s 0 17
+AUGRANK s 1 17
+{"stage": "matrix", "shape": [19, 21], "pivot_columns": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 19, 20], "seconds": 0.6916000160017575}
+Traceback (most recent call last):
+  File "/workspace/research/round9/open_curve/boundary_connection.py", line 41, in <module>
+    DM=DomainMatrix.from_Matrix(AA);iv,de=DM.inv_den();iv=iv.to_Matrix();de=DM.domain.to_sympy(de)
+                                          ^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2743, in inv_den
+    return self.solve_den(I, method=method)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2883, in solve_den
+    xnum, xden = self.solve_den_rref(b)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2928, in solve_den_rref
+    Aaug_rref, denom, pivots = Aaug.rref_den()
+                               ^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2334, in rref_den
+    return _dm_rref_den(self, method=method, keep_domain=keep_domain)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/rref.py", line 115, in _dm_rref_den
+    M_rref, den, pivots = _dm_rref_den_FF(M)
+                          ^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/rref.py", line 195, in _dm_rref_den_FF
+    return _dm_rref_den_FF_sparse(M)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/rref.py", line 220, in _dm_rref_den_FF_sparse
+    M_rref_d, den, pivots = sdm_rref_den(M.rep, M.domain)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/matrices/sdm.py", line 2008, in sdm_rref_den
+    Akl = Aij * Ak[l] - Akj * Ai[l]
+                        ~~~~^~~~~~~
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sympy/polys/rings.py", line 1149, in __mul__
+    p[exp] = get(exp, zero) + v1*v2
+             ^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,32 @@
+{
+  "fiber_multiplication": [
+    "Matrix([[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1]])",
+    "Matrix([[0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, -4, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+    "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0], [0, -4, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+    "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+    "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+    "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0]])"
+  ],
+  "fiber_socle_dimension": 3,
+  "dual_basis_nonzero_mod_momega": [
+    3,
+    4,
+    5
+  ],
+  "dual_e0_in_momega": true,
+  "available_global_duals": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "available_Q_jets_per_dual": [
+    4,
+    8,
+    12,
+    8,
+    16
+  ],
+  "scope": "Exact Nakayama generation of local canonical module at corner by restrictions of global sections. Does not by itself prove jet surjectivity to the finite adjoint defect."
+}

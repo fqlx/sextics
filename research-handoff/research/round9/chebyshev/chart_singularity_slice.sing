@@ -1,0 +1,7 @@
+LIB "primdec.lib";
+ring R=0,(z,Q,H,s,u,v),dp;
+ideal I=(-432)*H^2+(1)*s^1*u^1,(-1)*H^1*v^1+(1)*u^2,(-432)*H^1*u^1+(1)*s^1*v^1,(-17496)*Q^1*H^3+(1679616)*H^2*s^2+(-2304)*H^2+(-1920)*H^1*u^1+(24)*u^1*v^1+(1)*v^2,(-3/32)*Q^1*H^1*s^2+(-40/9)*H^1*s^1+(24)*H^1*u^1+(1)*H^1*v^1+(9)*s^4+(-1/81)*s^2,(-81/2)*Q^1*H^2*s^1+(-1920)*H^2+(3888)*H^1*s^3+(-16/3)*H^1*s^1+(24)*H^1*v^1+(1)*u^1*v^1;
+ideal J=I+minor(jacob(I),3)+ideal(Q);
+print("SINGULAR ALONG Q0 OFF H0");ideal A=J+ideal(z*H-1);std(A);
+print("SINGULAR ALONG Q0H0");ideal B=J+ideal(H);std(B);
+quit;

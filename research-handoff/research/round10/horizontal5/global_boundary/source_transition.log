@@ -1,0 +1,177 @@
+{
+  "instance_sha256": "c5713bc06b37db0a64123364f8687a8ebc82e9722cc39ba88357659768eed0bc",
+  "graph_sha256": "d228daf9d802fae899472ff6acd6be6c5a1923a1c4db0cd1f9a125689f0b016f",
+  "coordinates": "Y2=1; X0=eps,X1=v*eps,X2=W,Y0=a,Y1=b; a^6+1=b*r",
+  "orientation": "Omega=sum(-1)^i Zi dZ_except_i; ordered new volume deps,dW,db,dr,dv",
+  "literal_F_and_target_verified": true,
+  "ambient_chart_jacobian": "b*eps/(6*a**5)",
+  "actual_source_numerator_over_F_squared": "-b*eps**4/(6*a**2)",
+  "infinity_chart_source_numerator_over_F_squared": "b*eps**4*u**3/(6*a**2)",
+  "source_weighted_numerator_degree": 18,
+  "weights_eps_W_b_r": [
+    3,
+    2,
+    6,
+    6
+  ],
+  "source_ambient_radial_exponent_after_F_squared": 10,
+  "graph_radial_orders": [
+    17,
+    19
+  ],
+  "strict_graph_b_squared_input": "independent weighted_ci_audit.py verifies at the corner",
+  "global_canonical_g_local_coefficient": "g/(6*a^5*eps^16*b)",
+  "generic_v_transition": {
+    "eps_prime": "v*eps",
+    "v_prime": "1/v",
+    "F_prime": "F",
+    "D2_prime": "v^-17*D2",
+    "relative_canonical_frame_prime": "v^18*Omega_relative",
+    "total_canonical_frame_prime": "-v^16*Omega_total"
+  },
+  "mu3": "W->zeta3*W: local CI canonical frame has character zeta3; six listed coefficients have character1",
+  "Y_sign": "eps,W->-eps,-W; a,b,r,v fixed. Local CI canonical frame is invariant.",
+  "relevant_Y_even_chi1_adjoint_jets": [
+    "1",
+    "eps^2",
+    "b",
+    "r"
+  ],
+  "other_chi1_adjoint_jets_Y_odd": [
+    "eps",
+    "W^3"
+  ],
+  "six_global_polynomial_families": [
+    {
+      "jet": "1",
+      "xorder": 16,
+      "Y1": 1,
+      "delta": 0,
+      "W": 0,
+      "Pdegree": 15,
+      "v_polynomial_degree_bound": 16,
+      "generic_total_canonical_jet_line_degree": 16,
+      "Y_sign": 1,
+      "Y_normal_order": 16,
+      "six_zeta_values_interpolate": true,
+      "source_delta2_polynomial_count": 34,
+      "source_delta2_k_minus_j_mod3": [
+        1
+      ]
+    },
+    {
+      "jet": "eps",
+      "xorder": 17,
+      "Y1": 1,
+      "delta": 0,
+      "W": 0,
+      "Pdegree": 14,
+      "v_polynomial_degree_bound": 17,
+      "generic_total_canonical_jet_line_degree": 17,
+      "Y_sign": -1,
+      "Y_normal_order": 15,
+      "six_zeta_values_interpolate": true,
+      "source_delta2_polynomial_count": 0,
+      "source_delta2_k_minus_j_mod3": []
+    },
+    {
+      "jet": "eps^2",
+      "xorder": 18,
+      "Y1": 1,
+      "delta": 0,
+      "W": 0,
+      "Pdegree": 13,
+      "v_polynomial_degree_bound": 18,
+      "generic_total_canonical_jet_line_degree": 18,
+      "Y_sign": 1,
+      "Y_normal_order": 14,
+      "six_zeta_values_interpolate": true,
+      "source_delta2_polynomial_count": 38,
+      "source_delta2_k_minus_j_mod3": [
+        2
+      ]
+    },
+    {
+      "jet": "b",
+      "xorder": 16,
+      "Y1": 2,
+      "delta": 0,
+      "W": 0,
+      "Pdegree": 14,
+      "v_polynomial_degree_bound": 16,
+      "generic_total_canonical_jet_line_degree": 16,
+      "Y_sign": 1,
+      "Y_normal_order": 16,
+      "six_zeta_values_interpolate": true,
+      "source_delta2_polynomial_count": 34,
+      "source_delta2_k_minus_j_mod3": [
+        2
+      ]
+    },
+    {
+      "jet": "r",
+      "xorder": 16,
+      "Y1": 0,
+      "delta": 1,
+      "W": 0,
+      "Pdegree": 10,
+      "v_polynomial_degree_bound": 16,
+      "generic_total_canonical_jet_line_degree": 16,
+      "Y_sign": 1,
+      "Y_normal_order": 16,
+      "six_zeta_values_interpolate": true,
+      "source_delta2_polynomial_count": 34,
+      "source_delta2_k_minus_j_mod3": [
+        0
+      ]
+    },
+    {
+      "jet": "W^3",
+      "xorder": 16,
+      "Y1": 1,
+      "delta": 0,
+      "W": 3,
+      "Pdegree": 12,
+      "v_polynomial_degree_bound": 16,
+      "generic_total_canonical_jet_line_degree": 16,
+      "Y_sign": -1,
+      "Y_normal_order": 13,
+      "six_zeta_values_interpolate": true,
+      "source_delta2_polynomial_count": 0,
+      "source_delta2_k_minus_j_mod3": []
+    }
+  ],
+  "simultaneous_corner_coefficient_rank": 6,
+  "simultaneous_corner_coefficient_determinant": "1/46656",
+  "generic_full_jet_section_rank": 630,
+  "generic_Y_even_chi1_jet_section_rank": 420,
+  "generic_full_source_fine_character_jet_section_rank": 140,
+  "source_fine_diagonal": {
+    "original_weights_mod6": [
+      0,
+      4,
+      0,
+      1,
+      1,
+      5
+    ],
+    "target_A_character": 3,
+    "Omega_character": 5,
+    "source_character": 2,
+    "D32_character": 5,
+    "global_canonical_Omega_over_FD_character": 0,
+    "required_global_g_character": 2,
+    "corner_chart_action": "eps->omega*eps,W->omega*W,a,b->omega\u00b2*(a,b),r->omega4*r,v->omega4*v; omega6=1",
+    "local_CI_total_canonical_character": 2
+  },
+  "generic_jet_section_rank_scope": "The displayed polynomial subspace surjects onto the generic O(16+i) direct-sum jet model. This is conditional on that model at special v and on other global adjoint conditions; neither is asserted.",
+  "all_families_normal_X_order_at_least": 16,
+  "all_families_Y_order_at_least": 13,
+  "scope": [
+    "Exact pinned source density, coordinate Jacobian and character matching.",
+    "Exact generic v-overlap transition and polynomial jet-family matching.",
+    "No assertion of bundle extension through v infinity or other special v.",
+    "No assertion that these polynomials satisfy every other adjoint condition.",
+    "Source character matching is not a computation of its global Gysin preimage."
+  ]
+}

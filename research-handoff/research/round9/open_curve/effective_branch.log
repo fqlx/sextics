@@ -1,0 +1,4 @@
+FACTOR B_effective_num 1147
+B_effective_num [(2, 1, [2, 3, 1, 0]), (785, 1, [7, 10, 8, 6])] 0.076
+FACTOR Delta_effective_num 1401
+Delta_effective_num [(12, 1, [2, 3, 2, 0]), (507, 1, [7, 10, 7, 6])] 0.089

@@ -1,0 +1,62 @@
+{
+  "all_exact_QQ_checks_pass": true,
+  "parent_residue_block_matches_independent_closed_formula": true,
+  "residue_matrix": [
+    [
+      "(-A*B*da + db*(-2*A**2 + 10*B))/(3*B*(A**2 - 4*B))",
+      "(-2*A*db + 4*B*da)/(3*B*(A**2 - 4*B))"
+    ],
+    [
+      "(-A*db + 2*B*da)/(3*A**2 - 12*B)",
+      "(-2*A*da + 4*db)/(3*A**2 - 12*B)"
+    ]
+  ],
+  "residue_basis": "sigma_j=W^(3j)dW/((T-ss)Ct), j=0,1; residues -w^(3j)/CW(w,ss).",
+  "infinity_orders": [
+    4,
+    1
+  ],
+  "infinity_reason": "q=h/W; Waff=q^-1,Taff=tau*q^-2 with tau(0)^3=-x; Ct~3tau^2*q^-4/x and dWaff=-q^-2 dq. Hence sigma0~q^4 dq and sigma1~q dq.",
+  "third_kind": "theta=[Ce(W)/(W-w)-Ce(W)/(W-zeta*w)]dT/((T-ss)CW); residues +1,-1 at marked pair, regular elsewhere including infinity.",
+  "actual_character_projection": "theta_chi=(1-zeta^2)*w^2*((-A-w^3)*sigma0-sigma1), exactly as rational differentials.",
+  "no_invariant_theta_character": true,
+  "marked_coefficient_horizontal": "With u=w^3, other_root=-A-u, f=w^2*(other_root,-1), exact df+R^T*f=0.",
+  "proper_derivative_normalization": "If E0,E1 are proper parts of the two boundary rows in the full rank5 connection, nabla(theta_chi)_proper=(1-zeta^2)*w^2*(other_root*E0-E1). No derivative-of-coefficient proper term appears.",
+  "moving_graph_checks": [
+    [
+      0,
+      "ss"
+    ],
+    [
+      0,
+      "L"
+    ],
+    [
+      0,
+      "r"
+    ],
+    [
+      0,
+      "x"
+    ],
+    [
+      1,
+      "ss"
+    ],
+    [
+      1,
+      "L"
+    ],
+    [
+      1,
+      "r"
+    ],
+    [
+      1,
+      "x"
+    ]
+  ],
+  "pullback_rule": "After ss=e=N1/N0(L,r,x,z), pull back K_L dL+K_r dr+K_x dx+K_ss de; de includes derivative in the source z, which itself depends on all physical a,b,v.",
+  "scope": "Exact normalization audit of the open-curve extension and its marked third-kind representative. It does not compute the proper extension rows, solve closed gamma, match source, or provide a certificate.",
+  "seconds": 0.2857897209978546
+}

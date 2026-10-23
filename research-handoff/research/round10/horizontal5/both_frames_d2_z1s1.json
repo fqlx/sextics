@@ -1,0 +1,23 @@
+{
+  "args": {
+    "connection": "/workspace/research/round10/horizontal5/rank5_connection.pickle",
+    "degree": 2,
+    "zmax": 1,
+    "smax": 1,
+    "components": "all",
+    "frames": "physical,canonical",
+    "densities": "rho,rhofT",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 1031,
+    "output": "both_frames_d2_z1s1",
+    "correction": false
+  },
+  "columns": 2400,
+  "rows": 2575,
+  "rank": 2400,
+  "augmented_rank": 2401,
+  "validation25": null,
+  "seconds": 14.297431945800781,
+  "scope": "finite-prime sampled rank5 horizontalcurrentmodule; positive requires QQreconstruction"
+}

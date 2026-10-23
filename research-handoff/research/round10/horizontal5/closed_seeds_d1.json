@@ -1,0 +1,21 @@
+{
+  "args": {
+    "connection": "/workspace/research/round10/horizontal5/rank5_connection.pickle",
+    "degree": 1,
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 1063,
+    "output": "closed_seeds_d1",
+    "correction": false
+  },
+  "proper_columns": 144,
+  "closed_seed_columns": 12,
+  "columns": 156,
+  "rows": 246,
+  "rank": 156,
+  "augmented_rank": 157,
+  "validation20": null,
+  "boundary_closure_checked_against_full_rank5": true,
+  "seconds": 5.734764575958252,
+  "scope": "finite-prime proper-currentpreconditionermodule; seeds are exactresidueclasses, no newGysinclaim"
+}

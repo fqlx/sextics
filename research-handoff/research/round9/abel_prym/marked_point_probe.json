@@ -1,0 +1,118 @@
+{
+  "prime": 1009,
+  "zeta3": 374,
+  "characteristic_zero_map": "On Gamma: w^6+c*w^3+1+v^6=0, define P=(W=w/rho,h=1,T=BR/A) on canonical C. The divisor P-sigma(P), sigma(W)=zeta3*W, has zero norm to the elliptic quotient and defines an Abel-Prym map along isoperiodic leaves.",
+  "relative_absolute_primitive_convention": "a_i dW + sum_j F_ij dz_j; F_ij=(Q8_W-W*Q8_h)/C_t for the three hol forms",
+  "records": [
+    {
+      "physical_base": [
+        1,
+        1,
+        13
+      ],
+      "w_old": 84,
+      "rho": 823,
+      "canonical_parameters": [
+        395,
+        90,
+        407
+      ],
+      "canonical_marked_point_W_T": [
+        976,
+        230
+      ],
+      "physical_flow": [
+        512,
+        170,
+        301
+      ],
+      "Prym_hol_absolute_differentials": {
+        "actual_h2": 954,
+        "actual_t": 781,
+        "conjugate_Wh": 806
+      },
+      "divisor_P_minus_sigmaP_differentials": {
+        "actual_h2": 335,
+        "actual_t": 288,
+        "conjugate_Wh": 356
+      },
+      "nonzero_Abel_Prym_derivative": true,
+      "curve_tangent_identity": true,
+      "mu3_covariance": true
+    },
+    {
+      "physical_base": [
+        1,
+        2,
+        13
+      ],
+      "w_old": 84,
+      "rho": 921,
+      "canonical_parameters": [
+        9,
+        812,
+        686
+      ],
+      "canonical_marked_point_W_T": [
+        687,
+        947
+      ],
+      "physical_flow": [
+        671,
+        683,
+        351
+      ],
+      "Prym_hol_absolute_differentials": {
+        "actual_h2": 316,
+        "actual_t": 509,
+        "conjugate_Wh": 157
+      },
+      "divisor_P_minus_sigmaP_differentials": {
+        "actual_h2": 185,
+        "actual_t": 844,
+        "conjugate_Wh": 510
+      },
+      "nonzero_Abel_Prym_derivative": true,
+      "curve_tangent_identity": true,
+      "mu3_covariance": true
+    },
+    {
+      "physical_base": [
+        1,
+        4,
+        13
+      ],
+      "w_old": 84,
+      "rho": 861,
+      "canonical_parameters": [
+        419,
+        67,
+        332
+      ],
+      "canonical_marked_point_W_T": [
+        763,
+        895
+      ],
+      "physical_flow": [
+        49,
+        625,
+        782
+      ],
+      "Prym_hol_absolute_differentials": {
+        "actual_h2": 753,
+        "actual_t": 875,
+        "conjugate_Wh": 418
+      },
+      "divisor_P_minus_sigmaP_differentials": {
+        "actual_h2": 642,
+        "actual_t": 541,
+        "conjugate_Wh": 773
+      },
+      "nonzero_Abel_Prym_derivative": true,
+      "curve_tangent_identity": true,
+      "mu3_covariance": true
+    }
+  ],
+  "seconds": 0.75,
+  "scope": "A good finite-field point proves the displayed rational marked-point differential is not identically zero if the exact absolute-primitive convention is correct; independent audit requested. No physical-source moment matching, trace descent, Gysin serving statement, primitive, or certificate is asserted."
+}

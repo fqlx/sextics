@@ -1,0 +1,38 @@
+{
+  "original_D_sha256": "d228daf9d802fae899472ff6acd6be6c5a1923a1c4db0cd1f9a125689f0b016f",
+  "coordinate": "delta=a^6+1, delta=b*r; a=zeta*(1-delta)^(1/6)",
+  "weights": {
+    "eps": 3,
+    "W": 2,
+    "b": 6,
+    "r": 6
+  },
+  "equation_degrees": [
+    12,
+    12
+  ],
+  "F_initial": "W**6 + b*(5*eps**2*zeta/7 + r)",
+  "D_initial": "-5635000*b**2*v**8*zeta**5 - 4410000*b**2*v**7*zeta**4 + 1225000*b**2*v**6*zeta**3 - 4410000*b**2*v**2*zeta**5 - 4410000*b**2*v*zeta**4 + 1225000*b**2*zeta**3 + 57624000*b*eps**2*v**13*zeta**4 + 57624000*b*eps**2*v**12*zeta**3 + 107898000*b*eps**2*v**7*zeta**4 + 107898000*b*eps**2*v**6*zeta**3 + 50274000*b*eps**2*v*zeta**4 + 50274000*b*eps**2*zeta**3 + 181515600*b*r*v**13*zeta**3 + 181515600*b*r*v**12*zeta**2 + 339878700*b*r*v**7*zeta**3 + 339878700*b*r*v**6*zeta**2 + 158363100*b*r*v*zeta**3 + 158363100*b*r*zeta**2 - 181515600*eps**2*r*v**12*zeta**2 - 339878700*eps**2*r*v**6*zeta**2 - 158363100*eps**2*r*zeta**2 - 381182760*r**2*v**12*zeta - 713745270*r**2*v**6*zeta - 332562510*r**2*zeta",
+  "all_lower_weight_terms_vanish": true,
+  "five_coefficients_match_packet": true,
+  "raw_delta_a_scaling_checked": true,
+  "fibers": [
+    {
+      "p": 101,
+      "zeta": 10,
+      "v": 2,
+      "coefficients": {
+        "A": 57,
+        "B": 55,
+        "C": 57,
+        "D": 59,
+        "E": 3
+      },
+      "lambda": 36,
+      "jacobian_dimension": 0,
+      "jacobian_colength": 83,
+      "quasismooth": true,
+      "returncode": 0
+    }
+  ]
+}

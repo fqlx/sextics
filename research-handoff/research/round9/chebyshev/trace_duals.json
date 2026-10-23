@@ -1,0 +1,11 @@
+{
+  "denominator": "derivative of monic slope sextic wrt s",
+  "numerators": [
+    "s**2*(a0*s + b1 + 3*s**3)/3",
+    "s**4",
+    "s**3",
+    "r*s**2",
+    "-r*(a1*s + b2)/9",
+    "-h*r**3*s/9"
+  ]
+}

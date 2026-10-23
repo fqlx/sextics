@@ -1,0 +1,31 @@
+{
+  "variables": [
+    "D",
+    "z",
+    "b",
+    "eta"
+  ],
+  "weights": [
+    1,
+    2,
+    2,
+    1
+  ],
+  "degree": 5,
+  "relations": [
+    "a6=-1",
+    "196v6+171=0"
+  ],
+  "criticalE": "e\u00b2=-(9av-5)/(28a)",
+  "terms": {
+    "0,0,2,1": "1875*(9*a*v - 5)**2*(153*a**2*v**2 + 180*a*v + 125)/56",
+    "1,0,2,0": "6250*a**3*(9*a*v - 5)**2",
+    "0,2,0,1": "23152500*a**2",
+    "0,0,1,3": "10125*(-12150*a**5*v**2 + 4500*a**4*v - 625*a**3 + 6561*a*v**4 - 14580*v**3)/64",
+    "1,0,1,2": "826875*(9*a*v - 5)**2/8",
+    "0,1,1,1": "-590625*a*(a*v + 1)*(9*a*v - 5)",
+    "2,0,1,1": "16537500*a**3"
+  },
+  "lowerTermsVanishExactly": true,
+  "scope": "Exact all-orbit weighted initial form. Normality/resolution and global source map are separate."
+}

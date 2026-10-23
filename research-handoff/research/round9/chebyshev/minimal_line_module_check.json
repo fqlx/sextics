@@ -1,0 +1,56 @@
+{
+  "algebra_weights": [
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      16,
+      4
+    ]
+  ],
+  "module_weights": [
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      16,
+      3
+    ]
+  ],
+  "module_weight_violations": [],
+  "interpretation": "O(2D_infty); multiplication checked exactly. Lmin inverse is this module twisted O(-2,-2), with further ideal for Sbad. No resolution assertion."
+}

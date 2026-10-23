@@ -1,0 +1,149 @@
+{
+  "prime": 1000003,
+  "candidate": "Z=-7*S_eta*Delta/(2*NF)*(c*B,D0), D0=delta(s)/x+K,NF=D0\u00b2-c*A*D0+c\u00b2B; current rho*fT*Z along physical delta",
+  "records": [
+    {
+      "physical_point": [
+        1,
+        2,
+        3
+      ],
+      "parameters": [
+        444522,
+        131711,
+        173442
+      ],
+      "s": 115335,
+      "delta_s": 362446,
+      "D0": 818822,
+      "NF": 910460,
+      "S_eta": 464315,
+      "Z": [
+        894557,
+        819002
+      ],
+      "delta_Z": [
+        878119,
+        369901
+      ],
+      "charge_plus_div": 697185,
+      "eta_match_exact_at_point": true,
+      "residue_closedness_defect": [
+        43208,
+        279738
+      ],
+      "remaining_proper_hol_source": [
+        964494,
+        320846
+      ]
+    },
+    {
+      "physical_point": [
+        2,
+        1,
+        3
+      ],
+      "parameters": [
+        303519,
+        230103,
+        572262
+      ],
+      "s": 213678,
+      "delta_s": 623713,
+      "D0": 560722,
+      "NF": 955137,
+      "S_eta": 975670,
+      "Z": [
+        947896,
+        899303
+      ],
+      "delta_Z": [
+        525131,
+        227440
+      ],
+      "charge_plus_div": 467848,
+      "eta_match_exact_at_point": true,
+      "residue_closedness_defect": [
+        368687,
+        43855
+      ],
+      "remaining_proper_hol_source": [
+        51976,
+        200453
+      ]
+    },
+    {
+      "physical_point": [
+        2,
+        3,
+        1
+      ],
+      "parameters": [
+        987460,
+        441261,
+        280863
+      ],
+      "s": 55697,
+      "delta_s": 226232,
+      "D0": 382747,
+      "NF": 357221,
+      "S_eta": 710419,
+      "Z": [
+        614329,
+        635980
+      ],
+      "delta_Z": [
+        55445,
+        492917
+      ],
+      "charge_plus_div": 308041,
+      "eta_match_exact_at_point": true,
+      "residue_closedness_defect": [
+        137675,
+        34544
+      ],
+      "remaining_proper_hol_source": [
+        659448,
+        843249
+      ]
+    },
+    {
+      "physical_point": [
+        3,
+        4,
+        2
+      ],
+      "parameters": [
+        801618,
+        252061,
+        186682
+      ],
+      "s": 691873,
+      "delta_s": 334292,
+      "D0": 233417,
+      "NF": 429872,
+      "S_eta": 274169,
+      "Z": [
+        823047,
+        968941
+      ],
+      "delta_Z": [
+        292959,
+        125275
+      ],
+      "charge_plus_div": 863753,
+      "eta_match_exact_at_point": true,
+      "residue_closedness_defect": [
+        397691,
+        434938
+      ],
+      "remaining_proper_hol_source": [
+        812684,
+        893576
+      ]
+    }
+  ],
+  "closed_at_all_points": false,
+  "scope": "One explicitly forced quadratic-trace nullflow boundary seed. Nonzero defect rejects this seed only; arbitrary residueclosed boundary2forms and general rank5 currents remain open.",
+  "seconds": 0.8495686090027448
+}

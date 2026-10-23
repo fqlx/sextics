@@ -1,0 +1,64 @@
+{
+  "exact_record_bound": true,
+  "instance_rec_sha256": "6118bb38bab73eb7132625084e968fd25aecf227e6dd4c3191242d36d56cee77",
+  "full_Jacobian": "k**5*y**2",
+  "source": "+(t\u00b2/2) dt wedge d\u2074base/C3(t)^2",
+  "cubic_coefficient_term_counts": [
+    28,
+    90,
+    90,
+    28
+  ],
+  "universal_P": [
+    "-g0*(9*g0*g3 - g1*g2)/(27*g0**2*g3**2 - 18*g0*g1*g2*g3 + 4*g0*g2**3 + 4*g1**3*g3 - g1**2*g2**2)",
+    "-(3*g0*g1*g3 + 2*g0*g2**2 - g1**2*g2)/(27*g0**2*g3**2 - 18*g0*g1*g2*g3 + 4*g0*g2**3 + 4*g1**3*g3 - g1**2*g2**2)",
+    "-2*g3*(3*g0*g2 - g1**2)/(27*g0**2*g3**2 - 18*g0*g1*g2*g3 + 4*g0*g2**3 + 4*g1**3*g3 - g1**2*g2**2)"
+  ],
+  "universal_B": [
+    "-2*g0*(3*g1*g3 - g2**2)/(27*g0**2*g3**2 - 18*g0*g1*g2*g3 + 4*g0*g2**3 + 4*g1**3*g3 - g1**2*g2**2)",
+    "-2*g3*(3*g0*g2 - g1**2)/(27*g0**2*g3**2 - 18*g0*g1*g2*g3 + 4*g0*g2**3 + 4*g1**3*g3 - g1**2*g2**2)"
+  ],
+  "trace_zero": true,
+  "rank": 2,
+  "Cardano_Fourier_identities": true,
+  "good_fiber": {
+    "prime": 101,
+    "point": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "C": [
+      81,
+      4,
+      81,
+      68
+    ],
+    "P": [
+      42,
+      37,
+      95
+    ],
+    "B": [
+      96,
+      95
+    ],
+    "rho": [
+      98,
+      98,
+      53
+    ],
+    "pq": [
+      9,
+      50
+    ],
+    "depressed_rho": [
+      15,
+      47,
+      53
+    ]
+  },
+  "seconds": 0.8767386930012435,
+  "scope": "Exact actual-source cubic quotient and charge transfer, no primitive or certificate."
+}

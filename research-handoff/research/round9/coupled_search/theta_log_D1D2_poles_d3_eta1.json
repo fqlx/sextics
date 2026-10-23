@@ -1,0 +1,22 @@
+{
+  "args": {
+    "degree": 3,
+    "eta": 1,
+    "zmax": 2,
+    "gauges": "1;D1^-1;D2^-1",
+    "basis": "theta",
+    "onlyD2": false,
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 963,
+    "output": "theta_log_D1D2_poles_d3_eta1"
+  },
+  "nfields": 6,
+  "columns": 2376,
+  "rows": 2481,
+  "rank": 2376,
+  "augmented_rank": 2377,
+  "validation20": null,
+  "seconds": 15.427347183227539,
+  "scope": "finite-prime sampled full-rank-three logarithmic current module; all field tangencies verified exactly QQ"
+}

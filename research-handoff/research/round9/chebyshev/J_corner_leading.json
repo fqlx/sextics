@@ -1,0 +1,19 @@
+{
+  "weights": "j=epsilon3,z=1/h=epsilon6*B,s=epsilon^-14*S,t=epsilon^-14*T,xE=epsilon^-14*X,yE=epsilon^-21*Y",
+  "leading_b2": "(B*delta - 54)/(8*B**8)",
+  "components": "T=eta*S, eta\u00b2=\u22121; delta=q_*\u00b3 also satisfiesdelta\u00b2=\u22121",
+  "S_cubed": "(-B*delta + 54)/(24*B**8*eta)",
+  "tau": "eta, hence jE=6912/5",
+  "twist_curve": {
+    "U": "U\u00b2=S",
+    "x": "54/(delta*B)",
+    "V": "U/x",
+    "equation": "V6=C0*x(1-x)",
+    "C0": "-delta**8/(32134205039616*eta)",
+    "genus": 2
+  },
+  "index3_deck": "epsilon\u2192omegaepsilon; S,X\u2192omega\u00b2(S,X), Yfixed; U,V\u2192omega(U,V)",
+  "constant_E_coordinates": "X/S and Y/U\u00b3 are fixed by index3deck",
+  "conclusion": "Reduced leading exceptional Hol2 vanishes after index3trace because curve quotient byV\u2192omegaV is a rational conic. This does not control conormal thickenings/R\u00b2 or global forms.",
+  "remaining": "Determine normal bundle/equivariant conormal layers and their adjoint connecting map; actual \u03bb starts3epsilonweights above leading."
+}

@@ -1,0 +1,171 @@
+{
+  "original_D_series_sha_bound_in": "special_P_series.json",
+  "point": "a0^6=-1,v0^6=-1; q=a0*v0, q^6=1",
+  "unit_normalization": "B=a0*b_old, R=r_old/a0, n=a0\u00b2*(v^6+1)/q\u00b2",
+  "initial_F": "W**6 + 5*W**3*eps**3/7 + b*(5*eps**2/7 + r)",
+  "initial_G": "b**2 - 27*b*eps**2*r/8 - 189*b*r**2/20 + 189*eps**2*n*r/10 + 3969*n*r**2/100",
+  "initial_F_independently_extracted_from_pinned_sextic": true,
+  "weights": [
+    1,
+    1,
+    4,
+    2,
+    4
+  ],
+  "degrees": [
+    6,
+    8
+  ],
+  "first_discrepancy": -3,
+  "all_initial_coefficients_rational": true,
+  "projective_singularities": [
+    {
+      "e": 1,
+      "W": 0,
+      "B": 0,
+      "R": 0,
+      "n": 0,
+      "type": "A5",
+      "count": 1
+    },
+    {
+      "e": 1,
+      "W_cubic": "W^3=-5/7",
+      "B": 0,
+      "R": 0,
+      "n": 0,
+      "type": "A1",
+      "count": 3
+    },
+    {
+      "e": 1,
+      "W": 0,
+      "B": 0,
+      "R": "-5/7",
+      "n": 0,
+      "type": "A2",
+      "count": 1
+    },
+    {
+      "e": 1,
+      "W": 0,
+      "B": 0,
+      "R": "-10/21",
+      "n": 0,
+      "type": "A2",
+      "count": 1
+    },
+    {
+      "e": 1,
+      "W_cubic": "W^3=-5/14",
+      "B": "15/28",
+      "R": "-10/21",
+      "n": "75/784",
+      "type": "A1",
+      "count": 3
+    },
+    {
+      "e": 0,
+      "W": 0,
+      "B": 0,
+      "R": 0,
+      "n": 1,
+      "type": "inherited generic corner; mu4 chart",
+      "count": 1
+    }
+  ],
+  "inherited_axis_second_weights": [
+    3,
+    2,
+    6,
+    6
+  ],
+  "inherited_axis_initial_F": "W^6+B*(R+5*eps^2/7)",
+  "inherited_axis_initial_G": "B^2+3969*R^2/100+189*eps^2*R/10",
+  "inherited_axis_exact_QQ_jacobian_dimension": 0,
+  "inherited_axis_exact_QQ_jacobian_colength": 83,
+  "new_low_weight_monomials": [
+    {
+      "exponent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_weight": 0,
+      "old_weight": 0
+    },
+    {
+      "exponent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "new_weight": 2,
+      "old_weight": 6
+    },
+    {
+      "exponent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "new_weight": 1,
+      "old_weight": 2
+    },
+    {
+      "exponent": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "new_weight": 2,
+      "old_weight": 4
+    },
+    {
+      "exponent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_weight": 1,
+      "old_weight": 3
+    },
+    {
+      "exponent": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "new_weight": 2,
+      "old_weight": 5
+    },
+    {
+      "exponent": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_weight": 2,
+      "old_weight": 6
+    }
+  ],
+  "old_adjoint_ideal_implies_first_new_valuation": true,
+  "actual_source_initial_numerator": "-q^(-3)*eps^4*B/36",
+  "actual_source_new_weight": 8,
+  "actual_source_radial_exponent_over_F_squared": 7,
+  "scope": "Exact formal initial models, chart singularity ADE classification, and valuation comparison. The full adjoint conclusion additionally uses rationality of Du Val deformations and finite quotient singularities; proof in special_P_proof.md."
+}

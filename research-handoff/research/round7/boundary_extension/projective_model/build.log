@@ -1,0 +1,47 @@
+{
+  "ambient": "P1_q x P1_h x P1_v x WP(1_U,2_t,1_z)",
+  "equation_multidegrees": [
+    [
+      12,
+      8,
+      4,
+      6
+    ],
+    [
+      6,
+      7,
+      3,
+      6
+    ],
+    [
+      12,
+      6,
+      4,
+      6
+    ]
+  ],
+  "canonical_CI_shift": [
+    28,
+    19,
+    9,
+    14
+  ],
+  "saturation": "U*h0*h1*q0*v0*v1*z*(-4*h0**2 + h1**2)",
+  "correct_main_component": "I=(E1,E2,E3):saturation^infinity",
+  "canonical_module_formula": "Ext^3_R(R/I,R)(-2,-2,-2,-4), after saturation and Cox sheafification; resolution generators pending",
+  "canonical_caveat": "The raw equations have codimension-two boundary components q0=v0=0 and h0=v0=0, so J is not a global CI. The displayed CI shift is only a formal degree sum and is NOT the canonical module. CI linkage may only be used on a verified height-three open.",
+  "homogeneity_verified": true,
+  "affine_equations_replayed": true,
+  "term_counts": [
+    25,
+    24,
+    16
+  ],
+  "character": "U -> -U; all equations and saturation ideal invariant",
+  "generic_fiber": {
+    "prime": 109,
+    "ell": 46,
+    "q": 2,
+    "h": 5
+  }
+}

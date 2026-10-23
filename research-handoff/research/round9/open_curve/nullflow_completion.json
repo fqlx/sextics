@@ -1,0 +1,259 @@
+{
+  "prime": 1000003,
+  "records": [
+    {
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "canonical_third_jets": [
+        [
+          444522,
+          35645,
+          845962,
+          739460
+        ],
+        [
+          131711,
+          12547,
+          321037,
+          248301
+        ],
+        [
+          173442,
+          922906,
+          642398,
+          927992
+        ]
+      ],
+      "physical_third_jets": [
+        [
+          1,
+          262110,
+          539208,
+          73457
+        ],
+        [
+          2,
+          224015,
+          814293,
+          394847
+        ],
+        [
+          3,
+          496303,
+          380385,
+          576555
+        ]
+      ],
+      "mark_third_jet": [
+        115335,
+        362446,
+        285023,
+        635893
+      ],
+      "closure_seed": [
+        43208,
+        279738
+      ],
+      "completion_determinant": 949109,
+      "T_forced": 976704,
+      "deltaT_actual": 401194,
+      "deltaT_forced": 812133,
+      "closedness_compatibility_defect": 589064,
+      "passes": false
+    },
+    {
+      "point": [
+        2,
+        1,
+        3
+      ],
+      "canonical_third_jets": [
+        [
+          303519,
+          556606,
+          649175,
+          746393
+        ],
+        [
+          230103,
+          239740,
+          562746,
+          812904
+        ],
+        [
+          572262,
+          217544,
+          47423,
+          483792
+        ]
+      ],
+      "physical_third_jets": [
+        [
+          2,
+          340558,
+          53090,
+          355877
+        ],
+        [
+          1,
+          639855,
+          276643,
+          488696
+        ],
+        [
+          3,
+          690976,
+          238178,
+          278623
+        ]
+      ],
+      "mark_third_jet": [
+        213678,
+        623713,
+        715676,
+        301525
+      ],
+      "closure_seed": [
+        368687,
+        43855
+      ],
+      "completion_determinant": 755167,
+      "T_forced": 780930,
+      "deltaT_actual": 967755,
+      "deltaT_forced": 518099,
+      "closedness_compatibility_defect": 449656,
+      "passes": false
+    },
+    {
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "canonical_third_jets": [
+        [
+          987460,
+          610168,
+          126470,
+          625545
+        ],
+        [
+          441261,
+          368859,
+          761063,
+          980016
+        ],
+        [
+          280863,
+          501853,
+          808600,
+          944288
+        ]
+      ],
+      "physical_third_jets": [
+        [
+          2,
+          753322,
+          525097,
+          858420
+        ],
+        [
+          3,
+          307126,
+          356153,
+          295952
+        ],
+        [
+          1,
+          758564,
+          779091,
+          463627
+        ]
+      ],
+      "mark_third_jet": [
+        55697,
+        226232,
+        975845,
+        180560
+      ],
+      "closure_seed": [
+        137675,
+        34544
+      ],
+      "completion_determinant": 571094,
+      "T_forced": 737164,
+      "deltaT_actual": 618847,
+      "deltaT_forced": 885067,
+      "closedness_compatibility_defect": 733783,
+      "passes": false
+    },
+    {
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "canonical_third_jets": [
+        [
+          801618,
+          344041,
+          484660,
+          656446
+        ],
+        [
+          252061,
+          336605,
+          385053,
+          7068
+        ],
+        [
+          186682,
+          501041,
+          854107,
+          439737
+        ]
+      ],
+      "physical_third_jets": [
+        [
+          3,
+          548680,
+          570336,
+          67612
+        ],
+        [
+          4,
+          778606,
+          968752,
+          807751
+        ],
+        [
+          2,
+          823970,
+          174084,
+          626883
+        ]
+      ],
+      "mark_third_jet": [
+        691873,
+        334292,
+        734257,
+        605306
+      ],
+      "closure_seed": [
+        397691,
+        434938
+      ],
+      "completion_determinant": 193368,
+      "T_forced": 484419,
+      "deltaT_actual": 496295,
+      "deltaT_forced": 606732,
+      "closedness_compatibility_defect": 889566,
+      "passes": false
+    }
+  ],
+  "scope": "The full eta-matched boundary current restricted to the Prym-nullflow direction only. A nonzero rational compatibility defect excludes that shape; general boundary2forms with transverse components and proper-current corrections remain open.",
+  "seconds": 0.8760436020020279
+}

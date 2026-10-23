@@ -1,0 +1,19 @@
+{
+  "multiplicity": 13,
+  "nextNormalDegree": 15,
+  "initialTerms": 69,
+  "nextTerms": 94,
+  "nodeEquation": "a**6 + t**6",
+  "q": "-194481*(v**2 + 1)*(196*v**6 + 171)*(v**4 - v**2 + 1)*(14*a*v**7 + 9*a*v + 14*t*v**6 + 14*t)",
+  "rTerms": 3,
+  "sTerms": 218,
+  "normalizationGenerator": "theta=q*S/b; degree6",
+  "identities": [
+    "b*theta=q*S",
+    "S*theta=-r*S-b*s",
+    "theta^2+r*theta+q*s=0"
+  ],
+  "nodeDiscriminantNorm": "398010574215107679422058885600836061208944572721000000000000000000000000*(v**2 + 1)**12*(196*v**6 + 171)**12*(v**4 - v**2 + 1)**12",
+  "normalizationSectionQuotientHilbert": "t^6*(1-t^6)/(1-t)^2",
+  "scope": "Generic function field of Gamma and the initial normal cone; full epsilon^2 deformation and special v loci not concluded."
+}

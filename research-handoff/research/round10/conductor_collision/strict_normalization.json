@@ -1,0 +1,14 @@
+{
+  "strictTransform": "f13+e^2*f15",
+  "q13": "-194481*(v**2 + 1)*(196*v**6 + 171)*(v**4 - v**2 + 1)*(14*a*v**7 + 9*a*v + 14*t*v**6 + 14*t)",
+  "q15": "-1944810*a*t**2*(v**2 + 1)*(196*v**6 + 171)*(v**4 - v**2 + 1)",
+  "r13": "-926100*a**2*t**4*(v**2 + 1)*(196*v**6 + 171)*(v**4 - v**2 + 1)",
+  "r15": "231525*(a**2 + t**2)*(a**4 - a**2*t**2 + t**4)*(-980*a**2*v**14 - 1281*a**2*v**8 - 351*a**2*v**2 - 588*a*t*v**13 - 1281*a*t*v**7 - 693*a*t*v + 392*t**2*v**12 + 784*t**2*v**6 + 392*t**2)",
+  "rModuloNodeIdeal": "-926100*a**2*t**4*(v**2 + 1)*(196*v**6 + 171)*(v**4 - v**2 + 1)",
+  "integralGenerator": "theta=q*(a^6+t^6)/b",
+  "generatorDegree": 6,
+  "conductorIdealGeneric": "(b,a^6+t^6)",
+  "normalizationQuotientGeneric": "A/(b,a^6+t^6) shifted by degree6",
+  "identitiesCheckedExactly": true,
+  "scope": "Generic Gamma (v^6+1)*(196v^6+171)!=0, after blowing up its ideal (Y0,Y1,Y2). Does not settle special ramification points, infinity, or global H20/source image."
+}

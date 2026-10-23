@@ -1,0 +1,86 @@
+{
+  "S": "54*h*(q**6 + 1)**2 - q**3",
+  "evaluation": "e0\u21921, allnonconstant e_i\u21920 on S",
+  "action_check": "Every constant coefficient of nonconstant algebra multiplication is divisible by S; kernel action is exact.",
+  "kernel_weights": [
+    [
+      12,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      16,
+      3
+    ]
+  ],
+  "Lmin_inverse_pushforward_weights": [
+    [
+      -14,
+      -3
+    ],
+    [
+      -6,
+      -4
+    ],
+    [
+      -10,
+      -7
+    ],
+    [
+      -14,
+      -8
+    ],
+    [
+      -10,
+      -5
+    ],
+    [
+      -18,
+      -5
+    ]
+  ],
+  "full_canonical_pushforward_budgets": [
+    [
+      12,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      16,
+      3
+    ]
+  ],
+  "module_violations": [],
+  "geometric_scope": "Kernel equals divisorial I_Dbad\u2297O(2Dinf), since it is CM/reflexive and agrees in codim1. Minimality at isolated resolution valuations still separate.",
+  "extra_canonical_generator": "dual_e0/S, global budget(q,h)=(12,1), in addition to unchanged nonconstant duals."
+}

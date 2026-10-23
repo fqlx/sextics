@@ -1,0 +1,16 @@
+{
+  "ell_relation": "ell\u00b2-ell+1=0",
+  "boundary_h": "q\u00b3/[54(1+q\u2076)\u00b2]",
+  "intrinsic_twist": "w=s/v",
+  "w_cubed_over_r_root": "ell*(46656*q**24 + 19683*q**22 + 186624*q**18 + 59049*q**16 + 279936*q**12 + 59049*q**10 + 186620*q**6 + 19683*q**4 + 46656)/(17006112*(q**6 + 1)**4)",
+  "root_lambda_jet": "ell*q**5*(23328*q**24 - 6561*q**22 + 93312*q**18 - 19683*q**16 + 139968*q**12 - 19683*q**10 + 93310*q**6 - 6561*q**4 + 23328)/(209952*(q**2 + 1)**3*(q**4 - q**2 + 1)**3*(108*q**12 + 216*q**6 - q**3 + 108)*(108*q**12 + 216*q**6 + q**3 + 108))",
+  "curve": "xi\u00b2=11664(1+q\u2076)^4-q\u2076",
+  "genus": 11,
+  "holomorphic_basis": "q^j dq/xi, j=0,...,10",
+  "verified": [
+    "w\u00b3/r=(ell R0)\u00b2",
+    "lambda(w\u00b3/r)=2ell\u00b2 R0 R0_lambda",
+    "branch polynomial degree24 and squarefree"
+  ],
+  "remaining": "These are boundary hol1 candidates. Extension to global odd hol1 on the intrinsic slope surface, and actual nonzero Gysin/source binding, remain unproved."
+}

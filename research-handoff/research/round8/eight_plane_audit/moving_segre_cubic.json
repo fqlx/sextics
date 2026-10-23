@@ -1,0 +1,38 @@
+{
+  "prime": 1000033,
+  "i_value": 350504,
+  "D": "-2*I*X0**2*Y1 + 2*I*X0*X1*Y0 + 2*I*X0*X1*Y2 - 4*I*X0*X2*Y1 + 2*I*X0*X2*Y2 - 2*X0*Y0*Y1 - 2*X0*Y1*Y2 + 2*X0*Y2**2 - 4*I*X1**2*Y2 + 2*I*X1*X2*Y0 + 4*I*X1*X2*Y1 - 6*I*X1*X2*Y2 + 2*X1*Y0**2 + 4*X1*Y0*Y2 - 4*X1*Y1*Y2 - 6*X1*Y2**2 - 2*I*X2**2*Y0 + 6*I*X2**2*Y1 - 2*X2*Y0*Y1 - 2*X2*Y0*Y2 + 4*X2*Y1**2 + 6*X2*Y1*Y2",
+  "M0": "identity",
+  "M1": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      1,
+      0,
+      3
+    ]
+  ],
+  "E1_rows": 2002,
+  "E1_columns": 1218,
+  "E1_rank": 1182,
+  "E1_nullity": 36,
+  "E2_rows": 462,
+  "E2_columns": 37,
+  "E2_rank": 2,
+  "served_source_dimension": 35,
+  "union_dimension": 35,
+  "union_target_augmented_rank": 36,
+  "target_in_union_modp": false,
+  "seconds": 1.6316762490023393,
+  "regular_exact_sources_dimension": 35,
+  "scope": "Selected moving-Segre cubic and its global-Y translate only; finite-prime image unless stated exact by a rank sandwich.",
+  "exact_rank_sandwich": "E1 kernel is exactly the 36 linear-field sources; E2 leaves exactly the 35 tracezero linear fields. Thus this selected cubic has only the globally exact source image over C, and its translate adds nothing."
+}

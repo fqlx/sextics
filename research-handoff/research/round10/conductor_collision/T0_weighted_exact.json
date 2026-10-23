@@ -1,0 +1,19 @@
+{
+  "scaledPolynomial": "B**2*eta*(9*h - 5)*(16875*h/56 - 9375/56)*(153*h**2 + 180*h + 125) + B**2*u*(9*h - 5)*(56250*h - 31250) - B*Z*eta*(9*h - 5)*(590625*h + 590625) - 10125*B*eta**3*(9*h - 5)**4/64 - B*eta**2*u*(9*h - 5)*(7441875*h/8 - 4134375/8) - 16537500*B*eta*u**2 + 23152500*Z**2*eta",
+  "coefficientField": "QQ(h),196h6-171=0 (Eisenstein at19)",
+  "coordinateScaling": "D=-a\u00b3*u,z=a\u00b2*Z,b=a\u00b3*B,eta unchanged; h=a*v",
+  "scaledIdentityCheckedExactly": true,
+  "jacobianDimensionExact": 1,
+  "ambientAffineDimension": 4,
+  "weightedProjectiveSurfaceNormal": true,
+  "weights": [
+    1,
+    2,
+    2,
+    1
+  ],
+  "degree": 5,
+  "sumWeights": 6,
+  "H20Resolution": 0,
+  "scope": "Exact normal weighted exceptional surface for T0 special finite points. Does not classify further singularities of the full3fold weighted blowup or complete global resolution."
+}

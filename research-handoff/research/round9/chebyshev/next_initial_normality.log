@@ -1,0 +1,17 @@
+DIM
+3
+SMOOTH Q NONZERO
+_[1]=1
+SMOOTH H NONZERO
+_[1]=1
+SUPPORT VERTEX
+_[1]=H
+_[2]=Q
+_[3]=v2
+_[4]=uv
+_[5]=sv
+_[6]=u2
+_[7]=su
+_[8]=s2
+HILBERT
+1,0,0,0,0,0,-6,0,0,8,0,0,-3,0

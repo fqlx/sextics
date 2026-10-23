@@ -1,0 +1,55 @@
+{
+  "prime": 1000003,
+  "results": [
+    {
+      "normalized": false,
+      "components": [
+        3,
+        4
+      ],
+      "columns": 10,
+      "rank": 10,
+      "augmented_rank": 11,
+      "higgs_row_matched_exactly": true
+    },
+    {
+      "normalized": false,
+      "components": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "columns": 22,
+      "rank": 22,
+      "augmented_rank": 23,
+      "higgs_row_matched_exactly": true
+    },
+    {
+      "normalized": true,
+      "components": [
+        3,
+        4
+      ],
+      "columns": 10,
+      "rank": 10,
+      "augmented_rank": 11,
+      "higgs_row_matched_exactly": true
+    },
+    {
+      "normalized": true,
+      "components": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "columns": 22,
+      "rank": 22,
+      "augmented_rank": 23,
+      "higgs_row_matched_exactly": true
+    }
+  ],
+  "seconds": 6.000576586004172,
+  "scope": "Four structural constant-coefficient Hodge-null modules using the natural Higgs-pivot pole; no unrestricted inference."
+}

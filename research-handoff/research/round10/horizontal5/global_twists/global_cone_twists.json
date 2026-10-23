@@ -1,0 +1,158 @@
+{
+  "base": "P2_Y x P1_X",
+  "line_bidegrees": {
+    "KB": [
+      -3,
+      -2
+    ],
+    "d": [
+      15,
+      17
+    ],
+    "n": [
+      13,
+      19
+    ],
+    "w_old": [
+      0,
+      1
+    ],
+    "t_old_over_h2": [
+      -2,
+      2
+    ],
+    "r=d*w": [
+      15,
+      18
+    ],
+    "z=d*w\u00b2": [
+      15,
+      19
+    ],
+    "quadric": [
+      30,
+      36
+    ],
+    "cubic": [
+      45,
+      57
+    ],
+    "omegaY": [
+      42,
+      54
+    ],
+    "omegaZ_full_CI": [
+      25,
+      34
+    ]
+  },
+  "finite_module_basis": [
+    "1",
+    "z",
+    "z\u00b2",
+    "r",
+    "rz",
+    "rz\u00b2"
+  ],
+  "finite_module_characters": [
+    0,
+    2,
+    1,
+    1,
+    0,
+    2
+  ],
+  "omegaY_character": 1,
+  "H2_OY": 0,
+  "target_character": "R1 chi\u00b2 / canonical chi\u00b9",
+  "R1_graded_lines_constant_then_linear": [
+    [
+      -17,
+      -20
+    ],
+    [
+      -2,
+      -3
+    ],
+    [
+      -4,
+      -1
+    ]
+  ],
+  "dual_adjoint_graded_lines": [
+    [
+      42,
+      54
+    ],
+    [
+      27,
+      37
+    ],
+    [
+      29,
+      35
+    ]
+  ],
+  "non_split_warning": "R1 is an I\u00b2-annihilated module; I acts from the rank2 n0 layer to n1 line. These are graded lines, not a direct-sum identification.",
+  "square_ideal_generators_after_omega_twist": [
+    [
+      12,
+      20
+    ],
+    [
+      14,
+      18
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "square_ideal_syzygies_after_omega_twist": [
+    [
+      -1,
+      1
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "syzygy_cohomology": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "H1_square_ideal_omega_twist": 0,
+  "canonical_chi1_slots": [
+    [
+      42,
+      54
+    ],
+    [
+      12,
+      17
+    ]
+  ],
+  "canonical_chi1_dimension": 53668,
+  "full_CI_arithmetic_genus": 9641,
+  "full_CI_not_normalization_genus": true,
+  "adjoint_cone_chi1_jet_space_dimension": 45238,
+  "graded_jet_space_dimensions": [
+    22142,
+    11237,
+    11859
+  ],
+  "cone_jet_map_surjective_from_constant_canonical_slot": true,
+  "kernel_chi1_canonical_dimension_if_only_cone_conditions": 8430,
+  "scope": "Exact finite-flat physical model and full-pencil Koszul jet interpolation. Does not impose normalization/conductor/other-boundary adjoint conditions. Does not prove physicalD32 H20=0 or serving."
+}

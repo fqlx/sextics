@@ -1,0 +1,22 @@
+{
+  "N0_pullback_terms": 797,
+  "N1_pullback_terms": 793,
+  "t_old_numerator_terms": 248,
+  "t_old_denominator_terms": 310,
+  "t_old_numerator_degrees": [
+    13,
+    12,
+    19
+  ],
+  "t_old_denominator_degrees": [
+    14,
+    14,
+    17
+  ],
+  "homogenizing_ab_degree": 15,
+  "homogenizing_v_degree": 19,
+  "physical_graph_degree_before_coordinate_factor_removal": 36,
+  "graph_formula": "den(Y0/Y2,Y1/Y2,X1/X0)*Y2\u00b2-num(Y0/Y2,Y1/Y2,X1/X0)*X0\u00b2=0",
+  "scope": "Exact source-specific point-graph pullback. No physical E2 or Gysin-serving claim.",
+  "seconds": 0.075
+}

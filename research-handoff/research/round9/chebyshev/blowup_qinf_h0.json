@@ -1,0 +1,50 @@
+{
+  "Q_chart": "q=1/Q,h=Q6H; original s=S,t=T,x=X,y=Y unscaled",
+  "coefficients": {
+    "a1": "3*H**5*Q**30/2 + 3*H**5*Q**24/2 - 12*H**3*Q**18 - 12*H**3*Q**12 + 24*H*Q**6 + 24*H",
+    "a0": "-H**4*Q**24/3888 + H**2*Q**12/486 - H*Q/32 - 1/243",
+    "b2": "-27*H**8*Q**48/4 - 27*H**8*Q**42/2 - 27*H**8*Q**36/4 + H**7*Q**39/8 + 81*H**6*Q**36 + 162*H**6*Q**30 + 81*H**6*Q**24 - 3*H**5*Q**27/2 - 324*H**4*Q**24 - 648*H**4*Q**18 - 324*H**4*Q**12 + 6*H**3*Q**15 + 432*H**2*Q**12 + 864*H**2*Q**6 + 432*H**2 - 8*H*Q**3",
+    "b1": "5*H**7*Q**42/216 + 5*H**7*Q**36/216 - 5*H**5*Q**30/18 + H**5*Q**26/48 - 5*H**5*Q**24/18 + 10*H**3*Q**18/9 - H**3*Q**14/6 + 10*H**3*Q**12/9 - 40*H*Q**6/27 + H*Q**2/3 - 40*H/27",
+    "b0": "H**6*Q**36/629856 - H**4*Q**24/52488 + H**3*Q**13/3456 + H**2*Q**12/13122 - H**2*Q**6/64 - H**2/64 - H*Q/864 - 2/19683"
+  },
+  "at_Q0": {
+    "a1": "24*H",
+    "a0": "-1/243",
+    "b2": "432*H**2",
+    "b1": "-40*H/27",
+    "b0": "-(19683*H**2 + 128)/1259712"
+  },
+  "second_corner_initial": {
+    "a1": {
+      "weight": 3,
+      "initial": "24*H"
+    },
+    "a0": {
+      "weight": 0,
+      "initial": "-1/243"
+    },
+    "b2": {
+      "weight": 6,
+      "initial": "432*H**2 - 8*H*Q**3"
+    },
+    "b1": {
+      "weight": 3,
+      "initial": "-40*H/27"
+    },
+    "b0": {
+      "weight": 0,
+      "initial": "-2/19683"
+    }
+  },
+  "rational_exceptional_base": {
+    "s_over_H": "-72*(81*T - 5)/((27*T - 1)*(27*T + 1))",
+    "Q3_over_H": "54*(9*T - 1)*(59049*T**3 + 6561*T**2 - 1053*T + 19)/((27*T - 1)**2*(27*T + 1)**2)"
+  },
+  "exceptional_elliptic_surface": {
+    "equation": "y\u00b2=x\u00b3\u221227*(27T\u22122)*(27T+1)\u00b2/19683",
+    "fibers": "II at T=2/27, IV at T=\u22121/27, I0* at infinity",
+    "pg": 0
+  },
+  "finite_order_check": "All transformed multiplication entries polynomial over QQ[Q,H] for basis1,s,s\u00b2,(s\u00b3+a0s/3)/r,u/r,u\u00b2/(H*r\u00b3).",
+  "scope": "Exact chart, finite algebra, weighted initial terms and rational parametrization. Full strict-transform resolution/adjoint-defect comparison still needs a geometric argument."
+}

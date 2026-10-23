@@ -1,0 +1,58 @@
+{
+  "all_exact_checks_pass": true,
+  "finite_cover_map": "alpha=-(gamma0+u*gamma1)/(3*w^2*(2*u+A))",
+  "residue_closedness": "d gamma + R^T wedge gamma=0",
+  "physical_closedness": "d Z + (Rphys^T + dlog(rho*fT) I) wedge Z=0",
+  "gauge_determinant": "-9*B*(A**2 - 4*B)",
+  "simple_w": [
+    {
+      "B,g": "1/F",
+      "m,g": "2*B/(F*m)"
+    },
+    {
+      "A,g": "1/F",
+      "m,g": "A/(F*m)"
+    }
+  ],
+  "simple_w4": [
+    {
+      "A,g": "-4*B/F",
+      "m,g": "-A*B/(F*m)"
+    },
+    {
+      "B,g": "4/F",
+      "A,g": "-4*A/F",
+      "m,g": "(-A**2 + 2*B)/(F*m)"
+    }
+  ],
+  "general_families": {
+    "w": [
+      {
+        "B,g": "f/F",
+        "m,g": "2*B*f/(F*m)",
+        "f,g": "6*B/F"
+      },
+      {
+        "A,g": "f/F",
+        "m,g": "A*f/(F*m)",
+        "f,g": "3*A/F"
+      }
+    ],
+    "w4": [
+      {
+        "A,g": "-4*B*f/F",
+        "m,g": "-A*B*f/(F*m)",
+        "f,g": "-3*A*B/F"
+      },
+      {
+        "B,g": "4*f/F",
+        "A,g": "-4*A*f/F",
+        "m,g": "(-A**2*f + 2*B*f)/(F*m)",
+        "f,g": "(-3*A**2 + 6*B)/F"
+      }
+    ]
+  },
+  "physical_small_candidates": "Set (f,g)=(1,a),(1,b),(1,v); or (f,g)=(a,b),(a,v),(b,v), in each of the two families. All normalized current coefficients are rational after substituting m,F,A,B.",
+  "exactness": "Residues are d(rho*w*f) wedge dg or d(rho*w^4*f) wedge dg, divided by the physical rho-density convention. They are de Rham-exact and do not by themselves establish a new H20 class.",
+  "scope": "Exact horizontal preconditioners and finite-cover de Rham identification; no proper source primitive or certificate."
+}

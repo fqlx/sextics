@@ -1,0 +1,25 @@
+{
+  "prime": 103,
+  "ell": 57,
+  "base": {
+    "q": 1,
+    "h": 4
+  },
+  "points": [
+    {
+      "s": 13,
+      "t": 67,
+      "v": 18,
+      "jacobian_determinant": 64,
+      "twist": 98
+    },
+    {
+      "s": 65,
+      "t": 82,
+      "v": 98,
+      "jacobian_determinant": 27,
+      "twist": 90
+    }
+  ],
+  "conclusion": "smooth point proves an etale generically finite dominant component over physical(q,h) over Q(ell), ell\u00b2-ell+1=0"
+}

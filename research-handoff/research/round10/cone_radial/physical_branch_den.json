@@ -1,0 +1,37 @@
+{
+  "report": {
+    "N": {
+      "constant": "6561/343",
+      "factors": [
+        {
+          "multiplicity": 1,
+          "degrees": [
+            13,
+            12,
+            19
+          ],
+          "terms": 248,
+          "factor": "(large factor; see pickle)"
+        }
+      ]
+    },
+    "D": {
+      "constant": "-32805/343",
+      "factors": [
+        {
+          "multiplicity": 1,
+          "degrees": [
+            14,
+            14,
+            17
+          ],
+          "terms": 310,
+          "factor": "(large factor; see pickle)"
+        }
+      ]
+    },
+    "gcd_H_D": "1",
+    "gcd_Delta_D": "1"
+  },
+  "seconds": 0.0633531839994248
+}

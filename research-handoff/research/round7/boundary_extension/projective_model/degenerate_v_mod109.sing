@@ -1,0 +1,11 @@
+LIB "elim.lib";
+option(redSB);
+ring R=109,(U,t,v),dp;
+ideal JJ=1*U^6*v^4+76*U^6*v^2+3*U^4*t*v^2+94*U^2*v+88,72*U^6*v^3+68*U^6*v+3*U^2*t^2*v+89*U^2*v+94*t+61,71*U^6*v^4+37*U^6*v^2+75*U^6+1*t^3+89*t+22;
+ideal G1=std(sat(JJ+ideal(v^2-1),ideal(U*v)));
+print("V2_1");
+print(G1);
+ideal G2=std(sat(JJ+ideal(v^2-46),ideal(U*v)));
+print("V2_ELL");
+print(G2);
+quit;

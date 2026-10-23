@@ -1,0 +1,24 @@
+{
+  "frame": "global_eta_complete literal polynomial eta_new",
+  "conjugate_frame": "conjugate_fast unchanged",
+  "transport": "H_clean=P*H_old",
+  "matrix_terms": [
+    [
+      1,
+      13,
+      11
+    ],
+    [
+      1,
+      13,
+      13
+    ],
+    [
+      1,
+      41,
+      35
+    ]
+  ],
+  "seconds": 0.39791646400044556,
+  "scope": "Exact rational gauge transport of the audited flat pairing; common topological scalar remains unspecified."
+}

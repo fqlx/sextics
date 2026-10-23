@@ -1,0 +1,11 @@
+LIB "primdec.lib";
+ring R=0,(z,Q,H,s,u,v),dp;
+poly ga=432*H-8*Q^3;
+ideal I=s*u-H*ga,u^2-H*v,s*v-ga*u,v^2+24*u*v-(40/9)*ga*u-(1/81)*ga^2,H*v+24*H*u-(40/9)*H*s-(1/81)*s^2,u*v+24*H*v-(40/9)*H*ga-(1/81)*ga*s;
+print("DIM");dim(std(I));
+ideal J=I+minor(jacob(I),3);
+print("SMOOTH Q NONZERO");std(J+ideal(z*Q-1));
+print("SMOOTH H NONZERO");std(J+ideal(z*H-1));
+print("SUPPORT VERTEX");std(J+ideal(Q,H));
+print("HILBERT");hilb(std(I),1,intvec(1,1,3,3,3,3));
+quit;

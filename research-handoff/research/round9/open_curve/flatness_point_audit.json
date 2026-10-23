@@ -1,0 +1,82 @@
+{
+  "prime": 1000003,
+  "points": [
+    [
+      122,
+      98,
+      102,
+      82
+    ],
+    [
+      84,
+      122,
+      55,
+      26
+    ],
+    [
+      148,
+      172,
+      160,
+      62
+    ],
+    [
+      5,
+      129,
+      118,
+      162
+    ],
+    [
+      84,
+      29,
+      71,
+      129
+    ],
+    [
+      177,
+      112,
+      109,
+      144
+    ],
+    [
+      153,
+      112,
+      74,
+      6
+    ],
+    [
+      147,
+      132,
+      18,
+      54
+    ],
+    [
+      199,
+      19,
+      32,
+      150
+    ],
+    [
+      94,
+      84,
+      94,
+      41
+    ],
+    [
+      107,
+      95,
+      20,
+      109
+    ],
+    [
+      198,
+      139,
+      132,
+      160
+    ]
+  ],
+  "all6_parameter_pairs_all25_entries_zero": true,
+  "checks": 1800,
+  "convention": "d_i N_j-d_j N_i+N_j*N_i-N_i*N_j=0 for derivative-of-basis row matrices",
+  "scope": "Independent finite-prime flatness jet audit; exact polynomial reduction identities are separately verified in boundary_native. This finite audit alone is not an exact rational flatness proof.",
+  "seconds": 1.510064678001072
+}

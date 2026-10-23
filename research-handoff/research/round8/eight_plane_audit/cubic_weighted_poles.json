@@ -1,0 +1,12 @@
+{
+  "prime": 1000003,
+  "features": 1596,
+  "rows": 2484,
+  "rank": 1572,
+  "augmented_rank": 1573,
+  "consistent": false,
+  "source": "N=t^2, normalized residue (Nprime*Cprime-N*Csecond)/(Cprime)^3",
+  "denominator": "Cprime times 1, g0, or g3",
+  "seconds": 4.949964685998566,
+  "scope": "Finite-field screen of the listed weighted feature space only."
+}

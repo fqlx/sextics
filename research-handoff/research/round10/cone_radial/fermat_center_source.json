@@ -1,0 +1,21 @@
+{
+  "target": "cyclic-triple-residual",
+  "chart": "Y2=1; X0=x,X1=v*x,X2=w,Y0=a,Y1=b",
+  "source_density_numerator": "-a**3*x**4",
+  "orientation": "Standard Omega=sum_i(-1)^i Zi*dZ_except_i; Y2 index5 contributes minus; affine chart Jacobian is+x. Ordered volume dx,dv,dw,da,db.",
+  "F0": "a**6 + b**6 + w**6 + 1",
+  "normal_coefficients": {
+    "0": "a**6 + b**6 + w**6 + 1",
+    "1": "5*a*b*v*w**3/7 + 5*b*w**3/7",
+    "2": "5*a*b/7 + 5*b**3*v/7",
+    "3": "5*w**3/7",
+    "4": "5*a*b*v/7",
+    "5": "0",
+    "6": "v**6 + 1"
+  },
+  "literal_F_and_A_verified": true,
+  "globalY_chart_action": "(x,w)->(-x,-w), while v,a,b fixed; full source density invariant. At center the fiber Wsign must be tracked together with the normal dx character.",
+  "source_normal_order": 4,
+  "first_naive_normal_primitive_order": 5,
+  "seconds": 0.054417571001977194
+}

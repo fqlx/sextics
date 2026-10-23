@@ -1,0 +1,14 @@
+LIB "elim.lib";
+option(redSB);
+ring R=109,(U,t,v,h),dp;
+ideal JJ=1*U^6*v^4+76*U^6*v^2+3*U^4*t*v^2+43*U^2*v*h^5+92*U^2*v*h^3+34*U^2*v*h+12*h^8+1*h^7+74*h^6+97*h^5+31*h^4+48*h^3+104*h^2+45*h,72*U^6*v^3+68*U^6*v+3*U^2*t^2*v+106*U^2*v*h^4+24*U^2*v*h^2+108*U^2*v*h+61*U^2*v+43*t*h^5+92*t*h^3+34*t*h+1*h^7+61*h^5+9*h^3+14*h,71*U^6*v^4+37*U^6*v^2+75*U^6+1*t^3+106*t*h^4+24*t*h^2+108*t*h+61*t+107*h^6+24*h^4+108*h^3+57*h^2+4*h+19;
+print("Q2_CURVE_SATURATION_START");
+ideal II=sat(JJ,ideal(h*(h*h-4)*v*U));
+print("Q2_CURVE_SATURATION_DONE");
+print(size(II));
+print(dim(std(II)));
+write("/workspace/research/round7/boundary_extension/projective_model/q2_curve_saturated_mod109.sing",II);
+ideal CC=quotient(JJ,II);
+print("Q2_CURVE_CANONICAL_COLON_DONE");
+write("/workspace/research/round7/boundary_extension/projective_model/q2_curve_canonical_colon_mod109.sing",CC);
+quit;

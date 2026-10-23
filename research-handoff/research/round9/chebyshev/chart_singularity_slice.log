@@ -1,0 +1,11 @@
+SINGULAR ALONG Q0 OFF H0
+_[1]=1
+SINGULAR ALONG Q0H0
+_[1]=H
+_[2]=Q
+_[3]=v2
+_[4]=uv
+_[5]=sv
+_[6]=u2
+_[7]=su
+_[8]=s2

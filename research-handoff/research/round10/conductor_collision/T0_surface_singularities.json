@@ -1,0 +1,22 @@
+{
+  "coefficientField": "QQ(h),h6=171/196",
+  "etaOneChart": "After eliminating z by its critical equation, g=b*(J(u)+b*K(u)).",
+  "J": "-16537500*u**2 + u*(4134375/8 - 7441875*h/8)*(9*h - 5) - 10125*(9*h - 5)**4/64",
+  "K": "625*(9*h - 5)**2*(243*h**2 - 270*h + 1120*u + 75)/112",
+  "resultantJK": "0",
+  "commonRootU": "(3/224 - 27*h/1120)*(9*h - 5)",
+  "extraPointB": "189/80",
+  "extraPointZ": "27*(h + 1)*(9*h - 5)/896",
+  "extraPointType": "A1: reduced local quadratic is b0*delta_u*(C*delta_u+A1*delta_b), nondegenerate.",
+  "etaChartSingularities": "Two b=z=0 points, J(u)=0; nonzero J discriminant gives nondegenerate Hessian, typeA1.",
+  "Jdiscriminant": "13953515625*(9*h - 5)**4/64",
+  "uOneChart": "At b=z=eta=0, (b,eta) Hessian has rank2. Splitting eliminates these variables; leading residual z4 has nonzero coefficientA0*D\u00b2/C\u00b2, hence typeA3.",
+  "z4Coefficient": "525*(9*h - 5)**2*(153*h**2 + 180*h + 125)/8",
+  "weightTwoLine": "On u=eta=0, derivative_u=A1*b\u00b2, derivative_eta=D*z\u00b2+G*z*b+A0*b\u00b2 have no common projective zero. The coarse surface is smooth there.",
+  "singularityInventory": {
+    "A1": 3,
+    "A3": 1
+  },
+  "allUnitsCheckedExactly": true,
+  "scope": "Exact exceptional-surface classification; its use for rationality of the full weighted threefold blowup requires the stated deformation/inversion-of-adjunction argument."
+}

@@ -1,0 +1,10 @@
+{
+  "X": "v*(k**2 - 4)/(4*k - 4*v - 4/v)",
+  "Y": "Z*(k - 2/v)/(k - v - 1/v)**2",
+  "equation": "Y\u00b2=64(s/v)\u00b3X(X-1)(X-ell)",
+  "differential": "dX/Y=(v/4)(k-2v)dk/Z",
+  "smooth_if": "s*v*(v\u00b2-1)*(v\u00b2-ell)*ell*(ell-1) != 0",
+  "twist": "s/v",
+  "j1728": "ell=1/2",
+  "j0": "ell\u00b2-ell+1=0"
+}

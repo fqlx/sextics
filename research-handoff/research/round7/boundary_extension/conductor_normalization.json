@@ -1,0 +1,10 @@
+{
+  "base_field": "QQ",
+  "conductor_degree": 24,
+  "4AC_minus_B_squared_is_zero_mod_G": true,
+  "quadratic_q_coefficient_is_a_unit_mod_G": true,
+  "normalization": "Two smooth formal sheets in coordinates (U,v); v has normal order zero.",
+  "reason": "Eliminate h,t. Up to alpha^2, F(q,alpha,v)=Fbar(q,alpha*v). The exact vanishing Hessian discriminant makes the critical value O(alpha^3). With alpha=U^2 the formal Morse lemma factors F into q-Q(U^2,v)=+-U^3 times a unit.",
+  "scope": "Only conductor G=0, away from q=0, P=0 and infinity. Does not prove the global normal bundle, global H10, or Gysin binding.",
+  "elapsed_seconds": 0.234
+}

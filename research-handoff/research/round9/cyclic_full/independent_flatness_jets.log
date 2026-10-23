@@ -1,0 +1,6 @@
+{
+  "prime": 1000003,
+  "convention": "partial_i N_j-partial_j N_i+N_j N_i-N_i N_j",
+  "seconds": 1.046344250000402,
+  "scope": "Independent finite-prime analytic first-jet diagnostic; not a characteristic-zero identity or certificate."
+}

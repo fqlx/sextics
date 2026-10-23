@@ -1,0 +1,41 @@
+{
+  "prime": 101,
+  "physical_basepoint": {
+    "point": [
+      41,
+      25,
+      1
+    ],
+    "num_value": 0,
+    "den_value": 0,
+    "num_gradient": [
+      10,
+      73,
+      35
+    ],
+    "den_gradient": [
+      63,
+      41,
+      57
+    ],
+    "nonzero_Jacobian_minors": {
+      "(0, 1)": 53,
+      "(0, 2)": 82,
+      "(1, 2)": 100
+    },
+    "canonical_frame": {
+      "L": 27,
+      "r": 71,
+      "x": 52,
+      "z": 8,
+      "D1": 93,
+      "D2": 4,
+      "AP": 33,
+      "BP": 40,
+      "S": 99,
+      "E": 42
+    }
+  },
+  "characteristic_zero_inference": "Fix the third coordinate complementary to a nonzero 2x2 minor. The two polynomial equations then have an etale local zero over Z_(101), and all excluded factors are units. Hensel/etale lifting gives a characteristic-zero common-zero component with transverse N0,N1 and smooth canonical curve.",
+  "caveat": "This proves nonemptiness of the good local cone mechanism on a characteristic-zero component; it does not establish global smoothness, eigensheaf transitions, H20 extension, or serving image."
+}

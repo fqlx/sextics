@@ -1,0 +1,166 @@
+{
+  "corners": {
+    "main_qinf_h0": {
+      "parameter_valuations": {
+        "s": 0,
+        "a0": 0,
+        "a1": 0,
+        "b1": 0,
+        "b2": 0,
+        "r": 0,
+        "h": 6
+      },
+      "f_s": 0,
+      "actual_trace_dual_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    "next_RES": {
+      "parameter_valuations": {
+        "s": 3,
+        "a0": 0,
+        "a1": 3,
+        "b1": 3,
+        "b2": 6,
+        "r": 0,
+        "h": 9
+      },
+      "f_s": 9,
+      "actual_trace_dual_valuations": [
+        0,
+        3,
+        0,
+        -3,
+        -3,
+        3
+      ]
+    },
+    "q0_h0": {
+      "parameter_valuations": {
+        "s": 3,
+        "a0": 0,
+        "a1": 3,
+        "b1": 3,
+        "b2": 6,
+        "r": 0,
+        "h": 3
+      },
+      "f_s": 9,
+      "actual_trace_dual_valuations": [
+        0,
+        3,
+        0,
+        -3,
+        -3,
+        -3
+      ]
+    },
+    "q0_r0": {
+      "parameter_valuations": {
+        "s": 5,
+        "a0": 10,
+        "a1": 10,
+        "b1": 15,
+        "b2": 15,
+        "r": 5,
+        "h": 0
+      },
+      "f_s": 25,
+      "actual_trace_dual_valuations": [
+        0,
+        -5,
+        -10,
+        -10,
+        -5,
+        -5
+      ]
+    },
+    "qinf_r0": {
+      "parameter_valuations": {
+        "s": -5,
+        "a0": -10,
+        "a1": -6,
+        "b1": -3,
+        "b2": -15,
+        "r": 3,
+        "h": 0
+      },
+      "f_s": -25,
+      "actual_trace_dual_valuations": [
+        0,
+        5,
+        10,
+        18,
+        13,
+        29
+      ]
+    },
+    "J0_hinf": {
+      "parameter_valuations": {
+        "s": -14,
+        "a0": -24,
+        "a1": -27,
+        "b1": -39,
+        "b2": -42,
+        "r": -12,
+        "h": -6
+      },
+      "f_s": -70,
+      "actual_trace_dual_valuations": [
+        0,
+        14,
+        28,
+        30,
+        16,
+        14
+      ]
+    },
+    "qinf_hinf": {
+      "parameter_valuations": {
+        "s": -12,
+        "a0": -12,
+        "a1": -21,
+        "b1": -27,
+        "b2": -36,
+        "r": -6,
+        "h": -3
+      },
+      "f_s": -60,
+      "actual_trace_dual_valuations": [
+        0,
+        12,
+        24,
+        30,
+        18,
+        27
+      ]
+    },
+    "q0_hinf": {
+      "parameter_valuations": {
+        "s": -8,
+        "a0": -12,
+        "a1": -15,
+        "b1": -21,
+        "b2": -24,
+        "r": -6,
+        "h": -3
+      },
+      "f_s": -40,
+      "actual_trace_dual_valuations": [
+        0,
+        8,
+        16,
+        18,
+        10,
+        11
+      ]
+    }
+  },
+  "warning": "Generic leading valuations, before special-point cancellations; use explicit trace duals rather than inverse basis weights. The earlier RES shortage was false.",
+  "corrected_interpolation": "No q0h0 adjoint conditions; nextRES adds no stronger condition than mainE. The original73jet fullrankspace is conservative/sufficient for these generic valuations."
+}

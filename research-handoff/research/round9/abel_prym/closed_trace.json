@@ -1,0 +1,16 @@
+{
+  "universal_quadratic_inverse": true,
+  "derivative_trace_identity": true,
+  "trace_formula": true,
+  "u_trace_formula": true,
+  "canonical_Ct_identity": true,
+  "physical_norm_identity": true,
+  "G": "(1+v^6)*(1+a*v)^2-c*a*v*(1+a*v)+a^2*v^2",
+  "homogenized_G": "(X0^6+X1^6)*(X0*Y2+X1*Y0)^2-c*X0^6*X1*Y0*(X0*Y2+X1*Y0)+X0^6*X1^2*Y0^2",
+  "Gamma_discriminant_cancels": true,
+  "primitive_character_reduction": true,
+  "max_u_degree_before_reduction": 1,
+  "number_base2form_generators": 11,
+  "seconds": 1.293,
+  "scope": "Exact closed quadratic trace identities only. Does not assert a source match, a primitive, or a serving Gysin channel."
+}

@@ -1,0 +1,20 @@
+{
+  "args": {
+    "degree": 3,
+    "eta": 1,
+    "zmax": 2,
+    "frames": "canonical",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 921,
+    "output": "canonical_d3_eta1",
+    "correction": false
+  },
+  "columns": 396,
+  "rows": 486,
+  "rank": 396,
+  "augmented_rank": 397,
+  "validation20": null,
+  "seconds": 1.1416900157928467,
+  "scope": "finite-prime sampled current module only; positive requires exact reconstruction"
+}

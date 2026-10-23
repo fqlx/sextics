@@ -1,0 +1,18 @@
+{
+  "all_degree32_global": true,
+  "generic_Xcenter_adjoint_order_atleast16": true,
+  "generic_ruled_conductor_adjoint_membership": true,
+  "mu3_character": 1,
+  "Y_sign": "even",
+  "generic_jet_dimension": 420,
+  "fine_source_delta_character2_dimension": 140,
+  "formulas": {
+    "1": "X0^(16-k)X1^k Y1 Y0^j Y2^(15-j)",
+    "eps2": "X0^(18-k)X1^k Y1 Y0^j Y2^(13-j)",
+    "b": "X0^(16-k)X1^k Y1\u00b2 Y0^j Y2^(14-j)",
+    "r": "X0^(16-k)X1^k (Y0\u2076+Y2\u2076)Y0^jY2^(10-j)"
+  },
+  "ranges": "j0..5; k0..16, except eps\u00b2 k0..18",
+  "local_value": "Under canonical coefficient g/(6a5 eps16 b), gives a^j/(6a5)*v^k times designated jet. Corrections from a\u2212zeta have weight>=12 and do not affect the cutoff7 quotient. Vandermonde on six roots a6=-1 is invertible.",
+  "scope": "Explicit surjectivity on the GENERIC vertex-defect jet bundles, already satisfying the two generic center adjoints. Additional adjoints at special-v/collision/discriminant loci may restrict the section source and remain unresolved."
+}

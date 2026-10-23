@@ -1,0 +1,192 @@
+{
+  "samples": [
+    {
+      "prime": 1000003,
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "source": [
+        281317,
+        82926,
+        45915
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000003,
+      "point": [
+        2,
+        1,
+        3
+      ],
+      "source": [
+        66228,
+        483861,
+        376106
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000003,
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "source": [
+        741024,
+        906246,
+        737867
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000003,
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "source": [
+        235759,
+        857745,
+        759055
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000033,
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "source": [
+        453492,
+        879763,
+        777700
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000033,
+      "point": [
+        2,
+        1,
+        3
+      ],
+      "source": [
+        308940,
+        789233,
+        946472
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000033,
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "source": [
+        844241,
+        821508,
+        81351
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 1000033,
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "source": [
+        160176,
+        212084,
+        784840
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 101,
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "source": [
+        56,
+        21,
+        38
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 101,
+      "point": [
+        2,
+        1,
+        3
+      ],
+      "source": [
+        40,
+        74,
+        96
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 101,
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "source": [
+        30,
+        48,
+        53
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    },
+    {
+      "prime": 101,
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "source": [
+        78,
+        20,
+        36
+      ],
+      "source_direct_Jacobian_reduction": true,
+      "frame_and_weight": true
+    }
+  ],
+  "exact_cubic_charge_weight": true,
+  "canonical_density": "H=rho*fT/detJ",
+  "physical_density": "rho*fT",
+  "transpose": "connection rows are basis derivatives; coefficient vectors use N^T",
+  "source_checked_without_source_connection_rows": true,
+  "source_pole2_numerator": "h^4*(t-z*h^2)^2; divide by C^2",
+  "canonical_physical_frame_equivalence": "Piola plus chain rule; same rhs",
+  "scope": "Evaluator audit, no current solution and no enlarged search-space claim."
+}

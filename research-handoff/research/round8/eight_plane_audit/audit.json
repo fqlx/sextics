@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "direct_projective_minor": "I*z**2/8",
+    "direct_source_factor": "-1/512",
+    "hermite_identity": true,
+    "hermite_determinant": "g4*Disc(G)",
+    "P_denominator": "g4*Disc(G)",
+    "B_denominator": "Disc(G)",
+    "local_double_pole_residue": "(N'*G'-N*G'')/(G')^3 = B/G' mod G",
+    "Lagrange_trace_zero": true,
+    "Ferrari_pair_trace": true,
+    "Ferrari_inverse_half_trace": true,
+    "Ferrari_preserves_standard_sector": true,
+    "charged_connection_columns": true,
+    "charged_connection_flatness": true
+  },
+  "scope": "Exact identity and transfer audit only; no rational current, serving support, or certificate obtained.",
+  "remaining_equation": "sum_i (partial_i + y_i/(2*y))*u_i = -f(y)/512 on the actual four-variable physical base"
+}

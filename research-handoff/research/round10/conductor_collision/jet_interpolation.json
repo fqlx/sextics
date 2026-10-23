@@ -1,0 +1,148 @@
+{
+  "gammaDegree": 6,
+  "gammaGenus": 10,
+  "normalBundle": "O_Gamma(1)^3",
+  "exceptionalBidegree": [
+    19,
+    13
+  ],
+  "exceptionalConormal": "O_Gamma(-1) external_tensor O_P2(1)",
+  "relativeCanonicalNormalized": "O_Gamma(19) external_tensor I_sixnodes(10)",
+  "R1graded": "O_Gamma(-19-n) tensor H0(I_sixnodes(10-n))^dual",
+  "dualH1": "H0(O_Gamma(22+n)) tensor H0(I_sixnodes(10-n))",
+  "localGeometricGenus": 235,
+  "totalSplitRank": 31995,
+  "scope": "Split graded jet maps exact over QQ and equivariant in mu3/globalY. Compatibility with the actual Leray boundary and special-point torsion not asserted.",
+  "levels": [
+    {
+      "n": 0,
+      "normalJetDegree": 10,
+      "coefficientDegree": 22,
+      "rankR1": 60,
+      "gammaSections": 123,
+      "splitSurjectionRank": 7380,
+      "characterRanks": {
+        "(2, 0)": 2340,
+        "(1, 0)": 2460,
+        "(0, 0)": 2580
+      }
+    },
+    {
+      "n": 1,
+      "normalJetDegree": 9,
+      "coefficientDegree": 23,
+      "rankR1": 49,
+      "gammaSections": 129,
+      "splitSurjectionRank": 6321,
+      "characterRanks": {
+        "(2, 1)": 2009,
+        "(1, 1)": 2107,
+        "(0, 1)": 2205
+      }
+    },
+    {
+      "n": 2,
+      "normalJetDegree": 8,
+      "coefficientDegree": 24,
+      "rankR1": 39,
+      "gammaSections": 135,
+      "splitSurjectionRank": 5265,
+      "characterRanks": {
+        "(2, 0)": 1677,
+        "(1, 0)": 1755,
+        "(0, 0)": 1833
+      }
+    },
+    {
+      "n": 3,
+      "normalJetDegree": 7,
+      "coefficientDegree": 25,
+      "rankR1": 30,
+      "gammaSections": 141,
+      "splitSurjectionRank": 4230,
+      "characterRanks": {
+        "(2, 1)": 1350,
+        "(1, 1)": 1410,
+        "(0, 1)": 1470
+      }
+    },
+    {
+      "n": 4,
+      "normalJetDegree": 6,
+      "coefficientDegree": 26,
+      "rankR1": 22,
+      "gammaSections": 147,
+      "splitSurjectionRank": 3234,
+      "characterRanks": {
+        "(2, 0)": 1034,
+        "(1, 0)": 1078,
+        "(0, 0)": 1122
+      }
+    },
+    {
+      "n": 5,
+      "normalJetDegree": 5,
+      "coefficientDegree": 27,
+      "rankR1": 15,
+      "gammaSections": 153,
+      "splitSurjectionRank": 2295,
+      "characterRanks": {
+        "(2, 1)": 735,
+        "(1, 1)": 765,
+        "(0, 1)": 795
+      }
+    },
+    {
+      "n": 6,
+      "normalJetDegree": 4,
+      "coefficientDegree": 28,
+      "rankR1": 10,
+      "gammaSections": 159,
+      "splitSurjectionRank": 1590,
+      "characterRanks": {
+        "(2, 0)": 510,
+        "(1, 0)": 530,
+        "(0, 0)": 550
+      }
+    },
+    {
+      "n": 7,
+      "normalJetDegree": 3,
+      "coefficientDegree": 29,
+      "rankR1": 6,
+      "gammaSections": 165,
+      "splitSurjectionRank": 990,
+      "characterRanks": {
+        "(2, 1)": 318,
+        "(1, 1)": 330,
+        "(0, 1)": 342
+      }
+    },
+    {
+      "n": 8,
+      "normalJetDegree": 2,
+      "coefficientDegree": 30,
+      "rankR1": 3,
+      "gammaSections": 171,
+      "splitSurjectionRank": 513,
+      "characterRanks": {
+        "(2, 0)": 165,
+        "(1, 0)": 171,
+        "(0, 0)": 177
+      }
+    },
+    {
+      "n": 9,
+      "normalJetDegree": 1,
+      "coefficientDegree": 31,
+      "rankR1": 1,
+      "gammaSections": 177,
+      "splitSurjectionRank": 177,
+      "characterRanks": {
+        "(2, 1)": 57,
+        "(1, 1)": 59,
+        "(0, 1)": 61
+      }
+    }
+  ]
+}

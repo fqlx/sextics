@@ -1,0 +1,122 @@
+[
+  {
+    "field": 0,
+    "component": 0,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 0,
+    "component": 1,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 0,
+    "component": 3,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 0,
+    "component": 4,
+    "scalar": "-7",
+    "factors": []
+  },
+  {
+    "field": 1,
+    "component": 0,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 1,
+    "component": 1,
+    "scalar": "735",
+    "factors": [
+      {
+        "poly": "x",
+        "power": 1,
+        "terms": 1
+      }
+    ]
+  },
+  {
+    "field": 1,
+    "component": 3,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 1,
+    "component": 4,
+    "scalar": "-2058",
+    "factors": []
+  },
+  {
+    "field": 2,
+    "component": 0,
+    "scalar": "-36750",
+    "factors": []
+  },
+  {
+    "field": 2,
+    "component": 1,
+    "scalar": "36750",
+    "factors": [
+      {
+        "poly": "s",
+        "power": 1,
+        "terms": 1
+      }
+    ]
+  },
+  {
+    "field": 2,
+    "component": 3,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 2,
+    "component": 4,
+    "scalar": "3500",
+    "factors": []
+  },
+  {
+    "field": 3,
+    "component": 0,
+    "scalar": "0",
+    "factors": []
+  },
+  {
+    "field": 3,
+    "component": 1,
+    "scalar": "294000",
+    "factors": [
+      {
+        "poly": "s",
+        "power": 2,
+        "terms": 1
+      }
+    ]
+  },
+  {
+    "field": 3,
+    "component": 3,
+    "scalar": "-294000",
+    "factors": []
+  },
+  {
+    "field": 3,
+    "component": 4,
+    "scalar": "700",
+    "factors": [
+      {
+        "poly": "40*s + 29",
+        "power": 1,
+        "terms": 2
+      }
+    ]
+  }
+]

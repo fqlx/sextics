@@ -1,0 +1,6 @@
+ring R=109,(Q,T,Z),wp(1,2,1);
+poly F=16*T^3-Q*T*Z^3-Q^6-Z^6;
+ideal G=std(jacob(F));
+print("AFFINE_CONE_SINGULAR_DIMENSION");
+print(dim(G));
+quit;

@@ -1,0 +1,15 @@
+{
+  "quartic": "Y\u00b2=B\u00b2U4+H U\u00b2+J",
+  "H": "136136700000*zeta**5*(v**2 + 1)**2*(196*v**6 + 171)**2*(v*zeta + 1)*(v**4 - v**2 + 1)**2",
+  "J_factor": "B*Q14",
+  "P14": "49000*zeta**3*(392*v**14*zeta**2 + 784*v**13*zeta + 392*v**12 + 619*v**8*zeta**2 + 1378*v**7*zeta + 759*v**6 + 252*v**2*zeta**2 + 594*v*zeta + 367)",
+  "Q14": "-87500*zeta**4*(980*v**14*zeta**2 + 1960*v**13*zeta + 980*v**12 + 1559*v**8*zeta**2 + 3454*v**7*zeta + 1895*v**6 + 639*v**2*zeta**2 + 1494*v*zeta + 915)/3",
+  "Jacobian": "y\u00b2=x\u00b3\u22122H*x\u00b2+(H\u00b2\u22124B\u00b2J)*x",
+  "a4_factor": "8lambda*B\u00b3*P14",
+  "birational_map": "x=2B(Y+BU\u00b2)+H,y=2BxU",
+  "differential": "dx/y=dU/Y",
+  "candidate_fibers": "12III* atG,14I2 atP14,14I1 atQ14,I0*at\u221e",
+  "candidate_chi": 13,
+  "candidate_pg": 12,
+  "status": "Exact map/factor identities. Fiber coprimality and global compactification checks are separate."
+}

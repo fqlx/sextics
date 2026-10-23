@@ -1,0 +1,91 @@
+{
+  "prime": 1000003,
+  "points": [
+    {
+      "W": 289821,
+      "T": 732385,
+      "L": 224100,
+      "r": 117190,
+      "x": 711081,
+      "s": 191442
+    },
+    {
+      "W": 532641,
+      "T": 294562,
+      "L": 307677,
+      "r": 856631,
+      "x": 850131,
+      "s": 649078
+    },
+    {
+      "W": 441145,
+      "T": 704219,
+      "L": 914856,
+      "r": 347032,
+      "x": 958539,
+      "s": 687008
+    },
+    {
+      "W": 443174,
+      "T": 727838,
+      "L": 256565,
+      "r": 959127,
+      "x": 682377,
+      "s": 571461
+    },
+    {
+      "W": 915864,
+      "T": 569617,
+      "L": 712113,
+      "r": 721628,
+      "x": 850088,
+      "s": 540467
+    },
+    {
+      "W": 657812,
+      "T": 362965,
+      "L": 104099,
+      "r": 648454,
+      "x": 427072,
+      "s": 266307
+    },
+    {
+      "W": 262123,
+      "T": 216489,
+      "L": 902650,
+      "r": 587976,
+      "x": 923081,
+      "s": 26876
+    },
+    {
+      "W": 388885,
+      "T": 390267,
+      "L": 262493,
+      "r": 208002,
+      "x": 417238,
+      "s": 143954
+    },
+    {
+      "W": 515900,
+      "T": 490794,
+      "L": 394129,
+      "r": 600728,
+      "x": 94804,
+      "s": 410787
+    },
+    {
+      "W": 600170,
+      "T": 915805,
+      "L": 405654,
+      "r": 346199,
+      "x": 370438,
+      "s": 169992
+    }
+  ],
+  "ordinary_boundary_derivative_checks": 80,
+  "all_pass": true,
+  "primitive_sign": "PLUS (QW-W*Qh)/((T-s)*Ct)",
+  "method": "Dual-number differentiation of ordinary rational oneforms with t_i=-Ci/Ct and t_W=-CW/Ct. Neither native coefficient matrix nor its exact19-row verification is imported. Uses literal clean eta_new pole2 representative.",
+  "scope": "Independent sign/normalization audit of all8 boundary rows and their exact primitives; no source solution or unbounded exclusion.",
+  "seconds": 2.775236768000468
+}

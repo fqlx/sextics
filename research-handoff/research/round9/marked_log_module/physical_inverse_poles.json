@@ -1,0 +1,266 @@
+{
+  "L": [
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      }
+    ],
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      }
+    ],
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      }
+    ]
+  ],
+  "r": [
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      }
+    ],
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      }
+    ],
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      }
+    ]
+  ],
+  "x": [
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 1,
+        "degrees": [
+          0,
+          1,
+          0
+        ],
+        "poly": "b"
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      },
+      {
+        "power": 3,
+        "terms": 2,
+        "degrees": [
+          1,
+          0,
+          1
+        ],
+        "poly": "a*v + 1"
+      }
+    ],
+    [
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 1,
+        "degrees": [
+          0,
+          1,
+          0
+        ],
+        "poly": "b"
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      },
+      {
+        "power": 3,
+        "terms": 2,
+        "degrees": [
+          1,
+          0,
+          1
+        ],
+        "poly": "a*v + 1"
+      }
+    ],
+    [
+      {
+        "power": 1,
+        "terms": 1,
+        "degrees": [
+          0,
+          1,
+          0
+        ],
+        "poly": "b"
+      },
+      {
+        "power": 1,
+        "terms": 47,
+        "degrees": [
+          12,
+          12,
+          9
+        ],
+        "poly": null
+      },
+      {
+        "power": 2,
+        "terms": 3,
+        "degrees": [
+          6,
+          6,
+          0
+        ],
+        "poly": "a^6 + b^6 + 1"
+      },
+      {
+        "power": 3,
+        "terms": 2,
+        "degrees": [
+          1,
+          0,
+          1
+        ],
+        "poly": "a*v + 1"
+      }
+    ]
+  ]
+}

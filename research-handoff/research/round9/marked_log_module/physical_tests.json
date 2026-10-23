@@ -1,0 +1,43 @@
+{
+  "prime": 1000003,
+  "chart_current_tests": [
+    {
+      "pivot": 0,
+      "columns": 30,
+      "rows": 150,
+      "rank": 30,
+      "augmented_rank": 31,
+      "boundary_rank": 12,
+      "boundary_kernel_dimension": 18
+    },
+    {
+      "pivot": 1,
+      "columns": 30,
+      "rows": 150,
+      "rank": 30,
+      "augmented_rank": 31,
+      "boundary_rank": 12,
+      "boundary_kernel_dimension": 18
+    },
+    {
+      "pivot": 2,
+      "columns": 30,
+      "rows": 150,
+      "rank": 30,
+      "augmented_rank": 31,
+      "boundary_rank": 12,
+      "boundary_kernel_dimension": 18
+    },
+    {
+      "pivot": 3,
+      "columns": 30,
+      "rows": 150,
+      "rank": 30,
+      "augmented_rank": 31,
+      "boundary_rank": 12,
+      "boundary_kernel_dimension": 18
+    }
+  ],
+  "seconds": 5.269567145998735,
+  "scope": "Natural normalized-chart constant coefficient modules only; no unrestricted obstruction."
+}

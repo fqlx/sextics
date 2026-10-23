@@ -1,0 +1,51 @@
+{
+  "prime": 1000003,
+  "records": [
+    {
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "canonical_ODE_through_order2": true,
+      "physical_map_through_order3": true,
+      "compatibility_defect": 589064
+    },
+    {
+      "point": [
+        2,
+        1,
+        3
+      ],
+      "canonical_ODE_through_order2": true,
+      "physical_map_through_order3": true,
+      "compatibility_defect": 449656
+    },
+    {
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "canonical_ODE_through_order2": true,
+      "physical_map_through_order3": true,
+      "compatibility_defect": 733783
+    },
+    {
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "canonical_ODE_through_order2": true,
+      "physical_map_through_order3": true,
+      "compatibility_defect": 889566
+    }
+  ],
+  "all_four_replays_pass": true,
+  "independent_engine": "Native FLINT truncated univariate polynomial arithmetic; no nullflow_completion.J or its inverse/map solver is imported. Supplied physical trajectories verified against the physical rational map and canonical ODE through all needed orders.",
+  "jet_order_reason": "Z and P depend on mark prime. T algebraic and its derivative use closures only through order1, so mark/physical trajectories through order3 suffice; missing order4 never enters the checked coefficients.",
+  "convention_audit": "eta-matched seed pairs to source, kernel pairs to zero; weighted divergence is delta(logH)-30*r*x-18; 2x2 forcedT/forcedTprime signs checked by Cseed+T*Ckernel+Tprime*kernel=0.",
+  "scope": "Seals only the stated boundary current restricted to the Prym-nullflow and carrying all eta source, with proper corrections eta-free. Transverse boundary components and general rank5 currents remain open.",
+  "seconds": 1.0102320669975597
+}

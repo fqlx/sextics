@@ -1,0 +1,24 @@
+{
+  "args": {
+    "connection": "/workspace/research/round10/horizontal5/rank5_connection.pickle",
+    "fields": "radial,curve_s,dual_v",
+    "components": "all",
+    "degree": 0,
+    "smax": 1,
+    "zmax": 0,
+    "rpowers": "0",
+    "densities": "rho,rhofT,cone",
+    "prime": 1000003,
+    "samples": 0,
+    "seed": 1091,
+    "output": "radial_constant_s1",
+    "correction": false
+  },
+  "columns": 90,
+  "rows": 265,
+  "rank": 90,
+  "augmented_rank": 91,
+  "validation20": null,
+  "seconds": 2.5497615337371826,
+  "scope": "finite-prime cone-amplitude horizontalcurrentmodule only; physicalgraphH20notasserted"
+}

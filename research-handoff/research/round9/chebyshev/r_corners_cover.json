@@ -1,0 +1,7 @@
+{
+  "q0_r0_genus2_curve": "R\u00b2=(3h0/32)*z4/Q6(z), h0=2 (conjugate h0\u22122)",
+  "Q6_hplus2": "9*z**6 - z**4/1296 + 5*z**3/36 - 81*z + 729",
+  "gcd_Q6_derivative": "1",
+  "deck": "(R,S)\u2192(\u2212R,\u2212S), z=S/R fixed; constantE0fixed",
+  "scope": "Leading smooth genus2cover; finitequotientcompletion needs precisechartargument."
+}

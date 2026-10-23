@@ -1,0 +1,23 @@
+{
+  "N0_terms": 32,
+  "N1_terms": 35,
+  "N0_degrees": [
+    2,
+    4,
+    2,
+    2
+  ],
+  "N1_degrees": [
+    3,
+    4,
+    3,
+    2
+  ],
+  "T_effective": "N1/N0",
+  "relative_Jacobian_identity_exact": true,
+  "eta_component_zero": true,
+  "Q_denominator": "1",
+  "source_binding": "The full actual Higgs covector for deformation h\u00b2(t-z*h\u00b2)^2 has evaluation kernel omega1-(N1/N0)*omega0.",
+  "scope": "A source-specific relative-Jacobian identity and evaluation/Higgs channel only. No global physical support, holomorphic2form, Gysin serving statement or certificate is proved.",
+  "seconds": 3.562
+}

@@ -1,0 +1,33 @@
+{
+  "flow": {
+    "actual": {
+      "preserves_entire_holomorphic_block": true,
+      "holomorphic_connection": [
+        [
+          "10*r*x/3 - 50*x/147 - 9",
+          "3"
+        ],
+        [
+          "-3*r*x",
+          "-5*r*x/3 - 50*x/147 - 18"
+        ]
+      ]
+    },
+    "conjugate": {
+      "preserves_entire_holomorphic_block": true,
+      "holomorphic_connection": [
+        [
+          "5*r*x/3 - 25*x/147 - 9"
+        ]
+      ]
+    }
+  },
+  "primitive_sign": "PLUS: \u2202z beta=N_z beta+d_f[(QW-WQh)/Ct]; therefore beta_abs=beta+sum F_z dz.",
+  "residue_convention": "Res(P dW\u2227dt/C)=P dW/Ct; pole-two representative=(P_t Ct-P Ctt)dW/Ct\u00b3.",
+  "marked_map_identity": true,
+  "marked_old_t_zero": true,
+  "source_double_zero_at_marked_T": true,
+  "trace": "Actual marked forms have w-deck character1, conjugate has2; all unweighted linear traces vanish. Weights w\u00b2 and w respectively make them invariant. rho-deck characters are inverse, canceled for actual source by its rho prefactor.",
+  "seconds": 4.2320405389982625,
+  "scope": "Checks sign, exact Q8 identities, full holomorphic flow preservation, marked curve and source double-zero, and trace characters. Does not prove physical-source moment matching, algebraic serving/Gysin, or a certificate."
+}

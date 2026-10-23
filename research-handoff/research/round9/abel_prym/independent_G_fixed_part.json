@@ -1,0 +1,135 @@
+{
+  "prime": 1009,
+  "records": [
+    {
+      "point": [
+        580,
+        1,
+        2
+      ],
+      "parameters": [
+        621,
+        717,
+        61
+      ],
+      "db": [
+        809,
+        710,
+        951
+      ],
+      "dbb": [
+        639,
+        481,
+        622
+      ],
+      "wedge": 563,
+      "conjugate_higgs_row": [
+        415,
+        67
+      ],
+      "G_a": 196,
+      "normalization_u": 311,
+      "normalization_etale": true,
+      "canonical_curve_smooth": true
+    },
+    {
+      "point": [
+        580,
+        2,
+        2
+      ],
+      "parameters": [
+        807,
+        579,
+        283
+      ],
+      "db": [
+        194,
+        984,
+        514
+      ],
+      "dbb": [
+        263,
+        127,
+        172
+      ],
+      "wedge": 145,
+      "conjugate_higgs_row": [
+        621,
+        838
+      ],
+      "G_a": 196,
+      "normalization_u": 311,
+      "normalization_etale": true,
+      "canonical_curve_smooth": true
+    },
+    {
+      "point": [
+        580,
+        4,
+        2
+      ],
+      "parameters": [
+        919,
+        440,
+        913
+      ],
+      "db": [
+        894,
+        40,
+        451
+      ],
+      "dbb": [
+        995,
+        582,
+        978
+      ],
+      "wedge": 887,
+      "conjugate_higgs_row": [
+        117,
+        766
+      ],
+      "G_a": 196,
+      "normalization_u": 311,
+      "normalization_etale": true,
+      "canonical_curve_smooth": true
+    },
+    {
+      "point": [
+        580,
+        7,
+        2
+      ],
+      "parameters": [
+        699,
+        797,
+        31
+      ],
+      "db": [
+        965,
+        538,
+        7
+      ],
+      "dbb": [
+        678,
+        651,
+        718
+      ],
+      "wedge": 744,
+      "conjugate_higgs_row": [
+        258,
+        571
+      ],
+      "G_a": 196,
+      "normalization_u": 311,
+      "normalization_etale": true,
+      "canonical_curve_smooth": true
+    }
+  ],
+  "all_reference_entries_reproduced": true,
+  "convention": "Connection matrices have derivative-of-basis rows, so coefficient columns use d+N^T. The line h=(N12,-N02,0) is the unique actual holomorphic Higgs kernel. Its invariant-line test is h wedge (db h+N^T h).",
+  "independent_method": "Native rational first/second derivatives and canonical matrix derivatives differentiated directly by SymPy, then recursively evaluated; no native Taylor-series jet routines imported.",
+  "specialization": "G_a and normalization 2u+c are units, all evaluated connection denominators are units, and canonical fibers are smooth. Nonzero wedges therefore prove characteristic-zero rational nonidentity on this normalization component.",
+  "scope": "Excludes a flat holomorphic line in each mu3 character along generic b, and consequently a constant CM E0 summand of this restricted Prym VHS. Does not exclude H20 of the total support, variable factors, correspondences, or other source routes.",
+  "seconds": 6.984133647998533
+}

@@ -1,0 +1,7 @@
+{
+  "exact_flatness": {
+    "p,q": true,
+    "p,r": true,
+    "q,r": true
+  }
+}

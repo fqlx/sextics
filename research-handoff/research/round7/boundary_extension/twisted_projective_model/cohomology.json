@@ -1,0 +1,135 @@
+{
+  "formula": "R2 pi_* O(-A;-d) = direct_sum O(-A+(6,6,2)+i(2,2,0)+j(4,4,2)), i+2j+k=d-4",
+  "koszul_terms": [
+    {
+      "equations": [
+        1
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 35,
+        "4": 1
+      },
+      "H4_blocks": [
+        {
+          "fiber_monomial_exponents_U_t_z": [
+            0,
+            1,
+            0
+          ],
+          "base_degrees": [
+            -2,
+            -2,
+            0
+          ],
+          "dimension": 1
+        }
+      ]
+    },
+    {
+      "equations": [
+        2
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 70
+      },
+      "H4_blocks": []
+    },
+    {
+      "equations": [
+        3
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 106
+      },
+      "H4_blocks": []
+    },
+    {
+      "equations": [
+        1,
+        2
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 7964,
+        "4": 2
+      },
+      "H4_blocks": [
+        {
+          "fiber_monomial_exponents_U_t_z": [
+            0,
+            4,
+            0
+          ],
+          "base_degrees": [
+            -2,
+            -2,
+            1
+          ],
+          "dimension": 2
+        }
+      ]
+    },
+    {
+      "equations": [
+        1,
+        3
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 9588,
+        "4": 1
+      },
+      "H4_blocks": [
+        {
+          "fiber_monomial_exponents_U_t_z": [
+            0,
+            4,
+            0
+          ],
+          "base_degrees": [
+            -2,
+            -2,
+            0
+          ],
+          "dimension": 1
+        }
+      ]
+    },
+    {
+      "equations": [
+        2,
+        3
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 11212
+      },
+      "H4_blocks": []
+    },
+    {
+      "equations": [
+        1,
+        2,
+        3
+      ],
+      "ambient_cohomology_dimensions": {
+        "5": 105322,
+        "4": 2
+      },
+      "H4_blocks": [
+        {
+          "fiber_monomial_exponents_U_t_z": [
+            0,
+            7,
+            0
+          ],
+          "base_degrees": [
+            -2,
+            -2,
+            1
+          ],
+          "dimension": 2
+        }
+      ]
+    }
+  ],
+  "H1_O_raw_CI": 0,
+  "reason": "Only possible total-degree1 term is H4(O(-E123)), dimension2. Its d1 map to H4(O(-E12)), dimension2, is identity because E3 contains monic t3. No higher differential can enter the total-degree1 term. This is raw CI cohomology, not resolved main-component irregularity."
+}

@@ -1,0 +1,134 @@
+{
+  "variables": [
+    "L",
+    "r",
+    "x",
+    "s"
+  ],
+  "quadratic_u": {
+    "q": {
+      "numerator": "5/7*s + 5/7",
+      "denominator": "1"
+    },
+    "p": {
+      "numerator": "L*x + r*x*s + s^3",
+      "denominator": "x"
+    }
+  },
+  "residue_basis": [
+    "-1/C_W",
+    "-W^3/C_W"
+  ],
+  "boundary_generators": [
+    "dW/((t-s)C_t)",
+    "W^3*dW/((t-s)C_t)"
+  ],
+  "theta_projection": "theta_chi=(1-zeta3^2)*w^2*((-q-u)*sigma0-sigma1), u=w^3, q=c*(1+s)",
+  "theta_residue_coefficient_horizontal_exact": {
+    "L": true,
+    "r": true,
+    "x": true,
+    "s": true
+  },
+  "theta_proper_derivative": "(1-zeta3^2)*w^2*((-q-u)*N_j[3,0:3]-N_j[4,0:3])",
+  "connection": {
+    "L": [
+      [
+        {
+          "numerator": "-5/6*L*x^2 - 5/6*r*x^2*s + 25/294*x^2*s^2 + 25/147*x^2*s + 25/294*x^2 - 5/6*x*s^3",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        },
+        {
+          "numerator": "5/42*x^2*s + 5/42*x^2",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        }
+      ],
+      [
+        {
+          "numerator": "5/84*x*s + 5/84*x",
+          "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3"
+        },
+        {
+          "numerator": "-1/3*x",
+          "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3"
+        }
+      ]
+    ],
+    "r": [
+      [
+        {
+          "numerator": "-5/6*L*x^2*s - 5/6*r*x^2*s^2 + 25/294*x^2*s^3 + 25/147*x^2*s^2 + 25/294*x^2*s - 5/6*x*s^4",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        },
+        {
+          "numerator": "5/42*x^2*s^2 + 5/42*x^2*s",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        }
+      ],
+      [
+        {
+          "numerator": "5/84*x*s^2 + 5/84*x*s",
+          "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3"
+        },
+        {
+          "numerator": "-1/3*x*s",
+          "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3"
+        }
+      ]
+    ],
+    "x": [
+      [
+        {
+          "numerator": "5/6*L*x*s^3 + 5/6*r*x*s^4 - 25/294*x*s^5 - 25/147*x*s^4 - 25/294*x*s^3 + 5/6*s^6",
+          "denominator": "L^2*x^3 + 2*L*r*x^3*s - 25/196*L*x^3*s^2 - 25/98*L*x^3*s - 25/196*L*x^3 + 2*L*x^2*s^3 + r^2*x^3*s^2 - 25/196*r*x^3*s^3 - 25/98*r*x^3*s^2 - 25/196*r*x^3*s + 2*r*x^2*s^4 - 25/196*x^2*s^5 - 25/98*x^2*s^4 - 25/196*x^2*s^3 + x*s^6"
+        },
+        {
+          "numerator": "-5/42*s^4 - 5/42*s^3",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        }
+      ],
+      [
+        {
+          "numerator": "-5/84*s^4 - 5/84*s^3",
+          "denominator": "L*x^2 + r*x^2*s - 25/196*x^2*s^2 - 25/98*x^2*s - 25/196*x^2 + x*s^3"
+        },
+        {
+          "numerator": "1/3*s^3",
+          "denominator": "L*x^2 + r*x^2*s - 25/196*x^2*s^2 - 25/98*x^2*s - 25/196*x^2 + x*s^3"
+        }
+      ]
+    ],
+    "s": [
+      [
+        {
+          "numerator": "-5/6*L*r*x^2 + 25/588*L*x^2*s + 25/588*L*x^2 - 5/2*L*x*s^2 - 5/6*r^2*x^2*s + 25/196*r*x^2*s^2 + 125/588*r*x^2*s + 25/294*r*x^2 - 10/3*r*x*s^3 + 25/84*x*s^4 + 325/588*x*s^3 + 25/98*x*s^2 - 5/2*s^5",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        },
+        {
+          "numerator": "-5/21*L*x^2 - 5/42*r*x^2*s + 5/42*r*x^2 + 5/42*x*s^3 + 5/14*x*s^2",
+          "denominator": "L^2*x^2 + 2*L*r*x^2*s - 25/196*L*x^2*s^2 - 25/98*L*x^2*s - 25/196*L*x^2 + 2*L*x*s^3 + r^2*x^2*s^2 - 25/196*r*x^2*s^3 - 25/98*r*x^2*s^2 - 25/196*r*x^2*s + 2*r*x*s^4 - 25/196*x*s^5 - 25/98*x*s^4 - 25/196*x*s^3 + s^6"
+        }
+      ],
+      [
+        {
+          "numerator": "-5/42*L*x - 5/84*r*x*s + 5/84*r*x + 5/84*s^3 + 5/28*s^2",
+          "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3"
+        },
+        {
+          "numerator": "-1/3*r*x + 25/294*x*s + 25/294*x - s^2",
+          "denominator": "L*x + r*x*s - 25/196*x*s^2 - 25/98*x*s - 25/196*x + s^3"
+        }
+      ]
+    ]
+  },
+  "exact_flatness": {
+    "L,r": [],
+    "L,x": [],
+    "L,s": [],
+    "r,x": [],
+    "r,s": [],
+    "x,s": []
+  },
+  "convention": "rows are basis derivatives; coefficient columns transpose",
+  "seconds": 0.024817228317260742
+}

@@ -1,0 +1,29 @@
+{
+  "substitution": "X0=k6 gamma3E,X1=gamma3E,Y1=k18gamma6B,delta=k30gamma12BR",
+  "delta_series_order": 8,
+  "point_count": 486,
+  "positive_lower_faces": [
+    {
+      "a": [
+        60,
+        81
+      ],
+      "b": [
+        90,
+        75
+      ],
+      "normal": [
+        1,
+        5
+      ],
+      "value": 465,
+      "support_count": 5,
+      "polynomial": "57624*B**2*E**17*gamma**75*k**60*zeta*(1000*B*E**2*k**30*zeta**3 + 3150*B*R*k**30*zeta**2 - 9261*E**2*R**2*gamma**6 - 3150*E**2*R*k**30*zeta - 6615*R**2*k**30)"
+    }
+  ],
+  "slope5_minimum": 465,
+  "slope5_face": "57624*B**2*E**17*gamma**75*k**60*zeta*(1000*B*E**2*k**30*zeta**3 + 3150*B*R*k**30*zeta**2 - 9261*E**2*R**2*gamma**6 - 3150*E**2*R*k**30*zeta - 6615*R**2*k**30)",
+  "global_min_gamma": 75,
+  "global_min_k": 60,
+  "scope": "Exact coefficient cancellations modulo zeta6+1; finite delta truncation8 contains all lowerpositiveNewtonfaces becausehigherj adds(30,12)."
+}

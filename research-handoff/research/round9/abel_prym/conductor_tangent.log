@@ -1,0 +1,18 @@
+QAA 7001316*Y2**11*aa**4*(X0**2 + X1**2)*(171*X0**6 + 196*X1**6)*(X0**4 - X0**2*X1**2 + X1**4)*(14*X0**7 + 9*X0**6*X1*aa + 10*X0**5*Y2**2*aa + 14*X0*X1**6 + 14*X1**7*aa)
+QAB 5556600*X0**7*Y2**11*aa*(X0**2 + X1**2)*(171*X0**6 + 196*X1**6)*(X0**4 - X0**2*X1**2 + X1**4)
+QBB 0
+GCD 111132*Y2**11*aa*(X0**2 + X1**2)*(171*X0**6 + 196*X1**6)*(X0**4 - X0**2*X1**2 + X1**4)
+{
+  "surface": "Y1=0,Y0=aa*Y2,aa^6=-1",
+  "normal_coordinates": "x=Y0-aa*Y2,y=Y1",
+  "Qaa": "7001316*Y2**11*aa**4*(X0**2 + X1**2)*(171*X0**6 + 196*X1**6)*(X0**4 - X0**2*X1**2 + X1**4)*(14*X0**7 + 9*X0**6*X1*aa + 10*X0**5*Y2**2*aa + 14*X0*X1**6 + 14*X1**7*aa)",
+  "Qab": "5556600*X0**7*Y2**11*aa*(X0**2 + X1**2)*(171*X0**6 + 196*X1**6)*(X0**4 - X0**2*X1**2 + X1**4)",
+  "Qbb": "0",
+  "common_factor": "111132*Y2**11*aa*(X0**2 + X1**2)*(171*X0**6 + 196*X1**6)*(X0**4 - X0**2*X1**2 + X1**4)",
+  "residual_Qaa": "882*X0**7*aa**3 + 567*X0**6*X1*aa**4 + 630*X0**5*Y2**2*aa**4 + 882*X0*X1**6*aa**3 + 882*X1**7*aa**4",
+  "residual_Qab": "50*X0**7",
+  "transverse_generic": "The quadratic is x*(Qaa*x+Qab*y), with two rationally split distinct normal branches where Qab!=0.",
+  "global_conductor_twist": "For the ordinary-node part, normal bundle O_S(1)^2, D32 doublealongS, hence branch-line coefficients O_S(30). Generic normalization-conductor rank1 piece has O_S(-30) frame before corrections from the common tangent factor.",
+  "scope": "Exact tangent factorization and generic branch identification. At common-factor divisors the quadratic vanishes identically and higher normal terms are required; no global conductor-sheaf equality is inferred there.",
+  "seconds": 0.4084256930000265
+}

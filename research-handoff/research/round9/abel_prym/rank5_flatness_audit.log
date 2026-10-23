@@ -1,0 +1,28 @@
+EXACT_CURVATURE L r 0.4915429809989291
+EXACT_CURVATURE L x 0.7401114109998161
+EXACT_CURVATURE L s 0.8233741349977208
+EXACT_CURVATURE r x 1.0846750099990459
+EXACT_CURVATURE r s 1.1668723939983465
+EXACT_CURVATURE x s 1.261818664999737
+{
+  "variables": [
+    "L",
+    "r",
+    "x",
+    "s"
+  ],
+  "all6_full5_curvatures_exact_zero": true,
+  "all24_residue_block_entries_match_closed_formula": true,
+  "curvature_convention": "partial_i N_j-partial_j N_i+N_j*N_i-N_i*N_j=0; basis derivatives are rows.",
+  "checks": {
+    "Lr": true,
+    "Lx": true,
+    "Ls": true,
+    "rx": true,
+    "rs": true,
+    "xs": true
+  },
+  "method": "Independent rational arithmetic over native FLINT polynomials; parsed off boundary packet and literal complete proper frame, without importing assemble/native_rf/residue packet.",
+  "scope": "Exact compatibility audit of the full rank5 connection. No source PDE solution is claimed.",
+  "seconds": 1.26224221299708
+}

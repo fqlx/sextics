@@ -1,0 +1,16 @@
+{
+  "symbols": "eta,V; c=5/7",
+  "delta_eta": "-9*(eta + 1)*(9*eta + 14)/5",
+  "delta_V": "-3*V*(eta + 1)*(243*V**2*eta**2 - 588*V**2 + 225*V*eta**2 + 300*V*eta - 25*V + 486*eta + 756)/(5*(9*eta + 14)*(V**2*eta - 1))",
+  "delta_s_over_s": "9*(eta + 1)*(378*V**8*eta + 588*V**8 - 225*V**7*eta**2 - 300*V**7*eta + 25*V**7 - 729*V**6*eta - 1134*V**6 + 486*V**2*eta**2 + 378*V**2*eta - 588*V**2 + 225*V*eta**2 + 300*V*eta - 25*V + 243*eta + 378)/(5*(V**2 + 1)*(9*eta + 14)*(V**2*eta - 1)*(V**4 - V**2 + 1))",
+  "Delta0_on_s0": "-5*V**2*(V**2 + 1)*(9*eta + 14)*(V**2*eta - 1)*(V**4 - V**2 + 1)",
+  "source_times_s": "55566*(2*V**6*eta - V**4 + eta)/(125*V*(V**2*eta - 1)**3)",
+  "gauged_source_times_s": "23814*eta*(2*V**6*eta - V**4 + eta)/(25*V*(V**2*eta - 1)**3)",
+  "x_over_s_boundary": "V**3*(eta + 1)**3/(V**6 + 1)",
+  "delta_log_x_on_boundary": -27,
+  "normal_identity_check": "0",
+  "B_over_s_squared_boundary": "27*c^2*eta^6",
+  "gauge_boundary": "g=1/(3*c*eta)",
+  "A0_boundary": 27,
+  "C0_boundary": 162
+}

@@ -1,0 +1,15 @@
+{
+  "determinant": 14,
+  "target_character": 3,
+  "line_curve_genus": 3,
+  "holomorphic_differential_orders": [
+    3,
+    0,
+    1
+  ],
+  "fiber_euler": 27,
+  "conditional_raw_line_scheme_h1": 1,
+  "conditional_raw_line_scheme_euler": 243,
+  "identities": "PASS",
+  "scope": "No line-scheme smoothness, twisted irregularity, Gysin, or certificate claim."
+}

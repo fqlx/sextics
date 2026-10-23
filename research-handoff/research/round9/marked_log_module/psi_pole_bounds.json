@@ -1,0 +1,53 @@
+{
+  "mark_ratio": "Teff=b*(1+a*v)*U625/(A*V310), up to nonzero rational units",
+  "psi_bounds": [
+    {
+      "pivot": 0,
+      "denominator_bound": {
+        "A": 7,
+        "b": 2,
+        "E": 3,
+        "V310": 3,
+        "S": 2,
+        "Delta47": 1
+      }
+    },
+    {
+      "pivot": 1,
+      "denominator_bound": {
+        "A": 7,
+        "b": 2,
+        "E": 3,
+        "V310": 3,
+        "S": 2,
+        "Delta47": 1
+      }
+    },
+    {
+      "pivot": 2,
+      "denominator_bound": {
+        "A": 7,
+        "b": 2,
+        "E": 3,
+        "V310": 3,
+        "S": 2,
+        "Delta47": 1
+      }
+    },
+    {
+      "pivot": 3,
+      "denominator_bound": {
+        "A": 8,
+        "b": 2,
+        "E": 3,
+        "V310": 4,
+        "S": 2,
+        "Delta47": 1
+      }
+    }
+  ],
+  "Delta47": "Native physical determinant factor, detJac=(1215/343)b\u00b2E S\u00b2Delta47/A\u2075",
+  "proof": "Weighted substitution L=H/(3A\u00b2),r=J/(bEA),x=3(bE)\u00b3/A,Teff=bEU/(AV); gradients of Teff have denominator dividing A\u00b2V\u00b2; canonical inverse fields have poles only S\u00b2Delta47 and, for Vx, b\u00b2E\u00b3.",
+  "normalizing_zero_divisor": "Xi_p=D_p*psi_p, where D_p is the displayed denominator monomial. Xi_p is an exactly specified polynomial arithmetic circuit; its irreducible factorization is not asserted.",
+  "scope": "Rigorous pole-clearing bounds, not claimed reduced exponents or a factorization of the new pivot-zero divisor."
+}

@@ -1,0 +1,71 @@
+{
+  "instance": "cyclic-triple-residual",
+  "instanceRecSHA256": "c5713bc06b37db0a64123364f8687a8ebc82e9722cc39ba88357659768eed0bc",
+  "F": "X0**6 + 5*X0**3*X1*Y0*Y1/7 + 5*X0**3*X2**3/7 + 5*X0**2*Y0*Y1*Y2**2/7 + 5*X0*X1*Y1**3*Y2/7 + 5*X0*X2**3*Y1*Y2/7 + X1**6 + 5*X1*X2**3*Y0*Y1/7 + X2**6 + Y0**6 + Y1**6 + Y2**6",
+  "A": "X0**3*Y0**3",
+  "D": "X1**6 + X2**6 + Y1**6 + Y2**6",
+  "q": 1,
+  "prime": 1000003,
+  "rows": 2760,
+  "numeratorColumns": 1129,
+  "quotientColumns": 119,
+  "columns": 1248,
+  "coefficientRankMod": 1232,
+  "augmentedRankMod": 1233,
+  "exactKernelDimensionLowerBound": 12,
+  "coefficientRankQUpperBound": 1236,
+  "kernelLabels": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ]
+  ],
+  "allKernelIdentitiesExact": true,
+  "kernelIndependenceRankMod": 12,
+  "seconds": 2.578,
+  "status": "finite-prime inconsistency only; characteristic-zero rank upper bound not sharp"
+}

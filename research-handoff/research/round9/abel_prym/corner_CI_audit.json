@@ -1,0 +1,224 @@
+{
+  "leading_equations": "F0=W6+b*(r+(5/7)*zeta*eps\u00b2), D0=A*r\u00b2+C*b*r+D*b\u00b2+eps\u00b2*(B*r+E*b), r=(a6+1)/b in the packet convention.",
+  "weights_eps_W_b_r": [
+    3,
+    2,
+    6,
+    6
+  ],
+  "degrees": [
+    12,
+    12
+  ],
+  "a_invariant": 7,
+  "two_quadric_model": "T=eps\u00b2,U=W\u00b3: E\u2282P3(U,b,r,T), U\u00b2+b*(r+lambda*T)=0, A*r\u00b2+Cbr+D*b\u00b2+T*(Br+Eb)=0.",
+  "quadric_pencil": "det(M_D+t*M_F)=t*(q2*t\u00b2+q1*t+q0)/4, up to a fixed sign; fourth root is infinity, simple when q2!=0.",
+  "quasismooth_reason": "Smooth quadric intersection plus transverse divisors T0 and U0, with their intersection empty, makes the affine (2,3)-root pullback smooth off the origin. All conditions hold exactly over both cyclotomic fields at v=2, hence generically.",
+  "exact_generic_witnesses": {
+    "order4": {
+      "A": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 82,
+        "remainder_degree": 1
+      },
+      "B": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 79,
+        "remainder_degree": 0
+      },
+      "D": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 62,
+        "remainder_degree": 1
+      },
+      "quadric_pencil_leading": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 76,
+        "remainder_degree": 1
+      },
+      "quadric_pencil_constant": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 236,
+        "remainder_degree": 1
+      },
+      "quadric_pencil_discriminant": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 316,
+        "remainder_degree": 1
+      },
+      "T0_transverse": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 163,
+        "remainder_degree": 1
+      },
+      "U0_transverse": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 158,
+        "remainder_degree": 1
+      }
+    },
+    "order12": {
+      "A": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 163,
+        "remainder_degree": 1
+      },
+      "B": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 158,
+        "remainder_degree": 2
+      },
+      "D": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 122,
+        "remainder_degree": 3
+      },
+      "quadric_pencil_leading": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 152,
+        "remainder_degree": 3
+      },
+      "quadric_pencil_constant": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 469,
+        "remainder_degree": 3
+      },
+      "quadric_pencil_discriminant": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 629,
+        "remainder_degree": 3
+      },
+      "T0_transverse": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 324,
+        "remainder_degree": 3
+      },
+      "U0_transverse": {
+        "nonzero_exact": true,
+        "norm_numerator_bits": 313,
+        "remainder_degree": 2
+      }
+    }
+  },
+  "coarse_exceptional_curve": "A smooth genus1 intersection of quadrics; the weighted projective coarse curve is this E. mu3(W) acts trivially on E; nontrivial pg characters come from thickenings/orbifold layers.",
+  "monomials_degree_le7": [
+    {
+      "exponents_eps_W_b_r": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree": 0,
+      "dualizing_character": 1,
+      "H1O_character": 2
+    },
+    {
+      "exponents_eps_W_b_r": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 6,
+      "dualizing_character": 1,
+      "H1O_character": 2
+    },
+    {
+      "exponents_eps_W_b_r": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "degree": 6,
+      "dualizing_character": 1,
+      "H1O_character": 2
+    },
+    {
+      "exponents_eps_W_b_r": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "degree": 2,
+      "dualizing_character": 2,
+      "H1O_character": 1
+    },
+    {
+      "exponents_eps_W_b_r": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "degree": 4,
+      "dualizing_character": 0,
+      "H1O_character": 0
+    },
+    {
+      "exponents_eps_W_b_r": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "degree": 6,
+      "dualizing_character": 1,
+      "H1O_character": 2
+    },
+    {
+      "exponents_eps_W_b_r": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "degree": 3,
+      "dualizing_character": 1,
+      "H1O_character": 2
+    },
+    {
+      "exponents_eps_W_b_r": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "degree": 5,
+      "dualizing_character": 2,
+      "H1O_character": 1
+    },
+    {
+      "exponents_eps_W_b_r": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "degree": 7,
+      "dualizing_character": 0,
+      "H1O_character": 0
+    },
+    {
+      "exponents_eps_W_b_r": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "degree": 6,
+      "dualizing_character": 1,
+      "H1O_character": 2
+    }
+  ],
+  "geometric_genus": 10,
+  "H1O_resolution_char_counts": [
+    2,
+    2,
+    6
+  ],
+  "scope": "Exact generic local isolated-ICIS and Hilbert/local-duality character calculation. Global compactification, gluing of local defects, and source projection remain separate.",
+  "seconds": 0.06236064399854513
+}

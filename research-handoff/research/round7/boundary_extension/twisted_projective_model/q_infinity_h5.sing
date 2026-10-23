@@ -1,0 +1,8 @@
+LIB "elim.lib";
+ring R=109,(U,t,v1),dp;
+ideal J=1*U^6*v1^4+76*U^6*v1^2+3*U^4*t*v1^2+21,72*U^6*v1^3+68*U^6*v1+3*U^2*t^2*v1,71*U^6*v1^4+37*U^6*v1^2+75*U^6+1*t^3+49;
+ideal G=std(sat(J,ideal(U*v1)));
+print("Q_INFINITY_H5");
+print(dim(G));
+print(vdim(G));
+quit;

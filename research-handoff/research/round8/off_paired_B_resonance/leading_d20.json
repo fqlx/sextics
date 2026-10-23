@@ -1,0 +1,12 @@
+{
+  "prime": 1000003,
+  "numerator_total_degree": 20,
+  "denominator": "V*(1+V^6)*(9eta+14)*(eta*V^2-1)*(eta+1)^4",
+  "rows": 2241,
+  "columns": 231,
+  "rank": 231,
+  "augmented_rank": 232,
+  "consistent": false,
+  "seconds": 1.154,
+  "scope": "Finite GF(p) leading-source ansatz on generic s=0 only; not a global scalar or certificate conclusion."
+}

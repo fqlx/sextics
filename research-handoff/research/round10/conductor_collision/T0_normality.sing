@@ -1,0 +1,11 @@
+ring R=(0,h),(u,z,b,eta),dp;
+minpoly=h^6-171/196;
+poly k=9*h-5;
+poly f=(1875/56)*k^2*(153*h^2+180*h+125)*b^2*eta+6250*k^2*u*b^2+23152500*z^2*eta-(10125/64)*k^4*b*eta^3-(826875/8)*k^2*u*b*eta^2-590625*(h+1)*k*z*b*eta-16537500*u^2*b*eta;
+print("START");
+ideal J=diff(f,u),diff(f,z),diff(f,b),diff(f,eta);
+J=std(J);
+print("JACOBIAN_DIM");print(dim(J));
+print("JACOBIAN_BASIS");print(J);
+print("FACTOR");print(factorize(f));
+quit;

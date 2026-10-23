@@ -1,0 +1,76 @@
+Global adjoint map for the source-bound physical point cover
+==========================================================
+
+Base and physical finite-flat order
+----------------------------------
+B=P2_(Y0,Y1,Y2) x P1_(X0,X1), bidegrees ordered (Y,X).
+On Y2=X0=1, a=Y0/Y2,b=Y1/Y2,v=X1/X0.  Let
+  tau=t_old/h^2=n/d
+be the reduced fraction in effective_physical.pickle.  The exact degrees are
+  M=deg(d)=(15,17), deg(n)=M+T=(13,19), T=(-2,2), F=(0,1).
+The physical fibre coordinate w=X2/h has bundle F, and tau has bundle T.
+Set R=d*w, Z=d*w^2.  Then R,Z have bundles M+F,M+2F.  The global equations are
+  R^2=d*Z,
+  Z^3+c*(X0^3*d+Bphys*n)*R*Z
+       +P*d^3+Q*d^2*n+Rphys*d*n^2+S*n^3=0.
+Here the physical coefficients have bidegrees
+  Bphys=(2,1), P=(0,6), Q=(2,4), Rphys=(4,2), S=(6,0).
+All displayed terms are regular global sections of the appropriate bundles.
+The leading monomials R^2,Z^3 are coprime and monic, so the order is finite flat
+of degree6, free in basis 1,Z,Z^2,R,RZ,RZ^2.  This assertion does not require
+normality.  The dualizing bundle is
+  omega_Y=pi^*(K_B+3M+5F)=pi^*O_B(42,54).
+Its canonical residue frame has mu3 character chi.  The function characters
+of the free basis are (0,2,1,1,0,2).
+Consequently the raw order has H1(O)=H2(O)=0 by the six negative monomial
+bundle summands; canonical chi sections are
+  H0 O_B(42,54) + RZ*H0 O_B(12,17), dimension 53668.
+NORMALITY and resolution corrections are separate requirements.
+
+Local cone, correct coherent target, and duality
+-----------------------------------------------
+At a transverse common zero of d,n away the proper-curve discriminants,
+the transverse singularity is the normal canonical genus4 cone.  Its ordinary
+blowup has discrepancy -2.  Therefore its local adjoint ideal is I^2,
+I=(Z,R,d,n), and its canonical defect is omega_Y/I^2 omega_Y.
+This is a FIRST-JET MODULE, not five independent line bundles on the reduced
+common-zero curve.  Its relevant chi component consists of the constant,
+d-linear and n-linear jets of the canonical residue frame.  Equivalently,
+  Q_chi=O_B(42,54) tensor O_B/(d,n)^2
+on this cone model.  The R1(O) dual module has nontrivial I-action from its
+H1(O_C) layer to its H1(O_C(1)) layer and is killed by I^2.
+
+For projective normal Gorenstein Y and a resolution f:X->Y, GR vanishing gives
+H1(omega_X)=H1(f_*omega_X).  If H1(omega_Y)=0, the exact sequence of adjoints
+identifies H1(omega_X) with the cokernel of
+  H0(omega_Y) -> H0(omega_Y/f_*omega_X).
+In character chi, this is dual to H2(O_X)_(chi^2), hence has the dimension of
+H20(X)_chi needed by the actual target.  Thus it is the canonical restriction
+map, not the local rank5 defect count, that decides global serving forms.
+
+Explicit cone-only interpolation
+--------------------------------
+For the full complete-intersection ideal J=(d,n), the square has the twisted
+Hilbert-Burch resolution
+  0 -> O(-1,1)+O(1,-1)
+    -> O(12,20)+O(14,18)+O(16,16)
+    -> J^2*O(42,54) -> 0.
+Every higher cohomology group of the displayed five bundles vanishes.
+Thus H1(J^2*O(42,54))=0, and all first jets interpolate.  The jet target has
+dimension45238; the kernel of the full canonical-chi map has dimension8430
+(including the RZ summand, which maps to zero).  This closes the smooth-cone
+contribution alone.  It does NOT prove H20=0 for a normalization/resolution
+with additional conductor, discriminant, or corner adjoint conditions.
+Those conditions may restrict the global canonical-section source before
+restriction to the cone jets.  The normalization of selected common-zero
+components need not have the arithmetic genus of the full CI.
+
+Connection/source normalization independently available
+------------------------------------------------------
+polarization_clean_frame.pickle gives the exact actual/conjugate pairing.
+In particular <eta_new,Wh*Omega/C>=7*x/18.  Together with the literal boundary
+rows this proves, on the Prym-nullflow plus arbitrary graph motion ds,
+  <nabla(theta_chi),omega_conj> = -(1/6)*(alpha_conj(P)-alpha_conj(sigma P)),
+including every Q8 absolute correction.  This binds the local Hodge-leading
+extension to the actual marked divisor, but a closed gamma and full source
+identity are still required for a certificate.

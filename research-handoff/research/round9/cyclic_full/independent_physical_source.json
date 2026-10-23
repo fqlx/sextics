@@ -1,0 +1,17 @@
+{
+  "target_id": "cyclic-triple-residual",
+  "raw_instance_rec_sha256": "c5713bc06b37db0a64123364f8687a8ebc82e9722cc39ba88357659768eed0bc",
+  "target_polynomial_pullback_verified": true,
+  "affine_jacobian": "h*y**2",
+  "source_on_weighted_curve": "a^3*h^4*t^2/2 times Omega/C^2 wedge da db dv",
+  "weighted_euler_weights": [
+    1,
+    1,
+    2
+  ],
+  "universal_canonical_curve_transform_verified": true,
+  "canonical_source": "rho*a^3/(2*B*M^3) * h^4*(alpha*T+beta*h^2)^2 times Omega/Ccanonical^2 wedge da db dv",
+  "character": "rho^3=M; rational currents after extracting this character retain (1/3)dlog(M)",
+  "seconds": 0.11664958199980902,
+  "scope": "Exact source and coordinate transport only; no rational primitive or protected certificate."
+}

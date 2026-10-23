@@ -1,0 +1,22 @@
+{
+  "prime": 1000003,
+  "support": "D=E_block(F)",
+  "block": [
+    "X0",
+    "X2",
+    "Y1"
+  ],
+  "degree_D": 6,
+  "E1_lift": "N=A*E_block",
+  "E1_identity": true,
+  "numerator_completion": "all 15 Jacobian Koszul pairs times all 21 quadratics",
+  "koszul_columns": 315,
+  "quotient_columns": 462,
+  "rows": 6188,
+  "coefficient_rank": 742,
+  "augmented_rank": 743,
+  "consistent": false,
+  "seconds": 5.719971877999342,
+  "scope": "Complete single-support q1 E2 system over the good finite prime; no arbitrary-support conclusion.",
+  "exact_rank_sandwich": "The 35 independent projective gauge kernels T=F*V-V(F)*Euler/6 bound rank by742 over Q; the bound is attained modulo p and the source augments rank. Hence no certificate for this selected D over C."
+}

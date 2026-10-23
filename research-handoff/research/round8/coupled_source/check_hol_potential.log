@@ -1,0 +1,116 @@
+{
+  "target": "cyclic-triple-residual; exact original sextic, c=5/7, A=X0^3 Y0^3",
+  "physical_coordinates": "X0=h,X1=v*h,X2=W,Y0=a*y,Y1=b*y,Y2=y,t=y^2",
+  "curve": "W**6 + W**3*(5*b*h*t*(a*v + 1)/7 + 5*h**3/7) + 5*a*b*h**4*t*v/7 + h**6*(v**6 + 1) + h**2*t**2*(5*a*b/7 + 5*b**3*v/7) + t**3*(a**6 + b**6 + 1)",
+  "physical_source": "(a^3/2)*h^4*t^2*Omega_(h,W,t)/C^2 wedge da db dv; Omega|h1=dW wedge dt",
+  "canonical_transform": "t_old=alpha*T+beta*h^2,W_old=rho*W,rho^3=M; C_old=M^2*C_new",
+  "parameters": {
+    "B": "b*(a*v + 1)",
+    "beta": "(-5*a*b/7 - 5*b**3*v/7)/(3*a**6 + 3*b**6 + 3)",
+    "M": "b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1",
+    "alpha": "(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1)/(b*(a*v + 1))",
+    "L": "(5*a*b*v*(-5*a*b/7 - 5*b**3*v/7)/(7*(3*a**6 + 3*b**6 + 3)) + v**6 + (-5*a*b/7 - 5*b**3*v/7)**3*(a**6 + b**6 + 1)/(3*a**6 + 3*b**6 + 3)**3 + (-5*a*b/7 - 5*b**3*v/7)**2*(5*a*b/7 + 5*b**3*v/7)/(3*a**6 + 3*b**6 + 3)**2 + 1)/(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1)**2",
+    "r": "(5*a*b*v/7 - (5*a*b/7 + 5*b**3*v/7)**2/(3*a**6 + 3*b**6 + 3))/(b*(a*v + 1)*(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1))",
+    "x": "b**3*(a*v + 1)**3/((b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1)*(a**6 + b**6 + 1))"
+  },
+  "canonical_source": "rho*g0*[alpha^2*eta(T^2)+2alpha*beta*eta(T)+beta^2*eta(1)]",
+  "g0": "a**3/(2*b*(a*v + 1)*(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1)**3)",
+  "eta_derivatives": "eta(T^2)=-nabla_r(omega1),eta(T)=-nabla_r(omega0),eta(1)=-nabla_L(omega0); omega0=h^2 Omega/C,omega1=T Omega/C",
+  "first_current": "J0=-i_(rho*fT*V_r)(da db dv) wedge omega1-i_(rho*(f0r*V_r+f0L*V_L))(da db dv) wedge omega0, with required fiber-exact connection corrections",
+  "remainder": "source=dJ0+rho*(R_T*omega1+R_0*omega0) wedge da db dv modulo the retained fiber-exact corrections",
+  "R_T": "V_r(fT)+fT*(V_r(log M)/3-V_r(log Jac))",
+  "R_0": "V_r(f0r)+f0r*(V_r(log M)/3-V_r(log Jac))+V_L(f0L)+f0L*(V_L(log M)/3-V_L(log Jac))",
+  "Piola": "div(Jac*V_i)=0; V_i=(d(L,r,x)/d(a,b,v))^-1 column_i",
+  "first_current_coefficients": {
+    "fT": "a**3/(2*b**3*(a*v + 1)**3*(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1))",
+    "f0r": "a**3*(-5*a*b/7 - 5*b**3*v/7)/(b**2*(a*v + 1)**2*(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1)**2*(3*a**6 + 3*b**6 + 3))",
+    "f0L": "a**3*(-5*a*b/7 - 5*b**3*v/7)**2/(2*b*(a*v + 1)*(b*(-5*a*b/7 - 5*b**3*v/7)*(a*v + 1)/(3*a**6 + 3*b**6 + 3) + 1)**3*(3*a**6 + 3*b**6 + 3)**2)"
+  },
+  "exact_jet_points": [
+    {
+      "point": [
+        "1",
+        "2",
+        "3"
+      ],
+      "M": "173/693",
+      "jacobian": "-405024988073816880/154963892093",
+      "canonical_parameters": [
+        "7359261620/628509",
+        "3085/2422",
+        "5376/173"
+      ],
+      "R_T_divided_by_rho": "231364093461760569175/11590965406803663859968",
+      "R_0_divided_by_rho": "-11453979487031923388587/125327313461064615485904",
+      "R_T_zero": false,
+      "R_0_zero": false
+    },
+    {
+      "point": [
+        "2",
+        "1",
+        "3"
+      ],
+      "M": "173/198",
+      "jacobian": "3816739630194480/7593230712557",
+      "canonical_parameters": [
+        "29445781430/30796941",
+        "40955/59339",
+        "1029/173"
+      ],
+      "R_T_divided_by_rho": "644740409352991212304/2365153443616341570885",
+      "R_0_divided_by_rho": "6510727910815425269758/81834309149125418352621",
+      "R_T_zero": false,
+      "R_0_zero": false
+    },
+    {
+      "point": [
+        "2",
+        "3",
+        "1"
+      ],
+      "M": "5063/5558",
+      "jacobian": "-2060705774925791280/3326899156566461543",
+      "canonical_parameters": [
+        "423641146/179437783",
+        "52555/106323",
+        "5103/5063"
+      ],
+      "R_T_divided_by_rho": "4927909895180731202/90876596335665094395",
+      "R_0_divided_by_rho": "-59398792080781468400/10224626827721608287153",
+      "R_T_zero": false,
+      "R_0_zero": false
+    }
+  ],
+  "scope": "Exact source transport and first integration by parts. Nonzero residuals remain; no primitive or certificate asserted.",
+  "seconds": 0.229
+}
+[
+  {
+    "point": [
+      "1",
+      "2",
+      "3"
+    ],
+    "compatibility_zero": false,
+    "compatibility_divided_by_H": "119578198846807482633104584069396924321626116624/130227877538997097131552870013455918904126725"
+  },
+  {
+    "point": [
+      "2",
+      "1",
+      "3"
+    ],
+    "compatibility_zero": false,
+    "compatibility_divided_by_H": "-3527706085681950820812592455058434358693413561851/2706344549373276823369310234386724439650160"
+  },
+  {
+    "point": [
+      "2",
+      "3",
+      "1"
+    ],
+    "compatibility_zero": false,
+    "compatibility_divided_by_H": "462115967866267999190596370861048786087137627/91438023589056075975363063997714470248400"
+  }
+]

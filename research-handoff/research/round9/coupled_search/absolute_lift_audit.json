@@ -1,0 +1,119 @@
+{
+  "prime": 1000003,
+  "points": [
+    {
+      "W": 280019,
+      "t": 101042,
+      "Lrx": [
+        228037,
+        15761,
+        879888
+      ]
+    },
+    {
+      "W": 990038,
+      "t": 707157,
+      "Lrx": [
+        828323,
+        168497,
+        469639
+      ]
+    },
+    {
+      "W": 481490,
+      "t": 889265,
+      "Lrx": [
+        119221,
+        409824,
+        919845
+      ]
+    },
+    {
+      "W": 306076,
+      "t": 969963,
+      "Lrx": [
+        959107,
+        353574,
+        296183
+      ]
+    },
+    {
+      "W": 549483,
+      "t": 289212,
+      "Lrx": [
+        954394,
+        621481,
+        570060
+      ]
+    },
+    {
+      "W": 655410,
+      "t": 581890,
+      "Lrx": [
+        432049,
+        369044,
+        571021
+      ]
+    },
+    {
+      "W": 93320,
+      "t": 328897,
+      "Lrx": [
+        694173,
+        578441,
+        56927
+      ]
+    },
+    {
+      "W": 370374,
+      "t": 194801,
+      "Lrx": [
+        433468,
+        89045,
+        914250
+      ]
+    },
+    {
+      "W": 160531,
+      "t": 895019,
+      "Lrx": [
+        217523,
+        917114,
+        967000
+      ]
+    },
+    {
+      "W": 603435,
+      "t": 828457,
+      "Lrx": [
+        832898,
+        466455,
+        381570
+      ]
+    },
+    {
+      "W": 663339,
+      "t": 599949,
+      "Lrx": [
+        226314,
+        433086,
+        269618
+      ]
+    },
+    {
+      "W": 863710,
+      "t": 912057,
+      "Lrx": [
+        230064,
+        890542,
+        543303
+      ]
+    }
+  ],
+  "checks": 108,
+  "all_direct_primitive_derivatives_match": true,
+  "sign": "PLUS F=(Q8_W-W*Q8_h)/C_t",
+  "universal_identity": "div_aff(QW-WQh,Qt-2tQh)+6Qh=div_weighted Q for Qh weighteddegree3",
+  "scope": "Independent finite-prime replay of absolute lift; universal derivation plus exact stored Griffiths identities gives characteristic-zero sign. No source moment or certificate claim.",
+  "seconds": 0.4850451946258545
+}

@@ -1,0 +1,36 @@
+{
+  "base_field": "QQ(e), e^2-e+1=0",
+  "q_zero": {
+    "chart": "h=q^3 H, v=q^3 n; alpha,t remain finite",
+    "limiting_equations": [
+      "432*H**2 + 24*H*alpha*n - 8*H + 3*T*alpha**2*n**2 + 4*alpha**3*e*n**2 + alpha**3*n**2",
+      "24*H*T - 40*H/27 + 3*T**2*alpha*n - 8*alpha**3*e*n - alpha*n/243",
+      "T**3 - T/243 + 4*alpha**3*e - 2/19683"
+    ],
+    "boundary_point": "H=1/54,t=5/81,alpha^3=16/(531441e),n=0",
+    "implicit_jacobian": "128*alpha**2*e/3",
+    "normal_transition": "v=q^3 n, so d/dv=q^-3 d/dn in the normal quotient"
+  },
+  "q_infinity": {
+    "chart": "z=1/q,h=z^9 H,v=z^3 n; alpha,t remain finite",
+    "limiting_equations_identical_to_q_zero": true,
+    "normal_transition": "v=z^3 n, so d/dv=z^-3 d/dn in the normal quotient"
+  },
+  "J_zero": {
+    "chart": "J=j,h=H/j^2,alpha=A/j^4,t=T/j^4; v remains finite",
+    "limiting_equations": [
+      "-27*H**8/4 + H**7*q**3/8",
+      "5*H**7/216 + 3*H**5*T/2",
+      "4*A**3*e*v**4 + 8*A**3*e*v**2 + 4*A**3*e - 4*A**3*v**4 - 4*A**3*v**2 + H**6/629856 - H**4*T/3888 + T**3"
+    ],
+    "implicit_jacobian_on_boundary": "-A**2*e*q**36/5059980462358093824",
+    "normal_transition": "v itself is a smooth normal parameter; U=J^-2 sqrt(A)"
+  },
+  "five_dual_forms": {
+    "formula": "psi_j=e*q^(j+3)*J^2/G * U*dq tensor d/dv, j=0,...,4",
+    "q_zero_order": "j (nonnegative)",
+    "q_infinity_order": "4-j (nonnegative)",
+    "J_zero_order": "0: J^2 cancels the pole U~J^-2"
+  },
+  "scope": "These are smooth local charts on the normalization at the boundary points in question, by the displayed nonzero implicit Jacobians. P24 branch-point charts remain a separate audit; no global H10 or Gysin is asserted."
+}

@@ -1,0 +1,11 @@
+{
+  "weights_tau_W_u_b_r": [
+    2,
+    2,
+    1,
+    6,
+    6
+  ],
+  "D_degree": 16,
+  "D_initial": "181515600*b*r*u**4*zeta**3 + 57624000*b*tau**2*u**6*zeta**4 - 533655864*r**2*tau**2*zeta"
+}

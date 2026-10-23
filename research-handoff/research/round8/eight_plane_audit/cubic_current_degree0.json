@@ -1,0 +1,14 @@
+{
+  "prime": 1000003,
+  "model": "cubic",
+  "degree": 0,
+  "z_degree": 2,
+  "denominator": "G_z",
+  "rows": 90,
+  "columns": 12,
+  "rank": 12,
+  "augmented_rank": 13,
+  "consistent": false,
+  "seconds": 0.012437814999429975,
+  "scope": "Finite-field sampled screen of the stated ansatz only; no generic or unrestricted conclusion."
+}

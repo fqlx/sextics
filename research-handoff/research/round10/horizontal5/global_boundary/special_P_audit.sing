@@ -1,0 +1,11 @@
+ring R=0,(e,w,b,r,n),dp;
+poly F=w6+5/7*w3*e3+b*(r+5/7*e2);
+poly G=b2-189/20*b*r2-27/8*e2*b*r+n*(3969/100*r2+189/10*e2*r);
+ideal I=F,G; ideal J=I+minor(jacob(I),2);
+"FULL_DIM";dim(std(J));
+ideal Je=std(subst(J,e,1)); "E_CHART";Je;
+ring S=0,(e,w,b,r),dp;
+poly F=w6+b*(r+5/7*e2);
+poly G=b2+3969/100*r2+189/10*e2*r;
+ideal J=std(ideal(F,G)+minor(jacob(ideal(F,G)),2));
+"OLD_DIM";dim(J);"OLD_COLENGTH";vdim(J);exit;

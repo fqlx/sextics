@@ -1,0 +1,26 @@
+{
+  "prime": 1000393,
+  "a0": 898422,
+  "v0": 848762,
+  "e0": 907176,
+  "E": 995884,
+  "initialDegree": 5,
+  "weights": [
+    1,
+    2,
+    2,
+    1
+  ],
+  "cubic": "982946*b**2*de + 773586*b**2*eta + 303570*b*de**2*eta + 522944*b*de*eta**2 + 371719*b*eta**3 + 659274*b*eta*z + 856932*eta*z**2",
+  "terms": {
+    "0,0,1,3": 371719,
+    "1,0,1,2": 522944,
+    "0,2,0,1": 856932,
+    "2,0,1,1": 303570,
+    "0,0,2,1": 773586,
+    "0,1,1,1": 659274,
+    "1,0,2,0": 982946
+  },
+  "allLowerCoefficientsZero": true,
+  "scope": "Finite-prime pilot of exact actual local jet construction; characteristic-zero singularity type not concluded."
+}

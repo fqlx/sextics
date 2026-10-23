@@ -1,0 +1,16 @@
+{
+  "radical_identity": true,
+  "incidence_resultant_is_D7_cubed": true,
+  "degree_one_cube_projector_square": 4,
+  "norm_elliptic_character_killed": true,
+  "actual_anti_character_preserved_on_genus7": true,
+  "genus3_squared_quotient_kills_actual_anti_character": true,
+  "D7": "a**4 + 4*a**3*p**2 - 8*a**2*b + 6*a**2*p**4 - 16*a*b*p**2 + 4*a*p**6 + 16*b**2 - 8*b*p**4 + 64*c*p**2 + p**8 - 64*p**2*w**3",
+  "incidence": "-a**2 - 2*a*p**2 + 4*b - p**4 + 4*p*r*(a + p**2 - 2*p*r + 2*r**2)",
+  "D3_picard": "4*a*x + x**4*(a**2 - 4*b)**2 + x**3*(4*a**3 - 16*a*b + 64*c) + x**2*(6*a**2 - 8*b) + 1",
+  "genus_D7": 7,
+  "genus_D3": 3,
+  "C_genus": 4,
+  "E_genus": 1,
+  "status": "exact algebraic correspondence and character projector; no support/uniruledness/certificate claim"
+}

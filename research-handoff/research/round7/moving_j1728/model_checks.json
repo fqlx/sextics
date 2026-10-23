@@ -1,0 +1,13 @@
+{
+  "verified": [
+    "cubic_factorization",
+    "fixed_j1728_quotient",
+    "differential_pullback"
+  ],
+  "X": "-v*(k**2 - 2*k/v - 2 + 2/v**2)/(2*k - 2*v - 2/v)",
+  "Y": "Z*(k - 2/v)/(k - v - 1/v)**2",
+  "elliptic_equation": "Y\u00b2=-8(s/v)\u00b3*(X\u00b3-X)",
+  "differential": "dX/Y=-(v/2)*(k-2v)dk/Z",
+  "twist_squareclass": "s/v",
+  "smooth_if": "s*v*(v\u00b2-1)*(2v\u00b2-1) != 0"
+}

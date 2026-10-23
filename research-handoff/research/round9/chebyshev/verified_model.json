@@ -1,0 +1,39 @@
+{
+  "slope_identity": "c1+3s3=P(s)/(3s3) after t=\u2212(a1s+b2)/(3s2)",
+  "first_quotient": {
+    "R": "k3\u22123k",
+    "Y": "(k2\u22121)Z",
+    "equation": "Y\u00b2=s3(R\u00b2\u22124)(R\u2212tau)",
+    "differential": "dR/Y=3dk/Z"
+  },
+  "second_quotient": {
+    "R": "(k**3 - 4*tau)/(k**2 - 4)",
+    "Y_factor": "(k**3 - 12*k + 8*tau)/(k**2 - 4)**2",
+    "x": "sR",
+    "y": "Y",
+    "equation": "y\u00b2=x\u00b3\u221227s\u00b2x\u221227c0",
+    "differential": "dx/y=s*k*dk/Z relative to the base; no sqrt(s)"
+  },
+  "trace_projectors": {
+    "first": "trace(k)=0 for k3\u22123k\u2212R1; f1_*(dk/Z)=dR1/Y1 and f1_*(kdk/Z)=0",
+    "second": "trace(1/k)=0 for k3\u2212R2 k2+4R2\u22124tau; f2_*(dk/Z)=0 and f2_*(kdk/Z)=3/s dx/y"
+  },
+  "partial_normalization": "su=b2, u\u00b2+a1u+3b1s+3a0s\u00b2+9s4=0; basis1,s,s2,s3,u,u2",
+  "cleared_Weierstrass": "X=s\u00b2x,Y=s\u00b3y: Y\u00b2=X\u00b3\u221227s6X+(a1s+b2)\u00b3+9a0s4(a1s+b2)\u221227b0s6",
+  "minimal_line": "Lraw=pi*O(6,6); subtract Dgood=(s0,u=\u2212a1). Further normalization/minimality still required.",
+  "irreducibility_witness": {
+    "prime": 173,
+    "q": 2,
+    "h": 14,
+    "irreducible_slope_coefficients": [
+      144,
+      133,
+      0,
+      41,
+      141,
+      0,
+      9
+    ]
+  },
+  "status": "Exact maps, relative differentials and finite-algebra checks. No global H20 or original Gysin certificate asserted."
+}

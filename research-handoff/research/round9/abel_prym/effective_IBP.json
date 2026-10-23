@@ -1,0 +1,16 @@
+{
+  "exact_NC_equals_D_source": true,
+  "N_term_counts": [
+    49,
+    76,
+    87
+  ],
+  "divN_terms": 89,
+  "E_terms": 1303,
+  "gcd_D_E": "1",
+  "E_nonzero": true,
+  "residual_weight": 6,
+  "first_IBP_identity": "S0*Omega/C\u00b2 = [E/(D\u00b2)]*Omega/C - d(i_N Omega/(D*C)); E=D*divN-N(D).",
+  "remaining_obligation": "Construct a coupled base-current or source-compatible Gysin channel killing/serving E/(D\u00b2C), with all physical chart poles retained. The relative identity alone does not do this.",
+  "seconds": 0.113
+}

@@ -1,0 +1,7 @@
+ring R=1000393,(de,z,b,eta),dp;
+poly f=982946*b^2*de + 773586*b^2*eta + 303570*b*de^2*eta + 522944*b*de*eta^2 + 371719*b*eta^3 + 659274*b*eta*z + 856932*eta*z^2;
+print(factorize(f));
+ideal J=diff(f,de),diff(f,z),diff(f,b),diff(f,eta);
+print(std(J));
+print(dim(std(J)));
+quit;

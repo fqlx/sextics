@@ -1,0 +1,33 @@
+{
+  "prime": 1000003,
+  "point": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "quartic_coefficients": [
+    977946,
+    710861,
+    52534,
+    422339,
+    321965
+  ],
+  "determinant": 954506,
+  "v": [
+    414758,
+    447308,
+    200922,
+    621298
+  ],
+  "Q": 976831,
+  "exact_matrix": "M[k,i]=partial_i g[k] - g[k]*partial_i g[4]/g[4], k=0..3",
+  "exact_c0": "-1/g0",
+  "exact_c2": "1/(5*g4)",
+  "exact_rhs": "rem_z(((z^2-1)^3-(c0+c2*z^2)*(G+z*Gprime))/z,G)",
+  "exact_lift": "v=M^-1 rhs; Q=(-4*c2*g3-sum(v_i*partial_i g4))/g4",
+  "exact_normal_identity": "(z^2-1)^3=(c0+c2*z^2)*(G+z*Gprime)+z*sum(v_i*partial_i G)+Q*z*G",
+  "exact_source_identity": "rho=(2*c0+(div(v)+Q)*z+4*c2*z^2)/Gprime-sum(D_i(v_i*z/Gprime))",
+  "source_factor": "-1/512",
+  "scope": "Exact rational coordinate-lift circuit, with a residual scalar coefficient; not a primitive or certificate."
+}

@@ -1,0 +1,178 @@
+{
+  "(1, 1)": {
+    "polynomial": "-181515600*zeta^2*v^12*eps^2 - 339878700*zeta^2*v^6*eps^2 - 158363100*zeta^2*eps^2",
+    "factorization": [
+      [
+        "v^2 + 1",
+        1
+      ],
+      [
+        "v^4 - v^2 + 1",
+        1
+      ],
+      [
+        "196*v^6 + 171",
+        1
+      ],
+      [
+        "eps",
+        2
+      ],
+      [
+        "zeta",
+        2
+      ]
+    ],
+    "terms": 3
+  },
+  "(1, 2)": {
+    "polynomial": "-226894500*zeta^2*v^14 + 60505200*zeta^2*v^12*eps^2 - 296583525*zeta^2*v^8 + 113292900*zeta^2*v^6*eps^2 - 81265275*zeta^2*v^2 + 52787700*zeta^2*eps^2 - 136136700*zeta*v^13 - 296583525*zeta*v^7 - 160446825*zeta*v + 90757800*v^12 + 181515600*v^6 + 90757800",
+    "factorization": [
+      [
+        "2940*zeta^2*v^14 - 784*zeta^2*v^12*eps^2 + 3843*zeta^2*v^8 - 1468*zeta^2*v^6*eps^2 + 1053*zeta^2*v^2 - 684*zeta^2*eps^2 + 1764*zeta*v^13 + 3843*zeta*v^7 + 2079*zeta*v - 1176*v^12 - 2352*v^6 - 1176",
+        1
+      ]
+    ],
+    "terms": 12
+  },
+  "(1, 3)": {
+    "polynomial": "75631500*zeta^2*v^14 + 20168400*zeta^2*v^12*eps^2 + 98861175*zeta^2*v^8 + 37764300*zeta^2*v^6*eps^2 + 27088425*zeta^2*v^2 + 17595900*zeta^2*eps^2 + 22689450*zeta*v^13 + 98861175/2*zeta*v^7 + 53482275/2*zeta*v",
+    "factorization": [
+      [
+        "zeta",
+        1
+      ],
+      [
+        "5880*zeta*v^14 + 1568*zeta*v^12*eps^2 + 7686*zeta*v^8 + 2936*zeta*v^6*eps^2 + 2106*zeta*v^2 + 1368*zeta*eps^2 + 1764*v^13 + 3843*v^7 + 2079*v",
+        1
+      ]
+    ],
+    "terms": 9
+  },
+  "(0, 2)": {
+    "polynomial": "-533655864*zeta*v^19*eps^2 - 1342307862*zeta*v^13*eps^2 - 381182760*zeta*v^12 - 1107958257*zeta*v^7*eps^2 - 713745270*zeta*v^6 - 299306259*zeta*v*eps^2 - 332562510*zeta - 533655864*v^18*eps^2 - 1532899242*v^12*eps^2 - 1464830892*v^6*eps^2 - 465587514*eps^2",
+    "factorization": [
+      [
+        "v^2 + 1",
+        1
+      ],
+      [
+        "v^4 - v^2 + 1",
+        1
+      ],
+      [
+        "196*v^6 + 171",
+        1
+      ],
+      [
+        "14*zeta*v^7*eps^2 + 9*zeta*v*eps^2 + 10*zeta + 14*v^6*eps^2 + 14*eps^2",
+        1
+      ]
+    ],
+    "terms": 11
+  },
+  "(0, 3)": {
+    "polynomial": "88942644*zeta*v^19*eps^2 + 223717977*zeta*v^13*eps^2 + 63530460*zeta*v^12 + 369319419/2*zeta*v^7*eps^2 + 118957545*zeta*v^6 + 99768753/2*zeta*v*eps^2 + 55427085*zeta",
+    "factorization": [
+      [
+        "v^2 + 1",
+        1
+      ],
+      [
+        "v^4 - v^2 + 1",
+        1
+      ],
+      [
+        "196*v^6 + 171",
+        1
+      ],
+      [
+        "14*v^7*eps^2 + 9*v*eps^2 + 10",
+        1
+      ],
+      [
+        "zeta",
+        1
+      ]
+    ],
+    "terms": 7
+  },
+  "(2, 1)": {
+    "polynomial": "32413500*zeta^3*v^14*eps^2 + 181515600*zeta^3*v^13 + 106501500*zeta^3*v^8*eps^2 + 339878700*zeta^3*v^7 + 69953625*zeta^3*v^2*eps^2 + 158363100*zeta^3*v + 64827000*zeta^2*v^13*eps^2 + 181515600*zeta^2*v^12 + 106501500*zeta^2*v^7*eps^2 + 339878700*zeta^2*v^6 + 41674500*zeta^2*v*eps^2 + 158363100*zeta^2 + 32413500*zeta*v^12*eps^2 + 64827000*zeta*v^6*eps^2 + 32413500*zeta*eps^2",
+    "factorization": [
+      [
+        "zeta",
+        1
+      ],
+      [
+        "980*zeta^2*v^14*eps^2 + 5488*zeta^2*v^13 + 3220*zeta^2*v^8*eps^2 + 10276*zeta^2*v^7 + 2115*zeta^2*v^2*eps^2 + 4788*zeta^2*v + 1960*zeta*v^13*eps^2 + 5488*zeta*v^12 + 3220*zeta*v^7*eps^2 + 10276*zeta*v^6 + 1260*zeta*v*eps^2 + 4788*zeta + 980*v^12*eps^2 + 1960*v^6*eps^2 + 980*eps^2",
+        1
+      ]
+    ],
+    "terms": 15
+  },
+  "(2, 2)": {
+    "polynomial": "-16206750*zeta^3*v^14*eps^2 - 90757800*zeta^3*v^13 - 53250750*zeta^3*v^8*eps^2 - 169939350*zeta^3*v^7 - 69953625/2*zeta^3*v^2*eps^2 - 79181550*zeta^3*v - 21609000*zeta^2*v^13*eps^2 - 60505200*zeta^2*v^12 - 35500500*zeta^2*v^7*eps^2 - 113292900*zeta^2*v^6 - 13891500*zeta^2*v*eps^2 - 52787700*zeta^2 - 5402250*zeta*v^12*eps^2 - 10804500*zeta*v^6*eps^2 - 5402250*zeta*eps^2 - 381182760*v^13 - 713745270*v^7 - 332562510*v",
+    "factorization": [
+      [
+        "14700*zeta^3*v^14*eps^2 + 82320*zeta^3*v^13 + 48300*zeta^3*v^8*eps^2 + 154140*zeta^3*v^7 + 31725*zeta^3*v^2*eps^2 + 71820*zeta^3*v + 19600*zeta^2*v^13*eps^2 + 54880*zeta^2*v^12 + 32200*zeta^2*v^7*eps^2 + 102760*zeta^2*v^6 + 12600*zeta^2*v*eps^2 + 47880*zeta^2 + 4900*zeta*v^12*eps^2 + 9800*zeta*v^6*eps^2 + 4900*zeta*eps^2 + 345744*v^13 + 647388*v^7 + 301644*v",
+        1
+      ]
+    ],
+    "terms": 18
+  },
+  "(4, 0)": {
+    "polynomial": "-15435000*zeta^5*v^15*eps^2 - 46970000*zeta^5*v^9*eps^2 - 5635000*zeta^5*v^8 - 29610000*zeta^5*v^3*eps^2 - 4410000*zeta^5*v^2 - 46305000*zeta^4*v^14*eps^2 - 98647500*zeta^4*v^8*eps^2 - 4410000*zeta^4*v^7 - 51030000*zeta^4*v^2*eps^2 - 4410000*zeta^4*v - 46305000*zeta^3*v^13*eps^2 - 82110000*zeta^3*v^7*eps^2 + 1225000*zeta^3*v^6 - 35805000*zeta^3*v*eps^2 + 1225000*zeta^3 - 15435000*zeta^2*v^12*eps^2 - 30432500*zeta^2*v^6*eps^2 - 14997500*zeta^2*eps^2",
+    "factorization": [
+      [
+        "882*zeta^3*v^15*eps^2 + 2684*zeta^3*v^9*eps^2 + 322*zeta^3*v^8 + 1692*zeta^3*v^3*eps^2 + 252*zeta^3*v^2 + 2646*zeta^2*v^14*eps^2 + 5637*zeta^2*v^8*eps^2 + 252*zeta^2*v^7 + 2916*zeta^2*v^2*eps^2 + 252*zeta^2*v + 2646*zeta*v^13*eps^2 + 4692*zeta*v^7*eps^2 - 70*zeta*v^6 + 2046*zeta*v*eps^2 - 70*zeta + 882*v^12*eps^2 + 1739*v^6*eps^2 + 857*eps^2",
+        1
+      ],
+      [
+        "zeta",
+        2
+      ]
+    ],
+    "terms": 18
+  },
+  "(3, 0)": {
+    "polynomial": "57624000*zeta^4*v^13*eps^2 + 107898000*zeta^4*v^7*eps^2 + 50274000*zeta^4*v*eps^2 + 57624000*zeta^3*v^12*eps^2 + 107898000*zeta^3*v^6*eps^2 + 50274000*zeta^3*eps^2",
+    "factorization": [
+      [
+        "v^2 + 1",
+        1
+      ],
+      [
+        "v^4 - v^2 + 1",
+        1
+      ],
+      [
+        "196*v^6 + 171",
+        1
+      ],
+      [
+        "zeta*v + 1",
+        1
+      ],
+      [
+        "eps",
+        2
+      ],
+      [
+        "zeta",
+        3
+      ]
+    ],
+    "terms": 6
+  },
+  "(3, 1)": {
+    "polynomial": "1929375*zeta^4*v^16*eps^2 - 32413500*zeta^4*v^15 - 38416000*zeta^4*v^13*eps^2 + 4299750*zeta^4*v^10*eps^2 - 77799750*zeta^4*v^9 - 71932000*zeta^4*v^7*eps^2 - 1488375*zeta^4*v^4*eps^2 - 48785625*zeta^4*v^3 - 33516000*zeta^4*v*eps^2 + 7717500*zeta^3*v^15*eps^2 - 97240500*zeta^3*v^14 - 28812000*zeta^3*v^12*eps^2 + 1451625*zeta^3*v^9*eps^2 - 197898750*zeta^3*v^8 - 53949000*zeta^3*v^6*eps^2 + 165375*zeta^3*v^3*eps^2 - 93767625*zeta^3*v^2 - 25137000*zeta^3*eps^2 + 11576250*zeta^2*v^14*eps^2 - 97240500*zeta^2*v^13 + 8268750*zeta^2*v^8*eps^2 - 184007250*zeta^2*v^7 - 3307500*zeta^2*v^2*eps^2 - 86766750*zeta^2*v - 355313700*zeta*v^13*eps^2 - 32413500*zeta*v^12 - 664781775*zeta*v^7*eps^2 - 63908250*zeta*v^6 - 309468075*zeta*v*eps^2 - 31494750*zeta + 1929375*v^12*eps^2 + 3858750*v^6*eps^2 + 1929375*eps^2",
+    "factorization": [
+      [
+        "1575*zeta^4*v^16*eps^2 - 26460*zeta^4*v^15 - 31360*zeta^4*v^13*eps^2 + 3510*zeta^4*v^10*eps^2 - 63510*zeta^4*v^9 - 58720*zeta^4*v^7*eps^2 - 1215*zeta^4*v^4*eps^2 - 39825*zeta^4*v^3 - 27360*zeta^4*v*eps^2 + 6300*zeta^3*v^15*eps^2 - 79380*zeta^3*v^14 - 23520*zeta^3*v^12*eps^2 + 1185*zeta^3*v^9*eps^2 - 161550*zeta^3*v^8 - 44040*zeta^3*v^6*eps^2 + 135*zeta^3*v^3*eps^2 - 76545*zeta^3*v^2 - 20520*zeta^3*eps^2 + 9450*zeta^2*v^14*eps^2 - 79380*zeta^2*v^13 + 6750*zeta^2*v^8*eps^2 - 150210*zeta^2*v^7 - 2700*zeta^2*v^2*eps^2 - 70830*zeta^2*v - 290052*zeta*v^13*eps^2 - 26460*zeta*v^12 - 542679*zeta*v^7*eps^2 - 52170*zeta*v^6 - 252627*zeta*v*eps^2 - 25710*zeta + 1575*v^12*eps^2 + 3150*v^6*eps^2 + 1575*eps^2",
+        1
+      ]
+    ],
+    "terms": 33
+  }
+}

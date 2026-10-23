@@ -1,0 +1,38 @@
+{
+  "original_function_weights": [
+    0,
+    -14,
+    -28,
+    -30,
+    -16,
+    -14
+  ],
+  "dq_dh_weight": -3,
+  "dx_y_original_weight": 7,
+  "canonical_h_budgets": [
+    0,
+    2,
+    5,
+    6,
+    3,
+    3
+  ],
+  "minimal_possible_canonical_weights": [
+    4,
+    6,
+    2,
+    -2,
+    2,
+    0
+  ],
+  "potential_bad_generators": [
+    3,
+    5
+  ],
+  "j_weight": 3,
+  "q_interpolation_budgets": {
+    "3": 12,
+    "5": 16
+  },
+  "scope": "Weight calculation and available global budgets only. Adjoint comparison and full normalized strict-transform chart still needed."
+}

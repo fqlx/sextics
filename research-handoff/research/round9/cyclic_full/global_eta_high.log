@@ -1,0 +1,233 @@
+STDSIZE
+39
+POWER
+0
+// ** redefining bb (){bb=b1;}if(j==2){bb=b2;} vector rr=reduce(D^power*bb,G);if(rr!=0){allzero=0;}) /workspace/research/round9/cyclic_full/global_eta_high.sing:9
+// ** redefining rr () /workspace/research/round9/cyclic_full/global_eta_high.sing:9
+// ** redefining bb (){bb=b1;}if(j==2){bb=b2;} vector rr=reduce(D^power*bb,G);if(rr!=0){allzero=0;}) /workspace/research/round9/cyclic_full/global_eta_high.sing:9
+// ** redefining rr () /workspace/research/round9/cyclic_full/global_eta_high.sing:9
+1
+// ** redefining j (int j=0;) /workspace/research/round9/cyclic_full/global_eta_high.sing:7
+// ** redefining bb (t i=1;i<=nrows(T);i++){print("COEFF "+string(j)+" "+string(i));print(T[i,1]);}) /workspace/research/round9/cyclic_full/global_eta_high.sing:8
+COEFF 0 1
+0
+COEFF 0 2
+0
+COEFF 0 3
+5/6*x
+COEFF 0 4
+235/14112*x^2+33/14*x
+COEFF 0 5
+-74/63*r*x^2+16225/29042496*x^3+41945/691488*x^2-3/7*x
+COEFF 0 6
+0
+COEFF 0 7
+0
+COEFF 0 8
+0
+COEFF 0 9
+0
+COEFF 0 10
+0
+COEFF 0 11
+0
+COEFF 0 12
+0
+COEFF 0 13
+0
+COEFF 0 14
+-56/25*r*x-83/2744*x^2-83/49*x
+COEFF 0 15
+253/140*r*x^2-16225/9680832*x^3+294/5*L*x-339/2401*x^2-69/98*x
+COEFF 0 16
+0
+COEFF 0 17
+0
+COEFF 0 18
+-7*x
+COEFF 0 19
+51/112*x^2+6/5*x
+COEFF 0 20
+0
+COEFF 0 21
+0
+COEFF 0 22
+0
+COEFF 0 23
+0
+COEFF 0 24
+0
+COEFF 0 25
+0
+COEFF 0 26
+0
+COEFF 0 27
+0
+COEFF 0 28
+224/75*r^2*x^2+83/2058*r*x^3+332/147*r*x^2
+COEFF 0 29
+0
+COEFF 0 30
+0
+COEFF 0 31
+-25/42*x^2
+COEFF 0 32
+148/15*r*x^2-3245/691488*x^3-1930/1029*x^2
+COEFF 0 33
+0
+COEFF 0 34
+0
+COEFF 0 35
+0
+COEFF 0 36
+0
+// ** redefining bb (t i=1;i<=nrows(T);i++){print("COEFF "+string(j)+" "+string(i));print(T[i,1]);}) /workspace/research/round9/cyclic_full/global_eta_high.sing:8
+// ** redefining T () /workspace/research/round9/cyclic_full/global_eta_high.sing:8
+// ** redefining i (int i=1;) /workspace/research/round9/cyclic_full/global_eta_high.sing:7
+COEFF 1 1
+0
+COEFF 1 2
+4/21*x
+COEFF 1 3
+235/14112*x^2+3/7*x
+COEFF 1 4
+-67/126*r*x^2+16225/29042496*x^3+41945/691488*x^2-3/7*x
+COEFF 1 5
+9/7*L*x^2-9/14*r*x^2
+COEFF 1 6
+0
+COEFF 1 7
+0
+COEFF 1 8
+0
+COEFF 1 9
+0
+COEFF 1 10
+0
+COEFF 1 11
+0
+COEFF 1 12
+0
+COEFF 1 13
+-56/25*r*x
+COEFF 1 14
+253/140*r*x^2-16225/9680832*x^3+294/5*L*x-339/2401*x^2-69/98*x
+COEFF 1 15
+83/8232*r*x^3+83/147*r*x^2
+COEFF 1 16
+0
+COEFF 1 17
+-8/5*x
+COEFF 1 18
+-3/784*x^2+6/5*x
+COEFF 1 19
+9/5*r*x^2+415/57624*x^3-115/2058*x^2
+COEFF 1 20
+0
+COEFF 1 21
+0
+COEFF 1 22
+0
+COEFF 1 23
+0
+COEFF 1 24
+0
+COEFF 1 25
+0
+COEFF 1 26
+0
+COEFF 1 27
+224/75*r^2*x^2
+COEFF 1 28
+-83/1372*L*x^3-166/49*L*x^2
+COEFF 1 29
+0
+COEFF 1 30
+-20/147*x^2
+COEFF 1 31
+8/3*r*x^2-1175/98784*x^3-65/147*x^2
+COEFF 1 32
+-54/5*L*x^2-415/19208*x^3+115/686*x^2
+COEFF 1 33
+0
+COEFF 1 34
+0
+COEFF 1 35
+0
+COEFF 1 36
+0
+// ** redefining bb (t i=1;i<=nrows(T);i++){print("COEFF "+string(j)+" "+string(i));print(T[i,1]);}) /workspace/research/round9/cyclic_full/global_eta_high.sing:8
+// ** redefining T () /workspace/research/round9/cyclic_full/global_eta_high.sing:8
+// ** redefining i (int i=1;) /workspace/research/round9/cyclic_full/global_eta_high.sing:7
+COEFF 2 1
+2045/24696
+COEFF 2 2
+43/126*r-16225/29042496*x+41095/172872
+COEFF 2 3
+-3275/32928*r*x-5/3*L+41/42*r
+COEFF 2 4
+-3275/16464*L*x+3275/32928*r*x+2/7*L-1/7*r
+COEFF 2 5
+0
+COEFF 2 6
+0
+COEFF 2 7
+0
+COEFF 2 8
+0
+COEFF 2 9
+0
+COEFF 2 10
+0
+COEFF 2 11
+0
+COEFF 2 12
+-253/140*r
+COEFF 2 13
+-56/75*r^2-83/8232*r*x-83/147*r
+COEFF 2 14
+-16225/29042496*r*x^2+98/5*L*r-113/2401*r*x-23/98*r
+COEFF 2 15
+0
+COEFF 2 16
+-409/588
+COEFF 2 17
+-43/15*r+4905/76832*x+185/2058
+COEFF 2 18
+-655/2352*r*x-81125/203297472*x^2+14*L+2/5*r+60385/1613472*x-185/686
+COEFF 2 19
+0
+COEFF 2 20
+0
+COEFF 2 21
+0
+COEFF 2 22
+0
+COEFF 2 23
+0
+COEFF 2 24
+0
+COEFF 2 25
+0
+COEFF 2 26
+16225/7260624*r*x^2-1848/25*L*r+83/1372*L*x+452/2401*r*x+166/49*L+46/49*r
+COEFF 2 27
+16225/4840416*L*x^2-588/5*L^2+678/2401*L*x+69/49*L
+COEFF 2 28
+0
+COEFF 2 29
+-10225/172872*x
+COEFF 2 30
+655/588*r*x+81125/203297472*x^2-46175/201684*x
+COEFF 2 31
+655/392*L*x+81125/67765824*x^2-222/5*L-60385/537824*x+555/686
+COEFF 2 32
+0
+COEFF 2 33
+0
+COEFF 2 34
+0
+COEFF 2 35
+0
+COEFF 2 36
+0

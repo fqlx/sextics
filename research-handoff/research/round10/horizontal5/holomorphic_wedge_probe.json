@@ -1,0 +1,57 @@
+{
+  "prime": 1009,
+  "records": [
+    {
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "w": 779,
+      "closure_defects": {
+        "1": 492,
+        "w2": 230,
+        "1/w": 699,
+        "w2/delta_root": 7,
+        "1/(w*delta_root)": 623,
+        "w2/B": 178,
+        "1/(w*B)": 284
+      }
+    },
+    {
+      "point": [
+        1,
+        3,
+        2
+      ],
+      "w": 756,
+      "closure_defects": {
+        "1": 311,
+        "w2": 621,
+        "1/w": 114,
+        "w2/delta_root": 520,
+        "1/(w*delta_root)": 962,
+        "w2/B": 241,
+        "1/(w*B)": 557
+      }
+    },
+    {
+      "point": [
+        8,
+        9,
+        2
+      ],
+      "w": 824,
+      "closure_defects": {
+        "1": 241,
+        "w2": 724,
+        "1/w": 53,
+        "w2/delta_root": 779,
+        "1/(w*delta_root)": 352,
+        "w2/B": 487,
+        "1/(w*B)": 932
+      }
+    }
+  ],
+  "scope": "Bounded natural scalar multiples of corrected holomorphic-lift wedge only. Nonzero defect excludes that candidate, not global H20."
+}

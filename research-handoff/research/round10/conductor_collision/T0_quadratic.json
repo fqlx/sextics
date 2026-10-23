@@ -1,0 +1,7 @@
+{
+  "A": "84375*a*(28*E*a + 9*h - 5)**2/4",
+  "U": "-3125*a**2*(28*E*a + 9*h - 5)*(120*E*a*h + 120*E*a + 27*h**2 + 30*h - 25)/2",
+  "UatAroot": "0",
+  "definitions": "h=a*v, E=e^2, T=196v6+171, eta=S/b",
+  "scope": "Quadratic terms of the conductor-blowup chart after eliminating v by F; not a complete normalization/singularity classification."
+}

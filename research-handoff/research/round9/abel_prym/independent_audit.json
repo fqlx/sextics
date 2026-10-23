@@ -1,0 +1,168 @@
+{
+  "exact_holomorphic_reductions": [
+    {
+      "block": "actual",
+      "hol_index": 0,
+      "direction": "L",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 1
+    },
+    {
+      "block": "actual",
+      "hol_index": 1,
+      "direction": "L",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 1
+    },
+    {
+      "block": "actual",
+      "hol_index": 0,
+      "direction": "r",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 1
+    },
+    {
+      "block": "actual",
+      "hol_index": 1,
+      "direction": "r",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 1
+    },
+    {
+      "block": "actual",
+      "hol_index": 0,
+      "direction": "x",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 1
+    },
+    {
+      "block": "actual",
+      "hol_index": 1,
+      "direction": "x",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 1
+    },
+    {
+      "block": "conjugate",
+      "hol_index": 0,
+      "direction": "L",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 2
+    },
+    {
+      "block": "conjugate",
+      "hol_index": 0,
+      "direction": "r",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 2
+    },
+    {
+      "block": "conjugate",
+      "hol_index": 0,
+      "direction": "x",
+      "raw_Q8_identity": true,
+      "divergence_identity": true,
+      "weighted_Euler": true,
+      "mu3_character": 2
+    }
+  ],
+  "flow": {
+    "actual": {
+      "preserves_entire_holomorphic_block": true,
+      "holomorphic_connection": [
+        [
+          "10*r*x/3 - 50*x/147 - 9",
+          "3"
+        ],
+        [
+          "-3*r*x",
+          "-5*r*x/3 - 50*x/147 - 18"
+        ]
+      ]
+    },
+    "conjugate": {
+      "preserves_entire_holomorphic_block": true,
+      "holomorphic_connection": [
+        [
+          "5*r*x/3 - 25*x/147 - 9"
+        ]
+      ]
+    }
+  },
+  "primitive_sign": "PLUS: \u2202z beta=N_z beta+d_f[(QW-WQh)/Ct]; therefore beta_abs=beta+sum F_z dz.",
+  "residue_convention": "Res(P dW\u2227dt/C)=P dW/Ct; pole-two representative=(P_t Ct-P Ctt)dW/Ct\u00b3.",
+  "marked_map_identity": true,
+  "marked_old_t_zero": true,
+  "source_double_zero_at_marked_T": true,
+  "Gamma_holomorphic_basis": [
+    {
+      "w_power": 0,
+      "v_power": 0,
+      "character_mod3": 1
+    },
+    {
+      "w_power": 0,
+      "v_power": 1,
+      "character_mod3": 1
+    },
+    {
+      "w_power": 0,
+      "v_power": 2,
+      "character_mod3": 1
+    },
+    {
+      "w_power": 0,
+      "v_power": 3,
+      "character_mod3": 1
+    },
+    {
+      "w_power": 1,
+      "v_power": 0,
+      "character_mod3": 2
+    },
+    {
+      "w_power": 1,
+      "v_power": 1,
+      "character_mod3": 2
+    },
+    {
+      "w_power": 1,
+      "v_power": 2,
+      "character_mod3": 2
+    },
+    {
+      "w_power": 2,
+      "v_power": 0,
+      "character_mod3": 0
+    },
+    {
+      "w_power": 2,
+      "v_power": 1,
+      "character_mod3": 0
+    },
+    {
+      "w_power": 3,
+      "v_power": 0,
+      "character_mod3": 1
+    }
+  ],
+  "trace": "Actual marked forms have w-deck character1, conjugate has2; all unweighted linear traces vanish. Weights w\u00b2 and w respectively make them invariant. rho-deck characters are inverse, canceled for actual source by its rho prefactor.",
+  "seconds": 4.2320405389982625,
+  "scope": "Checks sign, exact Q8 identities, full holomorphic flow preservation, marked curve and source double-zero, and trace characters. Does not prove physical-source moment matching, algebraic serving/Gysin, or a certificate."
+}

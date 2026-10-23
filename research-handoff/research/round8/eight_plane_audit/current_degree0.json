@@ -1,0 +1,13 @@
+{
+  "prime": 1000003,
+  "degree": 0,
+  "z_degree": 3,
+  "denominator": "G_z",
+  "rows": 64,
+  "columns": 16,
+  "rank": 16,
+  "augmented_rank": 17,
+  "consistent": false,
+  "seconds": 0.013379456002439838,
+  "scope": "Finite-field sampled screen of the stated ansatz only; no generic or unrestricted conclusion."
+}

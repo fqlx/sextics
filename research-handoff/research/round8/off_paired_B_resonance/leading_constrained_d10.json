@@ -1,0 +1,12 @@
+{
+  "prime": 1000003,
+  "numerator_total_degree": 10,
+  "feature": "k^2*(9eta+14)^2*P(eta,V)/(V*(eta+1)^2)",
+  "rows": 1096,
+  "columns": 66,
+  "rank": 66,
+  "augmented_rank": 67,
+  "consistent": false,
+  "seconds": 0.148,
+  "scope": "Finite GF(p) leading-source ansatz on generic s=0 only; not a global scalar or certificate conclusion."
+}

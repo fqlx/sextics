@@ -1,0 +1,14 @@
+{
+  "boundary_curve": "xi^2=11664*(1+q^6)^4-q^6",
+  "quotient": "u=1+q^6,y=xi; y^2=11664*u^4-u+1",
+  "Weierstrass": "Y^2=X^3-46656*X+11664",
+  "X": "(-u + 2*y + 2)/u**2",
+  "Y": "u*(-4*D + (-u + 2*y + 2)**2/u**4)/2 + (-u + 2*y + 2)/(2*u**2)",
+  "inverse_u": "(2*Y-X)/(X^2-46656)",
+  "differential": "dX/Y=-du/y=-6*q^5*dq/xi",
+  "j": "191102976/110591",
+  "hyperelliptic_involution": "P -> T-P, with T=(1/4,1/8) in this Weierstrass model",
+  "boundary_twist_coordinate": "xi=(918330048*i/ell)*J^6*U^3/G, J=1+q^6, U^2=s/v",
+  "X_boundary": "2*(918330048*i/ell)*J^4*U^3/G+(1-q^6)/J^2",
+  "scope": "Exact target and boundary map only. The displayed U expression uses the boundary identity; no global elliptic point is asserted."
+}

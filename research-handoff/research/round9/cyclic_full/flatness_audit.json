@@ -1,0 +1,62 @@
+{
+  "actual": {
+    "exact_curvature_zero": {
+      "('L', 'r')": true,
+      "('L', 'x')": true,
+      "('r', 'x')": true
+    },
+    "matrix_common_denominator_degrees": [
+      [
+        7,
+        11,
+        6
+      ],
+      [
+        7,
+        11,
+        6
+      ],
+      [
+        7,
+        11,
+        7
+      ]
+    ],
+    "matrix_common_denominator_terms": [
+      97,
+      97,
+      97
+    ]
+  },
+  "conjugate": {
+    "exact_curvature_zero": {
+      "('L', 'r')": true,
+      "('L', 'x')": true,
+      "('r', 'x')": true
+    },
+    "matrix_common_denominator_degrees": [
+      [
+        6,
+        9,
+        5
+      ],
+      [
+        6,
+        9,
+        5
+      ],
+      [
+        6,
+        9,
+        6
+      ]
+    ],
+    "matrix_common_denominator_terms": [
+      67,
+      67,
+      67
+    ]
+  },
+  "seconds": 1.4284187070006737,
+  "convention": "d_i N_j-d_j N_i+N_j N_i-N_i N_j"
+}

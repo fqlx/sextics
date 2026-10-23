@@ -1,0 +1,40 @@
+{
+  "prime": 1000003,
+  "records": [
+    {
+      "point": [
+        1,
+        2,
+        3
+      ],
+      "independent_mark_gradient": true,
+      "all_psi_gradients": true,
+      "all6_fields_gradients_divergences": true,
+      "all6_full5_contractions": true
+    },
+    {
+      "point": [
+        2,
+        3,
+        1
+      ],
+      "independent_mark_gradient": true,
+      "all_psi_gradients": true,
+      "all6_fields_gradients_divergences": true,
+      "all6_full5_contractions": true
+    },
+    {
+      "point": [
+        3,
+        4,
+        2
+      ],
+      "independent_mark_gradient": true,
+      "all_psi_gradients": true,
+      "all6_fields_gradients_divergences": true,
+      "all6_full5_contractions": true
+    }
+  ],
+  "method": "Independent Taylor-coefficient jets; independently derived eta1/eta0 mark; no import of producer Jet2 or Model.",
+  "passed": true
+}

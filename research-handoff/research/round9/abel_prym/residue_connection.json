@@ -1,0 +1,20 @@
+{
+  "basis": [
+    "-1/(3 W^2(2u+A))",
+    "-u/(3 W^2(2u+A))"
+  ],
+  "matrix": [
+    [
+      "-(2*A**2*b + A*B*a - 10*B*b)/(3*B*(A**2 - 4*B))",
+      "2*(-A*b + 2*B*a)/(3*B*(A**2 - 4*B))"
+    ],
+    [
+      "(-A*b + 2*B*a)/(3*(A**2 - 4*B))",
+      "-2*(A*a - 2*b)/(3*(A**2 - 4*B))"
+    ]
+  ],
+  "substitution": "A=c(1+z), B=L+r*z+z^3/x; a=partial_j A,b=partial_j B",
+  "trace": "-(2/3)*dB/B-(1/2)*dlog(A^2-4B)",
+  "universal_flatness_exact_QQ": true,
+  "scope": "Exact independent residue quotient connection. The proper/boundary extension block and source primitive remain to be computed."
+}

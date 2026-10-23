@@ -1,0 +1,18 @@
+{
+  "args": {
+    "degree": 3,
+    "zmax": 2,
+    "gauges": "1;A*S^-1;S*A^-1;a^-3;E^-1",
+    "samples": 0,
+    "prime": 1000003,
+    "seed": 947,
+    "output": "higgs_gauged_d3"
+  },
+  "columns": 1500,
+  "rows": 1580,
+  "rank": 1025,
+  "augmented_rank": 1026,
+  "validation20": null,
+  "seconds": 9.442888259887695,
+  "scope": "finite-prime sampled five-generator holomorphic Higgs-kernel module only"
+}

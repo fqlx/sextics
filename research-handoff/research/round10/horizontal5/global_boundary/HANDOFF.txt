@@ -1,0 +1,74 @@
+STOPPED at the user's instruction. No certificate was found or claimed.
+All certificate_search computations are complete; no process remains running.
+
+Latest exact packet
+===================
+/workspace/research/round10/horizontal5/global_boundary/README.md
+
+Reproduce:
+  python /workspace/research/round10/horizontal5/global_boundary/source_transition.py
+  python /workspace/research/round10/horizontal5/global_boundary/special_P_series.py
+  python /workspace/research/round10/horizontal5/global_boundary/special_P_audit.py
+
+All three replayed successfully. The last two take under one second together.
+
+1. Exact pinned source / generic character and transition calculation.
+   source_transition.py/json binds the original F and A and original D32.
+   Canonical coefficient after the two corner blowups:
+       g/(6*a^5*eps^16*b).
+   Actual source density:
+       -eps^4*b/(6*a^2) deps dW db dr dv/F^2.
+   Generic overlap canonical transition: -v^16; eps^i jet: -v^(16+i).
+   Source-relevant even mu3-character jets: 1,eps^2,b,r.
+   The finer delta character is2; there are140 explicit polynomial
+   preimages of its GENERIC jet model (420 before fine projection).
+   Reflection independently reproduced these preimages:
+   /workspace/research/round9/abel_prym/vertex_global_jet_sections.py/json/pickle.
+   This is NOT a global adjoint-surjectivity result: infinity restrictions
+   discovered by Fresh/Cycle substantially shrink this particular family.
+
+2. Actual finite special point P=v^6+1=0.
+   special_P_series.py/json extracts the formal series from the originalD.
+   special_P_audit.py/json/log verifies the universal rational weighted
+   initial CI, weights(1,1,4,2,4), degrees(6,8). It has nine exceptional
+   DuVal points A5+2A2+6A1 and one inherited generic corner. That corner's
+   next old-weight initial CI is quasismooth overQQ (Jacobian colength83).
+   Old adjoint weight>=8 automatically implies new weight>=3.
+   All these computational statements are exact characteristic-zero.
+   special_P_proof.md gives the geometric extension argument that no extra
+   P0 adjoint condition appears, using rationality of DuVal deformations,
+   finite quotient charts, and a second weighted resolution.
+   IMPORTANT: this last geometric implication had been sent for independent
+   review but that review was NOT completed before the user's stop. Treat
+   it as a written proof awaiting audit, not a team-audited theorem.
+
+Previously completed stable packets
+==================================
+/workspace/research/round10/horizontal5/README.md
+  Exact universal rank5 open-curve Gauss-Manin connection; all six exact
+  curvatures vanish. The proper3 plus horizontal-residue2 system preserves
+  all derivatives of Teff=N1/N0. Independently audited full flatness,
+  residues, ordinary rational oneform derivatives, physical source/chain rule.
+  See /workspace/research/round9/abel_prym/rank5_flatness_audit.py/json and
+      /workspace/research/round9/abel_prym/rank5_ordinary_audit.py/json.
+  Finite constant/polynomial/logarithmic/radial modules gave no certificate;
+  these bounded negatives are not an unrestricted nonexistence proof.
+
+/workspace/research/round10/horizontal5/global_twists/README.md
+  Correct physical finite-flat cone model and exact generic cone jet
+  interpolation. The physical D32 already retains the exceptional curves;
+  contracted-cone pg does not alone give global H20 or a serving support.
+
+/workspace/research/round10/cone_radial/README.md
+  Audited radial frame and full source density; bounded modules negative.
+
+Outstanding actual gaps
+=======================
+No complete global normalization/conductor/adjoint map for D32.
+Fresh/Cycle's additional infinity valuation and line-collision conditions
+must be combined with ALL global canonical sections, not only the140
+displayed source-character preimages. Their restricted subfamily count68
+does not determine the full image. No Gysin preimage of the target source
+has been constructed. No legal global algebraic certificate has been found.
+
+Do not post this child packet separately. Root owns the GitHub handoff.

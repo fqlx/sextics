@@ -1,0 +1,11 @@
+{
+  "exact_QQ_identity": true,
+  "clean_pairing_eta_conjugate_hol": "7*x/18",
+  "nullflow_marked_absolute_conjugate_form": "(-5*W**3*x/7 - ds - x*(r*(5*ss + 4) + 3*ss*(2*ss + 3)/x))/(3*W*(2*W**3 + 5*ss/7 + 5/7))",
+  "nullflow_uflow": "W**2*(245*r*x + 441*t - 25*x)/147",
+  "graph_motion_derivative": "ds is arbitrary; may be replaced by delta(T_effective) only after this identity.",
+  "theta_extension_pairing": "<nabla(theta_actual)_proper,conjugate_hol> = -(1-zeta^2)/6 * alpha_conjugate(P), along the Prym-nullflow plus arbitrary graph motion.",
+  "normalization_scope": "Theta_actual projection carries factor1-zeta\u00b2. The marked divisor P-sigmaP has conjugate alpha difference (1-zeta\u00b2)*alpha(P). Thus our chosen Jacobian residue pairing equals -1/6 times that corrected Abel-Prym derivative.",
+  "scope": "Exact leading-Hodge/source normalization along the isoperiodic flow, including all Q8 absolute corrections and moving-graph derivative. Does not solve the closed gamma/source wedge equations or prove a global support H20 class.",
+  "seconds": 4.044764546997612
+}

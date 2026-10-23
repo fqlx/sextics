@@ -1,0 +1,31 @@
+{
+  "prime": 1000003,
+  "points": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      1
+    ],
+    [
+      3,
+      4,
+      2
+    ]
+  ],
+  "checks": {
+    "field_values": 132,
+    "field_first_derivatives": 132,
+    "density_values": 6,
+    "density_first_derivatives": 6
+  },
+  "all11_fields_and_first_derivatives_match": true,
+  "method": "Independent recursive symbolic evaluation in one-variable dual numbers; native coordinate derivatives computed with SymPy, no imported search jet engine.",
+  "trace_identity": "Full Gamma trace is coefficient_u(R); extra conjugate weight is R0-cR1.",
+  "seconds": 0.48862166199978674,
+  "scope": "Verifies the traced current evaluator and its retained derivatives. Does not assert a source solution or Gysin support."
+}

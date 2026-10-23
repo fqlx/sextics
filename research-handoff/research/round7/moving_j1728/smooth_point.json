@@ -1,0 +1,24 @@
+{
+  "prime": 107,
+  "base": {
+    "q": 1,
+    "h": 4
+  },
+  "coefficients": {
+    "a1": 16,
+    "a0": 36,
+    "b2": 51,
+    "b1": 11,
+    "b0": 33
+  },
+  "points": [
+    {
+      "s": 36,
+      "t": 1,
+      "v": 34,
+      "jacobian_determinant": 63,
+      "twist_s_over_v": 64
+    }
+  ],
+  "conclusion": "A nonsingular Fp point lifts over Zp by Hensel; the 3-equation model has a component etale and generically finite dominant over physical(q,h). Smoothness exclusions s*v*(v\u00b2\u22121)*(2v\u00b2\u22121) were checked."
+}

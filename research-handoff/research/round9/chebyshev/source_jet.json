@@ -1,0 +1,27 @@
+{
+  "formulas": {
+    "Jacobian_det": "-3*s**2*(a0 + 9*s**2 + 3*t**2) + (a1 + 6*s*t)**2",
+    "s_lambda": "(3*s**2*(a0l*s + a1l*t + b1l) + (-a1 - 6*s*t)*(a1l*s + b2l))/(-3*s**2*(a0 + 9*s**2 + 3*t**2) + (a1 + 6*s*t)**2)",
+    "t_lambda": "(-(a1 + 6*s*t)*(a0l*s + a1l*t + b1l) + (a1l*s + b2l)*(a0 + 9*s**2 + 3*t**2))/(-3*s**2*(a0 + 9*s**2 + 3*t**2) + (a1 + 6*s*t)**2)",
+    "c0_lambda": "a0l*t + b0l + (a0 + 3*t**2)*(-(a1 + 6*s*t)*(a0l*s + a1l*t + b1l) + (a1l*s + b2l)*(a0 + 9*s**2 + 3*t**2))/(-3*s**2*(a0 + 9*s**2 + 3*t**2) + (a1 + 6*s*t)**2)",
+    "E2_A_lambda": "\u221254*s*s_lambda",
+    "E2_B_lambda": "\u221227*c0_lambda"
+  },
+  "actual_jets": {
+    "a1": "3*h**4*q**2/4 - 3*h**2*q**2",
+    "a0": "-h**2*q**3/48",
+    "b2": "0",
+    "b1": "h**6*q**2/48 + 9*h**5*q**9/16 + 9*h**5*q**3/16 - h**4*q**2/6 - 9*h**3*q**9/4 - 9*h**3*q**3/4 + h**2*q**2/3",
+    "b0": "h**2*q**3*(h - 2)*(h + 2)/5184"
+  },
+  "witness": {
+    "prime": 173,
+    "q": 2,
+    "h": 14,
+    "irreducible_slope_modulus": "s**6 - 42*s**4 + 43*s**3 + 34*s + 16",
+    "s_lambda": "-56*s**5 - s**4 - 49*s**3 - 34*s**2 - 22*s - 77",
+    "tau_lambda": "-43*s**5 + 27*s**4 - 47*s**3 - 77*s**2 - 6*s + 73",
+    "E2_j_lambda": "-44*s**5 - 34*s**4 - 58*s**3 - 69*s**2 + 63*s + 18"
+  },
+  "scope": "Actual \u03bbA deformation, not arbitrary family tangent. Nonzero quotient deformation is not by itself a Gysin certificate."
+}
