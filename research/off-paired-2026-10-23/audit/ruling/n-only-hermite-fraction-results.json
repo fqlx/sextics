@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "count": 13,
+  "checks": [
+    "exact global split of tLift dlogv",
+    "u=1/4,w=1: literal derivative i^-1",
+    "u=1/4,w=1: literal derivative i^-2",
+    "u=1/4,w=1: literal derivative i^-7",
+    "u=1,w=2: literal derivative i^-1",
+    "u=1,w=2: literal derivative i^-2",
+    "u=1,w=2: literal derivative i^-7",
+    "u=2,w=1/2: literal derivative i^-1",
+    "u=2,w=1/2: literal derivative i^-2",
+    "u=2,w=1/2: literal derivative i^-7",
+    "u=1/3,w=3: literal derivative i^-1",
+    "u=1/3,w=3: literal derivative i^-2",
+    "u=1/3,w=3: literal derivative i^-7"
+  ],
+  "exact_points": [
+    {
+      "u": "1/4",
+      "w": "1",
+      "source_component_values": {
+        "i^-1": "531255994974456703255054980781/1557792368863210260",
+        "i^-2": "-3485889230385921541272/2478777009005",
+        "i^-7": "-495247667839195784057915923616896/283907659225320069885"
+      }
+    },
+    {
+      "u": "1",
+      "w": "2",
+      "source_component_values": {
+        "i^-1": "-18813993480482663829712622217210880543543/744259715246627536475488982256720",
+        "i^-2": "117771653624843129981102831029/272047818106881700668875790",
+        "i^-7": "-7003737147757280960465596493562329024202/82039210234416615572694993635"
+      }
+    },
+    {
+      "u": "2",
+      "w": "1/2",
+      "source_component_values": {
+        "i^-1": "-5974900302009357504232648303079742807227994251/239950014997925772293753018974243061760000000",
+        "i^-2": "-5672072541876294587662664145223787/663342717762179590049675172750000",
+        "i^-7": "0"
+      }
+    },
+    {
+      "u": "1/3",
+      "w": "3",
+      "source_component_values": {
+        "i^-1": "844640875453698253441414662259866127605689699349923787/18392329268548938556208874908498000000",
+        "i^-2": "-67313302327138078468947809051461002627/3383445136952927863159547500",
+        "i^-7": "115705857869300745302595097605192627520079944628224/1220401066421727095564403375"
+      }
+    }
+  ],
+  "method": "independent cleared polynomial dlog moment split and Fraction third Taylor derivatives of actual forced-source formulas; no primary code imported",
+  "source_packet_sha256": "7e80b44e7753af9d726cd5fe3bedbafb21818e3facb94f70d53e8771c1c4cb29",
+  "primitive_packet_sha256": "537c4c3a0b594e31dc45ee1d3a30e736fb3ae9ecfdf873d8382846de821076b7",
+  "scope": "Checks compact K construction and serialized H_N derivative identities at four exact generic points. The primary QQ(u)[w] global identities were inspected, not independently reimplemented. Full Cartan corrections remain explicit; K(B0-1/2)chi is still unserved."
+}

@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "lift_product": true,
+    "lift_sum_sixth": true,
+    "lift_S": true,
+    "physical_coefficient_jacobian": true,
+    "physical_divergence_direct": true
+  },
+  "status": "Exact physical lift and divergence; no primitive."
+}

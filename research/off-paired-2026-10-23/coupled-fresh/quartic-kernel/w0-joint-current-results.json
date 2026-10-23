@@ -1,0 +1,16 @@
+{
+  "status": "five exact elementary scalar checks passed; large rank-eight source identity not independently rerun",
+  "certificate": false,
+  "checks": {
+    "logarithmic_N": true,
+    "lambda0_physical_chain_terms": true,
+    "retained_scalar_r0": true,
+    "order_three_residual_coefficient": true,
+    "order_three_current_serves_source": true
+  },
+  "current_c": "-i*(w**3 + 1)/(4*j*w) - 224*j*(2 - w**3)/(405*i*w**3) + 28*j*(w**3 + 1)**2/(45*i*w**3)",
+  "current_d": "-448*(w**3 + 1)/(405*i*w**2)",
+  "retained_lambda0": "(-243*i**2*w**5 - 243*i**2*w**2 + 2016*j**2*w**6 - 3136*j**2*w**3 - 2464*j**2)/(4860*i*j**2*w**3)",
+  "retained_r0": "(-3276*w**6 + 3080*w**3 + 980)/(1215*i*w**3)",
+  "handoff": "W0-JOINT-CURRENT-HANDOFF.md"
+}

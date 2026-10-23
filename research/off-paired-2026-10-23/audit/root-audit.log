@@ -1,0 +1,248 @@
+{
+  "status": "passed",
+  "arithmetic": "Python standard-library Fraction polynomial dictionaries",
+  "connection_sha256": "1f47767f5ceb8019ee49864d98b62489e424a09558916acf026aab10d2f82d23",
+  "third_kind_sha256": "6f0daac452208e0f2d34820dffba38bd64107d408a182a3d32826369d7117a9f",
+  "target_path": "/workspace/off-paired-sextics/data/off-paired/instance.rec",
+  "target_raw_sha256": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+  "original_raw_sha256": "bb0e2891331ddcf18fdbc683df881900400f0e8c2cc73b2f0f23c5d3f7c88467",
+  "mathematical_target_unchanged": true,
+  "changed_q_rejected_in_memory": true,
+  "canonical_target": {
+    "variables": [
+      "X0",
+      "X1",
+      "X2",
+      "Y0",
+      "Y1",
+      "Y2"
+    ],
+    "q": 1,
+    "F": [
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        1,
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        1,
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      [
+        [
+          0,
+          3,
+          1,
+          0,
+          1,
+          1
+        ],
+        1,
+        2
+      ],
+      [
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ],
+      [
+        [
+          2,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        1,
+        3
+      ],
+      [
+        [
+          3,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        1,
+        2
+      ],
+      [
+        [
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        1,
+        1
+      ]
+    ],
+    "A": [
+      [
+        [
+          3,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        1,
+        1
+      ]
+    ]
+  },
+  "canonical_target_sha256": "9df3e6d7010a0ddfa608a059705b584216fa06fa8130d084d6135179370f3ccf",
+  "canonical_target_serialization": "UTF-8 json.dumps(canonical_target, sort_keys=True, separators=(comma,colon)), no trailing newline. Polynomials list [exponent_vector,numerator,denominator], ordered lexicographically by exponent vector; variables as listed.",
+  "common_denominator": "4*H*(4*C**6-729*H**4)",
+  "basis": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "physical_orientation": "Handoff source -A/6 partial_H(omega_0) uses Z=b^6-a^6 with p=ab and residue dF/F placed first. Choosing Z=a^6-b^6 changes both omega_0 and the source coefficient sign. The curve equation alone does not specify this choice.",
+  "counts": {
+    "Dwork": 8,
+    "Euler_matrix": 16,
+    "flatness": 16,
+    "third_Dwork": 2,
+    "third_Euler": 4,
+    "third_flatness": 4,
+    "third_constant_residue_audit": 1,
+    "weighted_C_gauge": 16,
+    "weighted_equation_discriminant": 2,
+    "physical_endpoint": 3,
+    "source_Euler": 4
+  },
+  "checks": [
+    "Dwork_H_0",
+    "Dwork_H_1",
+    "Dwork_H_3",
+    "Dwork_H_4",
+    "Dwork_C_0",
+    "Dwork_C_1",
+    "Dwork_C_3",
+    "Dwork_C_4",
+    "Euler_0_0",
+    "Euler_0_1",
+    "Euler_0_2",
+    "Euler_0_3",
+    "Euler_1_0",
+    "Euler_1_1",
+    "Euler_1_2",
+    "Euler_1_3",
+    "Euler_2_0",
+    "Euler_2_1",
+    "Euler_2_2",
+    "Euler_2_3",
+    "Euler_3_0",
+    "Euler_3_1",
+    "Euler_3_2",
+    "Euler_3_3",
+    "flatness_0_0",
+    "flatness_0_1",
+    "flatness_0_2",
+    "flatness_0_3",
+    "flatness_1_0",
+    "flatness_1_1",
+    "flatness_1_2",
+    "flatness_1_3",
+    "flatness_2_0",
+    "flatness_2_1",
+    "flatness_2_2",
+    "flatness_2_3",
+    "flatness_3_0",
+    "flatness_3_1",
+    "flatness_3_2",
+    "flatness_3_3",
+    "third_Dwork_H_2",
+    "third_Dwork_C_2",
+    "third_Euler_0",
+    "third_flatness_0",
+    "third_Euler_1",
+    "third_flatness_1",
+    "third_Euler_2",
+    "third_flatness_2",
+    "third_Euler_3",
+    "third_flatness_3",
+    "third_constant_infinity_residues",
+    "weighted_C_gauge_0_0",
+    "weighted_C_gauge_0_1",
+    "weighted_C_gauge_0_2",
+    "weighted_C_gauge_0_3",
+    "weighted_C_gauge_1_0",
+    "weighted_C_gauge_1_1",
+    "weighted_C_gauge_1_2",
+    "weighted_C_gauge_1_3",
+    "weighted_C_gauge_2_0",
+    "weighted_C_gauge_2_1",
+    "weighted_C_gauge_2_2",
+    "weighted_C_gauge_2_3",
+    "weighted_C_gauge_3_0",
+    "weighted_C_gauge_3_1",
+    "weighted_C_gauge_3_2",
+    "weighted_C_gauge_3_3",
+    "weighted_curve",
+    "weighted_discriminant",
+    "physical_endpoint_equation",
+    "endpoint_coordinate_Jacobian",
+    "endpoint_curve_on_F",
+    "source_Euler_0",
+    "source_Euler_1",
+    "source_Euler_2",
+    "source_Euler_3"
+  ],
+  "scope": "Exact connection and source-direction audit; no rational current, certificate, Lean proof, or acceptance."
+}

@@ -1,0 +1,8 @@
+{
+  "checks": 8,
+  "passed": true,
+  "gamma": "-198*C**5*z/(5*H**2)",
+  "A": "-22*C**5/(5*H**3)",
+  "certificate": false,
+  "remaining": "explicit nonzero rational S; closure unproved"
+}

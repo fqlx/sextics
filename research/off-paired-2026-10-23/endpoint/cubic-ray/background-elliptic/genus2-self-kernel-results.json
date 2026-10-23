@@ -1,0 +1,101 @@
+{
+  "status": "Exact globally defined genus-two self kernel and all parameter columns; source closure open",
+  "constant_scope": "fixed characteristic-zero k; k=C for full contract",
+  "check_count": 26,
+  "checks": [
+    "stored-Dwork-source-column",
+    "literal-normalfunction-D-column",
+    "apparent-normalizer-cancels-D",
+    "literal-normalfunction-B-column",
+    "apparent-normalizer-cancels-B",
+    "paired-infinity-D-row-0",
+    "paired-infinity-B-row-0",
+    "paired-infinity-D-row-1",
+    "paired-infinity-B-row-1",
+    "paired-infinity-D-row-2",
+    "paired-infinity-B-row-2",
+    "paired-infinity-D-row-3",
+    "paired-infinity-B-row-3",
+    "literal-two-infinity-residue-cancellation",
+    "literal-moving-q-column",
+    "parameter-difference-identity",
+    "full-kernel-Euler-one-form",
+    "Klein-polar-diagonal",
+    "Klein-polar-divided-difference",
+    "literal-Klein-Cauchy-identity",
+    "degree24-graph-branch",
+    "literal-fiber-isomorphism",
+    "rational-graph-scale",
+    "full-physical-graph-H-jet",
+    "full-physical-graph-q-jet",
+    "full-physical-graph-z-jet"
+  ],
+  "curve": "Y^2=(D+B*P)^2-4P^6, w^2=(D+B*q)^2-4q^6",
+  "basis": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "normalfunction": "tau=w*dP/[(P-q)Y], residues +1,-1; use the full absolute differential d tau",
+  "columns": {
+    "D": {
+      "compact_numerator_over_w": [
+        "4*(-4*B**5*q**4 + 6*B**4*D*q**3 - 9*B**3*D**2*q**2 - 108*B**2*D**3*q - 81*B*D**4 + 486*D**3*q**5)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))",
+        "-4*(2*B**5*q**3 - 3*B**4*D*q**2 - 36*B**3*D**2*q - 27*B**2*D**3 + 162*B*D**2*q**5 - 243*D**3*q**4)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))",
+        "4*(-16*B**5*q - 12*B**4*D + 72*B**3*q**5 - 108*B**2*D*q**4 + 162*B*D**2*q**3 - 243*D**3*q**2)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))",
+        "-8*(-12*B**6*q - 8*B**5*D + 48*B**4*q**5 - 72*B**3*D*q**4 + 108*B**2*D**2*q**3 - 162*B*D**3*q**2 + 243*D**4*q)/(D*(2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))"
+      ],
+      "exact_primitive": "AD/(w*Y)",
+      "AD": "-(-12*B**8*P*q - 8*B**7*D*P - 8*B**7*D*q - 4*B**6*D**2 + 48*B**6*P**5*q + 48*B**6*P*q**5 + 32*B**5*D*P**5 - 64*B**5*D*P**4*q + 8*B**5*D*P**3*q**2 + 8*B**5*D*P**2*q**3 - 64*B**5*D*P*q**4 + 32*B**5*D*q**5 - 48*B**4*D**2*P**4 + 96*B**4*D**2*P**3*q - 12*B**4*D**2*P**2*q**2 + 96*B**4*D**2*P*q**3 - 48*B**4*D**2*q**4 - 192*B**4*P**5*q**5 + 72*B**3*D**3*P**3 - 144*B**3*D**3*P**2*q - 144*B**3*D**3*P*q**2 + 72*B**3*D**3*q**3 + 288*B**3*D*P**5*q**4 + 288*B**3*D*P**4*q**5 - 108*B**2*D**4*P**2 + 459*B**2*D**4*P*q - 108*B**2*D**4*q**2 - 432*B**2*D**2*P**5*q**3 - 432*B**2*D**2*P**4*q**4 - 432*B**2*D**2*P**3*q**5 + 162*B*D**5*P + 162*B*D**5*q + 648*B*D**3*P**5*q**2 + 648*B*D**3*P**4*q**3 + 648*B*D**3*P**3*q**4 + 648*B*D**3*P**2*q**5 - 243*D**6 - 972*D**4*P**5*q - 972*D**4*P**4*q**2 - 972*D**4*P**3*q**3 - 972*D**4*P**2*q**4 - 972*D**4*P*q**5)/(D*(2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))"
+    },
+    "B": {
+      "compact_numerator_over_w": [
+        "-2*(B*q - 3*D)*(2*B*q + 3*D)*(4*B**3*q**3 + 27*B*D**2*q + 27*D**3)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))",
+        "2*(-4*B**5*q**4 + 6*B**4*D*q**3 - 9*B**3*D**2*q**2 - 108*B**2*D**3*q - 81*B*D**4 + 486*D**3*q**5)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))",
+        "-4*(-2*B**5*q**2 - 24*B**4*D*q - 18*B**3*D**2 + 108*B**2*D*q**5 - 162*B*D**2*q**4 + 243*D**3*q**3)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))",
+        "8*(-16*B**5*q - 12*B**4*D + 72*B**3*q**5 - 108*B**2*D*q**4 + 162*B*D**2*q**3 - 243*D**3*q**2)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))"
+      ],
+      "exact_primitive": "AB/(w*Y)",
+      "AB": "(-16*B**7*P*q - 12*B**6*D*P - 12*B**6*D*q - 8*B**5*D**2 + 64*B**5*P**5*q - 8*B**5*P**4*q**2 - 8*B**5*P**3*q**3 - 8*B**5*P**2*q**4 + 64*B**5*P*q**5 + 48*B**4*D*P**5 - 96*B**4*D*P**4*q + 12*B**4*D*P**3*q**2 + 12*B**4*D*P**2*q**3 - 96*B**4*D*P*q**4 + 48*B**4*D*q**5 - 72*B**3*D**2*P**4 + 144*B**3*D**2*P**3*q - 18*B**3*D**2*P**2*q**2 + 144*B**3*D**2*P*q**3 - 72*B**3*D**2*q**4 - 288*B**3*P**5*q**5 + 108*B**2*D**3*P**3 - 216*B**2*D**3*P**2*q - 216*B**2*D**3*P*q**2 + 108*B**2*D**3*q**3 + 432*B**2*D*P**5*q**4 + 432*B**2*D*P**4*q**5 - 162*B*D**4*P**2 + 324*B*D**4*P*q - 162*B*D**4*q**2 - 648*B*D**2*P**5*q**3 - 648*B*D**2*P**4*q**4 - 648*B*D**2*P**3*q**5 + 243*D**5*P + 243*D**5*q + 972*D**3*P**5*q**2 + 972*D**3*P**4*q**3 + 972*D**3*P**3*q**4 + 972*D**3*P**2*q**5)/((2*B**3 - 27*D**2)*(2*B**3 + 27*D**2))"
+    },
+    "q": {
+      "compact_numerator_over_w": [
+        "8*q**4",
+        "4*q**3",
+        "-4*q",
+        "-8"
+      ],
+      "exact_primitive": "-Y/[w*(P-q)]"
+    }
+  },
+  "Klein": {
+    "polar": "2*B**2*P*q + 2*B*D*(P + q) + 2*D**2 - 8*P**3*q**3",
+    "Cauchy_one_form": "K=(Y+w)dP/[2Y(P-q)]",
+    "bidifferential": "Berg=(F2+2Yw)dP*dq/[4(P-q)^2Yw]",
+    "literal_relation": "Berg=partial_q(K_P)*dP*dq-2*omega1(P)*Omega3(q)-4*omega0(P)*Omega4(q); exterior d(K) has NEGATIVE q-part in dP wedge dq order"
+  },
+  "paired_infinity_normalization": {
+    "two_form": "Khat=tau wedge dq-4*omega3(P) wedge Omega2(q)",
+    "D_q2_column": "4*MH*e3",
+    "B_q2_column": "4*MC*e3=4*MH*e4",
+    "residue": "Both background infinities have zero residue in Khat. Endpoint omega3 is second-kind, and background Omega2 has constant residues.",
+    "full_derivative": "dKhat=d(tau) wedge dq-4*d(omega3(P)) wedge Omega2(q)+4*omega3(P) wedge d(Omega2(q))",
+    "warning": "The last compensating term is retained with its full compact and exact background columns. This is a correction kernel; no immutable-source match or nonzero H20 residue is asserted."
+  },
+  "graph": {
+    "D": "H-1-z^6",
+    "B": "-z/2",
+    "equation": "8*C**3*D**2 + H**2*z**3",
+    "scale": "r=H*B/(D*C) on the generic graph; r^3=H/D,r^2=C/B",
+    "relative_isomorphism": "p=r*P,Zp=r^3*Y",
+    "full_basis_pullback": "omega_j(ep)=r^(j-2)*Omega_j(bg)+r^(j-3)*P^(j+1)*dr/Y",
+    "full_kernel_pullback": "tau_ep=tau_bg+[P*w/((P-q)*Y)]dlogr, when the moving pole is r*q",
+    "qH": "(-16*C**3*D - 24*C**2*CH*D**2 - 2*H*z**3)/(24*C**2*Cq*D**2)",
+    "qz": "(96*C**3*D*z**5 - 24*C**2*Cz*D**2 - 3*H**2*z**2)/(24*C**2*Cq*D**2)",
+    "full_scale_jet": "dlogr=dH/H+dz/z-(dH-6z^5dz)/D-(CH*dH+Cq*dq+Cz*dz)/C; use dq=qH*dH+qz*dz on graph",
+    "infinity_horizontal_identity": "omega2(ep)=Omega2(P)+(P^3/Y(P))dlogr; background Euler uses q^3/w(q), the same rational function at the OTHER point, equal only on P=q"
+  },
+  "physical_parameter_transport": "D=H-1-z^6,B=-z/2: partial_H=partial_D,partial_z=-6z^5partial_D-partial_B/2, plus full q and graph-scale derivatives",
+  "gap": "d tau is globally closed and exact as a meromorphic two-form. No claim that its relative holomorphic part alone extends, or that it equals the actual target/source residue. The full coupled forcing and background omega2 row still must match."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "normalized_log_jacobian",
+    "actual_density_r_k_to_R_S",
+    "full_source_density_sixth_power",
+    "outer_E_fixes_normalized_c",
+    "outer_E_fixes_normalized_d",
+    "outer_E_normalized_e_velocity",
+    "outer_E_adjoint_integrating_factor"
+  ],
+  "count": 7,
+  "source_density": "H=4 T^(4/3)A^(11/6)B^(5/6)/(z k Delta)",
+  "outer_E_adjoint_kernel": "w=H^(-1) W(c,d)",
+  "scope": "Exact coordinate/source and one adjoint constraint only; remaining normal-function and infinity equations unsolved.",
+  "certificate": false
+}

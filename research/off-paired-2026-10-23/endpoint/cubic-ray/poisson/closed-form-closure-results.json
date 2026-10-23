@@ -1,0 +1,10 @@
+{
+  "prime": 1009,
+  "closed_two_forms": 195,
+  "rank": 146,
+  "points": 207,
+  "consistent": false,
+  "source": "B*p/g^3 times actual Omega",
+  "columns": "tracefree projection of displayed closed rational 2forms",
+  "status": "no candidate in this finite constant-coefficient closed-form closure"
+}

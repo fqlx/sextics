@@ -1,0 +1,10 @@
+{
+  "unknowns": 47,
+  "rows": 163,
+  "prime": 1009,
+  "rank": 47,
+  "augmented_rank": 48,
+  "actual_source": "t^3*v^4/3",
+  "target": "G=v^2F",
+  "strict_polynomial_current": false
+}

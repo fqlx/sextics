@@ -1,0 +1,40 @@
+{
+  "steps": [
+    [
+      3,
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      -1
+    ]
+  ],
+  "left_gcd_order": 0,
+  "L1": "2(theta+1)[u(4-u)partial_u^2+3(2-u)partial_u]",
+  "L2": "-4 theta(1-2theta)(1-theta)",
+  "meaning": "L1 U+L2 V=1 EXACTLY if left_gcd_order=0; source residue t=U r,T=V r",
+  "U_low_to_high": [
+    "u*(1125*u**4 + 18300*u**3 + 213440*u**2 + 267264*u + 245760)/(720*(5*u + 16)**3)",
+    "u**2*(525*u**3 + 2085*u**2 - 24160*u - 13056)/(720*(5*u + 16)**2)",
+    "u**3*(15*u**2 - 141*u + 464)/(360*(5*u + 16))"
+  ],
+  "V_low_to_high": [
+    "-(2250*u**5 + 3075*u**4 - 71065*u**3 - 133872*u**2 + 583936*u - 626688)/(720*(5*u + 16)**3)",
+    "-u*(300*u**4 - 1800*u**3 - 3331*u**2 + 36960*u - 61184)/(720*(5*u + 16)**2)",
+    "-u**2*(u - 4)*(15*u**2 - 141*u + 464)/(1440*(5*u + 16))"
+  ],
+  "certificate": false,
+  "scope": "residue images only; all rational lifting, other poles and full (Z-1) source retained as obligations"
+}

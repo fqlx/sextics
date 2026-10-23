@@ -1,0 +1,18 @@
+{
+  "convention": "G=v4+S v2+T v+R; R constant, T linear",
+  "checks": {
+    "M_tangent_pair_polynomial": true,
+    "zero_coefficient_divergence": true,
+    "M_q3": true,
+    "M_q5": true,
+    "M2_q": true,
+    "M3_q": true,
+    "M_qS": true,
+    "I_invariant": true,
+    "J_invariant": true,
+    "elliptic_orbit": true,
+    "shifted_Euler_fixes_R": true,
+    "shifted_Euler_fixes_j": true
+  },
+  "status": "Exact covariant identities only; no physical current or certificate."
+}

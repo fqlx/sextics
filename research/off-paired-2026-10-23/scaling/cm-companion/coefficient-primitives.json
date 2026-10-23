@@ -1,0 +1,19 @@
+{
+  "status": "No source-carrying physical current or certificate established.",
+  "checks": {
+    "H_primitive": true,
+    "B_primitive": true,
+    "C_primitive": true,
+    "C_tracefree_proportionality": true,
+    "H_potential_B_derivative": true,
+    "H_potential_C_derivative": true,
+    "B_potential_H_derivative": true,
+    "B_potential_C_derivative": true
+  },
+  "universal_primitives": {
+    "Q_H": "B/(6*C*(B + 3*C*p**2))",
+    "Q_B": "-p/(2*B + 6*C*p**2)",
+    "Q_C": "-1/(2*p*(B + 3*C*p**2))"
+  },
+  "physical_current_obligation": "For Q_H V+Q_B W, the divergence equals R*(L(V)-2*B*L(W)/(3*H))+Q_H*(div V-V(C)/C)+Q_B*(div W-W(H)/(3*H)-2*W(C)/(3*C)), where L(V)=V(H)-3*H*V(B)/(2*B)+H*V(C)/(2*C)."
+}

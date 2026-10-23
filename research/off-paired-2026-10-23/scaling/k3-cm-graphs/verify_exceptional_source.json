@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "ordinary_blowup_exact": true,
+    "weighted_model_exact": true,
+    "exceptional_quotient": true,
+    "whole_Cprime_elliptic": true,
+    "Cprime_map_x": true,
+    "whole_G_elliptic": true,
+    "Cprime_actual_differential": true,
+    "G_actual_differential": true,
+    "descended_product": true,
+    "actual_Y_jacobian": true,
+    "actual_X0_normal_numerator": true,
+    "target_weighted_leading_jet": true,
+    "order6_character": true,
+    "order3_character": true,
+    "global_r_first_equation": true,
+    "global_r_second_equation": true,
+    "full_invariant_H20_basis": true,
+    "antiinvariant_Cprime_dimension": true,
+    "actual_first_a_jet": true,
+    "first_piece_exact": true,
+    "global_r_open_elimination": true,
+    "global_r_open_recovery": true
+  },
+  "passed": true,
+  "count": 22,
+  "scope": "Actual exceptional surface and target-character form; no global extension or source Gysin coefficient."
+}

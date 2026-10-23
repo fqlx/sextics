@@ -1,0 +1,47 @@
+{
+  "status": "Candidate-space mathematical audit; actual source preimage still open",
+  "checks": {
+    "generic_reciprocal_power_discriminant": true,
+    "generic_allowed_pole_module_discriminant": true,
+    "degree_profile_18_10_24": true,
+    "squarefree_n": true,
+    "squarefree_Ccrit": true,
+    "squarefree_T": true,
+    "squarefree_N0": true,
+    "squarefree_quartic_nonzero_critical_pullback": true,
+    "coprime_n_d": true,
+    "coprime_Ccrit_d": true,
+    "coprime_Ccrit_n": true,
+    "coprime_Dnum_n": true,
+    "coprime_Dnum_d": true,
+    "coprime_Dnum_Ccrit": true,
+    "riemann_hurwitz_genus": true,
+    "complete_rr_dimension": true
+  },
+  "count": 16,
+  "generic_discriminant_identity": "-d**3*(4*d**2*p**2*q**3 - 16*d**2*q**4 + 27*d*n*p**4 - 144*d*n*p**2*q + 128*d*n*q**2 - 256*n**2)/(T**4*n)",
+  "nonempty_specialization": {
+    "prime": 1009,
+    "i": 2,
+    "j": 1,
+    "l": 3,
+    "degrees": {
+      "n": 18,
+      "d": 10,
+      "Ccrit": 24,
+      "Dnum": 36
+    }
+  },
+  "genus": 33,
+  "ramification_total": 72,
+  "primitive_divisor_degree": 306,
+  "basis": "[1,u,(L0/T)u^2,(L0/T)u^3]/Ccrit^3, u=1/a",
+  "numerator_degree_bounds": [
+    72,
+    74,
+    61,
+    63
+  ],
+  "dimension": 274,
+  "scope": "Generic discriminant identity and nonzero finite-field witness establish the stated open conditions; neither a source primitive nor any sextic nonexistence assertion is made."
+}

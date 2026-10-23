@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "pair_trace_second_S_derivative": true,
+    "physical_tau_tangent": true,
+    "conic_parameter": true,
+    "constant_pair_reconstruction": true
+  },
+  "status": "Exact pair trace, constant full-source reconstruction and actual tau tangent; no primitive."
+}

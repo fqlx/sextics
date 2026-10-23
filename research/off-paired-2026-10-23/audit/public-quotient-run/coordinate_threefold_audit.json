@@ -1,0 +1,152 @@
+[
+  {
+    "base": "c",
+    "active": [
+      "d",
+      "s",
+      "P",
+      "U"
+    ],
+    "specialization": 2,
+    "prime": 101,
+    "lattice_counts": [
+      19,
+      121,
+      445,
+      1201
+    ],
+    "interior_count": 1,
+    "J0_shape": [
+      1201,
+      2225
+    ],
+    "K_shape": [
+      2225,
+      1210
+    ],
+    "K_rank": 1025,
+    "J0_rank": 1200,
+    "generic_rank_upper_bound": 1200,
+    "second_derivative_augmented_rank": 1201
+  },
+  {
+    "base": "d",
+    "active": [
+      "c",
+      "s",
+      "P",
+      "U"
+    ],
+    "specialization": 2,
+    "prime": 101,
+    "lattice_counts": [
+      23,
+      156,
+      595,
+      1643
+    ],
+    "interior_count": 3,
+    "J0_shape": [
+      1643,
+      2975
+    ],
+    "K_shape": [
+      2975,
+      1560
+    ],
+    "K_rank": 1335,
+    "J0_rank": 1640,
+    "generic_rank_upper_bound": 1640,
+    "second_derivative_augmented_rank": 1641
+  },
+  {
+    "base": "s",
+    "active": [
+      "c",
+      "d",
+      "P",
+      "U"
+    ],
+    "specialization": 2,
+    "prime": 101,
+    "lattice_counts": [
+      52,
+      354,
+      1321,
+      3583
+    ],
+    "interior_count": 3,
+    "J0_shape": [
+      3583,
+      6605
+    ],
+    "K_shape": [
+      6605,
+      3540
+    ],
+    "K_rank": 3025,
+    "J0_rank": 3580,
+    "generic_rank_upper_bound": 3580,
+    "second_derivative_augmented_rank": 3581
+  },
+  {
+    "base": "P",
+    "active": [
+      "c",
+      "d",
+      "s",
+      "U"
+    ],
+    "specialization": 2,
+    "prime": 101,
+    "lattice_counts": [
+      30,
+      223,
+      889,
+      2517
+    ],
+    "interior_count": 7,
+    "J0_shape": [
+      2517,
+      4445
+    ],
+    "K_shape": [
+      4445,
+      2230
+    ],
+    "K_rank": 1935,
+    "J0_rank": 2510,
+    "generic_rank_upper_bound": 2510,
+    "second_derivative_augmented_rank": 2511
+  },
+  {
+    "base": "U",
+    "active": [
+      "c",
+      "d",
+      "s",
+      "P"
+    ],
+    "specialization": 2,
+    "prime": 101,
+    "lattice_counts": [
+      41,
+      320,
+      1252,
+      3467
+    ],
+    "interior_count": 2,
+    "J0_shape": [
+      3467,
+      6260
+    ],
+    "K_shape": [
+      6260,
+      3200
+    ],
+    "K_rank": 2795,
+    "J0_rank": 3465,
+    "generic_rank_upper_bound": 3465,
+    "second_derivative_augmented_rank": 3466
+  }
+]

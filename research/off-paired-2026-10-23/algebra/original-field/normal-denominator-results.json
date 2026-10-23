@@ -1,0 +1,52 @@
+{
+  "status": "Auxiliary denominator facts; no certificate asserted",
+  "variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "source_instance_sha256": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+  "G_weights": [
+    0,
+    1,
+    1,
+    -1,
+    0,
+    -1
+  ],
+  "J": "2*X1**6 + X1**3*X2*Y1*Y2/2 + 2*X2**6 - 2*Y0**6 - 2*Y2**6",
+  "weight_components": {
+    "-6": "Y0**6 + Y2**6",
+    "0": "X0**6 + X0**3*X1*Y0*Y1/2 + X0**2*X1*X2*Y0*Y2/3 + Y1**6",
+    "3": "X1**3*X2*Y1*Y2/2",
+    "6": "X1**6 + X2**6"
+  },
+  "mixed_gradient_bounds": [
+    "13/6",
+    "7/3",
+    "5/6",
+    "5/6",
+    "1",
+    "5/6"
+  ],
+  "separability_resultant": "46656",
+  "checks": {
+    "normal_denominator_binding": true,
+    "positive_extreme_weight": true,
+    "negative_extreme_weight": true,
+    "all_six_gradient_rows_strictly_dominant": true,
+    "monic_separability_specialization": true,
+    "separability_resultant_nonzero": true
+  },
+  "count": 6,
+  "mathematical_conclusions": [
+    "Projective F is smooth: the pure derivative6*z_i^5 dominates at a maximum-modulus nonzero coordinate.",
+    "F is squarefree: monic inY1 with nonzero generic resultant.",
+    "gcd_C(F,J)=1: a common irreducible factor would be G-homogeneous and divide both extreme weight components.",
+    "Every nonzero G-homogeneous polynomial D is relatively prime to F; factor homogeneity and the disjoint extreme components prove this."
+  ],
+  "formal_status": "The factor-homogeneity/coprimality arguments are mathematical proofs in the accompanying note, not Lean kernel verification."
+}

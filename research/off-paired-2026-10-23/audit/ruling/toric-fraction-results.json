@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "count": 14,
+  "checks": [
+    "literal_zeta_E",
+    "literal_zeta_C",
+    "literal_zeta_D",
+    "literal_zeta_T",
+    "literal_zeta_EE_CT_box",
+    "normalized_chi_T",
+    "normalized_chi_heat_box",
+    "Pa_plus_normalized_residue",
+    "Pa_minus_normalized_residue",
+    "Pb_no_pole_after_norm_substitution",
+    "infinity_fourth_order",
+    "infinity_third_order",
+    "infinity_second_order",
+    "infinity_zero_residue"
+  ],
+  "arithmetic": "independent standard-library Fraction sparse rational arithmetic; no primary import",
+  "normalized": "chi=zeta/b0, b0\u00b2=-T/B; Pa residues(+1,-1), Pb regular",
+  "infinity": "zeta=[2A/(B u^4)+3D/(2B u^3)+C/(B u\u00b2)]du+regular; no u^-1; chi divides this by b0",
+  "source": "tau=-partial_E\u00b2 zeta=-b0 partial_E\u00b2 chi=-partial_T partial_C zeta",
+  "scope": "Literal source and residue identities only; no actual physical primitive or existence/nonexistence claim."
+}

@@ -1,0 +1,7 @@
+{"stage": "columns", "component": 0, "columns": 1051, "nonzeros": 104719, "seconds": 0.18}
+{"stage": "columns", "component": 1, "columns": 2071, "nonzeros": 219537, "seconds": 0.33}
+{"stage": "columns", "component": 2, "columns": 3046, "nonzeros": 321891, "seconds": 0.49}
+{"stage": "columns", "component": 3, "columns": 3265, "nonzeros": 331308, "seconds": 0.51}
+{"stage": "columns", "component": 4, "columns": 4316, "nonzeros": 442376, "seconds": 0.67}
+{"stage": "columns", "component": 5, "columns": 5291, "nonzeros": 549582, "seconds": 0.88}
+{"prime": 1000003, "rows": 20085, "columns": 5291, "nonzeros": 549582, "rhs_nonzeros": 159, "seconds": 1.0846583843231201, "gauge": "Ni modulo F using Y0^6; radial gauge removes NY0 monomials divisible by Y0"}

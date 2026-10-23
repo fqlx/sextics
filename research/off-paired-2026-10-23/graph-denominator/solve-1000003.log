@@ -1,0 +1,3 @@
+seconds=0.0 rank=0 active_nnz=549582 incidence=549582 rss_mb=10 merged=0 contradiction=no
+contradiction after 3866 pivots at 0.3s
+seconds=0.5 rank=5220 active_nnz=0 incidence=35986 rss_mb=14 merged=36365536 contradiction=yes

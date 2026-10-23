@@ -1,0 +1,6 @@
+{
+  "checks": 9,
+  "passed": true,
+  "actual_source": "y\u00b3 dx\u2227dy=(1/d\u22121/s) dH\u2227dq/12",
+  "certificate": false
+}

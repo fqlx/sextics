@@ -1,0 +1,53 @@
+{
+  "status": "all_eight_passed",
+  "cases": [
+    {
+      "seed": 0,
+      "rank": 20,
+      "augmented_rank": 20,
+      "solution_verified": true
+    },
+    {
+      "seed": 1,
+      "rank": 20,
+      "augmented_rank": 21,
+      "solution_verified": false
+    },
+    {
+      "seed": 2,
+      "rank": 20,
+      "augmented_rank": 20,
+      "solution_verified": true
+    },
+    {
+      "seed": 3,
+      "rank": 20,
+      "augmented_rank": 21,
+      "solution_verified": false
+    },
+    {
+      "seed": 4,
+      "rank": 18,
+      "augmented_rank": 18,
+      "solution_verified": true
+    },
+    {
+      "seed": 5,
+      "rank": 18,
+      "augmented_rank": 19,
+      "solution_verified": false
+    },
+    {
+      "seed": 6,
+      "rank": 18,
+      "augmented_rank": 18,
+      "solution_verified": true
+    },
+    {
+      "seed": 7,
+      "rank": 18,
+      "augmented_rank": 19,
+      "solution_verified": false
+    }
+  ]
+}

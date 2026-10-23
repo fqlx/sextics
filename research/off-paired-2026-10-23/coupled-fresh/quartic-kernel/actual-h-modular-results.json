@@ -1,0 +1,60 @@
+{
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "prime": 1009,
+  "i": 2,
+  "J": 1,
+  "values": [
+    {
+      "w": 1,
+      "H": 913,
+      "H_original": 937,
+      "v": 346,
+      "v_w": 215,
+      "f": 522,
+      "f_w": 498,
+      "N0": 1,
+      "T": 2,
+      "L0": 685
+    },
+    {
+      "w": 3,
+      "H": 341,
+      "H_original": 301,
+      "v": 610,
+      "v_w": 658,
+      "f": 746,
+      "f_w": 770,
+      "N0": 978,
+      "T": 28,
+      "L0": 673
+    },
+    {
+      "w": 4,
+      "H": 842,
+      "H_original": 654,
+      "v": 16,
+      "v_w": 749,
+      "f": 946,
+      "f_w": 742,
+      "N0": 893,
+      "T": 65,
+      "L0": 346
+    },
+    {
+      "w": 5,
+      "H": 0,
+      "H_original": 818,
+      "v": 496,
+      "v_w": 750,
+      "f": 356,
+      "f_w": 845,
+      "N0": 730,
+      "T": 126,
+      "L0": 331
+    }
+  ],
+  "check": "full-coordinate jets at total orders3and4 agree atw3",
+  "normalization": "originalH+LEQF+LDQG+L3(QHminus+QHplus)-LDQDinf; no constant gauge or trace",
+  "scope": "Source evaluation for complete rational primitive construction; no primitive or exclusion claimed",
+  "elapsed_seconds": 4.183152816996881
+}

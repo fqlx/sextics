@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "BE_CC": true,
+    "BT_CE": true,
+    "AE_CC": true,
+    "AT_CE": true,
+    "self_E_xi": true,
+    "self_D_xi": true
+  },
+  "passed": true,
+  "normalization": "A=B=T=1, raw zeta=b*dq/q, raw xi=a*dq/q",
+  "fiber_potentials": {
+    "BE_CC": "a*q/(12*a**2 + 6*a*d*q - 12*b**2)",
+    "BT_CE": "a*(a*d*q + 2*c*q**2 + e*q + 3)/(36*a**2 + 18*a*d*q - 36*b**2)",
+    "AE_CC": "-b*q/(12*a**2 + 6*a*d*q - 12*b**2)",
+    "AT_CE": "-b*(4*a*d*q + 2*c*q**2 + e*q + 3)/(36*a**2 + 18*a*d*q - 36*b**2)",
+    "self_E_xi": "a*q**2/(6*a**2 + 3*a*d*q - 6*b**2)",
+    "self_D_xi": "-a*q**2/(12*a**2 + 6*a*d*q - 12*b**2)"
+  },
+  "infinity_scope": "xi has residue d*(c-d\u00b2/4)/(4i); use xi_hat=xi-s*omega,s=d*(c-d\u00b2/4)/2,omega=q\u00b2dq/J",
+  "certificate": false
+}

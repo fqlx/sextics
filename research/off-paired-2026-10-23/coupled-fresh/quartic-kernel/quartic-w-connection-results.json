@@ -1,0 +1,105 @@
+{
+  "status": "Exact source-preserving rank-three algebraic w connection; primitive remains open",
+  "source_sha256": "8b95f1290dc66de13fbedbcfd35015ee19595e5c36c574a9701f3570a4e811c4",
+  "curve": "P=a^4+p*a^3+q*a^2+r; p=j*l,q=i*l^2+l+1,r=f(w)*l^6,f=1/v(i,j^2,w)",
+  "basis": [
+    "a + p/4",
+    "a**2 - p**2/4 + q/2",
+    "a**3 + p**3/4 - 3*p*q/4"
+  ],
+  "convention": "columns satisfy d_r basis_j=sum_i Gamma_ij basis_i; d_w=(f_w*l^6)d_r",
+  "matrix_dr": [
+    [
+      "(9*p**4*r + 2*p**2*q**3 - 50*p**2*q*r - 8*q**4 + 48*q**2*r - 64*r**2)/(r*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2))",
+      "2*p*(3*p**2*q - 12*q**2 - 16*r)/(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)",
+      "-6*(p**2*q**2 - 6*p**2*r - 4*q**3 + 16*q*r)/(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)"
+    ],
+    [
+      "p*(2*p**2*q**2 - 3*p**2*r - 8*q**3)/(r*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2))",
+      "2*(9*p**4 - 38*p**2*q + 16*q**2 - 64*r)/(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)",
+      "-6*p*(3*p**2*q - 10*q**2 + 8*r)/(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)"
+    ],
+    [
+      "2*(p**2*q**2 - 6*p**2*r - 4*q**3 + 16*q*r)/(r*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2))",
+      "2*p*(9*p**2 - 32*q)/(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)",
+      "-6*(3*p**2*q - 8*q**2 + 32*r)/(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)"
+    ]
+  ],
+  "inverse_a_vector": [
+    "-q/r",
+    "-p/r",
+    "-1/r"
+  ],
+  "inverse_a_derivative_vector": [
+    "2*(6*p**4*q*r + p**2*q**4 - 32*p**2*q**2*r - 2*p**2*r**2 - 4*q**5 + 28*q**3*r - 48*q*r**2)/(r**2*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2))",
+    "p*(9*p**4*r + 2*p**2*q**3 - 47*p**2*q*r - 8*q**4 + 36*q**2*r - 80*r**2)/(r**2*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2))",
+    "(9*p**4*r + 2*p**2*q**3 - 50*p**2*q*r - 8*q**4 + 48*q**2*r - 64*r**2)/(r**2*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2))"
+  ],
+  "actual_source_vector": "-l^2*H*f_w*l^6/6 * inverse_a_derivative_vector; H=K/v=PN+Ctot, full actual source retained",
+  "source_one_column_identity": "S=-l^2*H/6*d_w(1/a)",
+  "integration_by_parts": "S=d_w[-l^2*H/(6a)]+l^2*H_w/(6a); last term retained",
+  "discriminant": "-r*(27*p**4*r + 4*p**2*q**3 - 144*p**2*q*r - 16*q**4 + 128*q**2*r - 256*r**2)",
+  "actual_fold_current": {
+    "critical_polynomial": "C is the saturated squarefree numerator of f_w; fixed-boundary factors omitted",
+    "scalar_inverse": "qinv*f_ww=1 mod C, qinv polynomial remainder modulo C over the base field",
+    "primitive": "Bfold=+l^2*H*f_w^2*qinv*(d_f(1/a))/6",
+    "retained_source": "Sreg=-l^2*H*f_w*d_f(1/a)/6 - d_w(Bfold)",
+    "regularity": "Sreg has no pole at any simple physical fold where the quartic fiber is smooth",
+    "scope": "One-level formula applies to original H foldorder3. Full cubic moment properization can raise H toorder5; then use the m=4,3,2 Hermite recursion. Boundary and infinity sources retained."
+  },
+  "properized_fold_recursion": {
+    "H_fold_powers": [
+      -5,
+      -3,
+      -1
+    ],
+    "source_max_pole_order": 4,
+    "steps": [
+      4,
+      3,
+      2
+    ],
+    "numerator_formula": "t=-(C^m S mod C)*inverse((m-1)Cprime mod C) mod C",
+    "current": "Y_m=t/C^(m-1); subtract (partial_w+Gamma_w)Y_m",
+    "final_simple_remainder": "zero by actual Morse parity",
+    "scope": "Complete finite fold pole reduction, not a full source primitive"
+  },
+  "polynomial_f_serving": {
+    "scope": "Only if H=K/v is PROVED polynomial in f; actual H is not assumed so",
+    "all_degree_formula": "B=l^2/6*(-h0/a+sum_{n>=1} hn*(-1)^n/l^(6n)*integral[a^(2n-2)*(a^2+p*a+q)^n da]); source S=d_w B; four-form current is -B*dl*di*dj",
+    "checked_monomial_primitives_n_0_through_4": [
+      "-l**2/(6*a)",
+      "-a*(2*a**2 + 3*a*p + 6*q)/(36*l**4)",
+      "a**3*(30*a**4 + 70*a**3*p + 42*a**2*p**2 + 84*a**2*q + 105*a*p*q + 70*q**2)/(1260*l**10)",
+      "-a**5*(840*a**6 + 2772*a**5*p + 3080*a**4*p**2 + 3080*a**4*q + 1155*a**3*p**3 + 6930*a**3*p*q + 3960*a**2*p**2*q + 3960*a**2*q**2 + 4620*a*p*q**2 + 1848*q**3)/(55440*l**16)",
+      "a**7*(6006*a**8 + 25740*a**7*p + 41580*a**6*p**2 + 27720*a**6*q + 30030*a**5*p**3 + 90090*a**5*p*q + 8190*a**4*p**4 + 98280*a**4*p**2*q + 49140*a**4*q**2 + 36036*a**3*p**3*q + 108108*a**3*p*q**2 + 60060*a**2*p**2*q**2 + 40040*a**2*q**3 + 45045*a*p*q**3 + 12870*q**4)/(540540*l**22)"
+    ]
+  },
+  "checks": {
+    "connection_column_0": true,
+    "connection_column_1": true,
+    "connection_column_2": true,
+    "traceless_basis_0": true,
+    "traceless_basis_1": true,
+    "traceless_basis_2": true,
+    "inverse_a_exact_vector": true,
+    "inverse_a_derivative": true,
+    "source_trace_zero": true,
+    "actual_source_single_derivative": true,
+    "polynomial_f_monomial_0": true,
+    "polynomial_f_monomial_1": true,
+    "polynomial_f_monomial_2": true,
+    "polynomial_f_monomial_3": true,
+    "polynomial_f_monomial_4": true,
+    "quartic_discriminant": true,
+    "actual_fold_zero_residue_jet": true,
+    "actual_fold_double_principal": true,
+    "compressed_fold_current_principal": true,
+    "compressed_fold_residual_regular": true,
+    "cubic_properization_can_raise_H_to_order_five": true,
+    "properized_source_zero_residue_and_parity": true,
+    "properized_two_level_local_current": true
+  },
+  "count": 23,
+  "limitations": "No rational w solution for full actual H is claimed. The physical cover and trace-zero quartic sector are retained."
+}

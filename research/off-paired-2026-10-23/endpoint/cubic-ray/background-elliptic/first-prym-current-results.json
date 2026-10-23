@@ -1,0 +1,61 @@
+{
+  "status": "Actual first Prym source current and exact full remainder; no primitive",
+  "constant_scope": "fixed characteristic-zero k; k=C for full contract",
+  "check_count": 17,
+  "checks": [
+    "physical-C-H",
+    "physical-C-q",
+    "actual-Prym-source-H-derivative",
+    "physical-C-H-source-rationalizes",
+    "literal-source-first-current",
+    "elliptic-GM-exact-first-column-A=2",
+    "elliptic-GM-exact-first-column-A=-2",
+    "background-third-quotient-term-is-retained",
+    "full-elliptic-GM-current-retains-C-q",
+    "off-diagonal-relations-0",
+    "off-diagonal-relations-1",
+    "commuting-product-translations-0",
+    "commuting-product-translations-1",
+    "commuting-product-translations-2",
+    "commuting-product-translations-3",
+    "full-off-diagonal-C-corrections",
+    "restriction-before-second-translation-loses-term"
+  ],
+  "background": {
+    "s2": "H + 2*q**3 - q*z/2 - z**6 - 1",
+    "d2": "H - 2*q**3 - q*z/2 - z**6 - 1",
+    "C": "q/3 + z*(d + s)/4"
+  },
+  "source": "S=-omegaH|C ^ dH ^ theta ^ dz/6, theta=(dq/d-dq/s)/12",
+  "actual_first_current": "J0=+omega0^theta^dz/6; fiber-first orientation",
+  "literal_remainder": "S-dJ0=[z*q^3*omegaC/(144*s^2*d^2)+(1/s^3-1/d^3)*omega0/144]^dH^dq^dz",
+  "elliptic_GM_reduction": {
+    "tau": "-(-6*q**2*z - q*(18*H - 18*z**6 - 18) + z**2)/(12*s*(-z**3/2 + (H - z**6 - 1)*(54*H - 54*z**6 - 54))) + (6*q**2*z - q*(-18*H + 18*z**6 + 18) + z**2)/(12*d*(-z**3/2 + (-54*H + 54*z**6 + 54)*(H - z**6 - 1)))",
+    "thetaH_cohom_dq_coefficient": "-(3*q*z/(-z**3/2 + (H - z**6 - 1)*(54*H - 54*z**6 - 54)) + (-18*H + 18*z**6 + 18)/(-z**3 + 2*(H - z**6 - 1)*(54*H - 54*z**6 - 54)))/(12*s) + (-3*q*z/(-z**3/2 + (-54*H + 54*z**6 + 54)*(H - z**6 - 1)) + (18*H - 18*z**6 - 18)/(-z**3 + 2*(-54*H + 54*z**6 + 54)*(H - z**6 - 1)))/(12*d)",
+    "additional_current": "Jtau=tau*omega0^dH^dz/6",
+    "full_remaining": "S-d(J0+Jtau)=[(C_H*theta-tau*C_q)*omegaC+thetaHcohom*omega0]^dH^dq^dz/6",
+    "mixed_third_quotient": "The -tau*C_q coefficient includes -[mixedThird/(s*d)], with mixedThird=z*(-3888*H**3*q**3 - 1296*H**2*q**4*z + 11664*H**2*q**3*z**6 + 11664*H**2*q**3 + 18*H**2*z**3 + 2592*H*q**4*z**7 + 2592*H*q**4*z - 11664*H*q**3*z**12 - 23328*H*q**3*z**6 - 11664*H*q**3 - 3*H*q*z**4 - 36*H*z**9 - 36*H*z**3 - 1296*q**4*z**13 - 2592*q**4*z**7 - 1296*q**4*z + 3888*q**3*z**18 + 11664*q**3*z**12 + 11664*q**3*z**6 + 3888*q**3 + q**2*z**5 + 3*q*z**10 + 3*q*z**4 + 18*z**15 + 36*z**9 + 18*z**3)/(8*(108*H**2 - 216*H*z**6 - 216*H + 108*z**12 + 216*z**6 - z**3 + 108)*(108*H**2 - 216*H*z**6 - 216*H + 108*z**12 + 216*z**6 + z**3 + 108))",
+    "warning": "Multiplying an elliptic exact derivative by the endpoint kernel creates the retained C_q*omegaC term."
+  },
+  "product_translation": {
+    "coordinates": "Q=(qplus+qminus)/2, delta=qplus-qminus,a=(s+d)/2,b=(s-d)/2",
+    "W": {
+      "Q": "a",
+      "delta": "2*b",
+      "a": "3*Q*delta - z/4",
+      "b": "3*Q**2 + 3*delta**2/4"
+    },
+    "Wprime": {
+      "Q": "b",
+      "delta": "2*a",
+      "a": "3*Q**2 + 3*delta**2/4",
+      "b": "3*Q*delta - z/4"
+    },
+    "Cext": "Q/3 + a*z/2",
+    "WC": "3*Q*delta*z/2 + a/3 - z**2/8",
+    "WprimeC": "3*Q**2*z/2 + b/3 + 3*delta**2*z/8",
+    "normal_velocity": "W(delta)|delta=0=2b=2y^3; Wprime(delta)|delta=0=2a=2x^3",
+    "second_translation_warning": "[W^2C]|delta=0=-z/12+3zQb, whereas W([WC]|delta=0)|delta=0=-z/12"
+  },
+  "gap": "The rational MC forcing, both elliptic first/second-kind terms, and the background genus-two cross term remain to be cancelled with full H,z current derivatives."
+}

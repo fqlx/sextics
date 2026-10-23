@@ -1,0 +1,11 @@
+{
+  "prime": 1009,
+  "denominator": "F_s for compact currents; F_s and F_t from weighted curls",
+  "compact_unknowns": 660,
+  "potential_unknowns": 34,
+  "rows": 3530,
+  "rank": 690,
+  "consistent_evaluations": false,
+  "seconds": 12.336108378000063,
+  "status": "restricted constructive screen only"
+}

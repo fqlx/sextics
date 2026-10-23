@@ -1,0 +1,73 @@
+{
+  "scope": "one fixed geometrically motivated D18; complete character-projected numerator ansatz after exact quotient and radial gauges",
+  "status": "modular_inconsistency_at_two_primes_no_certificate",
+  "q": 1,
+  "D": "(Y0^6+Y1^6+Y2^6)*(X1^6+X2^6)^2+16*(X0^6+X1^6+X2^6)*X1^6*X2^6",
+  "numerator_degree": 19,
+  "quotient_degree": 30,
+  "cases": [
+    {
+      "prime": 1000003,
+      "rows": 20085,
+      "columns": 5291,
+      "status": "inconsistent_mod_p",
+      "complete_rank": true,
+      "rank": 5220,
+      "contradiction": true,
+      "first_contradiction_rank": 3866,
+      "seconds": 0.485756,
+      "peak_rss_mb": 14,
+      "active_nnz": 0,
+      "merged_entries": 36365536,
+      "augmented_rank": 5221,
+      "audit": {
+        "prime": 1000003,
+        "checked_columns_including_rhs": 13,
+        "status": "passed",
+        "additional_checks": [
+          "original F/A binding",
+          "degree 18 of D",
+          "character zero of D",
+          "degree 42 of all rows",
+          "row character (3,0)",
+          "Y0 exponents below 12"
+        ]
+      }
+    },
+    {
+      "prime": 1009,
+      "rows": 20085,
+      "columns": 5291,
+      "status": "inconsistent_mod_p",
+      "complete_rank": true,
+      "rank": 5220,
+      "contradiction": true,
+      "first_contradiction_rank": 3869,
+      "seconds": 0.472801,
+      "peak_rss_mb": 14,
+      "active_nnz": 0,
+      "merged_entries": 35647580,
+      "augmented_rank": 5221,
+      "audit": {
+        "prime": 1009,
+        "checked_columns_including_rhs": 13,
+        "status": "passed",
+        "additional_checks": [
+          "original F/A binding",
+          "degree 18 of D",
+          "character zero of D",
+          "degree 42 of all rows",
+          "row character (3,0)",
+          "Y0 exponents below 12"
+        ]
+      }
+    }
+  ],
+  "limitation": "No characteristic-zero rank or exact dual obstruction has been proved. Neither this fixed denominator nor unrestricted denominators are excluded over characteristic zero.",
+  "source_sha256": {
+    "build_system.py": "95fd63dde2971b522d987df0707d978967f53e219d6f4429142fc1c8355b563b",
+    "audit_system.py": "cf76f77c7b32fa054b5beaa386f341a9ace2498d5934ee167c8d8f93f52c837c",
+    "solve_sparse.cpp": "4e73f9da3fe1c632eb4d6ae9f08dc1e42e647894e2604abc3fd0e07d5344e492",
+    "selftest_solver.py": "e84d3dd88156ce34fb7e5e78bcd111b3a515e99d7816e6c4add14ae86c3f3a8e"
+  }
+}

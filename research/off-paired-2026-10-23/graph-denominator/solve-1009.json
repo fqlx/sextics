@@ -1,0 +1,14 @@
+{
+  "prime": 1009,
+  "rows": 20085,
+  "columns": 5291,
+  "status": "inconsistent_mod_p",
+  "complete_rank": true,
+  "rank": 5220,
+  "contradiction": true,
+  "first_contradiction_rank": 3869,
+  "seconds": 0.472801,
+  "peak_rss_mb": 14,
+  "active_nnz": 0,
+  "merged_entries": 35647580
+}

@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "physical_R_equals_N_over_16JT": true,
+    "rational_v_transport": true,
+    "actual_source_h_vw_over_v2": true,
+    "PE_pure_E2_shift": true,
+    "PE_CEuler_shift": true,
+    "PD_D2_shift": true,
+    "PD_CEuler_shift": true,
+    "P3_threeEuler_shift": true,
+    "source_residue_weight_minus1": true,
+    "actual_full_Hermite_division": true,
+    "PE_PD_unwanted_weight_cancels": true,
+    "PE_PD_residue_lower_power": true,
+    "PE_PD_residue_upper_power": true,
+    "actual_residue_parameter_primitive": true
+  },
+  "count": 14,
+  "operators": {
+    "PE": "(D-6)(D-5)+A(Z+D/2-2)",
+    "PD": "4J B^2+2B+A(Z+JB)",
+    "P3": "A^3+v(Z+JB+1)Z(Z+D/2+1)",
+    "relations": "[A,B]=[A,Z]=[B,Z]=0, D=6Z-2iA-2JB; oldA0=-Z-JB,oldB0=-Z,oldT0=-Z-D/2"
+  },
+  "coupled_residue_family": "u=J/i\u00b2,theta=u*d_u; F=2i^-1*t_u,G=(theta+2)t gives 2i^-1(theta+1)[u(4-u)t_uu+3(2-u)t_u]",
+  "residue_primitive": "r du=6(w^-1+w\u00b2)dw, primitive=6 log(w)+2w\u00b3; logarithm retained, no rational closure claimed",
+  "certificate": false
+}

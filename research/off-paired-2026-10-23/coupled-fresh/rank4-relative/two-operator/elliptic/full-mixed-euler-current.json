@@ -1,0 +1,23 @@
+{
+  "status": "Exact whole mixed source Euler current and defect; no inverse/primitive claim",
+  "checks": [
+    "whole-five-row-source-weight-zero",
+    "actual-physical-endpoint-C-Euler-velocity",
+    "actual-H-Euler-defect",
+    "actual-C-Euler-defect",
+    "literal-endpoint-C-derivative-Euler-transgression",
+    "all-four-compact-endpoint-Euler-rows"
+  ],
+  "source": "N*F, N=P4(q)/w, F=\u2207C omega0",
+  "coefficient_currents": {
+    "H": "(3D+12z^6)*N*F",
+    "q": "q*N*F",
+    "z": "2z*N*F"
+  },
+  "literal_current": "-(3D+12z^6)*N*F^dq^dz+q*N*F^dH^dz-2z*N*F^dH^dq+N*tF*dH^dq^dz",
+  "fiber_primitive_tF": "-p^2*(H+C*p)/Z^3",
+  "exact_identity": "N*F=d(current)-N*((9z^6-3)*FH+(-q/3+3za/4)*FC)^dH^dq^dz",
+  "a": "(s+d)/2",
+  "defect_operator": "1+(9z^6-3)*\u2207H+(-q/3+3za/4)*\u2207C, applied to F",
+  "scope": "All physical H,q,z derivatives, all compact rows, all five background rows; explicit p-exact correction retained"
+}

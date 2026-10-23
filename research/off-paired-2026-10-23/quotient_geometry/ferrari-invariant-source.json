@@ -1,0 +1,14 @@
+{
+  "rho": "tau+1/tau",
+  "d": "tau-1/tau",
+  "U": "u/d",
+  "V": "v/d",
+  "e": "zab/2, invariant",
+  "quadratic": "V2+e*V/4+(rho-2)*U3",
+  "delta": "2V+e/4",
+  "trace": "16*e*(e**2*rho**3 - 192*h*rho**2 + 256*h)/(3*(e**2*rho + 64*h)**3)",
+  "anti_delta_coefficient": "-32*(e**6*rho**3 - 320*e**4*h*rho**3 + 576*e**4*h*rho**2 - 256*e**4*h + 12288*e**2*h**2*rho**4 - 36864*e**2*h**2*rho**3 + 12288*e**2*h**2*rho**2 + 49152*e**2*h**2*rho - 49152*e**2*h**2 - 262144*h**3*rho**3 + 786432*h**3*rho**2 - 1048576*h**3)/(3*(e**2*rho + 64*h)**3*(e**2 - 64*h*rho + 128*h)**2)",
+  "reconstruction": "residue = trace/2 + anti_delta_coefficient*(2V+e/4)",
+  "source_form": "residue*(dU+rho*U/(rho2-4)drho) wedge (dZ+rho*Z/(rho2-4)drho) wedge da wedge (dB+rho*B/(rho2-4)drho), Z=z/d,B=b/d",
+  "status": "Exact source-carrying Ferrari/involution quotient, no primitive."
+}

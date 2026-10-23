@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "physical_g_connection": true,
+    "raw_infinity_adjoint": true
+  },
+  "passed": true,
+  "ME": "-2*(45*R**2*S**2*z**12 - 144*R**2*S**2*z**6 - 9*R**2*S**2 + 264*R**2*S*z**12 + 156*R**2*S*z**6 - 18*R**2*S + 32*R**2*z**12 - 104*R**2*z**6 - R**2 - 30*R*S**2*z**12 + 102*R*S**2*z**6 + 42*R*S**2 - 76*R*S*z**12 - 26*R*S*z**6 - 4*R*S - 96*R*z**12 - 36*R*z**6 + 6*R + 5*S**2*z**12 - 26*S**2*z**6 - 4*S**2 + 12*S*z**12 - 18*S*z**6 - 12*S)/(z*(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S)**2)",
+  "ME_at_1": "-10/3",
+  "raw_omega_residue": "-(6*A/D)*ME",
+  "certificate": false
+}

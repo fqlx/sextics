@@ -1,0 +1,63 @@
+{
+  "status": "Exact physical one-angle normalization; no current or certificate",
+  "constant_scope": "fixed k characteristic zero; use k=C for full contract",
+  "checks": [
+    "physical-volume-Z-h-r-nu",
+    "physical-volume-Z-h-Rrad-theta",
+    "H-coefficient",
+    "C-coefficient",
+    "B-coefficient",
+    "CM-Weierstrass-equation",
+    "CM-angle-differential",
+    "h_root-physical-density-character",
+    "h_root-B-term-0",
+    "h_root-B-term-1",
+    "h_root-B-term-2",
+    "r_root-physical-density-character",
+    "r_root-B-term-0",
+    "r_root-B-term-1",
+    "r_root-B-term-2"
+  ],
+  "check_count": 15,
+  "map": {
+    "z": "1/Z",
+    "U": "r*nu",
+    "K": "h*r*eta",
+    "t": "h^6",
+    "Rrad": "r^2",
+    "angle": "nu^6+eta^6=1"
+  },
+  "physical_volume": "(1/6) dZ ^ dh ^ dRrad ^ theta",
+  "theta": "dnu/eta^5 = eta*dnu-nu*deta = de/(2*w)",
+  "CM_curve": "w^2=e^3-4",
+  "CM_coordinates": {
+    "e": "1/(nu^2*eta^2)",
+    "w": "(nu^6-eta^6)/(nu^3*eta^3)"
+  },
+  "coefficients": {
+    "H": "1+Z^-2+h^6",
+    "C": "Z^2+Rrad^3",
+    "B": "r*nu/2+h*r*eta/3+h*r^2*nu*eta/(2*Z)"
+  },
+  "source": "W/(6*C*H) dZ ^ dh ^ dRrad ^ theta, W=C*H*B*p/g^3",
+  "root_characters": {
+    "h_root": {
+      "h": 1,
+      "r": 0,
+      "nu": 0,
+      "eta": -1,
+      "theta": -1,
+      "dH_dC_z_density": 1,
+      "balanced_total": 0
+    },
+    "r_root": {
+      "h": 0,
+      "r": 1,
+      "nu": -1,
+      "eta": -1,
+      "theta": -2,
+      "dH_dC_z_density": 2,
+      "balanced_total": 0
+    }
+  }
+}

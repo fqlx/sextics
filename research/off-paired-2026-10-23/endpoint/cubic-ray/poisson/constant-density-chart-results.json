@@ -1,0 +1,40 @@
+{
+  "status": "Exact coordinate/source cover; no primitive or certificate",
+  "constant_scope": "fixed k of characteristic zero; k=C for full contract",
+  "check_count": 11,
+  "checks": [
+    "physical-volume",
+    "H-map",
+    "B-map",
+    "C-map",
+    "H-C-monomial-bracket",
+    "H-B-bracket",
+    "B-C-bracket",
+    "deck-H",
+    "deck-B",
+    "deck-C",
+    "deck-dh-dv-volume"
+  ],
+  "map_to_G36": {
+    "z": "1/Z",
+    "U": "u",
+    "K": "h*v",
+    "t": "h^6",
+    "p": "p"
+  },
+  "degree": "6; T^6-t irreducible over k(z,U,K,t), t transcendental",
+  "coefficients": {
+    "H": "h**6 + 1 + Z**(-2)",
+    "B": "h*v/3 + u/2 + h*u*v/(2*Z)",
+    "C": "Z**2 + u**6 + v**6"
+  },
+  "physical_volume": "-(1/3) dZ ^ dh ^ du ^ dv",
+  "actual_source": "-(1/3) B*p/(B+3*C*p^2)^3 dZ ^ dh ^ du ^ dv",
+  "deck": "h -> zeta6*h; v -> zeta6^-1*v; Z,u,p fixed",
+  "descent": "normalized finite field trace commutes with d and fixes the actual source",
+  "brackets": {
+    "H_C": "-12*Z*h**5",
+    "H_B": "v*(9*Z**2*h**6*u - 2*Z - 3*u)/(3*Z**4)",
+    "B_C": "-(2*Z**2*v + 6*Z*h*u**5 + 3*Z*u*v - 9*Z*v**5 + 9*h*u**6 - 9*h*v**6)/(3*Z)"
+  }
+}

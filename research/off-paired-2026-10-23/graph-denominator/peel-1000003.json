@@ -1,0 +1,11 @@
+{
+  "prime": 1000003,
+  "stage": "singleton_and_two_variable_peeling",
+  "pivots": 400,
+  "remaining_variables": 4891,
+  "remaining_equations": 17488,
+  "remaining_nonzeros": 511525,
+  "modular_status": "undetermined",
+  "contradiction_row": null,
+  "seconds": 0.4300563335418701
+}

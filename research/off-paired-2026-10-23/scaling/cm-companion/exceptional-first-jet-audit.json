@@ -1,0 +1,57 @@
+{
+  "status": "First-jet audit only; no closed or holomorphic global extension established.",
+  "checks": {
+    "z_first_jet_zero": true,
+    "r_first_jet": true,
+    "exceptional_relation": true,
+    "all_lifts_have_common_first_multiplier": true,
+    "gamma3_exact_plus_mixed": true,
+    "partial_linear_combination": true,
+    "four_invariant_forms": true,
+    "G_negative_power_reduction": true
+  },
+  "r_a_over_r": "L/(x*b)",
+  "z_a": 0,
+  "four_invariant_lifts": [
+    "r/(b*x*z**2)",
+    "r/(b*x*z**5)",
+    "r/z**3",
+    "b*r*x/z**4"
+  ],
+  "their_actual_first_derivatives": [
+    "r*(2*b*x + 3*z)/(6*b**2*x**2)",
+    "r*(2*b*x + 3*z)/(6*b**2*x**2*z**3)",
+    "r*(2*b*x + 3*z)/(6*b*x*z)",
+    "r*(2*b*x + 3*z)/(6*z**2)"
+  ],
+  "exact_term": "d(4 db/w)=r dx db/(2*x*b)",
+  "gamma3_mixed_term": "(4/3)*(xi dx/z) wedge (b db/y)",
+  "partial_combination": "D_a(phi4-3*phi3/2)=r*x*b dx db/(3*z^2)-3*d(4db/w)/2",
+  "invariant_product_basis": [
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      3,
+      3,
+      1
+    ],
+    [
+      5,
+      4,
+      2
+    ],
+    [
+      1,
+      5,
+      0
+    ]
+  ],
+  "mixed_character": {
+    "Cprime": "(3,5) on Fermat(12,6), fraction 3/12+5/6=13/12; H01",
+    "G": "b db/y is holomorphic and pulls back the j=1728 elliptic differential"
+  },
+  "scope": "These are derivatives of particular rational extensions. They do not by themselves prove nonextension, since a legitimate relative Hodge extension may require additional rational counterterms and weighted normal transitions."
+}

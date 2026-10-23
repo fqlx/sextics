@@ -1,0 +1,29 @@
+{
+  "status": "Exact actual finite-residue transport; scalar primitive still open",
+  "physical": {
+    "i": "4*k*(z**6 + 1)/(3*z**2)",
+    "J": "k**2*(z**6 + 1)/(r**2 + 1)",
+    "Delta": "3*k**6*z**6 - 3*k**6 - k**6*z**6/r**2 + 2*k**6/r**2 - 8*r**2*z**6 + r**2",
+    "Pa": "p^2=-T/B"
+  },
+  "volume": "di wedge dj wedge dh = -32*k*T^2*Delta*p/(3*i0*r*z^6*A) dr wedge dk wedge dz",
+  "plus_pa_residue": "-16*k*T^2*Delta*K*p/(9*r*z^6*A) dr wedge dk wedge dz",
+  "root_compatibility": "i0^2=-1, j=k*sqrt(T/A), h=8*T^2*sqrt(A*B)/z^3, p=i0*sqrt(T/B)",
+  "rational_pa_chart": {
+    "p": "lam/2 - (z**6 + 1)/(2*lam)",
+    "s": "-I*(lam**2 + z**6 + 1)/(lam**2 - z**6 - 1)",
+    "r": "k^3/s"
+  },
+  "checks": {
+    "physical_log_jacobian": true,
+    "full_di_dj_dh_coefficient": true,
+    "plus_pa_residue_density": true,
+    "physical_pa_conic": true,
+    "conic_factor_parameter": true,
+    "N_boundary_in_physical_coordinates": true,
+    "L_boundary_in_physical_coordinates": true,
+    "right_inverse_denominator": true
+  },
+  "count": 8,
+  "limitations": "Rationality does not integrate an arbitrary rational three-form. Full density, residues and K dependence must be retained."
+}

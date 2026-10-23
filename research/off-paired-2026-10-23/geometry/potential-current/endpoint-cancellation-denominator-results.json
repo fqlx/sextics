@@ -1,0 +1,26 @@
+[
+  {
+    "denominator": "(3*X0*Y1+2*X2*Y2)**4",
+    "k": 4,
+    "degree": 8,
+    "prime": 1009,
+    "rows": 2489,
+    "unknowns": 567,
+    "rank": 457,
+    "consistent": false,
+    "seconds": 0.7697737620001135,
+    "scope": "Full homogeneous numerators and quotient in exact diagonal-character block for this fixed denominator; modular search only."
+  },
+  {
+    "denominator": "(3*X0*Y1+2*X2*Y2)**5",
+    "k": 5,
+    "degree": 10,
+    "prime": 1009,
+    "rows": 5121,
+    "unknowns": 1316,
+    "rank": 1035,
+    "consistent": false,
+    "seconds": 4.28619215100025,
+    "scope": "Full homogeneous numerators and quotient in exact diagonal-character block for this fixed denominator; modular search only."
+  }
+]

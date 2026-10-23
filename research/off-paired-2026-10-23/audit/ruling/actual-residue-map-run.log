@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "count": 45,
+  "exact_points": [
+    {
+      "w": "1",
+      "u": "9/32",
+      "r_scaled": "256/3",
+      "Ssrc_residue_scaled": "118784"
+    },
+    {
+      "w": "2",
+      "u": "1/4",
+      "r_scaled": "-324",
+      "Ssrc_residue_scaled": "-15552"
+    },
+    {
+      "w": "3",
+      "u": "81/448",
+      "r_scaled": "-702464/675",
+      "Ssrc_residue_scaled": "-298718601216/9765625"
+    },
+    {
+      "w": "1/2",
+      "u": "1/8",
+      "r_scaled": "162/5",
+      "Ssrc_residue_scaled": "634716/3125"
+    },
+    {
+      "w": "5",
+      "u": "25/224",
+      "r_scaled": "-7112448/1025",
+      "Ssrc_residue_scaled": "-23936232499200/115856201"
+    }
+  ],
+  "physical_moment": "alpha(hsrc)=54 i^3 wT/(JN)dw, T=1+w\u00b3,N=9i\u00b2w\u00b2-16JT",
+  "physical_residue": "rho(hsrc)=i^-1 r, r=32T\u00b3/[3w\u00b2(2-w\u00b3)] on N=0,u=J/i\u00b2",
+  "actual_forcing": "rho((D-6)(D-5)hsrc)=i^-1[4u\u00b2r_uu+14ur_u+6r]",
+  "all_pole_statement": "A,B,Z transport identities are literal modulo rational exact forms. Initial h,F,G moments have only finite N poles. P3(vt) moment is d_i\u00b3(t dlogv) modulo exact, and t divisible w*T*M kills every finite non-N dlogv pole. Correct N match therefore proves all finite residues vanish; infinity follows by residue theorem.",
+  "full_current_defect": "e^-7(Z-1)K chi=div[e^-7 Kchi Z]+e^-7 K(B0-1/2)chi, divZ=2/3. The final kernel correction is retained.",
+  "source_sha256": "7e80b44e7753af9d726cd5fe3bedbafb21818e3facb94f70d53e8771c1c4cb29",
+  "scope": "Source residue binding and rational Hermite existence; no explicit K, cancellation of its kernel correction, primitive, Lean result or solve claim."
+}

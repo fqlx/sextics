@@ -1,0 +1,74 @@
+[
+  {
+    "denominator": "X0^0*v^0",
+    "prime": 1009,
+    "unknowns": 22,
+    "rows": 170,
+    "rank": 22,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.0009570139995958016
+  },
+  {
+    "denominator": "X0^1*v^0",
+    "prime": 1009,
+    "unknowns": 35,
+    "rows": 235,
+    "rank": 35,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.0024605640001027496
+  },
+  {
+    "denominator": "X0^2*v^0",
+    "prime": 1009,
+    "unknowns": 52,
+    "rows": 320,
+    "rank": 52,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.0051770009999927424
+  },
+  {
+    "denominator": "X0^3*v^0",
+    "prime": 1009,
+    "unknowns": 79,
+    "rows": 455,
+    "rank": 79,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.018065345999730198
+  },
+  {
+    "denominator": "X0^0*v^1",
+    "prime": 1009,
+    "unknowns": 77,
+    "rows": 445,
+    "rank": 77,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.013484587000220927
+  },
+  {
+    "denominator": "X0^1*v^1",
+    "prime": 1009,
+    "unknowns": 111,
+    "rows": 615,
+    "rank": 111,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.036692566000056104
+  },
+  {
+    "denominator": "X0^2*v^1",
+    "prime": 1009,
+    "unknowns": 150,
+    "rows": 810,
+    "rank": 150,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.08101002400007928
+  },
+  {
+    "denominator": "X0^3*v^1",
+    "prime": 1009,
+    "unknowns": 203,
+    "rows": 1075,
+    "rank": 203,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.19468224999991435
+  }
+]

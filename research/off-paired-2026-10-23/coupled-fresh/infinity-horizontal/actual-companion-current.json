@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "physical_B_A": true,
+    "physical_B_B": true,
+    "physical_B_C": true,
+    "physical_B_D": true,
+    "physical_B_E": true,
+    "physical_B_T": true,
+    "H1_eta_literal": true,
+    "H2_eta_Cartan": true,
+    "H1_xi2_literal": true,
+    "H2_xi2_Cartan": true,
+    "Q_scale_eta": true,
+    "Q_scale_xi2": true
+  },
+  "passed": true,
+  "VB": {
+    "R": "R*(R + 1)*(z**6 - 2)/(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S)",
+    "S": "S*(11*R*z**6 - 4*R - z**6 + 2)/(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S)",
+    "z": "-R*z*(z**2 + 1)*(z**4 - z**2 + 1)/(2*(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S))",
+    "alpha": "-3*R*z**6/(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S)",
+    "u": "R*(7*z**6 + 1)/(4*(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S))",
+    "v": "-3*R*(5*z**6 - 1)/(4*(3*R*S*z**6 - 3*R*S - 8*R*z**6 + R - S*z**6 + 2*S))"
+  },
+  "c2": "u_B-v_B/3",
+  "literal_B_connection": "nabla_VB xi2=nabla_B xi2+c2*xi2-(2*v_B/3)*d_q(q/b)",
+  "density": "mu=dR*dS*dz/(108*k^5),k^6=R*S",
+  "ME": "div_mu(VE)+c_eta,E; use actual outer-E lift",
+  "remaining_xi2": "G2=div_mu(ME*VB)+ME*c2",
+  "partial_current": "Jpartial=eta_b wedge i_VE(mu)+ME*xi2 wedge i_VB(mu)+K*mu, K=-(2/3)*(v_E*q*b/J+ME*v_B*q/b)",
+  "source_identity": "(-nabla_E eta_b) wedge mu=d_total Jpartial+G2*xi2 wedge mu",
+  "orientation": "relative dq before base mu",
+  "certificate": false
+}

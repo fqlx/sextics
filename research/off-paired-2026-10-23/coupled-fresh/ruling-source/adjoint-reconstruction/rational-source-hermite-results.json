@@ -1,0 +1,23 @@
+{
+  "status": "exact source-specific Hermite reduction, no primitive claimed",
+  "checks": [
+    "actual physical density transport",
+    "factored rational v",
+    "complete Hermite division",
+    "source-weight identity",
+    "finite N residue",
+    "inverse-root moment in u",
+    "rational transverse residue primitive",
+    "retained elliptic third-kind differential"
+  ],
+  "count": 8,
+  "Rsource": "54*i**3*w*(w**3 + 1)/(J*(-16*J*(w**3 + 1) + 9*i**2*w**2))",
+  "polynomial_primitive": "-27*i**3*w**2/(16*J**2) - 243*i**5*w/(128*J**3)",
+  "proper_numerator": "-243*i**5/(8*J**2) + 2187*i**7*w**2/(128*J**3)",
+  "proper_denominator": "-16*J*(w**3 + 1) + 9*i**2*w**2",
+  "N_residue": "32*(w**3 + 1)**3/(3*i*w**2*(2 - w**3))",
+  "transverse_primitive": "-4*w**4/3 - 32*w/3 + 8/(3*w**2)",
+  "retained_logarithms": "r du=6 dlog(w)+2 d(w^3); the second transverse moment has the stated elliptic dlog component",
+  "scope": "Density/relative scalar residues only. Every operator, curve connection, other pole and (Z-1) remainder must still be served.",
+  "certificate": false
+}

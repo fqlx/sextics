@@ -1,0 +1,30 @@
+{
+  "status": "The actual tangent-hyperplane support has h20=0; no original-target primitive or certificate.",
+  "checks": {
+    "exact_endpoint_split": true,
+    "tangent_hyperplane_restriction": true,
+    "double_cover_substitution": true,
+    "blowup_t_chart": true,
+    "blowup_x_chart": true,
+    "H_on_exceptional": true,
+    "H_exceptional_roots_simple": true,
+    "H_roots_avoid_S_ramification": true,
+    "S_normalization_equation": true,
+    "normalized_H": true,
+    "normalized_H_eliminant_squarefree": true,
+    "normalized_H_k_zero_simple": true,
+    "normalized_H_l_zero_simple": true,
+    "reduced_branch_class": true,
+    "cover_line_bundle": true,
+    "smooth_H_nonzero_gradient_contradiction": true
+  },
+  "check_count": 16,
+  "support": "X2=rho*Y2, rho^6=-1",
+  "original_target": "A=X0^3*Y0^3",
+  "double_cover": "w^2=-rho^-1*H*C",
+  "base_blowup": "Bl_{t=x=0}(P3)",
+  "branch_after_normalization": "Hprime+Pprime+Sprime+E, class 10H-2E",
+  "line_bundle": "5H-E",
+  "cohomology_argument": "H2(O_cover)=H2(P3,O)+H2(P3,O(-5))=0; remaining SNC double-cover singularities are toric and rational.",
+  "scope": "The algebraic identities are machine checked. SNC geometry, toric rationality and coherent-cohomology arguments are explained in the companion Markdown proof. No Lean verification is claimed."
+}

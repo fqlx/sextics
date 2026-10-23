@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": {
+    "cross_1_zeta": true,
+    "cross_1_xi": true,
+    "cross_2_zeta": true,
+    "cross_2_xi": true,
+    "cross_3_zeta": true,
+    "cross_3_xi": true,
+    "cross_4_zeta": true,
+    "cross_4_xi": true,
+    "zeta_self_1": true,
+    "zeta_self_2": true,
+    "zeta_self_3": true,
+    "xi_self_1": true,
+    "xi_self_2": true,
+    "xi_self_3": true
+  },
+  "certificate": false,
+  "scope": "Formal arbitrary-exponent equality of all14 rational self/cross operators; no candidate potentials or compact closure asserted."
+}

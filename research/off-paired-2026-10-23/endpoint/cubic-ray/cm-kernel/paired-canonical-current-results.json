@@ -1,0 +1,38 @@
+{
+  "status": "Actual coupled paired CM current with explicitly retained nonzero residual; no certificate",
+  "check_count": 6,
+  "checks": [
+    "paired-tracefree-canonical-coefficients",
+    "physical-lambda-normal",
+    "actual-current-normalization",
+    "V-canonical-row-literal-derivative",
+    "W-canonical-row-literal-derivative",
+    "actual-physical-nonzero-two-component-remainder"
+  ],
+  "constant_scope": "fixed characteristic-zero k; k=C for the full contract",
+  "coefficient_definitions": {
+    "b": "B_h",
+    "J": "-4*B*h**5 + H*b",
+    "Delta": "4*B**3 + 27*C*H**2"
+  },
+  "current": {
+    "A_h": "-27*B*H**2/((4*B**3 + 27*C*H**2)*(-16*B*h**5 + 4*H*b))",
+    "D_h": "-B/(C*(-4*B*h**5 + H*b))",
+    "other_directions": "zero"
+  },
+  "normal_derivative": "partial_h+6*h^5*partial_H+b*partial_B; b_h=0",
+  "lambda_h": "(-12*B*h**5 + 3*H*b)/(B*H)",
+  "forcing": {
+    "V": "0",
+    "W": "1/(C*H)"
+  },
+  "actual_divergence": {
+    "V": "9*H*(-240*B**5*H*h**4 + 320*B**5*h**10 - 88*B**4*H*b*h**5 + 8*B**3*H**2*b**2 - 1620*B**2*C*H**3*h**4 - 1728*B**2*C*H**2*h**10 + 1350*B*C*H**3*b*h**5 - 189*C*H**4*b**2)/(4*(4*B**3 + 27*C*H**2)**2*(-4*B*h**5 + H*b)**2)",
+    "W": "(-160*B**5*H*h**4 + 192*B**5*h**10 - 48*B**4*H*b*h**5 + 4*B**3*H**2*b**2 - 1080*B**2*C*H**3*h**4 - 1296*B**2*C*H**2*h**10 + 972*B*C*H**3*b*h**5 - 135*C*H**4*b**2)/(2*C*H*(4*B**3 + 27*C*H**2)*(-4*B*h**5 + H*b)**2)"
+  },
+  "residual": {
+    "V": "9*H*(-240*B**5*H*h**4 + 320*B**5*h**10 - 88*B**4*H*b*h**5 + 8*B**3*H**2*b**2 - 1620*B**2*C*H**3*h**4 - 1728*B**2*C*H**2*h**10 + 1350*B*C*H**3*b*h**5 - 189*C*H**4*b**2)/(4*(4*B**3 + 27*C*H**2)**2*(-4*B*h**5 + H*b)**2)",
+    "W": "-(160*B**5*H*h**4 - 64*B**5*h**10 - 16*B**4*H*b*h**5 + 4*B**3*H**2*b**2 + 1080*B**2*C*H**3*h**4 + 2160*B**2*C*H**2*h**10 - 1404*B*C*H**3*b*h**5 + 189*C*H**4*b**2)/(2*C*H*(4*B**3 + 27*C*H**2)*(-4*B*h**5 + H*b)**2)"
+  },
+  "gap": "Neither residual row vanishes. No mixed c/E2 correction has been found."
+}

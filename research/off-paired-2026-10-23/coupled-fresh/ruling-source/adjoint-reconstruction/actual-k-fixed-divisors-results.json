@@ -1,0 +1,90 @@
+{
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "checks": 15,
+  "identities": [
+    "i: tangent N at v0",
+    "i: tangent L at vinfinity",
+    "i: horizontal coefficient vanishes at w0",
+    "i: horizontal coefficient vanishes at T0",
+    "J: tangent N at v0",
+    "J: tangent L at vinfinity",
+    "J: horizontal coefficient vanishes at w0",
+    "J: horizontal coefficient vanishes at T0",
+    "critical polynomial degree24",
+    "generic critical coprime w",
+    "generic critical coprime T",
+    "generic critical coprime N",
+    "generic critical coprime L",
+    "generic critical coprime Cprime",
+    "actual vinfinity leading coefficient"
+  ],
+  "valuation_lower_bounds": {
+    "w0": {
+      "v": 1,
+      "v_w": 0,
+      "v2/v_w": 2,
+      "h": 3,
+      "F": 3,
+      "G": 3,
+      "Hpot": 2,
+      "R": 2,
+      "R*v_w/v2": 0
+    },
+    "T0": {
+      "v": 2,
+      "v_w": 1,
+      "v2/v_w": 3,
+      "h": 4,
+      "F": 3,
+      "G": 3,
+      "Hpot": 3,
+      "R": 3,
+      "R*v_w/v2": 0
+    },
+    "N0": {
+      "v": 1,
+      "v_w": 0,
+      "v2/v_w": 2,
+      "h": 1,
+      "F": 1,
+      "G": 1,
+      "Hpot": 1,
+      "R_before_residue": 1,
+      "R_after_served_residue": 2,
+      "R*v_w/v2": 0
+    },
+    "L0": {
+      "v": -1,
+      "v_w": -2,
+      "v2/v_w": 0,
+      "h": 0,
+      "F": 0,
+      "G": 0,
+      "Hpot": 0,
+      "R": 0,
+      "R*v_w/v2": 0
+    },
+    "infinity_before_properization": {
+      "v_degree": -8,
+      "v2/v_w_degree": -7,
+      "h_degree": -6,
+      "F_degree": -6,
+      "G_degree": -6,
+      "Hpot_degree": 16,
+      "R_degree_at_most": 16,
+      "K_over_v_degree_at_most": 24
+    },
+    "infinity_after_properization": {
+      "h_degree": -6,
+      "F_degree": -8,
+      "G_degree": -8,
+      "Hpot_degree": -8,
+      "R_degree_at_most": -6,
+      "K_over_v_degree_at_most": 2
+    }
+  },
+  "reason": "A,B,Z,D preserve the four fixed-divisor ideals. At L0 the middle Z in the cubic v term gains one L order before multiplying by v. At N0 the actual served residue removes the sole possible simple pole in R*v_w/v2.",
+  "consequence": "The full rational K/v has no finite fixed-divisor poles. Its only possible finite poles are the artificial simple critical folds. If those are removed by the source-bound Morse construction, the new K/v is polynomial in w. Infinity polynomial terms remain and are not assumed integrated.",
+  "parameter_poles": "All coefficient denominators in Q(i,J), including 5u+16, are retained and allowed; this is a generic function-field construction.",
+  "certificate": false
+}

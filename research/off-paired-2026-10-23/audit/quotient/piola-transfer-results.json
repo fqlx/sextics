@@ -1,0 +1,189 @@
+{
+  "status": "passed",
+  "arithmetic": "standard-library Fraction Laurent polynomial dictionaries",
+  "checks": [
+    "scaled_equation_G_pullback",
+    "physical_source",
+    "first_jet_W0_derivative_u",
+    "first_jet_W1_derivative_u",
+    "first_jet_W2_derivative_u",
+    "first_jet_W3_derivative_u",
+    "first_jet_W4_derivative_u",
+    "first_jet_W0_derivative_v",
+    "first_jet_W1_derivative_v",
+    "first_jet_W2_derivative_v",
+    "first_jet_W3_derivative_v",
+    "first_jet_W4_derivative_v",
+    "first_jet_W0_derivative_z",
+    "first_jet_W1_derivative_z",
+    "first_jet_W2_derivative_z",
+    "first_jet_W3_derivative_z",
+    "first_jet_W4_derivative_z",
+    "first_jet_W0_derivative_a",
+    "first_jet_W1_derivative_a",
+    "first_jet_W2_derivative_a",
+    "first_jet_W3_derivative_a",
+    "first_jet_W4_derivative_a",
+    "first_jet_W0_derivative_b",
+    "first_jet_W1_derivative_b",
+    "first_jet_W2_derivative_b",
+    "first_jet_W3_derivative_b",
+    "first_jet_W4_derivative_b",
+    "first_jet_W0_value",
+    "first_jet_W1_value",
+    "first_jet_W2_value",
+    "first_jet_W3_value",
+    "first_jet_W4_value",
+    "scaling_divergence_correction_0",
+    "scaling_divergence_correction_1",
+    "scaling_divergence_correction_2",
+    "scaling_divergence_correction_3",
+    "scaling_divergence_correction_4",
+    "cleared_numerator_0_0",
+    "cleared_numerator_0_1",
+    "cleared_numerator_0_2",
+    "cleared_numerator_0_3",
+    "cleared_numerator_0_4",
+    "cleared_numerator_1_0",
+    "cleared_numerator_1_1",
+    "cleared_numerator_1_2",
+    "cleared_numerator_1_3",
+    "cleared_numerator_1_4",
+    "cleared_numerator_2_0",
+    "cleared_numerator_2_1",
+    "cleared_numerator_2_2",
+    "cleared_numerator_2_3",
+    "cleared_numerator_2_4",
+    "cleared_numerator_3_0",
+    "cleared_numerator_3_1",
+    "cleared_numerator_3_2",
+    "cleared_numerator_3_3",
+    "cleared_numerator_3_4",
+    "cleared_numerator_4_0",
+    "cleared_numerator_4_1",
+    "cleared_numerator_4_2",
+    "cleared_numerator_4_3",
+    "cleared_numerator_4_4",
+    "cleared_remainder_factor",
+    "homogeneous_scaled_equation",
+    "homogeneous_source_binding",
+    "homogeneous_current_weights",
+    "immutable_F_binding",
+    "immutable_A_binding"
+  ],
+  "identity": "A - V(F) + F div(V) = (J/S^2)*(B - W(G) + G div(W)) pulled back",
+  "coordinates": {
+    "physical": [
+      "x",
+      "y",
+      "z",
+      "a",
+      "b"
+    ],
+    "quotient": [
+      "u",
+      "v",
+      "z",
+      "a",
+      "b"
+    ]
+  },
+  "theta": [
+    "x*y",
+    "y**3",
+    "z",
+    "a",
+    "b"
+  ],
+  "J": "3*y**3",
+  "S": "y**6 = v^2 pulled back",
+  "prefactor_V_from_W": [
+    [
+      "3/y**4",
+      "-x/y**6",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/y**5",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "3/y**3",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "3/y**3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "3/y**3"
+    ]
+  ],
+  "prefactor_N_from_P": [
+    [
+      "3*y**2",
+      "-x",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "y",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "3*y**3",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "3*y**3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "3*y**3"
+    ]
+  ],
+  "cleared_denominator": "D=y^6 E(theta)",
+  "cleared_remainder": "Q_physical=3*y^15 Q_G(theta)",
+  "target_raw_sha256": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+  "source_B": "v^4/3",
+  "homogeneous_source_B": "t^3*v^4/3",
+  "homogeneous_G_weight": 12,
+  "homogeneous_W_weights": [
+    5,
+    6,
+    4,
+    4,
+    4
+  ],
+  "remainder_transfer": "if quotient defect=G^2 R then physical defect=F^2 J R pulled back",
+  "scope": "Conditional exact source and vector-field transfer. No rational current or certificate is asserted."
+}

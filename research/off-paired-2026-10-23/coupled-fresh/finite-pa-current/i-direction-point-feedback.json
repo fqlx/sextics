@@ -1,0 +1,47 @@
+{
+  "status": "Exact specialized reconstruction feedback only; not a certificate or a global exclusion",
+  "specialization": {
+    "j": "1",
+    "w": "1"
+  },
+  "actual_source": "9*i^3*w*(1+w^3)/(j^2*N) * (4*e_b-GammaD*e_b)",
+  "equation": "P_i prime + [Gamma_i+v_i*GammaV/(6v)] P_i=actual_source",
+  "i0_diagonal_shear": [
+    -2,
+    -2,
+    0,
+    0,
+    -2,
+    -2,
+    -1,
+    0
+  ],
+  "candidate_laurent_lower": [
+    -2,
+    -2,
+    0,
+    0,
+    -2,
+    -2,
+    -1,
+    0
+  ],
+  "candidate_laurent_upper": [
+    1,
+    2,
+    4,
+    5,
+    1,
+    2,
+    4,
+    5
+  ],
+  "reconstruction_rows": 368,
+  "unknowns": 41,
+  "augmented_rank": 42,
+  "consistent_in_displayed_layout": false,
+  "scope": "These exact local calculations guide construction. They are not independently audited generic completeness bounds and are not promoted to a new relative exclusion.",
+  "next": "Use the exact generic Ui/Uj full-base source currents with all density and inverse-branch corrections.",
+  "source_hash": "cc6f8672c0a05ecd6a344336614558a53a519c8af31993b727eb6b2f78ec16f4",
+  "certificate": false
+}

@@ -1,0 +1,4390 @@
+{
+  "status": "passed",
+  "solver_sha256": "d9c7ed9a7c8cff1b5d5bec7386d48f53c7a824b8be0f1254ea5bf1620b8d190b",
+  "cases": 99,
+  "comparisons": 396,
+  "primes": [
+    2,
+    101,
+    1009,
+    1000003,
+    13500007
+  ],
+  "panel_sizes": [
+    1,
+    7,
+    17,
+    48
+  ],
+  "oracle": "Known rank and consistency from invertible transformations; comparison with old int64 modular routine; solutions checked with Python integer dot products.",
+  "stress_float_dot": 8748007776001728,
+  "float_exact_integer_limit": 9007199254740992,
+  "current_run_bound_p1009_n2740": {
+    "float_panel_dot": 48771072,
+    "int64_solution_dot": 2784015360
+  },
+  "required_bounds": [
+    "panel_size*(p-1)^2 < 2^53",
+    "n*(p-1)^2 < 2^63 for int64 back-substitution and final verification",
+    "canonical integral mat,rhs values in [0,p)"
+  ],
+  "comparisons_detail": [
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 2,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 101,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-0-0-False",
+      "shape": [
+        0,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-0-4-0-False",
+      "shape": [
+        0,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-False",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-0-0-True",
+      "shape": [
+        4,
+        0
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-False",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-5-7-0-True",
+      "shape": [
+        5,
+        7
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 0,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-False",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-4-9-3-True",
+      "shape": [
+        4,
+        9
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-False",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-9-4-3-True",
+      "shape": [
+        9,
+        4
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 3,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-False",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-28-35-19-True",
+      "shape": [
+        28,
+        35
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 19,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-False",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-55-70-48-True",
+      "shape": [
+        55,
+        70
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-False",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-85-63-51-True",
+      "shape": [
+        85,
+        63
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 51,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-False",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": false
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "known-rank-120-140-90-True",
+      "shape": [
+        120,
+        140
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 90,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1009,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1009,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1009,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1009,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1000003,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1000003,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1000003,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 1000003,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 49,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-positive-BLAS-sum-inconsistent",
+      "shape": [
+        52,
+        51
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 49,
+      "inconsistent": true
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 13500007,
+      "panel": 1,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 13500007,
+      "panel": 7,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 13500007,
+      "panel": 17,
+      "rank": 48,
+      "inconsistent": false
+    },
+    {
+      "case": "maximal-pivot-row-delayed-sum",
+      "shape": [
+        48,
+        50
+      ],
+      "prime": 13500007,
+      "panel": 48,
+      "rank": 48,
+      "inconsistent": false
+    }
+  ],
+  "scope": "Numerical finite-field linear algebra audit only. Evaluation consistency is not an exact rational current or certificate."
+}

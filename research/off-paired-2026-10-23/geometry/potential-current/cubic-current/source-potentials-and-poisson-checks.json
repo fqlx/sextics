@@ -1,0 +1,14 @@
+{
+  "status": "exact identities only; no physical primitive or certificate",
+  "checks": {
+    "implicit_second_B_derivative_is_twice_actual_R": true,
+    "coefficient_potential_B_derivative_is_actual_R": true,
+    "symplectic_volume_is_actual_rho": true,
+    "general_Hamiltonian_field_preserves_actual_density": true,
+    "physical_H_C_bracket": true,
+    "four_coordinate_Hamiltonians_give_stated_frame": true,
+    "extended_p_pB_bracket_retains_all_coefficients": true
+  },
+  "passed": 7,
+  "total": 7
+}

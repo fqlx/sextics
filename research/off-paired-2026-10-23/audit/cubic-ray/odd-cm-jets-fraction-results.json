@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "count": 17,
+  "checks": [
+    "CM_odd_kernel_derivative",
+    "CM_even_kernel_derivative",
+    "rational_odd_jet_0",
+    "rational_odd_jet_1",
+    "paired_graph_poles_cancel",
+    "paired_source_two_x",
+    "normalized_root_trace_A0",
+    "normalized_root_trace_A1",
+    "normalized_root_trace_dx_and_ds_factor",
+    "traced_jet_derivative_0",
+    "traced_jet_derivative_1",
+    "exact_cubic_inverse_g",
+    "normalized_cubic_trace_p_over_g2",
+    "root_traced_pair_actual_physical_cubic_current",
+    "paired_tracefree_canonical_V_W_identity",
+    "actual_source_field_nonzero_mh_equals_minus_1_over_320ascale",
+    "actual_Qi_point_both_full_canonical_residuals_nonzero"
+  ],
+  "arithmetic": "independent standard-library Fraction quotient polynomial arithmetic and exact cubic Newton traces",
+  "nonzero_remainder_witness": "At c=1,h=0,T=0,w=1,e=-2,Y=3,V^2=-2,H=10/9,B=0,x=4,k^3=10/9: a_scale*m_h=-1/320. T=0 is a regular point of the common field chart though x1 has a pole there; the witness proves m_h is not the zero field function.",
+  "actual_Qi_point_residuals": {
+    "V": "-18854004404151/28513143652900 + (-1175379855642/7128285913225)i",
+    "W": "-933057101/240289650 + (-106631977/360434475)i"
+  },
+  "scope": "CM kernel, rational even jets, normalized root traces and cubic trace are exact. Exterior-form physical orientation is independently derived in ODD-CM-JETS-AUDIT.md. A nonzero density derivative remains; no source-carrying complete primitive is asserted."
+}

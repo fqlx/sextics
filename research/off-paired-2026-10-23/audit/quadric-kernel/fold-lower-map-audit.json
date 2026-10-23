@@ -1,0 +1,12 @@
+{
+  "status": "Generic exact fold lift audit; actual global interpolation not asserted",
+  "coordinates": "t^2=v-V(i,J)",
+  "sigma": "(-J*Derivative(V(i, J), J) + V(i, J))*(J*Derivative(V(i, J), J) + i*Derivative(V(i, J), i) + 4*V(i, J))*V(i, J)**2/8 - Derivative(V(i, J), i)**3/8",
+  "Tg": "3*J*(2*J*Derivative(V(i, J), J) + i*Derivative(V(i, J), i) + 3*V(i, J))*V(i, J)**2*Derivative(g(i, J), J)/4 + 3*(-2*i*(-J*Derivative(V(i, J), J) + V(i, J))*V(i, J)**2 + 6*Derivative(V(i, J), i)**2)*Derivative(g(i, J), i)/8 + 3*(2*J*((J*Derivative(V(i, J), J) + i*Derivative(V(i, J), i) + 4*V(i, J))*Derivative(V(i, J), J) + (J*Derivative(V(i, J), (J, 2)) + i*Derivative(V(i, J), J, i) + 5*Derivative(V(i, J), J))*V(i, J))*V(i, J) + 22*(-J*Derivative(V(i, J), J) + V(i, J))*V(i, J)**2 + 3*(J*Derivative(V(i, J), J) + i*Derivative(V(i, J), i) + 4*V(i, J))*V(i, J)**2 + 6*Derivative(V(i, J), i)*Derivative(V(i, J), (i, 2)))*g(i, J)/8",
+  "checks": {
+    "cubic_leading_map": true,
+    "cubic_lower_map": true,
+    "no_other_negative_powers": true
+  },
+  "count": 3
+}

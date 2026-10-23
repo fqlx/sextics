@@ -1,0 +1,13 @@
+PASS: all eight exact genus-two differential reduction identities
+PASS: exact Euler identity and the fixed compact basis
+PASS: omitted power 0 : adjoint defects have only this column; source is C^5/H^5
+PASS: omitted power 1 : adjoint defects have only this column; source is C^5/H^5
+PASS: omitted power 3 : adjoint defects have only this column; source is C^5/H^5
+PASS: omitted power 4 : adjoint defects have only this column; source is C^5/H^5
+PASS: scalar family and source bound to the actual immutable target
+PASS: both exact scalar pole reductions, final Jacobian reduction, and all 880 dual relations
+PASS: nonzero residue pairing -54190940/990659911761
+PASS: new identities plus the prior exact nonzero residue certificate.
+Conclusion, with the cited geometric step: every compact-module solution must have
+2 C U_j(H) - 3 H U_j(C) != 0 for EACH j = 0,1,3,4, even after finite extension.
+This is a necessary condition, not a solution or unrestricted nonexistence claim.

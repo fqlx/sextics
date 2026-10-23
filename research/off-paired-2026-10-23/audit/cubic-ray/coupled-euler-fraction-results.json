@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": [
+    "physical_E_divergence_zero",
+    "complete_physical_B_fixed",
+    "physical_E_K_equals_six_L",
+    "physical_E_logk_all_H_C_factors",
+    "U_logk_has_exact_source_normalization",
+    "physical_U_divergence_full_quotient_derivative",
+    "P_connection_V_coefficient",
+    "P_connection_W_coefficient_zero",
+    "complete_coupled_first_coefficient",
+    "complete_coupled_second_coefficient",
+    "full_canonical_required_couplings_nonzero_at_physical_point",
+    "actual_full_source_coefficients_at_physical_point"
+  ],
+  "count": 12,
+  "arithmetic": "independent standard-library Fraction Laurent polynomials",
+  "source": "R=W/(HC), with actual volume -dZ dh du dv/3",
+  "criterion": "divD=0 and D(log kappa)=L/(2*c0*K^2), c0=3(27-23kappa)/(4kappa+27)^2",
+  "actual_current": "J=V*U+(f*V+W)*D; canonical A=U+fD, Bvec=D",
+  "scope": "Conditional current is genuinely coupled and has exact physical source if D exists. No pure-component contradiction is implied by divD=0; D and a rational Hamiltonian solving the narrower option remain unconstructed. No certificate has been found."
+}

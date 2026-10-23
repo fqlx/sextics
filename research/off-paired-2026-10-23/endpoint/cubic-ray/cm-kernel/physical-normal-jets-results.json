@@ -1,0 +1,32 @@
+{
+  "status": "Complete physical first-normal-jet current and retained nonzero derivative; no closure",
+  "check_count": 6,
+  "checks": [
+    "normalization-m",
+    "target-principal-source",
+    "J-normal-derivative",
+    "full-normal-log-derivative",
+    "traced-pair-actual-normal-current",
+    "trace-p-over-g2"
+  ],
+  "physical_coefficients": {
+    "H": "1+c^-6*Y2^-2+h^6",
+    "C": "c^6",
+    "B": "c*V*(T/2+h/3)+h*T*V^2/(2*c*Y2)",
+    "b1": "B_h=c*V/3+T*V^2/(2*c*Y2)"
+  },
+  "normalization": {
+    "J": "-4*B*h**5 + H*b1",
+    "x3_h": "4*x**3*(-4*B*h**5 + H*b1)/(H*c**2*k**2*(x**3 + 128))",
+    "m": "-8*k**2*(x**3 - 64)/(a_scale*x*(x**3 + 128)**2*(-4*B*h**5 + H*b1))",
+    "m_h": "-16*(-128*B**2*h**10*x**8 + 22528*B**2*h**10*x**5 + 262144*B**2*h**10*x**2 + 64*B*H*b1*h**5*x**8 - 11264*B*H*b1*h**5*x**5 - 131072*B*H*b1*h**5*x**2 + 10*B*H*c**2*h**4*k**2*x**9 + 1920*B*H*c**2*h**4*k**2*x**6 - 10485760*B*H*c**2*h**4*k**2 - 8*B*c**2*h**10*k**2*x**9 - 1536*B*c**2*h**10*k**2*x**6 + 8388608*B*c**2*h**10*k**2 - 8*H**2*b1**2*x**8 + 1408*H**2*b1**2*x**5 + 16384*H**2*b1**2*x**2 + H*b1*c**2*h**5*k**2*x**9 + 192*H*b1*c**2*h**5*k**2*x**6 - 1048576*H*b1*c**2*h**5*k**2)/(H*a_scale*c**2*x*(x**3 + 128)**4*(-4*B*h**5 + H*b1)**2)"
+  },
+  "paired_current": "Gamma=m*(zeta^2*x1^2-x3^2)*eta1^dc^eta2",
+  "paired_divergence": "R-a_scale*(zeta^2*x1^2-x3^2)*m_h/c^4",
+  "after_H_root_trace": {
+    "current": "-c^4*B*H*p/(2*a_scale*g^2*J)*eta1^dc^eta2",
+    "trace_zero_current": "-c^4*B*H/(2*a_scale*J)*(p/g^2+3*H/Delta)*eta1^dc^eta2",
+    "warning": "Subtracting the cubic field trace also subtracts its differentiated remainder; it does not erase the trace-free error."
+  },
+  "mixed_normal_status": "No mixed c/E2 correction has closed the density derivative. Both individual CM graph currents and their errors are retained."
+}

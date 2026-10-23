@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "physical_linear_cancellation": true,
+    "quotient_plus": true,
+    "differential_plus": true,
+    "quotient_minus": true,
+    "differential_minus": true,
+    "source_differential": true,
+    "varying_j_formula": true
+  },
+  "j_plus": "-6912*(2*alpha + 5)**3/((alpha - 2)**3*(alpha + 2))",
+  "status": "Exact source/quotient identities only; moving-kernel cancellation remains open."
+}

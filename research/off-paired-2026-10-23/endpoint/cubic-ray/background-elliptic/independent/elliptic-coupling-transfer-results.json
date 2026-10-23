@@ -1,0 +1,50 @@
+{
+  "status": "Actual source-guided H/q current with retained elliptic and third-genus-two correction; no primitive or Picard claim",
+  "constant_scope": "fixed characteristic-zero k; k=C for full certificate contract",
+  "check_count": 17,
+  "checks": [
+    "literal-C-H",
+    "literal-C-q",
+    "literal-C-z",
+    "source-times-C-H-descends",
+    "source-times-C-z-descends",
+    "source-times-affine-C-descends",
+    "literal-elliptic-H-reduction-2",
+    "literal-elliptic-H-reduction--2",
+    "full-background-H-source-reduction",
+    "actual-coupling-residual-splits",
+    "third-genus-two-quotient",
+    "simultaneous-sign-T-anti",
+    "simultaneous-sign-G-anti",
+    "simultaneous-sign-invariant-residual",
+    "source-carrying-two-direction-current-e",
+    "source-carrying-two-direction-current-hcol",
+    "source-carrying-two-direction-current-ccol"
+  ],
+  "physical_source": "-(mu/72)*nabla_H|C(omega0) dH wedge dq wedge dz, mu=1/d-1/s",
+  "C": "q/3+z*(s+d)/4",
+  "C_H": "z*(1/s + 1/d)/8",
+  "C_q": "z*((3*q**2 - z/4)/s + (-3*q**2 - z/4)/d)/4 + 1/3",
+  "C_z": "d/4 + s/4 - z*(q/4 + 3*z**5)*(1/s + 1/d)/4",
+  "elliptic_data": {
+    "plus": {
+      "A": "18*K0/(108*K0**2 - z**3)",
+      "B": "6*z/(108*K0**2 - z**3)",
+      "R": "(18*K0*q - 6*q**2*z + z**2)/(54*K0**2 - z**3/2)"
+    },
+    "minus": {
+      "A": "-18*K0/(-108*K0**2 - z**3)",
+      "B": "-6*z/(-108*K0**2 - z**3)",
+      "R": "(-18*K0*q + 6*q**2*z + z**2)/(-54*K0**2 - z**3/2)"
+    }
+  },
+  "T": "-(18*K0*q - 6*q**2*z + z**2)/(s*(54*K0**2 - z**3/2)) + (-18*K0*q + 6*q**2*z + z**2)/(d*(-54*K0**2 - z**3/2))",
+  "G": "-(18*K0/(108*K0**2 - z**3) + 6*q*z/(108*K0**2 - z**3))/s + (-18*K0/(-108*K0**2 - z**3) - 6*q*z/(-108*K0**2 - z**3))/d",
+  "cohomological_current": "J=-mu*omega0 dq wedge dz/72-T*omega0 dH wedge dz/72; literal endpoint Dwork primitives must also be transported",
+  "source_identity": "source=dJ+[G*omega0+(mu*C_H-T*C_q)*nabla_C(omega0)] dH wedge dq wedge dz/72",
+  "coupling_residual": "mu*C_H-T*C_q=-T/3+Q_invariant(q,w)",
+  "Q_invariant": "-z*(-(3*q**2 - z/4)*(18*K0*q - 6*q**2*z + z**2)/((54*K0**2 - z**3/2)*(-K0 + 2*q**3 - q*z/2)) + (-3*q**2 - z/4)*(-18*K0*q + 6*q**2*z + z**2)/((-54*K0**2 - z**3/2)*(-K0 - 2*q**3 - q*z/2)) + (-(-3*q**2 - z/4)*(18*K0*q - 6*q**2*z + z**2)/(54*K0**2 - z**3/2) + (3*q**2 - z/4)*(-18*K0*q + 6*q**2*z + z**2)/(-54*K0**2 - z**3/2))/(w))/4 + q**3*z/(2*d**2*s**2)",
+  "background_quotient": "w^2=(K0+z*q/2)^2-4q^6, w=s*d; same endpoint-type family at parameters (K0,z/2)",
+  "parameter_transport": "For its universal connection, physical D_H=-nabla_K0 and D_z=6z^5*nabla_K0+nabla_(z/2)/2; q held fixed",
+  "gap": "The invariant correction and anti-character G,T corrections are nonzero and retain endpoint C=q/3+z(s+d)/4. Splitting the background differential is not an endpoint Jacobian splitting or a source primitive."
+}

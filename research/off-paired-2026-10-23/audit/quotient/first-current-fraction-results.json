@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "arithmetic": "standard-library Fraction polynomials and Laurent polynomials",
+  "checks": [
+    "first_direction_S",
+    "first_direction_T",
+    "first_direction_R",
+    "first_direction_G",
+    "first_divergence",
+    "first_source_and_correction",
+    "first_actual_source_factor",
+    "first_Kbase_binding",
+    "first_endpoint_Hermite",
+    "cycle_divergence",
+    "cycle_H_coefficient_one",
+    "cycle_C_coefficient",
+    "companion_actual_second_normal",
+    "companion_polynomialized_second_normal_zero",
+    "companion_boundary_not_dropped",
+    "companion_first_normal_returns_original"
+  ],
+  "first_current_scaling": "Displayed N solves source v^4. Divide N by 3 for actual source v^4/3; correction is h/(3G).",
+  "cycle_coefficient": 1,
+  "orientation": "Companion normal operator assumes dY ordered before the five base differentials. Quartic scalar residue r corresponds to -r du\u2227dz\u2227da\u2227db when dG is placed first in du\u2227dv\u2227dz\u2227da\u2227db.",
+  "scope": "Exact identities and failure of the proposed self-closure. No primitive or certificate."
+}

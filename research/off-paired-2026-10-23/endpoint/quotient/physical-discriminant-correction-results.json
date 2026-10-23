@@ -1,0 +1,35 @@
+[
+  {
+    "pole": 1,
+    "compact_denominator": "F_s*X0^0",
+    "potential_affine_degree_extra": 0,
+    "prime": 1009,
+    "unknowns": 301,
+    "rows": 1565,
+    "rank": 301,
+    "consistent_evaluations": false,
+    "solve_seconds": 1.1419528240003274
+  },
+  {
+    "pole": 2,
+    "compact_denominator": "F_s*X0^0",
+    "potential_affine_degree_extra": 0,
+    "prime": 1009,
+    "unknowns": 301,
+    "rows": 1565,
+    "rank": 301,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.7550220950001858
+  },
+  {
+    "pole": 1,
+    "compact_denominator": "F_s*X0^1",
+    "potential_affine_degree_extra": 1,
+    "prime": 1009,
+    "unknowns": 387,
+    "rows": 1995,
+    "rank": 387,
+    "consistent_evaluations": false,
+    "solve_seconds": 1.6504484290003347
+  }
+]

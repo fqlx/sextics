@@ -1,0 +1,14 @@
+{
+  "actual_point": {
+    "a": "1",
+    "C": "1",
+    "z": "1",
+    "H": "969/64"
+  },
+  "implicit_C_jet_order": 6,
+  "P_on_jet_is_zero": true,
+  "operator": "B12, exact right-to-left Euler composition with all implicit a(C) derivatives",
+  "retained_remainder": "-26844196695165812755131673402579281672733355141356732959641/37004743205030066760424019651068076737970847587095019520",
+  "partial_current_closed_at_point": false,
+  "scope": "Check of this explicit rational partial current only. No all-pole or ansatz exclusion follows."
+}

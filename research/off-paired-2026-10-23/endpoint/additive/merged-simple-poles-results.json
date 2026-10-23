@@ -1,0 +1,27 @@
+{
+  "prime": 1009,
+  "unknowns": 2740,
+  "basis": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "families": {
+    "H": 100,
+    "plus": 1320,
+    "minus": 1320
+  },
+  "source": "-y^3 MH e0/6",
+  "stages": [
+    {
+      "generic_points": 1434,
+      "rows": 7170,
+      "rank": 2675,
+      "consistent": false,
+      "solve_seconds": 24.776154766000218
+    }
+  ],
+  "status": "inconsistent sampled system; no current in this modular additive ansatz"
+}

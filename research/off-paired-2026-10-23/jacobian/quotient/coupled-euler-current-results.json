@@ -1,0 +1,15 @@
+{
+  "status": "exact constructive reduction only; D not constructed",
+  "checks": [
+    "E(B)=0",
+    "E(K)=6L",
+    "E(log k)=-6K/(CH)",
+    "U(log k)=-1/(2CH)",
+    "div U=-L/(2K^2)",
+    "P log derivative V coefficient",
+    "P log derivative W coefficient",
+    "full current V coefficient",
+    "full current W coefficient"
+  ],
+  "count": 9
+}

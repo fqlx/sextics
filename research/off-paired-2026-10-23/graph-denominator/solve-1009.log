@@ -1,0 +1,4 @@
+seconds=0.0 rank=0 active_nnz=549582 incidence=549582 rss_mb=10 merged=0 contradiction=no
+contradiction after 3869 pivots at 0.3s
+seconds=0.5 rank=5220 active_nnz=0 incidence=32484 rss_mb=14 merged=35647580 contradiction=yes
+/workspace/off-paired-research-new/graph-denominator/solve-1009.json

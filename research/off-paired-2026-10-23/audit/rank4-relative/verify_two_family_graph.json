@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "exact_groups": 8,
+  "scope": "Degree24 nonzero background support, monic-endpoint coprimality interface, rational genus2 isomorphism and discriminant scaling; no primitive or source match.",
+  "relative_basis": "pullback omega_j(endpoint)=r^(j-2) Omega_j(background), at fixed r",
+  "horizontal_warning": "With dr retained, p^j dp/Zp=r^(j-2)q^j dq/wb+r^(j-3)q^(j+1)dr/wb.",
+  "r_on_homogeneous_graph": "-H*w^3*z/(2*C*D)"
+}

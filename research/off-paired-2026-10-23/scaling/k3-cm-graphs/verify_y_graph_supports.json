@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "full_factor_on_F": true,
+    "ambient_divisibility": true,
+    "graph_j_cube": true,
+    "whole_root_1": true,
+    "whole_root_2": true,
+    "whole_root_3": true,
+    "root_sum": true
+  },
+  "passed": true,
+  "count": 7,
+  "scope": "Exact whole-cubic support identities; no source primitive or Gysin image."
+}

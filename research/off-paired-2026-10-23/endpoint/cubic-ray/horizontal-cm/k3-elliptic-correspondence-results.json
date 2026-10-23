@@ -1,0 +1,84 @@
+{
+  "status": "Explicit finite source-retaining correspondence; no primitive or certificate",
+  "constant_scope": "fixed k characteristic zero; k=C for full complex contract",
+  "check_count": 18,
+  "checks": [
+    "normalized-K3",
+    "C-normalization",
+    "H-full-source-coefficient",
+    "B-full-source-coefficient",
+    "first-fixed-elliptic",
+    "first-elliptic-differential",
+    "second-fixed-elliptic",
+    "finite-inverse-b-square",
+    "finite-inverse-T-cube",
+    "K3-two-form-product",
+    "actual-four-form-product",
+    "canonical-source-normalization",
+    "c_root_mod6-physical-density",
+    "c_root_mod6-H",
+    "c_root_mod6-full-B",
+    "w_root_mod3-physical-density",
+    "w_root_mod3-H",
+    "w_root_mod3-full-B"
+  ],
+  "finite_field_relations": [
+    "w^3=1+T^6",
+    "Y^2=1-e^3",
+    "V^2=e/w"
+  ],
+  "map_to_physical_chart": {
+    "Z": "c^3*Y",
+    "h": "h",
+    "u": "c*T*V",
+    "v": "c*V"
+  },
+  "normalized_K3": "Y^2+(T*V)^6+V^6=1",
+  "elliptic_1": {
+    "e1": "w^2/T^2",
+    "y1": "(T^6-1)/T^3",
+    "equation": "y1^2=e1^3-4",
+    "differential": "eta1=de1/(2*y1)=dT/w"
+  },
+  "elliptic_2": {
+    "equation": "Y^2=1-e^3",
+    "differential": "eta2=de/(2*Y)"
+  },
+  "finite_map_bounds": {
+    "to_normalized_K3": "degree at most 3 (adjoin w)",
+    "to_elliptic_product": "degree at most 12: b^2=e1,T^3=(y1+b^3)/2,w=b*T,V^2=e/w"
+  },
+  "K3_differential": "dU ^ dV/Y=eta1 ^ eta2",
+  "physical_volume": "-c^4 dc ^ dh ^ eta1 ^ eta2",
+  "coefficients": {
+    "C": "c^6",
+    "H": "1+c^-6*Y^-2+h^6",
+    "B": "c*V*(T/2+h/3)+h*T*V^2/(2*c*Y)"
+  },
+  "root_characters": {
+    "c_root_mod6": {
+      "c": 1,
+      "Y": -3,
+      "V": -1,
+      "T": 0,
+      "w": 0,
+      "e": -2,
+      "eta1": 0,
+      "eta2": 1,
+      "density_total": 6
+    },
+    "w_root_mod3": {
+      "c": 0,
+      "Y": 0,
+      "V": 0,
+      "T": 0,
+      "w": 1,
+      "e": 1,
+      "eta1": -1,
+      "eta2": 1,
+      "density_total": 0
+    }
+  },
+  "actual_source": "-c^4*R dc ^ dh ^ eta1 ^ eta2 = -W/(c^2*H) dc ^ dh ^ eta1 ^ eta2",
+  "warning": "H and full B vary along the elliptic product; no source primitive follows from density factorization"
+}

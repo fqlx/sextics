@@ -1,0 +1,7 @@
+{
+  "checks": {
+    "full_volume_orientation": true,
+    "three_coupling_weights": true
+  },
+  "status": "Exact fixed-Fermat-product physical source normalization; no contraction."
+}

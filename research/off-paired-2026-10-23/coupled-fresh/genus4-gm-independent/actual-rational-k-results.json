@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "generic Cartan A",
+    "generic Cartan B",
+    "generic Cartan Z",
+    "full D correction",
+    "full source correction",
+    "full PE correction",
+    "full PD correction",
+    "full A cubed correction",
+    "literal cubic (Z-1) identity",
+    "actual t dlog v Laurent decomposition",
+    "fixed 9 by 9 Hermite determinant equals minus 9 factorial",
+    "authoritative source hash",
+    "independent exact Hermite result bound: i^-1",
+    "independent exact Hermite result bound: i^-2",
+    "independent exact Hermite result bound: i^-7"
+  ],
+  "passed": 15,
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "n_only_hermite_sha256": "537c4c3a0b594e31dc45ee1d3a30e736fb3ae9ecfdf873d8382846de821076b7",
+  "primitive": "K=v*(PN+ES(h)-EPE(F)-EPD(G)-EA3(v*t)-W(t)/v)",
+  "identity": "Ssrc-PE(F)-PD(G)-P3(v*t)=(Z-1)K",
+  "scope": "Constructed scalar rational identity; original curve-valued defect retained",
+  "certificate": false
+}

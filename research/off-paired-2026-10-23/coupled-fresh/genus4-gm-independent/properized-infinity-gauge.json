@@ -1,0 +1,39 @@
+{
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "properization_file_sha256": "9e708325c6e0ab88fb6c1c7859d6dcae25ceddc7a0fa844ec0859c192a42d33a",
+  "infinity_preimage_file_sha256": "35118e815f72765c6e8692fbf9e24915ce9312761ea49d38b09e4dc85a448cd6",
+  "properized_moment_limits": {
+    "hproper_over_v": "2187/(16384*u**4) * i^-1",
+    "Fproper_over_v": "-2187*(9375*u**5 - 270000*u**4 + 928000*u**3 + 15744000*u**2 + 48365568*u + 46661632)/(32768*u**4*(5*u + 16)**4) * i^-1",
+    "Gproper_over_v": "729*(24375*u**4 - 189000*u**3 - 1548480*u**2 - 3645440*u - 2916352)/(4096*u**3*(5*u + 16)**4)",
+    "Hproper_over_v": "729*(6375*u**4 - 84555*u**3 - 6352*u**2 + 895744*u + 1462272)/(131072*u**4*(5*u + 16)**3) * i^2"
+  },
+  "Jproper_constant_at_infinity": {
+    "i^-1": "-729*(11671875*u**6 - 390493875*u**5 + 1108226000*u**4 + 24622630400*u**3 + 108877438976*u**2 + 204415500288*u + 144121528320)/(32768*u**4*(5*u + 16)**5)",
+    "i^-2": "3645*(421875*u**6 - 20550000*u**5 + 111408000*u**4 + 1867591680*u**3 + 8015151104*u**2 + 14897119232*u + 10452205568)/(32768*u**4*(5*u + 16)**5)"
+  },
+  "Jproper_definition": "K/v+LEQF+LDQG+L3(QH_minus+QH_plus)",
+  "preferred_QDinf": "-729*i**4*w/(440*J) - 27*i**3*w**2/(10*J) - 5103*i**5*w/(3040*J**2)",
+  "actual_normal_form": "Jnorm=Jproper-LD(QDinf)-i^-1*c1(u)-i^-2*c2(u)",
+  "actual_potentials": {
+    "F": "Fproper",
+    "G": "Gproper+v*Z(QDinf)",
+    "H": "Hproper"
+  },
+  "actual_source_identity": "Ssrc-PE(Fnew)-PD(Gnew)-P3(Hnew)=(Z-1)[v*Jnorm]",
+  "infinity_behavior": "Jnorm=O(w^-1); every positive and constant infinity coefficient has been served explicitly",
+  "constant_reason": "N-only proper primitive has zero infinity constant. Source polynomial moment yields D(D+1)Ph, which has w2,w1 but no constant. The remaining Cartan constants are the four checked parameter rows.",
+  "fold_bound": 5,
+  "fold_reason": "Full cubic properization may create order5 in K/v; the preferred quadratic LD lift and parameter-only gauge do not raise it.",
+  "checks": [
+    "unrestricted limiting Cartan row ES",
+    "unrestricted limiting Cartan row EPE",
+    "unrestricted limiting Cartan row EPD",
+    "unrestricted limiting Cartan row EA3",
+    "actual N-only primitive and properization have zero polynomial constant",
+    "preferred actual infinity preimage source bound"
+  ],
+  "passed": 6,
+  "certificate": false,
+  "scope": "Actual source-bound scalar normal form; all compact and infinity curve defects remain to be served"
+}

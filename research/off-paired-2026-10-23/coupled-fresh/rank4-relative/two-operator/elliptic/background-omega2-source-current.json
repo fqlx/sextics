@@ -1,0 +1,26 @@
+{
+  "status": "Exact mixed-source H/q partial current; full residual retained",
+  "checks": [
+    "background-third-kind-D-column-polynomial-Dwork",
+    "actual-source-compact-column-match",
+    "actual-source-infinity-column",
+    "complete-physical-endpoint-Leibniz-corrections"
+  ],
+  "source_compact_match_coefficient": "D/16",
+  "background_third_kind_primitive_R": "(3888*D**3*q**3 + 1296*D**2*q**4*z + 36*D**2*z**3 + 432*D*q**5*z**2 - 24*D*q*z**4 + q**2*z**5)/((-108*D**2 + z**3)*(108*D**2 + z**3))",
+  "background_compact_residual_0_1_3_4": [
+    "0",
+    "-D*z**5/(8*(-108*D**2 + z**3)*(108*D**2 + z**3))",
+    "0",
+    "27*D**2*z**2/((-108*D**2 + z**3)*(108*D**2 + z**3))"
+  ],
+  "lambda": "z**6/(48*(-108*D**2 + z**3)*(108*D**2 + z**3))",
+  "coefficient_currents": {
+    "H": "D*q^2*F/(16*w)",
+    "q": "-D*R*F/(16*w)"
+  },
+  "literal_currents": "-D*q^2*F^dq^dz/(16*w)-D*R*F^dH^dz/(16*w)",
+  "endpoint": "F=\u2207C omega0; FH=\u2207H\u2207C omega0, FC=\u2207C\u00b2 omega0, all universal parameter derivatives before pullback",
+  "physical_derivatives": "\u2207Hphys F=FH+C_H FC; \u2207qphys F=C_q FC",
+  "residual": "[(lambda-1/16)*q^2/w-D*z^5*q/(128*Delta*w)+27*D^2*z^2*q^4/(16*Delta*w)]*F-D*q^2*(FH+C_H*FC)/(16*w)+D*R*C_q*FC/(16*w)"
+}

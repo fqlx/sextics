@@ -1,0 +1,23 @@
+[
+  {
+    "denominator": "(3*X0*Y1+2*X2*Y2)**6",
+    "k": 6,
+    "degree": 12,
+    "prime": 1009,
+    "rows": 9606,
+    "unknowns": 2777,
+    "rank": 2152,
+    "consistent": false,
+    "seconds": 44.21536448200004,
+    "scope": "Full homogeneous numerators and quotient in exact diagonal-character block for this fixed denominator; modular search only."
+  },
+  {
+    "denominator": "(3*X0*Y1+2*X2*Y2)**7",
+    "k": 7,
+    "degree": 14,
+    "prime": 1009,
+    "rows": 16819,
+    "unknowns": 5458,
+    "status": "Interrupted during Gaussian elimination to stop bounded expansion; no consistency or rank conclusion."
+  }
+]

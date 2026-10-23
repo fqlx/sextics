@@ -1,0 +1,3 @@
+seconds=0.1 rank=0 active_nnz=555764 incidence=555764 rss_mb=10 merged=0 contradiction=no
+seconds=0.5 rank=5243 active_nnz=0 incidence=31363 rss_mb=13 merged=34030018 contradiction=no
+/workspace/off-paired-research-new/graph-denominator/source-subspaces/block-X1-1000003.projection.json

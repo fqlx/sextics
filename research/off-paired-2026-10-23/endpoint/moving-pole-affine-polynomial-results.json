@@ -1,0 +1,98 @@
+[
+  {
+    "name": "t1",
+    "denominator": "t",
+    "degree": 1,
+    "prime": 1009,
+    "seed": 72063,
+    "unknowns": 22,
+    "rows": 170,
+    "rank": 22,
+    "consistent_evaluations": false,
+    "seconds": 0.0013092050000977906
+  },
+  {
+    "name": "t2",
+    "denominator": "t**2",
+    "degree": 2,
+    "prime": 1009,
+    "seed": 72064,
+    "unknowns": 41,
+    "rows": 265,
+    "rank": 41,
+    "consistent_evaluations": false,
+    "seconds": 0.004534874999990279
+  },
+  {
+    "name": "t3",
+    "denominator": "t**3",
+    "degree": 3,
+    "prime": 1009,
+    "seed": 72065,
+    "unknowns": 64,
+    "rows": 380,
+    "rank": 63,
+    "consistent_evaluations": false,
+    "seconds": 0.011969285000077434
+  },
+  {
+    "name": "t4",
+    "denominator": "t**4",
+    "degree": 4,
+    "prime": 1009,
+    "seed": 72066,
+    "unknowns": 99,
+    "rows": 555,
+    "rank": 96,
+    "consistent_evaluations": false,
+    "seconds": 0.05482667699993726
+  },
+  {
+    "name": "t5",
+    "denominator": "t**5",
+    "degree": 5,
+    "prime": 1009,
+    "seed": 72067,
+    "unknowns": 142,
+    "rows": 770,
+    "rank": 135,
+    "consistent_evaluations": false,
+    "seconds": 0.09826913200004128
+  },
+  {
+    "name": "t6",
+    "denominator": "t**6",
+    "degree": 6,
+    "prime": 1009,
+    "seed": 72068,
+    "unknowns": 200,
+    "rows": 1060,
+    "rank": 189,
+    "consistent_evaluations": false,
+    "seconds": 0.2772068700001
+  },
+  {
+    "name": "t7",
+    "denominator": "t**7",
+    "degree": 7,
+    "prime": 1009,
+    "seed": 72069,
+    "unknowns": 272,
+    "rows": 1420,
+    "rank": 252,
+    "consistent_evaluations": false,
+    "seconds": 0.6087158160000854
+  },
+  {
+    "name": "t8",
+    "denominator": "t**8",
+    "degree": 8,
+    "prime": 1009,
+    "seed": 72070,
+    "unknowns": 364,
+    "rows": 1880,
+    "rank": 332,
+    "consistent_evaluations": false,
+    "seconds": 1.5100272409999889
+  }
+]

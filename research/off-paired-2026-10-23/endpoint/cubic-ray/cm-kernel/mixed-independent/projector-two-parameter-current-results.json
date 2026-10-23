@@ -1,0 +1,94 @@
+{
+  "status": "Exact full two-parameter projector current and three-part source partition; no physical source closure",
+  "constant_scope": "fixed characteristic-zero k; k=C for full contract",
+  "check_count": 33,
+  "checks": [
+    "polynomial-normalizer",
+    "normalized-graph-inverse-all-coefficients",
+    "actual-normalized-H-current-0",
+    "actual-normalized-kappa-current-0",
+    "actual-normalized-lambda-current-0",
+    "actual-normalized-H-current-1",
+    "actual-normalized-kappa-current-1",
+    "actual-normalized-lambda-current-1",
+    "full-kappa-H-curvature-0",
+    "full-lambda-H-curvature-0",
+    "normal-graph-denominator-cancels-0",
+    "mixed-curvature-0",
+    "full-kappa-H-curvature-1",
+    "full-lambda-H-curvature-1",
+    "normal-graph-denominator-cancels-1",
+    "mixed-curvature-1",
+    "closed-current-difference-0",
+    "closed-current-difference-1",
+    "three-partition-kappa-H-source-0",
+    "three-partition-mixed-terms-cancel-0",
+    "three-partition-kappa-H-source-1",
+    "three-partition-mixed-terms-cancel-1",
+    "mixed-invariant-residue-differential",
+    "mixed-invariant-residue-closed",
+    "complete-mixed-residue-c-deck-invariant",
+    "complete-exterior-source-jacobian",
+    "physical-rational-residue-Z-up",
+    "physical-rational-residue-Z-vp",
+    "physical-rational-residue-up-vp",
+    "physical-source-monomial-field",
+    "physical-partition-point-kappa",
+    "physical-partition-point-jacobian",
+    "actual-uniform-partition-V-residual-nonzero"
+  ],
+  "normalized_field": "r^3+beta*r+1=0, v^3=lambda, beta^3=kappa",
+  "physical_scalings": "p=(H/C)^(1/3)*r, u=(H/C)^(1/3)*v, Dphysical=H*(1+lambda+beta*v)",
+  "actual_current": "Theta=EH*dlog(H)+EK*dlog(kappa)+EL*dlambda; wedge the retained closed base two-form afterwards",
+  "normalizer": "E=(r^2+r*v+v^2+beta)*(4beta^2-9v+6beta*v^2)/(4beta^3+27)-1/3",
+  "coefficient_H": [
+    "(4*kappa - 81*lambda - 54)/(4*kappa + 27)",
+    "-12*(lambda + 1)"
+  ],
+  "coefficient_kappa": [
+    "lambda*(2*kappa + 3*lambda**2 - 3*lambda - 6)/(6*(kappa*lambda + lambda**3 + 3*lambda**2 + 3*lambda + 1))",
+    "-lambda*(4*kappa + 27)*(lambda + 1)/(3*(kappa*lambda + lambda**3 + 3*lambda**2 + 3*lambda + 1))"
+  ],
+  "coefficient_lambda": [
+    "(8*kappa**2 - 378*kappa*lambda + 54*kappa - 486*lambda**3 - 1458*lambda**2 - 729*lambda - 486)/(6*(4*kappa + 27)*(kappa*lambda + lambda**3 + 3*lambda**2 + 3*lambda + 1))",
+    "-(28*kappa*lambda + 4*kappa + 36*lambda**3 + 108*lambda**2 + 54*lambda + 63)/(3*(kappa*lambda + lambda**3 + 3*lambda**2 + 3*lambda + 1))"
+  ],
+  "curvature": {
+    "dlogkappa_dlogH": [
+      "36*(5*kappa - 27)*(lambda + 1)/(4*kappa + 27)**2",
+      "2*(12*kappa*lambda + 8*kappa - 81*lambda - 108)/(4*kappa + 27)"
+    ],
+    "dlambda_dlogH": [
+      "-81/(4*kappa + 27)",
+      "-12"
+    ],
+    "dlogkappa_dlambda": [
+      "36*(5*kappa - 27)/(4*kappa + 27)**2",
+      "6*(4*kappa - 27)/(4*kappa + 27)"
+    ]
+  },
+  "modulo_closed_current": "Theta == EH*dlog(H)-lambda*theta(P)*dlog(kappa), where P=partial_lambda(EH)",
+  "partition": {
+    "actual_sections": "lambda_i=-H_i/H, H_i=1,c^-6*Y^-2,h^6, sum_i lambda_i=-1",
+    "coefficient_H": [
+      "3*(4*kappa - 27)/(4*kappa + 27)",
+      "-24"
+    ],
+    "curvature_dlogkappa_dlogH": [
+      "72*(5*kappa - 27)/(4*kappa + 27)**2",
+      "6*(4*kappa - 81)/(4*kappa + 27)"
+    ],
+    "mixed_terms": "Both dlambda wedge dlogH and dlogkappa wedge dlambda terms cancel in the three-current sum",
+    "remaining": "The partition reduces to a fixed constant-lambda two-component curvature. Its physical Jacobian coefficient does not automatically equal the actual (0,1/(CH)) source.",
+    "physical_nonzero_residual": "At Z=h=u=v=1: kappa=64/729, J_beta0=59/4 and the V source is (59/4)*72*(5kappa-27)/(4kappa+27)^2 !=0, whereas the required V forcing is0."
+  },
+  "physical_deck_and_mixed_residue": {
+    "warning": "eta1 wedge eta2 has c-deck character 1. The universal one-form alone is deck-invariant, so that unweighted physical three-current traces to zero.",
+    "invariant_closed_two_form": "betaS=eta1 wedge d(c^5*e*Y)=eta1 wedge [5*c^4*e*Y*dc+c^5*(2-5e^3)*eta2]",
+    "rational_physical_form": "beta0=betaS/a_scale=d(u/v) wedge d(Z*v^2)=(v*du-u*dv) wedge dZ+2Z*du wedge dv",
+    "rational_physical_vector": "E=2Z*partial_Z-u*partial_u-v*partial_v, divergence0; source functional against Omega=-(1/3)dZ dh du dv is 3*(xi_h*E(psi)-psi_h*E(xi))",
+    "actual_current": "Theta wedge betaS",
+    "source_functional": "For C(xi,psi)=S2*(xi_c*psi_h-xi_h*psi_c)+Sc*(xi_h*psi_2-xi_2*psi_h), source/Omega=-(a_scale/c^4)[theta(EH)*C(dlogkappa,dlogH)+P*C(dlambda,dlogH)+theta(P)*C(dlogkappa,dlambda)]. All physical c,h,E2 derivatives are retained.",
+    "scope": "betaS is an exact closed residue. This completes the c/E2 deck and closure terms, but supplies no match with the nonzero H31 target by itself. A source-carrying full correction remains open."
+  }
+}

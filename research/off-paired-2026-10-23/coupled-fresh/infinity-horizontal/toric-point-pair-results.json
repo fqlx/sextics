@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "zeta_E": true,
+    "zeta_C": true,
+    "zeta_D": true,
+    "zeta_T": true,
+    "source_box": true,
+    "normalized_box": true,
+    "finite_residues": true,
+    "other_q_zero_points": true,
+    "infinity_residue_formula": true,
+    "infinity_residue_zero": true,
+    "fourth_order_pole_retained": true
+  },
+  "passed": true,
+  "normalized_generator": "chi_a=b*dq/(b0*q), b0\u00b2=-T/B",
+  "rational_generator": "zeta=b*dq/q",
+  "point_pair": "Pa+ - Pa-, Pa\u00b1=(a=0,b=\u00b1b0,q=0)",
+  "infinity": "residues zero; fourth-order second-kind poles retained",
+  "source": "tau=-partial_E\u00b2 zeta=-partial_T partial_C zeta",
+  "certificate": false
+}

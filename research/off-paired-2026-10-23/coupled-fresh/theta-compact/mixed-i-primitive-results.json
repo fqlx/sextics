@@ -1,0 +1,38 @@
+{
+  "status": "Explicit source-directed compact mixed current; density derivatives remain and no certificate claimed",
+  "raw_i_primitive_of_U1": "-x/(2a\u00b2)dx=-y\u00b2dx/(2x\u2075)",
+  "raw_finite_residue": "-j*r/2 at Pa, r\u00b2=-v; zero infinity residue",
+  "compact_moment": "Vi=raw_i_primitive+j*zeta_hat/2",
+  "finite_pole_primitive_F": "y**2*(1/24 - i/6)/x + y**2*(i/8 - 1/24)/x**2 + y**2/(24*x**3) + y**2/(8*x**4)",
+  "remaining_exact_polynomial_primitive": "-(80*a*i*j*v - 20*a*j*v + 48*i**2*v*x + 20*i*j**2*v*x - 12*i*v*x - 5*j**2*v*x - 192*j*y)/576",
+  "compact_basis": [
+    "1",
+    "x",
+    "x\u00b3",
+    "x\u2074-v*r*x\u00b2",
+    "a",
+    "a*x+j*x\u00b2/2",
+    "y",
+    "y*x"
+  ],
+  "compact_vector": [
+    "-v*(4*i - 1)*(12*i - 5*j**2)/288",
+    "-(48*i**2*v - 20*i*j**2*v - 12*i*v + 5*j**2*v + 432)/288",
+    "-(3*i - j**2 - 1)/6",
+    "(4*i - 1)/3",
+    "-5*j*v*(4*i - 1)/144",
+    "-j*v*(4*i - 1)*(52*i - 15*j**2)/576",
+    "17*j/24",
+    "j*(i + 1)/12"
+  ],
+  "mixed_identity": "nabla_i Vi=U1+(j/2)nu_bq",
+  "checks": {
+    "literal_mixed_i_derivative": true,
+    "finite_residue_cancellation": true,
+    "all_finite_poles_removed_by_F": true,
+    "generic_polynomial_reduction": true,
+    "zero_infinity_residue_component": true,
+    "all_eight_generic_mixed_connection_identities": true
+  },
+  "certificate": false
+}

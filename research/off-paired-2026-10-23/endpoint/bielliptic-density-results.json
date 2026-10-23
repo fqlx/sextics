@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "elliptic-quotient-1",
+    "differential-1",
+    "elliptic-quotient--1",
+    "differential--1",
+    "physical-genus2-curve",
+    "physical-density",
+    "scaling",
+    "actual-density-split"
+  ],
+  "count": 8,
+  "physical_density": "phi dC = -dx/(6v) = a^2/(12h)*(dxi/eta_plus + dxi/eta_minus)",
+  "extensions": "c=b^2+4B, h^2=c, a^3=h; generically nonzero",
+  "elliptic_curves": "eta_plus^2=(xi+2)(xi^3-3xi-2b/h); eta_minus^2=(xi-2)(xi^3-3xi-2b/h)",
+  "status": "exact source transport only; no scalar primitive or certificate"
+}

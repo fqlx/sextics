@@ -1,0 +1,21 @@
+{
+  "prime": 1009,
+  "unknowns": 2743,
+  "compact_unknowns": 2740,
+  "additional_classes": [
+    "dlog r wedge dlog x",
+    "dlog r wedge dlog y",
+    "dlog r wedge dlog z"
+  ],
+  "source": "-y^3 MH e0/6",
+  "stages": [
+    {
+      "generic_points": 1436,
+      "rows": 7180,
+      "rank": 2678,
+      "consistent": false,
+      "solve_seconds": 22.566128115000538
+    }
+  ],
+  "status": "inconsistent sampled system; no current in this modular merged-plus-log ansatz"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "denominator": "X0^0*v^1",
+    "weighted_degree": 3,
+    "prime": 1009,
+    "unknowns": 41,
+    "rows": 371,
+    "rank": 41,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.0047058069999366126
+  },
+  {
+    "denominator": "X0^1*v^1",
+    "weighted_degree": 4,
+    "prime": 1009,
+    "unknowns": 63,
+    "rows": 525,
+    "rank": 63,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.013157930000033957
+  },
+  {
+    "denominator": "X0^2*v^1",
+    "weighted_degree": 5,
+    "prime": 1009,
+    "unknowns": 96,
+    "rows": 756,
+    "rank": 96,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.05017182799974762
+  },
+  {
+    "denominator": "X0^3*v^1",
+    "weighted_degree": 6,
+    "prime": 1009,
+    "unknowns": 135,
+    "rows": 1029,
+    "rank": 135,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.10313659599978564
+  },
+  {
+    "denominator": "X0^0*v^2",
+    "weighted_degree": 6,
+    "prime": 1009,
+    "unknowns": 135,
+    "rows": 1029,
+    "rank": 135,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.12698729400017328
+  },
+  {
+    "denominator": "X0^1*v^2",
+    "weighted_degree": 7,
+    "prime": 1009,
+    "unknowns": 185,
+    "rows": 1379,
+    "rank": 185,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.30156273000011424
+  },
+  {
+    "denominator": "X0^2*v^2",
+    "weighted_degree": 8,
+    "prime": 1009,
+    "unknowns": 250,
+    "rows": 1834,
+    "rank": 250,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.6531936559999849
+  }
+]

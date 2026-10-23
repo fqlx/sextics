@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "execution_kind": "Unchanged contributor checker rerun; not a new independent implementation",
+  "exit_code": 0,
+  "all_five_reports_equal_downloaded_reports": true,
+  "cases": [
+    {
+      "base": "c",
+      "K_rank": 1025,
+      "J0_rank": 1200,
+      "generic_rank_upper_bound": 1200,
+      "second_derivative_augmented_rank": 1201
+    },
+    {
+      "base": "d",
+      "K_rank": 1335,
+      "J0_rank": 1640,
+      "generic_rank_upper_bound": 1640,
+      "second_derivative_augmented_rank": 1641
+    },
+    {
+      "base": "s",
+      "K_rank": 3025,
+      "J0_rank": 3580,
+      "generic_rank_upper_bound": 3580,
+      "second_derivative_augmented_rank": 3581
+    },
+    {
+      "base": "P",
+      "K_rank": 1935,
+      "J0_rank": 2510,
+      "generic_rank_upper_bound": 2510,
+      "second_derivative_augmented_rank": 2511
+    },
+    {
+      "base": "U",
+      "K_rank": 2795,
+      "J0_rank": 3465,
+      "generic_rank_upper_bound": 3465,
+      "second_derivative_augmented_rank": 3466
+    }
+  ],
+  "log_sha256": "fe1d5d53ec2dcd39b12b29d376b807c07a6ce1fbf929648f4554d3969e51b2c9"
+}

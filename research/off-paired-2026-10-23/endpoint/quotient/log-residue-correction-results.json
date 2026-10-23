@@ -1,0 +1,32 @@
+[
+  {
+    "pole": 1,
+    "compact_extra_X0_degree": 0,
+    "log_classes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "prime": 1009,
+    "unknowns": 304,
+    "rows": 1580,
+    "rank": 304,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.8595982599999843
+  },
+  {
+    "pole": 1,
+    "compact_extra_X0_degree": 1,
+    "log_classes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "prime": 1009,
+    "unknowns": 390,
+    "rows": 2010,
+    "rank": 390,
+    "consistent_evaluations": false,
+    "solve_seconds": 2.7261039929999242
+  }
+]

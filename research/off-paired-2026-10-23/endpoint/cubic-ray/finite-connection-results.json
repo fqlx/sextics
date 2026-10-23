@@ -1,0 +1,99 @@
+{
+  "parameters": [
+    "H",
+    "B",
+    "C"
+  ],
+  "field_polynomial": "B*s + C*s**3 + H",
+  "basis": [
+    "s",
+    "2*B/(3*C) + s**2"
+  ],
+  "column_convention": "derivative_v e_j=sum_i Mv[i,j] e_i",
+  "discriminant_denominator": "4*B**3 + 27*C*H**2",
+  "inverse_f_s": "(4*B**2 + 6*B*C*s**2 - 9*C*H*s)/(4*B**3 + 27*C*H**2)",
+  "matrices": {
+    "H": [
+      [
+        "9*C*H/(4*B**3 + 27*C*H**2)",
+        "4*B**2/(4*B**3 + 27*C*H**2)"
+      ],
+      [
+        "-6*B*C/(4*B**3 + 27*C*H**2)",
+        "18*C*H/(4*B**3 + 27*C*H**2)"
+      ]
+    ],
+    "B": [
+      [
+        "2*B**2/(4*B**3 + 27*C*H**2)",
+        "-6*B*H/(4*B**3 + 27*C*H**2)"
+      ],
+      [
+        "9*C*H/(4*B**3 + 27*C*H**2)",
+        "4*B**2/(4*B**3 + 27*C*H**2)"
+      ]
+    ],
+    "C": [
+      [
+        "-(2*B**3 + 9*C*H**2)/(C*(4*B**3 + 27*C*H**2))",
+        "2*B**2*H/(C*(4*B**3 + 27*C*H**2))"
+      ],
+      [
+        "-3*B*H/(4*B**3 + 27*C*H**2)",
+        "-2*(2*B**3 + 9*C*H**2)/(C*(4*B**3 + 27*C*H**2))"
+      ]
+    ]
+  },
+  "source": [
+    "-B*(2*B**3 - 27*C*H**2)/(4*B**3 + 27*C*H**2)**2",
+    "-27*B**2*C*H/(4*B**3 + 27*C*H**2)**2"
+  ],
+  "source_binding": "B*s/(3*C*s^2+B)^3 = -B/(6*C) d_H^2 s",
+  "checks": [
+    "inverse-fs",
+    "basis-derivative-H-0",
+    "basis-derivative-H-1",
+    "basis-derivative-B-0",
+    "basis-derivative-B-1",
+    "basis-derivative-C-0",
+    "basis-derivative-C-1",
+    "flatness-HB[0,0]",
+    "flatness-HB[0,1]",
+    "flatness-HB[1,0]",
+    "flatness-HB[1,1]",
+    "flatness-HC[0,0]",
+    "flatness-HC[0,1]",
+    "flatness-HC[1,0]",
+    "flatness-HC[1,1]",
+    "flatness-BC[0,0]",
+    "flatness-BC[0,1]",
+    "flatness-BC[1,0]",
+    "flatness-BC[1,1]",
+    "common-scaling[0,0]",
+    "common-scaling[0,1]",
+    "common-scaling[1,0]",
+    "common-scaling[1,1]",
+    "root-scaling[0,0]",
+    "root-scaling[0,1]",
+    "root-scaling[1,0]",
+    "root-scaling[1,1]",
+    "source-field",
+    "source-second-derivative[0,0]",
+    "source-second-derivative[1,0]",
+    "trace-pairing-H[0,0]",
+    "trace-pairing-H[0,1]",
+    "trace-pairing-H[1,0]",
+    "trace-pairing-H[1,1]",
+    "trace-pairing-B[0,0]",
+    "trace-pairing-B[0,1]",
+    "trace-pairing-B[1,0]",
+    "trace-pairing-B[1,1]",
+    "trace-pairing-C[0,0]",
+    "trace-pairing-C[0,1]",
+    "trace-pairing-C[1,0]",
+    "trace-pairing-C[1,1]",
+    "trace-pairing-determinant"
+  ],
+  "check_count": 43,
+  "status": "exact connection and source; rational trace-zero primitive remains open"
+}

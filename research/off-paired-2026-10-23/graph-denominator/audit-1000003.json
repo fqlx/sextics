@@ -1,0 +1,13 @@
+{
+  "prime": 1000003,
+  "checked_columns_including_rhs": 13,
+  "status": "passed",
+  "additional_checks": [
+    "original F/A binding",
+    "degree 18 of D",
+    "character zero of D",
+    "degree 42 of all rows",
+    "row character (3,0)",
+    "Y0 exponents below 12"
+  ]
+}

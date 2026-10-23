@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "arithmetic": "standard-library Fraction polynomial dictionaries",
+  "checks": [
+    "toric_normal_F",
+    "toric_normal_relation",
+    "toric_second_normal_jet",
+    "toric_actual_second_residue",
+    "quartic_and_toric_residue_agree",
+    "Ferrari_factorization_resolvent",
+    "Ferrari_resolvent_conic",
+    "generic_Ferrari_residue_reconstruction",
+    "generic_Ferrari_trace_zero_part_nonzero",
+    "generic_Ferrari_quadratic_trace",
+    "invariant_Ferrari_residue_reconstruction",
+    "invariant_Ferrari_trace_zero_part_nonzero",
+    "invariant_Ferrari_quadratic_trace",
+    "invariant_horizontal_log_derivative_rho_over_d2"
+  ],
+  "data_hashes": {
+    "ferrari-trace.json": "c5cc4b4f16352b0f1c3e3329b40452b9e2325147e0272b53da66284dbad1b38b",
+    "ferrari-invariant-source.json": "5e74a83fe63987c89e81d971a540aa6f643880d5726631a0c40675e189b53f00"
+  },
+  "normal_jet": "J2=J0-2F retained before differentiating; replacement by J0 is only on F=0",
+  "trace_scope": "Both trace and nonzero trace-zero delta component reconstruct the actual scalar second-pole residue",
+  "orientation": "For source du\u2227dv\u2227dz\u2227da\u2227db and normal differential dG first, physical residue is -r du\u2227dz\u2227da\u2227db. Positive r denotes the relative one-variable residue or the opposite base orientation.",
+  "source_scaling": "Under v=dV,u=dU,z=dZ,b=dB, scalar residue scales d^-3 and base volume d^3; dlog d=rho/(rho^2-4) d rho must remain.",
+  "scope": "Exact scalar normal/source/trace audit; no global primitive, descent, or certificate follows."
+}

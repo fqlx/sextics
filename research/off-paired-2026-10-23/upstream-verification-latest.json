@@ -1,0 +1,16 @@
+{
+  "verified_utc": "2026-10-22T23:43:04.175221+00:00",
+  "upstream_commit": "59d570e2823d7c605decc3055dae392ec5b8d5f2",
+  "research_worktree_commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+  "branches_and_changes_preserved": true,
+  "worktree_clean": true,
+  "local_instance_rec_sha256": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+  "live_instance_rec_sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d",
+  "exact_F_A_q_and_variable_order_unchanged": true,
+  "target_tuple_sha256": "f7fd994e2807b06da49544abcf508d34afead1aac158c551fa56339acd04167a",
+  "instance_change": "Rendering only: camera distance3.45 to3.29313",
+  "protected_workflow_docs_unchanged": true,
+  "off_paired_solution_files_present": [],
+  "live_discussion": "same one own comment and three replies, no new response",
+  "external_write": false
+}

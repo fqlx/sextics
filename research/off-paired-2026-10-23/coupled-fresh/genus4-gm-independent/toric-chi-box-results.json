@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "general_implicit_third_derivative_product_formula": true,
+    "monomial_DD_AC": true,
+    "monomial_EE_CT": true,
+    "monomial_ABT_CCC": true,
+    "literal_DD_equals_AC": true,
+    "literal_EE_equals_CT": true,
+    "literal_ABT_equals_CCC": true,
+    "normalization_log_derivatives_compatible": true
+  },
+  "psi": "b*dq/q, with b satisfying B*b^4+(Cq^2+Eq+T)b^2+Dq^4b+Aq^6=0",
+  "chi": "psi/b0, b0^2=-T/B",
+  "literal_unnormalized_boxes": [
+    "partial_D^2-partial_A partial_C",
+    "partial_E^2-partial_C partial_T",
+    "partial_A partial_B partial_T-partial_C^3"
+  ],
+  "literal_normalized_boxes": [
+    "partial_D^2-partial_A partial_C",
+    "partial_E^2-partial_C(partial_T+1/(2T))",
+    "partial_A(partial_B-1/(2B))(partial_T+1/(2T))-partial_C^3"
+  ],
+  "normalized_cubic_expanded": "partial_A partial_B partial_T+partial_A partial_B/(2T)-partial_A partial_T/(2B)-partial_A/(4BT)-partial_C^3",
+  "boundary_terms": "NONE: identities of the literal algebraic differential coefficient b/q; no residue or pole was removed",
+  "proof_mechanism": "For a local root, d_i1...d_in b=(-1)^n(n-1)! Res(product P_ij/P^n db). Equal monomial products give identical literal derivatives.",
+  "certificate": false
+}

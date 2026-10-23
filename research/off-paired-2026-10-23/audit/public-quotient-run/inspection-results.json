@@ -1,0 +1,23 @@
+{
+  "manifest_entries_verified": 21,
+  "gist_url": "https://gist.github.com/deanodotdotdot/f335056ed117252a6057d57bb9a36d8e",
+  "gist_version": "4d381b220dd3c4d8f6cf83e022960ed6bdf01de9",
+  "gist_updated_at": "2026-10-22T20:50:33Z",
+  "target_raw_hashes": {
+    "current": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+    "original": "bb0e2891331ddcf18fdbc683df881900400f0e8c2cc73b2f0f23c5d3f7c88467"
+  },
+  "packet_target_sha256": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+  "target_polynomial_and_q_equality": "passed with safe AST/Fraction polynomial parsing, including original rendering",
+  "physical_checker_literal_matches_actual_target": true,
+  "quotient_log_Jacobian_determinant": 36,
+  "source_exponent_pullback": [
+    1,
+    4,
+    1,
+    1,
+    1
+  ],
+  "contributor_checker_sha256": "a4a803d5ba2b0a3c3bd479479b834027820d3d9e58d96ff3fe91144722ef7c21",
+  "verification_kind": "Independent target/hash/scope inspection; rank arithmetic will be a rerun of the unchanged contributor checker, not an independent implementation or Lean proof."
+}

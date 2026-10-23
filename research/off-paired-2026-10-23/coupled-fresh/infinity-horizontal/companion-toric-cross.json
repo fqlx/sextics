@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "literal_eta_a": true,
+    "literal_eta_b_cross": true,
+    "norm_fiber_shift": true,
+    "eta_contiguity_CE": true,
+    "compact_polynomial_representative": true,
+    "r_B_constant": true,
+    "shift_B_constant": true,
+    "companion_B_derivative": true,
+    "Pb_first_jet": true,
+    "Pb_residue": true,
+    "Pb_double_pole_cancellation": true,
+    "Pa_potential_regular": true,
+    "companion_infinity_residue": true,
+    "rational_infinity_correction": true,
+    "corrected_compact_residue": true
+  },
+  "passed": true,
+  "xi": "a*dq/q; normalized by a0\u00b2=-T/A for Pb\u00b1 residues\u00b11",
+  "xi2": "dq/b=a*dq/q\u00b3",
+  "source": "tau=partial_E partial_B xi2; partial_B xi2=-eta_b literally",
+  "r": "(Cp-E\u00b2/(4T))/(2T)",
+  "F": "a/(2q\u00b2)+(D*a\u00b2+E*a)/(4T*q)",
+  "infinity_residue_xi": "D*Cp/(4*A*B*c0), c0\u00b2=-A/B; generally NONZERO",
+  "rational_shift": "s=D*Cp/(2A), xi_hat=xi-s*q\u00b2dq/J",
+  "compact_form": "psi_hat=xi2+d_q F-r*xi+r*s*q\u00b2dq/J",
+  "compact_numerator_over_J": "-(-128*A**3*B*C*T*b*q**2 + 128*A**3*B*D*T*q**4 + 32*A**3*B*E**2*b*q**2 + 32*A**3*B*E*T*b*q + 192*A**3*B*T**2*b - 64*A**3*C**2*T*a*q + 16*A**3*C*E**2*a*q - 64*A**3*C*E*T*a + 16*A**3*E**3*a + 16*A**2*B*D**2*T*b*q**2 - 8*A**2*B*D*E**2*b**2 - 16*A**2*C**2*D*T*q**2 - 4*A**2*C*D*E**2*q**2 - 8*A**2*D**2*E**2*a*q - 8*A**2*D*E**3*q - 8*A**2*D*E**2*T + 8*A*B*D**3*T*b**2 + 16*A*C*D**3*T*q**2 + 8*A*D**4*T*a*q - A*D**3*E**2*q**2 + 8*A*D**3*E*T*q + 8*A*D**3*T**2 - D**5*T*q**2)/(64*A**3*T**2)",
+  "cross_source": "partial_B psi_hat=(r*q\u00b2-1)*eta_b+d_q(partial_B F)+r*s*partial_B(q\u00b2dq/J)",
+  "pole_scope": "psi_hat has only infinity poles of order at most5, all residues0",
+  "certificate": false
+}

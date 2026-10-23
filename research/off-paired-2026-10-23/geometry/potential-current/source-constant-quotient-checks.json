@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "physical_source_jacobian": true,
+    "H_retained": true,
+    "C_retained": true,
+    "cleared_equation": true,
+    "physical_density": true
+  },
+  "status": "Exact source-carrying coordinate identities only; no current or certificate."
+}

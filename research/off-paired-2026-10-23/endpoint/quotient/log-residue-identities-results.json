@@ -1,0 +1,51 @@
+{
+  "checks": [
+    "x-conic-tangent",
+    "x-residue-closure",
+    "x-log-normal-divergence",
+    "y-conic-tangent",
+    "y-residue-closure",
+    "y-log-normal-divergence",
+    "z-conic-tangent",
+    "z-residue-closure",
+    "z-log-normal-divergence",
+    "physical-Kx",
+    "physical-Vx-z",
+    "raw-source-plus-vertical-exact",
+    "conic-Gm-parametrization",
+    "conic-log-differential",
+    "conic-log-horizontal"
+  ],
+  "count": 15,
+  "currents": {
+    "x": {
+      "V": [
+        "(-4*u**6 + u**3*v*z**2 - 4*v**4 + 4*v**2*z**6 - 4*v**2)/(4*v**3*z)",
+        "3*(-4*u**6 + u**3*v*z**2 - 4*v**4 + 4*v**2*z**6 - 4*v**2)/(4*u*v**2*z)",
+        "-2*v/u"
+      ],
+      "source_multiplier": "(-4*u**6 + u**3*v*z**2 + 12*u**2*v**3*z + 12*v**4 + 4*v**2*z**6 - 4*v**2)/(12*v**3*z)",
+      "vertical_multiplier": "-2*v/(u*z)"
+    },
+    "y": {
+      "V": [
+        "-(-4*u**6 + u**3*v*z**2 - 4*v**4 + 4*v**2*z**6 - 4*v**2)/(4*v**3*z)",
+        "0",
+        "-u**2*(-8*u**3 + 3*v*z**2)/(4*v**3)"
+      ],
+      "source_multiplier": "-(-6*u**8*z + 12*u**6*v - 5*u**3*v**2*z**2 - 18*u**2*v**4*z + 18*u**2*v**2*z**7 - 18*u**2*v**2*z - 4*v**5 + 4*v**3*z**6 - 4*v**3)/(12*v**4*z)",
+      "vertical_multiplier": "-u**2*(-8*u**3 + 3*v*z**2)/(4*v**3*z)"
+    },
+    "z": {
+      "V": [
+        "(-8*u**6 + 3*u**3*v*z**2 + 8*v**4)/(4*v**3*z)",
+        "3*u**2*(-8*u**3 + 3*v*z**2)/(4*v**2*z)",
+        "0"
+      ],
+      "source_multiplier": "(-8*u**6 + 3*u**3*v*z**2 + 36*u**2*v**3*z + 8*v**4)/(12*v**3*z)",
+      "vertical_multiplier": "0"
+    }
+  },
+  "raw_identity": "div_connection(V beta_s)=d_g nabla_H omega0 -(V(s)/s)*d_p[p/((p-s)Z)]",
+  "status": "actual source multiplier d_g; physical constant-source correction remains open"
+}

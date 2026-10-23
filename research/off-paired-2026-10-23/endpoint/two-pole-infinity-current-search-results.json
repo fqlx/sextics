@@ -1,0 +1,29 @@
+[
+  {
+    "denominator": "X0^6",
+    "prime": 1009,
+    "unknowns": 320,
+    "rows": 2324,
+    "rank": 308,
+    "consistent_evaluations": false,
+    "solve_seconds": 1.5051781130000563
+  },
+  {
+    "denominator": "X0^7",
+    "prime": 1009,
+    "unknowns": 432,
+    "rows": 3108,
+    "rank": 408,
+    "consistent_evaluations": false,
+    "solve_seconds": 3.325113164000186
+  },
+  {
+    "denominator": "X0^8",
+    "prime": 1009,
+    "unknowns": 574,
+    "rows": 4102,
+    "rank": 531,
+    "consistent_evaluations": false,
+    "solve_seconds": 9.409361166000053
+  }
+]

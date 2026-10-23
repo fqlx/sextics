@@ -1,0 +1,24 @@
+{
+  "status": "Literal rational next horizontal source current; actual density remains differentiated and no primitive claimed",
+  "curve": "a*y=x\u00b3; y\u00b2+v(a\u00b2+i*x\u00b2+j*a*x+x+1)=0",
+  "psi1": "x**2/(2*a**2) dx",
+  "psi2": "x/(2*a) - x*(i*x**2 + x + 1)/(6*a**3) - 3*x**7/(10*a**5*v) dx",
+  "psi3": "x*(-a/x**2 + (2*i*x + 1)/(a*x) - (i*x**2 + x + 1)/(a*x**2) + 5*x**4/(a**3*v))/(2*a*(-1/x + (i*x**2 + x + 1)/(a**2*x) + 3*x**5/(a**4*v))) + (-i*x**2 - x - 1)/(3*a**2) + ((i*x**2 + x + 1)**2/24 - 9*x**6/(20*v))/a**4 + x**6*(2*i*x**2 + 2*x + 2)/(15*a**6*v) + 9*x**12/(80*a**8*v**2) dx",
+  "third_fiber_correction": "x/(2*a*(-1/x + (i*x**2 + x + 1)/(a**2*x) + 3*x**5/(a**4*v)))",
+  "D": "6v partial_v-2i partial_i-j partial_j, at fixed x with implicit a lift",
+  "operator_relation": "partial_j[(2-D)Psi2]=(3-D)Psi1; partial_j[(3-D)Psi1]=(4-D)nu_b",
+  "source_transfer": "t partial_j\u00b2[(2-D)Psi2]=partial_j[t partial_j U2-t_j U2]+t_jj U2; every density derivative retained",
+  "residues": "Psi2 and U2 residue profiles have NOT been certified compact; retain finite and infinity components until audited",
+  "checks": {
+    "literal_second_j_primitive": true,
+    "third_rational_j_primitive_mod_fiber_exact": true,
+    "implicit_a_j_matches_inverse_rational_pencil": true,
+    "literal_first_j_primitive": true,
+    "commutator_D_Ej_a": true,
+    "commutator_D_Ej_i": true,
+    "commutator_D_Ej_j": true,
+    "commutator_D_Ej_v": true,
+    "commutator_D_Ej_x": true
+  },
+  "certificate": false
+}

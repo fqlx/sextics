@@ -1,0 +1,77 @@
+{
+  "status": "Exact generic source-preserving affine Theta reduction, not a certificate",
+  "curve": {
+    "ab": "q^3",
+    "Q": "a^2+b^2+c*q^2+d*a*q+e*q+1",
+    "J": "-a*d*q - 4*b**2 - 2*c*q**2 - 2*e*q - 2"
+  },
+  "derivation": {
+    "q": "-a*d*q - 4*b**2 - 2*c*q**2 - 2*e*q - 2",
+    "a": "-2*a*c*q + a*d**2*q - a*e + b**2*d - 6*b*q**2 + c*d*q**2 + d*e*q + d",
+    "b": "6*a*q**2 + 2*b*c*q + b*e + 4*d*q**3"
+  },
+  "basis": [
+    "1",
+    "q",
+    "q**2",
+    "q**3",
+    "q**4",
+    "a",
+    "a*q",
+    "b",
+    "b*q"
+  ],
+  "coefficient_ring": "Q[c,d,e]",
+  "numerator_words": [
+    "1",
+    "q",
+    "q**2",
+    "q**3",
+    "q**4",
+    "q**5",
+    "a",
+    "a*q",
+    "a*q**2",
+    "a*q**3",
+    "a*q**4",
+    "b",
+    "b*q",
+    "b*q**2",
+    "b*q**3",
+    "b*q**4",
+    "b**2",
+    "b**2*q",
+    "b**2*q**2"
+  ],
+  "exact_primitives": [
+    "q",
+    "q**2",
+    "q**3",
+    "a",
+    "a*q",
+    "a*q**2",
+    "b",
+    "b*q",
+    "b*q**2",
+    "b**2"
+  ],
+  "matrix_determinant": "3251404800",
+  "kappa": "d*(4*c - d**2 + 8)*(16*c**2 - 8*c*d**2 - 32*c + d**4 + 8*d**2 + 64)/1024",
+  "theta_basis_coefficients": [
+    "-c*d*(12*c - d**2)/840",
+    "-c*d*e*(12*c - d**2)/840",
+    "d*(5184*c**3 - 4912*c**2*d**2 + 1260*c*d**4 - 105*d**6 - 92160)/107520",
+    "-2*d*e/21",
+    "-d*(44*c - 7*d**2)/280",
+    "c*e*(12*c - d**2)/420",
+    "(96*c**3 - 44*c**2*d**2 + 3*c*d**4 - 2880)/1680",
+    "-(456*c - 3*d**2 - 80*e**2)/420",
+    "-e*(208*c - 9*d**2)/840"
+  ],
+  "theta_exact_primitive": "-(-48*a*c**2 + 4*a*c*d**2 + 720*a*q**2 + 768*b*c*q + 6*b*d**2*q + 320*b*e - 12*c**2*d*q + c*d**3*q + 740*d*q**3)/1680",
+  "checks": {
+    "matrix_invertible_generically": true,
+    "literal_polynomial_J_identity": true,
+    "full_generic_reduction_identity": true
+  }
+}

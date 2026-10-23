@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "discriminant_factor": true,
+    "root_log_exact_relation": true,
+    "entire_source_differential": true,
+    "trace_F_is_one": true,
+    "actual_Q_log_correction": true
+  },
+  "status": "Exact closed trace-free root-log family and source identity; no closed eta/current completing the source."
+}

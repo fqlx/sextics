@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "count": 45,
+  "checks": [
+    "actual physical density moment clears Delta",
+    "physical N residue including i inverse",
+    "forced Ssrc residue target",
+    "paired PE PD cancel i inverse squared residue",
+    "paired PE PD give source residue L1",
+    "cubic source residue L2 from i squared lift",
+    "exact L3 times v operator identity",
+    "literal all-pole A B transport product rule",
+    "literal all-pole Z transport product rule",
+    "literal logarithmic A transport product rule",
+    "1: authoritative source array is Ssrc residue",
+    "1: t array binds RIGHT U applied to Ssrc",
+    "1: H array binds RIGHT V applied to Ssrc",
+    "1: PE residue f=2 t_u",
+    "1: PD residue g=(theta+2)t",
+    "1: CRT value restores cubic residue",
+    "1: actual forced residue served",
+    "2: authoritative source array is Ssrc residue",
+    "2: t array binds RIGHT U applied to Ssrc",
+    "2: H array binds RIGHT V applied to Ssrc",
+    "2: PE residue f=2 t_u",
+    "2: PD residue g=(theta+2)t",
+    "2: CRT value restores cubic residue",
+    "2: actual forced residue served",
+    "3: authoritative source array is Ssrc residue",
+    "3: t array binds RIGHT U applied to Ssrc",
+    "3: H array binds RIGHT V applied to Ssrc",
+    "3: PE residue f=2 t_u",
+    "3: PD residue g=(theta+2)t",
+    "3: CRT value restores cubic residue",
+    "3: actual forced residue served",
+    "1/2: authoritative source array is Ssrc residue",
+    "1/2: t array binds RIGHT U applied to Ssrc",
+    "1/2: H array binds RIGHT V applied to Ssrc",
+    "1/2: PE residue f=2 t_u",
+    "1/2: PD residue g=(theta+2)t",
+    "1/2: CRT value restores cubic residue",
+    "1/2: actual forced residue served",
+    "5: authoritative source array is Ssrc residue",
+    "5: t array binds RIGHT U applied to Ssrc",
+    "5: H array binds RIGHT V applied to Ssrc",
+    "5: PE residue f=2 t_u",
+    "5: PD residue g=(theta+2)t",
+    "5: CRT value restores cubic residue",
+    "5: actual forced residue served"
+  ],
+  "exact_points": [
+    {
+      "w": "1",
+      "u": "9/32",
+      "r_scaled": "256/3",
+      "Ssrc_residue_scaled": "118784"
+    },
+    {
+      "w": "2",
+      "u": "1/4",
+      "r_scaled": "-324",
+      "Ssrc_residue_scaled": "-15552"
+    },
+    {
+      "w": "3",
+      "u": "81/448",
+      "r_scaled": "-702464/675",
+      "Ssrc_residue_scaled": "-298718601216/9765625"
+    },
+    {
+      "w": "1/2",
+      "u": "1/8",
+      "r_scaled": "162/5",
+      "Ssrc_residue_scaled": "634716/3125"
+    },
+    {
+      "w": "5",
+      "u": "25/224",
+      "r_scaled": "-7112448/1025",
+      "Ssrc_residue_scaled": "-23936232499200/115856201"
+    }
+  ],
+  "physical_moment": "alpha(hsrc)=54 i^3 wT/(JN)dw, T=1+w\u00b3,N=9i\u00b2w\u00b2-16JT",
+  "physical_residue": "rho(hsrc)=i^-1 r, r=32T\u00b3/[3w\u00b2(2-w\u00b3)] on N=0,u=J/i\u00b2",
+  "actual_forcing": "rho((D-6)(D-5)hsrc)=i^-1[4u\u00b2r_uu+14ur_u+6r]",
+  "all_pole_statement": "A,B,Z transport identities are literal modulo rational exact forms. Initial h,F,G moments have only finite N poles. P3(vt) moment is d_i\u00b3(t dlogv) modulo exact, and t divisible w*T*M kills every finite non-N dlogv pole. Correct N match therefore proves all finite residues vanish; infinity follows by residue theorem.",
+  "full_current_defect": "e^-7(Z-1)K chi=div[e^-7 Kchi Z]+e^-7 K(B0-1/2)chi, divZ=2/3. The final kernel correction is retained.",
+  "source_sha256": "7e80b44e7753af9d726cd5fe3bedbafb21818e3facb94f70d53e8771c1c4cb29",
+  "scope": "Source residue binding and rational Hermite existence; no explicit K, cancellation of its kernel correction, primitive, Lean result or solve claim."
+}

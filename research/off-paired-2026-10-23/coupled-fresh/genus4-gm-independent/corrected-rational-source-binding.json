@@ -1,0 +1,38 @@
+{
+  "source": {
+    "authoritative_record": "actual_Ssrc_residue",
+    "coordinates": "i,J,w; u=J/i\u00b2, T=1+w\u00b3",
+    "physical_coefficients": "k=3iw/(4T),A=k\u00b2T/J,R=A-1,S=k^6/R",
+    "Delta": "3RS w\u00b3-3RS-8R w\u00b3+R-S w\u00b3+2S",
+    "h": "3i w\u00b3/(32J T\u00b2 Delta)",
+    "v": "64Jw N T\u00b2/[9i\u00b2(256T^5 N+729i^6 Jw^6)]",
+    "N": "9i\u00b2w\u00b2-16J(1+w\u00b3)",
+    "operators": "A=partial_i-v_i/v_w partial_w,B=partial_J-v_J/v_w partial_w,Z=v/v_w partial_w,D=6Z-2iA-2JB",
+    "actual_forcing": "Ssrc=(D-6)(D-5)h",
+    "h_finite_N_residue": "i^-1*r_h(u,w)",
+    "r_h_coefficients_low_to_high": [
+      "-243/(u*(1024*u**3 - 27))",
+      "-648/(1024*u**3 - 27)",
+      "729/(8*u**2*(1024*u**3 - 27))"
+    ],
+    "Ssrc_finite_N_residue": "i^-1*rTarget(u,w)",
+    "rTarget_rule": "2(theta+1)(2theta+3)r_h=4u\u00b2r_h_uu+14u*r_h_u+6r_h, theta=u*partial_u in cubic field",
+    "rTarget_coefficients_low_to_high": [
+      "-2916*(3407872*u**6 - 73728*u**3 + 1215)/(u*(1024*u**3 - 27)**3)",
+      "-7776*(1048576*u**6 - 11520*u**3 + 1215)/(1024*u**3 - 27)**3",
+      "729*(35127296*u**6 - 967680*u**3 + 10935)/(4*u**2*(1024*u**3 - 27)**3)"
+    ],
+    "cubic": "9w\u00b2-16u(1+w\u00b3)=0",
+    "cubic_derivation_w_u_coefficients": [
+      "-192*u/(1024*u**3 - 27)",
+      "-27/(2*u*(1024*u**3 - 27))",
+      "72/(1024*u**3 - 27)"
+    ]
+  },
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "operator_array_sha256": {
+    "U": "162aff3a2f8cc76901ce73e895d91f6b17dc3480f0b1d70ffa5f586296bcd702",
+    "V": "a621f67ecda88e65646b119c9ef5b4fba4e24fedf034b076dcc841016e5d2d5f"
+  },
+  "hash_convention": "UTF-8 json.dumps(object,sort_keys=True,separators=(comma,colon)); U,V each hash their complete low-to-high string array"
+}

@@ -1,0 +1,33 @@
+{
+  "prime": 1009,
+  "physical_point": {
+    "R": 1,
+    "S": 1,
+    "z": 1,
+    "k": 1
+  },
+  "pivot_derivatives": [
+    "R",
+    "S",
+    "z",
+    "RR",
+    "RS",
+    "Rz",
+    "SS",
+    "RRR"
+  ],
+  "coefficients_c": [
+    724,
+    723,
+    793,
+    10,
+    976,
+    68,
+    503,
+    597
+  ],
+  "literal_source_match": "psi_hat_b = sum_i c_i * b0 * partial^alpha_i chi + d_q(p_psi-sum_i c_i*p_i)",
+  "generic_formula": "c=adj(M)K_psi/det(M), where M uses compact b0*chi jet columns",
+  "coefficient_warning": "modular point coefficients only; universal determinant rational lift not evaluated",
+  "certificate": false
+}

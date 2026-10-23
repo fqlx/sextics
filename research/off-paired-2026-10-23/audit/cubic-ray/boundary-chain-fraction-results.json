@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "count": 20,
+  "checks": [
+    "actual_J_second_normal_raw_coefficient",
+    "actual_J_first_ordered_residue_sign_positive",
+    "auxiliary_cubic_normalization",
+    "actual_relative_threeform_decomposition",
+    "full_dlog_closed_u_t_component",
+    "full_dlog_closed_v_t_component",
+    "parameter_dlog_commutation_t",
+    "parameter_dlog_commutation_u",
+    "parameter_dlog_commutation_v",
+    "explicit_full_parameter_jet_primitive",
+    "actual_relative_parameter_jet_identity",
+    "mixed_Y_homotopy_component_cancellation",
+    "truncated_dlog_homotopy_is_not_valid",
+    "absolute_external_correction_is_generically_nonzero",
+    "all_191_finite_plane_operator_columns",
+    "finite_operator_identity_at_lambda_zero",
+    "twenty_plane_representative_degree_counts",
+    "actual_B_zero_Fermat_locus_proves_physical_generic_invertibility",
+    "Y_Euler_defect_retained",
+    "boundary_Euler_correction_double_log_residue_zero"
+  ],
+  "arithmetic": "Python standard-library Fraction polynomial/rational dictionaries; no primary script imports",
+  "M_columns_checked": 191,
+  "plane_representatives": 20,
+  "relative_chain": "alpha=sigma wedge h+d_rel(F Omega+rho wedge h), h=d_rel log[t/(G-t)]",
+  "absolute_extension": "alpha_hat=alpha_rel+sum_D[DF-L DG/(G-t)] dz_D wedge Omega",
+  "absolute_reduction": "alpha_hat=sigma wedge d_abs ell+d_abs(F Omega+rho wedge d_abs ell)-d_ext rho wedge d_abs ell",
+  "scope": "Finite relative source/jet chain reduction verified, with explicit nonzero absolute external corrections. Does not serve remaining plane classes, supply a scalar primitive, or prove a certificate. No certificate has been found."
+}

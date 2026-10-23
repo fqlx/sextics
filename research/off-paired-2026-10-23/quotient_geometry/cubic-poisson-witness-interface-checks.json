@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "HC_bracket": true,
+    "BC_bracket": true,
+    "HB_bracket": true,
+    "fg_bracket": true,
+    "N_preserves_ambient_f": true,
+    "N_partial_divergence": true,
+    "N_implicit_divergence": true,
+    "actual_current_product_rule": true,
+    "partial_ambient_divergence": true,
+    "cubic_discriminant_identity": true,
+    "source_low_pole_identity": true,
+    "p_current_contact_formula": true,
+    "coordinate_jacobian": true,
+    "piola_coordinate_0": true,
+    "piola_coordinate_1": true,
+    "piola_coordinate_2": true,
+    "piola_coordinate_3": true,
+    "piola_coordinate_4": true,
+    "source_pullback": true
+  },
+  "status": "Actual Hamiltonian first current plus exact correction and original-coordinate Piola interface; no complete current."
+}

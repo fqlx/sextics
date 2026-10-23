@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "physical_integrating_factor": true,
+    "second_order_lame": true,
+    "second_order_physical_concomitant": true,
+    "third_order_physical_concomitant": true
+  },
+  "status": "Exact conditional physical current identities; scalar forcing remains unsolved."
+}

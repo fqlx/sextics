@@ -1,0 +1,213 @@
+# Independent audit of the pure-component kappa obstruction
+
+The stated pure-component linear constraints are obstructed with arbitrary
+rational poles, including over finite algebraic extensions of the original
+four-dimensional base. The relative-closed-time construction also satisfies
+these obstructed constraints. The full coupled rank-two current and arbitrary
+closed-two-form currents remain open. No certificate has been found.
+
+This is distinct from the public obstruction to the old three-dimensional
+contact current. The new original cubic-ray coordinates are
+\((x,a,u,v)=(X_1,X_2,Y_1/Y_0,Y_2/Y_0)\) on \(X_0=1\), and
+
+\[
+H=1+x^6+a^6,\quad C=1+u^6+v^6,\quad
+B=xu/2+x^3auv/2+xav/3,\quad \Omega_0=dx\wedge da\wedge du\wedge dv.
+\]
+
+With \(s=Y_0^2\), the actual sextic is \(f=H+Bs+Cs^3\), and its audited
+physical residue is \(R\Omega_0\), where \(R=Bs/(3Cs^2+B)^3\).
+
+## The exact canonical equations and restricted scope
+
+Put \(\kappa=B^3/(CH^2)\), \(\lambda=d\log\kappa\), and use the canonical
+trace-free basis \((V,W)\), with
+
+\[
+V=-H/[s(3Cs^2+B)]-1/3,\qquad W=HC\,R.
+\]
+
+The independently checked derivative-of-basis column convention gives
+
+\[
+dV=-2W\lambda,\qquad
+dW=\frac{3V+(27-2\kappa)W}{4\kappa+27}\lambda.
+\]
+
+Its gauge determinant in the original trace-free cubic basis is
+\(2B^3C^2H/(4B^3+27CH^2)^2\ne0\). Thus, for two ordinary base currents
+\(A,B_{\rm vec}\), the complete equations are
+
+\[
+\operatorname{div}A+
+ \frac3{4\kappa+27}B_{\rm vec}(\log\kappa)=0,
+\]
+\[
+\operatorname{div}B_{\rm vec}-2A(\log\kappa)+
+ \frac{27-2\kappa}{4\kappa+27}B_{\rm vec}(\log\kappa)
+=\frac1{HC}.
+\]
+
+The pure \(V\) restriction \(B_{\rm vec}=0\) requires
+
+\[
+\operatorname{div}A=0,\quad A(\log\kappa)=-\frac1{2HC},
+\quad \operatorname{div}(\kappa A)=-\frac{B^3}{2H^3C^2}.
+\]
+
+The pure \(W\) restriction \(A=0\) requires
+
+\[
+B_{\rm vec}(\log\kappa)=0,\quad
+\operatorname{div}B_{\rm vec}=\frac1{HC},\quad
+\operatorname{div}(\kappa B_{\rm vec})=\frac{B^3}{H^3C^2}.
+\]
+
+Either would make the same rational four-form
+
+\[
+\Psi=\frac{B^3}{H^3C^2}\Omega_0
+\]
+
+exact. The coupled equations do not force either pure restriction, so no
+obstruction to the complete system follows from this argument.
+
+The same moment gives necessary conditions on a complete coupled solution.
+Write \(D=B_{\rm vec}\). From the first equation,
+\(\operatorname{div}A=0\) is equivalent to \(D(\log\kappa)=0\). Under that
+restriction the second gives
+
+\[
+\operatorname{div}[\kappa(D-2A)]=\frac\kappa{HC},
+\]
+
+the forbidden moment. Independently, the full coupled equations give
+
+\[
+\operatorname{div}[\kappa D+2\kappa^2 A]
+=\frac\kappa{HC}+2\kappa(1+2\kappa)A(\log\kappa),
+\]
+
+using \(1-(27-2\kappa)/(4\kappa+27)=2\kappa\cdot3/(4\kappa+27)\).
+Thus \(A(\log\kappa)=0\) is also impossible. Every complete coupled
+solution must have all three rational functions \(\operatorname{div}A\),
+\(A(\log\kappa)\), and \(D(\log\kappa)\) not identically zero. This
+argument does not require \(\operatorname{div}D\ne0\), and still gives no
+obstruction to the full coupled system.
+
+For finite-extension scope, the precise excluded objects are fields
+satisfying these displayed linear constraints after extending the four base
+derivations. Normalized trace commutes with those derivations and preserves
+the constraints, giving a forbidden base-rational field. In referring to
+the canonical module after base change, its two basis vectors must remain
+abstract module vectors. On a selected scalar sheet after adjoining the cubic
+root, scalar functions \(V,W\) are not linearly independent over that enlarged
+field. No stronger conclusion about arbitrary scalar single-term currents on
+such a sheet is being inferred from a component comparison.
+
+## A nonzero proper iterated residue
+
+Homogenize on \(\mathbb P^2_X\times\mathbb P^2_Y\) with coordinates
+\([t:x:a]\), \([w:u:v]\):
+
+\[
+H=t^6+x^6+a^6,\quad C=w^6+u^6+v^6,
+\]
+\[
+B=t^3xuw/2+x^3auv/2+t^2xavw/3.
+\]
+
+The global rational form is
+
+\[
+\Psi=\frac{t^3w^3B^3\,\Omega_X\wedge\Omega_Y}{H^3C^2}.
+\]
+
+Here \(B\) has bidegree \((4,2)\), its displayed numerator has bidegree
+\((15,9)\), and the two projective volume forms have weights \((3,3)\).
+Both degree balances are therefore exact. Its affine chart is the actual
+four-form above.
+
+Project the numerator to the \(u,v\) exponent class \((3,3)\) modulo six.
+This is a character projection for the Fermat \(Y\)-curve; including its
+projective volume shifts both form characters by one, without affecting
+the projection argument. Only the cube of \(x^3auv/2\) contributes:
+
+\[
+N=\frac18t^3x^9a^3w^3u^3v^3.
+\]
+
+At pole order three in \(H\), use the single explicit multiplier
+
+\[
+M_x=\frac1{48}t^3x^4a^3w^3u^3v^3,\qquad M_xH_x=N.
+\]
+
+The pole reduction \(\partial_x M_x/(3-1)\) gives
+
+\[
+\frac1{24}(t^3x^3a^3)(w^3u^3v^3)
+\]
+
+at pole order two in each divisor. The degree-nine monomial on either
+Fermat factor is nonzero in its Jacobian ring: all three exponents are
+three, whereas the Jacobian ideal is generated by the fifth powers.
+Equivalently, coefficient at this product monomial is a cokernel functional
+annihilating every multiple of all six Jacobian generators and has nonzero
+pairing \(1/24\).
+
+The two Fermat sextic curves are smooth. The standard Griffiths residue
+identification places each of these pole-two classes in \(H^{0,1}\), so
+their product is a nonzero \(H^{0,2}\) class on the proper smooth surface
+\(S=\{H=0\}\times\{C=0\}\). The selected \(Y\) character occurs in no
+other source term, so its component cannot be cancelled by the rest of
+\(t^3w^3B^3\).
+
+Iterated rational de Rham residue of an exact ambient four-form would be
+exact in the function field of \(S\), regardless of additional primitive
+poles. The kernel of proper \(H^2(S)\) restriction to that function field
+is generated by divisors and has type \((1,1)\). The nonzero \((0,2)\)
+component therefore cannot vanish. This proves the required failure of
+rational exactness of \(\Psi\), using the same classical residue and
+localization inputs as the public contact proof. This argument is not a Lean
+formalization.
+
+## Relative-closed-time forms are in the pure-W restriction
+
+Let \(\omega_0\) be an exact rational symplectic two-form with
+\(\omega_0^2/2=\Omega_0\), and let \(d\theta_0=\omega_0\). For example,
+\(\omega_0=dx\wedge da+du\wedge dv\) and
+\(\theta_0=x\,da+u\,dv\). Suppose a rational one-form \(\eta\) satisfies
+
+\[
+\lambda\wedge d\eta=0,\qquad
+\lambda\wedge\eta\wedge\omega_0=\frac{\Omega_0}{HC}.
+\]
+
+These are precisely the needed relative closure and trace conditions. Then
+
+\[
+\chi=\theta_0\wedge\lambda\wedge\eta,
+\quad d\chi=\frac{\Omega_0}{HC},\quad \lambda\wedge\chi=0.
+\]
+
+Writing \(\chi=\iota_{B_{\rm vec}}\Omega_0\) yields the pure-W constraints
+above. More directly,
+
+\[
+d(\kappa\chi)=\frac{\kappa}{HC}\Omega_0=\Psi,
+\]
+
+contradicting the proper residue. This remains true for arbitrary rational
+\(\kappa\)-dependent coefficients and for such forms over finite algebraic
+extensions, by normalized trace. The condition of relative closure is
+essential; arbitrary closed two-forms need not have the shape
+\(\lambda\wedge\eta\), so the complete closed-two-form interface remains
+unexcluded.
+
+`verify_pure_component_fraction.py` passed 33 independent exact checks,
+recorded in `pure-component-fraction-results.json`, using standard-library
+Fraction polynomial arithmetic. It verifies the full canonical gauge,
+the actual normalization, homogeneous numerator, character projection,
+explicit pole reduction and nonzero product Jacobian pairing. No further
+pure-component or relative-closed-time search is mathematically useful.

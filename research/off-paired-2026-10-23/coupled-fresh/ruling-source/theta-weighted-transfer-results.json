@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "normalized_theta_contiguity": true,
+    "polynomial_compact_representative": true,
+    "kappa_e_constant": true,
+    "compact_e_derivative": true,
+    "full_weighted_current_identity": true,
+    "companion_e_compact_derivative": true,
+    "companion_infinity_source_binding": true,
+    "coupled_theta_compact_transfer": true,
+    "finite_theta_residue": true,
+    "finite_double_pole_correction": true,
+    "infinity_theta_residue": true,
+    "infinity_counterterm_sign": true,
+    "weighted_K_derivative": true,
+    "hermite_integration_constant_derivative": true
+  },
+  "passed": true,
+  "certificate": false,
+  "Theta": "b^3*dq/(3*q^2)",
+  "contiguity": "partial_e Theta=(B0-1/2)zeta+d_q(b/6)",
+  "F": "b^3/(3*q)",
+  "kappa": "d*((c-d^2/4)^3+8)/16",
+  "compact_form": "Omega=Theta+(e/2)zeta+d_q F+kappa*omega",
+  "compact_numerator_over_J": "a*e*q**2 + 2*b**3*c + 4*b**2*d*q**2 + 6*b*q**4 + c**3*d*q**2/16 - 3*c**2*d**3*q**2/64 + 3*c*d**5*q**2/256 - d**7*q**2/1024 + d*e*q**3/2 + d*q**2/2",
+  "arbitrary_coefficient": "L(B0-1/2)zeta=partial_e(LTheta)+d_q(-Lb/6+L_e F)-L_e Omega+(e/2)L_e zeta+kappa L_e omega",
+  "actual_weight": "L=e^(-7)K; L_e=e^(-8)(D-7)K",
+  "integration_freedom": "K -> K+v*C(i,Jinv), L -> L+e^(-1)C(i,Jinv)",
+  "coupled_target": "Zop=(e/2)*L_e, Xop=(kappa/s)*L_e, s=d*Cp/2",
+  "coupled_compact_source": "-L_e*Omega-(kappa/s)*L*a*dq/J-kappa*L*partial_e(omega)",
+  "remaining": "All eight compact components of -L_e Omega and both displayed zeta/omega coefficients remain to be served."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "Exact source-preserving compact-only three-row forcing; primitive open",
+  "source_binding_sha256": "8b95f1290dc66de13fbedbcfd35015ee19595e5c36c574a9701f3570a4e811c4",
+  "convention": "positive Ssrc; negate full reconstruction for original source",
+  "weights": "f=e^-5F, g=e^-5G, h=e^-1Hpot, Hsrc=e^-5hsrc, M=e^-7K",
+  "X": "Hsrc_e E+B_PE(f,1)+B_PD(g,1)+B_P3(h,1)-M Z",
+  "Pa_primitive": "\u00b1sqrt(-1) contraction(X,dc wedge dd wedge de)",
+  "Pa_source": "\u00b1sqrt(-1) K di wedge dj wedge dh/6, h=e^-3",
+  "compact_identity": "M(B0-1/2)zeta=div(X*zeta)-V_c*zeta_c-V_d*zeta_d-V_e*zeta_e",
+  "compact_differentials": {
+    "zeta_c": "b*q*dq/J",
+    "zeta_d": "q^3*dq/J",
+    "zeta_e": "b*dq/J"
+  },
+  "rational_auxiliary_S": "(Z+J*B+1)Hpot",
+  "rational_auxiliary_T": "Z*S",
+  "C": "(-Z-D/2+2)F-(Z+J*B)G-A^2 Hpot+i*v*(Hpot/12-S/6-T/3)",
+  "Dbar": "-2*B G+v*(Hpot/6-S/12-T/6)",
+  "Ebar": "(D-5)(hsrc-F)+v*(Hpot/24-S/12-2*T/3)",
+  "normalized_vector": "V_c=e^-5 C, V_d=j*e^-6 Dbar, V_e=e^-6 Ebar",
+  "rational_w_forcing": "-v_w/(12*j*v^2)*(C*beta_bq+j*Dbar*beta_q3+Ebar*beta_b), j^2=J",
+  "scope": "All finite and infinity residues of the remaining compact source are zero. The complete compact rational primitive remains to be constructed. This does not establish a sextic certificate.",
+  "checks": {
+    "PE scalar Green current at constant residue": true,
+    "PD scalar Green current at constant residue": true,
+    "P3 scalar Green current at constant residue": true,
+    "full positive source reduction divergence": true,
+    "literal kernel to compact product rule": true,
+    "Z volume divergence": true,
+    "actual weight restores one half correction": true,
+    "literal compact first derivative c": true,
+    "literal compact first derivative d": true,
+    "literal compact first derivative e": true,
+    "F c-current weight": true,
+    "F e-current weight": true,
+    "G c-current weight": true,
+    "H Astar weight": true,
+    "H Bstar Astar weight": true
+  },
+  "count": 15
+}

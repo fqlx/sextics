@@ -1,0 +1,19 @@
+{
+  "status": "Exact full two-component selected-sheet section; no target Gysin matching or primitive",
+  "checks": [
+    "canonical-V-connection",
+    "canonical-W-connection",
+    "canonical-F-value",
+    "normalized-S3-kappa",
+    "normalized-S3-V",
+    "normalized-S3-W",
+    "graph-clearing"
+  ],
+  "check_count": 7,
+  "Q": "(u^6+v^6)^2/(u^6*v^6)",
+  "kappa": "(Q - 16)**3/(16*Q**2)",
+  "V": "(2*Q - 32)/(3*Q + 96)",
+  "W": "-16*Q*(Q - 16)/(Q + 32)**3",
+  "graph": "16*N*M^4*B^3-H^2*C*(M^2-16*N)^3=0, M=u^6+v^6,N=u^6*v^6",
+  "warning": "The rational section is necessary residue data on one graph sheet; its Gysin image has not been matched to the actual source"
+}

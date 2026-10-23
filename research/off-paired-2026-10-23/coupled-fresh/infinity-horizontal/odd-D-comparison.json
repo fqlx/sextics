@@ -1,0 +1,5 @@
+{
+  "odd_compact_representative": "b*lam*(8*A**3*C*a**6*q*rho**2 + 2*A**3*E*a**6*b**2 + 4*A**3*E*a**6*rho**2 - 16*A**2*B*C*a**4*b**2*q*rho**2 - 6*A**2*B*E*a**4*b**4 - 3*A**2*B*E*a**4*b**2*rho**2 - 3*A**2*B*E*a**4*rho**4 + 8*A*B**2*C*a**2*b**4*q*rho**2 - 9*A*B**2*E*a**2*b**6 + 24*A*B**2*E*a**2*b**4*rho**2 - 9*A*B**2*E*a**2*b**2*rho**4 + B**3*E*b**8 - B**3*E*b**6*rho**2)/(4*A*B*rho*(b - rho)**2*(b + rho)**2*(A*a**2 - B*b**2)**3)",
+  "ratio_to_eta_b": "lam*(8*A**3*C*a**6*q*rho**2 + 2*A**3*E*a**6*b**2 + 4*A**3*E*a**6*rho**2 - 16*A**2*B*C*a**4*b**2*q*rho**2 - 6*A**2*B*E*a**4*b**4 - 3*A**2*B*E*a**4*b**2*rho**2 - 3*A**2*B*E*a**4*rho**4 + 8*A*B**2*C*a**2*b**4*q*rho**2 - 9*A*B**2*E*a**2*b**6 + 24*A*B**2*E*a**2*b**4*rho**2 - 9*A*B**2*E*a**2*b**2*rho**4 + B**3*E*b**8 - B**3*E*b**6*rho**2)/(2*A*B*rho*(b - rho)**2*(b + rho)**2*(A*a**2 - B*b**2)**2)",
+  "source_match": "not yet compact-reduced; no claimed proportionality"
+}

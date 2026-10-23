@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "E_e": true,
+    "E_u": true,
+    "L1_e": true,
+    "L2_e": true,
+    "A1": true,
+    "A2": true,
+    "K": true
+  },
+  "status": "Exact current criterion only; no field satisfying it."
+}

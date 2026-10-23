@@ -1,0 +1,79 @@
+{
+  "status": "Actual compact i-current for Euler source; density and inverse-branch corrections remain open",
+  "coordinates": "native i,j,v; physical i,j,w; D=-2i partial_i-j partial_j+6v partial_v",
+  "basis": [
+    "1",
+    "x",
+    "x^3",
+    "x^4-v*(i-j^2/4)*(i-5*j^2/4)*x^2/8",
+    "a",
+    "a*x+j*x^2/2",
+    "y",
+    "y*x"
+  ],
+  "psi_i": "y dx/x^2=(x/a)dx",
+  "psi_i_literal_derivatives": [
+    "partial_i Psi_i=nu_b",
+    "partial_j Psi_i=omega"
+  ],
+  "psi_i_reduction": "Psi_i=zeta_hat/2+j*omega+nu dot Ci+d_x Gi",
+  "Ci": [
+    "0",
+    "0",
+    "-1/6*j",
+    "0",
+    "0",
+    "6",
+    "2*i - 2/3",
+    "-1/3*i"
+  ],
+  "omega_coefficient": "j",
+  "Gi": "-y/x-y/3",
+  "D_zeta_literal": "nabla_D zeta_hat=3*zeta_hat+nu_b-d_x y",
+  "Ui_differential": "(2-nabla_D)Psi_i+zeta_hat/2",
+  "Ui_compact_definition": "-e_b/2+(2-nabla_D)(Ci+j*omega)",
+  "Ui_common_denominator": "4503599627370496/4782969",
+  "Ui_numerators": [
+    "0",
+    "0",
+    "2251799813685248/14348907*j",
+    "0",
+    "0",
+    "0",
+    "9007199254740992/14348907",
+    "4503599627370496/14348907*i"
+  ],
+  "Ui_exact_fiber_primitive": "y/2+(2-D)Gi-fiber_primitive_D dot (Ci+j*omega)",
+  "source_identity": "partial_i Ui+Gamma_i Ui=(4I-GammaD)e_b+e_bq/2",
+  "native_current": "P_i=t Ui,P_j=P_v=0,t=hsrc/(6v^2)",
+  "remaining_native": "-partial_i|j,v(t)*Ui-t*e_bq/2",
+  "physical_piola": "P_i=v_w*t*Ui=(a0/6)*Ui,P_w=-v_i*t*Ui,P_j=0; a0=54i^3wT/(j^2N)",
+  "remaining_physical": "-v_w*(partial_i|j,v t)*Ui-(a0/12)*e_bq; the derivative retains w(i,j,v)",
+  "i_only_warning": "The physical P_w term is essential. This does not solve fixedj,w i-only integration.",
+  "literal_current": "Use all eight stored connection fiber primitives for Ui, plus Ui_exact_fiber_primitive; no compact or residue component is dropped.",
+  "connection_hashes": {
+    "ij": "c12ea0753d7f0eb6e67e1f48fca65cb0fd3e7f5603dba271b7ee8867f594c1bb",
+    "V": "99f6c100091c1d2b04c21957e771542604e8be8a52710cd86ce0d6377cca9b07"
+  },
+  "checks": 16,
+  "check_names": [
+    "all infinity companion of Ui cancels",
+    "generic compact i source identity row0",
+    "generic compact i source identity row1",
+    "generic compact i source identity row2",
+    "generic compact i source identity row3",
+    "generic compact i source identity row4",
+    "generic compact i source identity row5",
+    "generic compact i source identity row6",
+    "generic compact i source identity row7",
+    "generic compact i source identity row8",
+    "literal implicit i curve derivative",
+    "literal partial_i Psi_i equals nu_b",
+    "literal partial_j Psi_i equals omega",
+    "literal Psi_i compact finite infinity exact decomposition",
+    "literal D zeta Cartan correction",
+    "constant finite Pa residue after Ui correction"
+  ],
+  "certificate": false,
+  "elapsed_seconds": 0.657
+}

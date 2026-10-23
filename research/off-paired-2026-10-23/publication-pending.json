@@ -1,0 +1,63 @@
+{
+  "status": "handoff_publication_authorized_prepared",
+  "reason": "User explicitly stopped goal and requested a GitHub handoff on 2026-10-23. New frozen packet and handoff are authorized. Original missing Mac publication.json remains unaudited; preserve original gist and existing comment history.",
+  "discussion_url": "https://github.com/hodge-computer/sextics/discussions/57#discussioncomment-19125896",
+  "comment_node": "DC_kwDOVLOOJc4BI9aI",
+  "comment_author": "fqlx",
+  "read_body_sha256": "8dcbbd4403d2d3d5d164632b83366fe5681989d562c0453913bc70bd49e89cb6",
+  "draft": "HANDOFF-2026-10-23.md",
+  "new_files_not_uploaded": true,
+  "last_live_read_utc": "2026-10-23T00:13:22.253905+00:00",
+  "new_public_reply": {
+    "author": "benediamond",
+    "url": "https://github.com/hodge-computer/sextics/discussions/57#discussioncomment-19129901",
+    "created_utc": "2026-10-22T18:10:59Z",
+    "audited_packet_sha256": "06ee0fdf55a3a5a2d82d5d0293df850220eb7afa1fe5fbe96f9b80a656fc31de"
+  },
+  "latest_public_reply": {
+    "author": "deanodotdotdot",
+    "url": "https://github.com/hodge-computer/sextics/discussions/57#discussioncomment-19130946",
+    "updated_utc": "2026-10-22T19:05:13Z",
+    "gist": "https://gist.github.com/deanodotdotdot/ba4a194c6daf57561dc81d5eb6dfd2af",
+    "local_packet": "/workspace/off-paired-public-three-component",
+    "portable_checker": "passed against live immutable target"
+  },
+  "newest_public_reply": {
+    "author": "deanodotdotdot",
+    "url": "https://github.com/hodge-computer/sextics/discussions/57#discussioncomment-19131907",
+    "updated_utc": "2026-10-22T20:21:02Z",
+    "gist": "https://gist.github.com/deanodotdotdot/f335056ed117252a6057d57bb9a36d8e",
+    "gist_updated_utc": "2026-10-22T20:50:33Z",
+    "local_packet": "/workspace/off-paired-public-quotient-obstructions",
+    "audit": "audit/PUBLIC-QUOTIENT-READ-AUDIT.md",
+    "portable_threefold_checker": "all five cases passed; unchanged contributor checker rerun, not independent reimplementation"
+  },
+  "latest_read_attempt": {
+    "method": "public logged-out GitHub discussion HTML via urllib; connected GitHub fetch does not support discussions",
+    "result": "Successful full rendered thread read: one own comment and the same three replies; no newer reply visible. No write attempted.",
+    "html_file": "discussion-public-latest.html",
+    "text_file": "discussion-public-latest.txt",
+    "html_sha256": "557d71e42f94a7d5c116bb7ac7ccfeb67a28d14589edfff5ff41ed257e58ff8d",
+    "approximate_utc": "2026-10-22T23:43:04.175221+00:00"
+  },
+  "last_public_html_read_utc": "2026-10-22T23:43:04.175221+00:00",
+  "render_only_binding_refresh": {
+    "verified_utc": "2026-10-22T23:43:04.175221+00:00",
+    "upstream_commit": "59d570e2823d7c605decc3055dae392ec5b8d5f2",
+    "research_worktree_commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+    "branches_and_changes_preserved": true,
+    "worktree_clean": true,
+    "local_instance_rec_sha256": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+    "live_instance_rec_sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d",
+    "exact_F_A_q_and_variable_order_unchanged": true,
+    "target_tuple_sha256": "f7fd994e2807b06da49544abcf508d34afead1aac158c551fa56339acd04167a",
+    "instance_change": "Rendering only: camera distance3.45 to3.29313",
+    "protected_workflow_docs_unchanged": true,
+    "off_paired_solution_files_present": [],
+    "live_discussion": "same one own comment and three replies, no new response",
+    "external_write": false
+  },
+  "goal_status": "stopped_at_user_request_unsolved",
+  "last_live_read_method": "Authenticated GitHub GraphQL, all comments/replies, both hasNextPage flags false; author fqlx and own comment node confirmed.",
+  "publication_scope": "New fork research branch, substantive handoff reply beneath existing own comment, minimal existing-summary correction and target rendering binding refresh. No solve PR."
+}

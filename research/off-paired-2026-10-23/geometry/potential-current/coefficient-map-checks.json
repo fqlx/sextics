@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "coefficient_jacobian": true,
+    "inverse_f_plus": true,
+    "inverse_e_plus": true,
+    "inverse_f_minus": true,
+    "inverse_e_minus": true
+  },
+  "status": "Exact source-coordinate identities only; no primitive."
+}

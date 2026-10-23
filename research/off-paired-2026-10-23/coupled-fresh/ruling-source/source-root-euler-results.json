@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "actual_source_Euler_moment": true,
+    "rational_moment_plus_log_derivative": true,
+    "linear_i6_root_equation": true
+  },
+  "status": "passed",
+  "source": "hsrc=(64/(729u))i^-7(T\u00b3/w\u2074) E0(w), u=J/i\u00b2,E0=i partial_i+2J partial_J at fixedv",
+  "rational_moment": "w**6/6 + w**3 - 1/(3*w**3)",
+  "retained_logarithmic_moment": "3 log(w)",
+  "scope": "exact source factorization; logarithmic coefficients are not valid rational current potentials unless explicitly canceled; no primitive claimed"
+}

@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "quartic_clearing": true,
+    "normalized_discriminant": true,
+    "actual_normal_F": true,
+    "actual_normal_toric": true,
+    "normal_jet_relation": true,
+    "actual_residue_source": true,
+    "Ferrari_resolvent": true,
+    "resolvent_conic": true
+  },
+  "status": "Exact normal model, second-pole source and finite correspondence; no primitive."
+}

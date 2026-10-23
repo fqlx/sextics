@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "universal_source_transfer": true,
+    "normalized_source_Cartan": true,
+    "root_polynomial_representative": true,
+    "lower_polynomial_representative": true,
+    "two_representatives_same_class": true,
+    "compact_derivative_interface": true,
+    "finite_simple_residue_cancellation": true,
+    "finite_double_pole_cancellation": true,
+    "other_q_zero_points_regular": true,
+    "finite_exact_potential_regular_at_Pb": true,
+    "base_seventh_coefficient": true,
+    "e_correction_no_residue": true,
+    "T_infinity_correction": true,
+    "full_infinity_residue": true,
+    "omega_counterterm_sign": true
+  },
+  "passed": true,
+  "Theta": "b\u00b3dq/(3q\u00b2)",
+  "source_transfer": "partial_E Theta=partial_B zeta literally; normalized partial_e Theta=(B0-1/2)zeta+d_q(b/6)",
+  "F_root": "b**3/(3*q)",
+  "F_lower": "-b/(3*q)",
+  "infinity_residue": "c0*d*(Cp\u00b3+8)/32,c0\u00b2=-1",
+  "kappa": "d*((c - d**2/4)**3 + 8)/16",
+  "compact_root_numerator": "a*e*q**2 + 2*b**3*c + 4*b**2*d*q**2 + 6*b*q**4 + c**3*d*q**2/16 - 3*c**2*d**3*q**2/64 + 3*c*d**5*q**2/256 - d**7*q**2/1024 + d*e*q**3/2 + d*q**2/2",
+  "compact_lower_numerator": "-2*a**3*q/3 - 2*a**2*b*c/3 - a**2*d*q**2 + 2*a*b**2*q/3 - a*b*c*d*q/3 - a*d**2*q**3/3 + 2*a*e*q**2/3 - 2*a*q + 2*b**3*c/3 + 2*b**2*d*q**2/3 + b*c*e*q/3 - 2*b*c/3 + b*e**2/3 + c**3*d*q**2/16 - 3*c**2*d**3*q**2/64 + 3*c*d**5*q**2/256 - d**7*q**2/1024 + d*e*q**3/2 - 5*d*q**2/6",
+  "compact_form": "Omega_Theta=Theta+(e/2)zeta+d_qF_root+kappa*q\u00b2dq/J",
+  "pole_scope": "only infinity poles, of order at most8, all residues0",
+  "derivative_interface": "nabla_e Omega_Theta=b*(-2cq-da+2e)dq/(6J)+kappa*nabla_e(omega)+d_q(F_e+b/6)",
+  "certificate": false
+}

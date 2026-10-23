@@ -1,0 +1,19 @@
+{
+  "status": "exact source-current generator, not a primitive",
+  "checks": [
+    "PD exact fiber primitive",
+    "PE exact fiber primitive",
+    "P3 full Cartan correction",
+    "literal universal D\u00b2\u2212AC monomial equality",
+    "literal universal E\u00b2\u2212CT monomial equality",
+    "literal universal ABT\u2212C\u00b3 monomial equality",
+    "PE full Green current",
+    "PD full Green current",
+    "P3 full Green current",
+    "P3 adjoint constant"
+  ],
+  "count": 10,
+  "source_equation": "PE* f+PD* g+P3* h=\u2212partial_e\u00b2 Hsrc",
+  "infinity": "chi retains its fourth-order infinity second-kind poles; all operators and Cartan primitives are literal rational expressions",
+  "certificate": false
+}

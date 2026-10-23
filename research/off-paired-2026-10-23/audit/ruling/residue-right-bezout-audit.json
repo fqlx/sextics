@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "arbitrary_function_derivative_0",
+    "arbitrary_function_derivative_1",
+    "arbitrary_function_derivative_2",
+    "arbitrary_function_derivative_3",
+    "arbitrary_function_derivative_4",
+    "arbitrary_function_derivative_5"
+  ],
+  "count": 6,
+  "arithmetic": "exact symbolic arbitrary-function Leibniz expansion, independently generated L1 and L2",
+  "identity": "L1 U+L2 V=1 (RIGHT inverse)",
+  "source_sha256": "43478d16f055f4694c1bda653d8babfd32a98f7d6ea152a04835f87d27296d1a",
+  "scope": "Exact source-residue inverse only; rational lifting, other poles and full (Z-1) source remain unsolved.",
+  "certificate": false
+}

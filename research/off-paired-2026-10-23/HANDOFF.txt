@@ -1,0 +1,564 @@
+> FINAL STATUS — 2026-10-23: Goal stopped at the user's request. UNSOLVED. Read [HANDOFF-2026-10-23.md](HANDOFF-2026-10-23.md) for the frozen handoff. Historical active-goal language below is superseded.
+
+LATEST CHECKPOINT — 2026-10-22 23:43 UTC. GOAL ACTIVE, UNSOLVED.
+Read CURRENT-STATE.md first priority. Fullgenericcompact8connectioninALL
+3directions+literalprimitives+flatnessindependentlyaudited886globalgroups.
+Actualdirectsource Rw=a0/6*(4eb−GammaD eb) inflatdi dj dw fullyaudited32groups;
+thisisalsoEulerfirstcurrentresidual, partlyreversingIBP, NOTcompactclosure.
+All8sourceentriesremain. ExactPDE/currentinterface andarrayssaved.
+Freshpursuesactualjprimitive+densitycorrection, theta848×80Leraypresentation
+(cokernel768, not760), quarticactualRRspace, finiteagentifixedj,wsource.
+DoNOTrepeatifixedu,w: thatfixesphysicalr,z andbelongsold65fibrationsexclusion.
+J1ellipticsupportroutehasactualbformanti-invariant; normalvariationneeded.
+Correctedfoldbound: cubicmomentproperizationraisesK/vfoldorder3→5;
+preferredLDinfinitypreimagedoesnotrestore3. Safesourcefoldorder4/currentC³.
+Origins+upstreamfetched23:42; upstream59d570ehasnoproofforoff-paired.
+instance.recchangedONLYrenderdistance; F,A,q/orderunchanged. NewSHA76c31054...
+Bothworktrees/branchescleanandpreserved. PublicHTMLreadsameowncomment+3replies.
+Originalpublication.json/candidateunavailable; noexternalwrites. Nocertificate,
+Leanproof,kernelcheck,solvePR,protectedCIoracceptance. Continueactualsourcework.
+
+LATEST CHECKPOINT — 2026-10-22 23:24 UTC. GOAL ACTIVE, UNSOLVED.
+Read CURRENT-STATE.md's first priority section. Actual scalar K is explicit
+and verified. Its finite Pa residue now has an explicit full-base Green
+current X=V-e^-7K Z, divX=-e^-7K/2; 14primary+15independent checks pass.
+Remaining exact source is compact -V·nabla(zeta), only3entries bq,q^3,b.
+This repackages actual source, not a compact-class cancellation by itself.
+The generic compact connection now passes333 polynomial identities over
+Q(c,d,e); rational rank8 inQ(i,j,v) saved, denominatorquarticv. Theta owns
+wsourceintegration, ruling extends i,j directions. No actualsource solution.
+Alternative direct source is onquartic P=a4+j ell a3+(i ell²+ell+1)a²+ell6/v:
+S=-ell²(K/v)(1/a)_w/6. Tracezero rank3 exactalgebraicconnection saved.
+Actual H=K/v polynomialin f=1/v would give anexplicit rationalprimitive,
+but that sourcecondition remainsOPEN; polynomialw ortrace doesnot suffice.
+Exactmomentliftfreedom removespolynomialprofiles; fixedpoleaudit15groups
+leavesonlyfoldpoles, and directquarticHermite current canservefoldlocally.
+Keepall regular/boundary/compactremainders. PhysicalPa transport8checks;
+fullgenus2 CMinterface retainsj3,j4. No certificate, Leanproof, kernelcheck,
+solvePR, protectedCI, acceptance orexternalwrite. Originalpublication.json
+andunpublishedcandidateunavailable/unaudited. Bothrepobranchesclean.
+The goal remains ACTIVE; do not stop it for these partial constructions.
+
+LATEST CHECKPOINT — 2026-10-22 23:05 UTC. GOAL ACTIVE, UNSOLVED.
+The actual scalar rational K is now EXPLICIT and verified, not merely
+conditional. Read CURRENT-STATE.md's first section and
+coupled-fresh/ruling-source/adjoint-reconstruction/N-ONLY-RATIONAL-LIFT.md.
+Full all-pole Cartan transport reduces to N-only rational forms; the actual
+Ssrc residue (i^-1 rTarget, NOT r_h) is served by the RIGHT Ore inverse.
+QQ(u)[w] Hermite reduction passes all three complete derivative identities
+and zero simple remainders; primitive degrees12,2,24. The exact formula
+K=v(H_N+Ctot) restores every fold/boundary correction. Independent audits
+pass45 actual-source/residue groups and13 primitive formula checks.
+The original curve-valued defect +e^-7K(B0-1/2)zeta remains OPEN. Retain
+K→K+v C(i,J) and the overall negative sign required for the original target.
+Theta=b^3dq/(3q^2) transfers it to the full compact OmegaTheta plus BOTH
+finite zeta and infinity omega corrections. Keep M_e=e^-8(Dc-7)K for M=e^-7K;
+do not drop the density derivative. Fifteen exact moment checks pass.
+Fresh/theta/source agents seek actual kernel closure, with full RR8 still
+available. No certificate, Lean proof, kernel verification, solve PR,
+protected CI, acceptance or external write. Original publication.json and
+unpublished candidate unavailable/unaudited. Both repo branches clean.
+The goal remains ACTIVE; do not stop it for this partial construction.
+
+LATEST CHECKPOINT — 2026-10-22 22:48 UTC. GOAL ACTIVE, UNSOLVED.
+Read CURRENT-STATE.md's new first section. The actual normalized source and
+all three adjoints are rational in inverse-root coordinates (i,J,z), with
+six exact source-moment checks. The degree-24 fold principal inverse exists
+generically, witnessed by gcd one modulo 1009; forced leading current data
+are saved, but lower fold and regular remainders are still uncancelled.
+A genuine source-residue cancellation is now exact: L1 U+L2 V=1 is a RIGHT
+Ore identity, U,V order two with denominator (5u+16)^3 at worst. Applying
+U,V to rTarget=2(theta+1)(2theta+3)r_h serves the actual N residue.
+Do not use only r_h, the undifferentiated hsrc residue. The physical
+unscaled residue is i^-1 times the packet profile; retain that factor. Root independently verified
+all six arbitrary-function derivative coefficients. SOURCE-ROOT-POLE-REDUCTION.md gives the forced N^2-preserving fold CRT
+moment (degree 53); extra w/T profiles remain under coordination. The
+independent verifier now audits the actual differentiated residue map.
+Full rational lifting, other poles and the retained (Z-1) term remain OPEN. No logarithm or kernel
+term is dropped. Fresh/canonical GM agents build the lift; source-match
+agent builds the fold/root-moment reduction. Full compact RR8 remains
+available with nineteen physical chi jets and 228 independent Newton checks.
+Coupled companion rows have 23 formal-adjoint and 85 independent audits;
+keep the nonzero xi infinity correction and corrected AT potential (4d).
+No certificate, Lean proof, kernel verification, solve PR, CI or acceptance.
+Both branches remain clean. Original publication.json and unpublished
+candidate remain unavailable and unaudited; no external writes occurred.
+The goal remains ACTIVE; do not stop it for this partial construction.
+
+LATEST CHECKPOINT — 2026-10-22 22:24 UTC. GOAL ACTIVE, UNSOLVED.
+Read CURRENT-STATE.md's new first priority section. Toric zeta=b dq/q now
+carries the target literally: tau=-partial_E^2 zeta. Three universal boxes
+and normalized adjoints have full Cartan/Green reconstruction. The source
+equation PE*f+PD*g+P3*h=-Hsrc_ee remains unsolved; structured trial feedback
+is not an exclusion. The full genus-four RR8 compact reduction and nineteen
+physical chi jets now span rank eight, with determinant annihilators and
+exact fiber currents; 228 independent Newton checks confirm nineteen jets
+at twelve fresh points. Numerical pivot witnesses are not rational lifts.
+The companion xi=a dq/q DOES have infinity residues at nonzero D; keep its
+omega_inf correction. New coupled xi/zeta rows are active, with matched
+finite/infinity adjoints. HOMOGENEOUS-CROSS-MULTIPLIERS.md gives an explicit
+residue-free family W=e^-3 F(c/e^2,d/e), with rational physical multiplier.
+The global Cayley first current leaves an odd ruling-cover residue. Delta
+base CM geometry provides holomorphic two-forms but their pure-base vertical
+Gysin is zero; a mixed fiber/base source or real transgression is necessary.
+Both branches are clean; origins were fetched about 22:10. Public discussion
+HTML was refreshed: the same one own comment and three replies. The original
+publication.json and unpublished candidate remain unavailable and unaudited.
+No external writes, certificate, Lean proof, kernel check, solve PR, protected
+CI or acceptance. The goal remains ACTIVE.
+
+LATEST CHECKPOINT — 2026-10-22 21:57 UTC. GOAL ACTIVE, UNSOLVED.
+Read CURRENT-STATE.md first, especially the newest source-carrying ruling
+section. Full-D shear now proves q eta_b is a normalized ruling derivative;
+source is -partial_T(q eta_b), with all infinity terms retained. Independent
+ruling audit passed 40 Fraction groups. Actual physical double adjoint leaves
+g beta with g/h=-241/9 at R=S=z=k=1, so this is not a primitive. A second
+translation supplies eta_b; its independent audit and combined full physical
+adjoint are in progress. Do not confuse exactness of the introduced residue
+3-form with a closed residue current. Graph kernels retain independent
+endpoint P and background q; identify them only on their diagonal.
+No mathematical solution, Lean proof, local kernel check, solve PR, protected
+CI or acceptance. Original Mac publication.json and unpublished candidate
+remain unavailable; no external write has occurred. Both repo branches stay
+clean and preserved. Latest public gh refresh failed 401; do not search for
+credentials or assume publication permission requirements have disappeared.
+
+LATEST PRIORITY — 2026-10-22, about 21:23 UTC
+Still UNSOLVED; goal ACTIVE. Read CURRENT-STATE.md.
+MAIN NEW SOURCE ROUTE: infinity-horizontal/BACKGROUND-ELLIPTIC-SOURCE.md.
+At fixed H,z the actual phi dC is (dq/12)(1/d−1/s) on two elliptic factors.
+Root derived exact elliptic rank2 matrices AND fiber R/y corrections:
+  BACKGROUND-ELLIPTIC-CONNECTION.md,
+  background-elliptic-connection.json,
+  derive_background_elliptic_connection.py (8 exact groups passed).
+These use A=±2,B=−z/2,D=H−1−z6; M_H=M_D,M_z=−M_B/2−6z5M_D.
+Full endpoint C=q/3+z(s+d)/4 remains coupled.
+Endpoint agent owns actual Prym normal-translation current; coupled agent
+and child own all-rank4 remainder operators; independent verifier audits.
+W=Dplus+Dminus gives normalvelocity2y³, Wprime gives2a, and their C-drifts
+cycle a,y³ with q²,z². q²η± reduce exact+holomorphic but endpoint derivatives
+must be retained. No finite closure has been obtained.
+Current source correction after first primitive:
+  [zq³ MCω0/(144s²d²)+(s^-3−d^-3)ω0/144] dH dq dz.
+Physical C_H rationalizes exactly; elliptic GM derivative remains second-kind.
+Do not claim ordinary density, source split, or normalvelocity is a certificate.
+Old R0 interpolation residual is auxiliary: baseline G2=0 cancels those poles
+exactly; nonzero G2 creates another simple pole. Not an intrinsic obstruction
+or a new source solution. Do not continue bounded exclusion/one-flow tests.
+Both repo worktrees clean at21:17; fetched origin at this turn's start.
+No external publication, Lean, PR, protected CI or acceptance. Keep working.
+
+LATEST CONSTRUCTIVE CHECKPOINT — 2026-10-22, approximately 21:15 UTC
+UNSOLVED. Goal ACTIVE. Read CURRENT-STATE.md before all older blocks.
+
+1. Complete bare physical rank4 equation:
+  -Lhat*G + Ua+Wz+2C delta[(HaU+HzW)/N]
+      = -C/(3a²)delta(q³/N), N=3H−2CH_C.
+  BARE-FULL-HORIZONTAL-CLOSURE.md has full reconstruction/Piola and
+  independent32 exact Fraction groups. U=W=0 is the old65 relative scope.
+2. SOURCE-HORIZONTAL-BEZOUT.md gives actual genuine U0,W0 with
+  HaU0+HzW0=−q³/(6a²). Remaining full source equation is
+  Lhat*G=div(U0,W0)+Y S, Y=Hz partial_a−Ha partial_z.
+  Generic identity plus10 independent Fraction checks passed. No G,S yet.
+  Commonfactor determinant reconstruction is in two-operator/; it is an
+  actual operator identity, not a source primitive. EH-pole homotopies just
+  transport back to original D0; do not mistake these for a new solve.
+3. INFINITY-ORE-SOURCE-MATCH.md gives UL+VM=1 and all4compactsource match,
+  with13 separate exact Ore/T-commutation groups. Infinity residue remains.
+  B12 gauge kills C,C² but does not kill actual Jacobian derivatives.
+4. Root's simplest actual rational density primitive:
+  v=az, q=3C−3v/2, rho=q³/a², eta=−rho dv/2,
+  d eta=rho da dz−9q² dC dv/(2a²).
+  Full corrected infinity source = explicit rational curl
+     +B theta(K)/(9H²),
+  K=q²/a²(q/2−3C)Dzv+(2C/3)rho DCa.
+  See infinity-horizontal/RATIONAL-DENSITY-CURL.md,6 symbolic groups.
+  Ordinary density integration is not endpoint source integration.
+5. New source-specific elliptic decomposition (agent infinity_horizontal_current
+  is saving/checking): fixed(H,z), K0=1+z6−H,
+  P=a4+a²(K0+zq/2)+q6=0, b0=q³/a,
+  s=a+b0, d=a−b0:
+    s²=2q³−zq/2−K0, d²=−2q³−zq/2−K0,
+    phi dC=(dq/12)(1/d−1/s).
+  The ACTUAL source uses two elliptic Prym factors. C=q/3+az/2 still
+  mixes them; endpointkernel must be retained. This is a new positive
+  source-retaining geometry, not oldfixedCgenus19isogeny. No cert.
+6. Endpoint CM/moving-projector agent is deriving full variable-lambda
+  normalized traces and balanced closed mixed residues. Bare eta1eta2
+  c-decktrace vanishes; derivative-balanced residue is exact and is only
+  a correction. Must retain both canonical components, all physical
+  derivatives/decktraces. No source completion yet.
+
+NEW PUBLIC RESULT READ/AUDITED:
+Reply19131907, gist f335056ed117252a6057d57bb9a36d8e updated20:50.
+CurrentREADME30/36 degree8chars excluded; all5particularquotientdirections
+necessary via relative-threefoldsecondvariation. All21hashes, targetbinding,
+contributor unchanged checker5ranksandwiches passed. Scope-specific; doesnot
+exclude fullrank4/infinity/bare PDE or forcebothbareU,W nonzero.
+See audit/PUBLIC-QUOTIENT-READ-AUDIT.md. Public packet at
+/workspace/off-paired-public-quotient-obstructions.
+
+Original Mac publication.json/script still missing. No external write.
+A compact gh GraphQL refresh at about21:14 returned HTTP401 Bad credentials;
+prior successful discussion snapshot20:50 remains saved. Do not expose or
+search for credentials. Connected GitHub tools may be an appropriate future
+fallback when their capabilities suffice. This does not block local math.
+Both repo branches/localchanges preserved; no Lean, PR, CI, acceptance.
+
+PRIMARY RANK4 UPDATE — approximately 20:30 UTC:
+New full compact-module scalar adjoint closure is saved at
+coupled-fresh/rank4-relative/SCALAR-HORIZONTAL-CLOSURE.md.
+All4 components and independent H,C,z currents are retained:
+  -L* f+[D_H+(2C/3H)D_C]U+D_z W=sigma,
+sigma=phi_H/6 for Jacobian correction, or -C D_C(phi)/(9H) after
+an explicit elementary C-current for the original source. Derivations
+include all actual a_H,a_C,a_z. Explicit4column reconstruction is saved.
+No rational f,U,W yet; independent audit passed50 exact Fraction groups
+(audit/rank4-relative/SCALAR-CLOSURE-AUDIT.md). This is complete within
+the compact endpoint module, not arbitrary moving third-kind currents.
+Denominator-free Euler PF identity gives a constructive operator mechanism.
+Current agent explores source y³/fourth y derivative and normal R terms.
+Keep goal ACTIVE; no certificate, Lean, publication, CI or acceptance.
+
+LATEST PRIORITY UPDATE — 2026-10-22, approximately 20:15 UTC
+The immutable target is UNSOLVED and the certificate goal remains ACTIVE.
+Read CURRENT-STATE.md before the older blocks below.
+
+NEW VERIFIED SOURCE INTERFACES:
+1. Rational constant-density chart Z=1/z,h^6=t,u=U,v=K/h:
+   H=1+Z^-2+h^6,C=Z^2+u^6+v^6,B=u/2+hv/3+huv/(2Z),
+   Omega=-dZ dh du dv/3. Full K3/two-elliptic finite correspondence
+   passed44 independent checks; it keeps the entire R kernel.
+   Further a=ch,q=c^4p normalization gives q^3+Btilde q+S=0,
+   S=c^6+a^6+Y^-2, actual source=-c^3 R dc da eta1 eta2.
+2. jacobian/quotient/COUPLED-EULER-CURRENT.md: E=h∂h-v∂v,
+   K=2Ch^6-Hv^6,L=2(Z^2+u^6)h^6+(1+Z^-2)v^6,U=E/(12K).
+   div(VU)=R-LV/(2K^2). Let P=(27-2κ)V/(2(4κ+27))+W,
+   c0=3(27-23κ)/(4κ+27)^2. Any rational divergence-free D with
+   Dlogκ=L/(2c0 K^2) would complete J=VU+PD. D is still missing.
+   Horizontal Z/u motion is necessary; E-only returns old endpoint.
+3. Boundary-chain audit passed20 groups, including191 plane columns.
+   Relative-to-absolute conversion adds explicit external terms; retain
+   them after contractions. Twenty plane classes still have no primitive.
+
+ACTIVE GEOMETRIC LEAD:
+scaling/k3-cm-graphs/exceptional-source-character.md gives a concrete
+weighted exceptional surface m_jk(X)w^2=b^7+b on a Y-angle CM graph.
+For (Y0,Y1), its target-invariant H20 space has FOUR explicit forms.
+They arise from Delsarte curves and j1728 elliptic quotients. The actual
+X0^3Y0^3 normal jet is retained. A global closed extension and Gysin
+coefficient are NOT established. Naive first derivatives require moving
+normal/adjoint corrections before any intrinsic KS claim. Consult agents.
+Endpoint agent separately studies the odd coefficient/normal jets needed
+for the j0 CM diagonal kernel to produce the even actual R source.
+
+STOP ORDINARY GRAPH TESTS:
+A source-addition construction on three X-angle and three Y-angle D18
+supports found no candidate mod1000003 (XY ranks31466/31467). All six
+ordinary simple-pole source spaces at that prime are just the two universal
+Jacobian sources X0*F_Y1/6,3Y1*F_X0/2. No powers were tested. This does not
+exclude general mixed-product currents, higher-pole exceptional transport,
+or characteristic-zero solutions. Full code/audit: graph-assembly/README.md.
+
+LATEST PUBLIC REPLY READ:
+https://github.com/hodge-computer/sextics/discussions/57#discussioncomment-19130946
+by deanodotdotdot at19:05 UTC: all four displayed old compact genus-two
+components j=0,1,3,4 must move the modulus. Basis-specific, not a solve.
+Public portable checker passed against exact target. Packet downloaded to
+/workspace/off-paired-public-three-component; see audit/public-three-components-verification.log.
+Original Mac publication.json/candidate script STILL unavailable. No external
+publication, PR, Lean verification, protected CI or acceptance. Both repo
+worktrees preserved. This checkpoint does not complete the goal.
+
+OFF-PAIRED CLOUD CONTINUATION — 2026-10-22
+
+NEWEST CONTINUATION: READ CURRENT-STATE.md BEFORE OLDER BLOCKS BELOW.
+UNSOLVED, goal ACTIVE. Both worktrees clean; no publication/PR/Lean/CI/acceptance.
+New public reply: https://github.com/hodge-computer/sextics/discussions/57#discussioncomment-19129901
+by benediamond at18:10 UTC proves old contact ansatz impossible at all poles.
+Packet /workspace/off-paired-contact-public-2026-10-22 passed all27 hashes,
+target binding, pole reductions and880 Jacobian multiples independently.
+audit/PUBLIC-CONTACT-AUDIT.md gives scope: NOT the new complete4base module.
+
+NEW COMPLETE INTERFACES/PROGRESS:
+- audit/cubic-ray/CLOSED-TWO-FORMS.md gives complete closed2form criterion;
+  36 exact checks passed. beta=d[-p²(dB+3p²dC)/(2Qg)] has trace
+  R-p²{g,Q}_0/(2Q²g). Remaining Q poles nonzero; genericg regularity only.
+- Fixed S3 elliptic cover E:Y²=X³-16 via rho³=H/C,p=-4rho/X,
+  j=B/(C rho²)=(X³-64)/(4X²). Whole3isogenykernel, root traces,
+  descent and group-ring operators passed40 independent Fraction checks.
+  audit/cubic-ray/ELLIPTIC-COVER-AUDIT.md; paired primitive still has SAME
+  nontrivial physical-density correction, so deck inversion alone fails.
+- New kappa rank2 gauge in endpoint/cubic-ray/poisson/CANONICAL-OPERATORS.md.
+  Its FULL TWO COMPONENTS remain open. New pure-V/pure-W and relativeclosedtime
+  shortcuts have all-pole Fermat residue obstruction (33 independent checks):
+  audit/cubic-ray/PURE-COMPONENT-AUDIT.md. Do not continue those restrictions.
+
+ACTIVE POSITIVE LEAD (inspect agents/files; avoid duplicating):
+CardanoFermat incidence G1=S³+T³-H,G2=c³-C,QB=B+3cST, p=-(S+T)/c.
+Actual normal determinant -27c³(S³-T³); actual numerator
+N=-3ST(S²-T²)/(S²+ST+T²)². With deltaE=3T²dS-3S²dT,
+qE=-(S+T)/(2(S²+ST+T²)), deltaE qE=N, while
+qE deltaE QB=9c(S²-T²)/2 is POLYNOMIAL. All coupling derivatives retained.
+Second auxiliary CI QB=0, C-c³-d³-e³=0 inWP(1,1,1,2,2,2)
+is Fano3 (degrees2,6,sumweights9). Eliminatec -> d³+e³=G_eff,
+G_eff=C+B³/(27S³T³). Remaining source is actual pole2 inG_eff,
+numerator C-2B³/(27S³T³), with specified ST prefactor. Actual physical
+boundary residue retains 1/(d e), cannot replace by arbitrary polynomial
+density. Need parameter-compatible jets/jointnormalfamily; separate
+Fano existence does NOT give mixed-derivative independence. Constructive
+agent owns geometry/source, jacobian agent owns mixed-derivative correction.
+
+Fixed simple denominatorD3D4 degree7 failedexactrank288/aug289;
+one targetedD4²degree8 testalsofailed448/449. NO blindpowerescalation.
+D3/D4globalH20notes under quotient_geometry/ awaitindependent review;
+they do not furnish source cycles or a certificate. KeeppositiveFano lead.
+
+NEW ACTUAL COUPLED CURRENT: coupled-fresh/COUPLED-B-CURRENT.md passed14
+source/coordinatechecks. B-independentdensitychart(z,U,B,C) gives actual
+partialcurrent(p_B/2)partialB; remainingtarget correction
+ -3H_B/(4B²)*(V+6W) = +5H_B F0, where
+ F0=(3Cp²-B)/(10g³), p_BH=-10F0. Endpointagent is seeking actual
+horizontalz/U correction; keepingz/Ufixed repeatsanexcludedratiofiber.
+
+The actual whole-cubic graph gives D18=F_Y*(X1^6+X2^6)^2
+ +16H_X X1^6X2^6. Full fixed-D18 gaugedsystem20,085rows5291Ncols
+foundnocandidateatprimes1000003and1009(rank5220,aug5221).
+Thisismodularfeedbackonly, NOTchar0nonexistence. No powerescalation.
+Independent audit/GRAPH-D18-AUDIT.md confirms target/complexcoprimality,
+bothgauges,completecharacterenumeration,encoding,20exactcolumns+RHS;
+itdidnotrerunlargeranks. Source/code/resultsin graph-denominator/.
+
+Fano/Cardanofullorderedsourcepassed27independentFractionchecks;
+rationalkappaS3coverq=S/T passed26checks, includingellipticbridge.
+See audit/cubic-ray/FANO-NORMAL-AUDIT.md. Boundary1/(de) stays.
+ConcretefirstE1finite(q,N)moduleandmixedderivativearein
+jacobian/CARDANO-FIRST-ELLIPTIC-MODULE.md: missingauxjetterm
+ -9D²q*partial_d g0, D=S³-T³,d=(ST)³. Notautomaticallyphysicalrank2.
+
+Fresh live read found1 owncomment +1 publicreply, so older no-reply statement
+below is stale. OriginalMac publication.json still unavailable; no external
+writes. Full goal remains active; do not mark complete for this checkpoint.
+
+LATEST CONTINUATION (18:00 UTC): PRIORITIZE THIS BLOCK OVER OLDER NEXT TEXT
+Still UNSOLVED. User goal active; do not mark complete. Both repository
+worktrees remain clean at the commits recorded below. No external edits.
+
+NEW COMPLETE CONSTRUCTIVE INTERFACE
+Read cubic-ray/INTERFACE.md first. On X0=1 put X1=x,X2=a,Y0=y,
+Y1=yu,Y2=yv,s=y^2. Then f=H+Bs+Cs^3 with
+ H=1+x6+a6, B=xu/2+x3a uv/2+xav/3, C=1+u6+v6.
+Actual fiveform =s²/(2f²) dx da ds du dv; actual residue
+ R=B*s/(3Cs²+B)^3 dx da du dv.
+Trace over the three s-roots is zero. Basis e=(s,s²+2B/(3C)) gives
+a rank TWO finite-monodromy connection, not an endpoint truncation.
+Every rational primitive after averaging Yneg and projecting tracezero
+has coefficients in this basis. Thus this is an unrestricted reformulation.
+endpoint/cubic-ray/finite-connection-results.json records43 exact checks.
+cubic-ray/verify_actual_source.py independently passed24 checks of density,
+normal residue, full generic-first-jet Piola and conditional field lift.
+Independent stdlib Fraction audits in audit/cubic-ray/ passed49 connection
+and56 physical/Piola/Nambu identities; ROOT RERAN both successfully.
+audit/cubic-ray/AUDIT.md explains completeness over fixed constants k=complex
+for the full contract (Q only for matrix data and rational search ansatz).
+
+Universal coefficient field W2=−2B²/(3C)∂H+3H∂B satisfies
+ W2(F0)=R, F0=(3Cs²−B)/(10(3Cs²+B)^3).
+Physical lift V0=N2/J is not volume preserving. J=HxBa−HaBx,
+ N2=−2B²/(3C)(Ba,−Bx,0,0)+3H(−Ha,Hx,0,0), divN2=0.
+For G=BuCv−BvCu, the vertical divergencefree field
+ K=(HaG,−HxG,JCv,−JCu)
+annihilates H,B,C. A rational h with K(h)=N2(J)/J² would make
+F0(V0+hK) an ACTUAL source current, then exact clearing yields cert.
+No such h yet. Generic fibre is highgenus, not automatically rational.
+
+FULL G36 QUOTIENT makes H,B lowdegree and density logarithmic:
+ z=x³,U=Y1/(xy),K=X2Y2/(xy),t=X2^6,p=x²y².
+ f=1+z²+t+(U/2+K/3+zUK/2)p+(z^-2+U6+K6/t)p³.
+ Actual5form=p²/(36tz²f²) dz dU dK dt dp.
+Jacobian36t*x²/y checked independently; actual residue density
+rho=1/(18tz²) multiplies same universal R. Current divergence includes
+ell=(−2/z,0,0,−1/t), never discard it. This keeps FULL original source.
+
+OTHER NEW CONSTRUCTIVE RESULTS
+- Exact quotient Piola/certificate transfer passed68 stdlib checks; endpoint
+  quotient interface38 checks; audit/quotient/TRANSPORT.md.
+- Actual quartic first current leaves h/(3G), and since G=v²F its endpoint
+  residual carries v^-2. Its purported closure has coefficient exactlyONE.
+  Root reran16 independent Fraction firstcurrent/normalcompanionchecks.
+- Quartic normalization is a (6,6) CY4 CI in P(1,1,1,1,2,3,3); naive model
+  is nonnormal. Its true second normal is J2=J0−2F, not on-shell J0.
+- Ferrari pairtraces reconstruct each original root residue by CONSTANT
+  half-sum of three pairtraces; no trace-dual density correction. Pairtrace
+  equals−q_SS/3 with independent quartic coefficients S,T,R. Actual source
+  is kept in quotient_geometry/ferrari-pair-source.md. Relative scalar+
+  uses opposite base orientation to ambient dGfirst; note overallminus.
+- Ferrari coefficient Möbiusflow gives rational firstprimitive +explicit
+  rational dlog correction; physical inverseJacobian derivative remains.
+- Genuine log-residue currents beyond exact curl potentials constructed
+  and audited; endpoint vertical exact correction retained. They are not
+  certificates and did not add actualtarget in the focused searches.
+- Actual genus4base has four elliptic factors, including two explicit j0
+  factors; full beta trace still has multiquadratic kernel. See
+  scaling/closure/j0-involutions-and-full-kernel.md.
+
+LATEST FINITE SEARCH FEEDBACK (NO GLOBAL EXCLUSION)
+Compact Fs^-1 normalcorrection batches failed mod1009. Merged additive
+H,+,− simplepoles (2740cols) and three logcolumns (2743cols) failed on
+overdetermined partialrows; no apparent hit. New blocked modular solver
+passed396 independent rank/solution checks including near2^53 bounds.
+Do not keep raising degrees blindly. One motivated simple-delta current
+prototype in the new complete rank2 system ran:1104cols,1200rows,rank1104,
+inconsistent mod1009. No Cpole ordegreeescalationrun. Its scope is only
+the stated bounded numerator space, despite the full rank2 interface.
+
+ACTIVE AT CHECKPOINT: nonlinear_geometry and its child were asked to seek
+a positive symplectic/current construction on fullG36 lowdegree coefficients.
+The generic coefficient fibre eliminates t=H−1−z² and
+K=3(2B−U)/(2+3zU), with plane equation
+ (H−1−z²)(Cz²−1−z²U6)(2+3zU)^6−729z²(2B−U)^6=0.
+Inspect live agents before duplication. Other agents completed their audits.
+
+LATEST ACTIVE POSITIVE LEAD: child found an actual rational symplectic frame
+for fullG36 density, omega=dz^dU/(3z²)+dK^dt/(6t), omega²/2=rho volume.
+Thus Hamiltonian fields preserve the exact physical density automatically.
+Bracket{F,G}=3z²(Fz GU−FU Gz)+6t(FK Gt−Ft GK), uniquely extended to
+cubicfield. Parent is seeking an ACTUAL sumofbrackets R; not yet found.
+Universaladditionalpotential p_B/2=−p/(2g) differentiates toR inB,
+butpuredivfree∂Blift tangentH,C cannotexist: fixedH,C productFermat
+curveshasnonzeroholomorphicarea, and suchliftwouldmakeitexact. Keep
+H,Cdirections. CMFermatproductcouplingBhasrank3separablefunctions;
+anyellipticcontractionmustretainentireBdependence/coeffderivatives.
+
+Cubic companion has an exact rational primitive for SUM of four E[2]
+translated sources; original source is not isolated (projector gap).
+jacobian/CUBIC-TWO-TORSION-CURRENT.md retains the full boundary. Fano
+levelF=1/gaugeW1 arguments alone repeat coefficientone/Euler cycles.
+
+PUBLICATION and original missing Mac packet unchanged; publication pending.
+No Lean proof/check/PR/protectedCI/acceptance exists. Save research and
+continue towards actual source-carrying primitive, not more scope exclusions.
+
+The user goal remains ACTIVE: keep working until an actual legal certificate or
+valid proof is found. Still UNSOLVED. No Lean proof, solve PR, protected CI result,
+merge, or acceptance. Do not mark the goal complete for this research packet.
+
+WORKSPACE / PRESERVATION
+Original /workspace/sextics stays clean on branch work at cb55185. Its origin is
+https://github.com/fqlx/sextics.git; origin was fetched without reset/stash/rebase.
+Isolated /workspace/off-paired-sextics is clean on fqlx/off-paired-cloud at upstream
+21fccb6b4f1d4070ddaa30195a78f268247569e6. The original Mac worktree and research
+packet paths in the pasted handoff are NOT mounted here.
+
+Read AGENTS.md, CONTRIBUTING.md, formal/README.md. They were read at start.
+F,q,A exact current/original equality has been checked independently with AST and
+Fraction arithmetic, not merely by raw-record hash. Current raw target hash is
+5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6;
+original is bb0e2891331ddcf18fdbc683df881900400f0e8c2cc73b2f0f23c5d3f7c88467.
+Exact source is A=X0^3*Y0^3, q=1, variable order X0,X1,X2,Y0,Y1,Y2.
+
+INPUTS / MISSING PACKET
+Full user-pasted handoff: /workspace/attachments/600ab27b-f4ae-4a43-813f-14645a3395b1/Pasted text.txt.
+Published43-file gist downloaded into /workspace/off-paired-research-published.
+Latest Mac publication.json, original endpoint_current_candidate.py and other
+unpublished65-case files are unavailable. User was asked asynchronously for a
+cloud-accessible URL/path. No reply as of this checkpoint. Do not claim those
+original files were audited. Reconstructing does permit useful independent work.
+
+EXACT CONSTRUCTIVE PROGRESS
+1. endpoint/reconstructed-connection.json reconstructs compact rank4 connection,
+   basis j=0,1,3,4, with Dwork exact correction polynomials. Columns are derivatives.
+   Common L=4H(4C^6-729H^4). Source orientation: Z=b^6-a^6, p=ab, residue dF/F first
+   gives -y^3/6 nabla_H omega0 dx dy dz on X0=1.
+2. endpoint/third-kind-connection.json adds omega2=p^2dp/Z, constant opposite
+   residues at infinities. Its derivatives lie compact4, fifth row zero, so
+   extra infinity current must be divergence-free. This is a valid enlargement.
+   Independent audit/verify_connection_fraction.py passed75 polynomial checks
+   plus residue audit; root reran successfully. It also verifies source binding,
+   weighted gauge, Euler/flatness, and rejects changed q in memory.
+3. Weighted scaling reduces connection to t=C/H^(2/3), but physical coefficient
+   y^3/H^(5/3) remains variable. Never discard its derivatives.
+4. Physical coefficient phi=q^3/P_a has exact decomposition
+   phi=R_H-(81/2)C^2z*(log a)_H,
+   a=x^3, q=3C-3az/2, R=-27C^3/a+(81/4)Cz^2a-(27/16)z^3a^2.
+   The derivative of log is rational; log itself is not a legal coefficient.
+   The nonzero phi_H correction remains. See jacobian/normal-antiderivative.md.
+5. Finite moving pole beta_r=dp/((p-r)Z) has LITERAL source identity
+   (partial_C-r partial_H)beta_r=partial_H omega0 (r held fixed).
+   endpoint/moving-pole-connection.json contains full compact+beta columns and
+   exact corrections for H,C,r. Root independently verified its3 Dwork identities,
+   literal source polynomial identity and5 source-column identities in
+   audit/verify_moving_fraction.py (stdlib Fraction, passed9 checks).
+6. Physical s1=-3X0*Y1/2 makes L=H+s1*C lose linearY0 term. s2=-X0^3*Y0/X1^2
+   cancels linearY1. They are legitimate rational physical moving poles.
+   Their weighted residue equations are div(V/sqrt(f(s)))=0. Parameterization
+   V=curl(P)-grad(f(s)) cross P/(2f(s)) satisfies this identically and builds
+   physical normal poles into a small potential ansatz.
+7. Explicit scalar differential quotients to variable and j0 elliptic curves
+   exist; see jacobian/moving-pole-source-interface.md, geometry/full-base-genus4-elliptics.md.
+   CRITICAL GAP: y->-y quotient changes C and hence endpoint local system/kernel.
+   Scalar elliptic-density identities alone do NOT descend full source.
+   Retain full genus4 cover u^6=t^2(-t^2+b t+B), C=tz/2+u/3 and all horizontal
+   corrections. The actual moving-kernel primitive leaves phi_C beta correction.
+8. geometry/potential_rank5_connection.py independently constructs connection
+   from rational potentials v_j=(3H omega_j+2C omega_(j+1))/(j+1), j0..4,
+   omega5=(CH omega0+C^2 omega1)/12, detA=H(729H^4-4C^6)/360.
+   Reparameterizing currents a_i=A b_i gives A divb+sum(H_i I+C_i P)b_i=source.
+   No source-current field from this identity was found.
+9. NEWEST positive interface, full coefficient retained with constant density:
+   u=x*y, v=y^3 gives du dv=3y^3 dx dy, degree3 quotient preserving H,C.
+   H=1+u6/v2+v2+z6+uz/2, C=u3z/(2v)+u/3.
+   G=v2F=u6+v4+(1+z6+a6+b6+uz/2+uab/3)v2+(u3zab/2)v.
+   Actual fiveform is v4 du dv dz da db/(3G2), not a universal replacement.
+   See geometry/potential-current/source-constant-quotient.md and verifier
+   verify_source_constant_quotient.py (5 exact checks). This is a promising
+   source-carrying coordinate route for the NEXT turn, not a primitive.
+
+SEARCH STATUS (FEEDBACK, NOT PROOF OF NONEXISTENCE)
+All finite modular batches so far produced NO VERIFIED CANDIDATE:
+compact4; infinity rank5; physical finite pole; two finite poles; two finite+
+infinity rank7; and residue-cancelling weighted-curl potentials. Denominators/
+degrees/primes appear in endpoint/*results.json. Latest weighted-curl batch
+k0..6 failed overdetermined mod1009 systems. D=X0^k affine-polynomial freedoms
+were explicitly included (not silently equated to degree0 D=1).
+Early undersampled apparent hits were rejected at400 fresh points. Fixed
+evaluation matrices now use >=one generic point per unknown; every real hit
+still needs fresh points, exact rational lift, full identity, and physical
+certificate transport. Modular inconsistency alone is NOT unrestricted or even
+a fully certified characteristic-zero rank exclusion.
+
+NEXT CONSTRUCTIVE OBLIGATION
+Cancel explicit density-derivative correction with full coefficient currents,
+or prove a source-carrying geometric construction on the retained twisted
+kernel. Multiple-pole weighted curls and potential-basis algebra are available
+interfaces. Do not substitute further bounded exclusions for solving the goal.
+Do not repeat the old65-fibration/toric/simple-Jacobian exclusions from handoff.
+
+Most concrete exact residual: jacobian/NEXT-CONSTRUCTIVE-OBLIGATION.md.
+For L=H-3zC/2, J=L_x C_y-L_y C_x, A=y^3, set
+W=(A L_y/(6J),-A L_x/(6J),0). Then W(L)=W(s)=0, W(C)=-A/6,
+sum nabla_i(W_i beta_s)=-A partial_H omega0/6+R beta_s,
+R=[A(L_x J_y-L_y J_x)-A_y L_x J]/(6J^2).
+R(1,1,1)=-97/1014, so it cannot be discarded. Exact verifier is
+jacobian/moving-pole-current-defect.py. Cancel R while preserving the source.
+
+PUBLICATION
+Live discussion57 was read via full GraphQL: exactly one own comment fqlx,
+DC_kwDOVLOOJc4BI9aI, no replies/pagination, unlocked. gh and connector identities
+both fqlx. No current solve PR found. Read latest live state again before writing.
+No external publication in this continuation because user explicitly required
+reviewing original publication.json before updating existing comment, and it
+is unavailable. Concrete draft: discussion-comment-next-draft.md;
+publication-pending.json records original body hash and missing-manifest reason.
+Never replay old gist payloads over newer local material; preserve43 remote files.
+
+RUNTIME / VERIFICATION
+Python with SymPy+NumPy: /workspace/tooling/sextics-venv/bin/python.
+Independent Fraction audits run with ordinary python3 as well.
+Root reran75-check connection audit, moving-pole9-check audit, physical-source
+SymPy audit,7-check scalar-elliptic audit and9-check full-genus4 audit; all passed.
+No Lean verification has been attempted because no mathematical certificate is
+available. If a solve appears, follow full immutable-target / allowed-file /
+local sandbox+kernel / protected CI / ready PR workflow and report each separately.
+
+See README.md and CURRENT-INTERFACE.md for artifact entry points.

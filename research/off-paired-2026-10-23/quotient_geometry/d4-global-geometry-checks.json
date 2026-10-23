@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "support_pullback": true,
+    "sextic_pullback": true,
+    "base_facets_simplicial": true,
+    "mixed_exponent_strict_interior": true,
+    "base_dimension_three": true,
+    "critical_linear_relations": true,
+    "critical_polynomials_coprime": true
+  },
+  "facets": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      3,
+      4
+    ],
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      2,
+      3,
+      4
+    ]
+  ],
+  "critical_P": "14904*w**4 - 19980*w**3 + 8892*w**2 - 1725*w + 125",
+  "critical_Q": "-17006112*w**7 + 34957008*w**6 - 30757968*w**5 + 15017400*w**4 - 4394250*w**3 + 770625*w**2 - 102111672*w + 8506181",
+  "status": "Exact nondegenerate full-dimensional toric model; global H20 vanishing follows from the stated toric/Serre/Kawamata--Viehweg argument. No certificate."
+}

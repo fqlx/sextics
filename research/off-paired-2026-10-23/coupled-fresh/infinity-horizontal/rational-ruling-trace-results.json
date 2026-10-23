@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "norm_q": true,
+    "norm_shear": true,
+    "rational_trace": true,
+    "cartan_translation_polynomial": true,
+    "trace_shear_source": true,
+    "trace_shear_potential": true,
+    "trace_Y_translation_source": true,
+    "trace_Y_translation_potential": true,
+    "rational_infinity_normalization": true
+  },
+  "passed": true,
+  "psi": "A*b*(X*dq-Y*dX)/(A*X^2+Cp*Y^2)",
+  "identity": "nabla_shear psi = q*eta_b + d_q[B*Y*b^3*q/(J*(A*X^2+Cp*Y^2))]",
+  "Y_translation": "nabla_VE psi = d_q F_E - (A/Cp)*(delta*eta_b+3*q^2*dq/J)",
+  "normalized_rational_trace": "psi_hat=psi+(3*A*E/Cp)*q^2*dq/J",
+  "remaining_physical_residue": "unchanged nonzero adjoint; no closure asserted",
+  "certificate": false
+}

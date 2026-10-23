@@ -1,0 +1,38 @@
+{
+  "status": "Actual J=1 elliptic/Prym source split and explicit elliptic normal-function derivative; mixed Gysin closure open",
+  "checks": {
+    "actual_chart_eta_orientation": true,
+    "fixed_q_fixed_b_exact_primitive": true,
+    "actual_elliptic_source_component": true,
+    "actual_prym_source_component": true,
+    "eta_is_anti_invariant": true,
+    "quotient_holomorphic_form_invariant": true,
+    "both_actual_Cartan_projections_retained": true,
+    "elliptic_quotient_equation": true,
+    "literal_elliptic_section_primitive": true,
+    "complete_rank_two_elliptic_source_class": true,
+    "physical_source_quotient_with_all_coefficients": true,
+    "physical_CM_base_cover_conic": true
+  },
+  "passed": true,
+  "certificate": false,
+  "normal_coordinates": "d=m+n,e=m-n; n=(d-e)/2, J=(d/e)^2=1 on the chosen d=e component",
+  "quotient": "W^2=-4b^4+(m^2-4c)b^2+8b, W=b(2s+m), s=a+t",
+  "actual_form_orientation": "eta_b=b*dq/J in t=1 chart equals +db/[zeta*(2s+m)] in q=1 chart, zeta=a-t",
+  "fixed_b_source_split": {
+    "elliptic_plus": "db/(2s+m)^3=b^3*db/W^3",
+    "Prym_minus": "-(s^3+2m/b)*db/[zeta^3*(2s+m)^3]"
+  },
+  "actual_fixed_q_fiber_primitive": "tau_actual=tau_fixed_b-d_b H, H=b*t/[J_a*(a(2a+d)-t(2t+e))], J_a=2a^2+d*a-2b^2",
+  "projected_fiber_primitives": {
+    "plus": "-b*(2*a**2 + a*m + 2*a*t - 2*b**2 + m*t + 2*t**2)/(2*(2*a + m + 2*t)*(2*a**2 + a*m - 2*b**2)*(-2*b**2 + m*t + 2*t**2))",
+    "minus": "-b*(2*a**3 + a**2*m - 2*a*b**2 - 2*b**2*t + m*t**2 + 2*t**3)/(2*(-a + t)*(2*a + m + 2*t)*(2*a**2 + a*m - 2*b**2)*(-2*b**2 + m*t + 2*t**2))"
+  },
+  "elliptic_weierstrass": "u=1/b,y=W/b^2, y^2=8u^3+lambda*u^2-4, lambda=m^2-4c",
+  "elliptic_actual_source": "tau_plus=-u*du/y^3",
+  "elliptic_source_primitive": "psi=du/(u*y); tau_plus=2*partial_lambda psi literally; finite residues at(u=0,y=\u00b12sqrt(-1)) are\u00b11/(2sqrt(-1)); no infinity residue",
+  "elliptic_rank_two_class": "tau_plus=(12lambda/Delta)*du/y+(144/Delta)*u*du/y+d_u[(lambda^2-12lambda*u-288u^2)/(Delta*y)], Delta=lambda^3-1728",
+  "physical_quotient": "Wphys^2=-4*T*B*b^4+(z^2/4-4*k*T/3)*b^2+8*k*T^2*b; T=1+z^6,B=1+k^6/r^2,r^2=k^2*T-1",
+  "physical_CM_cover": "rho^2=1+z^6, k=(rpar+rpar^-1)/(2rho), r=(rpar-rpar^-1)/2; cover is genus2(z,rho) times rational rpar line",
+  "remaining": "Elliptic projection alone does not serve the nonzero Prym source. A closed mixed two-form on the support divisor, its normal/Gysin source identity, full physical normalizers/density, and a current for every complementary component remain required."
+}

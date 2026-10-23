@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "coefficient_chain_rule": true,
+    "Euler_A_divergence": true,
+    "Euler_B_divergence": true,
+    "Euler_T_divergence": true,
+    "Euler_product_adjoint": true,
+    "third_derivative_adjoint": true,
+    "literal_cubic_box_product": true,
+    "literal_quadratic_box_product": true,
+    "full_Cartan_operator_expansion": true
+  },
+  "passed": true,
+  "A0": "-c/3*dc-2*d/3*dd-e/6*de",
+  "B0": "-c/3*dc-d/6*dd-e/6*de",
+  "T0": "-c/3*dc-d/6*dd-2*e/3*de",
+  "P3": "A0*(B0-1/2)*(T0+1/2)-dc^3",
+  "P3_adjoint": "dc^3-(T0-5/3)*(B0-1/6)*(A0-7/6)",
+  "relative_exact_potential": "P3(chi)=d_q f3, f3=-i_(q*partial_q)[U*chi+Rq*V*chi-Rq^2*chi/108], U=((A0+B0-1/2)*(T0+1/2))/6-A0*(B0-1/2)/3, V=(T0+1/2)/36-(A0+B0-1/2)/18",
+  "scope": "universal coefficient boxes literal at fixed physical q; normalized operators exact modulo the displayed fiber derivative, not zero as literal normalized differentials",
+  "normalization": "A=B=T=1 on coefficient cover; chi=zeta/sqrt(-T/B)",
+  "certificate": false
+}

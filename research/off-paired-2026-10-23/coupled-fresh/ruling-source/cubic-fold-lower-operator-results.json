@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": {
+    "q3_leading_coefficient": true,
+    "q3_complete_lower_coefficient": true,
+    "q3_no_other_negative_powers": true,
+    "q5_lower_coefficient": true,
+    "q5_no_other_negative_powers": true,
+    "even_0_regular": true,
+    "even_2_regular": true,
+    "even_4_regular": true,
+    "even_6_regular": true,
+    "principal_symbol_match": true
+  },
+  "certificate": false,
+  "local_coordinate": "s^2=v-V(i,J), with V the actual moving fold value",
+  "definitions": {
+    "p": "V_i",
+    "q": "V_J",
+    "H": "V-J*V_J",
+    "W": "4V+i*V_i+J*V_J",
+    "sigma": "(-p^3+V^2*H*W)/8"
+  },
+  "lower_operator": "T=(3/8)*[(6p^2-2iV^2H)*partial_i+2JV^2(W-H)*partial_J+6pV_ii+2VJ(qW+VW_J)+3V^2W+22V^2H]",
+  "jet_map": "L3Q=-3sigma*q3*s^(-3)+(T(q3)+15sigma*q5)*s^(-1)+regular, when q1=0",
+  "scope": "Exact local source-current jet map. Actual source coefficient extraction, rational CRT interpolation, boundary preservation, and full regular/compact target must all be retained."
+}

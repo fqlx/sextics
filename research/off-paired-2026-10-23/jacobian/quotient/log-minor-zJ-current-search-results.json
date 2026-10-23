@@ -1,0 +1,15 @@
+{
+  "prime": 1009,
+  "compact_denominator": "X0*z*J01",
+  "compact_unknowns": 391,
+  "nonexact_log_classes": [
+    "g=J01"
+  ],
+  "rows": 2055,
+  "rank": 391,
+  "compact_rank": 391,
+  "log_rank_gain": 0,
+  "consistent_evaluations": false,
+  "seconds": 3.9753957859993534,
+  "scope": "restricted constructive screen only"
+}

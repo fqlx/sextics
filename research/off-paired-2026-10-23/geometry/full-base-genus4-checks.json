@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "sigma_curve": true,
+    "j0_quotient_plus": true,
+    "j0_differential_plus": true,
+    "j0_quotient_minus": true,
+    "j0_differential_minus": true,
+    "genus2_quotient": true,
+    "genus2_differential": true,
+    "source_differential": true,
+    "source_sigma_sign": true
+  },
+  "status": "Exact coefficient-retaining curve and differential identities; no kernel descent or certificate."
+}

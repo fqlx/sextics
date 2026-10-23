@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "sources": [
+    "X0*(partial F/partial Y1)/6",
+    "3*Y1*(partial F/partial X0)/2"
+  ],
+  "scope": "modular projected kernel of six fixed homogeneous block systems; no characteristic-zero upper dimension claim",
+  "blocks": [
+    {
+      "support": [
+        "X",
+        0
+      ],
+      "prime": 1000003,
+      "rank": 5242,
+      "kernel_dimension": 73,
+      "served_source_dimension": 2,
+      "all_lifts_substitute_to_zero": true,
+      "basis_matches_exact_universal_sources": true,
+      "seconds": 0.545078,
+      "peak_rss_mb": 13
+    },
+    {
+      "support": [
+        "X",
+        1
+      ],
+      "prime": 1000003,
+      "rank": 5243,
+      "kernel_dimension": 72,
+      "served_source_dimension": 2,
+      "all_lifts_substitute_to_zero": true,
+      "basis_matches_exact_universal_sources": true,
+      "seconds": 0.493231,
+      "peak_rss_mb": 13
+    },
+    {
+      "support": [
+        "X",
+        2
+      ],
+      "prime": 1000003,
+      "rank": 5237,
+      "kernel_dimension": 78,
+      "served_source_dimension": 2,
+      "all_lifts_substitute_to_zero": true,
+      "basis_matches_exact_universal_sources": true,
+      "seconds": 0.632842,
+      "peak_rss_mb": 13
+    },
+    {
+      "support": [
+        "Y",
+        0
+      ],
+      "prime": 1000003,
+      "rank": 5247,
+      "kernel_dimension": 68,
+      "served_source_dimension": 2,
+      "all_lifts_substitute_to_zero": true,
+      "basis_matches_exact_universal_sources": true,
+      "seconds": 0.371497,
+      "peak_rss_mb": 14
+    },
+    {
+      "support": [
+        "Y",
+        1
+      ],
+      "prime": 1000003,
+      "rank": 5249,
+      "kernel_dimension": 66,
+      "served_source_dimension": 2,
+      "all_lifts_substitute_to_zero": true,
+      "basis_matches_exact_universal_sources": true,
+      "seconds": 2.42364,
+      "peak_rss_mb": 47
+    },
+    {
+      "support": [
+        "Y",
+        2
+      ],
+      "prime": 1000003,
+      "rank": 5246,
+      "kernel_dimension": 69,
+      "served_source_dimension": 2,
+      "all_lifts_substitute_to_zero": true,
+      "basis_matches_exact_universal_sources": true,
+      "seconds": 2.25198,
+      "peak_rss_mb": 45
+    }
+  ]
+}

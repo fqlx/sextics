@@ -1,0 +1,20 @@
+{
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "point": {
+    "i": "8/3",
+    "J": "1",
+    "w": "1",
+    "physical": "R=S=z=k=1"
+  },
+  "arithmetic": "exact stdlib Fraction jets at total orders five and six, actual i/J/w coordinate derivatives",
+  "identity": "Z[(D-7)K/v]=(D-7)[Ssrc-PEF-PDG-P3(vt)]/v",
+  "actual_remainder_value": "149327703792558834820274024302928098827999374506513/8088142756109426672623213864519444141856194560",
+  "forced_Z_derivative": "128052720329817203957139067078754673647605832542004382902/90636540291061878611061189754404805543695295005",
+  "nonzero": true,
+  "scope": "Actual retained compact forcing checkpoint; no restriction or nonexistence claim. Full compact/infinity source remains.",
+  "elapsed_seconds": 2.5700904650002485,
+  "exact_values_match_orders": [
+    5,
+    6
+  ]
+}

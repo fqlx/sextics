@@ -1,0 +1,42 @@
+{
+  "prime": 1009,
+  "unknowns": 1104,
+  "source": "B*s/(B+3*C*s^2)^3",
+  "denominator": "D=4B^3+27CH^2",
+  "basis": [
+    "s",
+    "s^2+2B/(3C)"
+  ],
+  "bounds": {
+    "X_directions": {
+      "e1": [
+        5,
+        2
+      ],
+      "e2": [
+        3,
+        4
+      ]
+    },
+    "Y_directions": {
+      "e1": [
+        4,
+        3
+      ],
+      "e2": [
+        2,
+        5
+      ]
+    }
+  },
+  "stages": [
+    {
+      "points": 600,
+      "rows": 1200,
+      "rank": 1104,
+      "consistent": false,
+      "seconds": 1.2827185420001115
+    }
+  ],
+  "status": "inconsistent sampled modular ansatz; no candidate"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "Exact source-preserving rational-quadric reduction; final primitive open",
+  "source": "K from actual Ssrc reduction, including its full w dependence",
+  "coordinates": {
+    "l": "e*q",
+    "h": "e^-3",
+    "c": "i*e^2",
+    "d": "j*e",
+    "Jpar": "j^2"
+  },
+  "quadric": "a**2 + a*j*l + b**2 + i*l**2 + l + 1",
+  "physical_cover": "h^2=f(w)=1/v(i,j^2,w); not discarded",
+  "remainder_convention": "positive Ssrc; negate complete current for original source",
+  "current_identity": "-(R/3) zeta0 wedge dh + d[(h*K/6)zeta0] = -K*b^2/(6*l^4) da wedge dl",
+  "R": "-(h/2)*K_h-K",
+  "zeta0": "b*dl/l",
+  "quartic": "a**4 + a**3*j*l + a**2*(i*l**2 + l + 1) + f*l**6",
+  "remaining_coefficient_dl_dw": "K*f_w*l**2*(a**2 + a*j*l + i*l**2 + l + 1)/(24*a**3 + 18*a**2*j*l + 12*a*(i*l**2 + l + 1))",
+  "checks": {
+    "fixed_quadric_equation": true,
+    "physical_pencil_h": true,
+    "base_jacobian_dc_dd_de": true,
+    "weighted_base_volume": true,
+    "literal_current_pair_(0, 1)": true,
+    "literal_current_pair_(0, 2)": true,
+    "literal_current_pair_(1, 2)": true,
+    "zeta_divided_by_h": true,
+    "d_zeta_over_h_pair_(0, 1)": true,
+    "d_zeta_over_h_pair_(0, 2)": true,
+    "d_zeta_over_h_pair_(1, 2)": true,
+    "quartic_elimination": true,
+    "full_quartic_source_coefficient": true
+  },
+  "count": 13,
+  "limitations": "Only a reduction. Rational integration on the quartic field, i,j derivatives or valid geometric serving still required."
+}

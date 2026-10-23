@@ -1,0 +1,19 @@
+{
+  "arithmetic": "stdlib Fraction, total-order-three Taylor jets",
+  "point": {
+    "R": 1,
+    "S": 1,
+    "z": 1,
+    "k": 1,
+    "c": "1/6",
+    "d": "1/4",
+    "e": "1/4",
+    "u": "29/192"
+  },
+  "Hsrc": "-32/3",
+  "T_minus_4over3_H": "832/27",
+  "S_T_minus_4over3_H": "30848/27",
+  "E_S_T_minus_4over3_H": "3138560/81",
+  "normalization_checks": 8,
+  "scope": "Exact local value for this source-directed annihilator channel; no global nonexistence or primitive claimed."
+}

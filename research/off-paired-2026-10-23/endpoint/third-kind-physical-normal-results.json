@@ -1,0 +1,38 @@
+[
+  {
+    "name": "x3C2",
+    "denominator": "t**4*x**5*y**2/9 + t**2*x**7*y*z/3 + x**9*z**2/4",
+    "degree": 11,
+    "prime": 1009,
+    "seed": 72063,
+    "unknowns": 513,
+    "rows": 2625,
+    "rank": 478,
+    "consistent_evaluations": false,
+    "seconds": 4.464455826000176
+  },
+  {
+    "name": "x3J01",
+    "denominator": "-3*t**3*x**6*z**2/4 + 2*t**2*x**9 - 2*t**2*x**3*y**6 - 9*x**5*y**5*z",
+    "degree": 11,
+    "prime": 1009,
+    "seed": 72064,
+    "unknowns": 513,
+    "rows": 2625,
+    "rank": 513,
+    "consistent_evaluations": false,
+    "seconds": 5.3674474090000786
+  },
+  {
+    "name": "J01sq",
+    "denominator": "9*t**6*x**6*z**4/16 - 3*t**5*x**9*z**2 + 3*t**5*x**3*y**6*z**2 + 4*t**4*x**12 - 8*t**4*x**6*y**6 + 4*t**4*y**12 + 27*t**3*x**5*y**5*z**3/2 - 36*t**2*x**8*y**5*z + 36*t**2*x**2*y**11*z + 81*x**4*y**10*z**2",
+    "degree": 16,
+    "prime": 1009,
+    "seed": 72065,
+    "unknowns": 1549,
+    "rows": 7805,
+    "rank": 1492,
+    "consistent_evaluations": false,
+    "seconds": 153.91335559499998
+  }
+]

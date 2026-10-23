@@ -1,0 +1,45 @@
+{
+  "meaning": "Derivative of omega_j=q^j dq/y equals columns dot(omega0,omega1)+d(R/y), y^2=Aq^3+Bq+D; A fixed",
+  "physical_substitution": {
+    "Eplus": "A=2",
+    "Eminus": "A=-2",
+    "B": "-z/2",
+    "D": "H-1-z^6",
+    "M_H": "M_D",
+    "M_z": "-M_B/2-6z^5*M_D"
+  },
+  "parameters": {
+    "D": {
+      "columns": [
+        [
+          "-9*A*D/(2*(27*A*D**2 + 4*B**3))",
+          "-3*A*B/(27*A*D**2 + 4*B**3)"
+        ],
+        [
+          "-B**2/(27*A*D**2 + 4*B**3)",
+          "9*A*D/(2*(27*A*D**2 + 4*B**3))"
+        ]
+      ],
+      "primitives_R": [
+        "(6*A*B*q**2 - 9*A*D*q + 4*B**2)/(27*A*D**2 + 4*B**3)",
+        "-(9*A*D*q**2 + 2*B**2*q + 6*B*D)/(27*A*D**2 + 4*B**3)"
+      ]
+    },
+    "B": {
+      "columns": [
+        [
+          "-B**2/(27*A*D**2 + 4*B**3)",
+          "9*A*D/(2*(27*A*D**2 + 4*B**3))"
+        ],
+        [
+          "3*B*D/(2*(27*A*D**2 + 4*B**3))",
+          "B**2/(27*A*D**2 + 4*B**3)"
+        ]
+      ],
+      "primitives_R": [
+        "-(9*A*D*q**2 + 2*B**2*q + 6*B*D)/(27*A*D**2 + 4*B**3)",
+        "-(B*q - 3*D)*(2*B*q + 3*D)/(27*A*D**2 + 4*B**3)"
+      ]
+    }
+  }
+}

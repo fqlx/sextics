@@ -1,0 +1,12 @@
+{
+  "checks": 5,
+  "projected_numerator": "a**3*t**3*u**3*v**3*w**3*x**9/8",
+  "H_pole3_jacobian_lift_x": "a**3*t**3*x**4/6",
+  "H_pole2_numerator": "a**3*t**3*x**3/3",
+  "product_H02_monomial": "a**3*t**3*u**3*v**3*w**3*x**3/24",
+  "necessary_form": "B^3/(H^3 C^2) dx da du dv",
+  "pure_A_identity": "div(kappa*A)=-B^3/(2H^3C^2)",
+  "pure_W_identity": "div(kappa*Bvec)=B^3/(H^3C^2)",
+  "scope": "pure-A and pure-W current restrictions, including finite extensions; full two-component system remains open",
+  "status": "exact algebra checked; proper-residue argument recorded in note"
+}

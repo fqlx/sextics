@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "checks": [
+    "downloaded_zip_expected_hash",
+    "complete_manifest_all_27_files",
+    "unpacked_files_equal_zip_entries",
+    "target_F_live21",
+    "target_A_live21",
+    "target_F_original",
+    "target_A_original",
+    "target_F_public_packet",
+    "target_A_public_packet",
+    "TARGET_json_F",
+    "TARGET_json_A",
+    "TARGET_json_snapshot_hash",
+    "exported_contact_H",
+    "actual_source_invariant_projection",
+    "exported_source",
+    "source_at_pole_5",
+    "full_Jacobian_lift_pole_5",
+    "reduced_source_pole_5",
+    "source_at_pole_4",
+    "full_Jacobian_lift_pole_4",
+    "reduced_source_pole_4",
+    "all_880_full_Jacobian_generator_multiples",
+    "nonzero_actual_source_pairing",
+    "final_explicit_Jacobian_lift",
+    "integrating_factor_m2_universal_identity",
+    "broader_old_fiber_shape_forced_contact_relation"
+  ],
+  "count": 26,
+  "arithmetic": "Independent standard-library Fraction polynomial dictionaries; no public checker/generator imports",
+  "packet_zip_sha256": "06ee0fdf55a3a5a2d82d5d0293df850220eb7afa1fe5fbe96f9b80a656fc31de",
+  "manifest_file_count": 27,
+  "target_raw_sha256": {
+    "live21": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6",
+    "original": "bb0e2891331ddcf18fdbc683df881900400f0e8c2cc73b2f0f23c5d3f7c88467",
+    "public_packet": "5818fa7d710a36ea6f0a3b58f273e8408d50e6c4b3e8aa6f960f432db379dcf6"
+  },
+  "canonical_target_sha256": "9df3e6d7010a0ddfa608a059705b584216fa06fa8130d084d6135179370f3ccf",
+  "canonical_target_serialization": "UTF-8 json.dumps(target,sort_keys=True,separators=(comma,colon)), no trailing newline. F,A arrays of [lexicographic exponent vector,numerator,denominator]; immutable variable order.",
+  "pairing": "-54190940/990659911761",
+  "jacobian_relations_checked": 880,
+  "nine_bounded_results_read_only": [
+    {
+      "D": [
+        0,
+        1,
+        0
+      ],
+      "rank": 90,
+      "augmented_rank": 91
+    },
+    {
+      "D": [
+        0,
+        1,
+        1
+      ],
+      "rank": 128,
+      "augmented_rank": 129
+    },
+    {
+      "D": [
+        0,
+        1,
+        2
+      ],
+      "rank": 180,
+      "augmented_rank": 181
+    },
+    {
+      "D": [
+        2,
+        0,
+        0
+      ],
+      "rank": 178,
+      "augmented_rank": 179
+    },
+    {
+      "D": [
+        1,
+        1,
+        0
+      ],
+      "rank": 325,
+      "augmented_rank": 326
+    },
+    {
+      "D": [
+        0,
+        2,
+        0
+      ],
+      "rank": 530,
+      "augmented_rank": 531
+    },
+    {
+      "D": [
+        3,
+        0,
+        0
+      ],
+      "rank": 510,
+      "augmented_rank": 511
+    },
+    {
+      "D": [
+        1,
+        2,
+        0
+      ],
+      "rank": 1192,
+      "augmented_rank": 1193
+    },
+    {
+      "D": [
+        0,
+        3,
+        0
+      ],
+      "rank": 1576,
+      "augmented_rank": 1577
+    }
+  ],
+  "scope": "Obstructs only old 3-base divergence-free contact current, its stated affine-linear old fiber shapes, and finite algebraic extensions thereof. Does not automatically obstruct new 4-base cubic-ray complete rank2 currents. Nine old bounded endpoint searches were read, not rerun. Geometric localization/residue input is classical, not Lean verification. No certificate has been found."
+}

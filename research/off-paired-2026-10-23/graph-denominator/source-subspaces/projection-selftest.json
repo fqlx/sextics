@@ -1,0 +1,50 @@
+[
+  {
+    "case": 0,
+    "rows": 12,
+    "columns": 30,
+    "rank": 12,
+    "served_dimension": 18,
+    "status": "passed"
+  },
+  {
+    "case": 1,
+    "rows": 24,
+    "columns": 30,
+    "rank": 24,
+    "served_dimension": 6,
+    "status": "passed"
+  },
+  {
+    "case": 2,
+    "rows": 40,
+    "columns": 30,
+    "rank": 30,
+    "served_dimension": 0,
+    "status": "passed"
+  },
+  {
+    "case": 3,
+    "rows": 20,
+    "columns": 36,
+    "rank": 20,
+    "served_dimension": 16,
+    "status": "passed"
+  },
+  {
+    "case": 4,
+    "rows": 30,
+    "columns": 36,
+    "rank": 30,
+    "served_dimension": 6,
+    "status": "passed"
+  },
+  {
+    "case": 5,
+    "rows": 45,
+    "columns": 36,
+    "rank": 36,
+    "served_dimension": 0,
+    "status": "passed"
+  }
+]

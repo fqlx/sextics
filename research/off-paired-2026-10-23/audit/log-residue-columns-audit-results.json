@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "arithmetic": "exact Fraction Laurent-polynomial identities, plus independent finite-field column comparison",
+  "checks": [
+    "x_conic_tangent",
+    "x_residue_divergence",
+    "x_finite_residue_closed",
+    "y_conic_tangent",
+    "y_residue_divergence",
+    "y_finite_residue_closed",
+    "z_conic_tangent",
+    "z_residue_divergence",
+    "z_finite_residue_closed",
+    "raw_source_plus_vertical_exact",
+    "implemented_columns_24_generic_points"
+  ],
+  "prime": 1009,
+  "generic_points": 24,
+  "script_sha256": "d8e3f2b3066bd14c23a7eeb82510305e98d126acdd1ea132e5ae3012fe5847bb",
+  "source_transport": "source=-y^3 M_H e0/6; multiplying by -6/y^3 recovers exactly the reordered M_H e0. Each added column is K_g M_H e0.",
+  "vertical_correction": "-V(s)/s * d_p[p/((p-s)Z)] must be retained when constructing the literal primitive",
+  "scope": "Valid additional rational residue-current columns only. No certificate and no exact exclusion follows from the modular no-hit."
+}

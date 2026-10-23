@@ -1,0 +1,23 @@
+{
+  "source_sha256": "d725307869fcf3a2f064a0a6616eee78ea59f74dd3305fcb1d2408d3018f25b5",
+  "checks": 7,
+  "identities": [
+    "vi/vw error O(w^-2)",
+    "vJ/vw error O(w^-2)",
+    "Z_w error O(w^-2)",
+    "D_w error O(w^-2)",
+    "actual source positive infinity coefficients",
+    "explicit cubic infinity preimage",
+    "explicit quadratic infinity preimage"
+  ],
+  "prerequisite": "Use actual source-bound F/G/H potential moments after subtracting their exact polynomial parts. The source h remains physical.",
+  "source_moment_polynomial_primitive": "-27*i**3*w**2/(16*J**2) - 243*i**5*w/(128*J**3)",
+  "actual_H_positive_polynomial_part": "-81*i**3*w**2/(8*J**2) - 15309*i**5*w/(512*J**3)",
+  "Qinf": "-9*i**6*w**2/(77*J**2) - 567*i**8*w/(5704*J**3)",
+  "preferred_QDinf": "-729*i**4*w/(440*J) - 27*i**3*w**2/(10*J) - 5103*i**5*w/(3040*J**2)",
+  "exact_lift": "Preferred: G -> G+v Z QDinf; K/v -> K/v-LD QDinf. Cubic alternative: Hpot -> Hpot+v Z Qinf; K/v -> K/v-L3 Qinf.",
+  "consequence": "Actual new K/v is O(1) at infinity. Its remaining constant is removable by the allowed K->K+vC(i,J) gauge, giving O(w^-1).",
+  "fold_behavior": "Full cubic-moment properization itself generally raises K/v from fold order three to five, since QH has a nonzero linear Morse jet. Preferred LD QDinf has order two and does not raise this existing bound. After full properization the safe bound is s^-5,s^-3,s^-1 for K/v, source pole order four, and a rational fold current with denominator Ccrit^3. The cubic alternative Qinf also has bound five.",
+  "limitation": "This does not make H polynomial in f=1/v, does not integrate the compact source, and is not a sextic certificate.",
+  "certificate": false
+}

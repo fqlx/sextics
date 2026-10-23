@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "exact_groups": 6,
+  "kernel_scope": "Relative bidifferential coefficient identities, not a globally closed H20 residue or source primitive.",
+  "sign": "Kq is the bidifferential coefficient partial_q(Kp); exterior d(Kp dp) has -Kq dp wedge dq.",
+  "full_graph": "(D^2*C^3-B^3*H^2)*(D^2*C^3+B^3*H^2)=0; both signs give the same hyperelliptic polynomial after rational rescaling.",
+  "warning": "An exact form d(tau) is a correction kernel and cannot alone carry a nonzero proper H20 residue class."
+}

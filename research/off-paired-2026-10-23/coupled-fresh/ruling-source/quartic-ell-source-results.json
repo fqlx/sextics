@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": {
+    "quartic_J_identity": true,
+    "quartic_J_on_curve": true,
+    "literal_beta_section_split": true,
+    "literal_i_derivative": true,
+    "literal_j_derivative": true,
+    "literal_h_derivative": true,
+    "finite_Pa_residue": true,
+    "compact_derivatives_Pa_orders": true,
+    "compact_derivatives_Pb_orders": true,
+    "full_compact_source_transfer": true,
+    "actual_source_coefficient": true
+  },
+  "certificate": false,
+  "fixed_quadric": "a**2 + a*ell*j + b**2 + ell**2*i + ell + 1",
+  "norm": "a*b=h*ell^3",
+  "physical_cover": "h^2=f(w)=1/v(i,j^2,w)",
+  "quartic": "a**4 + a**3*ell*j + a**2*(ell**2*i + ell + 1) + ell**6*f",
+  "curve_J": "a*(2*a + ell*j) - 2*b**2",
+  "relative_forms": {
+    "zeta0": "b*dell/ell",
+    "zeta_i": "b*ell*dell/J",
+    "zeta_j": "h*ell^3*dell/J",
+    "zeta_h": "ell^2*(2a+j*ell)*dell/J"
+  },
+  "source_split": "K*f_w*beta/6=(K*h_w/6)*zeta0-(K*h*h_w/6)*zeta_h",
+  "Pa_residue": "Res_Pa\u00b1 beta=\u00b1sqrt(-1)/(2h); source residue=\u00b1sqrt(-1)*K*dh/6",
+  "base_primitive_input": "B=B_i*dj^dw+B_j*dw^di+B_w*di^dj, dB=(K*h_w/6)*di^dj^dw",
+  "compact_source": "-B_i*zeta_i-B_j*zeta_j-(B_i*h_i+B_j*h_j+B_w*h_w+K*h*h_w/6)*zeta_h",
+  "current": "-zeta0 wedge B; full i,j derivatives of h retained",
+  "remaining": "All eight compact components remain to be served. B comes from accumulated actual source Green currents, not an arbitrary rational-integration assertion."
+}

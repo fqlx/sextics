@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "lift_exact_normal_VF_equals_A0",
+    "lift_exact_Vp_equals_P",
+    "lift_divergence_from_literal_residue"
+  ],
+  "scope": "Conditional field assembly checks only. Source-sign and exact Dwork terms must follow CURRENT-TO-WITNESS.md."
+}

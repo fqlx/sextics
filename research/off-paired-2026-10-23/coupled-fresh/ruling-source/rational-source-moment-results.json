@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "inverse_physical_norm",
+    "source_h_simplification",
+    "inverse_root_equation",
+    "source_first_moment",
+    "source_second_moment",
+    "w_equals_z_squared_moment"
+  ],
+  "count": 6,
+  "scope": "Exact actual scalar source/root-moment identities. Full curve kernel and adjoint source match remain necessary; no certificate.",
+  "certificate": false
+}

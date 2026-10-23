@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "support_pullback": true,
+    "sextic_pullback": true,
+    "cubic_discriminant": true,
+    "A_squarefree": true,
+    "B_squarefree": true,
+    "C_squarefree": true,
+    "AB_coprime": true,
+    "AC_coprime": true,
+    "BC_coprime": true,
+    "relative_dual_all_negative": true
+  },
+  "relative_dual_degrees": [
+    -5,
+    -6,
+    -4,
+    -4,
+    -7,
+    -5,
+    -5,
+    -3,
+    -3,
+    -3
+  ],
+  "status": "Exact polynomial checks for smooth bundle resolution; H20=0 follows from the stated relative Serre-duality argument. No certificate."
+}

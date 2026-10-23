@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "exact_endpoint_source_direction": true,
+    "physical_adapted_L": true,
+    "oriented_physical_coefficient": true
+  },
+  "status": "Exact movingpole source-direction and actual coefficient; phi_C residue correction remains open."
+}

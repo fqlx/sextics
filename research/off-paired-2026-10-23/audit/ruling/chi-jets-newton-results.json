@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "prime": 1009,
+  "physical_point": {
+    "R": 1,
+    "S": 1,
+    "z": 1,
+    "k": 1
+  },
+  "curve_points": [
+    {
+      "a": 953,
+      "b": 18,
+      "q": 1,
+      "J": 121
+    },
+    {
+      "a": 259,
+      "b": 487,
+      "q": 2,
+      "J": 982
+    },
+    {
+      "a": 263,
+      "b": 165,
+      "q": 2,
+      "J": 545
+    },
+    {
+      "a": 942,
+      "b": 858,
+      "q": 3,
+      "J": 813
+    },
+    {
+      "a": 983,
+      "b": 308,
+      "q": 4,
+      "J": 562
+    },
+    {
+      "a": 72,
+      "b": 268,
+      "q": 5,
+      "J": 1005
+    },
+    {
+      "a": 743,
+      "b": 633,
+      "q": 5,
+      "J": 384
+    },
+    {
+      "a": 808,
+      "b": 270,
+      "q": 6,
+      "J": 571
+    },
+    {
+      "a": 701,
+      "b": 297,
+      "q": 7,
+      "J": 317
+    },
+    {
+      "a": 38,
+      "b": 279,
+      "q": 8,
+      "J": 291
+    },
+    {
+      "a": 583,
+      "b": 842,
+      "q": 8,
+      "J": 181
+    },
+    {
+      "a": 64,
+      "b": 27,
+      "q": 12,
+      "J": 735
+    }
+  ],
+  "literal_jet_checks": 228,
+  "derivative_labels": [
+    "R",
+    "S",
+    "z",
+    "RR",
+    "RS",
+    "Rz",
+    "SS",
+    "Sz",
+    "zz",
+    "RRR",
+    "RRS",
+    "RRz",
+    "RSS",
+    "RSz",
+    "Rzz",
+    "SSS",
+    "SSz",
+    "Szz",
+    "zzz"
+  ],
+  "compact_rank": 8,
+  "pivot_derivative_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+  ],
+  "pivot_derivative_labels": [
+    "R",
+    "S",
+    "z",
+    "RR",
+    "RS",
+    "Rz",
+    "SS",
+    "RRR"
+  ],
+  "method": "Independent truncated Taylor Newton roots of the actual physical quartic and b0 normalization; saved compact and exact representatives evaluated with direct curve q derivative. No primary code or derivative formula imported.",
+  "source_hashes": {
+    "rr-basis-results.json": "3b07c16721a46501532b120f28dc3c1f0f16c96b2544d995f880a89e6c4d5687",
+    "chi-physical-third-jets-results.json": "a1e2912a7aca53f901b03fa74742eed8e36d323d7d310eb8497fce1872a99784"
+  },
+  "scope": "Checks all19 derivative identities at12 independent affine curve points over1009 and recomputes compact rank8. Does not reprove global RR completeness or exact ideal identities, and gives no primitive/source solution."
+}

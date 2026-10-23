@@ -1,0 +1,40 @@
+{
+  "status": "Exact full source normalization; no polynomial integration or primitive asserted",
+  "check_count": 12,
+  "checks": [
+    "H-new",
+    "B-new",
+    "f-new",
+    "g-new",
+    "actual-residue-unchanged",
+    "canonical-kappa-unchanged",
+    "canonical-V-unchanged",
+    "canonical-W-unchanged",
+    "actual-four-density",
+    "actual-five-form-density",
+    "gamma-coefficient-relation",
+    "K3-coefficient-relation"
+  ],
+  "substitution": {
+    "a": "c*h",
+    "q": "c^4*p"
+  },
+  "monic_cubic": "q^3+Btilde*q+S=0",
+  "coefficients": {
+    "S": "a**6 + c**6 + Y**(-2)",
+    "Btilde": "T*V**2*a/(2*Y) + T*V*c**3/2 + V*a*c**2/3",
+    "Ctilde": "1"
+  },
+  "elliptic_coefficient_relations": [
+    "alpha=T*V/2",
+    "beta=V/3",
+    "gamma=T*V^2/(2*Y)=3*alpha*beta/Y",
+    "64*alpha^6+729*beta^6=1-Y^2"
+  ],
+  "physical_source": "-c^3*Rnew dc ^ da ^ eta1 ^ eta2",
+  "Rnew": "Btilde*q/(3*q^2+Btilde)^3 = Rold",
+  "canonical_gauge": "kappa,V,W are all unchanged; complete source vector is (0,1/S)",
+  "physical_double_pole_form": "-c^3*q^2/(2*fnew^2) dc ^ da ^ eta1 ^ eta2 ^ dq",
+  "retained_dependence": "alpha,beta,gamma,Y and eta1,eta2 remain in the common K3/elliptic function field",
+  "warning": "Polynomial radial density does not supply an integration along elliptic factors or cancel coefficient jets"
+}

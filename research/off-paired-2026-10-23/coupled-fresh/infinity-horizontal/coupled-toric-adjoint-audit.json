@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "zeta_self_1": true,
+    "zeta_self_2": true,
+    "zeta_self_3": true,
+    "xi_self_1": true,
+    "xi_self_2": true,
+    "xi_self_3": true,
+    "cross_zeta_1": true,
+    "cross_zeta_2": true,
+    "cross_zeta_3": true,
+    "cross_zeta_4": true,
+    "cross_xi_1": true,
+    "cross_xi_2": true,
+    "cross_xi_3": true,
+    "cross_xi_4": true,
+    "infinity_adjoint_1": true,
+    "infinity_adjoint_2": true,
+    "infinity_adjoint_3": true,
+    "infinity_adjoint_4": true,
+    "infinity_adjoint_5": true,
+    "infinity_adjoint_6": true,
+    "infinity_adjoint_7": true,
+    "closed_cross_companion": true,
+    "closed_cross_scalar_heat_image": true
+  },
+  "passed": true,
+  "source_equation": "the (Z),(X) operators in ruling-source/COUPLED-TORIC-ADJOINT.md agree with automatic formal adjoints",
+  "infinity": "all seven xi rows include the complete operator on s*omega; adjoint residual equals s times xi residual",
+  "certificate": false
+}

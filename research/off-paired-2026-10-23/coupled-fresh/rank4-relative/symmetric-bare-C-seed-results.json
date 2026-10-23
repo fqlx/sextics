@@ -1,0 +1,7 @@
+{
+  "scope": "a=1,z=0 only",
+  "G": "q*(4T-531441*(T+2)^4)*sum(v_n*T^n)/(2-3T)^3, T=q^6",
+  "equation": "-Lq^*G=S0; S0=-q^3(2+3T)/(3(2-3T)^2)",
+  "solutions": [],
+  "claim": "Constructive specialized seed trial only; no generic exclusion."
+}

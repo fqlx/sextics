@@ -1,0 +1,31 @@
+{
+  "status": "Actual closed-residue CM completion with retained derivative; its standalone closure reduces to the already excluded pure-W scope",
+  "constant_scope": "fixed characteristic-zero k; k=C for full contract",
+  "checks": [
+    "physical-lambda-h",
+    "complete-kappa-horizontal-lift",
+    "lift-ratio",
+    "actual-partial-current-divergence",
+    "no-V-row",
+    "mixed-current-normalization",
+    "normalized-B-over-g",
+    "kernel-completion-trace-W-coefficient"
+  ],
+  "check_count": 8,
+  "physical_constants": "A=T*V/2,D=V/3,E=T*V^2/(2Y2), with E2 point fixed for partial_c/partial_h",
+  "current_before_trace": "J_F=Pminus wedge d(4*c*y*m) wedge eta2",
+  "closed_graph_residue": "Res(Pminus)*d(4*c*y*m)|graph wedge eta2",
+  "exact_current_identity": "J_F=4*c*y*m*dPminus wedge eta2-d(4*c*y*m*Pminus wedge eta2)",
+  "after_normalized_trace_mod_exact": "W*c^5*B/(3*a_scale*C*J) eta1 wedge dlog(kappa) wedge eta2",
+  "base_vector": {
+    "c": "1/(H*c**5)",
+    "h": "-(-2*B*H/c - 2*B*(-6*H + 6*h**6 + 6)/(3*c) + H*(B/c - 2*E*h/c**2))/(H*c**5*(-4*B*h**5 + H*bh))",
+    "E1": "0",
+    "E2": "0"
+  },
+  "horizontal_lift": "(-2*B*H/c - 2*B*(-6*H + 6*h**6 + 6)/(3*c) + H*(B/c - 2*E*h/c**2))/(-4*B*h**5 + H*bh)",
+  "density_derivative_ratio": "ell=(2/3)*U_c(H)/H-U_c(J)/J, U_c=partial_c-r*partial_h",
+  "source": "div(W*D)=(1+c*ell)*R",
+  "remaining": "c*ell*R",
+  "scope": "Because D(log(kappa))=0 and only W remains modulo an exact current, a complete primitive in this closed-dF kernel family would be a pure-W solution. The previously audited pure-component obstruction applies. A genuine new mixed correction must retain a second independent component or residue class."
+}

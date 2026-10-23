@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "count": 22,
+  "checks": [
+    "actual_root_cover_T_H",
+    "actual_root_cover_B_H",
+    "actual_root_cover_T_tau",
+    "actual_root_cover_B_tau",
+    "normalized_T_b_zero",
+    "normalized_B_b_one",
+    "tau_cubic_T_tangency",
+    "tau_cubic_B_tangency",
+    "full_physical_commutator_component_0",
+    "full_physical_commutator_component_1",
+    "physical_commutator_tau",
+    "physical_transverse_decomposition_0",
+    "physical_transverse_decomposition_1",
+    "full_rho_weighted_T_divergence",
+    "full_rho_weighted_B_divergence",
+    "all_arbitrary_F_transport_zero_order",
+    "finite_cover_density_exact",
+    "scalar_potential_fourth_power_Jacobian_factor",
+    "normalized_companion_scaling_0",
+    "normalized_companion_scaling_1",
+    "normalized_companion_scaling_2",
+    "normalized_companion_scaling_3"
+  ],
+  "arithmetic": "independent standard-library Fraction polynomial/localized arithmetic with arbitrary H first and second jets",
+  "scope": "Physical vector fields, finite-root density, all first-order transport terms and normalized coefficients checked identically. The fourth recurrence follows by exact induction from this identity and [B,T]=0. The monic-potential adjunction and U correction are reviewed algebraically in ADJOINT-TRANSPORT-AUDIT.md. No forcing solution is asserted.",
+  "audited_note_sha256": "7955916909f9adf85573159acf2a9c8bb2ee5cb567333f07f3dca60a4bcbbcbe"
+}

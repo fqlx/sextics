@@ -1,0 +1,181 @@
+{
+  "status": "no_certificate_modular_inconsistency_for_both_fixed_assemblies",
+  "target": {
+    "q": 1,
+    "A": "X0^3*Y0^3",
+    "F_binding": "original immutable off-paired sextic, independently Fraction-audited"
+  },
+  "supports": {
+    "families": [
+      "X",
+      "XY"
+    ],
+    "all_use": "Di=FY*Ti^2+16*HX*Ki",
+    "Ti": "sum of sixth powers of the two coordinates other than held coordinate",
+    "Ki": "product of the same sixth powers",
+    "normalization": "same kappa=M^3/(HX^2*FY), including Y supports"
+  },
+  "exact_interface": {
+    "local": "Ai*Di^2+L_Di(Ni)=F^2*Qi",
+    "source_sum": "sum Ai=A",
+    "assembly": "D=prod Di; N=sum Ni*(D/Di); Q=sum Qi*(D/Di)^2",
+    "scope": "sufficient additive construction; not all currents on the product denominator"
+  },
+  "modular_assemblies": [
+    {
+      "families": "X",
+      "prime": 1000003,
+      "rows": 60695,
+      "columns": 15945,
+      "coefficient_rank": 15724,
+      "augmented_rank": 15725,
+      "status": "inconsistent_mod_p",
+      "seconds": 1.13887,
+      "peak_rss_mb": 36
+    },
+    {
+      "families": "XY",
+      "prime": 1000003,
+      "rows": 149940,
+      "columns": 31890,
+      "coefficient_rank": 31466,
+      "augmented_rank": 31467,
+      "status": "inconsistent_mod_p",
+      "seconds": 5.92184,
+      "peak_rss_mb": 128
+    }
+  ],
+  "source_projection": {
+    "prime": 1000003,
+    "source_coordinate_dimension": 24,
+    "dimension_each_support": 2,
+    "basis_exact": [
+      "X0*(partial F/partial Y1)/6",
+      "3*Y1*(partial F/partial X0)/2"
+    ],
+    "basis_type": "universal polynomial divergence-zero linear vector-field sources",
+    "target_in_modular_span": false,
+    "all_12_modular_kernel_lifts_checked": true,
+    "projection_algorithm_independent_dense_tests": 6,
+    "blocks": [
+      {
+        "support": [
+          "X",
+          0
+        ],
+        "rank": 5242,
+        "kernel_dimension": 73,
+        "served_source_dimension": 2
+      },
+      {
+        "support": [
+          "X",
+          1
+        ],
+        "rank": 5243,
+        "kernel_dimension": 72,
+        "served_source_dimension": 2
+      },
+      {
+        "support": [
+          "X",
+          2
+        ],
+        "rank": 5237,
+        "kernel_dimension": 78,
+        "served_source_dimension": 2
+      },
+      {
+        "support": [
+          "Y",
+          0
+        ],
+        "rank": 5247,
+        "kernel_dimension": 68,
+        "served_source_dimension": 2
+      },
+      {
+        "support": [
+          "Y",
+          1
+        ],
+        "rank": 5249,
+        "kernel_dimension": 66,
+        "served_source_dimension": 2
+      },
+      {
+        "support": [
+          "Y",
+          2
+        ],
+        "rank": 5246,
+        "kernel_dimension": 69,
+        "served_source_dimension": 2
+      }
+    ]
+  },
+  "independent_audit": "../audit/GRAPH-ASSEMBLY-AUDIT.md",
+  "limitations": [
+    "All upper dimension and inconsistency statements are modulo1000003.",
+    "Exact universal basis identities prove only a characteristic-zero lower dimension of2.",
+    "No exact certificate, characteristic-zero obstruction, unrestricted exclusion, or denominator-power escalation."
+  ],
+  "readable_manifest": [
+    {
+      "path": "README.md",
+      "sha256": "bf56cf97b95a8f74c7b82f989d5149d8797c1b2866abb7db4c7d667624bfe441"
+    },
+    {
+      "path": "build_assembly.py",
+      "sha256": "3d36e50df88939a8532a970eb67aff6010125ee87a7893504728e39cfdf0f892"
+    },
+    {
+      "path": "solve-1000003.json",
+      "sha256": "2dfcfdce0304e23bd5064283cd13878efbc2c9d0322d141ccb910b1cbc0ecb0b"
+    },
+    {
+      "path": "solve-XY-1000003.json",
+      "sha256": "7220f04955193016dd8a76768fcf1d54d45921c666caed9689c742459ad71b31"
+    },
+    {
+      "path": "../audit/GRAPH-ASSEMBLY-AUDIT.md",
+      "sha256": "133e027f0f111498c5206987b7bbbc8dd29cd325089d000a14d86ce1e9e0bead"
+    },
+    {
+      "path": "../audit/verify_graph_assembly_fraction.py",
+      "sha256": "3d24846c0b9ea7d1d71603628564aa5e697630244ab82d96bab60bd7efabcb51"
+    },
+    {
+      "path": "../audit/graph-assembly-fraction-results.json",
+      "sha256": "1a2f993fba18bad174f9724f7e4934c0bc81cf2ba23b469a626274e010a96bae"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/README.md",
+      "sha256": "92f61b19e4791764ed9fede7bec3f76f1321ec7bf54393f01ed775846b561d1d"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/extract_blocks.py",
+      "sha256": "7f93639270f4fe07c3a61d09740fb9e4a9c20121409ce9268287fbbf5032e7bf"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/project_sources.cpp",
+      "sha256": "bfb9a2418aff8ce71345375d95df03876085b8684c9010b384827bc3b3467077"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/selftest_projection.py",
+      "sha256": "3572f639a0ed03668160eab461a26b520431616081e02315f574b6b6a70fa733"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/projection-selftest.json",
+      "sha256": "74aa86e59470c2de3deef8a64dd49222f70d1444a738eef2a608260e0f28a02f"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/verify_projections.py",
+      "sha256": "9febe1c00d99c97fe5ed1a033dc3fdd2dd08f3bb4ee9bc0dc20e782263644ca2"
+    },
+    {
+      "path": "../graph-denominator/source-subspaces/projection-verification.json",
+      "sha256": "12ef2edea96b2611c050f27d54c32b69a821ce119a546f3c8bed65e0f9bbb0b3"
+    }
+  ]
+}

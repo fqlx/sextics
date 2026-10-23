@@ -1,0 +1,27 @@
+{
+  "status": "Exact finite normal/log chain identity; physical logarithmic coefficient remains unresolved.",
+  "checks": {
+    "raw_normal_scalar": true,
+    "ordered_normal_scalar": true,
+    "rational_log_decomposition": true,
+    "mixed_log_jet": true,
+    "primitive_jet_identity": true,
+    "actual_source_as_parameter_operator": true,
+    "actual_d_jet": true
+  },
+  "orientation": "Ambient order (u,v,daux,eaux); put J first for the displayed positive alpha.",
+  "ordered_normal_residue": "P2 du dv ddaux/(3*daux*eaux^6)",
+  "rational_quotient": "t=daux^3, eaux^3=G-t",
+  "alpha": "P2/(9*t*(G - t)**2)",
+  "F": "P2/(9*G*(G - t))",
+  "L": "P2/(9*G**2)",
+  "ell": "log(t/(G-t)); only its rational differential is used.",
+  "chain_identity": "alpha dt=d_t F+L*d_t ell",
+  "jet_primitive": "-(-G**2*P2_D + 3*G*G_D*P2 + G*P2_D*t - 2*G_D*P2*t)/(9*G**2*(-G + t)**2)",
+  "jet_identity": "D(alpha)dt=d_t[D(F)-L*D(G)/(G-t)]+D(L)*d_t ell, with D(t)=0.",
+  "actual_G": "B**3/(27*d) + C",
+  "actual_P2": "Y0_cubed*(-2*B**3/(27*d) + C)",
+  "projective_source": "Y0_cubed means Y0^3; the projective degree-nine numerator is Y0^3*(C-2*B^3/(27d)). On Y0=1 it reduces to the affine numerator.",
+  "actual_d_jet_primitive": "-3*B**3*Y0_cubed*(4*B**6 - 27*B**3*C*d - 54*B**3*d*t - 3645*C**2*d**2 + 2916*C*d**2*t)/((B**3 + 27*C*d)**2*(-B**3 - 27*C*d + 27*d*t)**2)",
+  "scope": "This is an explicit rational-plus-log decomposition of the actual normal residue, not the unknown Y scalar primitive g0. Multiplying by the first elliptic prefactor preserves the identity and differentiates that prefactor as well. The coefficient L=P2/(9G^2) is the original physical source divided by nine, so integrating it or discarding its logarithmic residue would be circular. The identity alone cannot replace the missing compatible joint primitive."
+}

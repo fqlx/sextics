@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "source_polynomial_conversion": true,
+    "hermite_reduction": true,
+    "rational_logarithmic_derivative": true,
+    "first_primitive_plus_log": true
+  },
+  "status": "Exact coefficient-orbit first primitive and rational dlog correction; physical-density correction remains."
+}

@@ -1,0 +1,14 @@
+PASS: target substitution, source Jacobian, quotient degree 36, and all face AM-GM bounds.
+c matrices constructed
+PASS: c K rank 1025 M rank/bound 1200 second variation augmented 1201 seconds 12.48
+d matrices constructed
+PASS: d K rank 1335 M rank/bound 1640 second variation augmented 1641 seconds 31.98
+s matrices constructed
+PASS: s K rank 3025 M rank/bound 3580 second variation augmented 3581 seconds 65.6
+P matrices constructed
+PASS: P K rank 1935 M rank/bound 2510 second variation augmented 2511 seconds 55.0
+U matrices constructed
+PASS: U K rank 2795 M rank/bound 3465 second variation augmented 3466 seconds 115.57
+PASS: all five characteristic-zero generic second-variation nonmembership obstructions.
+Scope: relative threefold primitives; all five quotient coordinate directions are necessary.
+The unrestricted physical certificate problem remains open.

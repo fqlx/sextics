@@ -1,0 +1,21 @@
+{
+  "status": "Exact normalizer-pole geometry for the actual selected CM graph; no correction closure",
+  "check_count": 7,
+  "checks": [
+    "selected-sheet-normalizer",
+    "normalizer-norm-on-graph",
+    "normalizer-full-norm",
+    "standard-three-isogeny",
+    "actual-CM-graph-kappa",
+    "selected-pole-is-isogeny-two-torsion",
+    "cubic-discriminant-is-isogeny-y-square"
+  ],
+  "graph": "u^3=lambda*H/C, D=H+B*u+C*u^3=0",
+  "selected_gu": "g_u=B+3*C*u^2=H*(2*lambda-1)/u on D",
+  "full_normalizer_norm": "Norm_u(g_u)=C*H^2*(kappa+27*lambda^2)",
+  "norm_restriction": "(kappa+27*lambda^2)|D=(2*lambda-1)*(13*lambda^2+5*lambda+1)/lambda",
+  "actual_CM_lambda": "lambda=-64/x1^3",
+  "isogeny": "(x1,y1) -> (x1-64/x1^2, y1*(1+128/x1^3)), E1:y1^2=x1^3-16 -> Eprime:yprime^2=xprime^3+432",
+  "interpretation": "The selected-sheet normalizer pole lambda=1/2 is x1^3=-128 and maps to yprime=0, a target 2-torsion point. The elliptic isogeny itself is unramified; only its x-coordinate map has a branch there.",
+  "warning": "The quadratic factor in the traced norm comes from the other two u sheets. It is not an additional selected-sheet pole. Keeping the finite u extension until completing a current may preserve this distinction. No automatic cancellation is asserted."
+}

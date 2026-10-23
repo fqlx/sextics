@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "supports": [
+    [
+      "X",
+      0
+    ],
+    [
+      "X",
+      1
+    ],
+    [
+      "X",
+      2
+    ],
+    [
+      "Y",
+      0
+    ],
+    [
+      "Y",
+      1
+    ],
+    [
+      "Y",
+      2
+    ]
+  ],
+  "rows": 149940,
+  "columns": 31890,
+  "source_dimension": 24,
+  "all_144_source_addition_columns_checked": true,
+  "sample_columns_exactly_checked": 24,
+  "sample_indices": [
+    2060,
+    3046,
+    5295,
+    5311,
+    7375,
+    8361,
+    10610,
+    10626,
+    12690,
+    13676,
+    15925,
+    15941,
+    18005,
+    18991,
+    21240,
+    21256,
+    23320,
+    24306,
+    26555,
+    26571,
+    28635,
+    29621,
+    31870,
+    31886
+  ],
+  "full_rhs_exactly_checked": true,
+  "target_q": 1,
+  "same_kappa_X_and_Y_support_factorization": true,
+  "complex_coprimality_witnesses": [
+    {
+      "support": [
+        "X",
+        0
+      ],
+      "free_variable": "Y0",
+      "D_mod_F": "36",
+      "resultant": "36^6"
+    },
+    {
+      "support": [
+        "X",
+        1
+      ],
+      "free_variable": "Y0",
+      "D_mod_F": "36",
+      "resultant": "36^6"
+    },
+    {
+      "support": [
+        "X",
+        2
+      ],
+      "free_variable": "Y0",
+      "D_mod_F": "36",
+      "resultant": "36^6"
+    },
+    {
+      "support": [
+        "Y",
+        0
+      ],
+      "free_variable": "Y1",
+      "D_mod_F": "-27",
+      "resultant": "(-27)^6"
+    },
+    {
+      "support": [
+        "Y",
+        1
+      ],
+      "free_variable": "Y0",
+      "D_mod_F": "-27",
+      "resultant": "(-27)^6"
+    },
+    {
+      "support": [
+        "Y",
+        2
+      ],
+      "free_variable": "Y0",
+      "D_mod_F": "-27",
+      "resultant": "(-27)^6"
+    }
+  ],
+  "exact_source_assembly_identity": "D=prod Di; N=sum Ni*(D/Di); Q=sum Qi*(D/Di)^2 when sum Ai=A",
+  "build_script_sha256": "3d36e50df88939a8532a970eb67aff6010125ee87a7893504728e39cfdf0f892",
+  "metadata_sha256": "72edfbafbb3d24d072b010447787b8d5bb4074b1d5de522f67c9c1cd85190215",
+  "binary_sha256": "84a80b2d5c18c9c3bce4cbe296caaf11c12ea5efdc06f9d0758198c05f1ecbc9",
+  "scope": "Exact construction, target, same-kappa graph supports, gauges, source addition and sampled matrix verified. No large solver rerun or characteristic-zero rank claim. A candidate requires exact original identity after reconstruction; no certificate has been found."
+}

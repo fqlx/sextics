@@ -1,0 +1,8 @@
+{
+  "checks": 10,
+  "passed": true,
+  "finite_residues": "+1,-1 on two ruling degree3 divisors",
+  "infinity_residues": "\u00b1c_inf removed by c_inf omega_inf",
+  "source_match": "qt-source is \u2212D_E eta_b; not yet identified with compact variation of beta_hat",
+  "certificate": false
+}

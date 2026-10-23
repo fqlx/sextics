@@ -1,0 +1,83 @@
+[
+  {
+    "denominator": "X0^0",
+    "prime": 1009,
+    "unknowns": 21,
+    "rows": 198,
+    "rank": 21,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.0012549269999908574
+  },
+  {
+    "denominator": "X0^1",
+    "prime": 1009,
+    "unknowns": 39,
+    "rows": 306,
+    "rank": 39,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.005613983000102962
+  },
+  {
+    "denominator": "X0^2",
+    "prime": 1009,
+    "unknowns": 69,
+    "rows": 486,
+    "rank": 69,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.031834123999942676
+  },
+  {
+    "denominator": "X0^3",
+    "prime": 1009,
+    "unknowns": 105,
+    "rows": 702,
+    "rank": 104,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.08159205700007988
+  },
+  {
+    "denominator": "X0^4",
+    "prime": 1009,
+    "unknowns": 160,
+    "rows": 1032,
+    "rank": 157,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.2500283980000404
+  },
+  {
+    "denominator": "X0^5",
+    "prime": 1009,
+    "unknowns": 224,
+    "rows": 1416,
+    "rank": 216,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.569725809999909
+  },
+  {
+    "denominator": "X0^6",
+    "prime": 1009,
+    "unknowns": 310,
+    "rows": 1932,
+    "rank": 298,
+    "consistent_evaluations": false,
+    "solve_seconds": 1.7255690749998394
+  },
+  {
+    "denominator": "X0^7",
+    "prime": 1009,
+    "unknowns": 414,
+    "rows": 2556,
+    "rank": 391,
+    "consistent_evaluations": false,
+    "solve_seconds": 2.9562581729999238
+  },
+  {
+    "denominator": "X0^8",
+    "prime": 1009,
+    "unknowns": 546,
+    "rows": 3348,
+    "rank": 509,
+    "consistent_evaluations": false,
+    "solve_seconds": 7.789229364999983
+  }
+]

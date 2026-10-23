@@ -1,0 +1,35 @@
+{
+  "checks": [
+    "F-cubic",
+    "V-definition",
+    "theta-V",
+    "theta-W",
+    "kappa-inversion",
+    "F-inversion",
+    "W-inversion",
+    "kappa-cyclic",
+    "V-cyclic-trace",
+    "W-cyclic-trace",
+    "actual-cubic",
+    "F-source-binding",
+    "W-source-binding"
+  ],
+  "check_count": 13,
+  "constant_field": "k containing zeta3; k=C for full contract",
+  "kappa": "-27*q**3/(q**3 + 1)**2",
+  "F": "(q**2 - q + 1)/(3*q**2 + 3*q + 3)",
+  "V": "-2*q/(3*(q**2 + q + 1))",
+  "W": "q*(q + 1)**2*(q**2 - q + 1)/(9*(q**2 + q + 1)**3)",
+  "p": "3*H*q/(B*(q**2 - q + 1))",
+  "deck": [
+    "q -> zeta3*q",
+    "q -> 1/q"
+  ],
+  "geometric_branch_signature": [
+    3,
+    2,
+    2
+  ],
+  "incidence": "q=S/T, S^3+T^3=H, B+3cST=0,c^3=C,p=-(S+T)/c",
+  "status": "geometric rational Galois cover and full source binding; no physical density primitive"
+}

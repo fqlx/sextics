@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "arithmetic": "independent standard-library Fraction polynomial dictionaries",
+  "data_sha256": "626f641cd3a0cd92224e1b729a65b304c381be5751ed0f82e7c75e9ee9b78e18",
+  "checks": {
+    "moving_Dwork_H": true,
+    "moving_Dwork_C": true,
+    "moving_Dwork_r": true,
+    "literal_source_numerator": true,
+    "source_connection_column_0": true,
+    "source_connection_column_1": true,
+    "source_connection_column_2": true,
+    "source_connection_column_3": true,
+    "source_connection_column_4": true
+  },
+  "scope": "Exact moving-pole connection/source identities; no current, certificate, Lean proof, or acceptance."
+}

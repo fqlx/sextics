@@ -1,0 +1,105 @@
+{
+  "status": "exact identities only; no full primitive or serving theorem",
+  "checks": [
+    {
+      "name": "rank-four determinant",
+      "passed": true
+    },
+    {
+      "name": "completed square",
+      "passed": true
+    },
+    {
+      "name": "compact quadric determinant",
+      "passed": true
+    },
+    {
+      "name": "odd field derivative",
+      "passed": true
+    },
+    {
+      "name": "odd field divergence",
+      "passed": true
+    },
+    {
+      "name": "centered Euler",
+      "passed": true
+    },
+    {
+      "name": "centered Euler divergence",
+      "passed": true
+    },
+    {
+      "name": "pole-three homotopy",
+      "passed": true
+    },
+    {
+      "name": "pole-four homotopy",
+      "passed": true
+    },
+    {
+      "name": "actual Cayley numerator partial primitive",
+      "passed": true
+    },
+    {
+      "name": "critical support coefficient",
+      "passed": true
+    },
+    {
+      "name": "Y involution C1",
+      "passed": true
+    },
+    {
+      "name": "Y involution C2",
+      "passed": true
+    },
+    {
+      "name": "Y involution Q",
+      "passed": true
+    },
+    {
+      "name": "Y involution F",
+      "passed": true
+    },
+    {
+      "name": "Y involution Dl",
+      "passed": true
+    },
+    {
+      "name": "Y involution Dm",
+      "passed": true
+    },
+    {
+      "name": "Y involution F0",
+      "passed": true
+    },
+    {
+      "name": "source numerator Y character",
+      "passed": true
+    },
+    {
+      "name": "main source coefficient Y character",
+      "passed": true
+    },
+    {
+      "name": "full projective diagonal group/source character/Reid-Tai ages",
+      "passed": true
+    }
+  ],
+  "passed": 21,
+  "diagonal_group_order": 36,
+  "ages_in_sixths": {
+    "6": 7,
+    "9": 16,
+    "12": 21,
+    "15": 12
+  },
+  "source_partial_current": [
+    "l*n**2*p*w**3*z*((a + n**2*p*z/(-l**2 + 4*n**2))*(-l**2/4 + n**2)**2/(12*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))**2*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**2) + (a + n**2*p*z/(-l**2 + 4*n**2))*(-l**2/4 + n**2)/(6*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**3))/(-2*l**2 + 8*n**2) + l*n*w**3/(3*(-l**2 + 4*n**2)*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**3)",
+    "l*n**2*p*w**3*z*((b - l*n*p*z/(-2*l**2 + 8*n**2))*(-l**2/4 + n**2)**2/(12*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))**2*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**2) + (b - l*n*p*z/(-2*l**2 + 8*n**2))*(-l**2/4 + n**2)/(6*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**3))/(-2*l**2 + 8*n**2) - n**2*w**3/(3*(-l**2/2 + 2*n**2)*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**3)",
+    "l*n**2*p*w**3*z*(U*(-l**2/4 + n**2)**2/(12*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))**2*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**2) + U*(-l**2/4 + n**2)/(6*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**3))/(-2*l**2 + 8*n**2)",
+    "l*n**2*p*w**3*z*(V*(-l**2/4 + n**2)**2/(12*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))**2*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**2) + V*(-l**2/4 + n**2)/(6*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))*(l*(a*b - q**3) + m*(U*V - p**3) + n*(U**2 + V**2 + a**2 + a*p*z/2 + b**2 + p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6))**3))/(-2*l**2 + 8*n**2)"
+  ],
+  "main_critical_coefficient": "l*n**2*p*w**3*z*(-l**2/4 + n**2)/(96*(-n**3*p**2*z**2/16 + (-l**2/4 + n**2)*(-l*q**3 - m*p**3 + n*(p*q*w**2/3 + q*w**3*z/2 + w**6 + z**6)))**2)",
+  "normalization_warning": "Cayley factorial and final quadric-cylinder normalization have not been bound to the original certificate."
+}

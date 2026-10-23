@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "count": 15,
+  "checks": [
+    "actual_density_primitive_aC",
+    "actual_density_primitive_az",
+    "actual_density_primitive_Cz",
+    "simplified_actual_L_mod_P",
+    "simplified_actual_J_mod_P",
+    "full_physical_leaf_density_identity",
+    "complete_operator_partial_curl_sign",
+    "actual_parameter_residue_matches_all_a_b_jets",
+    "theta_vs_tau_actual_P",
+    "exact_ambient_surface_partial_potential",
+    "actual_source_elliptic_plus",
+    "actual_source_elliptic_minus",
+    "elliptic_source_Paq_equals_two_asd",
+    "actual_elliptic_density_one_twelfth",
+    "third_quotient_is_endpoint_genus_two"
+  ],
+  "actual_partial_current": {
+    "Peta": "B theta(eta_H)/(9H)",
+    "Qeta": "B theta(eta_z)/(9H)",
+    "remainder": "-B theta(J)/(9H^2)"
+  },
+  "scope": "Log-free actual rational partial curl, valid for any b-only B commuting T,Dz, including B12. J is explicit and remains unserved. The ambient pole-two remainder is the known corrected source convention, not a new closure. No bounded nonmembership calculation, full primitive or certificate is asserted."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed literal rational Euler j hierarchy; full density correction open",
+  "curve": "j*v*x**4*y + v*x**6 + v*y**2*(i*x**2 + x + 1) + y**4",
+  "Jbar": "j*v*x**4/y + 2*v*x**6/y**2 - 2*y**2",
+  "Dnorm": "Dnative+Lie_(x partial_x)",
+  "U1": "-v*y**2/(x**3*(j*v*x**4/y + 2*v*x**6/y**2 - 2*y**2)) dx",
+  "U2": "-y**3/(3*x**7) dx",
+  "U3": "-y**2/(6*x**5) + y**4*(i*x**2 + x + 1)/(12*x**11) + y**6/(6*v*x**11) dx",
+  "literal_chain": "partial_j U3=U2, partial_j U2=U1, partial_j U1=(4-Dnorm)nu_y",
+  "third_log": "Psi3=R3+(1/2)log(y) dx; (1-Dnorm) cancels the log, with -3dx/2 an exact term",
+  "source_weight": "Any density t produces explicit currents and the retained residual -t_jjj U3 after three integrations by parts (with appropriate alternating signs). Full t derivatives at fixed i,v are necessary.",
+  "scope": "No finite or infinity poles have been dropped. These raw forms are not asserted compact. Existing compact source U1 differs by an explicit rational exact fiber term. No certificate.",
+  "checks": {
+    "literal source moment first primitive": true,
+    "literal source moment second primitive": true,
+    "raw third moment log derivative retained": true,
+    "first normalized Euler primitive": true,
+    "second normalized Euler primitive": true,
+    "third normalized Euler primitive log cancellation": true,
+    "literal j derivative U3 equals U2": true,
+    "literal j derivative U2 equals U1": true,
+    "literal j derivative U1 equals full normalized Euler source": true
+  },
+  "count": 9
+}

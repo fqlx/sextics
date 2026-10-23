@@ -1,0 +1,72 @@
+[
+  {
+    "affine_degree_parameter": 0,
+    "potential_max_affine_degree": 4,
+    "prime": 1009,
+    "unknowns": 35,
+    "rows": 235,
+    "rank": 34,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.002432980000094176
+  },
+  {
+    "affine_degree_parameter": 1,
+    "potential_max_affine_degree": 5,
+    "prime": 1009,
+    "unknowns": 61,
+    "rows": 365,
+    "rank": 60,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.012827823000179706
+  },
+  {
+    "affine_degree_parameter": 2,
+    "potential_max_affine_degree": 6,
+    "prime": 1009,
+    "unknowns": 95,
+    "rows": 535,
+    "rank": 94,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.03632550199995421
+  },
+  {
+    "affine_degree_parameter": 3,
+    "potential_max_affine_degree": 7,
+    "prime": 1009,
+    "unknowns": 142,
+    "rows": 770,
+    "rank": 140,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.10692305699990357
+  },
+  {
+    "affine_degree_parameter": 4,
+    "potential_max_affine_degree": 8,
+    "prime": 1009,
+    "unknowns": 203,
+    "rows": 1075,
+    "rank": 199,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.43404427999985273
+  },
+  {
+    "affine_degree_parameter": 5,
+    "potential_max_affine_degree": 9,
+    "prime": 1009,
+    "unknowns": 285,
+    "rows": 1485,
+    "rank": 276,
+    "consistent_evaluations": false,
+    "solve_seconds": 0.6668935290001627
+  },
+  {
+    "affine_degree_parameter": 6,
+    "potential_max_affine_degree": 10,
+    "prime": 1009,
+    "unknowns": 384,
+    "rows": 1980,
+    "rank": 371,
+    "consistent_evaluations": false,
+    "solve_seconds": 1.7579063089999636
+  }
+]

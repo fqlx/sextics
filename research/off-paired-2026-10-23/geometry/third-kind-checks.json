@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "finite_torsion_log_p": true,
+    "infinity_moving_log_p": true,
+    "finite_torsion_log_H": true,
+    "infinity_moving_log_H": true,
+    "finite_torsion_log_C": true,
+    "infinity_moving_log_C": true,
+    "physical_pullback": true,
+    "C0_relative_log": true
+  },
+  "status": "Exact symbolic interface identities only; no primitive or certificate."
+}

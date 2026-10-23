@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exact_checks": 4,
+  "checks": {
+    "mixed_derivatives": true,
+    "implicit_p_derivative": true,
+    "oriented_relative_source": true,
+    "actual_remaining_pole_divisor": true
+  },
+  "claim": "first current plus explicit nonzero unintegrated residual; no certificate"
+}

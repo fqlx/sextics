@@ -1,0 +1,86 @@
+[
+  {
+    "name": "one",
+    "denominator": "1",
+    "degree": 0,
+    "prime": 1009,
+    "seed": 72063,
+    "unknowns": 11,
+    "rows": 115,
+    "rank": 11,
+    "consistent_evaluations": false,
+    "seconds": 0.0023874819999036845
+  },
+  {
+    "name": "C",
+    "denominator": "t**2*x*y/3 + x**3*z/2",
+    "degree": 4,
+    "prime": 1009,
+    "seed": 72064,
+    "unknowns": 97,
+    "rows": 545,
+    "rank": 97,
+    "consistent_evaluations": false,
+    "seconds": 0.03490722400010782
+  },
+  {
+    "name": "H",
+    "denominator": "t**6 + t**3*x*y*z/2 + x**6 + y**6 + z**6",
+    "degree": 6,
+    "prime": 1009,
+    "seed": 72065,
+    "unknowns": 200,
+    "rows": 1060,
+    "rank": 199,
+    "consistent_evaluations": false,
+    "seconds": 0.26659099900007277
+  },
+  {
+    "name": "Kx",
+    "denominator": "-9*t*x**2*z**2/4 + 6*x**5",
+    "degree": 5,
+    "prime": 1009,
+    "seed": 72066,
+    "unknowns": 141,
+    "rows": 765,
+    "rank": 140,
+    "consistent_evaluations": false,
+    "seconds": 0.1413417040000695
+  },
+  {
+    "name": "xKx",
+    "denominator": "-9*t*x**3*z**2/4 + 6*x**6",
+    "degree": 6,
+    "prime": 1009,
+    "seed": 72067,
+    "unknowns": 200,
+    "rows": 1060,
+    "rank": 199,
+    "consistent_evaluations": false,
+    "seconds": 0.2973654950001219
+  },
+  {
+    "name": "C2",
+    "denominator": "t**4*x**2*y**2/9 + t**2*x**4*y*z/3 + x**6*z**2/4",
+    "degree": 8,
+    "prime": 1009,
+    "seed": 72068,
+    "unknowns": 364,
+    "rows": 1880,
+    "rank": 357,
+    "consistent_evaluations": false,
+    "seconds": 1.5316955280000002
+  },
+  {
+    "name": "J01",
+    "denominator": "-3*t**3*x**3*z**2/4 + 2*t**2*x**6 - 2*t**2*y**6 - 9*x**2*y**5*z",
+    "degree": 8,
+    "prime": 1009,
+    "seed": 72069,
+    "unknowns": 364,
+    "rows": 1880,
+    "rank": 364,
+    "consistent_evaluations": false,
+    "seconds": 1.6037761489999411
+  }
+]
