@@ -1,0 +1,32 @@
+{
+  "status": "published_public_github_research_snapshot",
+  "goal_status": "stopped_at_user_request",
+  "instance_status": "UNSOLVED",
+  "published_utc": "2026-10-23T00:17:10.198049+00:00",
+  "author_account": "fqlx",
+  "branch": "research/off-paired-handoff-2026-10-23",
+  "snapshot_commit": "f7a73cf3346e1da8fded079f16b9e827f218902b",
+  "handoff_url": "https://github.com/fqlx/sextics/blob/f7a73cf3346e1da8fded079f16b9e827f218902b/research/off-paired-2026-10-23/HANDOFF-2026-10-23.md",
+  "packet_url": "https://github.com/fqlx/sextics/tree/f7a73cf3346e1da8fded079f16b9e827f218902b/research/off-paired-2026-10-23",
+  "file_count_including_manifest": 798,
+  "manifest_sha256": "f815de4146d83610f0225efc36c71f2ad0e588d754743194e78862031472479f",
+  "remote_handoff_content_readback_matches": true,
+  "discussion_write": {
+    "status": "rejected_not_published",
+    "error": "Resource not accessible by integration",
+    "existing_comment_and_three_replies_rechecked_unchanged": true
+  },
+  "gist_write": {
+    "status": "HTTP403_not_created",
+    "error": "Resource not accessible by integration"
+  },
+  "fork_issue_fallback": "Unavailable: fork has_issues=false; repository settings were not changed.",
+  "certificate": false,
+  "Lean_proof": false,
+  "local_kernel_verification": false,
+  "solve_PR": false,
+  "protected_CI": false,
+  "acceptance": false,
+  "original_gist_unchanged": true,
+  "original_worktrees_and_branches_preserved": true
+}
