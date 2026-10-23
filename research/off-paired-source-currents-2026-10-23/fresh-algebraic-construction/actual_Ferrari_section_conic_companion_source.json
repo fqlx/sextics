@@ -1,0 +1,66 @@
+{
+  "status": "ONE_LITERAL_FERRARI_SECTION_CONIC_COMPANION_AND_WHOLE_SOURCE_NORMAL; PRIMITIVE_OPEN",
+  "source_receipt": "/workspace/scratch/off-paired/fresh-global-construction/publication-refresh-2026-10-23-1645/disposable-replay/fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.json",
+  "source_receipt_sha256": "4de6ed9819e11fb5b2b9511a4735c966ca3e83c92b5c09565cb760f6aa436853",
+  "actual_normalized_cubic": "C=A*x^3+B*y^3+D*x*y^2+x^2/2+x*y/3-V, A=R^2+R^-1,B=T+R/T,D=U^2/4,V^2=4R+R^2/U^2.",
+  "FULL_normalized_source": "The exact old-to-new map is R=r^2,T=r*sigma^3,U=r*u,x=r*a,y=sigma*cA,V=r*zeta,Cnew=r*Cold. Its full five-variable Jacobian is 6*r^3*T. Thus the WHOLE selected-pair source is Res_C[x^2*y/(72RT) dU dR dT dx dy/C^2]. The first-pole family is Res_C[-sqrt(R)/(36VU^2T) dU dR dT dx dy/C_epsilon].",
+  "FULL_physical_normal": "C_epsilon=(A+epsilon^2 U^2/R^2)x^3+B y^3+D xy^2+x^2/2+xy/3-V+epsilon*(VU^2/(2R^(3/2)))*x^2y. Hence delta_epsilon=VU^2/(2R^(3/2)). The second jet in A is retained. Choose k_epsilon solving (A+epsilon^2U^2/R^2)k_epsilon^3+k_epsilon^2/2-V=0: k_epsilon_prime(0)=0, with its nonzero second jet determined by this equation.",
+  "ACTUAL_constant_section": "Choose one finite root k of A*k^3+k^2/2-V=0. Then (x,y)=(k,0) is a literal section for every T and every missing-x^2y delta deformation. Set x=k+s*y.",
+  "conic_API": {
+    "q1": "k/3 + s*(k**2*(3*R**2 + 3/R) + k)",
+    "q2": "U**2*k/4 + s**2*(k*(3*R**2 + 3/R) + 1/2) + s/3",
+    "q30": "U**2*s/4 + s**3*(R**2 + 1/R)",
+    "Q0": "-(432*R**6*k**2*s**4 + 216*R**4*U**2*k**2*s**2 + 144*R**4*k*s**4 - 96*R**4*k*s**3 + 864*R**3*k**2*s**4 - 9*R**2*U**4*k**2 + 108*R**2*U**2*k*s**2 + 24*R**2*U**2*k*s - 36*R**2*s**4 - 48*R**2*s**3 - 16*R**2*s**2 + 216*R*U**2*k**2*s**2 + 144*R*k*s**4 - 96*R*k*s**3 + 432*k**2*s**4)/(144*R**2)"
+  },
+  "EXACT_projection": "C/y=q3*y^2+q2*y+q1,q3=q30+B. Put eta=2q3*y+q2; eta^2=Q0(s)-4B*q1(s). The affine change has dx wedge dy=y ds wedge dy, so its y factor cancels C=y*(quadratic) exactly. The full d(k) base legs are retained and wedge out only with dU dR dT.",
+  "EXACT_actual_conic_bundle": "The rational twist Wtw^2=T*eta^2 is Wtw^2=-4q1*T^2+Q0*T-4R*q1, a LITERAL quadratic conic in (T,Wtw) for every actual (R,U,s). This supplies the requested conic pencil on the polynomial4/6 twist; no sections-cover-surface inference is used.",
+  "EXACT_actual_even_quartic": "On w^2=T set W=Wtw. Then W^2=-4q1(w^4+R)+Q0*w^2. This retains the sqrt(T) cover and is an actual companion elliptic curve for each (R,U,s), not a CM or isotrivial claim.",
+  "FULL_normal_API": "At delta=0,q1_delta=k^2,q2_delta=2ks,q3_delta=s^2. The discriminant normal is EXACTLY -4[k^2B+(V/k)s^3]; its delta^2 term cancels identically. Thus Q0_delta=-4(V/k)s^3 and (W^2)_delta=-4[k^2(w^4+R)+(V/k)s^3w^2].",
+  "FULL_source_in_even_quartic": "With orientation dU dR ds dw, the whole first-pole form is +sqrt(R)/(18VU^2) dU dR ds dw/W. Its actual physical epsilon derivative is beta_pair=+(1/(36R))dU dR ds partial_delta(dw/W), equivalently [k^2(w^4+R)+(V/k)s^3w^2]/(18R W^3) dU dR ds dw. This includes the moving conic and marked section normal; no unweighted holomorphic form is substituted.",
+  "FULL_base_normals": {
+    "V_R": "(R/U**2 + 2)/V",
+    "V_U": "-R**2/(U**3*V)",
+    "k_R": "(-k**3*(2*R - 1/R**2) + (R/U**2 + 2)/V)/(k**2*(3*R**2 + 3/R) + k)",
+    "k_U": "-R**2/(U**3*V*(k**2*(3*R**2 + 3/R) + k))",
+    "note": "These are actual (R,U) motions, with V^2=4R+R^2/U^2 and A*k^3+k^2/2=V. They are not frozen in any proposed absolute current."
+  },
+  "EXPLICIT_conic_rationalization": "Adjoin h0^2=-4R*q1(s), take Wtw=h0+m*T. Then T=(Q0-2h0*m)/(m^2+4q1). On the original w^2=T cover put Z=w*(m^2+4q1): Z^2=(Q0-2h0*m)(m^2+4q1). Moreover dw/Wtw=-dm/Z exactly modulo base legs, and therefore as a full source form after dU dR ds. The actual branch divisor is m=+-sqrt(-4q1),m=Q0/(2h0),infinity; it is retained.",
+  "FULL_companion_normal_and_exact_cochain": "h0_delta=-2R*k^2/h0,Q0_delta=-4(V/k)s^3,q1_delta=k^2. The fixed-w physical normal becomes m_delta=[Q0_delta-4k^2*T+4R*k^2*m/h0]/[2(h0+m*T)], with T the displayed rational function of m. Thus beta_pair=-(1/(36R))dU dR ds partial_delta(dm/Z)+d[(1/(36R))dU dR ds*m_delta/Z]. This is the explicit moving-coordinate fibre compensator, not a discarded exact term. Coefficient base legs are retained before wedging the full three-form.",
+  "twist_invariants": {
+    "I4_T2_s4": "-T*(11664*R**4*V + 11664*R**3*T**2*V + 243*R*T*U**4*V + 2*R*T + 11664*R*V + 11664*T**2*V)/(7776*R)",
+    "I6_T3_s6": "T*(17006112*R**8*V**2 + 34012224*R**7*T**2*V**2 + 17006112*R**6*T**4*V**2 + 58320*R**5*T*V + 34012224*R**5*V**2 + 58320*R**4*T**3*V + 39366*R**4*T**2*U**6*V**2 + 68024448*R**4*T**2*V**2 - 314928*R**4*V + 34012224*R**3*T**4*V**2 - 629856*R**3*T**2*V + 52488*R**3*T*U**2*V - 314928*R**2*T**4*V + 52488*R**2*T**3*U**2*V - 729*R**2*T**2*U**4*V - 4*R**2*T**2 + 58320*R**2*T*V + 17006112*R**2*V**2 + 58320*R*T**3*V + 39366*R*T**2*U**6*V**2 + 34012224*R*T**2*V**2 + 17006112*T**4*V**2)/(629856*R**2)",
+    "degrees": [
+      3,
+      5
+    ]
+  },
+  "twist_source_scope": "Although the invariant degrees fit4/6, theta_old=sqrt(T)*theta_twist and the actual source contains dT/sqrt(T). The conic/even-quartic construction above retains that branch cover and its literal physical normal. Rationality of the twist alone supplies no primitive.",
+  "remaining": "Construct one actual primitive or serving correspondence for this specific even-quartic/cubic companion source. No generic polynomial-density theorem, unweighted trace, CM inference or primitive claim is made.",
+  "checks": {
+    "old_WHOLE_pair_source_receipt_PASS22": true,
+    "FULL_normalized_five_coordinate_Jacobian": true,
+    "FULL_polynomial_normalized_source_weight": true,
+    "EXACT_section_projection": true,
+    "EXACT_quartic_linear_B": true,
+    "EXACT_projection_sheet_discriminant": true,
+    "FULL_missing_x2y_normal_projection": true,
+    "FULL_exact_discriminant_normal": true,
+    "FULL_discriminant_no_dropped_delta2": true,
+    "FULL_physical_delta_and_source_unit": true,
+    "FULL_V_R_normal": true,
+    "FULL_V_U_normal": true,
+    "FULL_section_R_normal": true,
+    "FULL_section_U_normal": true,
+    "EXACT_quadratic_twist_conic": true,
+    "WHOLE_even_quartic_physical_normal": true,
+    "EXACT_source_conic_parameter": true,
+    "EXACT_companion_cubic": true,
+    "FULL_companion_holomorphic_differential": true,
+    "FULL_companion_moving_h_normal": true,
+    "FULL_companion_moving_coordinate_normal": true,
+    "FULL_companion_cubic_coefficient_normal": true,
+    "ACTUAL_twist_I4_polynomial_degree3": true,
+    "ACTUAL_twist_I6_polynomial_degree5": true
+  },
+  "check_count": 24
+}

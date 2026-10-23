@@ -1,0 +1,368 @@
+{
+  "status": "UNSOLVED_PARTIAL_IDENTITIES_ONLY",
+  "snapshot_utc": "2026-10-23T16:55:14.008739+00:00",
+  "research_base_commit": "21fccb6b4f1d4070ddaa30195a78f268247569e6",
+  "previous_frozen_supplement": "049e28a199a9d9217d23656b1c2d5d007a6b8507",
+  "target_record_sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d",
+  "variable_order": [
+    "X0",
+    "X1",
+    "X2",
+    "Y0",
+    "Y1",
+    "Y2"
+  ],
+  "q": 1,
+  "certificate_supplied": false,
+  "complete_physical_remainder_zero": false,
+  "prepared_without_external_writes": true,
+  "discussion_write_permission": "FORBIDDEN_ALREADY_RECORDED; NO_RETRY",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "python-flint": "0.9.0"
+  },
+  "replay": {
+    "script_count": 21,
+    "all_exit_codes_zero": true,
+    "scripts": [
+      "bind_target.py",
+      "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.py",
+      "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.py",
+      "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.py",
+      "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.py",
+      "fresh-global-construction/actual_K3_normline_square_normal_bridge.py",
+      "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.py",
+      "root_actual_conic_Cartan_physical_current.py",
+      "endpoint-adjoint-new/actual_SU3_source_density_continuity.py",
+      "source-carrying-construction/actual_two_elliptic_companion_source_transport.py",
+      "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.py",
+      "source-carrying-construction/actual_phi_prefix_companion_normal_current.py",
+      "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.py",
+      "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.py",
+      "source-carrying-construction/actual_zero_mark_weighted_CM_current.py",
+      "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.py",
+      "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py",
+      "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.py",
+      "endpoint-adjoint-new/actual_SU3_PF_Green_current.py",
+      "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.py",
+      "source_heat_bridge.py"
+    ],
+    "receipts": [
+      {
+        "script": "bind_target.py",
+        "check_count": null,
+        "status": null
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.py",
+        "check_count": 23,
+        "status": "ACTUAL_COUPLED_QUARTIC_FERRARI_SOURCE_CORRESPONDENCE_WITH_NONZERO_COMPLEMENT_ODD_UNIT; NOT_PRIMITIVE"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.py",
+        "check_count": 22,
+        "status": "EXACT_WHOLE_PHYSICAL_QUARTIC_PAIR_CONIC_PLANE_CUBIC_SOURCE_AND_FINITE_RECOVERY; CUBIC_PRIMITIVE_OPEN"
+      },
+      {
+        "script": "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.py",
+        "check_count": 27,
+        "status": "INDEPENDENT_FULL_SOURCE_FERRARI_FINITE_RECOVERY_PASS; PAIR_PRIMITIVE_OPEN"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.py",
+        "check_count": 24,
+        "status": "ONE_LITERAL_FERRARI_SECTION_CONIC_COMPANION_AND_WHOLE_SOURCE_NORMAL; PRIMITIVE_OPEN"
+      },
+      {
+        "script": "fresh-global-construction/actual_K3_normline_square_normal_bridge.py",
+        "check_count": 24,
+        "status": "ACTUAL_K3_NORMLINE_SQUARE_NORMAL_SOURCE_BRIDGE_PASS; FIXED_JACOBIAN_MAP_OPEN"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.py",
+        "check_count": 19,
+        "status": "ACTUAL_FULL_P_MARKED_JACOBIAN_DENSITY_AND_PHYSICAL_CHARGE; SOURCE_PRIMITIVE_OPEN"
+      },
+      {
+        "script": "root_actual_conic_Cartan_physical_current.py",
+        "check_count": 5,
+        "status": "ACTUAL_RATIONAL_CONIC_CARTAN_CURRENT_WITH_ENTIRE_RETAINED_K_CORRECTION; NOT_CERTIFICATE"
+      },
+      {
+        "script": "endpoint-adjoint-new/actual_SU3_source_density_continuity.py",
+        "check_count": 5,
+        "status": "EXACT_ACTUAL_CONIC_MARK_SOURCE_CONTINUITY_AND_DENSITY_BINDING; PF_ADJOINT_SOLUTION_OPEN"
+      },
+      {
+        "script": "source-carrying-construction/actual_two_elliptic_companion_source_transport.py",
+        "check_count": 16,
+        "status": "PASS_ACTUAL_WHOLE_SOURCE_TWO_ELLIPTIC_COMPANIONS_AND_ALL_NORMAL_TRANSPORT; PRIMITIVE_OPEN"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.py",
+        "check_count": 22,
+        "status": "PASS_ACTUAL_FOUR_ELLIPTIC_CHANNELS_WITH_Q_DECK_AND_FULL_MOVING_NORMALS; WEIGHTED_CONTRACTION_OPEN"
+      },
+      {
+        "script": "source-carrying-construction/actual_phi_prefix_companion_normal_current.py",
+        "check_count": 15,
+        "status": "PASS_ONE_COMBINED_PHI_PREFIX_AND_COMPANION_NORMAL_CURRENT_WITH_ENTIRE_REMAINDER; NOT_CERTIFICATE"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.py",
+        "check_count": 6,
+        "status": "ONE_SOURCE_FORCED_ODD_CM_CONTACT_CURRENT_WITH_ENTIRE_RETAINED_PURE_HOL_REMAINDER"
+      },
+      {
+        "script": "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.py",
+        "check_count": 19,
+        "status": "INDEPENDENT_ORIGINAL_PHYSICAL_WHOLE_CURRENT_AUDIT_PASSED_NONZERO_REMAINDER"
+      },
+      {
+        "script": "source-carrying-construction/actual_zero_mark_weighted_CM_current.py",
+        "check_count": 19,
+        "status": "EXACT_ACTUAL_ZERO_MARK_WEIGHTED_CM_CURRENT_WITH_ALL_COSTS; FULL_HEAT_SOURCE_OPEN"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.py",
+        "check_count": 18,
+        "status": "PASS_INDEPENDENT_PHYSICAL_WEIGHTED_CM_CURRENT_AND_FULL_SECOND_COTANGENT_CM_QUOTIENT; SOURCE_HEAT_BRIDGE_OPEN"
+      },
+      {
+        "script": "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py",
+        "check_count": 8,
+        "status": "EXACT_ACTUAL_SOURCE_FORCED_TWO_COTANGENT_CARTAN_CURRENT_WITH_FULL_TWO_PAIR_DIVERGENCE_REMAINDER; NO_COMPLETION"
+      },
+      {
+        "script": "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.py",
+        "check_count": 5,
+        "status": "PASS_WHOLE_ORIGINAL_PHYSICAL_TWO_COTANGENT_SOURCE_CURRENT; TWO_COEFFICIENT_DEFECTS_RETAINED"
+      },
+      {
+        "script": "endpoint-adjoint-new/actual_SU3_PF_Green_current.py",
+        "check_count": 10,
+        "status": "EXACT_SU3_PF_GREEN_CURRENT_WITH_FIBRE_COCHAINS; ACTUAL_SOURCE_ADJOINT_IDENTITY_STILL_REQUIRED"
+      },
+      {
+        "script": "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.py",
+        "check_count": 8,
+        "status": "EXACT_ACTUAL_COVARIANT_CM_FIRSTJET_PACKET; ADJOINT_CORRECTION_OPEN"
+      },
+      {
+        "script": "source_heat_bridge.py",
+        "check_count": 3,
+        "status": "EXACT_ACTUAL_SOURCE_TO_HEAT_AND_TWO_COTANGENT_ROW_BINDING; FULL_REMAINDER_OPEN"
+      }
+    ]
+  },
+  "retained_nonzero_costs": [
+    "Direct original Gamma4/CM contact branch: Rphys(1,1,1)=7117189/18729711.",
+    "Actual weighted CM branch: entire dlog(lambda_n/b)*Jphys and infinity/finite-character costs; Q-sheet odd character retained.",
+    "Corrected two-cotangent branch: both C_lambda and C_nu nonzero, including compulsory Nbase(K)/K canonical divergence."
+  ],
+  "frozen_history": [
+    "https://gist.github.com/fqlx/2023ba9f5ddc2117c72a03fb9a4c7c55",
+    "https://github.com/fqlx/sextics/blob/f7a73cf3346e1da8fded079f16b9e827f218902b/research/off-paired-2026-10-23/HANDOFF-2026-10-23.md",
+    "https://github.com/fqlx/sextics/blob/79bd381f50fbcbdf385835982afbac440c99b145/research-handoff/README.md",
+    "https://github.com/fqlx/sextics/blob/049e28a199a9d9217d23656b1c2d5d007a6b8507/research/off-paired-constructive-2026-10-23/README.md"
+  ],
+  "files": {
+    "README.md": {
+      "sha256": "32c317fca8a39d5ba839923e354513abed0cf176acf65d50ff7cb6b4c4170ca8",
+      "bytes": 7700
+    },
+    "bind_target.py": {
+      "sha256": "6662989fa9ad895acdab8de65b2c4f88eed45f0d9e977504afb549578b9fda06",
+      "bytes": 957
+    },
+    "cm-corner-contraction/derive_Ferrari_rational_Aronhold.json": {
+      "sha256": "f839c66464f88b5a8010fba24ead82cc0baa3bf17d3d5eb92e21b7e7dea07905",
+      "bytes": 935
+    },
+    "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.json": {
+      "sha256": "d105162bda96f0d8cdc357054bf9ad5083891a77e1e9a9c6ee26e6c295f92f79",
+      "bytes": 112114
+    },
+    "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.py": {
+      "sha256": "9b0f4e6033564099138549732c0551ce3f050e11c5e7c5a58f6ec3456bfd8343",
+      "bytes": 4409
+    },
+    "endpoint-adjoint-new/actual_SU3_PF_Green_current.json": {
+      "sha256": "1fc1f3082429eb9c9ec0e40ec9cbfcd4b69ff0ed75d32cbc1dcb0f5d6967fc56",
+      "bytes": 4801
+    },
+    "endpoint-adjoint-new/actual_SU3_PF_Green_current.py": {
+      "sha256": "d677ddd953e363e6d9483713aa2af9959ca98b4aeb1e61dfb8e41b9fa3bc1140",
+      "bytes": 6389
+    },
+    "endpoint-adjoint-new/actual_SU3_source_density_continuity.json": {
+      "sha256": "da89b6cfd9e544aa94dd22a798867c3415a79964946e394042a38b6397c2f3e9",
+      "bytes": 2658
+    },
+    "endpoint-adjoint-new/actual_SU3_source_density_continuity.py": {
+      "sha256": "7a9c5d9b1e445059b95306b0aeff0c4dc812bb892eb6fbbfa2458c7d9e63420e",
+      "bytes": 4303
+    },
+    "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.json": {
+      "sha256": "4de6ed9819e11fb5b2b9511a4735c966ca3e83c92b5c09565cb760f6aa436853",
+      "bytes": 5666
+    },
+    "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.py": {
+      "sha256": "1c10815a2e237d8dc72881217559a8a35f9c9f26926d91947fe035b485c5bde8",
+      "bytes": 7942
+    },
+    "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.json": {
+      "sha256": "2c3ad4958a2ce594e0606fe23ef000547f57907c0219af760884da53498c1725",
+      "bytes": 6721
+    },
+    "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.py": {
+      "sha256": "f8efc17d0c3084c5c1ad5c107d6fb0ed7ffb8bb48efd1b4cbfbdd301ed52a60e",
+      "bytes": 9419
+    },
+    "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.json": {
+      "sha256": "b5f8699842f53d3c3e91c1f64dfa3d0a6c6d60749692b555645a3bc0bcdea19e",
+      "bytes": 4277
+    },
+    "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.py": {
+      "sha256": "2a5a60b7430e405744116d9bfb2c0e76831620b2e285cf77448add2e9df582a3",
+      "bytes": 8269
+    },
+    "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.json": {
+      "sha256": "555798ea6aaf0f9aa043a40332e50c43d01782733ee15ab23cef3904591aaa95",
+      "bytes": 2962
+    },
+    "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.py": {
+      "sha256": "813e5e31185e8d52ef68aa4829b3b99ee5a651c6b885b8f835ecf591c380aeed",
+      "bytes": 4335
+    },
+    "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.json": {
+      "sha256": "ed125ea364980276a5fc289b849235fe926f2c774a839acdd1d44f6f7ec9ffe4",
+      "bytes": 7658
+    },
+    "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.py": {
+      "sha256": "57fdbe3483e65373eaf36f33650d60d977f248931afe07e1f778e3d1f1c85db7",
+      "bytes": 4376
+    },
+    "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.json": {
+      "sha256": "3d79fd78ef06d1d81f1981ea5142179cd6a62419496a0d811124414918eb9bb7",
+      "bytes": 2540
+    },
+    "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.py": {
+      "sha256": "8c2e1594329a0d5d5451b6913a7232c3e7434c7bd9d94143b668968b019b6fcc",
+      "bytes": 5281
+    },
+    "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.json": {
+      "sha256": "c2155800876f49973168623a543679aabe81bde7330f25216b453f92ae2864ac",
+      "bytes": 4813
+    },
+    "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.py": {
+      "sha256": "4a2b1dd4f21b415ff0f069c298ec60e2a447dc41a872208c4f8d425ab5a82704",
+      "bytes": 6465
+    },
+    "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.json": {
+      "sha256": "ff8fc5d31170badab35c42d9b9ab285f236e664dbb084a9f51e44570eeba0f6c",
+      "bytes": 3117
+    },
+    "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.py": {
+      "sha256": "5bca3805f3e2a5cee88a3ae35759d7ad2538d661a0b5360b3c6af5ddd2e9cddc",
+      "bytes": 5587
+    },
+    "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.json": {
+      "sha256": "b37aab562e64618472bbe1c25f3d35d5308458246b0037f94a2ddc5f31b1d398",
+      "bytes": 4735
+    },
+    "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.py": {
+      "sha256": "73be3b160970683400e7efc4d8f1e9ae5a563ff11db6ef1cbb5a990ac1d442a1",
+      "bytes": 10191
+    },
+    "fresh-global-construction/actual_K3_normline_square_normal_bridge.json": {
+      "sha256": "a769d8a5b5b3ae65618b47a85fe4699b06f3555851584271c6ee582c258b0bf2",
+      "bytes": 3174
+    },
+    "fresh-global-construction/actual_K3_normline_square_normal_bridge.py": {
+      "sha256": "79b6b24e14a134610a9dfb576e7d759a64067a3410c5bc7fde5a255b810569f9",
+      "bytes": 6811
+    },
+    "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.json": {
+      "sha256": "b4ca057295d8b39b6cef602493ba232ad35d1f178b22fb7fe645c220d9aee452",
+      "bytes": 2513239
+    },
+    "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py": {
+      "sha256": "ad63de1952a3bdadc13bc66550f1642b9cf0bfa505e66557378ec2b2e44d60ec",
+      "bytes": 6807
+    },
+    "lib/native_source_field.provenance.json": {
+      "sha256": "cd03a796489caa0c0b8f93334c9d56419705e981c8a89f0b96cde36b683cc9fd",
+      "bytes": 2130
+    },
+    "lib/native_source_field.py": {
+      "sha256": "868b5934a0ea4c03d8eeeaea900568182e17ae9168b7f4d4e4c392af1a9dd896",
+      "bytes": 5368
+    },
+    "live-instance.rec": {
+      "sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d",
+      "bytes": 3316
+    },
+    "replay.py": {
+      "sha256": "b2bf3bd217ac06ff738b5c6a1f915ecb2355905891ad4acda81962e023f2dc34",
+      "bytes": 1835
+    },
+    "requirements.txt": {
+      "sha256": "7f2e6608da77418fa1d201a307a604aedf1082d0b146119a9f43ce57d37dc166",
+      "bytes": 34
+    },
+    "root_actual_conic_Cartan_physical_current.json": {
+      "sha256": "6d54e0f8f8cfe03dda29b338d4bf42f6830c132b673f48944432ea5f167933a2",
+      "bytes": 2120
+    },
+    "root_actual_conic_Cartan_physical_current.py": {
+      "sha256": "584ccbb6802bd4c057933248c76db2d834f2cdeda9d84d01e4e36373576626c7",
+      "bytes": 3012
+    },
+    "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.json": {
+      "sha256": "47b394ddee117c262e3e103e9abd3e03f485296a8c90b8d8cff326e25d1531a9",
+      "bytes": 7511
+    },
+    "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.py": {
+      "sha256": "45f80aa718db7dcf1b14b8513657f8ba6b7a067a9609326ee39b98b891a3eb69",
+      "bytes": 4913
+    },
+    "source-carrying-construction/actual_phi_prefix_companion_normal_current.json": {
+      "sha256": "76da7e0d05aa34bb68251ab21b68bd249c6ce714b3092b31caa44378beb4dd92",
+      "bytes": 3312
+    },
+    "source-carrying-construction/actual_phi_prefix_companion_normal_current.py": {
+      "sha256": "270390edbc0233902cfbdd8559d0ba0e3d9b7b28ee957fc0b6f875d00aaf5e90",
+      "bytes": 6705
+    },
+    "source-carrying-construction/actual_two_elliptic_companion_source_transport.json": {
+      "sha256": "afab96d53e422ea0ecbcd880848cff029bbcffc94234bbd68df735cb67d1abd0",
+      "bytes": 3295
+    },
+    "source-carrying-construction/actual_two_elliptic_companion_source_transport.py": {
+      "sha256": "73b12f757469d48544c5110f23f9366cbc42a4cb966bf1da937b7515910f37fb",
+      "bytes": 5381
+    },
+    "source-carrying-construction/actual_zero_mark_weighted_CM_current.json": {
+      "sha256": "bc3d164285ad5ab6b5f1c6125ca5d670f79392b413360c4ebaf09307062ad3fa",
+      "bytes": 6081
+    },
+    "source-carrying-construction/actual_zero_mark_weighted_CM_current.py": {
+      "sha256": "0fe5c899ac03dd6c5d55a343ca4b5d246bc5a5031a05b7605711c627356c1da3",
+      "bytes": 8218
+    },
+    "source-provenance.json": {
+      "sha256": "6b9c237bcb277d8e3bb70e7f4ba6babea6571153ac12e50cc143b763bed6f2a2",
+      "bytes": 15924
+    },
+    "source_heat_bridge.json": {
+      "sha256": "da68045f9737342e746cd9f94f6245e7e6161c370824c972257559cb9251b968",
+      "bytes": 1406
+    },
+    "source_heat_bridge.py": {
+      "sha256": "728b19938e10ee55d00cf2f66e8909f54924cd516dd75294ede694d0be482d21",
+      "bytes": 2386
+    }
+  }
+}

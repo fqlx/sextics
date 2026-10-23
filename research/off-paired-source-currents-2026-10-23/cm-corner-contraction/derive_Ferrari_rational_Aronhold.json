@@ -1,0 +1,13 @@
+{
+  "s4": "-(216*A*B*F*Z - 144*B*E*Z*delta + 48*D**2*E*Z - 24*D*F*Z*delta + F**4)/48",
+  "s4_normal_delta": "Z*(6*B*E + D*F)/2",
+  "s4_physical_D0": "-(216*A*B*F*Z + 48*D**2*E*Z + F**4)/48",
+  "s4_remainder_identity": true,
+  "s6": "(5832*A**2*B**2*Z**2 - 3888*A*B*D*Z**2*delta + 540*A*B*F**3*Z + 864*A*D**3*Z**2 - 864*B**2*E**3*Z + 864*B*D*E**2*F*Z - 648*B*E*F**2*Z*delta + 864*B*Z**2*delta**3 - 72*D**2*E*F**2*Z - 216*D**2*Z**2*delta**2 + 36*D*F**3*Z*delta - F**6)/216",
+  "s6_normal_delta": "-Z*(108*A*B*D*Z + 18*B*E*F**2 - D*F**3)/6",
+  "s6_physical_D0": "(5832*A**2*B**2*Z**2 + 540*A*B*F**3*Z + 864*A*D**3*Z**2 - 864*B**2*E**3*Z + 864*B*D*E**2*F*Z - 72*D**2*E*F**2*Z - F**6)/216",
+  "s6_remainder_identity": true,
+  "generic_cubic": "A a^3+B c^3-Z h^3+D ac^2+delta a^2c+E a^2h+F ach",
+  "full_exact_GL2_descent": "S4Q=j^4*s4,S6Q=j^6*s6 modulo I, verified coefficientwise in Q(A,B,D,E,F,Z,delta)[m].",
+  "elapsed_seconds": 3.337
+}

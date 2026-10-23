@@ -1,0 +1,22 @@
+{
+  "status": "PASS_WHOLE_ORIGINAL_PHYSICAL_TWO_COTANGENT_SOURCE_CURRENT; TWO_COEFFICIENT_DEFECTS_RETAINED",
+  "checks": {
+    "whole_forward_normal_source_NP": true,
+    "canonical_divergence_has_moving_K_unit": true,
+    "whole_physical_vector_log_tangent": true,
+    "WHOLE_literal_physical_source_and_both_cotangent_defects": true,
+    "both_secondkind_defect_source_units": true
+  },
+  "check_count": 5,
+  "physical_frame": "P=A*m\u00b3+a*m\u00b2/2+(D+a/3)m\u2212Va\u00b3,h\u00b2=P\u00b2\u22124R,A=(R\u00b3+1)/R,V\u00b2=4R+R\u00b2/(4D). vol=dR*dD*da*dm. Every constrained V derivative is retained.",
+  "actual_current": "Let z=m+a/(6A),F=(uX+v(X\u00b2/2+ell/3))/S. Then J_N=\u2212i_w[vol/(72R sqrtD h)],w=(18RKF/D)*(P_m*Nphys\u2212m\u00b2*e_m). F is rational in R,D,a,m,V; all r,S and moving-mark roots cancel.",
+  "Nphys": "(vR,D*vR/R,va,(1/(2R)\u2212kS)*vR*z\u2212vR*B[a/(6A)]\u2212va/(6A)+1/(3A)). Its literal NP=P*vR/(2R)+m\u00b2 is checked globally.",
+  "whole_source": "Omega*(g0*omega0+g1*omega1)=dJ_N\u2212Omega*(C_lambda*lambda+C_nu*nu),Omega=dy*dell*dmu,g0=3(qR1+pI1),g1=\u22123R1. This agrees with the independently fixed source alpha-lambda row.",
+  "physical_identity": "dJ_N=[18RK/D]*(g0+g1X\u2212P_m*Fdef)*vol/(72R sqrtD h),Fdef=(C_lambda*X+C_nu*(X\u00b2/2+ell/3))/S. The entire literal four-coordinate derivative equals this rational expression globally.",
+  "both_channels": "C_lambda=r*c_lambda,C_nu=S\u00b2*c_nu. Fdef=c_lambda*z+A*c_nu*(z\u00b2/2+L/(3A)). Both defects are retained; no rank1 simplification or compact-row deletion is used.",
+  "canonical_unit_correction": "The sourceagent export initially used gamma_CM=B(vR)+va_a\u2212(kS+1/(2R))*vR. The literal current with canonical volume requires gamma_can=gamma_CM+Nbase(K)/K. The entire derivative is independently checked with this moving Jacobian unit restored. rho=\u2212f0*gamma_CM is still the correct density continuity identity.",
+  "formula_artifact": "Actual u,v and gamma_CM data in full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py/json. Use C_lambda=(Nbase+gamma_can)u and C_nu=(Nbase+gamma_can)v; the rational formulas above fully specify this physical current without large expanded coefficient exports.",
+  "remaining_zero": false,
+  "scope": "One explicit source-bound rational current and full physical identity, independently audited. It is NOT a certificate: both displayed coefficient defects still require a source-serving current with all weight, section and finite-trace costs.",
+  "elapsed_seconds": 108.949
+}

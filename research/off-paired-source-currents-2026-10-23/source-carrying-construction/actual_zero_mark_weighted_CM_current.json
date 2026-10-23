@@ -1,0 +1,64 @@
+{
+  "status": "EXACT_ACTUAL_ZERO_MARK_WEIGHTED_CM_CURRENT_WITH_ALL_COSTS; FULL_HEAT_SOURCE_OPEN",
+  "checks": {
+    "absolute_cyclic_projector_dK_equals_omegaR_etaA": true,
+    "projector_hyperelliptic_character_R_and_A": true,
+    "FULL_absolute_dJ_source_plus_connection_01": true,
+    "FULL_absolute_dJ_source_plus_connection_02": true,
+    "FULL_absolute_dJ_source_plus_connection_12": true,
+    "actual_Qsheet_character_0": true,
+    "actual_Qsheet_character_1": true,
+    "actual_Qsheet_character_2": true,
+    "actual_ramification_chart_is_regular_0": true,
+    "actual_ramification_chart_is_regular_1": true,
+    "actual_ramification_chart_is_regular_2": true,
+    "fixed_y_current_dR_coefficient": true,
+    "full_spectator_connection_restricts_to_dloglambda_n": true,
+    "full_acceleration_cost_Ra": true,
+    "FULL_cost_coefficient_in_I1_physical_Ra_coframe": true,
+    "FULL_cost_coefficient_in_I1_canonical_coframe": true,
+    "source_mass_pJcan": true,
+    "absolute_source_Q_SW_factor_dqc": true,
+    "absolute_source_Q_SW_factor_da": true
+  },
+  "check_count": 19,
+  "actual_spectator": "y\u00b2=R/(4D),qc=V/r,qc\u00b2=4+y\u00b2,r\u00b2=R,S\u00b3=R\u00b3+1. PhysicalB=partialR+(D/R)partialD+(V/(2R))partialV.",
+  "actual_R_map": "XR=S\u00b2/R,YR=(1\u2212R\u00b3)/r\u00b3,YR\u00b2=XR\u00b3\u22124,omegaR=dXR/YR=\u2212dR/(Sr).",
+  "actual_A_map": "b\u00b3=qc,XA=b\u00b2a\u00b2,YA=YQ=hQ/r,YA\u00b2=XA\u00b3\u22124,hQ\u00b2=V\u00b2a6\u22124R. etaA=XA*dXA/YA is absolute and includesdqc.",
+  "exact_cyclic_projector": "K=2[XA\u00b2*YA*omegaR\u2212XR*XA*YR*omegaA]/(XR\u00b3\u2212XA\u00b3); dK=omegaR*etaA. This equals (2/3)sum_j zeta^j chi(P,zeta^j Q) and carries exact finite characters, without a closed-form ambiguity.",
+  "actual_source_normalization": "f0*dell*dmu=\u2212omegaR*da/(72y\u00b2),p=lambda_n*f0,lambda_n=r/(3S\u00b2). lambdaQ/lambda_n=3etaA/(4b), includingthefull dqc leg. Thus the fixedy zero-section SW trace has measure \u2212omegaR*etaA/(96y\u00b2*b). This evaluates a source-forced section; it is NOT automaticallythewhole3Aheat source.",
+  "unweighted_trace_current": "Jtrace=dy*K/(96y\u00b2*b) has exterior derivative equal to that full source-normalized zero-section trace, with the actualdy orientation. Coefficient derivatives vanish only afterdy is wedged. Jtrace has nontrivialSdeckcharacter; it is not asserted to descend.",
+  "source_character_normalized_current": "Jphys=(lambda_n/b)*K is EXACTLY rational inR,V,a,hQ; Delta=(R\u00b3+1)\u00b2\u2212R\u00b2V\u00b2a6. Allr,S,b rootscancelinthisoneform.",
+  "rational_current_RaV": [
+    "2*V*a**4*(R**6 + 3*R**2*hQ**2 - 1)/(9*hQ*(R + 1)*(R**2 - R + 1)*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "-4*R*V*a**3*(R - 1)*(R**2 + R + 1)/(3*hQ*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "-4*R*a**4*(R - 1)*(R**2 + R + 1)/(9*hQ*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))"
+  ],
+  "FULL_absolute_derivative": "dJphys=lambda_n*omegaR*etaA/b + dlog(lambda_n/b)*Jphys. dlog(lambda_n/b)=[2/(3R)\u22122R\u00b2/(R\u00b3+1)]dR\u2212dV/(3V). No coefficient or spectator cost is dropped.",
+  "FULL_absolute_source_twoform_Ra_RV_aV": [
+    "-2*V*a**3/(3*hQ*(R + 1)*(R**2 - R + 1))",
+    "-2*a**4/(9*hQ*(R + 1)*(R**2 - R + 1))",
+    "0"
+  ],
+  "FULL_absolute_cost_twoform_Ra_RV_aV": [
+    "8*V*a**3*(R - 1)*(2*R**3 - 1)*(R**2 + R + 1)/(9*hQ*(R + 1)*(R**2 - R + 1)*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "2*a**4*(3*R**6 - 4*R**3 + R**2*hQ**2 + 1)/(9*hQ*(R + 1)*(R**2 - R + 1)*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "-4*R*a**3*(R - 1)*(R**2 + R + 1)/(9*hQ*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))"
+  ],
+  "fixed_y_current_Ra": [
+    "2*R**2*V*a**4*hQ/(3*(R + 1)*(R**2 - R + 1)*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "-4*R*V*a**3*(R - 1)*(R**2 + R + 1)/(3*hQ*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))"
+  ],
+  "fixed_y_acceleration_cost": "2*V*a**3*(R - 1)*(3*R**3 - 1)*(R**2 + R + 1)/(3*hQ*(R + 1)*(R**2 - R + 1)*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+  "actual_I1_comparison": "I1=V*a\u00b3(3R\u00b3\u22121)/(4rS4K),Dot(lambda_n)=(3R\u00b3\u22121)/(6S4). FULLcost=8rSK(1\u2212R\u00b3)*I1*dR*da/(3hQ*Delta)=8RS\u00b2(1\u2212R\u00b3)*I1*dell*dmu/(3hQ*Delta). The source alpha acceleration is p*I1*dell; the full remaining unit is retained rather than inferred to cancel.",
+  "finite_trace": "Jphys is odd underhQ\u2192\u2212hQ. Its ordinarytrace overthezero-markdoublecoveriszero. A source-servinggenus2two-pointkernelmustretainthenecessaryQ-oddcharacterbeforefinitepush. No arbitrary character weight is inserted.",
+  "actual_ramification_regular_form_RaVh": [
+    "2*R**2*V*a**4*hQ/(3*(R + 1)*(R**2 - R + 1)*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "V*a**3*hQ*(R - 1)*(R**2 + R + 1)/(3*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "a**4*hQ*(R - 1)*(R**2 + R + 1)/(9*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))",
+    "-V*a**4*(R - 1)*(R**2 + R + 1)/(9*(-R**3 + R*V*a**3 - 1)*(R**3 + R*V*a**3 + 1))"
+  ],
+  "global_poles": "The apparenthQ=0 pole is REMOVABLE ontheactualdoublecover, as the displayedR,a,V,h current proves. At fixedy thecurrentisregularatr=0andr=infinity. It has possiblepolesalongR\u00b3+1=0,Delta=0,andat a=infinity; thea=infinity dr coefficienthasasimplepole, asrequiredbythesecondkindAchannel. No infinitychargeisdiscarded. These needproperrelativecurrenttreatment; no unsupportedGysinclaim ismade.",
+  "proper_zero_mark_labels": "FreshglobalactualD0labels:T=r*sigma\u00b3,hQ=\u2212T+R/T,a\u00b3=(T+R/T)/V. ThusYQ=\u2212(sigma\u00b3\u2212sigma^-3),g(Q)=\u2212(sigma\u00b3+sigma^-3). YQdeckisT\u2194R/T (sigma\u2194sigma^-1 upcube rotations). Also retainthesectioncubiccoverAphys*k\u00b3+k\u00b2/2=V; D0pointisthelineprojectiontwinoftheoldx0pointthrough(k,0). Ordinaryfinitepushmustcarrybothlabels.",
+  "whole_source_guard": "No coefficient multiplying this CM current has been derived fromtheentire3Aheat*lambdaSW genus2 source. Fullrank4agentowns that markedkernel. This artifact suppliesanexactsource-normalizedcurrent,itslegalfinitecharacter,andthecompleteaccelerationcosttobecomparedthere."
+}

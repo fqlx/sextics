@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_PHYSICAL_WEIGHTED_CM_CURRENT_AND_FULL_SECOND_COTANGENT_CM_QUOTIENT; SOURCE_HEAT_BRIDGE_OPEN",
+  "checks": {
+    "independent_physical_current_match_0": true,
+    "actual_Qodd_character_0": true,
+    "independent_physical_current_match_1": true,
+    "actual_Qodd_character_1": true,
+    "independent_physical_current_match_2": true,
+    "actual_Qodd_character_2": true,
+    "FULL_absolute_source_and_weight_01": true,
+    "FULL_absolute_source_and_weight_02": true,
+    "FULL_absolute_source_and_weight_12": true,
+    "actual_hQ_ramification_regular_rewrite_0": true,
+    "actual_hQ_ramification_regular_rewrite_1": true,
+    "actual_hQ_ramification_regular_rewrite_2": true,
+    "source_I1_acceleration_cost_exact_unit": true,
+    "actual_SECOND_CM_quotient": true,
+    "FULL_other_CM_Hermite_0": true,
+    "FULL_other_CM_Hermite_1": true,
+    "FULL_nuQ_two_CM_channels_0": true,
+    "FULL_nuQ_two_CM_channels_1": true
+  },
+  "check_count": 18,
+  "weighted_current": "Jphys=(lambda_n/b)K_RA, fully rational R,a,V,hQ. Its source, entire dlog(lambda_n/b) weight cost and all dV terms match sourceagent independently. The ordinary hQ trace is zero; the Qodd genus2 heat/kernel factor remains necessary.",
+  "branch_regularity": "The current also equals a one-form with coefficients divisible by hQ in dR,da,dV,dhQ, using dhQ=d(V\u00b2a6\u22124R)/(2hQ). Thus its apparent hQ=0 pole is removable away from S3*Delta=0; all collisions/infinity strata remain in the proper-divisor audit.",
+  "exact_acceleration_unit": "At fixed actual y, cost=2Va\u00b3(1\u2212R\u00b3)(3R\u00b3\u22121)/(3S3 hQ Delta)=8rSK(1\u2212R\u00b3)I1/(3hQDelta). It is not equal to alpha acceleration pI1*dell without the remaining physical coframe/unit.",
+  "actual_SECOND_CM_map": "b\u00b3=qc,gamma\u00b3=16,XB=gamma/(b\u00b2a\u00b2),YB=2iYQ/(qc*a\u00b3),YB\u00b2=XB\u00b3\u22124. This is the other elliptic quotient of the even norm curve YQ\u00b2=qc\u00b2a6\u22124, not a generic endpoint factor.",
+  "full_secondkind_reduction": "Let F=3YQ/(2qc*a),etaB=XB*dXB/YB. EXACT (3qc*a4 da+a5 dqc)/YQ=dF+[6i*b/(gamma\u00b2 qc)]etaB+YQ*dqc/(qc\u00b2*a). Every spectator dqc leg is retained.",
+  "FULL_nuQ_factor": "nuQ=\u2212D*dlogzQ/(3S)+etaA/(6S*b)\u2212lambda_n\u00b2*dF/8\u2212[3i*b*lambda_n\u00b2/(4gamma\u00b2 qc)]etaB\u2212lambda_n\u00b2*YQ*dqc/(8qc\u00b2*a). This identity contains BOTH actual CM secondkind channels plus a logarithmic norm form and exact/moving-normal pieces.",
+  "exact_prefix_guard": "If \u2212lambda_n\u00b2*dF/8 is extracted as d(\u2212lambda_n\u00b2F/8), add +F*d(lambda_n\u00b2)/8 explicitly. The D/S,b,lambda_n coefficients also carry their full derivatives in a current.",
+  "rank4_guard": "The actual physical normal has KS rank2; this nu channel is necessary alongside lambdaQ. No rank1 Schiffer reduction, unweighted CM trace or vanishing of the 3Aheat correction follows.",
+  "scope": "Independent source-unit/current audit and exact second-kind factorization only. Fullrank4/sourceagent must still assemble the actual 3Aheat source with all coefficient costs and finite characters."
+}

@@ -1,0 +1,258 @@
+{
+  "sources": [
+    {
+      "source": "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.py",
+      "destination": "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.py",
+      "source_sha256": "2a5a60b7430e405744116d9bfb2c0e76831620b2e285cf77448add2e9df582a3"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.json",
+      "destination": "fresh-algebraic-construction/actual_coupled_quartic_Ferrari_physical_source.json",
+      "source_sha256": "b5f8699842f53d3c3e91c1f64dfa3d0a6c6d60749692b555645a3bc0bcdea19e"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.py",
+      "destination": "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.py",
+      "source_sha256": "1c10815a2e237d8dc72881217559a8a35f9c9f26926d91947fe035b485c5bde8"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.json",
+      "destination": "fresh-algebraic-construction/actual_Ferrari_plane_cubic_source.json",
+      "source_sha256": "4de6ed9819e11fb5b2b9511a4735c966ca3e83c92b5c09565cb760f6aa436853"
+    },
+    {
+      "source": "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.py",
+      "destination": "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.py",
+      "source_sha256": "73be3b160970683400e7efc4d8f1e9ae5a563ff11db6ef1cbb5a990ac1d442a1"
+    },
+    {
+      "source": "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.json",
+      "destination": "fresh-global-construction/actual_Ferrari_full_source_recovery_audit.json",
+      "source_sha256": "f5517d8172c2e06b465b355650a2b805d9244b958ec6453e403bfa15f777b926"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.py",
+      "destination": "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.py",
+      "source_sha256": "3d520100a493a84a4a6094208d4f06d6e0b9fd4c4bf8b9d64c9aae145f810c90"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.json",
+      "destination": "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.json",
+      "source_sha256": "22aa91acff414b5b9f96db94a0000d8a2cc075cc2206b20c508b30285c54787b"
+    },
+    {
+      "source": "fresh-global-construction/actual_K3_normline_square_normal_bridge.py",
+      "destination": "fresh-global-construction/actual_K3_normline_square_normal_bridge.py",
+      "source_sha256": "79b6b24e14a134610a9dfb576e7d759a64067a3410c5bc7fde5a255b810569f9"
+    },
+    {
+      "source": "fresh-global-construction/actual_K3_normline_square_normal_bridge.json",
+      "destination": "fresh-global-construction/actual_K3_normline_square_normal_bridge.json",
+      "source_sha256": "a769d8a5b5b3ae65618b47a85fe4699b06f3555851584271c6ee582c258b0bf2"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.py",
+      "destination": "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.py",
+      "source_sha256": "4a2b1dd4f21b415ff0f069c298ec60e2a447dc41a872208c4f8d425ab5a82704"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.json",
+      "destination": "fresh-algebraic-construction/actual_whole_P_marked_Jacobian_density.json",
+      "source_sha256": "c2155800876f49973168623a543679aabe81bde7330f25216b453f92ae2864ac"
+    },
+    {
+      "source": "root_actual_conic_Cartan_physical_current.py",
+      "destination": "root_actual_conic_Cartan_physical_current.py",
+      "source_sha256": "584ccbb6802bd4c057933248c76db2d834f2cdeda9d84d01e4e36373576626c7"
+    },
+    {
+      "source": "root_actual_conic_Cartan_physical_current.json",
+      "destination": "root_actual_conic_Cartan_physical_current.json",
+      "source_sha256": "6d54e0f8f8cfe03dda29b338d4bf42f6830c132b673f48944432ea5f167933a2"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_source_density_continuity.py",
+      "destination": "endpoint-adjoint-new/actual_SU3_source_density_continuity.py",
+      "source_sha256": "79cd2d2bfb1e1378d12ee55639b5fb4539a224a3330e8dc14a86a0da13f247a3"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_source_density_continuity.json",
+      "destination": "endpoint-adjoint-new/actual_SU3_source_density_continuity.json",
+      "source_sha256": "9782953aa8c2265ceccbe6b6117a69aac85a07cd00200d37e42a1f56d76a7096"
+    },
+    {
+      "source": "source-carrying-construction/actual_two_elliptic_companion_source_transport.py",
+      "destination": "source-carrying-construction/actual_two_elliptic_companion_source_transport.py",
+      "source_sha256": "73b12f757469d48544c5110f23f9366cbc42a4cb966bf1da937b7515910f37fb"
+    },
+    {
+      "source": "source-carrying-construction/actual_two_elliptic_companion_source_transport.json",
+      "destination": "source-carrying-construction/actual_two_elliptic_companion_source_transport.json",
+      "source_sha256": "afab96d53e422ea0ecbcd880848cff029bbcffc94234bbd68df735cb67d1abd0"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.py",
+      "destination": "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.py",
+      "source_sha256": "813e5e31185e8d52ef68aa4829b3b99ee5a651c6b885b8f835ecf591c380aeed"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.json",
+      "destination": "fresh-algebraic-construction/actual_new_genus4_CM_channels_full_normal.json",
+      "source_sha256": "555798ea6aaf0f9aa043a40332e50c43d01782733ee15ab23cef3904591aaa95"
+    },
+    {
+      "source": "source-carrying-construction/actual_phi_prefix_companion_normal_current.py",
+      "destination": "source-carrying-construction/actual_phi_prefix_companion_normal_current.py",
+      "source_sha256": "270390edbc0233902cfbdd8559d0ba0e3d9b7b28ee957fc0b6f875d00aaf5e90"
+    },
+    {
+      "source": "source-carrying-construction/actual_phi_prefix_companion_normal_current.json",
+      "destination": "source-carrying-construction/actual_phi_prefix_companion_normal_current.json",
+      "source_sha256": "76da7e0d05aa34bb68251ab21b68bd249c6ce714b3092b31caa44378beb4dd92"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.py",
+      "destination": "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.py",
+      "source_sha256": "57fdbe3483e65373eaf36f33650d60d977f248931afe07e1f778e3d1f1c85db7"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.json",
+      "destination": "fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.json",
+      "source_sha256": "d2e0323e1f1e0855a9f19076ca637270856238098617073929a69ca6019bc594"
+    },
+    {
+      "source": "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.py",
+      "destination": "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.py",
+      "source_sha256": "5b1c5038128265bbd4b8a304ee6b8615640a3703799c556ce78afa97a587fa20"
+    },
+    {
+      "source": "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.json",
+      "destination": "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.json",
+      "source_sha256": "a3e9c68134cd4419c865e1a1c5d9a862e77d6a132a9df0929fc191535c3a26d4"
+    },
+    {
+      "source": "source-carrying-construction/actual_zero_mark_weighted_CM_current.py",
+      "destination": "source-carrying-construction/actual_zero_mark_weighted_CM_current.py",
+      "source_sha256": "0fe5c899ac03dd6c5d55a343ca4b5d246bc5a5031a05b7605711c627356c1da3"
+    },
+    {
+      "source": "source-carrying-construction/actual_zero_mark_weighted_CM_current.json",
+      "destination": "source-carrying-construction/actual_zero_mark_weighted_CM_current.json",
+      "source_sha256": "bc3d164285ad5ab6b5f1c6125ca5d670f79392b413360c4ebaf09307062ad3fa"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.py",
+      "destination": "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.py",
+      "source_sha256": "dbc0766a5e8f11600cfc8de125b64687df1e87a385b67a3e24cce0d219778507"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.json",
+      "destination": "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.json",
+      "source_sha256": "ff8fc5d31170badab35c42d9b9ab285f236e664dbb084a9f51e44570eeba0f6c"
+    },
+    {
+      "source": "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py",
+      "destination": "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py",
+      "source_sha256": "12874e9fa5d34b1cf0135e6a8d91fdf939ea7c2bfbb9fe8eba3dfabb8050b6b6"
+    },
+    {
+      "source": "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.json",
+      "destination": "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.json",
+      "source_sha256": "8326be1947ab54c7d67ac0d0c57fe6de0e999663259de30e0f4f114f9086c2b7"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.py",
+      "destination": "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.py",
+      "source_sha256": "9887708545ee3546dac86113b73a387e1439d8786ad0df524e05c324db2822ff"
+    },
+    {
+      "source": "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.json",
+      "destination": "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.json",
+      "source_sha256": "d83c4e2d95efa9b1a288d31c811cf48e4e64cbba449501f970881d52acf33cee"
+    },
+    {
+      "source": "cm-corner-contraction/derive_Ferrari_rational_Aronhold.json",
+      "destination": "cm-corner-contraction/derive_Ferrari_rational_Aronhold.json",
+      "source_sha256": "f839c66464f88b5a8010fba24ead82cc0baa3bf17d3d5eb92e21b7e7dea07905"
+    },
+    {
+      "source": "fresh-global-construction/publication-review/proposed-packet/bind_target.py",
+      "destination": "bind_target.py",
+      "source_sha256": "6662989fa9ad895acdab8de65b2c4f88eed45f0d9e977504afb549578b9fda06"
+    },
+    {
+      "source": "fresh-global-construction/publication-review/proposed-packet/live-instance.rec",
+      "destination": "live-instance.rec",
+      "source_sha256": "76c31054fbe7d37ac547431a468e23ecd129d3d12c60612bad5aa553a409602d"
+    },
+    {
+      "source": "fresh-global-construction/new-packet-dependency-review/native_source_field.py",
+      "destination": "lib/native_source_field.py",
+      "source_sha256": "868b5934a0ea4c03d8eeeaea900568182e17ae9168b7f4d4e4c392af1a9dd896"
+    },
+    {
+      "source": "fresh-global-construction/new-packet-dependency-review/native_source_field.provenance.json",
+      "destination": "lib/native_source_field.provenance.json",
+      "source_sha256": "cd03a796489caa0c0b8f93334c9d56419705e981c8a89f0b96cde36b683cc9fd"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_PF_Green_current.py",
+      "destination": "endpoint-adjoint-new/actual_SU3_PF_Green_current.py",
+      "source_sha256": "d677ddd953e363e6d9483713aa2af9959ca98b4aeb1e61dfb8e41b9fa3bc1140"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_PF_Green_current.json",
+      "destination": "endpoint-adjoint-new/actual_SU3_PF_Green_current.json",
+      "source_sha256": "abde23af5b82e0671f733d1a29e45e84f8175d1d7c7ff57cb188314a06f9054c"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.py",
+      "destination": "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.py",
+      "source_sha256": "41e53743b2d22f62ea00f17007a9c2ae263ec362942ca3867a3b6d41bdcae2ce"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.json",
+      "destination": "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.json",
+      "source_sha256": "623d5a389bc7b814c1fdbcf1d82bf5caff609d731607c97f2e7618a2e89a79af"
+    }
+  ],
+  "portable_changes": [
+    {
+      "file": "fresh-algebraic-construction/actual_Ferrari_section_conic_companion_source.py",
+      "old": "Path('/workspace/scratch/off-paired/cm-corner-contraction/derive_Ferrari_rational_Aronhold.json')",
+      "new": "(Path(__file__).parents[1]/'cm-corner-contraction/derive_Ferrari_rational_Aronhold.json')"
+    },
+    {
+      "file": "solve-physical-residual/actual_odd_CM_contact_original_physical_audit.py",
+      "old": "Path('/workspace/scratch/off-paired/fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.json')",
+      "new": "(Path(__file__).parents[1]/'fresh-algebraic-construction/actual_source_forced_odd_CM_contact_current.json')"
+    },
+    {
+      "file": "fresh-algebraic-construction/actual_zero_mark_two_CM_channels_weight_audit.py",
+      "old": "Path('/workspace/scratch/off-paired/source-carrying-construction/actual_zero_mark_weighted_CM_current.json')",
+      "new": "(Path(__file__).parents[1]/'source-carrying-construction/actual_zero_mark_weighted_CM_current.json')"
+    },
+    {
+      "file": "fresh-algebraic-construction/actual_two_cotangent_source_current_physical_audit.py",
+      "old": "Path('/workspace/scratch/off-paired/full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py')",
+      "new": "(Path(__file__).parents[1]/'full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py')"
+    },
+    {
+      "file": "full-rank4-source-assembly/actual_two_cotangent_source_Cartan_current.py",
+      "old": "pth=Path('/workspace/scratch/off-paired/endpoint-adjoint-new/actual_SU3_CM_adjoint_defect.py')\nns0={'__file__':str(pth)}\nexec(compile(pth.read_text().split('p=W(f0/3')[0],str(pth),'exec'),ns0)",
+      "new": "import importlib.util\nlibpath=Path(__file__).parents[1]/'lib/native_source_field.py'\nspec=importlib.util.spec_from_file_location('packet_native_source',libpath)\n_native=importlib.util.module_from_spec(spec);spec.loader.exec_module(_native)\nns0=vars(_native)"
+    },
+    {
+      "file": "endpoint-adjoint-new/actual_SU3_source_density_continuity.py",
+      "old": "p=Path(__file__).with_name('actual_zero_mark_absolute_CM_prefix_current.py')\nns={'__file__':str(p)}\nexec(compile(p.read_text().split('# Source-forced complete Hermite input:')[0],str(p),'exec'),ns)",
+      "new": "import importlib.util\nlibpath=Path(__file__).parents[1]/'lib/native_source_field.py'\nspec=importlib.util.spec_from_file_location('packet_native_continuity',libpath)\n_native=importlib.util.module_from_spec(spec);spec.loader.exec_module(_native)\nns=vars(_native)"
+    },
+    {
+      "file": "endpoint-adjoint-new/actual_SU3_CM_firstjet_packet.py",
+      "old": "st=time.time();path=Path(__file__).with_name('actual_SU3_CM_adjoint_defect.py')\nns={'__file__':str(path)}\nexec(compile(path.read_text().split('p=W(f0/3')[0],str(path),'exec'),ns)",
+      "new": "st=time.time()\nimport importlib.util\nlibpath=Path(__file__).parents[1]/'lib/native_source_field.py'\nspec=importlib.util.spec_from_file_location('packet_native_firstjet',libpath)\n_native=importlib.util.module_from_spec(spec);spec.loader.exec_module(_native)\nns=vars(_native)"
+    }
+  ],
+  "adjacent_receipts": "Final adjacent JSON receipts are from the successful disposable replay of these frozen producer bytes. Initial source receipt hashes above record the copy boundary, not the regenerated elapsed times.",
+  "new_source_bound_binding": "source_heat_bridge.py extracts and verifies only the positive actual sigma/L0/heat and alpha/holomorphic-row identities. It does not import the unrelated candidate test tail. Its independent absolute exterior sign audit is retained in the external publication review."
+}

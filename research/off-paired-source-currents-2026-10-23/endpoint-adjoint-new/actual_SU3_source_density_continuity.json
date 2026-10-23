@@ -1,0 +1,23 @@
+{
+  "status": "EXACT_ACTUAL_CONIC_MARK_SOURCE_CONTINUITY_AND_DENSITY_BINDING; PF_ADJOINT_SOLUTION_OPEN",
+  "checks": {
+    "actual_forward_source_normal_ell": true,
+    "actual_forward_source_normal_mu": true,
+    "WHOLE_actual_source_density_continuity": true,
+    "independent_physical_CM_mass_Piola_normal": true,
+    "source_rho_is_full_CM_mass_divergence": true
+  },
+  "check_count": 5,
+  "actual_source": "spectatory=YQc=sqrtR/U, y\u00b2=R/(4D). Actual physical firstpole base densityf0=1/(72*y\u00b2*K) inorientationdell*dmu*dy*omega0(P). Physical N is already absorbed in this density; it is not discarded.",
+  "actual_moduli": "ell=L/S,mu=M/sqrtR,S\u00b3=R\u00b3+1,L=D+a/3\u2212a\u00b2/(12A),M=\u2212aL/(6A)\u2212(V+1/(216A\u00b2))a\u00b3,A=(R\u00b3+1)/R. Physical B=\u2202R+(D/R)\u2202D,includingB(V)=V/(2R),holdsyfixed.",
+  "actual_normal": "ell_delta=LD/S,mu_delta=MD/sqrtR,LD=\u2212a/(3A),MD=\u2212D/(3A)\u2212a/(9A)+a\u00b2/(18A\u00b2). ForwardvR=(LD*Ma\u2212La*MD)/K,va=(LR*MD\u2212MR*LD)/K. Inversefixedtargetmotion is MINUS thisforwardvector.",
+  "actual_K": "LR=B(L)\u2212kS*L,MR=B(M)\u2212M/(2R),La=L_a,Ma=M_a,K=Ma*LR\u2212La*MR,kS=R\u00b2/(R\u00b3+1). Kdelta differentiated with the ENTIRE displayed LD/MD,bothBderivativesandsourcemassscales.",
+  "WHOLE_density_normal": "rho=[vR*B(K)+va*K_a\u2212Kdelta]/(72*y\u00b2*K\u00b2). EXACTLY rho=\u2212D_ell[f0*ell_delta]\u2212D_mu[f0*mu_delta]. EverycanonicalpartialholdsyfixedandmovesphysicalR,D,V,a.",
+  "canonical_partial_operators": "D_ell=S/K*[Ma*B\u2212MR*D_a],D_mu=sqrtR/K*[\u2212La*B+LR*D_a]. Thus D_ell(fA/S)=[Ma*(BfA\u2212kS*fA)\u2212MR*fA_a]/K andD_mu(fB/sqrtR)=[\u2212La*(BfB\u2212fB/(2R))+LR*fB_a]/K. The two compulsory scale derivatives are included.",
+  "CM_mass_identity": "f0*dell*dmu=dR*da/[72*y\u00b2*S*sqrtR]=\u2212omegaCM*da/(72*y\u00b2),omegaCM=dXE/YE=\u2212dR/(SsqrtR). ExactdivMass=B(vR)+va_a\u2212(kS+1/(2R))*vR givesrho=\u2212f0*divMass. This independently confirms the actual scalar forcingbeforePFadjointconstruction.",
+  "Green_binding": "InactualorientationOmega3=dy*dell*dmu,holsourceOmega3*rho*omega0 reduces bytheEXACTcurrentinactual_SU3_PF_Green_current.py/json toforcing\u2212D_mu(rho)*lambdaSW. A source-specific identity\u2212D_mu(rho)=L0*(fA)+L2*(fB) would produce a whole rational current with its fibercochains. Such fA,fB are NOT asserted here.",
+  "exact_point_f0": "24/2017",
+  "exact_point_rho": "721664928/8205738913",
+  "open": "Freshalgebraicowns actual CM-source adjoint identity. These continuity/Piola identities are positiveactualsourcebindingchecks,not genericexactness,an Oreterminationclaim,or a certificate.",
+  "elapsed_seconds": 0.175
+}

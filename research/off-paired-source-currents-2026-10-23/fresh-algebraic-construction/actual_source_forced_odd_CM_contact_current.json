@@ -1,0 +1,40 @@
+{
+  "status": "ONE_SOURCE_FORCED_ODD_CM_CONTACT_CURRENT_WITH_ENTIRE_RETAINED_PURE_HOL_REMAINDER",
+  "checks": {
+    "actual_odd_CM_absolute_lift": true,
+    "forced_complete_C_normal": true,
+    "forced_complete_H_normal": true,
+    "forced_contact_constraint": true,
+    "whole_original_to_Efree_prefix": true,
+    "WHOLE_current_plus_retained_packet": true
+  },
+  "check_count": 6,
+  "orientation": "vol_base=du wedge dw wedge dz; K vector denotes K0 dw dz+K1 dz du+K2 du dw.",
+  "original_chart": "q\u00b2=u*w,J=1+z6+u\u00b2+uw\u00b3\u22123z\u00b2u/4,C=zu/2+q/3,H=J+3zC/2,etaB=2u+w\u00b3\u22123z\u00b2/4,d=1+z6\u2212J.",
+  "prior_literal_current": "Jcombined=w*dw wedge dz wedge dp/(36etaB*Y). This includes the Phi/CJ cochain; no E term or fixed-C Jacobian factor remains.",
+  "WHOLE_prior_residual": "R=du dw dz dp*[a0/Y+b0*(H+Cp)*(p+3z/2)/Y\u00b3],a0=w/(18etaB\u00b2),b0=z*w/(72etaB)+w\u00b2/(216qetaB).",
+  "absolute_CM_kernel": "OmegaT=OmegaOdd/lambda5=\u2212[dlogu\u2212(1/2)dlogd]/(3q etaB). This is the actual weighted three-rotation constant-CM Cauchy kernel; all dbase terms are retained.",
+  "literal_current_constructor": "Acontact=dJ+(3/2)C dz, Kraw=OmegaT wedge Acontact. Set f=\u2212b0/(Kraw wedge dC/vol_base), UNIQUE. JCM=K2 wedge dp/Y with K2=f*Kraw.",
+  "forced_scalar": "-2*w**2*(q + 3*u*z)*(-4*u - 4*w**3 + 3*z**2)/(3*(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7))",
+  "current_vector": [
+    "-4*w**3*(9*q*u*z**2 + 2*q*w + 72*q*z**6 + 9*u*w*z + 24*w*z**5)/(3*(-8*u - 4*w**3 + 3*z**2)*(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7))",
+    "w*(144*q*u**2*z**2 + 108*q*u*w**3*z**2 - 81*q*u*z**4 - 8*q*w**4 - 288*q*w**3*z**6 + 6*q*w*z**2 + 216*q*z**8 + 48*u**2*w*z + 12*u*w**4*z - 9*u*w*z**3 - 96*w**4*z**5 + 72*w*z**7)/(9*u*(-8*u - 4*w**3 + 3*z**2)*(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7))",
+    "-8*w**3*(3*q*z + w)*(-4*u - 4*w**3 + 3*z**2)/(3*(-8*u - 4*w**3 + 3*z**2)*(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7))"
+  ],
+  "Kraw_dC_mass": "-(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7)/(36*q**2*(-8*u - 4*w**3 + 3*z**2)*(-4*u - 4*w**3 + 3*z**2))",
+  "whole_current_identity": "R=dJCM+(a0\u2212divK)*du dw dz dp/Y. All endpoint-Y^-3 terms match identically, not only compact rows or relative residues.",
+  "divK": "w*(165888*q*u**5*w**5 - 82944*q*u**5*w**2*z**2 + 331776*q*u**4*w**8 - 269568*q*u**4*w**5*z**2 - 9216*q*u**4*w**3 + 139968*q*u**4*w**2*z**4 + 9216*q*u**4*z**2 + 165888*q*u**3*w**11 - 186624*q*u**3*w**8*z**2 + 13824*q*u**3*w**6 + 3649536*q*u**3*w**5*z**6 + 116640*q*u**3*w**5*z**4 + 57024*q*u**3*w**3*z**2 + 124416*q*u**3*w**2*z**8 - 52488*q*u**3*w**2*z**6 - 5184*q*u**3*z**4 + 23040*q*u**2*w**9 + 3649536*q*u**2*w**8*z**6 + 368640*q*u**2*w**6*z**4 + 12096*q*u**2*w**6*z**2 - 2737152*q*u**2*w**5*z**8 - 23040*q*u**2*w**3*z**6 - 22032*q*u**2*w**3*z**4 + 27648*q*u**2*z**8 + 368640*q*u*w**9*z**4 - 512*q*u*w**7 - 373248*q*u*w**6*z**6 - 497664*q*u*w**5*z**12 + 192*q*u*w**4*z**2 + 82944*q*u*w**3*z**8 + 373248*q*u*w**2*z**14 + 144*q*u*w*z**4 - 7776*q*u*z**10 - 73728*q*w**6*z**10 + 27648*q*w**3*z**12 + 20736*q*z**14 - 13824*u**5*w**3*z + 20736*u**5*z**3 + 117504*u**4*w**6*z + 101088*u**4*w**3*z**3 - 23328*u**4*z**5 + 131328*u**3*w**9*z + 2322432*u**3*w**6*z**5 - 44064*u**3*w**6*z**3 + 3840*u**3*w**4*z + 20736*u**3*w**3*z**7 - 49572*u**3*w**3*z**5 + 2304*u**3*w*z**3 + 62208*u**3*z**9 + 6561*u**3*z**7 + 2322432*u**2*w**9*z**5 - 1886976*u**2*w**6*z**7 + 1296*u**2*w**4*z**3 + 155520*u**2*w**3*z**9 - 972*u**2*w*z**5 - 34992*u**2*z**11 - 12288*u*w**7*z**5 - 331776*u*w**6*z**11 + 4608*u*w**4*z**7 + 186624*u*w**3*z**13 + 3456*u*w*z**9 + 46656*u*z**15)/(18*q*u*(-8*u - 4*w**3 + 3*z**2)*(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7)**2)",
+  "pure_hol_remaining": "-w*(-2654208*q*u**6*w**5 + 663552*q*u**6*w**2*z**2 - 5971968*q*u**5*w**8 + 5971968*q*u**5*w**5*z**2 + 73728*q*u**5*w**3 - 1368576*q*u**5*w**2*z**4 - 110592*q*u**5*z**2 - 3981312*q*u**4*w**11 + 6552576*q*u**4*w**8*z**2 + 221184*q*u**4*w**6 - 21233664*q*u**4*w**5*z**6 - 3981312*q*u**4*w**5*z**4 - 465408*q*u**4*w**3*z**2 - 995328*q*u**4*w**2*z**8 + 839808*q*u**4*w**2*z**6 + 110592*q*u**4*z**4 - 663552*q*u**3*w**14 + 1244160*q*u**3*w**11*z**2 + 55296*q*u**3*w**9 - 35831808*q*u**3*w**8*z**6 - 1026432*q*u**3*w**8*z**4 - 2949120*q*u**3*w**6*z**4 - 753408*q*u**3*w**6*z**2 + 23390208*q*u**3*w**5*z**8 + 559872*q*u**3*w**5*z**6 + 774144*q*u**3*w**3*z**6 + 368064*q*u**3*w**3*z**4 + 373248*q*u**3*w**2*z**10 - 157464*q*u**3*w**2*z**8 - 331776*q*u**3*z**8 - 27216*q*u**3*z**6 - 92160*q*u**2*w**12 - 14598144*q*u**2*w**11*z**6 - 4423680*q*u**2*w**9*z**4 + 20736*q*u**2*w**9*z**2 + 21897216*q*u**2*w**8*z**8 - 12288*q*u**2*w**7 + 2414592*q*u**2*w**6*z**6 + 124416*q*u**2*w**6*z**4 - 7962624*q*u**2*w**5*z**12 - 8211456*q*u**2*w**5*z**10 + 4608*q*u**2*w**4*z**2 - 843264*q*u**2*w**3*z**8 - 66096*q*u**2*w**3*z**6 - 2985984*q*u**2*w**2*z**14 - 1728*q*u**2*w*z**4 + 207360*q*u**2*z**10 - 1474560*q*u*w**12*z**4 + 2048*q*u*w**10 + 2598912*q*u*w**9*z**6 + 1990656*q*u*w**8*z**12 - 2304*q*u*w**7*z**2 - 1769472*q*u*w**6*z**10 - 1451520*q*u*w**6*z**8 - 2985984*q*u*w**5*z**14 + 663552*q*u*w**3*z**12 + 279936*q*u*w**3*z**10 + 1119744*q*u*w**2*z**16 + 432*q*u*w*z**6 - 248832*q*u*z**14 - 23328*q*u*z**12 + 294912*q*w**9*z**10 - 331776*q*w**6*z**12 + 62208*q*z**16 - 331776*u**6*w**3*z - 165888*u**6*z**3 - 663552*u**5*w**6*z - 186624*u**5*w**3*z**3 + 248832*u**5*z**5 - 857088*u**4*w**9*z - 15040512*u**4*w**6*z**5 - 196992*u**4*w**6*z**3 + 18432*u**4*w**4*z + 497664*u**4*w**3*z**7 + 513216*u**4*w**3*z**5 - 27648*u**4*w*z**3 - 497664*u**4*z**9 - 122472*u**4*z**7 - 525312*u**3*w**12*z - 24330240*u**3*w**9*z**5 + 570240*u**3*w**9*z**3 - 89088*u**3*w**7*z + 15344640*u**3*w**6*z**7 + 66096*u**3*w**6*z**5 - 21888*u**3*w**4*z**3 - 1430784*u**3*w**3*z**9 - 174960*u**3*w**3*z**7 + 19872*u**3*w*z**5 + 466560*u**3*z**11 + 19683*u**3*z**9 - 9289728*u**2*w**12*z**5 + 14515200*u**2*w**9*z**7 - 294912*u**2*w**7*z**5 - 5184*u**2*w**7*z**3 - 7962624*u**2*w**6*z**11 - 6283008*u**2*w**6*z**9 + 110592*u**2*w**4*z**7 + 7776*u**2*w**4*z**5 + 497664*u**2*w**3*z**13 + 606528*u**2*w**3*z**11 - 41472*u**2*w*z**9 - 2916*u**2*w*z**7 - 373248*u**2*z**15 - 104976*u**2*z**13 + 49152*u*w**10*z**5 + 1327104*u*w**9*z**11 - 55296*u*w**7*z**7 - 1741824*u*w**6*z**13 + 373248*u*w**3*z**15 + 10368*u*w*z**11 + 139968*u*z**17)/(18*q*u*(-8*u - 4*w**3 + 3*z**2)**2*(288*q*u**2*w**2 + 288*q*u*w**5 - 324*q*u*w**2*z**2 - 32*q*w**3 - 864*q*w**2*z**6 + 6*q*z**2 + 48*u**2*z - 72*u*w**3*z - 27*u*z**3 - 384*w**3*z**5 + 72*z**7)**2)",
+  "actual_point": {
+    "u": "1",
+    "w": "1",
+    "q": "1",
+    "z": "1",
+    "forced_scalar": "-40/3003",
+    "a0": "8/729",
+    "divK": "-653773/12486474",
+    "remaining": "7117189/112378266"
+  },
+  "remaining_scope": "The explicit pure holomorphic endpoint theta0 packet must be served by the two q-even varying elliptic channels or another actual full current. The forced contact construction alone is not asserted to close, and no weights are varied.",
+  "elapsed_seconds": 164.632
+}

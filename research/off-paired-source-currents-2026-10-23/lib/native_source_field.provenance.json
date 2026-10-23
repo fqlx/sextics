@@ -1,0 +1,47 @@
+{
+  "status": "EXACT_ARITHMETIC_AND_PHYSICAL_SOURCE_SLICES_ONLY",
+  "library_sha256": "868b5934a0ea4c03d8eeeaea900568182e17ae9168b7f4d4e4c392af1a9dd896",
+  "slices": [
+    {
+      "source": "fresh-algebraic-construction/native_original_endpoint_current_audit.py",
+      "source_sha256": "5a54b7d653857d5520214e6f39a462890b273f9ca8477ec5b88e60b1166eae01",
+      "start_line": 8,
+      "end_line": 42,
+      "slice_sha256": "d0bd32f0cfd450c89135ae8094dee1a694f7ddea881e4e27f4d067cd3f3ff3ce"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_zero_mark_absolute_CM_prefix_current.py",
+      "source_sha256": "f5cba5841cdd810302671bff7f83f9bf8684971a1ca303755bc0a6049de41de0",
+      "start_line": 14,
+      "end_line": 40,
+      "slice_sha256": "639dcc797c861e6bd6aa32788cfefbc4b741091daee103f9075641b9646c2a53"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_zero_mark_absolute_CM_prefix_current.py",
+      "source_sha256": "f5cba5841cdd810302671bff7f83f9bf8684971a1ca303755bc0a6049de41de0",
+      "start_line": 41,
+      "end_line": 44,
+      "slice_sha256": "e41daba8666c020c83ff281ac77a3231ebc73563c9e563b5460682c79b73a10a"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_source_density_continuity.py",
+      "source_sha256": "79cd2d2bfb1e1378d12ee55639b5fb4539a224a3330e8dc14a86a0da13f247a3",
+      "start_line": 13,
+      "end_line": 23,
+      "slice_sha256": "8c518ad3271b69c9890eb5ea6dd0d8b44622c64af05d11353c7b304b26da1b2b"
+    },
+    {
+      "source": "endpoint-adjoint-new/actual_SU3_CM_adjoint_defect.py",
+      "source_sha256": "a1a476464a36cccf7fd56ce224417571593a75c6bc8fa1616b460bf2e8cb5ea2",
+      "start_line": 13,
+      "end_line": 42,
+      "slice_sha256": "4bac01c86871ab0ac802cfcae367f6af56bb1dfd8f8c636442656c86ce674846"
+    }
+  ],
+  "binding_changes": [
+    "CTX uses actual R,D,a,m coordinates instead of old x,y,z,p",
+    "R,D,a,m,Z are the identical physical initialization from the old E2 loader",
+    "S3=R**3+1 and ns=globals() preserve W and nested namespace API"
+  ],
+  "not_included": "No old Hermite, failed-CM-candidate, source-search or producer tail is executed."
+}

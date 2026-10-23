@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ONE_COMBINED_PHI_PREFIX_AND_COMPANION_NORMAL_CURRENT_WITH_ENTIRE_REMAINDER; NOT_CERTIFICATE",
+  "physical_source": "beta=\u2212y^3(H+Cp)dxdy dz dp/(6Y^3), Y^2=(H+Cp)^2\u22124p^6; H=1+x6+y6+z6+xyz/2,C=x3z/2+xy/3.",
+  "OLD_complete_prefix": "Phi=\u2212y^3/(6T), T=J_y C_x\u2212J_x C_y, J=H\u22123zC/2. Jphi=Phi*dC wedge dz wedge dp/Y; beta\u2212dJphi=\u2212Phi_H*dH wedge dC wedge dz wedge dp/Y with Phi_H=partial_H|C,z(Phi).",
+  "NEW_source_normal_cochain": "CJ=(z/2+w/(6q))/etaB, F=Phi*CJ, w=y\u00b2/x,q=xy,etaB=2x\u00b3+y6/x\u00b3\u22123z\u00b2/4. Subtract the ENTIRE rational cochain F*dJ wedge dz wedge dp/Y; its Phi/T/E/q source factors and derivatives are retained.",
+  "ONE_actual_combined_current": "J1=Jphi\u2212F*dJ wedge dz wedge dp/Y=w/(36etaB)*dw wedge dz wedge dp/Y. In original coordinates i_v(dxdy dz) wedge dp/Y with vx=y\u00b3/(18x\u00b2etaB),vy=y4/(36x\u00b3etaB),vz=0.",
+  "WHOLE_source_identity": "beta=dJ1+R, R=dJ wedge dw wedge dz wedge dp*[w/(18etaB\u00b3Y)+(z*w/(72etaB\u00b2)+w\u00b2/(216q etaB\u00b2))*(H+Cp)*(p+3z/2)/Y\u00b3]. BOTH Y^-1 and Y^-3 terms are compulsory.",
+  "physical_equivalent_remainder": "R=dxdy dzdp*[y\u00b3/(3etaB\u00b2Y)+y\u00b3*CJ*(H+Cp)*(p+3z/2)/(6Y\u00b3)].",
+  "source_branch_scope": "T/E poles are in the retained actual cochain F, not thrown away. R retains etaB=0, q=0 and every endpoint and moving-source character. No normalized unweighted projection is used.",
+  "FULL_relative_phiH_reduction": "Phi_H*dC=\u2212w dw/(18etaB\u00b3)\u2212d_w(Phi*CJ) at fixed(J,z). Full endpoint integration adds the explicit CJ*(partial_C+3z*partial_H/2)(dp/Y) term in R.",
+  "ENTIRE_normalized_CM_kernel_packet": "R=d\u03bb wedge \u03a9odd wedge dz wedge [\u2212U/(3\u03bb\u00b2Q\u0394)*theta+(1+3\u03bb*z*U/Q)/36*tau(theta)], \u0394=U\u22121/U,tau=partial_C+3z*partial_H/2, \u03a9odd=\u2212dlogU/(3Q\u0394), \u03bb6=1+z6\u2212J. BOTH theta and tau(theta) rows are required.",
+  "new_four_channel_binding": "Even packet uses 2 varying elliptic quotients of q-even genus2; odd packet uses BOTH actual CM quartic quotients of the genus4 q-cover. Neither compact channel nor finite pole charge is discarded.",
+  "actual_point": {
+    "x": "1",
+    "y": "1",
+    "z": "1",
+    "p": "1",
+    "etaB": "9/4",
+    "CJ": "8/27",
+    "Divv": "-16/243",
+    "Y_squared": "220/9",
+    "ENTIRE_remainder_times_Y_cubed": "4960/2187"
+  },
+  "checks": {
+    "actual_fixed_C_normal_H": true,
+    "actual_fixed_C_normal_C": true,
+    "actual_fixed_C_normal_J": true,
+    "maintained_phi_prefix_x": true,
+    "maintained_phi_prefix_y": true,
+    "WHOLE_companion_normal_divergence": true,
+    "WHOLE_companion_endpoint_C_motion": true,
+    "WHOLE_companion_endpoint_H_motion": true,
+    "ENTIRE_original_source_minus_combined_current": true,
+    "WHOLE_old_phiH_correction": true,
+    "ENTIRE_phi_jacobian_source_unit": true,
+    "FULL_relative_Piola_normal_with_cochain": true,
+    "ENTIRE_packet_endpoint_tau_unit": true,
+    "FULL_normalized_theta_row": true,
+    "FULL_normalized_tau_row": true
+  },
+  "check_count": 15,
+  "open": "Construct a finite actual correction for the ENTIRE displayed two-term packet, keeping full endpoint C coupling, all four elliptic channels, moving scales/moduli, finite charges and infinity corrections. No closure or certificate."
+}

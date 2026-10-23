@@ -1,0 +1,40 @@
+{
+  "status": "EXACT_SU3_PF_GREEN_CURRENT_WITH_FIBRE_COCHAINS; ACTUAL_SOURCE_ADJOINT_IDENTITY_STILL_REQUIRED",
+  "checks": {
+    "L0_SW_LITERAL_fibre_cochain": true,
+    "L2_SW_LITERAL_fibre_cochain": true,
+    "SW_mu_to_hol0_WITH_exact_fibre_term": true,
+    "SW_ell_to_hol1_WITH_exact_fibre_term": true,
+    "L0_ABSOLUTE_dx_component": true,
+    "L2_ABSOLUTE_dx_component": true,
+    "L0_absolute_base_normal_retained": true,
+    "WHOLE_L0_variable_coefficient_Green": true,
+    "WHOLE_L2_variable_coefficient_Green": true,
+    "canonical_measure_E_formal_adjoint_divergence": true
+  },
+  "check_count": 10,
+  "actual_normalized_curve": "y\u00b2=(x\u00b3+ell*x+mu)\u00b2\u22124; z=(x\u00b3+ell*x+mu+y)/2; lambda_abs=\u2212x*dlogz,lambda_rel=\u2212x*(3x\u00b2+ell)*dx/y. Constant4 is the actual normalized scale; all physical variable-scale/finite-branch units must remain in the pullback/source coefficient.",
+  "PF_operators": "L0=3D_ell\u00b2+ellD_mu\u00b2. E=2ellD_ell+3muD_mu; L2=(E\u22121)\u00b2\u221236D_mu\u00b2. Both annihilate the FULL rank4 SW period module; no nilpotence or rank1 projection is assumed.",
+  "formal_adjoints_canonical_volume": "L0*=L0; L2*=(E+6)\u00b2\u221236D_mu\u00b2. E* =\u2212E\u22125 with respect to d_ell d_mu; the +6 and Green +7 terms are compulsory.",
+  "literal_fibre_C0": "C0=1/y+x*g*F/y\u00b3,g=x\u00b3+ell*x+mu,F=3x\u00b2+ell; L0(lambda_rel)=d_x C0.",
+  "literal_fibre_C2": "C2=x*g*((2ell*x+3mu)\u00b2\u221236)/y\u00b3\u2212x*(3x\u00b3+5ell*x+9mu)/y; L2(lambda_rel)=d_x C2.",
+  "full_absolute_base_remainders": {
+    "L0": {
+      "dell_numerator_over_y": "0",
+      "dmu_numerator_over_y": "(ell*x + mu + x**3)/((ell*x + mu + x**3 - 2)*(ell*x + mu + x**3 + 2))"
+    },
+    "L2": {
+      "dell_numerator_over_y": "x**2*(-9*ell**2*x**2 - 23*ell*mu*x - 8*ell*x**4 - 14*mu**2 - 13*mu*x**3 + x**6 - 16)/((ell*x + mu + x**3 - 2)*(ell*x + mu + x**3 + 2))",
+      "dmu_numerator_over_y": "x*(-9*ell**2*x**2 - 25*ell*mu*x - 4*ell*x**4 - 16*mu**2 - 11*mu*x**3 + 5*x**6 - 32)/((ell*x + mu + x**3 - 2)*(ell*x + mu + x**3 + 2))"
+    }
+  },
+  "base_normal_guard": "Li(lambda_abs)=dCi+the recorded dell/dmu legs. They vanish only after the actual top-moduli wedge. The Green current below uses lambda_rel=literal scalar*dx and includes Ci; after physical pullback dx moves and ALL its base legs are automatically retained. Do not substitute Li(lambda_abs)=dCi without these corrections.",
+  "Green_flux_L0": "For endpoint-independent f, jell=3(f*D_ell(lambda_rel)\u2212D_ell(f)*lambda_rel),jmu=ell*(f*D_mu(lambda_rel)\u2212D_mu(f)*lambda_rel). Entries are literal fibre1forms.",
+  "Green_flux_L2": "BE=f*E(lambda_rel)\u2212(E(f)+7f)*lambda_rel; jell=2ell*BE,jmu=3mu*BE\u221236*(f*D_mu(lambda_rel)\u2212D_mu(f)*lambda_rel). All derivatives of f,including actual branch/source units, are retained.",
+  "complete_current_3base": "Let spectator coordinate s be fixed by D_ell,D_mu,Omega3=ds*dell*dmu. Write ji=ji_scalar*dx and Flux_i=i_(ji_scalar*partial_i)(Omega3)*dx. Then dFlux=Omega3*[f*Li(lambda_rel)\u2212Li*(f)*lambda_rel]. The exact primitive is J_i=\u2212Flux_i\u2212Omega3*f*Ci, so dJ_i=Omega3*Li*(f)*lambda_rel. Every cochain derivative is literal; ds/base terms that wedge out do so against Omega3.",
+  "holomorphic_source_conversion": "omega0=dx/y=D_mu(lambda_rel)+d_x(x/y),omega1=x dx/y=D_ell(lambda_rel)+d_x(x\u00b2/y). For actual source Omega3*(g0*omega0+g1*omega1), define firstorder flux Vhol=(g1*lambda_scalar)*partial_ell+(g0*lambda_scalar)*partial_mu and Jhol=i_Vhol(Omega3)*dx\u2212Omega3*(g0*x+g1*x\u00b2)/y. Then source=dJhol+Omega3*[\u2212D_mu(g0)\u2212D_ell(g1)]*lambda_rel.",
+  "ACTUAL_certificate_interface": "If an actual rational source-specific identity \u2212D_mu(g0)\u2212D_ell(g1)=L0*(f0)+L2*(f2) holds on the complete physical finite base field (fixed spectator s, with all algebraic branch derivatives), then J=Jhol+J_0[f0]+J_2[f2] is a literal rational primitive of the ENTIRE source. Add the separately recorded parent Cartan and moving-map cochains, then perform lawful finite trace. No inference from coprime modules/Ore Bezout alone is permitted.",
+  "physical_source_density_guard": "For s=XQ or another actual marked coordinate, put EVERY physical Jacobian,1/YQ,N,variable scale and source unit into g0,g1 BEFORE differentiating. If a different base measure is used, conjugate the adjoints by its full density or absorb it into the coefficients; do not keep canonical adjoints while silently dropping that density. Endpoint-dependent f would add C_i*D_x(f) terms and is outside this stated interface.",
+  "open": "No source-specific adjoint f0,f2 has been constructed here. The current construction and all fibre cochains are exact and ready for one actual adjoint identity; no certificate is claimed.",
+  "elapsed_seconds": 3.03
+}

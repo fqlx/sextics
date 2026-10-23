@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_ACTUAL_SOURCE_TO_HEAT_AND_TWO_COTANGENT_ROW_BINDING; FULL_REMAINDER_OPEN",
+  "checks": {
+    "actual_source_forcing_equals_full_L0_prefix_plus_heat": true,
+    "actual_heat_is_covariant_density_divergence": true,
+    "actual_nonzero_acceleration": true
+  },
+  "check_count": 3,
+  "physical_source": "f0=1/(72y^2K),rho=\u2212Dell(f0*ell_delta)\u2212Dmu(f0*mu_delta),sigma=\u2212Dmu rho. Physical N is already absorbed; the preceding whole conic Cartan/continuity replays fix this source.",
+  "prefix": "p=lambda_n*f0,q=x0,lambda_n=r/(3S^2). sigma=\u2212L0(p)+3Aheat EXACT with full source, r,S,V,K derivatives. The exact L0 Green current and rational endpoint fiber cochains are in actual_SU3_PF_Green_current.py/json.",
+  "full_covariant_heat_identity": "Aheat*dell*dmu=d[alpha],alpha=R1*(dmu+q*dell)+p*I1*dell,R1=Dell(p)\u2212Dmu(qp),I1=(Dell\u2212qDmu)q. The second term is compulsory and nonzero.",
+  "full_heat_to_source_row": "With Omega=dy*dell*dmu and lambda=\u2212X*dlogz, dlambda=dell*omega1+dmu*omega0: 3Aheat*Omega*lambda=d[\u22123dy*alpha*lambda]+Omega*(g0*omega0+g1*omega1),g0=3(qR1+pI1),g1=\u22123R1. This is exactly the row served by the included two-cotangent Cartan current; its C_lambda,C_nu remainder is retained.",
+  "scope": "No scalar particular solution, CM source intertwiner, global boundary primitive, legal denominator, or sextic certificate is asserted."
+}
