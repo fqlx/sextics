@@ -1,0 +1,104 @@
+name: Rebuild pinned Lean environment
+
+'on':
+  push:
+    branches: [fqlx/lean-env-rebuild-20261104]
+    paths: [.github/workflows/lean-environment-rebuild.yml]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  verify-environment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      SEXTICS_CLOUD_HOME: /tmp/sextics-lean-433
+      LEAN_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.11'
+      - name: Restore pinned dependencies
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            /tmp/sextics-lean-433/elan
+            /tmp/sextics-lean-433/lake
+            /tmp/sextics-lean-433/cache/mathlib
+          key: sextics-linux-lean433-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lakefile.toml', 'formal/lean/lake-manifest.json') }}
+      - name: Run existing cloud setup unchanged
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/lean-rebuild-logs
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          p=Path('formal/lean')
+          assert (p/'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.33.0'
+          raw=(p/'lake-manifest.json').read_bytes()
+          assert hashlib.sha256(raw).hexdigest() == 'b29b4951d067b4d51a554f1735ac67640b96dbedf07ab3d49a847b67a89b9c6e'
+          assert next(x['rev'] for x in json.loads(raw)['packages'] if x['name']=='mathlib') == 'db584cd6d46c92f209a44c0f1c829460d327499d'
+          PY
+          bash scripts/cloud/setup.sh 2>&1 | tee /tmp/lean-rebuild-logs/setup.log
+      - name: Build verifier and test fresh proof and independent kernel replay
+        shell: bash
+        run: |
+          set -euo pipefail
+          source scripts/cloud/env.sh
+          cd formal/lean
+          lake build HodgeComputer.Verify 2>&1 | tee /tmp/lean-rebuild-logs/build.log
+          prefix=$(lake env lean --print-prefix)
+          searchpath=$(lake env printenv LEAN_PATH)
+          "$prefix/bin/lean" --version | tee /tmp/lean-rebuild-logs/version.log
+          smoke="$RUNNER_TEMP/lean-rebuild-smoke"
+          mkdir -p "$smoke"
+          cd "$smoke"
+          export LEAN_PATH="$smoke:$searchpath"
+          export LEAN_SYSROOT="$prefix"
+          cat > EnvironmentSmoke.lean <<'LEAN'
+          import HodgeComputer.Verify
+          import Mathlib.Tactic.Ring
+          theorem EnvironmentSmoke.square_identity (x y : Rat) :
+              (x + y)^2 = x^2 + 2*x*y + y^2 := by ring
+          #print axioms EnvironmentSmoke.square_identity
+          #check HodgeComputer.HasCertificate
+          LEAN
+          "$prefix/bin/lean" -j 1 -M 4096 -o EnvironmentSmoke.olean EnvironmentSmoke.lean 2>&1 | tee /tmp/lean-rebuild-logs/compile.log
+          "$prefix/bin/leanchecker" --verbose EnvironmentSmoke 2>&1 | tee /tmp/lean-rebuild-logs/kernel.log
+          printf 'example : (1 : Nat) = 2 := by rfl\n' > IncorrectSmoke.lean
+          if "$prefix/bin/lean" -j 1 -M 4096 IncorrectSmoke.lean > /tmp/lean-rebuild-logs/incorrect-proof.log 2>&1; then
+            echo 'Incorrect proof unexpectedly accepted' >&2
+            exit 1
+          fi
+          grep -Ei 'tactic|type mismatch' /tmp/lean-rebuild-logs/incorrect-proof.log
+          python3 - <<'PY'
+          import json,re,os
+          from pathlib import Path
+          from datetime import datetime,timezone
+          p=Path('/tmp/lean-rebuild-logs')
+          text=(p/'compile.log').read_text()
+          m=re.search(r"'EnvironmentSmoke\.square_identity' depends on axioms:\s*\[([^\]]*)\]",text,re.S)
+          if m:
+              axioms=[x.strip() for x in m[1].split(',') if x.strip()]
+          elif "'EnvironmentSmoke.square_identity' does not depend on any axioms" in text:
+              axioms=[]
+          else:
+              raise SystemExit('No transitive axiom report found')
+          assert set(axioms) <= {'propext','Classical.choice','Quot.sound'},axioms
+          receipt={'status':'READY_REMOTE','commit':os.environ['GITHUB_SHA'],'completed_utc':datetime.now(timezone.utc).isoformat(),'lean_version':(p/'version.log').read_text().strip(),'mathlib_pin':'db584cd6d46c92f209a44c0f1c829460d327499d','fresh_smoke_compiled':True,'independent_kernel_replay':True,'smoke_axioms':axioms,'incorrect_proof_rejected':True,'target_certificate_proved':False,'scope':'Environment test only; not a mathematical certificate or protected acceptance receipt'}
+          (p/'receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          cp EnvironmentSmoke.lean /tmp/lean-rebuild-logs/
+      - name: Retain logs and receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-environment-rebuild-receipt
+          path: /tmp/lean-rebuild-logs
+          retention-days: 3
