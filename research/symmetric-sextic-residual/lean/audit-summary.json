@@ -1,0 +1,36 @@
+{
+  "scope": "Complete actual generic Jacobian-localized incidence algebra, not a maximal quotient and not a Fermat specialization. A chosen finite basis defines total trace; no explicit degree/multiplication table/source trace computed.",
+  "status": "FROZEN_ALL_STANDARD_AXIOMS_KERNEL_REPLAYED",
+  "actual_primitive_exists": false,
+  "remaining_inputs": [
+    "actual upstairs current and divergence equation",
+    "actual normalized total source trace identity"
+  ],
+  "lean_sources_sha256": {
+    "ActualAllFactorEndpoint.lean": "64193557955018bb4936730cf2f999d20a4af163651569ce52f50111d9a51e5f",
+    "CompleteIncidenceCoordinates.lean": "00a2f46a3af6b669abe4c146b95cdfaa76585ce62cd3958350d3643a98c486ac",
+    "CompleteIncidenceTime.lean": "777d5a4ba754d31377e23ebab5efc7e79254d8c62009594c20cd515ab6ac8658",
+    "EtaleCanonicalFactorTrace.lean": "26dae703be4946d6eec157ea8448cdb664a4a94858f722aa7a87d58358a6364c",
+    "EtaleDerivationLift.lean": "266a4c563f9632f2812fd9f9e232d9f56a93c087473872d798395af422ff05b1",
+    "EtaleDerivationUnique.lean": "980e7175a6ecce201ba7fd71105843da047681699b0c6ed07ebfbf3853cf9b7a",
+    "EtaleDerivationUnits.lean": "92237ac03f8e55a085391d82828aaed93fef1abc7e04fe92d6e5475836400d24",
+    "EtaleFactorAssembly.lean": "107b1298b0e5786d8551f9dc65636d0dd62377582d737319c2ad07a0f338965c",
+    "EtaleFieldAssembly.lean": "5e57923ee94e6e24907d57785e3be4e60e8bb2ce91c377a969f7ba6dde51675e",
+    "EtaleProductTrace.lean": "f475ae0d29b29fc5a698f69dfc96f7af6c0bdab36c0c80834634eb9c8481ca6c",
+    "FiniteAlgebraTrace.lean": "433fe009f0593e53102bf539fc99db48a81558d0b98dee12a9bd558c5a09ff86",
+    "OpenSquareLift.lean": "1aa3ac9fbb212fe574620101df9e0569d7d9b84e8362d7aa9514d42847db8d39",
+    "RawContactOpens.lean": "b75cd5e34433ab0a2eea04e5e1ebf0f511900432e3b358804c6a0622b49d4f0f",
+    "StrengthenedContactCover.lean": "cd1917e1a2a1ddd16c814b9084e5a7f9be26be58f458a4462af74dcada497c0f",
+    "TotalIncidenceCompatibility.lean": "e797bf21f441d1e59dc24b6707d0d97eb545e743ceeec45373254060ce889592",
+    "TotalIncidenceDerivations.lean": "dd7cc4180124c4aad6492cbff08f8994db6b14051c3f0770a0223205356c4a1f",
+    "TotalIncidenceRatioTrace.lean": "611e3c28e1bfc149e914a1f828c83ed6ec066d0120f468609cd40ef4c596f0ab",
+    "TotalIncidenceTrace.lean": "5298a4330d10070709821ec9ce6f327526a209e6fc5a9cd35c8f083c4391892d",
+    "UnitFieldEvaluation.lean": "0b027280ad036195a00251beb69a199292d7e4e33f9171572b59318844f9d2e5"
+  },
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "note": "Independent sandbox compilation and leanchecker replay were performed in the original temporary build environment. These helpers are conditional; the jet scripts are separate computer-algebra checks."
+}

@@ -1,0 +1,215 @@
+{
+  "scope": "exact torus character residual of second pulled-back source; no primitive claimed",
+  "residual": [
+    {
+      "b_power": 1,
+      "d_power": 1,
+      "u_pole": 1,
+      "coefficient": "2*(840*K**2*c**2*z**5 + 520*K**2*c**2*z**4 + 80*K**2*c**2*z**3 + 15*K**2*c**2*z**2 + 60*K**2*z**5 + 80*K**2*z**4 + 865*K**2*z**3 + 420*K**2*z**2 + 3528*K*c**8*ell*z**3 + 672*K*c**8*ell*z**2 + 128*K*c**8*ell*z - 8*K*c**8*ell + 3528*K*c**6*ell*z**4 + 264*K*c**6*ell*z**2 + 6928*K*c**6*ell*z - 346*K*c**6*ell - 672*K*c**4*ell*z**4 - 744*K*c**4*ell*z**3 - 288*K*c**4*ell*z**2 - 1068*K*c**4*ell*z - 336*K*c**4*ell - 208*K*c**2*ell*z**4 + 6928*K*c**2*ell*z**3 + 948*K*c**2*ell*z**2 + 3528*K*c**2*ell - 8*K*ell*z**4 + 326*K*ell*z**3 + 336*K*ell*z**2 + 3528*K*ell*z - 840*c**10*ell**2*z + 60*c**10*ell**2 - 320*c**8*ell**2*z + 80*c**8*ell**2 + 80*c**6*ell**2*z - 815*c**6*ell**2 + 15*c**4*ell**2*z - 420*c**4*ell**2)/(3969*K**3*ell**3)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 2,
+      "u_pole": 1,
+      "coefficient": "-c*(-320*K**2*z**4 - 240*K**2*z**3 - 40*K**2*z**2 - 2016*K*c**6*ell*z**2 - 120*K*c**6*ell*z + 72*K*c**6*ell + 4032*K*c**4*ell*z**3 + 1728*K*c**4*ell*z**2 + 864*K*c**4*ell*z + 2076*K*c**4*ell + 2016*K*c**2*ell*z**4 + 2664*K*c**2*ell*z**3 + 1296*K*c**2*ell*z**2 + 4272*K*c**2*ell*z + 1008*K*c**2*ell + 96*K*ell*z**4 + 288*K*ell*z**3 - 1896*K*ell*z**2 + 4536*c**8*ell**2*z - 648*c**8*ell**2 + 270*c**6*ell**2*z - 648*c**6*ell**2 - 486*c**4*ell**2*z + 4401*c**4*ell**2 - 54*c**2*ell**2*z + 1134*c**2*ell**2)/(2646*K**3*ell**3)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 2,
+      "u_pole": 2,
+      "coefficient": "-c*(2688*K**2*c**2*z**4 + 1184*K**2*c**2*z**3 + 288*K**2*c**2*z**2 + 32*K**2*c**2*z + 384*K**2*z**4 + 384*K**2*z**3 + 2768*K**2*z**2 + 672*K**2*z + 1680*K*c**8*ell*z - 80*K*c**8*ell + 3360*K*c**6*ell*z**2 + 300*K*c**6*ell*z - 240*K*c**6*ell - 1680*K*c**4*ell*z**3 - 1440*K*c**4*ell*z**2 - 1080*K*c**4*ell*z - 1780*K*c**4*ell - 740*K*c**2*ell*z**3 - 720*K*c**2*ell*z**2 + 3160*K*c**2*ell*z - 60*K*ell*z**3 + 1630*K*ell*z**2 + 840*K*ell*z + 440*c**8*ell**2 + 330*c**6*ell**2 + 55*c**4*ell**2)/(7938*K**3*ell**3)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 3,
+      "u_pole": 1,
+      "coefficient": "-16*c**2*(72*K*c**4*z + 12*K*c**4 + 336*K*c**2*z**3 + 216*K*c**2*z**2 + 96*K*c**2*z + 173*K*c**2 + 72*K*z**3 + 72*K*z**2 + 178*K*z + 336*c**6*ell*z - 144*c**6*ell - 144*c**4*ell*z - 96*c**4*ell - 48*c**2*ell*z + 326*c**2*ell - 2*ell*z)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 3,
+      "u_pole": 2,
+      "coefficient": "8*c**2*(-48*K**2*z**3 - 24*K**2*z**2 - 2*K**2*z - 168*K*c**6*ell*z + 24*K*c**6*ell + 216*K*c**4*ell*z + 48*K*c**4*ell + 168*K*c**2*ell*z**3 + 216*K*c**2*ell*z**2 + 144*K*c**2*ell*z + 178*K*c**2*ell + 24*K*ell*z**3 + 48*K*ell*z**2 - 158*K*ell*z - 120*c**6*ell**2 - 60*c**4*ell**2 - 5*c**2*ell**2)/(3969*K**3*ell**3)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 4,
+      "u_pole": 1,
+      "coefficient": "-20*c**3*(32*K*c**2*z + 4*K*c**2 + 48*K*z**2 + 16*K*z - 84*c**4*ell - 56*c**2*ell*z - 28*c**2*ell - 7*ell*z)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 4,
+      "u_pole": 2,
+      "coefficient": "4*c**3*(8*K*c**4 + 48*K*c**2*z + 8*K*c**2 + 24*K*z**2 + 12*K*z - 36*c**4*ell - 9*c**2*ell)/(441*K**3*ell**2)"
+    },
+    {
+      "b_power": 1,
+      "d_power": 5,
+      "u_pole": 2,
+      "coefficient": "128*c**4*(K*c**2 + 3*K*z - 4*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 1,
+      "u_pole": 1,
+      "coefficient": "(80*K**2*z**5 + 120*K**2*z**4 + 40*K**2*z**3 + 264*K*c**6*ell*z**2 - 144*K*c**6*ell*z - 12*K*c**6*ell - 1008*K*c**4*ell*z**4 - 1488*K*c**4*ell*z**3 - 648*K*c**4*ell*z**2 - 1656*K*c**4*ell*z - 504*K*c**4*ell - 624*K*c**2*ell*z**4 - 432*K*c**2*ell*z**3 - 216*K*c**2*ell*z**2 - 1008*K*c**2*ell*z - 36*K*ell*z**4 + 456*K*ell*z**3 + 504*K*ell*z**2 - 1134*c**10*ell**2*z + 108*c**10*ell**2 - 864*c**8*ell**2*z + 243*c**8*ell**2 + 324*c**6*ell**2*z - 1026*c**6*ell**2 + 81*c**4*ell**2*z - 1134*c**4*ell**2)/(1323*K**3*ell**3)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 1,
+      "u_pole": 2,
+      "coefficient": "-(672*K**2*c**2*z**5 + 832*K**2*c**2*z**4 + 192*K**2*c**2*z**3 + 48*K**2*c**2*z**2 + 64*K**2*z**5 + 144*K**2*z**4 + 736*K**2*z**3 + 672*K**2*z**2 + 840*K*c**8*ell*z**2 + 320*K*c**8*ell*z - 30*K*c**8*ell + 440*K*c**6*ell*z**2 - 360*K*c**6*ell*z - 460*K*c**6*ell - 620*K*c**4*ell*z**3 - 540*K*c**4*ell*z**2 - 180*K*c**4*ell*z - 420*K*c**4*ell - 120*K*c**2*ell*z**3 + 1140*K*c**2*ell*z**2 + 840*K*c**2*ell*z - 10*K*ell*z**3 + 420*K*ell*z**2 + 110*c**10*ell**2 + 165*c**8*ell**2 + 55*c**6*ell**2)/(3969*K**3*ell**3)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 2,
+      "u_pole": 1,
+      "coefficient": "-64*c*(84*K*c**4*z**3 + 48*K*c**4*z**2 + 27*K*c**4*z + 2*K*c**4 + 84*K*c**2*z**4 + 148*K*c**2*z**3 + 81*K*c**2*z**2 + 184*K*c**2*z + 42*K*c**2 + 8*K*z**4 + 27*K*z**3 + 12*K*z**2 + 42*K*z + 168*c**8*ell*z - 32*c**8*ell + 20*c**6*ell*z - 54*c**6*ell - 54*c**4*ell*z + 152*c**4*ell - 8*c**2*ell*z + 84*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 2,
+      "u_pole": 2,
+      "coefficient": "-32*c*(16*K**2*z**4 + 18*K**2*z**3 + 4*K**2*z**2 + 84*K*c**6*ell*z**2 + 10*K*c**6*ell*z - 9*K*c**6*ell - 84*K*c**4*ell*z**3 - 96*K*c**4*ell*z**2 - 81*K*c**4*ell*z - 92*K*c**4*ell - 74*K*c**2*ell*z**3 - 81*K*c**2*ell*z**2 - 24*K*c**2*ell*z - 42*K*c**2*ell - 9*K*ell*z**3 + 76*K*ell*z**2 + 42*K*ell*z + 40*c**8*ell**2 + 45*c**6*ell**2 + 10*c**4*ell**2)/(3969*K**3*ell**3)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 3,
+      "u_pole": 1,
+      "coefficient": "-20*c**2*(168*K*c**2*z**3 + 144*K*c**2*z**2 + 72*K*c**2*z + 4*K*c**2 + 96*K*z**3 + 108*K*z**2 + 184*K*z + 294*c**6*ell*z - 168*c**6*ell - 252*c**4*ell*z - 189*c**4*ell - 126*c**2*ell*z + 266*c**2*ell - 7*ell*z)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 3,
+      "u_pole": 2,
+      "coefficient": "4*c**2*(72*K*c**4*z + 18*K*c**4 + 84*K*c**2*z**3 + 144*K*c**2*z**2 + 108*K*c**2*z + 92*K*c**2 + 24*K*z**3 + 54*K*z**2 + 12*K*z - 108*c**6*ell - 81*c**4*ell - 9*c**2*ell)/(441*K**3*ell**2)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 4,
+      "u_pole": 2,
+      "coefficient": "128*c**3*(16*K*c**2*z + 3*K*c**2 + 16*K*z**2 + 9*K*z - 32*c**4*ell - 12*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 5,
+      "u_pole": 1,
+      "coefficient": "-160*c**4*(2*c**2 + z)/(567*K**3*ell)"
+    },
+    {
+      "b_power": 2,
+      "d_power": 5,
+      "u_pole": 2,
+      "coefficient": "160*c**4*(2*K*z - 7*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 1,
+      "u_pole": 1,
+      "coefficient": "-32*(62*K*c**4*z**3 + 36*K*c**4*z**2 + 9*K*c**4*z + 52*K*c**2*z**4 + 48*K*c**2*z**3 + 27*K*c**2*z**2 + 84*K*c**2*z + 6*K*z**4 + 9*K*z**3 - 4*c**10*ell + 64*c**8*ell*z - 24*c**8*ell - 48*c**6*ell*z - 18*c**6*ell - 18*c**4*ell*z + 84*c**4*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 1,
+      "u_pole": 2,
+      "coefficient": "-16*(4*K**2*z**5 + 12*K**2*z**4 + 6*K**2*z**3 + 22*K*c**6*ell*z**2 - 24*K*c**6*ell*z - 3*K*c**6*ell - 62*K*c**4*ell*z**3 - 72*K*c**4*ell*z**2 - 27*K*c**4*ell*z - 42*K*c**4*ell - 24*K*c**2*ell*z**3 - 27*K*c**2*ell*z**2 - 3*K*ell*z**3 + 42*K*ell*z**2 + 10*c**10*ell**2 + 30*c**8*ell**2 + 15*c**6*ell**2)/(3969*K**3*ell**3)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 2,
+      "u_pole": 1,
+      "coefficient": "-20*c*(148*K*c**2*z**3 + 108*K*c**2*z**2 + 24*K*c**2*z + 16*K*z**4 + 72*K*z**3 + 36*K*z**2 + 84*K*z - 28*c**8*ell + 35*c**6*ell*z - 126*c**6*ell - 189*c**4*ell*z - 63*c**4*ell - 42*c**2*ell*z + 147*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 2,
+      "u_pole": 2,
+      "coefficient": "4*c*(48*K*c**4*z**2 + 54*K*c**4*z + 6*K*c**4 + 74*K*c**2*z**3 + 108*K*c**2*z**2 + 36*K*c**2*z + 42*K*c**2 + 18*K*z**3 + 18*K*z**2 - 36*c**8*ell - 81*c**6*ell - 27*c**4*ell)/(441*K**3*ell**2)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 3,
+      "u_pole": 2,
+      "coefficient": "64*c**2*(12*K*c**2*z**2 + 12*K*c**2*z + K*c**2 + 4*K*z**3 + 12*K*z**2 + 3*K*z - 16*c**6*ell - 24*c**4*ell - 4*c**2*ell)/(1323*K**3*ell**2)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 4,
+      "u_pole": 1,
+      "coefficient": "-80*c**3*(4*c**4 + 8*c**2*z + 6*c**2 + 3*z)/(567*K**3*ell)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 4,
+      "u_pole": 2,
+      "coefficient": "80*c**3*(8*K*z**2 + 6*K*z - 28*c**4*ell - 21*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 3,
+      "d_power": 5,
+      "u_pole": 1,
+      "coefficient": "-2048*c**4*(c**2 + z)/(3969*K**3*ell)"
+    },
+    {
+      "b_power": 4,
+      "d_power": 1,
+      "u_pole": 1,
+      "coefficient": "-20*(16*K*c**2*z**3 + 12*K*c**2*z**2 + 4*K*z**4 + 8*K*z**3 - 7*c**8*ell - 28*c**6*ell*z - 14*c**6*ell - 21*c**4*ell*z)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 4,
+      "d_power": 1,
+      "u_pole": 2,
+      "coefficient": "4*(12*K*c**4*z**2 + 6*K*c**4*z + 8*K*c**2*z**3 + 12*K*c**2*z**2 + 2*K*z**3 - 9*c**8*ell - 9*c**6*ell)/(441*K**3*ell**2)"
+    },
+    {
+      "b_power": 4,
+      "d_power": 2,
+      "u_pole": 2,
+      "coefficient": "128*c*(9*K*c**2*z**2 + 4*K*c**2*z + 3*K*z**3 + 4*K*z**2 - 12*c**6*ell - 8*c**4*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 4,
+      "d_power": 3,
+      "u_pole": 1,
+      "coefficient": "-80*c**2*(3*c**4 + 6*c**2*z + 2*c**2 + z)/(567*K**3*ell)"
+    },
+    {
+      "b_power": 4,
+      "d_power": 3,
+      "u_pole": 2,
+      "coefficient": "80*c**2*(6*K*z**2 + 2*K*z - 21*c**4*ell - 7*c**2*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 4,
+      "d_power": 4,
+      "u_pole": 1,
+      "coefficient": "-2048*c**3*(c**2 + z)/(3969*K**3*ell)"
+    },
+    {
+      "b_power": 5,
+      "d_power": 1,
+      "u_pole": 2,
+      "coefficient": "32*(3*K*c**2*z**2 + K*z**3 - 4*c**6*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 5,
+      "d_power": 2,
+      "u_pole": 1,
+      "coefficient": "-40*c**3*(c**2 + 2*z)/(567*K**3*ell)"
+    },
+    {
+      "b_power": 5,
+      "d_power": 2,
+      "u_pole": 2,
+      "coefficient": "40*c*(2*K*z**2 - 7*c**4*ell)/(3969*K**3*ell**2)"
+    },
+    {
+      "b_power": 5,
+      "d_power": 3,
+      "u_pole": 1,
+      "coefficient": "-512*c**2*(c**2 + z)/(3969*K**3*ell)"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Cauchy structural checkpoint (partial research; NOT a proof of Submission.relative_primitive_exists)
+
+Let F0(v)=ell*v^3+J, J=b^6+d^6+K, K=2(1+c^6), ell=2(1+z^3). Let Ft(u)=F0(u)+t*H(u), gt=dFt/du, P(u)=(1-u)(c^2-z*u), N(u)=gt*P'-gt'*P, E(u)=2c^2-(c^2+z)u, S=2bd*N/gt^3. Set X=b^6+K,Y=d^6+K,I=X/Y.
+
+The E-free source-matched current is betaE=[3J*N/(gt^3*E)]*(Nb,0,Nd), Nb=b^2*d[-(c^2+z)u/(6Y)+c^2/(3K)], Nd=b*d^2[-(c^2+z)u/(6X)+c^2/(3K)]. Its companion-algebra trace identity is exactly checked by cauchy_remove_E_exact.py and independent witness audit_cauchy_Efree.py. It is not a primitive: its residual at (b,c,d,u,z,t)=(1,1,1,1,4,-34/33) is -6948467834/37237313851923, checked by cauchy_remove_E_QQ_point.py and independent witness audit_cauchy_Efree_QQpoint.py. It also fails t=5 on a good mod101 point, audit_cauchy_Efree_t5.py.
+
+All weights w from the Fermat auxiliary cubic with trace(w*S0)=S yield currents betaE + scalar*V, where V=(b^2*d^7/Y,0,b^7*d^2/X). Trace-kernel proof cauchy_fixed_seed_span.py. These currents have zero c-component and preserve betaE(I). This assertion is only for the original fixed Fermat seed, not arbitrary closed gauges.
+
+A simpler same-I-flux current is betaClean=(A*S,0,0), A=(X-Y)*(X+Y-K)/(4*Y*b^5). Its difference from betaE equals U*Q with Q=(d^5/Y,0,b^5/X), div Q=0, Q(I)=Q(c)=0. Thus the whole fixed-seed search is div_t(betaClean)+Q(U)=S, an exactness problem on the curve Ft=0, I=constant, c=constant. There is no known rational solution or unrestricted obstruction. Initial incorrect nonzero residue result was retracted after fixing kappa=-(f^3/ell)(1+1/I); corrected tests give zero residue. Finite-field tests do not establish global exactness.
+
+Closed Fermat gauges Wj=(grad J cross grad j)/g0(v) allow c-component corrections. More generally Tr[w(v)*(grad J cross grad j(v))/g0(v)] = ell^-1 grad J cross (w0 grad j2+w1 grad j1+w2 grad j0), with w=Σw_i v^i and j=Σj_i v^i. Exact trace closed_gauge_trace.py, independent witness audit_closed_gauge_trace.py. Hence target-field linear combinations of these gauges span vectors tangent to J. Finding W dot grad J=0 and div_t W=S-div_t(betaE) remains open. Adding also an arbitrary multiple of V spans all vector fields generically and restates the original task; additional structure is required.
