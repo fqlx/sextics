@@ -35221,7 +35221,7 @@ def simplePoleRepresentative (r θ : ℂ) : P →ₗ[P] Overlap r θ where
   map_add' p q := by
     simp only [map_add, add_mul]
   map_smul' a p := by
-    simp only [smul_eq_mul, Algebra.smul_def, map_mul, mul_assoc]
+    simp only [smul_eq_mul, Algebra.smul_def, RingHom.id_apply, map_mul, mul_assoc]
 
 @[simp] theorem simplePoleRepresentative_apply (r θ : ℂ) (p : P) :
     simplePoleRepresentative r θ p = algebraMap P (Overlap r θ) p *
@@ -35337,7 +35337,7 @@ theorem normalOverlapCoefficient_eq_simplePole (r θ : ℂ) (A L : P) :
     normalOverlapCoefficient r θ A L =
       simplePoleRepresentative r θ (thetaK θ * L - A) := by
   simp only [normalOverlapCoefficient, overlapCoefficient,
-    simplePoleRepresentative_apply, overlap_algebraMap, map_sub, map_mul]
+    simplePoleRepresentative_apply, overlap_algebraMap, map_sub, map_mul, sub_mul]
 
 theorem connectingClass_eq_simplePole (r θ : ℂ) (A L : P) :
     connectingClass r θ A L =
@@ -35425,13 +35425,13 @@ private theorem g1_lift_relation (r : ℂ) :
     originalG1 r =
       originalF1 r * (X 0 ^ 2 + C (2 * r) * X 1 * X 3) +
         C (3 * r ^ 2) * polynomialLift (relation r 1) := by
-  simp [polynomialLift, relation, originalG1, originalF1, map_mul, map_pow]
+  simp [polynomialLift, relation, originalG1, originalF1, map_mul, map_pow, map_ofNat]
   ring
 
 private theorem g2_lift_relation (r : ℂ) :
     originalG2 = originalF2 * (X 4 - 2 * X 2 ^ 2) +
       C (3 : ℂ) * polynomialLift (relation r 2) := by
-  simp [polynomialLift, relation, originalG2, originalF2]
+  simp [polynomialLift, relation, originalG2, originalF2, map_ofNat]
   ring
 
 private theorem mem_of_constant_mul (I : Ideal P) (c : ℂ) (hc : c ≠ 0)
@@ -35450,7 +35450,8 @@ theorem polynomialLift_relation_mem (r : ℂ) (hr : r ≠ 0) (i : Fin 4) :
   have hf2 : originalF2 ∈ originalIdeal r := hg 2
   have hg2 : originalG2 ∈ originalIdeal r := hg 3
   fin_cases i
-  · rw [lift_relation_zero]
+  · change polynomialLift (relation r 0) ∈ originalIdeal r
+    rw [lift_relation_zero]
     exact hf1
   · apply mem_of_constant_mul (originalIdeal r) (3 * r ^ 2)
       (mul_ne_zero (by norm_num) (pow_ne_zero _ hr))
@@ -35464,7 +35465,8 @@ theorem polynomialLift_relation_mem (r : ℂ) (hr : r ≠ 0) (i : Fin 4) :
       ((originalIdeal r).mul_mem_right (X 4 - 2 * X 2 ^ 2) hf2)
     rw [g2_lift_relation r, add_sub_cancel_left] at hh
     exact hh
-  · rw [lift_relation_three]
+  · change polynomialLift (relation r 3) ∈ originalIdeal r
+    rw [lift_relation_three]
     exact hg 4
 
 theorem polynomialLift_mem (r : ℂ) (hr : r ≠ 0) {p : Poly}
@@ -35527,7 +35529,8 @@ theorem simplePoleRepresentative_lift_derivative (r θ : ℂ) (p : Poly) :
     simplePoleRepresentative r θ (polynomialLift (-derivativeNumerator p)) =
       pairedNormalOverlap r θ p := by
   simp only [simplePoleRepresentative_apply, overlap_algebraMap, overlapAmbient,
-    ambientCurveMap, RingHom.comp_apply, substitute_polynomialLift,
+    ambientCurveMap, RingHom.comp_apply, AlgHom.toRingHom_eq_coe,
+    AlgHom.coe_toRingHom, substitute_polynomialLift,
     pairedNormalOverlap, normalOverlapCoefficient, overlapCoefficient,
     map_zero, mul_zero, zero_sub]
   rw [← substitute_derivativeA p]
@@ -37533,6 +37536,7 @@ def localLinearAction (ζ : R) (hζ : ζ ^ 3 = 1) (r ι : R)
     (s : Finset (Fin 3)) : SeedLocal R r ι s →ₗ[R] SeedLocal R r ι s where
   __ := (localAction ζ hζ r ι s).toAddMonoidHom
   map_smul' c q := by
+    change localAction ζ hζ r ι s (c • q) = c • localAction ζ hζ r ι s q
     simp only [Algebra.smul_def, map_mul, localAction_scalar]
 
 @[simp] theorem localLinearAction_apply (ζ : R) (hζ : ζ ^ 3 = 1) (r ι : R)
@@ -37553,6 +37557,7 @@ theorem tripleDenominator_character (n : ℕ) :
     (baseGrade (n • openExponent (Finset.univ : Finset (Fin 3)))).2 = 0 := by
   have hb : (baseGrade (openExponent (Finset.univ : Finset (Fin 3)))).2 = 0 := by
     norm_num [baseGrade, openExponent]
+    decide
   rw [map_nsmul]
   change n • (baseGrade (openExponent (Finset.univ : Finset (Fin 3)))).2 = 0
   rw [hb, nsmul_zero]
@@ -37610,7 +37615,9 @@ theorem localLinearAction_characterOne [Nontrivial R]
     (hq : ∀ ab, HasGrade ab (0, (1 : ZMod 3))
       (localizedCoordinates R r ι Finset.univ q ab)) :
     localLinearAction ζ hζ r ι Finset.univ q = ζ • q := by
-  simpa using localAction_triple_homogeneous ζ hζ r ι q
+  have hval : (1 : ZMod 3).val = 1 := by decide
+  simpa only [localLinearAction_apply, hval, pow_one] using
+    localAction_triple_homogeneous ζ hζ r ι q
     (0, (1 : ZMod 3)) hq
 
 theorem actual_triple_twistedOrbit_eq_three_smul [Nontrivial R]

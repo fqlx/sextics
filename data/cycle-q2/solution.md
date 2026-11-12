@@ -1,6 +1,60 @@
 # A nonconstructive geometric route for cycle-q2
 
-## Development compilation checkpoint — 12 November 2026
+## Development compilation — 12 November 2026
+
+**The complete selected development build passed for the current sources.**
+Its 29 successful module records cover the seven proposal modules below,
+20 trusted project modules, the generated `HodgeTarget`, and `HodgeChecked`,
+which checks `Submission.certificate` against the protected target type.
+All current proposal-source hashes and all recorded output-artifact hashes
+were checked against the final build plan and receipt before writing this report.
+
+**The Lean proof of geometric existence remains unfinished.**
+`Submission.missing_geometric_existence : CycleQ2Nonconstructive.AffineResidueFormExact`
+still contains the one original explicit `sorry`. Successful development
+compilation with that admission does not discharge the obligation. No protected
+proposal acceptance or independent kernel replay is claimed.
+
+The recorded toolchain is Lean **4.33.1**, with Mathlib pinned to
+`0df444a360eaa60ab8c11dca51a86af692955474`. Compilation used one worker (`-j 1`),
+a 7,168 MiB Lean memory limit (`-M 7168`), and an 8,192 MiB process-tree RSS watchdog.
+
+| Proposal module | Recorded compile time (seconds) | Sampled peak process-tree RSS (MiB) | Final build use |
+| --- | ---: | ---: | --- |
+| `GeometricSeed` | 41.579 | 3477.3 | Reused matching artifact |
+| `Workspace` | 5.507 | 3390.2 | Reused matching artifact |
+| `GeometricFormalInputs` | 1345.433 | 5898.2 | Reused matching artifact |
+| `GeometricTarget` | 1047.629 | 5245.9 | Reused matching artifact |
+| `Assembly` | 825.138 | 5912.1 | Reused matching artifact |
+| `Normalization` | 258.087 | 6316.0 | Reused matching artifact |
+| `Solution` | 2881.484 | 5862.9 | Compiled |
+
+Reused artifacts retain the measurements from their recorded successful
+compilation. Process-tree RSS sampling may count shared pages more than once;
+these figures are not a sum of concurrently running compilers.
+
+The completed runs represented by this receipt stayed within the configured RSS limit and had no recorded resource or timeout termination.
+
+Two earlier execution sessions disappeared without completed exit receipts: one during GeometricFormalInputs and one during Solution. Their causes remain unconfirmed. Neither interrupted attempt supplied a complete module artifact; the successful runs represented above are separate completed attempts.
+
+### Compilation repairs and exact sources
+
+- GeometricFormalInputs: make the finite exterior-basis witnesses and coordinate calculations explicit, correct linear-map extensionality and quotient-class addition, and give the larger local exterior calculations sufficient heartbeat budgets.
+- GeometricTarget: expose the endomorphism matrix equivalence in the projector proof, use explicit linear-map extensionality, and correct the scalar-tower rewrite in the finite-extension trace argument.
+- Solution: repair the NormalKoszul and orbit/trace proofs by explicitly normalizing homomorphism coercions, mapped numerals, finite indices, distributivity, and ZMod character arithmetic; theorem statements and hypotheses remain unchanged.
+
+| Actual source | SHA-256 |
+| --- | --- |
+| [GeometricFormalInputs.lean](GeometricFormalInputs.lean) | `ca30a92600d3196948fedc0dc9965452cf3f17ece8fc4eeeed2bb320cc35b3df` |
+| [GeometricTarget.lean](GeometricTarget.lean) | `c8fdd4b50a68e3d28e5ce8ddf352200d87a4dedf5858b80346b854558a89a595` |
+| [Solution.lean](Solution.lean) | `2001938357015a08c7ee60a444ef416f4391e88809e2b33dbaf7f979b5d7feef` |
+
+The final development receipt has SHA-256 `119b4570c3105b1eae39d671a0f21c453778e8389177282e24851ed9fef0c95f`;
+its source/build plan has SHA-256 `a1fba408008afcf11a8f0b2632d0b4d075261900281ebc4045d2cc01e263fba0`.
+
+**Ancillary content checks:** No successful content-check result is available; this sparse environment lacks Mistune and required site inputs.
+
+## Historical development compilation checkpoint — 12 November 2026, 18:57 UTC
 
 **The complete Lean existence proof remains unfinished.** This checkpoint
 preserves compiler-driven repairs to the exterior differential, projector,
