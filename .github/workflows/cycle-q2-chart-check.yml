@@ -1,0 +1,49 @@
+name: Cycle q2 chart helper check
+
+on:
+  push:
+    branches: [cycle-q2-chart-check-20261113]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cycle-q2-chart-check
+  cancel-in-progress: true
+
+jobs:
+  lean:
+    name: Selected helper compile and kernel replay
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Install pinned Lean launcher
+        run: |
+          set -euo pipefail
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/v4.2.0/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake
+            ~/.elan/toolchains
+          key: cycle-q2-chart-${{ runner.os }}-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lake-manifest.json') }}
+      - name: Prepare unchanged pinned dependencies
+        working-directory: formal/lean
+        run: lake exe cache get
+      - name: Compile selected exact sources, replay, and audit
+        run: python3 tools/cycle-q2-chart-check/check.py
+      - name: Retain development logs, not acceptance
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-chart-${{ github.sha }}
+          path: chart-check-receipts/
+          retention-days: 7
