@@ -33,15 +33,14 @@ jobs:
           PREFIX=$(cd formal/lean && lake env lean --print-prefix)
           "$PREFIX/bin/lean" --version | tee runtime-export/version.txt
           test -x "$PREFIX/bin/leanchecker"
-          tar -C "$PREFIX" -cf /tmp/cycle-q2-runtime.tar bin include lib share src
-          tar --exclude='.git' --exclude='*/.git' -C formal/lean -rf /tmp/cycle-q2-runtime.tar .lake lakefile.lean lake-manifest.json lean-toolchain HodgeComputer HodgeTestbed
-          zstd -T2 -3 /tmp/cycle-q2-runtime.tar -o /tmp/cycle-q2-runtime.tar.zst
+          tar --exclude='.git' --exclude='*/.git' -C "$PREFIX" -cf - bin include lib share src -C "$GITHUB_WORKSPACE/formal/lean" .lake lakefile.toml lake-manifest.json lean-toolchain HodgeComputer HodgeTestbed -C "$GITHUB_WORKSPACE" data/cycle-q2 docs/03d-hodge-loci.md CONTRIBUTING.md AGENTS.md .github/solve-policy.json | zstd -T2 -3 -o /tmp/cycle-q2-runtime.tar.zst
           split --bytes=256M --numeric-suffixes=0 --suffix-length=2 /tmp/cycle-q2-runtime.tar.zst runtime-export/runtime-part-
           test ! -e runtime-export/runtime-part-12
           (cd runtime-export && sha256sum runtime-part-* > SHA256SUMS)
           sha256sum /tmp/cycle-q2-runtime.tar.zst > runtime-export/ARCHIVE_SHA256
+          sha256sum data/cycle-q2/*.lean data/cycle-q2/instance.rec > runtime-export/SOURCE_SHA256
           cp formal/lean/lean-toolchain formal/lean/lake-manifest.json runtime-export/
-          printf 'Public pinned compiler and dependencies only. No formal certificate or acceptance result.\n' > runtime-export/SCOPE.txt
+          printf 'Pinned public compiler, dependencies, and exact project-source snapshot. No formal certificate or acceptance result.\n' > runtime-export/SCOPE.txt
           ls -lh runtime-export
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
@@ -49,6 +48,7 @@ jobs:
           path: |
             runtime-export/SHA256SUMS
             runtime-export/ARCHIVE_SHA256
+            runtime-export/SOURCE_SHA256
             runtime-export/version.txt
             runtime-export/lean-toolchain
             runtime-export/lake-manifest.json
