@@ -1,0 +1,139 @@
+name: Cycle q2 pinned development runtime
+on:
+  push:
+    branches: [cycle-q2-runtime-export-20261113]
+permissions:
+  contents: read
+jobs:
+  runtime:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install pinned public toolchain
+        run: |
+          set -euo pipefail
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/v4.2.0/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Prepare exact public dependency cache
+        working-directory: formal/lean
+        run: |
+          set -euo pipefail
+          lake exe cache get
+          lake build HodgeComputer.Verify
+          lake env lean --version
+          test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = 0df444a360eaa60ab8c11dca51a86af692955474
+      - name: Package unchanged runtime and hash bounded chunks
+        run: |
+          set -euo pipefail
+          mkdir -p runtime-export
+          PREFIX=$(cd formal/lean && lake env lean --print-prefix)
+          "$PREFIX/bin/lean" --version | tee runtime-export/version.txt
+          test -x "$PREFIX/bin/leanchecker"
+          tar -C "$PREFIX" -cf /tmp/cycle-q2-runtime.tar bin include lib share src
+          tar --exclude='.git' --exclude='*/.git' -C formal/lean -rf /tmp/cycle-q2-runtime.tar .lake lakefile.lean lake-manifest.json lean-toolchain HodgeComputer HodgeTestbed
+          zstd -T2 -3 /tmp/cycle-q2-runtime.tar -o /tmp/cycle-q2-runtime.tar.zst
+          split --bytes=256M --numeric-suffixes=0 --suffix-length=2 /tmp/cycle-q2-runtime.tar.zst runtime-export/runtime-part-
+          test ! -e runtime-export/runtime-part-12
+          (cd runtime-export && sha256sum runtime-part-* > SHA256SUMS)
+          sha256sum /tmp/cycle-q2-runtime.tar.zst > runtime-export/ARCHIVE_SHA256
+          cp formal/lean/lean-toolchain formal/lean/lake-manifest.json runtime-export/
+          printf 'Public pinned compiler and dependencies only. No formal certificate or acceptance result.\n' > runtime-export/SCOPE.txt
+          ls -lh runtime-export
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-manifest
+          path: |
+            runtime-export/SHA256SUMS
+            runtime-export/ARCHIVE_SHA256
+            runtime-export/version.txt
+            runtime-export/lean-toolchain
+            runtime-export/lake-manifest.json
+            runtime-export/SCOPE.txt
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-00
+          path: runtime-export/runtime-part-00
+          compression-level: 0
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-01
+          path: runtime-export/runtime-part-01
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-02
+          path: runtime-export/runtime-part-02
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-03
+          path: runtime-export/runtime-part-03
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-04
+          path: runtime-export/runtime-part-04
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-05
+          path: runtime-export/runtime-part-05
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-06
+          path: runtime-export/runtime-part-06
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-07
+          path: runtime-export/runtime-part-07
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-08
+          path: runtime-export/runtime-part-08
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-09
+          path: runtime-export/runtime-part-09
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-10
+          path: runtime-export/runtime-part-10
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-runtime-11
+          path: runtime-export/runtime-part-11
+          compression-level: 0
+          if-no-files-found: ignore
+          retention-days: 2
