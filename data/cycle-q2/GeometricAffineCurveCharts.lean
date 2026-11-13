@@ -103,7 +103,7 @@ The two pivot coordinates are e(1) and e(2). -/
 def chartPresentation (v : Fin 2 → AffinePoly) (e : Equiv.Perm (Fin 3)) :
     Algebra.PreSubmersivePresentation ℂ (ChartRing v) (Fin 3) (Fin 2) :=
   Algebra.PreSubmersivePresentation.naive (v := v)
-    (fun j => e j.succ) (e.injective.comp Fin.succ_injective)
+    (fun j => e j.succ) (e.injective.comp (Fin.succ_injective 2))
 
 abbrev JacobianPatch (v : Fin 2 → AffinePoly) (e : Equiv.Perm (Fin 3)) :=
   Localization.Away (chartPresentation v e).jacobian
