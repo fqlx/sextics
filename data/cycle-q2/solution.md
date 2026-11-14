@@ -1398,6 +1398,86 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedProjectiveLocalizedDuality.lean
 ```
 
+### Native principal sections and the exact projective open — 14 November 2026
+
+After checkpoint `eeaa62124557e2a5cccfb6a38fe2b5e37273b818`,
+[GeometricSeedPrincipalSections.lean](GeometricSeedPrincipalSections.lean)
+uses the actual `tilde.toOpen` map on \(D(a)\subset\operatorname{Spec}A\).
+Mathlib's localization property for that exact map gives a comparison
+with any specified localization of the original module. The native
+scalar action is retained through `modulesSpecToSheaf`; it is not
+silently replaced by the different presentation used by the underlying
+structure presheaf. The theorem `sectionsEquiv_naturality` proves that
+this comparison intertwines the native section map of `tilde.map`
+with localization of the original linear map on every section.
+
+[GeometricSeedProjectivePrincipalSections.lean](GeometricSeedProjectivePrincipalSections.lean)
+specializes this construction to the original image and orbit-dual
+modules on both chart orders. Its `imageDualSectionsMap` is the
+section component of the **existing** `affineImageDualIso`.
+The two `Sections_naturality` theorems identify that native section map
+with the literal overlap image-dual equivalence:
+\[
+E_{\mathrm{dual}}\circ
+\Gamma(\widetilde{\Psi_i},D(a_{ij}))
+=\Psi_{ij}\circ E_{\mathrm{image}}.
+\]
+This is equality of linear maps on all native principal-open sections,
+over the original affine coefficient ring. The right-chart statement
+uses \(D(a_{ji})\subset\operatorname{Spec}A_j\) but retains the same
+actual intersection section ring.
+
+[GeometricSeedProjectivePrincipalOpens.lean](GeometricSeedProjectivePrincipalOpens.lean)
+supplies the exact geometric open identification. Its `ambientChart i`
+is the inverse of the original `coordinateAffineChart`, followed by
+the actual inclusion \(U_i\hookrightarrow D\). It proves
+\[
+(\operatorname{ambientChart}_i)^{-1}(U_i\cap U_j)
+=D(a_{ij}),\qquad a_{ij}=X_j/X_i.
+\]
+The proof first pulls back \(U_j\) through the actual projective
+`awayι` map, then transports the resulting ratio through the original
+chart ring equivalence. The self-coordinate is one, so intersecting
+with the preimage of \(U_i\) changes nothing. No additional geometric
+hypothesis is introduced.
+
+**Remaining boundary.** The affine principal-open comparison and the
+geometric open identity now have source proofs. They must still be
+combined with native `Scheme.Modules.restrictAppIso` transport and
+the corresponding structure-sheaf scalar actions to give the intended
+projective sheaf comparison. The global internal-Hom identification,
+sheaf gluing, and the further geometric steps toward the protected
+residue-exactness statement are not asserted here.
+
+**Verification status.** The three new sources received independent
+mathematical/source review against the pinned APIs and bounded static
+checks. No Lean elaboration, full build, or kernel replay was run.
+The exact protected statement and its final admission remain unchanged.
+With the same pinned, already prepared dependency artifacts, run each
+deferred check separately; the principal-sections specialization
+requires the generic principal-sections output:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedPrincipalSections.olean \
+  Proposal/GeometricSeedPrincipalSections.lean
+```
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectivePrincipalSections.olean \
+  Proposal/GeometricSeedProjectivePrincipalSections.lean
+```
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectivePrincipalOpens.olean \
+  Proposal/GeometricSeedProjectivePrincipalOpens.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
