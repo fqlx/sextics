@@ -615,6 +615,57 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedImageLocalization.lean
 ```
 
+### Actual projective restriction of the seed comparison — 14 November 2026
+
+Starting from checkpoint `856de5a95db568d5fb26122c58509bacf6bc2b75`,
+[GeometricSeedProjectiveImageRestriction.lean](GeometricSeedProjectiveImageRestriction.lean)
+binds the localization argument to the original projective geometry.
+For coordinate patches \(U_i,U_j\), it uses the existing degree-zero ring
+\[
+B_{ij}=\bigl(R[(X_iX_j)^{-1}]\bigr)_0
+\simeq\Gamma(U_i\cap U_j,\mathcal O_D).
+\]
+Here \(R\) is the original graded seed-surface ring. The coefficient map
+from `AffineRing i` is the inverse of `coordinateChartEquiv`, followed by
+the existing homogeneous `coordinateRestriction`. The existing
+`coordinateRestriction_isLocalization` identifies the latter as
+localization at \(X_j/X_i\).
+
+The new `leftCoefficient_toSections` and `rightCoefficient_toSections`
+prove that these maps, followed by the actual `pairSectionsIso`, are the
+same chart-to-section maps used by the projective transition cocycle.
+This comparison uses `pairSection_left`, `pairSection_right`, and the
+original affine-chart section formula.
+
+The original `chart_linkage_regular` proof transports first through the
+chart ring equivalence, then through the proved localization, and finally
+through the section-ring isomorphism. It supplies
+`leftSection_linkage_regular` and `rightSection_linkage_regular` without
+an additional regularity premise. Consequently `leftData` and `rightData`
+are actual linkage factor data in the same intersection section ring.
+Their matrices and left generators are definitionally the
+`sectionMatrix` and `sectionLeft` of the preceding cocycle component.
+
+The endpoints `left_imageDual_restriction` and
+`right_imageDual_restriction` apply the earlier naturality theorem to
+these actual maps, for every original chart image vector and every
+original chart ideal element. They do not yet compare the two independently
+constructed intersection isomorphisms or identify the section-module
+duals with the restricted internal-Hom sheaf.
+
+**Verification status.** Independent mathematical/source review found no
+required correction; static source and whitespace checks were run. No
+Lean elaboration, axiom-print execution, or kernel replay was run. The
+existing protected theorem and final admission are unchanged. With the
+same pinned and already prepared dependencies, the deferred check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectiveImageRestriction.olean \
+  Proposal/GeometricSeedProjectiveImageRestriction.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
