@@ -892,6 +892,63 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedProjectiveImageCompatibility.lean
 ```
 
+### Finite presentation and native sheaf inputs — 14 November 2026
+
+After checkpoint `5dc8a2656547909a0d62300e622778d642f145eb`,
+[GeometricSeedImageDualSheafInputs.lean](GeometricSeedImageDualSheafInputs.lean)
+discharges the finite-presentation condition needed for dual localization.
+The actual `AffineRing i` is a quotient of
+\(\mathbb C[\operatorname{Option}(\operatorname{Fin}(3))]\), a polynomial
+ring in four variables. It is therefore Noetherian. The actual orbit ideal
+is a submodule of this ring, and the matrix image is a submodule of its
+finite free module of rank three. Both are finite, hence finitely
+presented. These are proved instances for the original modules; no
+smoothness, integrality, flatness, or new geometric hypothesis is added.
+
+For every multiplicative subset \(S\subset A_i\), finite presentation
+supplies the canonical comparison
+\[
+S^{-1}\operatorname{Hom}_{A_i}(I_i,A_i)
+\simeq
+\operatorname{Hom}_{S^{-1}A_i}(S^{-1}I_i,S^{-1}A_i).
+\]
+The new `orbitDualLocalizationMap` has the actual coefficient ring
+`Localization S` as its target of evaluation. The theorem
+`orbitDualLocalizationMap_isLocalized` establishes the localization
+property of this map. The exported `orbitDualLocalizationEquiv` is
+explicitly linear over the original ring \(A_i\); its target consists of
+functionals linear over the localized coefficient ring. On original
+elements, the comparison sends \(\phi\) and \(x/1\) to \(\phi(x)/1\).
+
+The endpoint `affineImageDualIso_section_naturality` also binds the
+existing native affine sheaf isomorphism to its original module map via
+the actual `tilde.toOpen` section maps. This uses the pinned Mathlib
+`tilde.toOpen_map_app` theorem and does not replace the original sheaf map
+with a separately chosen one.
+
+**Next precise comparison.** Identify the canonical localized image and
+orbit-ideal modules, and the localized dual above, with the explicit
+`leftData`/`rightData` modules on the actual projective intersections.
+These identifications must preserve the coordinatewise image maps and
+the actual ideal inclusions. The preceding overlap square can then be
+transported to sheaf morphisms. The associated-sheaf/internal-Hom
+identification and the triple-overlap sheaf gluing still remain; neither
+is asserted by the finite-presentation or naturality theorem alone.
+
+**Verification status.** Two independent mathematical/source reviews found
+no required correction, and static source/whitespace checks were run.
+There was no Lean elaboration, kernel replay, full build, or new axiom
+audit. The protected theorem and its final admission are unchanged.
+The bounded deferred command, with the same prepared pinned dependencies,
+is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedImageDualSheafInputs.olean \
+  Proposal/GeometricSeedImageDualSheafInputs.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
