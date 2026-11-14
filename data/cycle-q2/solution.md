@@ -203,6 +203,51 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Actual relative projective charts
+
+[GeometricIncidenceDehomogenizedChart.lean](GeometricIncidenceDehomogenizedChart.lean)
+now constructs the relative affine charts of the existing projective
+surface, over every commutative complex coefficient algebra \(S\).
+For \(y:\mathrm{ParameterIndex}\to S\) and \(i<4\),
+`familyCoordinateChartEquiv` is an \(S\)-algebra equivalence
+\[
+  \bigl(\mathrm{PointSurface}(y)[X_i^{-1}]\bigr)_0
+  \;\simeq\;
+  S[x_j\ (j\ne i),z]/(\overline F_y,\overline h_y).
+\]
+The polynomial substitutions set \(X_i=1\), send the remaining
+weight-one variables to their affine coordinates, and send
+\(X_4\) to \(z-x_2^2\). Thus the original normal coordinate is preserved:
+\(z=(X_4+X_2^2)/X_i^2\).
+
+Both directions are explicit. Dehomogenization defines the forward map,
+and homogeneous fractions define the inverse. Weighted homogeneity of the
+original degree-six and degree-three equations makes the inverse descend
+through exactly their quotient ideal. The inverse laws use the existing
+surface quotient grading, including its homogeneous representatives.
+The scalar map is the canonical map through `surfaceCoefficient y`.
+
+The endpoint `familyCoordinateAffineChart` identifies the actual
+projective basic open with the spectrum of this affine ring.
+`familyCoordinateAffineChart_overBase` proves compatibility with the
+unchanged `surfaceToBase y`. This supplies the relative projective chart
+binding needed to carry the Jacobian and specialization calculations to
+the surface family.
+
+This component asserts neither flatness nor smoothness nor a
+scheme-theoretic seed-fiber identification. It has undergone independent
+source review and a scan for admissions and added axioms. **It has not
+been elaborated or kernel-replayed.** Once the previously described
+pinned toolchain, protected target, and compiled imports are available,
+the bounded deferred check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceDehomogenizedChart.olean \
+  Proposal/GeometricIncidenceDehomogenizedChart.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
