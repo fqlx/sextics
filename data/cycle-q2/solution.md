@@ -408,6 +408,35 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Smooth minor patches of the actual surface cone
+
+[GeometricIncidenceConeMinor.lean](GeometricIncidenceConeMinor.lean)
+binds the earlier relative Jacobian presentation to the original
+`PointSurface y`, for arbitrary \(S\) and \(y\).
+The span of the ordered equations \((F,h)\) equals the original
+`pointEquations y`, with its \((h,F)\) ordering. The induced quotient
+algebra equivalence preserves all geometric polynomials and coefficients.
+
+`jacobian_image` identifies the presentation determinant with the
+original `surfaceMinor`. The localization equivalence
+`coneMinorAlgEquiv` then transfers the established standard-smooth
+patch to the actual surface-cone localization. The endpoints
+`coneMinor_smooth` and `coneMinor_flat` have no smoothness or flatness
+premise; the chosen pair of columns is required to be injective.
+
+This closes the binding of the cone calculation. Passing from this
+localization to a localized projective chart still needs the split maps
+after both inversions. Independent source review and pinned localization
+API checks passed; static scans found no admissions or added axioms.
+**No compilation or kernel replay was run.** The deferred command is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceConeMinor.olean \
+  Proposal/GeometricIncidenceConeMinor.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
