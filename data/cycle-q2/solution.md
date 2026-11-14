@@ -320,6 +320,40 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Normalized Jacobian minors and split chart maps
+
+[GeometricIncidenceChartMinor.lean](GeometricIncidenceChartMinor.lean)
+proves that the original ordered \((F,h)\) minor in columns \(j,k\)
+is weighted homogeneous of degree \(d_{jk}=9-w_j-w_k\).
+The derivative calculation is established directly from coefficients
+and also handles zero derivatives.
+
+The actual dehomogenized chart is an \(S\)-algebra retract of the
+localization of \(\mathrm{PointSurface}(y)\) at \(X_i\).
+The explicit maps satisfy `dehomogenizedRetraction_section`.
+Their normalization identity is
+\[
+ \operatorname{section}(\overline\Delta_{jk})
+   =\Delta_{jk}X_i^{-d_{jk}},
+\]
+proved as `dehomogenizedSection_normalizedMinor`.
+Here both the cone determinant and the chart section use the original
+equations and the existing shifted normal coordinate.
+
+This supplies the precise unit calculation for localizing the split
+maps at a minor. The component does not yet extend those maps to both
+minor localizations or assert relative smoothness of the projective
+chart. Independent source review and static scans passed; **no
+compilation or kernel replay was run**. With the pinned environment and
+compiled imports already described, its deferred bounded check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceChartMinor.olean \
+  Proposal/GeometricIncidenceChartMinor.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
