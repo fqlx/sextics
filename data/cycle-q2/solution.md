@@ -505,6 +505,41 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### The normalized minors cover every original seed chart
+
+[GeometricIncidenceSeedChartMinorCover.lean](GeometricIncidenceSeedChartMinorCover.lean)
+proves `seed_prime_normalizedMinor_cover`: every prime of each actual
+shifted dehomogenized chart at \(\mathrm{seedPoint}(57,\mathrm I)\)
+misses a normalized minor with distinct columns.
+There is no caller-supplied smoothness or covering hypothesis.
+
+The proof pulls that prime back through the existing quotient and
+dehomogenization maps. The original \(F,h\) equations vanish in the
+pulled-back prime, and \(X_i\) maps to one, establishing relevance.
+The previously established seed gradient cover then supplies a minor.
+`literal_surfaceMinor` identifies it with the original relative
+determinant at the seed, whose chart image is exactly
+`normalizedMinor`. Repeated columns give zero, so the selected
+columns are necessarily distinct.
+
+This is the precise cover on the original seed affine rings. Its
+assembly with the chart tensor equivalences into a statement about
+the whole scheme-theoretic fiber, and then a single base neighborhood,
+remains to be formalized. The protected existence theorem is unchanged
+and still unproved.
+
+Source review caught and corrected a missing explicit namespace for
+`seedPoint`. Static admission/whitespace checks passed.
+**No elaboration, compilation, or kernel replay was run.**
+The deferred bounded check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceSeedChartMinorCover.olean \
+  Proposal/GeometricIncidenceSeedChartMinorCover.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
