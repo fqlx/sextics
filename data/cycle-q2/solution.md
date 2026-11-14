@@ -104,6 +104,54 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
   Proposal/GeometricIncidenceSeedFiber.lean
 ```
 
+### Relative smooth patches meeting every relevant seed prime
+
+[GeometricIncidenceRelativeJacobian.lean](GeometricIncidenceRelativeJacobian.lean)
+constructs explicit submersive presentations over the coefficient algebra
+for the actual ordered equations \((F,h)\). Their ideal equals the existing
+`pointEquations incidencePoint`; changing the displayed order does not
+change the surface quotient.
+
+For an injective pair \(p:\{0,1\}\to\{0,\ldots,4\}\), set
+\[
+\Delta_p=
+ \frac{\partial F}{\partial x_{p(0)}}\frac{\partial h}{\partial x_{p(1)}}
+-\frac{\partial F}{\partial x_{p(1)}}\frac{\partial h}{\partial x_{p(0)}}.
+\]
+The localization of the two-equation quotient at \(\Delta_p\) is standard
+smooth over \(\texttt{ParameterAlgebra}\), of relative dimension three,
+and hence flat. Its finite presentation adds one inverse variable and
+one relation to the original five-variable, two-relation presentation.
+This is a relative assertion over the original parameter algebra; it is
+not inferred merely from smoothness of a complex fiber.
+
+Coefficient specialization commutes with every geometric partial
+derivative. Consequently `equationMinor_seed` identifies each actual
+relative minor at the retained seed with the existing
+`CycleQ2SeedSurfaceGradient.surfaceMinor`. The existing full-seed prime
+cover then proves `seed_relative_jacobian_cover`: every relevant prime
+of the original complex seed avoids one of these relative minors and
+therefore meets one of the displayed standard-smooth, flat cone patches.
+
+The dimension here is that of the affine cone. This result does not yet
+descend smoothness to the degree-zero projective charts or produce a
+single open of the parameter base on which the whole surface family is
+smooth. Those require an actual relative chart/base-change identification
+and the proper shrinking argument. They are not new hypotheses of the
+protected theorem.
+
+Independent review checked the generic coefficient-ring presentation,
+the dimension calculation, derivative specialization, and exact seed
+minor ordering. Static checks passed. No elaboration or replay was run.
+The deferred bounded check, under the stated prepared-workspace
+prerequisites, is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceRelativeJacobian.olean \
+  Proposal/GeometricIncidenceRelativeJacobian.lean
+```
+
 
 ## Regular constant seed section — source draft, 14 November 2026
 
