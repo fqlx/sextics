@@ -1,6 +1,6 @@
 # A nonconstructive geometric route for cycle-q2
 
-## Canonical residue and the Cartier comparison — source draft, 14 November 2026
+## Canonical residue and the actual incidence family — source draft, 14 November 2026
 
 At the contributor's request, compilation and independent kernel replay
 were stopped so that this continuation could concentrate on writing the
@@ -8,6 +8,206 @@ next mathematical steps. The files in this section contain proposed
 proof bodies, with explicit source-only status. They have not been
 validated as a complete Lean dependency chain. The final admission in
 `Submission.missing_geometric_existence` is still present.
+
+### An actual algebraic parameter space for the motion
+
+The explicit polynomial incidence supplies an algebraic alternative to
+integrating an abstract Hodge locus. The construction already used a
+Jacobian-localized square system before taking a finite generic field
+factor. [GeometricIncidenceEtaleParameter.lean](GeometricIncidenceEtaleParameter.lean)
+retains that actual algebra, denoted `ParameterAlgebra`, over
+\[
+R=\mathbb C[t,(a_j)_j],
+\]
+where the \(a_j\) are all independent invariant sextic coefficients.
+Its splitting matrices are chosen from the existing proved exact finite
+sequence. The augmented polynomial presentation includes an inverse for
+the protected trace open, the basepoint open, and the complementary
+relation determinant. Its universal coordinates solve every original
+incidence equation: the complementary polynomial relations recover the
+equations omitted from the square subsystem.
+
+The same presentation has an actual map to \(\mathbb C\) at the literal
+seed. This gives a nontrivial étale parameter algebra with the specified
+seed, rather than merely a field-valued generic solution. The
+specialization map is defined on the parameter algebra, not on its
+fraction field. Each sextic coefficient of the universal incidence point
+is exactly the image of the corresponding \(a_j\).
+
+The canonical étale comparison of Kähler differentials extends
+\(\partial/\partial t\) to a regular derivation on this algebra.
+It sends \(t\) to \(1\), kills every sextic coefficient, and gives
+the original nonzero trace derivative. The protected projective trace
+also proves that the resulting cubic motion is not a scalar rescaling.
+This is a statement about the actual regular polynomial family. It does
+not yet identify that derivative with an Abel–Jacobi or cylinder map.
+
+[GeometricIncidenceTimeCurve.lean](GeometricIncidenceTimeCurve.lean)
+separates the time coordinate from the sextic coefficient ring
+\(A=\mathbb C[(a_j)_j]\). The exact ring isomorphism
+\(R\simeq A[t]\) preserves the original coefficient inclusion.
+The one-variable presentation and étaleness then give smoothness of
+relative dimension one over \(\operatorname{Spec}A\). Since this
+parameter algebra is flat over \(A\) and nonzero, its generic fiber
+\[
+\Lambda_{\rm aff}=
+\operatorname{Spec}\bigl(\operatorname{Frac}(A)
+ \otimes_A\texttt{ParameterAlgebra}\bigr)
+\]
+is nonempty and smooth of relative dimension one over the generic
+sextic field. No connectedness, integrality, or smooth projective
+completion of this affine parameter curve is asserted by this result.
+
+[GeometricGenericTimeDerivation.lean](GeometricGenericTimeDerivation.lean)
+extends the same time derivation to this actual generic fiber. The
+tensor product is the localization of the original parameter algebra
+at the nonzero sextic polynomials. Differentiating a fraction-denominator
+identity proves that the extended derivation kills the entire generic
+sextic field. Thus it is a derivation over that field, sends the retained
+time coordinate to \(1\), and fixes the original sextic coefficients.
+The protected projective trace numerator remains a unit under the
+actual base-change map. Since the generic algebra is nontrivial, its
+cubic velocity still cannot be a scalar rescaling. No injectivity of
+the parameter map is needed for this unit argument.
+
+[GeometricIncidenceSeedTangent.lean](GeometricIncidenceSeedTangent.lean)
+also binds the regular family to its prescribed tangent at the original
+complex seed. Differentiating every original incidence equation shows
+that the seed velocity lies in the original Jacobian kernel. The
+retained Jacobian block is the identity, so the slice-coordinate
+velocities vanish at the seed. The complete velocity is consequently
+exactly the already chosen `parameterDirection`, rather than a newly
+selected nonzero tangent.
+
+For this actual seed velocity, the original trace is \(1\), the fixed
+normal trace is \(-1/171\), and the coordinate of its original paired
+canonical curve class is \((12+24i)/5\). The existing injective
+canonical connecting operation on the curve image therefore detects
+that class. The trace-one direction remains distinct from the earlier
+selected cubic and the detector \(X_0^3\); no equality between those
+polynomials is used. This closes a seed-tangent binding, while the
+comparison with the actual relative cycle action remains open.
+
+### The unchanged projective zero locus over that parameter space
+
+[GeometricIncidenceFamilyContainment.lean](GeometricIncidenceFamilyContainment.lean)
+constructs the weighted threefold defined only by the original sextic
+equation. The existing projective zero locus of
+\[
+h=F=(M T)_0=(M T)_1=(M T)_2=0
+\]
+maps into this threefold over the original coefficient algebra. The
+map forgets the three section parameters \(T_0,T_1,T_2\) and preserves
+all five weighted geometric coordinates. Its ambient and base triangles
+are proved using the actual graded quotient maps. In the trace family,
+the sextic on both sides is exactly the same universal sextic; it does
+not depend on the incidence solver coordinates or the section parameters.
+
+[GeometricUniversalCurveSection.lean](GeometricUniversalCurveSection.lean)
+identifies this homogeneous coordinate ring with the earlier
+section-ideal quotient over the actual surface ring. Both inverse maps
+are explicit, and the comparison retains the whole coefficient ring
+\(S[T_0,T_1,T_2]\). On a unit matrix pivot, the three section
+equations reduce to one linear equation with a unit derivative in a
+section variable. This gives an actual submersive presentation of
+relative dimension two over the localized surface ring. The original
+basepoint-open theorem supplies the required pivot on every relevant
+prime of the trace surface.
+
+[GeometricEtaleIncidenceCurve.lean](GeometricEtaleIncidenceCurve.lean)
+specializes these schemes, quotient maps, equations, and local
+presentations to the constructed universal `incidencePoint`. Its main
+objects take no supplied coefficient point or trace-point premise.
+The seed cubic and sextic specialize to the original full
+`smoothH Complex.I` and `smoothF 57 Complex.I`.
+
+[GeometricIncidenceProjectiveProper.lean](GeometricIncidenceProjectiveProper.lean)
+proves properness of the unchanged `genericCurveToBase`, including its
+closed specialization to `curveToSectionParameters`. Positivity of the
+five weights implies that every degree-zero polynomial is constant.
+Consequently the original coefficient ring surjects onto the
+degree-zero part of the curve quotient, and its spectrum map is a
+closed immersion. The quotient is finite type over its degree-zero
+ring, so the existing properness theorem for `Proj.toSpecZero` applies.
+Composition gives properness over the original section-parameter base,
+and the result is preserved by arbitrary actual base change.
+
+[GeometricUniversalCurveCartier.lean](GeometricUniversalCurveCartier.lean)
+then descends the regular section calculation to the actual projective
+charts. On the open where a matrix entry \(M_{ij}\) is nonzero, both
+that entry and the corresponding section equation have weighted degree
+fourteen. The local equation is therefore the genuine degree-zero
+fraction
+\[
+\frac{(M T)_i}{M_{ij}}.
+\]
+The source proves that this fraction is regular and that its principal
+ideal is the kernel of the original curve structure-map component. It
+also proves that `genericCurveToSurface` is a closed immersion and that
+the nine pivot opens cover the surface on the existing basepoint open.
+The endpoint `incidencePoint_cartier_cover` supplies these data on the
+actual constructed parameter algebra, with no additional incidence or
+Cartier premise. Regularity of this total-space Cartier equation does
+not imply regularity after every specialization of the section parameters.
+
+The two relative dimensions above have different bases. The affine
+parameter curve is smooth of dimension one over the generic sextic
+field. The universal linear section is smooth of dimension two over
+the surface. These statements do not prove that the projective curve
+fibers are smooth over their section parameters; at \(T=0\), the
+fiber is the entire surface. For an algebraic correspondence, a proper
+flat family of effective Cartier divisors can be sufficient, without
+requiring every cycle fiber to be smooth. A proved suitable shrinking
+or equivalent fiberwise regularity statement, the seed divisor-class
+identification, and the actual cohomological cycle action remain
+necessary parts of that route.
+
+### The actual seed image line and its twist
+
+[GeometricSeedProjectiveImageChart.lean](GeometricSeedProjectiveImageChart.lean)
+constructs the image-to-ideal-dual comparison on the three original
+projective coordinate charts. The chart rings are those of the actual
+surface at \((r,\theta)=(57,1)\). The existing `seedRingEquiv 57`
+is the identity on the five polynomial coordinates and identifies its
+surface ideal with the full incidence ideal generated by
+`smoothH Complex.I` and `smoothF 57 Complex.I`. Thus the two parameter
+notations are related by a proved ideal equality, rather than being
+silently treated as identical.
+
+Regularity of the dehomogenized linkage element is proved by its
+faithful homogeneous coefficient embedding into the original localized
+seed ring. The original linkage pairing then gives the actual module
+isomorphism from the dehomogenized matrix image to the dual of the
+three-component orbit ideal. Evaluation on the original generators
+recovers the actual matrix-image vector. The pairing comparison holds
+for every original pair of ideal elements, not only those generators.
+Applying the associated-module-sheaf functor gives an isomorphism of
+actual sheaves on each projective coordinate chart.
+
+The left ideal is proved to be the product of the three literal orbit
+component ideals. Its component at \(1\) is identified with the original
+`curveIdealOnSurface 57 1` after passing to each actual affine chart.
+The original canonical curve is therefore bound to the same seed orbit
+divisor \(E\), rather than being replaced by a different curve.
+
+The expected global comparison retains the twist
+\[
+\mathcal L\simeq I_E^\vee(4)=\mathcal O_D(E+4H).
+\]
+The local image is normalized in degree fourteen, while the left orbit
+generators have degree ten. Their difference accounts for the degree-four
+transition. [GeometricSeedProjectiveImageTwist.lean](GeometricSeedProjectiveImageTwist.lean)
+proves this transition over the original cone overlap rings. The actual
+matrix coefficients are \(M/X_i^{14}\), and the actual left generators
+are \(L/X_i^{10}\). Evaluation on those generators uniquely fixes the
+overlap functional. Hence the image-vector transition
+\((X_i/X_j)^{14}\) gives the dual-functional transition
+\((X_i/X_j)^4\), with the positive fourth power retained.
+
+These cone-overlap comparisons still need descent to the actual
+projective intersection restrictions, the global internal-Hom
+identification, and gluing before asserting a global line-bundle,
+Chern-class, or cycle-action equality.
 
 ### The original ideal and the actual differential sheaves
 
