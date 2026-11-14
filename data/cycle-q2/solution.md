@@ -281,6 +281,45 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Exact seed base change of the bound affine charts
+
+[GeometricIncidenceChartSeedFiber.lean](GeometricIncidenceChartSeedFiber.lean)
+constructs
+\[
+ \mathbb C\otimes_{\mathrm{ParameterAlgebra}}
+   \mathrm{DehomogenizedRing}(\mathrm{incidencePoint},i)
+ \;\simeq_{\mathbb C}\;
+   \mathrm{DehomogenizedRing}(\mathrm{seedPoint}(57,\mathrm I),i)
+\]
+for every weight-one coordinate chart. The coefficient action on
+\(\mathbb C\) is the original `seedMap`, installed only locally.
+The theorem is `CycleQ2IncidenceChartSeedFiber.seedChartFiberEquiv`.
+
+The proof first shows that coefficient specialization commutes with
+the exact shifted dehomogenization. It then identifies the image of the
+two-generator chart ideal with the original seed chart ideal. The
+polynomial tensor equivalence and tensor-quotient equivalence give the
+displayed map. Explicit formulas preserve all four affine variables,
+arbitrary pure tensors, coefficients, and the normal fraction
+\((X_4+X_2^2)/X_i^2\).
+
+Both affine rings have already been identified with the corresponding
+actual projective charts over their bases. This component supplies their
+ring-level base-change comparison; it does not glue the affine
+comparisons into a global projective fiber isomorphism or prove flatness.
+
+Independent source review and static admission/whitespace scans passed.
+**No compilation or kernel replay was performed.** With the pinned
+environment and compiled imports described above, the deferred command
+is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceChartSeedFiber.olean \
+  Proposal/GeometricIncidenceChartSeedFiber.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
