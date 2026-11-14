@@ -248,6 +248,39 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Properness of the original surface family
+
+[GeometricIncidenceSurfaceProper.lean](GeometricIncidenceSurfaceProper.lean)
+adds `CycleQ2IncidenceSurfaceProper.surfaceToBase_proper` for the
+unchanged projective incidence surface over every coefficient algebra.
+Every weighted degree-zero polynomial is constant, so the actual
+coefficient map onto the degree-zero quotient is surjective. Its
+spectrum map is therefore a proper closed immersion. The five original
+coordinates generate the homogeneous quotient over the coefficient
+ring, hence also over its degree-zero part, making
+`Proj.toSpecZero` proper. Their composite is exactly `surfaceToBase`.
+
+The theorem requires no smoothness or flatness assumption. It applies
+to the original étale incidence point and every scheme-theoretic base
+change. Composing with the already constructed specialized closed
+immersion also proves `specializedCurveToBase_proper`, without asserting
+that this possibly empty subscheme is a smooth curve.
+
+This prepares the properness input for a later shrinking argument; the
+relative smooth neighborhood and its relationship to the seed fiber
+still require proof. The checkpoint also makes the parameter namespace
+explicit in the relative-chart helper. Independent source review and
+static admission scans passed. **Neither helper has been compiled or
+kernel-replayed.** With the pinned environment and compiled imports
+described above, the deferred bounded command for this component is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceSurfaceProper.olean \
+  Proposal/GeometricIncidenceSurfaceProper.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single

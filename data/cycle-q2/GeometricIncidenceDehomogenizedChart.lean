@@ -34,7 +34,7 @@ noncomputable section
 namespace CycleQ2IncidenceDehomogenizedChart
 
 open MvPolynomial
-open CycleQ2IncidenceNormalForm CycleQ2IncidenceImageLine
+open CycleQ2IncidenceNormalForm CycleQ2IncidenceUniversalChart CycleQ2IncidenceImageLine
   CycleQ2GeometricIncidenceProj
 
 variable {S : Type} [CommRing S] [Algebra ℂ S]
