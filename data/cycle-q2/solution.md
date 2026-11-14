@@ -1324,6 +1324,80 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedProjectiveLocalizedModules.lean
 ```
 
+### Hom localization agrees with the actual overlap duality — 14 November 2026
+
+Continuing from `8142cb560f0ed92b591d4cf557f02c239f060210`,
+[GeometricSeedImageLocalizedDuality.lean](GeometricSeedImageLocalizedDuality.lean)
+constructs the Hom-localization map into the dual of the actual extended
+ideal, with values in the actual localized coefficient ring. Its
+original-element formula is
+\[
+\phi_B(f(x))=f(\phi(x)).
+\]
+The existing `imageDual_baseChange_unique` then shows that localizing
+the functional associated with an original image vector gives exactly
+the entire functional associated with its literal mapped vector. This
+naturality identity itself requires no finite-presentation assumption.
+
+Under finite presentation of the original ideal, the Hom map satisfies
+`IsLocalizedModule`. The component supplies both the canonical
+localized-dual comparison, linear over the original ring, and
+`localizedImageDualEquiv`, linear over the localized coefficient ring.
+The theorem `localizedImageDualEquiv_eq` proves that this localization
+of the original equivalence equals the literal image-dual equivalence
+of the localized factor data. Localization uniqueness extends the
+original-vector identity to **every** localized image vector.
+
+[GeometricSeedProjectiveLocalizedDuality.lean](GeometricSeedProjectiveLocalizedDuality.lean)
+discharges the finite-presentation condition using the already established
+instances for the actual chart orbit ideals. It constructs the canonical
+left and right overlap-dual comparisons, with original-element evaluation
+formulas through the preceding canonical ideal identifications. Both
+specialized image-dual equivalences are linear over
+\(\Gamma(U_i\cap U_j,\mathcal O_D)\), and both equal their existing
+literal `leftData`/`rightData` counterparts. No finite-presentation
+hypothesis is added to any actual projective theorem.
+
+Consequently, `localizedImageDual_compatibility` is now a square of
+the **localized original** equivalences:
+\[
+\Psi^{\mathrm{loc}}_j(T_{ij}z)
+=t_{ij}^{4}\bigl(\Psi^{\mathrm{loc}}_i(z)\circ\iota_{ij}^{-1}\bigr),
+\qquad t_{ij}=X_i/X_j.
+\]
+It holds for every actual overlap image vector as equality of functionals
+on the whole overlap ideal. The ideal identification and matrix-image
+transition are exactly the previously constructed ones.
+
+These statements close the comparison between canonical module
+localization and the explicit overlap duality. Native associated-sheaf
+section identification, the global internal-Hom comparison, and sheaf
+gluing remain separate obligations. None of the Chern-class,
+moving-cycle, Abel–Jacobi, support, or residue-exactness conclusions is
+asserted here.
+
+**Verification status.** Both sources received independent
+mathematical/source review and static checks, including comparison with
+the pinned Hom-localization and localization-uniqueness APIs. No Lean
+elaboration or kernel replay was run. Existing Lean proof bodies,
+the protected theorem, and its final admission are unchanged.
+With the same pinned, already prepared dependencies, run the following
+deferred checks separately and in dependency order:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedImageLocalizedDuality.olean \
+  Proposal/GeometricSeedImageLocalizedDuality.lean
+```
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectiveLocalizedDuality.olean \
+  Proposal/GeometricSeedProjectiveLocalizedDuality.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
