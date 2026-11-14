@@ -1,5 +1,68 @@
 # A nonconstructive geometric route for cycle-q2
 
+## Specialized seed geometry continuation — source draft, 14 November 2026
+
+This continuation proceeds in bounded components. Every new Lean module
+listed here is a source-only draft; none has been elaborated or independently
+replayed in this session. The protected statement and final admission in
+`Solution.lean` are unchanged.
+
+### The specialized ideal is the regular principal ideal
+
+[GeometricSpecializedSectionIdeal.lean](GeometricSpecializedSectionIdeal.lean)
+binds the regular equations of the preceding checkpoint to the original
+specialized three-row ideal. Write
+\[
+J_t=\left(\sum_a t_aM_{0a},\,\sum_a t_aM_{1a},\,\sum_a t_aM_{2a}\right)
+\subset R_y.
+\]
+The theorem `specializedSectionIdeal_eq_map` identifies this ideal with
+the image of the existing universal `genericSectionIdeal` under constant
+coefficient evaluation and the original surface quotient.
+
+On a matrix pivot \(M_{ij}\), evaluate the already established rank-one
+polynomial identity \(\operatorname{sectionIdeal}(M)=((M T)_i)\).
+Ideal images commute with the displayed generators, so
+\[
+J_tR_y[M_{ij}^{-1}]
+=\left(\sum_a t_aM_{ia}\right)
+=\left(\frac{\sum_a t_aM_{ia}}{M_{ij}}\right).
+\]
+The second equality uses the invertibility of the original pivot.
+Contracting to the actual degree-zero subring gives exactly
+\[
+\left(J_tR_y[M_{ij}^{-1}]\right)\cap(R_y[M_{ij}^{-1}])_0
+=\left(f_{ij}(t)\right).
+\]
+This is `projectiveSpecializedIdeal_principal`; the degree-zero
+contraction uses the existing homogeneous-localization comparison.
+
+At the literal seed, the incidence equations, leading-unit condition,
+and basepoint-unit condition are transported through the retained
+`seedMap` from the constructed etale incidence point. Consequently
+`exists_seed_regular_principal_cover` supplies one nonzero \(t\), the
+nine-open cover of the original seed projective surface, regularity of
+every \(f_{ij}(t)\), and these principal-ideal equalities, without a
+caller-supplied incidence or regularity hypothesis.
+
+This endpoint concerns the contraction ideals on those charts.
+Construction of the actual specialized closed immersion, identification
+with the scheme-theoretic base-change fiber, a nonempty divisor,
+flatness of the parameter family, and the cycle-action comparison are
+not asserted by this module.
+
+Independent mathematical/source review and admission/whitespace scans
+were performed. No Lean build or kernel replay was attempted. With the
+same prepared toolchain, matching compiled imports, and `LEAN_PATH`
+prerequisites as the previous checkpoint, its deferred bounded check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricSpecializedSectionIdeal.olean \
+  Proposal/GeometricSpecializedSectionIdeal.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
