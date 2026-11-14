@@ -152,6 +152,56 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
   Proposal/GeometricIncidenceRelativeJacobian.lean
 ```
 
+### The genuine specialized projective closed immersion
+
+[GeometricSpecializedProjectiveCurve.lean](GeometricSpecializedProjectiveCurve.lean)
+constructs
+\[
+C_t=\operatorname{Proj}(R_y/J_t)
+\longrightarrow \operatorname{Proj}(R_y)
+\]
+from the existing surface grading and the proved homogeneity of the
+original specialized three-row ideal. The construction retains the
+existing target `surface y`.
+
+Homogeneous representatives lift through the quotient, so the maps of
+degree-zero localization rings are surjective on the standard Proj
+cover. The corresponding morphism `specializedCurveToSurface` is
+therefore a genuine closed immersion. This assertion uses the original
+quotient map, not an assumed closed-immersion comparison.
+
+The public homogeneous-localization kernel theorem identifies its
+pivot-chart kernel with `projectiveSpecializedIdeal`. The actual Proj
+chart/section isomorphisms and the structure-map compatibility then give
+\[
+\ker\!\left(
+ \mathcal O_{\operatorname{Proj}R_y}(U_p)
+ \longrightarrow \mathcal O_{C_t}(C_t\cap U_p)\right)
+=(f_p(t))
+\]
+in the actual ring of sections on the original open \(U_p\).
+The theorem is `specializedSectionKernel_principal\); regularity is
+transported through the same ring isomorphism.
+
+At the exact seed, `exists_seed_cartier_cover` supplies a nonzero \(t\),
+this closed immersion, the nine affine opens covering the original
+surface, and their regular principal structure-map kernels. These are
+the explicit local data of an effective Cartier divisor. Empty zero loci
+are still allowed. The source does not yet identify this Proj quotient
+with a scheme-theoretic parameter fiber, prove a nonempty curve, or
+supply flatness or a cycle-class comparison.
+
+Independent source review checked homogeneous lifting, the public
+closed-immersion criterion, and the actual structure-sheaf transport.
+Static scans passed; no compilation or replay was run. The bounded check
+is deferred until its matching imports are compiled:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricSpecializedProjectiveCurve.olean \
+  Proposal/GeometricSpecializedProjectiveCurve.lean
+```
+
 
 ## Regular constant seed section — source draft, 14 November 2026
 
