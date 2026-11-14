@@ -378,6 +378,36 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### The precise proper-neighborhood construction
+
+[GeometricIncidenceProperNeighborhood.lean](GeometricIncidenceProperNeighborhood.lean)
+constructs, for a proper morphism \(f:X\to Y\) and source open \(U\),
+\[
+ V=Y\setminus f(X\setminus U).
+\]
+The image being removed is closed, so \(V\) is open. It is the largest
+base open satisfying \(f^{-1}(V)\subseteq U\).
+The theorem `mem_properBaseNeighborhood_iff` states exactly that a point
+\(s\) belongs to \(V\) if and only if its entire point fiber lies in \(U\).
+
+The endpoint `exists_surface_base_neighborhood` installs the proved
+properness of the unchanged `surfaceToBase`. **Its application to the
+smooth locus remains conditional on proving that the entire seed fiber
+lies in that locus.** This is the precise remaining input, not a new
+assumption inserted into the protected theorem. No relative smoothness
+or flatness claim is made by this component.
+
+Independent source review and static scans passed. The closed-map API
+was checked against pinned Mathlib. **No compilation or kernel replay
+was run.** The deferred bounded command is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceProperNeighborhood.olean \
+  Proposal/GeometricIncidenceProperNeighborhood.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
