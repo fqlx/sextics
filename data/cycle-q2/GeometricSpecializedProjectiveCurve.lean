@@ -30,6 +30,8 @@ noncomputable section
 
 namespace CycleQ2SpecializedProjectiveCurve
 
+open CycleQ2IncidencePolynomialJacobianBinding
+
 open CategoryTheory AlgebraicGeometry MvPolynomial HomogeneousLocalization
 open CycleQ2IncidenceNormalForm CycleQ2IncidenceEquations
   CycleQ2IncidenceUniversalChart CycleQ2IncidenceImageLine

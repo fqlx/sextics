@@ -32,6 +32,8 @@ noncomputable section
 
 namespace CycleQ2RegularSeedSection
 
+open CycleQ2IncidencePolynomialJacobianBinding
+
 open MvPolynomial HomogeneousLocalization
 open CycleQ2IncidenceNormalForm CycleQ2IncidenceEquations CycleQ2IncidenceUniversalChart
   CycleQ2IncidenceGenericPointSemantics

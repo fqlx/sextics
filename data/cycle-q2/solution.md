@@ -540,6 +540,43 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Scope audit and the next bounded obligation
+
+A narrow source audit checked the owners of `ParameterIndex`,
+`PointSurface`, `seedPoint`, `pointEquations`, `incidencePoint`,
+and `seedMap` in these continuation modules. It found missing explicit
+opens for the `seedPoint` namespace in
+[GeometricRegularSeedSection.lean](GeometricRegularSeedSection.lean),
+[GeometricSpecializedSectionIdeal.lean](GeometricSpecializedSectionIdeal.lean),
+and [GeometricSpecializedProjectiveCurve.lean](GeometricSpecializedProjectiveCurve.lean).
+Those opens are now explicit. The declaration statements and proof
+bodies in these three files were not edited. This is a source correction,
+not a new compilation claim.
+
+The completed source components now provide regular specialized Cartier
+cover data, exact coefficient and affine-chart seed comparisons, properness
+of the original surface family, relative smoothness and flatness of its
+normalized-minor chart rings, and the corresponding minor cover on the
+original seed chart rings.
+
+The next geometric component is to assemble the relative principal
+scheme opens and transport that seed cover to the whole actual
+scheme-theoretic seed fiber. Once that inclusion is established,
+`exists_surface_base_neighborhood` supplies one base open containing
+the seed over which all source points lie in those good opens. This
+assembly, uniform relative smoothness/flatness, spreading the chosen
+regular section, and the nonemptiness/divisor-class comparisons remain
+unproved. The later Abel--Jacobi, support, and de Rham comparisons also
+remain open.
+
+**Nothing in this continuation has been compiled or kernel-replayed in
+this session.** A Lean/Lake executable was unavailable, and no full build,
+large symbolic computation, or replay was launched. The individual
+bounded commands above are deferred checks, not successful test records.
+The exact protected `Submission.missing_geometric_existence` statement,
+its final admission, and `Submission.certificate` remain unchanged.
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single

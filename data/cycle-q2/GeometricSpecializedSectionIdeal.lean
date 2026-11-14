@@ -31,6 +31,8 @@ noncomputable section
 
 namespace CycleQ2SpecializedSectionIdeal
 
+open CycleQ2IncidencePolynomialJacobianBinding
+
 open CategoryTheory AlgebraicGeometry MvPolynomial Matrix HomogeneousLocalization
 open CycleQ2IncidenceNormalForm CycleQ2IncidenceEquations
   CycleQ2IncidenceUniversalChart CycleQ2IncidenceImageLine
