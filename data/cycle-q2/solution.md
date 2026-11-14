@@ -1258,6 +1258,72 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedProjectiveOverlapLocalization.lean
 ```
 
+### Canonical modules on the actual projective intersections — 14 November 2026
+
+After checkpoint `2cc7aa94b76891c095c9e642912ce189e3c87c0e`,
+[GeometricSeedImageLocalizedModules.lean](GeometricSeedImageLocalizedModules.lean)
+proves the module-localization property of the literal coefficient maps
+into the extended orbit ideal and the mapped matrix image. For a
+localization \(A\to B=S^{-1}A\), the ideal comparison identifies
+the localized submodule with \(I B\). The matrix comparison first
+localizes the finite product \(A^3\to B^3\), then proves that the
+localized matrix operator is exactly the operator with coefficientwise
+mapped entries. Localization of its range consequently identifies
+\[
+S^{-1}\operatorname{im}(M)
+\cong \operatorname{im}(M\otimes_A B).
+\]
+The maps on original elements are precisely
+\(x\mapsto f(x)\) and \((z_a)_a\mapsto(f(z_a))_a\).
+No injectivity of the coefficient map, regularity of every denominator,
+or finite-presentation premise is needed for these identifications.
+
+[GeometricSeedProjectiveLocalizedModules.lean](GeometricSeedProjectiveLocalizedModules.lean)
+specializes those comparisons to the actual pair intersections. It
+exports `leftIdealCanonicalEquiv`, `rightIdealCanonicalEquiv`,
+`leftImageCanonicalEquiv`, and `rightImageCanonicalEquiv`. Their
+targets are the literal ideal and image of the existing `leftData`
+and `rightData` in \(\Gamma(U_i\cap U_j,\mathcal O_D)\).
+The localization property of the actual coefficient maps comes from
+the preceding ring-localization checkpoint. The linkage regularity is
+the previously proved one; it is not an added target hypothesis.
+
+Each equivalence has an original-element theorem. The ideal formulas
+agree with the existing `mappedLeft`, and the image formulas agree with
+`leftImageRestriction` and `rightImageRestriction`. Thus these are
+comparisons of the existing module maps, with no separately chosen
+abstract isomorphism. The canonical equivalences are explicitly linear
+over their original affine chart ring; the intermediate equivalences
+of actual localized submodules are linear over the overlap ring.
+
+**Next precise comparison.** Extend original ideal functionals into the
+actual overlap ideal, prove that this Hom-localization agrees with the
+already established image-dual map, and transport the comparison to
+native sheaf sections. Internal-Hom identification and sheaf gluing,
+as well as the remaining geometric route to residue exactness, are
+still outside this checkpoint.
+
+**Verification status.** Both new sources received independent
+mathematical/source review and bounded static checks. They have not
+been elaborated or kernel-replayed. The protected theorem and its
+final admission remain unchanged, and no new axiom audit is claimed.
+Using the same pinned, already prepared submission dependency layout,
+the deferred checks are separate commands in dependency order:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedImageLocalizedModules.olean \
+  Proposal/GeometricSeedImageLocalizedModules.lean
+```
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectiveLocalizedModules.olean \
+  Proposal/GeometricSeedProjectiveLocalizedModules.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
