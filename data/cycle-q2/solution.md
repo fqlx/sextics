@@ -1206,6 +1206,58 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedImageDualSheafInputs.lean
 ```
 
+### Actual overlap sections are chart localizations — 14 November 2026
+
+Continuing from `129b4918fea5c29a1951527c76b3eacc27d5cebe`,
+[GeometricSeedProjectiveOverlapLocalization.lean](GeometricSeedProjectiveOverlapLocalization.lean)
+identifies the actual structure-sheaf coefficient map on every projective
+pair intersection as localization of the original dehomogenized chart.
+Writing
+\[
+A_i=\texttt{AffineRing }i,\qquad
+a_{ij}=\texttt{affinePolynomial }i(X_j)=X_j/X_i,
+\]
+the new `leftSection_isLocalization` establishes
+\[
+\Gamma(U_i\cap U_j,\mathcal O_D)\cong (A_i)_{a_{ij}}
+\]
+with the algebra structure given by the existing `chartSectionMap`.
+The right-hand version uses the actual chart map from \(A_j\) and
+inverts \(a_{ji}=X_i/X_j\).
+
+The proof first transports the known homogeneous-coordinate localization
+through `coordinateChartEquiv.symm`. The normalized coordinate equality
+identifies the multiplicative subsets exactly. It then upgrades the
+existing `sectionsEquiv` to an algebra equivalence using the previously
+proved `leftCoefficient_toSections` and `rightCoefficient_toSections`
+identities. Thus the final localization statements retain the actual
+coefficient maps already used by `leftData` and `rightData`.
+The two section-algebra structures are explicit definitions, so the
+component does not install competing global algebra instances.
+Neither denominator regularity nor distinctness of the two charts is an
+additional premise.
+
+This supplies the ring-localization input for identifying the canonical
+localized orbit ideal and matrix image with the explicit intersection
+modules. It does not yet perform those module identifications or assert
+the global internal-Hom comparison, sheaf gluing, or residue exactness.
+
+**Verification status.** The new source was checked against the pinned
+Mathlib localization APIs and independently reviewed at the source level.
+It has not been elaborated or kernel-replayed; its imported source drafts
+have not been newly verified. Existing Lean proof bodies, the protected
+statement, and its final admission are unchanged. With Lean 4.33.1,
+Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`, and the already prepared
+checked dependency artifacts in the submission layout, the deferred
+single-module check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectiveOverlapLocalization.olean \
+  Proposal/GeometricSeedProjectiveOverlapLocalization.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
