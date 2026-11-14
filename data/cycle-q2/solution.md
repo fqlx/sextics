@@ -716,6 +716,65 @@ timeout --signal=TERM --kill-after=5s 55s \
   Proposal/GeometricSeedProjectiveImageRestriction.lean
 ```
 
+### The full degree-four overlap square — 14 November 2026
+
+Continuing from `9048c37ccb2e886b8efd6a215cfe2282bb2d6730`,
+[GeometricSeedImageTwistedDuality.lean](GeometricSeedImageTwistedDuality.lean)
+proves the algebraic comparison for every overlap image vector and every
+overlap ideal element. If two actual factor presentations satisfy
+\(M_j=t^{14}M_i\) and \(L_j=t^{10}L_i\) for a unit \(t\), their generated
+left ideals are equal. The resulting `idealEquiv` is the identity on
+ring values, while `imageTransition` sends the actual vector \(z\) to
+\(t^{14}z\). Evaluation on the original ideal generators proves
+\[
+\Psi_j(T_{ij}z)(x)=t^4\Psi_i(z)(\iota_{ij}^{-1}x)
+\]
+for every \(z\) in the first matrix image and every \(x\) in the second
+left ideal. Here \(\iota_{ij}\) is the identity-valued ideal identification.
+The generator calculation is precisely
+\(t^{14}z_a=t^4(t^{10}z_a)\); no additional frame choice or negative twist
+is introduced.
+
+[GeometricSeedProjectiveImageCompatibility.lean](GeometricSeedProjectiveImageCompatibility.lean)
+specializes this theorem to the actual `leftData` and `rightData` in
+\(\Gamma(U_i\cap U_j,\mathcal O_D)\). The unit is the original projective
+coordinate ratio \(X_i/X_j\). The prior `sectionMatrix_change` and
+`sectionLeft_change` discharge both rescaling identities. The endpoint
+`imageDual_compatibility` is therefore equality of linear functionals on
+the entire actual overlap ideal, for every actual overlap image vector;
+it takes no extra coefficient-map, regularity, or rescaling premise.
+`imageDual_compatibility_original` additionally binds this square to the
+original affine `imageDualEquiv` through its actual chart restriction.
+
+This closes the section-ring comparison square. Before asserting the
+global line-bundle isomorphism, the actual image and dual module models
+must still be identified with the restrictions of the existing associated
+module sheaves, including the appropriate Hom-localization comparison.
+Those identifications and the earlier unit cocycle then provide the input
+for sheaf gluing. No Chern-class, moving-cycle, Abel–Jacobi, support, or
+residue-exactness conclusion is asserted by this checkpoint.
+
+**Verification status.** Both new sources received mathematical/source
+review and static checks. They have not been elaborated or kernel-replayed.
+Existing Lean proof bodies and the protected final admission are unchanged.
+With the pinned, already prepared dependency layout, the two deferred
+checks are separate bounded commands; the second requires the first
+module's checked output:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedImageTwistedDuality.olean \
+  Proposal/GeometricSeedImageTwistedDuality.lean
+```
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectiveImageCompatibility.olean \
+  Proposal/GeometricSeedProjectiveImageCompatibility.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
