@@ -437,6 +437,39 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### The localized chart is an explicit algebra retract
+
+[GeometricIncidenceLocalizedChart.lean](GeometricIncidenceLocalizedChart.lean)
+extends the actual chart section and retraction across the minor inversions.
+Writing \(A=\mathrm{PointSurface}(y)\), \(D\) for the actual coordinate
+chart, \(\delta\) for a cone minor, and \(\bar\delta\) for its normalized
+chart image, it constructs \(S\)-algebra maps
+\[
+ D[\bar\delta^{-1}]
+   \longrightarrow A[\delta^{-1}][X_i^{-1}]
+   \longrightarrow D[\bar\delta^{-1}]
+\]
+whose composite is the identity. The exact endpoint is
+`localizedRetraction_comp_section`, with its pointwise form
+`localizedRetraction_section`.
+
+The retraction sends \(X_i\) to one and the cone minor to the now-invertible
+chart minor. The section extends because the established normalization
+identity sends \(\bar\delta\) to \(\delta X_i^{-d}\), a unit in the double
+localization. Both lifts and the composite identity are constructed
+from the canonical maps; no split-map premise is supplied.
+
+Independent source/API review and static scans passed. **No compilation
+or kernel replay was run.** This module supplies the maps; the smoothness
+consequence is a separate component. Its deferred bounded command is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceLocalizedChart.olean \
+  Proposal/GeometricIncidenceLocalizedChart.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
