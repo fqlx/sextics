@@ -62,6 +62,48 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
   Proposal/GeometricSpecializedSectionIdeal.lean
 ```
 
+### The actual tensor-product seed fiber
+
+[GeometricIncidenceSeedFiber.lean](GeometricIncidenceSeedFiber.lean)
+constructs the seed base change of the original affine-cone coordinate
+ring. With \(S=\texttt{ParameterAlgebra}\) and its retained map
+\(\sigma:S\to\mathbb C\), it gives the complex-algebra equivalence
+\[
+\mathbb C\otimes_{S,\sigma}
+  S[x_0,\ldots,x_4]/(h,F)
+\;\simeq\;
+\mathbb C[x_0,\ldots,x_4]/
+  (\texttt{smoothH}(i),\texttt{smoothF}(57,i)).
+\]
+The exact ideal equality is `seed_pointEquations`. The proof composes
+the existing tensor-product/quotient equivalence with the polynomial
+coefficient-base-change equivalence and then the literal seed ideal
+comparison. Its final `seedFiberLiteralEquiv` lands in the existing
+`SurfaceRing 57 1` used by the preceding normal and Cartier calculations.
+
+The map sends \(c\otimes[p]\) to \(c[\sigma(p)]\). The accompanying
+coordinate and coefficient lemmas retain all five original geometric
+variables and the original coefficient specialization. The specialization
+algebra instance is local to this module, so no global instance selects
+this seed in other parameter constructions.
+
+This proves the intended coordinate-ring comparison mathematically and
+provides its source implementation. It does not yet identify the
+projective scheme-theoretic fiber: the grading and Proj/base-change
+comparison remain to be supplied. Independent source review checked the
+pinned tensor and quotient APIs, scalar structures, ideal-equality
+orientation, and the literal surface identification. Elaboration and
+kernel replay remain unperformed.
+
+With the prepared workspace prerequisites already stated, the deferred
+bounded check for this component is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceSeedFiber.olean \
+  Proposal/GeometricIncidenceSeedFiber.lean
+```
+
 
 ## Regular constant seed section — source draft, 14 November 2026
 
