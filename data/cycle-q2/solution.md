@@ -470,6 +470,41 @@ timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
 ```
 
 
+### Actual relative smoothness and flatness on the projective chart patches
+
+[GeometricIncidenceChartSmooth.lean](GeometricIncidenceChartSmooth.lean)
+completes the algebraic transfer from the cone to the actual projective
+chart localizations. For every coefficient algebra \(S\), incidence
+parameter \(y\), weight-one chart \(i\), and injective pair of geometric
+columns \(p\), `normalizedMinor_smooth` proves
+\[
+  \mathrm{Algebra.Smooth}\;S\;
+   \bigl(D_{y,i}[\bar\Delta_{p(0),p(1)}^{-1}]\bigr).
+\]
+The accompanying `normalizedMinor_flat` proves flatness of the same
+ring over \(S\). Neither theorem asks the caller for smoothness,
+flatness, nonvanishing of a minor, or a Noetherian base.
+
+The actual cone minor localization is smooth by its explicit relative
+Jacobian presentation and quotient binding. Its further localization at
+\(X_i\) remains smooth. Formal smoothness descends through the constructed
+algebra retraction, and the two-equation finite-presentation theorem
+upgrades this to smoothness. Flatness follows from smoothness.
+
+This establishes the local relative ring properties. Assembling their
+scheme opens, proving that they contain the entire actual seed fiber,
+and applying the proper-neighborhood theorem are still separate steps.
+Relative dimension two is not asserted here.
+Independent source/API review and static scans passed. **No elaboration,
+compilation, or kernel replay was run.** The deferred bounded check is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricIncidenceChartSmooth.olean \
+  Proposal/GeometricIncidenceChartSmooth.lean
+```
+
+
 ## Regular constant seed section — source draft, 14 November 2026
 
 This bounded continuation proves the mathematical existence of a single
