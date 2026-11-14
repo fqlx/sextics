@@ -1,5 +1,135 @@
 # A nonconstructive geometric route for cycle-q2
 
+## Regular constant seed section — source draft, 14 November 2026
+
+This bounded continuation proves the mathematical existence of a single
+nonzero complex section-parameter vector whose original equations are
+regular on every seed pivot chart. Its Lean implementation is a
+**source-only draft**: neither new module has been elaborated or replayed.
+No Lean build, kernel replay, or symbolic matrix calculation was run for
+this increment. The protected statement and the existing admission in
+`Submission.missing_geometric_existence` are unchanged.
+
+### Precise local assertion and proof
+
+For any fixed complex incidence coefficient point \(y\), let
+\[
+R_y=\mathbb C[x_0,\ldots,x_4]/(h_y,F_y),\qquad
+B_p=R_y[M_{ij}^{-1}],\quad p=(i,j).
+\]
+The notation denotes the existing `PointSurface y` and
+`CoefficientPivot y p`; it does not replace the original equations.
+There exists one vector \(t\in\mathbb C^3\setminus\{0\}\) such that,
+simultaneously for all nine pivots,
+\[
+g_p(t)=\sum_{a=0}^2 t_aM_{ia}
+\]
+is a nonzerodivisor in \(B_p\). Its degree-zero fraction
+\[
+f_p(t)=\frac{\sum_{a=0}^2t_aM_{ia}}{M_{ij}}
+\]
+is therefore a nonzerodivisor in the genuine homogeneous-localization
+ring \((R_y[M_{ij}^{-1}])_0\). Both numerator and denominator have the
+original weighted degree fourteen.
+
+Here is the existence proof. Each \(B_p\) is noetherian, being a
+localization of a quotient of a polynomial ring in five variables.
+For each \(P\in\operatorname{Ass}(B_p)\), consider
+\[
+K_{p,P}=\{t\in\mathbb C^3:g_p(t)\in P\}.
+\]
+It is a complex linear subspace. It is proper because the \(j\)-th
+standard basis vector maps to \(M_{ij}\), a unit in \(B_p\), while an
+associated prime is a proper ideal. The associated-prime sets and the
+nine-chart index are finite. Add the zero subspace to this finite list.
+A vector space over an infinite field is not the union of finitely many
+proper linear subspaces, so a vector outside the list exists and is
+nonzero. Every \(g_p(t)\) then avoids all associated primes, which is
+equivalent to being a nonzerodivisor. This criterion includes embedded
+associated primes; reducedness, integrality, and smoothness of the seed
+are not assumptions. The corresponding scheme criterion is
+[Stacks, tag 0AYL](https://stacks.math.columbia.edu/tag/0AYL).
+
+If a pivot localization is the zero ring, its associated-prime set is
+empty and multiplication is injective there; the same argument covers
+empty charts. Adding the zero subspace ensures a nonzero coefficient
+vector even when all chart rings are trivial.
+
+Dividing by the invertible pivot preserves regularity in the ordinary
+localization. The degree-zero ring embeds into that localization, so
+multiplication by the displayed fraction is also injective there.
+
+### Binding to the unchanged seed and source verification
+
+[GeometricSimultaneousRegularSection.lean](GeometricSimultaneousRegularSection.lean)
+contains the finite-avoidance argument in
+`CycleQ2SimultaneousRegularSection.exists_nonzero_simultaneous_regular`.
+Its hypotheses are discharged for the original pivot rings by
+noetherian polynomial/quotient/localization instances and the existing
+`localizedMatrix_pivot_isUnit`.
+
+[GeometricRegularSeedSection.lean](GeometricRegularSeedSection.lean)
+defines the actual specialized row and degree-zero fraction.
+`constantEquation_eq_specialization` identifies the row with evaluation
+of the existing universal polynomial `genericSectionEquation`.
+`exists_seed_regular_equations` applies the simultaneous choice to
+the literal `seedPoint (57 : ℂ) Complex.I`, with no regular-section
+premise supplied by a caller. This is the same full-incidence seed as
+in the preceding parameter-family construction.
+
+Source review checked the finite-avoidance and associated-prime APIs
+against the pinned Mathlib revision
+`0df444a360eaa60ab8c11dca51a86af692955474`, and checked the
+specialization and fraction proofs against the existing chart
+definitions. Source review is not Lean validation. The new files
+contain no admissions or added axioms and do not edit `Solution.lean`.
+Existing uncompiled imported constructions retain their documented status.
+
+### What this increment does not supply
+
+The chosen vector is existential; it is not a prescribed original
+curve section. A regular equation can have empty zero locus.
+The new declarations do not assert a nonempty curve, flatness over
+the incidence parameters, a global line-bundle identification, or
+an Abel--Jacobi, Gysin, support, or de Rham comparison.
+
+The next geometric step is to bind these regular specialized equations
+to the fiber ideal of the original projective zero locus and prove
+flatness of the surface family near that seed fiber. Once the ambient
+family is flat and locally of finite presentation there, the
+fiberwise Cartier criterion ([Stacks, tag 062Y, part (3)](https://stacks.math.columbia.edu/tag/062Y))
+gives flatness of the locally principal divisor near the seed fiber.
+For a proper finitely presented divisor family, openness of the flat
+locus ([Stacks, tag 0398](https://stacks.math.columbia.edu/tag/0398))
+and properness let one remove the closed image of its nonflat locus,
+obtaining one base open containing the seed parameter. Those concrete
+family hypotheses still need to be established; they are not introduced
+as assumptions of the protected existence theorem.
+
+### Deferred bounded validation
+
+Prerequisites: the repository's pinned Lean toolchain and Mathlib revision,
+a verifier-prepared workspace with the original generated `HodgeTarget`,
+and matching compiled imports for `Proposal.GeometricUniversalCurveCartier`.
+The current workspace and all dependency output directories must already
+be on `LEAN_PATH`; the following commands run from that workspace.
+They were recorded, not executed here.
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricSimultaneousRegularSection.olean \
+  Proposal/GeometricSimultaneousRegularSection.lean
+
+timeout --signal=TERM --kill-after=5s 55s lean -M4096 -DmaxHeartbeats=800000 \
+  -o Proposal/GeometricRegularSeedSection.olean \
+  Proposal/GeometricRegularSeedSection.lean
+```
+
+Run the second command only after the first succeeds. A timeout is an
+unverified check, not evidence of a mathematical failure, and is not a
+reason to start a full build in this chat session.
+
+
 ## Canonical residue and the actual incidence family — source draft, 14 November 2026
 
 At the contributor's request, compilation and independent kernel replay
