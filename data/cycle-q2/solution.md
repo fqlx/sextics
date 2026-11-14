@@ -204,10 +204,80 @@ overlap functional. Hence the image-vector transition
 \((X_i/X_j)^{14}\) gives the dual-functional transition
 \((X_i/X_j)^4\), with the positive fourth power retained.
 
-These cone-overlap comparisons still need descent to the actual
+The functional comparisons still need compatibility with the actual
 projective intersection restrictions, the global internal-Hom
 identification, and gluing before asserting a global line-bundle,
-Chern-class, or cycle-action equality.
+Chern-class, or cycle-action equality. The following component constructs
+the underlying transition units and their actual section identities.
+
+### Projective transition checkpoint — 14 November 2026
+
+This increment starts from commit `0cda5bed0ede384d3d609ccff1fdb9036e2b168f`
+and adds one focused helper,
+[GeometricSeedProjectiveImageCocycle.lean](GeometricSeedProjectiveImageCocycle.lean).
+It uses the original projective surface at \((r,\theta)=(57,1)\) and its
+three weight-one coordinate patches. On every actual common subopen
+\(V\subset U_i\cap U_j\), the construction defines a unit
+\[
+t_{ij}=X_i/X_j\in\Gamma(V,\mathcal O_D)^\times.
+\]
+The inverse is the opposite chart's coordinate section. Restriction
+naturality follows from the original structure-sheaf restriction maps.
+Applying the existing homogeneous section-change formula to a coordinate
+of degree one gives the triple-overlap identity
+\[
+t_{jk}t_{ij}=t_{ik}.
+\]
+Applying the same formula to the original matrix and orbit generators
+gives
+\[
+M_j=t_{ij}^{14}M_i,\qquad L_j=t_{ij}^{10}L_i.
+\]
+The definitions `sectionMatrix` and `sectionLeft` are the images of
+the existing `chartFactorData` under the actual chart-to-section ring map.
+Thus `twistTransition = transitionUnit ^ 4` supplies a positive
+degree-four unit cocycle in the projective section rings, with
+\[
+t_{ij}^4t_{ij}^{10}=t_{ij}^{14}.
+\]
+The degree-fourteen transition is retained: the intended image is that of
+\(\mathcal O_D^{\oplus3}\to\mathcal O_D(14)^{\oplus3}\).
+
+**Verification status.** The mathematical argument and source received
+independent read-only review. Static checks cover the new file's imports,
+declaration uniqueness, whitespace, and absence of admissions or axiom
+declarations; they are not Lean verification. No Lean elaboration,
+`#print axioms` execution, kernel replay, full build, or symbolic
+calculation was run for this increment. Lean and Lake are unavailable in
+the current workspace. The imported draft dependencies retain their
+previous unverified status. The protected `Solution.lean` and its final
+admission are unchanged.
+
+A deferred, single-module Linux check in an already prepared verifier
+workspace is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedProjectiveImageCocycle.olean \
+  Proposal/GeometricSeedProjectiveImageCocycle.lean
+```
+
+Prerequisites: Lean 4.33.1, pinned Mathlib
+`0df444a360eaa60ab8c11dca51a86af692955474`, the generated protected
+target, and all imported `Proposal` modules already compiled from the
+matching sources in the verifier's `Proposal/` layout. The output directory
+must already exist. This command does not build missing dependencies; no
+such dependency build was attempted here.
+
+**Next lemma.** Prove that the existing local image-to-orbit-dual
+isomorphisms commute with the actual projective restriction maps, with
+the degree-four transition above. That requires the relevant localization
+or sheaf comparison; an arbitrary ring map does not automatically preserve
+the linkage regularity required by `mapFactorData`. Internal-Hom
+identification and global gluing still remain after that step. This
+component establishes no moving-cycle, Abel–Jacobi, support, or de Rham
+exactness assertion.
 
 ### The original ideal and the actual differential sheaves
 
