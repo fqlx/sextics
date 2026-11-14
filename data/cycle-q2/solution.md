@@ -472,6 +472,59 @@ identification and global gluing still remain after that step. This
 component establishes no moving-cycle, Abel–Jacobi, support, or de Rham
 exactness assertion.
 
+### Localization of the image-dual comparison — 14 November 2026
+
+After synchronizing through `ed60fa809daecbb7c98e443ea2167a4c0c5a49ba`,
+[GeometricSeedImageLocalization.lean](GeometricSeedImageLocalization.lean)
+adds the algebraic compatibility needed for the projective restriction
+comparison. Its `imageBaseChange` is the literal coordinatewise map from
+the image of the original matrix to the image of its coefficient image.
+It is semilinear over that same coefficient map.
+
+Write \(\Psi_A\) for the original image-to-orbit-dual isomorphism and
+\(f:A\to B\) for a coefficient map preserving linkage regularity. The
+proof of `imageDual_baseChange` gives
+\[
+\Psi_B(f_*z)(f(x))=f(\Psi_A(z)(x))
+\]
+for every original image element \(z\) and every original orbit-ideal
+element \(x\). It uses the previously established linkage-pairing
+compatibility, with the coordinatewise image map bound explicitly to the
+original matrix. Agreement on the original ideal uniquely determines the
+extended functional because the transported generators span its domain.
+
+For \(B=S^{-1}A\), `localization_regular` proves the required regularity;
+`localization_linkage_regular` applies it to the actual linkage element.
+This uses preservation of nonzerodivisors by localization and does not
+require the denominator set to consist of nonzerodivisors. In particular,
+it does not assume that an arbitrary ring map preserves regularity.
+
+For every \(b\) in the extended orbit ideal, the final theorem supplies
+an original ideal element \(x\) and \(s\in S\) with
+\[
+b f(s)=f(x),\qquad
+f(s)\,\Psi_B(f_*z)(b)=f(\Psi_A(z)(x)).
+\]
+Thus the denominator identity covers every extended ideal element, for
+the functional attached to an original image vector. Extending the source
+vector to arbitrary localized image vectors and binding the map to actual
+projective overlap/sheaf restrictions are further steps.
+
+**Verification status.** Independent mathematical/source review found no
+error at this scope. Static admission, declaration, import and whitespace
+checks were run. Lean elaboration and kernel replay were not run; this
+helper and its imported drafts remain unverified. Existing Lean files and
+the protected final admission are unchanged. With the same prepared
+workspace and pinned prerequisites as the preceding checkpoint, the
+deferred single-module command is:
+
+```sh
+timeout --signal=TERM --kill-after=5s 55s \
+  lake env lean -M4096 \
+  -o .lake/build/lib/lean/Proposal/GeometricSeedImageLocalization.olean \
+  Proposal/GeometricSeedImageLocalization.lean
+```
+
 ### The original ideal and the actual differential sheaves
 
 Write \(j:C\hookrightarrow D\) for the original immersion at
