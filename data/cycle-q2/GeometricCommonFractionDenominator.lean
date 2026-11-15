@@ -18,6 +18,8 @@ set_option autoImplicit false
 
 noncomputable section
 
+open scoped nonZeroDivisors
+
 namespace CycleQ2CommonFractionDenominator
 
 variable {R : Type*} [CommRing R] [IsDomain R]
