@@ -1,4 +1,4 @@
-name: Cycle-q2 rational polynomial coefficient clearing
+name: Cycle-q2 finite polynomial family coefficient clearing
 on:
   push:
     branches: [fqlx/q2-field-spreading-20261115]
@@ -54,7 +54,7 @@ jobs:
           root=pathlib.Path.cwd(); dest=root/'Proposal'; objs=root/'.lake/build/lib/lean/Proposal'
           receipt=root.parent.parent/'field-receipt'
           dest.mkdir(exist_ok=True);objs.mkdir(parents=True,exist_ok=True)
-          names=['GeometricCommonFractionDenominator','GeometricPolynomialDenominator']
+          names=['GeometricCommonFractionDenominator','GeometricPolynomialDenominator','GeometricPolynomialFamilyDenominator']
           results=[]
           def mem(pgid):
             rss=0
@@ -100,10 +100,13 @@ jobs:
             field-receipt
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
+            data/cycle-q2/GeometricPolynomialFamilyDenominator.lean
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
+            data/cycle-q2/GeometricPolynomialFamilyDenominator.lean
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
+            data/cycle-q2/GeometricPolynomialFamilyDenominator.lean
             formal/lean/.lake/build/lib/lean/Proposal
           include-hidden-files: true
           retention-days: 30
