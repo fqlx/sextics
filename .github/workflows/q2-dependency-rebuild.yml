@@ -49,10 +49,10 @@ jobs:
           lake env lean --version
           mapfile -t modules < ../../.q2-build/cache-roots.txt
           timeout --signal=TERM --kill-after=5s 420s lake exe cache get "${modules[@]}" 2>&1 | tee ../../.q2-build/cache.log
-      - name: Resume the next bounded geometric dependency batch
+      - name: Resume with the repository heartbeat configuration
         run: |
           set +e
-          python3 scripts/q2-bounded-ci.py --compile --modules 24 --seconds 600 --module-seconds 180
+          python3 scripts/q2-bounded-ci.py --compile --modules 24 --seconds 600 --module-seconds 180 --retry-repository-heartbeats HodgeComputer.Constructions.HigherResidues.HigherResidue
           code=$?
           echo "$code" > .q2-build/batch-exit.txt
           if [ "$code" = 20 ]; then

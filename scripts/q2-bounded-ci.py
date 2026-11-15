@@ -34,6 +34,9 @@ def prepare():
         p.mkdir(parents=True, exist_ok=True)
     toolchain = (LEANROOT / 'lean-toolchain').read_text().strip()
     assert toolchain == 'leanprover/lean4:v4.33.1', toolchain
+    import tomllib
+    options = tomllib.loads((LEANROOT / 'lakefile.toml').read_text())['leanOptions']
+    assert options == {'maxHeartbeats': 0}, options
     manifest = json.loads((LEANROOT / 'lake-manifest.json').read_text())
     assert next(p['rev'] for p in manifest['packages'] if p['name'] == 'mathlib') == '0df444a360eaa60ab8c11dca51a86af692955474'
     solution = (ROOT / 'data/cycle-q2/Solution.lean').read_bytes()
@@ -139,7 +142,10 @@ def compile_batch(plan, args):
             continue
         retry_interruption = (args.retry_batch_interruption and old.get('stop_reason') == 'batch deadline'
                               and args.module_seconds > old.get('seconds', 0))
-        if old.get('signature') == signature and old.get('exit', 0) != 0 and not retry_interruption:
+        retry_heartbeat_settings = (args.retry_repository_heartbeats == name
+                                    and old.get('exit') == 1
+                                    and '-DmaxHeartbeats=0' not in old.get('command', []))
+        if old.get('signature') == signature and old.get('exit', 0) != 0 and not (retry_interruption or retry_heartbeat_settings):
             report['stop'] = 'unchanged failure; repair before retry'
             report['next'] = name
             write(WORK / 'receipt.json', report)
@@ -151,10 +157,12 @@ def compile_batch(plan, args):
         obj.parent.mkdir(parents=True, exist_ok=True)
         for p in sidecars(obj):
             p.unlink()
-        cmd = [str(lean), '-j1', '-M5120', '-o', str(obj), str(source.relative_to(SOURCE))]
+        cmd = [str(lean), '-j1', '-M5120', '-DmaxHeartbeats=0', '-o', str(obj), str(source.relative_to(SOURCE))]
         log = LOGS / (name + '.log')
         row = {'module': name, 'source_sha256': r['source_sha256'], 'signature': signature, 'command': cmd, 'reused': False, 'exit': None, 'artifacts': {}, 'module_deadline_seconds': args.module_seconds,
-               'batch_deadline_seconds': args.seconds, 'retry_batch_interruption': retry_interruption}
+               'batch_deadline_seconds': args.seconds, 'retry_batch_interruption': retry_interruption,
+               'retry_repository_heartbeats': retry_heartbeat_settings,
+               'effective_repository_lean_options': {'maxHeartbeats': 0}}
         print('COMPILE ' + name, flush=True)
         begun, peak, reason = time.monotonic(), 0, None
         with log.open('w') as out:
@@ -203,6 +211,7 @@ if __name__ == '__main__':
     p.add_argument('--seconds', type=int, default=240)
     p.add_argument('--module-seconds', type=int, default=90)
     p.add_argument('--retry-batch-interruption', action='store_true')
+    p.add_argument('--retry-repository-heartbeats', default=None)
     a = p.parse_args()
     assert 0 < a.modules <= 48 and 0 < a.module_seconds <= 360
     assert a.module_seconds <= a.seconds <= 600
