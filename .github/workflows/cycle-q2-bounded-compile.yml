@@ -60,7 +60,7 @@ jobs:
         working-directory: formal/lean
         run: |
           python3 - <<'PY'
-          import hashlib, json, os, pathlib, resource, subprocess, sys, time
+          import hashlib, json, os, pathlib, resource, signal, subprocess, sys, time
           root = pathlib.Path.cwd()
           receipt = root.parent.parent / 'compile-receipt'
           source = root.parent.parent / 'data' / 'cycle-q2'
@@ -68,6 +68,14 @@ jobs:
           objects = root / '.lake/build/lib/lean/Proposal'
           proposal.mkdir(exist_ok=True)
           objects.mkdir(parents=True, exist_ok=True)
+          core = pathlib.Path.home() / '.elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/Lean/Elab/Binders.ir'
+          diagnostic = {'core_ir': str(core), 'exists': core.exists(), 'virtual_memory_cap': None, 'resident_group_limit_mib': 4608, 'available_memory_reserve_mib': 1536}
+          if core.exists():
+              diagnostic['size'] = core.stat().st_size
+              with core.open('rb') as f:
+                  diagnostic['first_32_bytes'] = f.read(32).hex()
+          print(json.dumps(diagnostic), flush=True)
+          (receipt / 'runtime-preflight.json').write_text(json.dumps(diagnostic, indent=2) + '\n')
           modules = ['GeometricSectionDegreeGap', 'GeometricSectionInverseIdeal', 'GeometricEmptySectionRows', 'GeometricSeedSectionInverse', 'GeometricSeedConeSection', 'GeometricSeedSectionNonempty', 'GeometricFirstOrderNonemptyFlatCurve']
           for name in modules:
               (proposal / (name + '.lean')).write_bytes((source / (name + '.lean')).read_bytes())
@@ -75,27 +83,53 @@ jobs:
           env['LEAN_PATH'] = str(objects.parent) + (os.pathsep + env['LEAN_PATH'] if env.get('LEAN_PATH') else '')
           results = []
           def limits():
-              resource.setrlimit(resource.RLIMIT_AS, (5 * 1024**3, 5 * 1024**3))
               resource.setrlimit(resource.RLIMIT_CPU, (85, 90))
+          def memory(pgid):
+              rss = 0
+              for entry in pathlib.Path('/proc').iterdir():
+                  if not entry.name.isdigit():
+                      continue
+                  try:
+                      if os.getpgid(int(entry.name)) != pgid:
+                          continue
+                      for line in (entry / 'status').read_text().splitlines():
+                          if line.startswith('VmRSS:'):
+                              rss += int(line.split()[1])
+                  except (OSError, ValueError):
+                      continue
+              available = next(int(line.split()[1]) for line in pathlib.Path('/proc/meminfo').read_text().splitlines() if line.startswith('MemAvailable:'))
+              return rss, available
           for name in modules:
               obj = objects / (name + '.olean')
               obj.unlink(missing_ok=True)
               cmd = ['lake', 'env', 'lean', '-j1', '-M3072', '-o', str(obj.relative_to(root)), 'Proposal/' + name + '.lean']
               start = time.monotonic()
+              peak = 0
+              stop = None
               with (receipt / (name + '.log')).open('w') as log:
                   log.write('COMMAND: ' + ' '.join(cmd) + '\n'); log.flush()
                   p = subprocess.Popen(cmd, env=env, stdout=log, stderr=subprocess.STDOUT, start_new_session=True, preexec_fn=limits)
-                  try:
-                      code = p.wait(timeout=90)
-                  except subprocess.TimeoutExpired:
-                      import signal
-                      os.killpg(p.pid, signal.SIGKILL)
-                      p.wait()
-                      code = 124
-                      log.write('\nSTOP: 90-second single-module deadline.\n')
-              text = (receipt / (name + '.log')).read_text()
-              print(text, flush=True)
-              row = {'module': name, 'source_sha256': hashlib.sha256((proposal / (name + '.lean')).read_bytes()).hexdigest(), 'returncode': code, 'seconds': round(time.monotonic()-start, 3), 'object_exists': obj.exists()}
+                  while p.poll() is None:
+                      rss, available = memory(p.pid)
+                      peak = max(peak, rss)
+                      if rss > 4608 * 1024:
+                          stop = 'resident-memory limit'
+                      elif available < 1536 * 1024:
+                          stop = 'available-memory reserve'
+                      elif time.monotonic() - start > 90:
+                          stop = '90-second wall deadline'
+                      if stop:
+                          try:
+                              os.killpg(p.pid, signal.SIGKILL)
+                          except ProcessLookupError:
+                              pass
+                          p.wait()
+                          log.write('\nSTOP: ' + stop + '\n')
+                          break
+                      time.sleep(0.1)
+                  code = 124 if stop else p.wait()
+              print((receipt / (name + '.log')).read_text(), flush=True)
+              row = {'module': name, 'source_sha256': hashlib.sha256((proposal / (name + '.lean')).read_bytes()).hexdigest(), 'returncode': code, 'seconds': round(time.monotonic()-start, 3), 'peak_group_rss_kib': peak, 'guard_stop': stop, 'object_exists': obj.exists()}
               results.append(row)
               (receipt / 'results.json').write_text(json.dumps({'scope': 'bounded source compilation only; not protected acceptance or independent kernel replay', 'results': results, 'not_attempted': modules[len(results):]}, indent=2) + '\n')
               if code != 0:
