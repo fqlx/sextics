@@ -137,12 +137,14 @@ def compile_batch(plan, args):
         if old.get('signature') == signature and old.get('exit') == 0 and obj.exists() and files == old.get('artifacts'):
             report['results'].append({**old, 'reused': True})
             continue
-        if old.get('signature') == signature and old.get('exit', 0) != 0:
+        retry_interruption = (args.retry_batch_interruption and old.get('stop_reason') == 'batch deadline'
+                              and args.module_seconds > old.get('seconds', 0))
+        if old.get('signature') == signature and old.get('exit', 0) != 0 and not retry_interruption:
             report['stop'] = 'unchanged failure; repair before retry'
             report['next'] = name
             write(WORK / 'receipt.json', report)
             return 22
-        if count >= args.modules or time.monotonic() - start >= args.seconds:
+        if count >= args.modules or args.seconds - (time.monotonic() - start) < args.module_seconds:
             report['stop'], report['next'] = 'bounded batch complete', name
             write(WORK / 'receipt.json', report)
             return 20
@@ -151,7 +153,8 @@ def compile_batch(plan, args):
             p.unlink()
         cmd = [str(lean), '-j1', '-M5120', '-o', str(obj), str(source.relative_to(SOURCE))]
         log = LOGS / (name + '.log')
-        row = {'module': name, 'source_sha256': r['source_sha256'], 'signature': signature, 'command': cmd, 'reused': False, 'exit': None, 'artifacts': {}}
+        row = {'module': name, 'source_sha256': r['source_sha256'], 'signature': signature, 'command': cmd, 'reused': False, 'exit': None, 'artifacts': {}, 'module_deadline_seconds': args.module_seconds,
+               'batch_deadline_seconds': args.seconds, 'retry_batch_interruption': retry_interruption}
         print('COMPILE ' + name, flush=True)
         begun, peak, reason = time.monotonic(), 0, None
         with log.open('w') as out:
@@ -163,7 +166,7 @@ def compile_batch(plan, args):
                     peak = max(peak, rss)
                     if rss > 6144 * 1024: reason = 'RSS limit'
                     elif avail < 1536 * 1024: reason = 'available memory reserve'
-                    elif time.monotonic() - begun > 90: reason = 'module deadline'
+                    elif time.monotonic() - begun > args.module_seconds: reason = 'module deadline'
                     elif time.monotonic() - start > args.seconds: reason = 'batch deadline'
                     if reason:
                         os.killpg(proc.pid, signal.SIGKILL)
@@ -198,8 +201,11 @@ if __name__ == '__main__':
     p.add_argument('--compile', action='store_true')
     p.add_argument('--modules', type=int, default=24)
     p.add_argument('--seconds', type=int, default=240)
+    p.add_argument('--module-seconds', type=int, default=90)
+    p.add_argument('--retry-batch-interruption', action='store_true')
     a = p.parse_args()
-    assert 0 < a.modules <= 48 and 0 < a.seconds <= 600
+    assert 0 < a.modules <= 48 and 0 < a.module_seconds <= 360
+    assert a.module_seconds <= a.seconds <= 600
     plan = prepare()
     if a.compile:
         raise SystemExit(compile_batch(plan, a))
