@@ -55,7 +55,7 @@ def liftRoot (f : R[X]) (hm : f.Monic) (hs : f.Separable)
 @[simp] theorem liftRoot_X (f : R[X]) (hm : f.Monic) (hs : f.Separable)
     (x : S) (hx : aeval x f = 0) :
     liftRoot f hm hs x hx (pair f hm hs).X = x := by
-  simp [liftRoot]
+  exact (pair f hm hs).lift_X x ⟨hx, by simp [pair]⟩
 
 end CycleQ2SeparableStandardEtale
 
