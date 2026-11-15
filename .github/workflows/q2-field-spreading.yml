@@ -1,4 +1,4 @@
-name: Cycle-q2 finite primitive field polynomial
+name: Cycle-q2 fraction common denominator
 on:
   push:
     branches: [fqlx/q2-field-spreading-20261115]
@@ -45,7 +45,7 @@ jobs:
         run: |
           set -euo pipefail
           lake env lean --version | tee ../../field-receipt/version.txt
-          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib.FieldTheory.PrimitiveElement Mathlib.RingTheory.Trace.Basic 2>&1 | tee ../../field-receipt/cache.log
+          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib.RingTheory.Localization.FractionRing 2>&1 | tee ../../field-receipt/cache.log
       - name: Compile primitive polynomial and trace module only
         working-directory: formal/lean
         run: |
@@ -54,7 +54,7 @@ jobs:
           root=pathlib.Path.cwd(); dest=root/'Proposal'; objs=root/'.lake/build/lib/lean/Proposal'
           receipt=root.parent.parent/'field-receipt'
           dest.mkdir(exist_ok=True);objs.mkdir(parents=True,exist_ok=True)
-          names=['GeometricFinitePrimitivePolynomial']
+          names=['GeometricCommonFractionDenominator']
           results=[]
           def mem(pgid):
             rss=0
@@ -98,9 +98,9 @@ jobs:
           name: q2-field-spreading-run
           path: |
             field-receipt
-            data/cycle-q2/GeometricFinitePrimitivePolynomial.lean
-            data/cycle-q2/GeometricFinitePrimitivePolynomial.lean
-            data/cycle-q2/GeometricFinitePrimitivePolynomial.lean
+            data/cycle-q2/GeometricCommonFractionDenominator.lean
+            data/cycle-q2/GeometricCommonFractionDenominator.lean
+            data/cycle-q2/GeometricCommonFractionDenominator.lean
             formal/lean/.lake/build/lib/lean/Proposal
           include-hidden-files: true
           retention-days: 30
