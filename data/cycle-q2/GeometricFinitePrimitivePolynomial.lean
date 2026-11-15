@@ -54,7 +54,7 @@ theorem exists_primitive_model :
   have hsep : (minpoly K pb.gen).Separable :=
     (minpoly.irreducible (Algebra.IsIntegral.isIntegral pb.gen)).separable
   have hdeg : (minpoly K pb.gen).natDegree = Module.finrank K L := by
-    have hfield : K⟮pb.gen⟯ = ⊤ :=
+    have hfield : IntermediateField.adjoin K {pb.gen} = ⊤ :=
       IntermediateField.adjoin_eq_top_of_algebra K {pb.gen} hgen
     exact (Field.primitive_element_iff_minpoly_natDegree_eq K pb.gen).mp hfield
   have hroot : aeval pb.gen (minpoly K pb.gen) = 0 :=
@@ -82,14 +82,18 @@ theorem normalizedFieldTrace_algebraMap (a : K) :
   change ((extensionDegree K L : K)⁻¹) •
     Algebra.trace K L (algebraMap K L a) = a
   rw [Algebra.trace_algebraMap]
-  simp only [extensionDegree, nsmul_eq_mul, smul_eq_mul,
-    ← mul_assoc, inv_mul_cancel₀ (extensionDegree_ne_zero K L), one_mul]
+  simp only [extensionDegree, nsmul_eq_mul, smul_eq_mul]
+  have hn : (Module.finrank K L : K) ≠ 0 := extensionDegree_ne_zero K L
+  calc
+    (Module.finrank K L : K)⁻¹ * (Module.finrank K L : K) * a
+        = 1 * a := by rw [inv_mul_cancel₀ hn]
+    _ = a := one_mul _
 
 /-- Nondegeneracy of the *actual* field trace pairing. -/
 theorem traceForm_nondegenerate :
     (Algebra.traceForm K L).Nondegenerate := by
   letI : Algebra.IsSeparable K L := separable_extension K L
-  exact Algebra.traceForm_nondegenerate K L
+  exact _root_.traceForm_nondegenerate K L
 
 end CycleQ2FinitePrimitivePolynomial
 
