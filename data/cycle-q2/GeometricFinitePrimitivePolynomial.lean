@@ -84,10 +84,7 @@ theorem normalizedFieldTrace_algebraMap (a : K) :
   rw [Algebra.trace_algebraMap]
   simp only [extensionDegree, nsmul_eq_mul, smul_eq_mul]
   have hn : (Module.finrank K L : K) ≠ 0 := extensionDegree_ne_zero K L
-  calc
-    (Module.finrank K L : K)⁻¹ * (Module.finrank K L : K) * a
-        = 1 * a := by rw [inv_mul_cancel₀ hn]
-    _ = a := one_mul _
+  rw [← mul_assoc, inv_mul_cancel₀ hn, one_mul]
 
 /-- Nondegeneracy of the *actual* field trace pairing. -/
 theorem traceForm_nondegenerate :
