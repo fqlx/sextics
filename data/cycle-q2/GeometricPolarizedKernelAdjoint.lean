@@ -65,7 +65,7 @@ theorem composite_injective
     obtain ⟨e, rfl⟩ := hA w
     calc
       BV v (A e) = BE (At v) e := (hAt v e).symm
-      _ = 0 := by rw [ht, map_zero]
+      _ = 0 := by simp [ht]
   intro v w h
   change A (At v) = A (At w) at h
   apply sub_eq_zero.mp
