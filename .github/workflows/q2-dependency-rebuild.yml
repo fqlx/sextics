@@ -10,7 +10,7 @@ concurrency:
 jobs:
   bounded:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -49,10 +49,10 @@ jobs:
           lake env lean --version
           mapfile -t modules < ../../.q2-build/cache-roots.txt
           timeout --signal=TERM --kill-after=5s 420s lake exe cache get "${modules[@]}" 2>&1 | tee ../../.q2-build/cache.log
-      - name: Compile the interrupted adjunction module in its own bounded batch
+      - name: Resume the next bounded geometric dependency batch
         run: |
           set +e
-          python3 scripts/q2-bounded-ci.py --compile --modules 1 --seconds 400 --module-seconds 360 --retry-batch-interruption
+          python3 scripts/q2-bounded-ci.py --compile --modules 24 --seconds 600 --module-seconds 180
           code=$?
           echo "$code" > .q2-build/batch-exit.txt
           if [ "$code" = 20 ]; then
