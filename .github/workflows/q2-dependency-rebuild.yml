@@ -1,0 +1,83 @@
+name: Cycle-q2 dependency rebuild
+on:
+  push:
+    branches: [fqlx/q2-dependency-rebuild-20261115]
+permissions:
+  contents: read
+concurrency:
+  group: q2-dependency-rebuild
+  cancel-in-progress: false
+jobs:
+  bounded:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Prepare actual target and dependency plan
+        run: |
+          python3 -m pip install -r scripts/requirements-content.txt
+          python3 scripts/q2-bounded-ci.py
+      - name: Install Lean launcher
+        run: |
+          curl --fail --location --connect-timeout 15 --max-time 60 https://raw.githubusercontent.com/leanprover/elan/v4.2.0/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake/packages
+            ~/.elan/toolchains
+          key: repository-lean-dependencies-v2-${{ runner.os }}-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lake-manifest.json', 'formal/lean/lakefile.toml') }}
+      - name: Restore hash-checked proposal objects
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            .q2-build/objects
+            .q2-build/module-cache.json
+          key: q2-objects-v1-${{ runner.os }}-${{ github.sha }}
+          restore-keys: q2-objects-v1-${{ runner.os }}-
+      - name: Fetch pinned official Mathlib artifacts
+        id: dependencies
+        working-directory: formal/lean
+        run: |
+          set -euo pipefail
+          lake env lean --version
+          mapfile -t modules < ../../.q2-build/cache-roots.txt
+          timeout --signal=TERM --kill-after=5s 420s lake exe cache get "${modules[@]}" 2>&1 | tee ../../.q2-build/cache.log
+      - name: Compile one bounded dependency batch
+        run: |
+          set +e
+          python3 scripts/q2-bounded-ci.py --compile --modules 24 --seconds 240
+          code=$?
+          echo "$code" > .q2-build/batch-exit.txt
+          if [ "$code" = 20 ]; then
+            echo 'Bounded checkpoint only; selected closure not finished.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          exit "$code"
+      - name: Save resumable objects with their source hashes
+        if: always()
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            .q2-build/objects
+            .q2-build/module-cache.json
+          key: q2-objects-v1-${{ runner.os }}-${{ github.sha }}
+      - name: Preserve proof sources, logs and actual compiled objects
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: q2-dependency-rebuild-${{ github.run_id }}
+          path: .q2-build
+          include-hidden-files: true
+          retention-days: 30
+      - name: Save pinned dependencies
+        if: always() && steps.dependencies.outcome == 'success'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake/packages
+            ~/.elan/toolchains
+          key: repository-lean-dependencies-v2-${{ runner.os }}-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lake-manifest.json', 'formal/lean/lakefile.toml') }}
