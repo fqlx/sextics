@@ -49,12 +49,13 @@ jobs:
             ~/.elan/toolchains
           key: repository-lean-dependencies-v2-${{ runner.os }}-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lake-manifest.json', 'formal/lean/lakefile.toml') }}
       - name: Fetch official Mathlib cache for independent imports
+        id: mathlib
         timeout-minutes: 8
         working-directory: formal/lean
         run: |
           set -euo pipefail
           lake env lean --version | tee ../../compile-receipt/lean-version.txt
-          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib/RingTheory/MvPolynomial/WeightedHomogeneous.lean Mathlib/Tactic.lean Mathlib/RingTheory/Ideal/Operations.lean Mathlib/Algebra/Module/Submodule/Equiv.lean 2>&1 | tee ../../compile-receipt/cache.log
+          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous Mathlib.Tactic Mathlib.RingTheory.Ideal.Operations Mathlib.Algebra.Module.Submodule.Equiv 2>&1 | tee ../../compile-receipt/cache.log
       - name: Compile sequentially; never rebuild missing proposal imports
         working-directory: formal/lean
         run: |
@@ -113,3 +114,11 @@ jobs:
             formal/lean/.lake/build/lib/lean/Proposal
           include-hidden-files: true
           retention-days: 7
+      - name: Preserve pinned dependencies without proposal objects
+        if: always() && steps.mathlib.outcome == 'success'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake/packages
+            ~/.elan/toolchains
+          key: repository-lean-dependencies-v2-${{ runner.os }}-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lake-manifest.json', 'formal/lean/lakefile.toml') }}
