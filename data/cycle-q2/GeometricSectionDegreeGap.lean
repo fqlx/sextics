@@ -1,4 +1,5 @@
 import Mathlib.RingTheory.MvPolynomial.WeightedHomogeneous
+import Mathlib.RingTheory.Ideal.Quotient.Defs
 
 /-!
 # A lower-degree class cannot be a multiple of a higher-degree class
