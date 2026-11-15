@@ -45,8 +45,9 @@ theorem exists_finset_common_denominator {ι : Type*}
         CycleQ2PolynomialDenominator.exists_cleared_polynomial (p i)
       refine ⟨d * e, mul_ne_zero hd he, ?_⟩
       intro j hj
-      rcases Finset.mem_insert.mp hj with rfl | hj
-      · refine ⟨q * C d, ?_⟩
+      rcases Finset.mem_insert.mp hj with hji | hj
+      · subst j
+        refine ⟨q * C d, ?_⟩
         calc
           p i * C (algebraMap R (FractionRing R) (d * e)) =
             (p i * C (algebraMap R (FractionRing R) e)) *
