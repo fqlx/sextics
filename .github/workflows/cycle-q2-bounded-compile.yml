@@ -1,0 +1,115 @@
+name: Cycle-q2 bounded assembly compilation
+
+on:
+  push:
+    branches: [fqlx/cycle-q2-bounded-compile-d2e3431-20261115]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cycle-q2-bounded-compile-d2e3431
+  cancel-in-progress: false
+
+jobs:
+  bounded:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Record source and immutable target
+        run: |
+          mkdir -p compile-receipt
+          git rev-parse HEAD | tee compile-receipt/check-commit.txt
+          printf '%s\n' d2e3431d12feaed2c812cea76ced186f77772cb7 > compile-receipt/assembly-base.txt
+          git hash-object data/cycle-q2/Solution.lean | tee compile-receipt/protected-solution-blob.txt
+          test "$(cat compile-receipt/protected-solution-blob.txt)" = 3422e79fc263c2b098c61ce9a9577e303aefc009
+          cat formal/lean/lean-toolchain | tee compile-receipt/lean-toolchain.txt
+          test "$(cat formal/lean/lean-toolchain)" = leanprover/lean4:v4.33.1
+          python3 - <<'PY'
+          import json
+          m = json.load(open('formal/lean/lake-manifest.json'))
+          p = next(p for p in m['packages'] if p['name'] == 'mathlib')
+          assert p['rev'] == '0df444a360eaa60ab8c11dca51a86af692955474', p
+          PY
+      - name: Install official Lean launcher
+        run: |
+          set -euo pipefail
+          curl --fail --location --connect-timeout 15 --max-time 60 https://raw.githubusercontent.com/leanprover/elan/v4.2.0/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Restore pinned dependencies only
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake/packages
+            ~/.elan/toolchains
+          key: repository-lean-dependencies-v2-${{ runner.os }}-${{ hashFiles('formal/lean/lean-toolchain', 'formal/lean/lake-manifest.json', 'formal/lean/lakefile.toml') }}
+      - name: Fetch official Mathlib cache for independent imports
+        timeout-minutes: 8
+        working-directory: formal/lean
+        run: |
+          set -euo pipefail
+          lake env lean --version | tee ../../compile-receipt/lean-version.txt
+          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib/RingTheory/MvPolynomial/WeightedHomogeneous.lean Mathlib/Tactic.lean Mathlib/RingTheory/Ideal/Operations.lean Mathlib/Algebra/Module/Submodule/Equiv.lean 2>&1 | tee ../../compile-receipt/cache.log
+      - name: Compile sequentially; never rebuild missing proposal imports
+        working-directory: formal/lean
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, resource, subprocess, sys, time
+          root = pathlib.Path.cwd()
+          receipt = root.parent.parent / 'compile-receipt'
+          source = root.parent.parent / 'data' / 'cycle-q2'
+          proposal = root / 'Proposal'
+          objects = root / '.lake/build/lib/lean/Proposal'
+          proposal.mkdir(exist_ok=True)
+          objects.mkdir(parents=True, exist_ok=True)
+          modules = ['GeometricSectionDegreeGap', 'GeometricSectionInverseIdeal', 'GeometricEmptySectionRows', 'GeometricSeedSectionInverse', 'GeometricSeedConeSection', 'GeometricSeedSectionNonempty', 'GeometricFirstOrderNonemptyFlatCurve']
+          for name in modules:
+              (proposal / (name + '.lean')).write_bytes((source / (name + '.lean')).read_bytes())
+          env = dict(os.environ)
+          env['LEAN_PATH'] = str(objects.parent) + (os.pathsep + env['LEAN_PATH'] if env.get('LEAN_PATH') else '')
+          results = []
+          def limits():
+              resource.setrlimit(resource.RLIMIT_AS, (5 * 1024**3, 5 * 1024**3))
+              resource.setrlimit(resource.RLIMIT_CPU, (85, 90))
+          for name in modules:
+              obj = objects / (name + '.olean')
+              obj.unlink(missing_ok=True)
+              cmd = ['lake', 'env', 'lean', '-j1', '-M3072', '-o', str(obj.relative_to(root)), 'Proposal/' + name + '.lean']
+              start = time.monotonic()
+              with (receipt / (name + '.log')).open('w') as log:
+                  log.write('COMMAND: ' + ' '.join(cmd) + '\n'); log.flush()
+                  p = subprocess.Popen(cmd, env=env, stdout=log, stderr=subprocess.STDOUT, start_new_session=True, preexec_fn=limits)
+                  try:
+                      code = p.wait(timeout=90)
+                  except subprocess.TimeoutExpired:
+                      import signal
+                      os.killpg(p.pid, signal.SIGKILL)
+                      p.wait()
+                      code = 124
+                      log.write('\nSTOP: 90-second single-module deadline.\n')
+              text = (receipt / (name + '.log')).read_text()
+              print(text, flush=True)
+              row = {'module': name, 'source_sha256': hashlib.sha256((proposal / (name + '.lean')).read_bytes()).hexdigest(), 'returncode': code, 'seconds': round(time.monotonic()-start, 3), 'object_exists': obj.exists()}
+              results.append(row)
+              (receipt / 'results.json').write_text(json.dumps({'scope': 'bounded source compilation only; not protected acceptance or independent kernel replay', 'results': results, 'not_attempted': modules[len(results):]}, indent=2) + '\n')
+              if code != 0:
+                  print('Stopped at first compiler, import, or resource failure. No full build was started.', flush=True)
+                  sys.exit(1)
+              if not obj.exists():
+                  sys.exit('Compiler reported success without the requested object')
+          PY
+      - name: Preserve exact logs and compiled leaf objects
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cycle-q2-bounded-compile-${{ github.run_id }}
+          path: |
+            compile-receipt
+            formal/lean/.lake/build/lib/lean/Proposal
+          include-hidden-files: true
+          retention-days: 7
