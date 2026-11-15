@@ -104,7 +104,7 @@ for name in order:
     output=OBJ/rel.with_suffix('.olean'); output.parent.mkdir(parents=True,exist_ok=True)
     for ext in ['.olean','.olean.private','.olean.server','.ilean','.ir']:
         output.with_suffix(ext).unlink(missing_ok=True)
-    cmd=['lake','env','lean','-j1','-M5120','-o',str(output.relative_to(LEAN)),str(rel.with_suffix('.lean'))]
+    cmd=['lake','env','lean','-j1','-M5120','-DmaxHeartbeats=0','-o',str(output.relative_to(LEAN)),str(rel.with_suffix('.lean'))]
     env=dict(os.environ); env['LEAN_PATH']=str(OBJ)+(os.pathsep+env['LEAN_PATH'] if env.get('LEAN_PATH') else '')
     start=time.monotonic(); peak=0; stop=None
     log_path=OUT/(name.replace('.','_')+'.log')
