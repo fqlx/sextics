@@ -55,7 +55,7 @@ instance closureToBase_isProper [IsProper p] : IsProper (closureToBase p s) := b
 No quasi-compactness assumption is needed for this implication. -/
 theorem closureToBase_isDominant [IsDominant (s ≫ p)] :
     IsDominant (closureToBase p s) := by
-  haveI : IsDominant (s.toImage ≫ closureToBase p s) := by
+  have : IsDominant (s.toImage ≫ closureToBase p s) := by
     rw [toImage_closureToBase]
     infer_instance
   exact IsDominant.of_comp s.toImage (closureToBase p s)
@@ -64,7 +64,7 @@ theorem closureToBase_isDominant [IsDominant (s ≫ p)] :
 base. Surjectivity is proved, not supplied as a parameter-space hypothesis. -/
 theorem closureToBase_surjective [IsProper p] [IsDominant (s ≫ p)] :
     Surjective (closureToBase p s) := by
-  letI : IsDominant (closureToBase p s) := closureToBase_isDominant p s
+  have : IsDominant (closureToBase p s) := closureToBase_isDominant p s
   exact surjective_of_isDominant_of_isClosed_range _
     (closureToBase p s).isClosedMap.isClosed_range
 
@@ -113,7 +113,7 @@ instance specializationToBase_isProper [IsProper p] (b : T ⟶ S) :
 flatness, or dominance of the new pencil map is assumed. -/
 theorem specializationToBase_surjective [IsProper p] [IsDominant (s ≫ p)]
     (b : T ⟶ S) : Surjective (specializationToBase p s b) := by
-  letI : Surjective (closureToBase p s) := closureToBase_surjective p s
+  have : Surjective (closureToBase p s) := closureToBase_surjective p s
   dsimp only [specializationToBase]
   infer_instance
 
@@ -124,7 +124,7 @@ theorem exists_specialized_parameter [IsProper p] [IsDominant (s ≫ p)]
     ∃ x : specializedParameters p s b,
       specializationToBase p s b x = t ∧
       p (specializationToParameter p s b x) = b t := by
-  letI : Surjective (specializationToBase p s b) :=
+  have : Surjective (specializationToBase p s b) :=
     specializationToBase_surjective p s b
   obtain ⟨x, hx⟩ := (specializationToBase p s b).surjective t
   refine ⟨x, hx, ?_⟩
@@ -145,6 +145,8 @@ section DenseOpenSection
 variable (U : S.Opens) (σ : U.toScheme ⟶ P)
 variable (hU : Dense (U : Set S)) (hσ : σ ≫ p = U.ι)
 
+include hU hσ
+
 /-- The dominant map needed above is supplied by the original section on
 the original dense open. It is not an independent dominance assumption. -/
 theorem section_isDominant : IsDominant (σ ≫ p) := by
@@ -156,7 +158,7 @@ theorem section_isDominant : IsDominant (σ ≫ p) := by
 /-- Closed proper parameter model attached to the given dense-open section. -/
 theorem denseOpenSection_proper_surjective [IsProper p] :
     IsProper (closureToBase p σ) ∧ Surjective (closureToBase p σ) := by
-  letI : IsDominant (σ ≫ p) := section_isDominant p U σ hU hσ
+  have : IsDominant (σ ≫ p) := section_isDominant p U σ hU hσ
   exact ⟨inferInstance, closureToBase_surjective p σ⟩
 
 /-- The specialization endpoint used after a proper flag-Hilbert parameter
@@ -167,7 +169,7 @@ theorem denseOpenSection_specialization [IsProper p] (b : T ⟶ S) :
     ∀ t : T, ∃ x : specializedParameters p σ b,
       specializationToBase p σ b x = t ∧
       p (specializationToParameter p σ b x) = b t := by
-  letI : IsDominant (σ ≫ p) := section_isDominant p U σ hU hσ
+  have : IsDominant (σ ≫ p) := section_isDominant p U σ hU hσ
   exact ⟨inferInstance, specializationToBase_surjective p σ b,
     exists_specialized_parameter p σ b⟩
 
