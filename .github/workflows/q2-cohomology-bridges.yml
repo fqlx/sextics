@@ -1,0 +1,114 @@
+name: Cycle-q2 isolated cohomology bridge lemmas
+on:
+  push:
+    branches: [fqlx/q2-cohomology-bridges-20261115]
+permissions:
+  contents: read
+concurrency:
+  group: q2-cohomology-bridges
+  cancel-in-progress: false
+jobs:
+  bounded:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify protected statement and pinned inputs
+        run: |
+          mkdir -p bridge-receipt
+          git rev-parse HEAD | tee bridge-receipt/commit.txt
+          test "$(git hash-object data/cycle-q2/Solution.lean)" = 3422e79fc263c2b098c61ce9a9577e303aefc009
+          test "$(cat formal/lean/lean-toolchain)" = leanprover/lean4:v4.33.1
+          python3 - <<'PY'
+          import json
+          m=json.load(open('formal/lean/lake-manifest.json'))
+          assert next(p['rev'] for p in m['packages'] if p['name']=='mathlib') == '0df444a360eaa60ab8c11dca51a86af692955474'
+          PY
+      - name: Install Lean
+        run: |
+          curl --fail --location --connect-timeout 15 --max-time 60 https://raw.githubusercontent.com/leanprover/elan/v4.2.0/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Restore pinned Mathlib dependencies
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake/packages
+            ~/.elan/toolchains
+          key: q2-cohomology-bridges-v1-Linux
+          restore-keys: repository-lean-dependencies-v2-Linux-
+      - name: Fetch only the needed official Mathlib objects
+        id: mathlib
+        working-directory: formal/lean
+        run: |
+          set -euo pipefail
+          lake env lean --version | tee ../../bridge-receipt/version.txt
+          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib.LinearAlgebra.Charpoly.Basic Mathlib.LinearAlgebra.FiniteDimensional.Basic Mathlib.Topology.Separation.Hausdorff 2>&1 | tee ../../bridge-receipt/cache.log
+      - name: Compile three modules serially, stop on first error
+        working-directory: formal/lean
+        run: |
+          python3 - <<'PY'
+          import os,hashlib,json,pathlib,signal,subprocess,time
+          root=pathlib.Path.cwd(); dest=root/'Proposal'; objs=root/'.lake/build/lib/lean/Proposal'
+          receipt=root.parent.parent/'bridge-receipt'
+          dest.mkdir(exist_ok=True);objs.mkdir(parents=True,exist_ok=True)
+          names=['GeometricPolarizedKernelAdjoint','GeometricFiniteTraceDescent','GeometricCycleClassDenseExtension']
+          results=[]
+          def mem(pgid):
+            rss=0
+            for p in pathlib.Path('/proc').iterdir():
+              if not p.name.isdigit(): continue
+              try:
+                if os.getpgid(int(p.name))!=pgid: continue
+                for line in (p/'status').read_text().splitlines():
+                  if line.startswith('VmRSS:'):rss+=int(line.split()[1])
+              except (OSError,ValueError): pass
+            avail=next(int(x.split()[1]) for x in pathlib.Path('/proc/meminfo').read_text().splitlines() if x.startswith('MemAvailable:'))
+            return rss,avail
+          for name in names:
+            src=root.parent.parent/'data/cycle-q2'/f'{name}.lean'
+            dst=dest/f'{name}.lean';dst.write_bytes(src.read_bytes())
+            obj=objs/f'{name}.olean';obj.unlink(missing_ok=True)
+            cmd=['lake','env','lean','-j1','-M4096','-DmaxHeartbeats=0','-o',str(obj.relative_to(root)),str(dst.relative_to(root))]
+            peak=0;stop=None;started=time.monotonic()
+            with (receipt/f'{name}.log').open('w') as log:
+              log.write('COMMAND: '+' '.join(cmd)+'\n');log.flush()
+              p=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+              while p.poll() is None:
+                rss,avail=mem(p.pid);peak=max(peak,rss)
+                if rss>6144*1024:stop='RSS limit'
+                elif avail<1536*1024:stop='available memory reserve'
+                elif time.monotonic()-started>100:stop='100-second module deadline'
+                if stop:os.killpg(p.pid,signal.SIGKILL);break
+                time.sleep(.1)
+              p.wait()
+            logtxt=(receipt/f'{name}.log').read_text()
+            print(logtxt[-16000:],flush=True)
+            row={'module':name,'exit':p.returncode,'seconds':round(time.monotonic()-started,3),'rss_peak_kib':peak,'stop':stop,'source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'object_exists':obj.exists(),'object_sha256':hashlib.sha256(obj.read_bytes()).hexdigest() if obj.exists() else None,'sorryAx_in_output':'sorryAx' in logtxt}
+            results.append(row)
+            (receipt/'results.json').write_text(json.dumps({'results':results,'not_attempted':names[len(results):],'kernel_replay':False,'protected_acceptance':False},indent=2)+'\n')
+            assert p.returncode==0 and obj.exists() and stop is None and 'sorryAx' not in logtxt,row
+          PY
+      - name: Preserve exact compiler and object evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: q2-cohomology-bridges-run
+          path: |
+            bridge-receipt
+            data/cycle-q2/GeometricPolarizedKernelAdjoint.lean
+            data/cycle-q2/GeometricFiniteTraceDescent.lean
+            data/cycle-q2/GeometricCycleClassDenseExtension.lean
+            formal/lean/.lake/build/lib/lean/Proposal
+          include-hidden-files: true
+          retention-days: 30
+      - name: Cache pinned dependencies
+        if: always() && steps.mathlib.outcome == 'success'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            formal/lean/.lake/packages
+            ~/.elan/toolchains
+          key: q2-cohomology-bridges-v1-Linux
