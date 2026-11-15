@@ -34,6 +34,8 @@ structure Transfer where
   push : W →ₗ[ℚ] V
   push_pull : ∀ v : V, push (pull v) = (degree : ℚ) • v
 
+namespace Transfer
+
 variable (T : Transfer (V := V) (W := W))
 
 private theorem degree_ne_zero : (T.degree : ℚ) ≠ 0 :=
@@ -111,10 +113,12 @@ theorem projector_restriction_zero_descends
   rw [hcomm v]
   exact hsupport
 
+end Transfer
+
 end CycleQ2FiniteTraceDescent
 
 end
 
-#print axioms CycleQ2FiniteTraceDescent.normalized_push_pull
-#print axioms CycleQ2FiniteTraceDescent.projector_identity_descends
-#print axioms CycleQ2FiniteTraceDescent.projector_restriction_zero_descends
+#print axioms CycleQ2FiniteTraceDescent.Transfer.normalized_push_pull
+#print axioms CycleQ2FiniteTraceDescent.Transfer.projector_identity_descends
+#print axioms CycleQ2FiniteTraceDescent.Transfer.projector_restriction_zero_descends
