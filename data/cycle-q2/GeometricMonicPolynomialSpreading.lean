@@ -38,7 +38,7 @@ theorem exists_cleared_monic (p : Polynomial (FractionRing R)) (hp : p.Monic) :
     CycleQ2PolynomialDenominator.exists_cleared_polynomial p
   have hinj : Function.Injective (algebraMap R (FractionRing R)) :=
     IsFractionRing.injective R (FractionRing R)
-  have hne : algebraMap R (FractionRing R) d ≠ 0 := hinj.ne hd
+  have hne : algebraMap R (FractionRing R) d ≠ 0 := by simpa only [map_zero] using hinj.ne hd
   have hu : IsUnit (algebraMap R (FractionRing R) d) :=
     isUnit_iff_ne_zero.mpr hne
   have hlead : q.leadingCoeff = d := by
@@ -63,10 +63,10 @@ theorem exists_monic_localization (p : Polynomial (FractionRing R)) (hp : p.Moni
       (powers_le_nonZeroDivisors_of_noZeroDivisors hd)
   have hnonzero : algebraMap R (Localization.Away d) d ≠ 0 := hinj.ne hd
   refine ⟨d, hd, q.map (algebraMap R (Localization.Away d)) *
-    C ((algebraMap R (Localization.Away d) d)⁻¹), ?_⟩
+    C (IsLocalization.Away.invSelf (S := Localization.Away d) d), ?_⟩
   apply monic_mul_C_of_leadingCoeff_mul_eq_one
   rw [leadingCoeff_map_of_injective hinj q, hlead]
-  exact mul_inv_cancel₀ hnonzero
+  exact IsLocalization.Away.mul_invSelf (S := Localization.Away d) d
 
 end CycleQ2MonicPolynomialSpreading
 
