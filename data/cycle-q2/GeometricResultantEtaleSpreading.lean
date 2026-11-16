@@ -41,7 +41,11 @@ theorem resultant_derivative_map (f : Polynomial R) (s : R) (hs : s ≠ 0) :
       (powers_le_nonZeroDivisors_of_noZeroDivisors hs)
   have H := resultant_map_map f (derivative f)
     f.natDegree (derivative f).natDegree φ
-  simpa only [derivative_map, natDegree_map_eq_of_injective hinj] using H
+  change resultant (f.map φ) (derivative (f.map φ)) =
+    φ (resultant f (derivative f))
+  rw [derivative_map, natDegree_map_eq_of_injective hinj f,
+    natDegree_map_eq_of_injective hinj (derivative f)]
+  exact H
 
 /-- The monic polynomial becomes separable after the real localization
 at its nonzero derivative resultant, not by assuming separability there. -/
