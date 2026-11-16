@@ -1,5 +1,6 @@
 import Proposal.GeometricSeparableStandardEtale
 import Mathlib.RingTheory.Polynomial.Resultant.Basic
+import Mathlib.Algebra.Polynomial.Degree.Lemmas
 import Mathlib.RingTheory.Localization.Away.Basic
 
 /-!
@@ -40,7 +41,7 @@ theorem resultant_derivative_map (f : Polynomial R) (s : R) (hs : s ≠ 0) :
       (powers_le_nonZeroDivisors_of_noZeroDivisors hs)
   have H := resultant_map_map f (derivative f)
     f.natDegree (derivative f).natDegree φ
-  simpa only [φ, derivative_map, natDegree_map_of_injective hinj] using H
+  simpa only [derivative_map, natDegree_map_of_injective hinj] using H
 
 /-- The monic polynomial becomes separable after the real localization
 at its nonzero derivative resultant, not by assuming separability there. -/
@@ -54,8 +55,10 @@ theorem separable_after_inverting_resultant
   have hres : resultant (f.map φ) (derivative (f.map φ)) = φ r :=
     resultant_derivative_map f r hr
   have hmonic : (f.map φ).Monic := hf.map φ
-  exact (isUnit_resultant_iff_isCoprime hmonic).mp (by
-    simpa only [hres] using hunit)
+  apply (isUnit_resultant_iff_isCoprime hmonic).mp
+  change IsUnit (resultant (f.map φ) (derivative (f.map φ)))
+  rw [hres]
+  exact hunit
 
 /-- The constructed standard-etale pair uses the actual derivative
 resultant principal open and the polynomial obtained from f. -/
