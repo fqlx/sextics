@@ -61,7 +61,8 @@ theorem exists_monic_localization (p : Polynomial (FractionRing R)) (hp : p.Moni
   have hinj : Function.Injective (algebraMap R (Localization.Away d)) :=
     IsLocalization.injective (Localization.Away d)
       (powers_le_nonZeroDivisors_of_noZeroDivisors hd)
-  have hnonzero : algebraMap R (Localization.Away d) d ≠ 0 := hinj.ne hd
+  have hnonzero : algebraMap R (Localization.Away d) d ≠ 0 := by
+    simpa only [map_zero] using hinj.ne hd
   refine ⟨d, hd, q.map (algebraMap R (Localization.Away d)) *
     C (IsLocalization.Away.invSelf (S := Localization.Away d) d), ?_⟩
   apply monic_mul_C_of_leadingCoeff_mul_eq_one
