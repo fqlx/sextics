@@ -1,4 +1,4 @@
-name: Cycle-q2 finite polynomial family coefficient clearing
+name: Cycle-q2 monic generic polynomial spreading
 on:
   push:
     branches: [fqlx/q2-field-spreading-20261115]
@@ -45,7 +45,7 @@ jobs:
         run: |
           set -euo pipefail
           lake env lean --version | tee ../../field-receipt/version.txt
-          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib.RingTheory.Localization.FractionRing Mathlib.Algebra.Polynomial.Degree.Support Mathlib.Algebra.Polynomial.Eval.Coeff 2>&1 | tee ../../field-receipt/cache.log
+          timeout --signal=TERM --kill-after=5s 420s lake exe cache get Mathlib.RingTheory.Localization.FractionRing Mathlib.Algebra.Polynomial.Degree.Support Mathlib.Algebra.Polynomial.Eval.Coeff Mathlib.Algebra.Polynomial.Monic Mathlib.RingTheory.Localization.Away.Basic 2>&1 | tee ../../field-receipt/cache.log
       - name: Compile primitive polynomial and trace module only
         working-directory: formal/lean
         run: |
@@ -54,7 +54,7 @@ jobs:
           root=pathlib.Path.cwd(); dest=root/'Proposal'; objs=root/'.lake/build/lib/lean/Proposal'
           receipt=root.parent.parent/'field-receipt'
           dest.mkdir(exist_ok=True);objs.mkdir(parents=True,exist_ok=True)
-          names=['GeometricCommonFractionDenominator','GeometricPolynomialDenominator','GeometricPolynomialFamilyDenominator']
+          names=['GeometricCommonFractionDenominator','GeometricPolynomialDenominator','GeometricMonicPolynomialSpreading']
           results=[]
           def mem(pgid):
             rss=0
@@ -100,7 +100,7 @@ jobs:
             field-receipt
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
-            data/cycle-q2/GeometricPolynomialFamilyDenominator.lean
+            data/cycle-q2/GeometricMonicPolynomialSpreading.lean
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
             data/cycle-q2/GeometricPolynomialFamilyDenominator.lean
