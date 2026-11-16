@@ -54,7 +54,7 @@ jobs:
           root=pathlib.Path.cwd(); dest=root/'Proposal'; objs=root/'.lake/build/lib/lean/Proposal'
           receipt=root.parent.parent/'field-receipt'
           dest.mkdir(exist_ok=True);objs.mkdir(parents=True,exist_ok=True)
-          names=['GeometricCommonFractionDenominator','GeometricPolynomialDenominator','GeometricMonicPolynomialSpreading']
+          names=['GeometricCommonFractionDenominator','GeometricPolynomialDenominator','GeometricMonicPolynomialSpreading','GeometricMonicGenericFiber']
           results=[]
           def mem(pgid):
             rss=0
@@ -101,6 +101,7 @@ jobs:
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
             data/cycle-q2/GeometricMonicPolynomialSpreading.lean
+            data/cycle-q2/GeometricMonicGenericFiber.lean
             data/cycle-q2/GeometricCommonFractionDenominator.lean
             data/cycle-q2/GeometricPolynomialDenominator.lean
             data/cycle-q2/GeometricPolynomialFamilyDenominator.lean
