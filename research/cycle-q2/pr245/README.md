@@ -8,4 +8,4 @@ The `calculations/` directory contains exact arithmetic scripts, derivations and
 
 Prepared for fqlx with OpenAI ChatGPT and Codex assistance. The mathematical credits and prior work are recorded in the proposal explanation and in the calculation notes.
 
-Additional imports that were unavailable in this source snapshot include GeometricConeSimplexCochain, GeometricConeSimplexExpansion, GeometricConeSimplexProjected, GeometricConeTupleSupport, GeometricConeVertexScalar, GeometricExteriorRankOne, GeometricGradientDenominators, GeometricGradientSimplexFrame, GeometricLogarithmicChartDerivative, GeometricLogarithmicPullback, GeometricPoleReductionLocal, GeometricPoleReductionRadial, WeightedConeGenericSmooth, WeightedConeUniversalDeRham, WeightedConeVertex.
+The following source imports are missing from this checkpoint: ScratchLogChartExact, ScratchLogCofactorRealization, ScratchLogFractionComparison, ScratchLogNormalizedEulerCech, ScratchWeightedNormalExpansion.
