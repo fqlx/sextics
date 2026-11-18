@@ -8,4 +8,4 @@ The `calculations/` directory contains exact arithmetic scripts, derivations and
 
 Prepared for fqlx with OpenAI ChatGPT and Codex assistance. The mathematical credits and prior work are recorded in the proposal explanation and in the calculation notes.
 
-The following source imports are missing from this checkpoint: ScratchLogChartExact, ScratchLogCofactorRealization, ScratchLogFractionComparison, ScratchLogNormalizedEulerCech, ScratchWeightedNormalExpansion.
+All local `Proposal` imports referenced by these saved drafts have source files in this branch. The mathlib and shared project dependencies use the repository’s pinned versions.
