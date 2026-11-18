@@ -1,0 +1,19 @@
+{
+  "scope": "The current dlog(b-y^2) wedge (N dy) wedge totalTheta has a nonzero simple-pole residue. This does not exclude other currents and is not a protected primitive.",
+  "H": "I*p*y/2 + J + p**3*(y**6 + 1) + p**2*y/2",
+  "P": "I**6*T**4 + T**2*b**9 + T*(I*b**8/2 - J*b**9) + b**12 + b**9",
+  "N": "p**2*y**3/(I*y/2 + 3*p**2*(y**6 + 1) + p*y)",
+  "theta_I": "(-6*I**5*T**4 - T*b**8/2)/(2*T*b**2*(4*I**6*T**3 + I*b**8/2 - J*b**9 + 2*T*b**9))",
+  "theta_J": "b**7/(8*I**6*T**3 + I*b**8 - 2*J*b**9 + 4*T*b**9)",
+  "checks": [
+    "commuting parameter components of totalTheta",
+    "implicit derivatives of N",
+    "valid point of H=0 and f=0",
+    "nonzero residue O=1/(121 Q)",
+    "P and Q relatively prime at that point"
+  ],
+  "specialized_P": "T**4 + T**2 - 3*T/2 + 2",
+  "specialized_Q": "4*T**3 + 2*T - 3/2",
+  "resultant": "33125/16",
+  "all_exact_checks": true
+}

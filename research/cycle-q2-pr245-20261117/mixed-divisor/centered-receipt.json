@@ -1,0 +1,21 @@
+{
+  "all_exact_checks": true,
+  "scope": "Corrected current ansatz only; no solution of VU=fG-Oc and no protected primitive.",
+  "current": [
+    "U/f",
+    "2*y*U/f",
+    "-N*b^7/(2*f*Q)",
+    "N*(-P_I/(2*b^2*T*Q)+3/(4*I*b^2))/f"
+  ],
+  "identity": "div(A)=(V(U)+Oc)/f, V=D_y+2*y*D_b, Oc=D_J(N)*thetaIc-D_I(N)*thetaJ",
+  "quartic_traces": {
+    "thetaI": "-3/(I*b^2)",
+    "thetaJ": "0",
+    "thetaIc": "0"
+  },
+  "cubic_trace_N": "y^3/(1+y^6)",
+  "uncorrected_scalar_residue": "18/14641",
+  "centered_basis_checks": 5,
+  "remaining_equation": "V(U)=f*G-Oc",
+  "remaining_equation_solved": false
+}
