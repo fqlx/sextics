@@ -1,0 +1,5 @@
+pivot 0 minor 41*x^2 + 543*x + 737 res degrees [144, 144, 144] common factors (1, [(x + 673, 36), (x + 743, 36)])
+pivot 1 minor 840*x^2 + 108*x + 997 res degrees [144, 144, 144] common factors (1, [(x + 72, 36), (x + 202, 36)])
+pivot 2 minor 41*x^2 + 207*x + 761 res degrees [144, 144, 144] common factors (1, [(x + 892, 36), (x + 1008, 36)])
+global lambda candidates (1, [])
+lambda=0 homogeneous degree-16 rank 153 of 153

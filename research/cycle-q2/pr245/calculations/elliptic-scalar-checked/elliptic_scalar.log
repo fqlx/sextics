@@ -1,0 +1,35 @@
+deg A,B,Delta 7 12 24
+A [0, 17, 37, 92, 0, 0, 0, 64] B [59, 0, 30, 43, 19, 0, 64, 0, 6, 70, 0, 0, 67] D [57, 0, 34, 100, 40, 79, 77, 54, 39, 16, 16, 73, 48, 1, 97, 70, 42, 68, 50, 0, 94, 47, 0, 0, 3]
+gcd(Delta,Delta_u) [1]
+base y,T, mod p; degrees; rational input and augmented ranks: (2, 3) 101 [49, 45] 50 51
+Universal Picard-Fuchs exact relative primitive numerator: -3*L*X - 15*X**4/2 - 21*X**2/2 - 2
+Macaulay sparse residual {
+  "m6_det": "100775895111356733305505/16",
+  "m3_det": "-26967249/128",
+  "disc": "337135557915/65536",
+  "A": "3/4",
+  "B": "-111743/256",
+  "r": "12486498049/27648",
+  "r_u": "37202485247/27648",
+  "omega_coefficient": "-1303972/1012635",
+  "minus_derivative_coefficient": "144884/112515",
+  "h_u": "-20544141104/1406625025",
+  "normalized_source_in_u": "-301798639834/113936627025",
+  "normalized_source_in_r": "-309041807190016/156989840221870518525"
+}
+Macaulay paired-central {
+  "m6_det": "100775895111356733305505/16",
+  "m3_det": "-26967249/128",
+  "disc": "337135557915/65536",
+  "A": "3/4",
+  "B": "-111743/256",
+  "r": "12486498049/27648",
+  "r_u": "37202485247/27648",
+  "omega_coefficient": "23104/337545",
+  "minus_derivative_coefficient": "-2568/37505",
+  "h_u": "705390664/1406625025",
+  "normalized_source_in_u": "3607515748/37978875675",
+  "normalized_source_in_r": "3694096125952/52329946740623506175"
+}
+Independent closed rational formula for central normalized forcing: 3694096125952/52329946740623506175
+support sizes Delta/F0/F1; six current columns; time 510 3570 2592 [414, 175, 414, 175, 414, 175] 0.694

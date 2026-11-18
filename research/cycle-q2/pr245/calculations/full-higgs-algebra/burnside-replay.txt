@@ -1,0 +1,6 @@
+Fermat Higgs matrices: 35 of size 33
+det(H) = -24
+theta[4] adj(H) theta[4] = ell ell^T
+det(C) = -333002129772277037540987257626384275757114307214929177870336
+det(H), det(C) modulo 7 = 4 4
+Independent matrix words: 1089

@@ -1,0 +1,4 @@
+33 source vertices, 35 Higgs maps, 389 directed edges.
+Hamiltonian cycle [0, 10, 21, 1, 6, 31, 8, 14, 27, 19, 2, 32, 4, 18, 12, 29, 3, 26, 11, 30, 5, 28, 7, 16, 15, 9, 13, 22, 20, 17, 23, 24, 25]
+Higgs direction for each successor edge [33, 21, 27, 34, 6, 4, 30, 10, 2, 28, 8, 6, 28, 23, 8, 18, 22, 16, 7, 14, 19, 17, 29, 24, 28, 30, 20, 11, 19, 16, 7, 3, 26]
+Both successor and predecessor are perfect matchings; their relative shift is two, a 33-cycle.

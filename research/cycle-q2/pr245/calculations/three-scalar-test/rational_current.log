@@ -1,0 +1,4 @@
+Change of equation, normal derivative, both source coefficients, and J_D Jacobian pass.
+Both literal fixed-X density transports and commutator pass.
+Base lifts of the two derivations pass.
+Orientation, sign-quotient coordinates and degree-19 projection pass.
